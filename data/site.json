@@ -1,10 +1,10 @@
 {
   "site": {
     "name": "Татьяна Мунн",
-    "brand_domain": "moon.ru",
-    "subdomain": "tatyana-psy.moon.ru",
-    "brand_url": "https://moon.ru",
-    "site_url": "https://tatyana-psy.moon.ru",
+    "brand_domain": "moonn.ru",
+    "subdomain": "tatyana-psy.moonn.ru",
+    "brand_url": "https://moonn.ru",
+    "site_url": "https://tatyana-psy.moonn.ru",
     "review_url": "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629?action=addReview",
     "description": "Кластерные посадочные страницы для продвижения Татьяны Мунн, SEO, AEO и отзывов Яндекс Услуг."
   },
@@ -24,7 +24,7 @@
       "hero_kicker": "SEO / AEO / IEO",
       "hero_heading": "Татьяна Мунн",
       "hero_subheading": "Канонический контент-портал для продвижения психолога, отзывов и быстрых маршрутов записи.",
-      "hero_body": "Здесь собраны основные направления услуг, машинный слой для агентов, и точка входа на прямой отзыв Яндекс Услуг. Основной брендовый сайт остаётся на moon.ru, а этот поддомен служит SEO- и AEO-слоем.",
+      "hero_body": "Здесь собраны основные направления услуг, машинный слой для агентов, и точка входа на прямой отзыв Яндекс Услуг. Основной брендовый сайт остаётся на moonn.ru, а этот поддомен служит SEO- и AEO-слоем.",
       "primary_cta": { "label": "Оставить отзыв", "href": "reviews.html" },
       "secondary_cta": { "label": "Смотреть услуги", "href": "psycholog-online-consultation.html" },
       "sections": [
@@ -55,7 +55,7 @@
       "faq": [
         {
           "question": "Зачем нужен отдельный поддомен, если есть Tilda?",
-          "answer": "Чтобы быстро выпускать SEO-страницы и править их через Git, не ломая основной сайт moon.ru."
+          "answer": "Чтобы быстро выпускать SEO-страницы и править их через Git, не ломая основной сайт moonn.ru."
         },
         {
           "question": "Это замена основному сайту?",
