@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import html
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -235,6 +236,11 @@ def build_sitemap(site: dict[str, Any], pages: list[dict[str, Any]]) -> str:
         if page["slug"] == "index":
             url = site["site_url"]
         items.append(f"  <url><loc>{esc(url)}</loc></url>")
+    static_urls = [
+        site["site_url"].rstrip("/") + "/teen-softskills/",
+    ]
+    for url in static_urls:
+        items.append(f"  <url><loc>{esc(url)}</loc></url>")
     return (
         "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
         "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
@@ -249,6 +255,14 @@ Allow: /
 
 Sitemap: {site['site_url'].rstrip('/')}/sitemap.xml
 """
+
+
+def copy_static_tree(source: Path, destination: Path) -> None:
+    if not source.exists():
+        return
+    if destination.exists():
+        shutil.rmtree(destination)
+    shutil.copytree(source, destination)
 
 
 def main() -> None:
@@ -267,6 +281,8 @@ def main() -> None:
 
     css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
     (out_dir / "assets" / "site.css").write_text(css, encoding="utf-8")
+    copy_static_tree(ROOT / "assets" / "teen-softskills", out_dir / "assets" / "teen-softskills")
+    copy_static_tree(ROOT / "teen-softskills", out_dir / "teen-softskills")
 
     for page in pages:
         content = render_page(site, person, pages, page)

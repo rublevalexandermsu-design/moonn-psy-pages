@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Летняя школа soft skills для подростков | Татьяна Мунн</title>
+  <meta name="description" content="Летняя школа soft skills для подростков 8-11 классов с Татьяной Мунн: эмоциональный интеллект, личная эффективность, общение, конфликты, уверенность. Субботы летом 2026 года в Москве.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Летняя школа soft skills для подростков с Татьяной Мунн">
+  <meta property="og:description" content="12 суббот летом: эмоции, общение, личная эффективность, конфликты, уверенность и практические игры для подростков.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/teen-softskills/tatyana-munn-teen-softskills-summer-school-2026-poster.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#111d4a">
+  <style>
+    :root {
+      --ink: #10162f;
+      --muted: #667093;
+      --line: rgba(255,255,255,.18);
+      --card: rgba(255,255,255,.78);
+      --card-strong: rgba(255,255,255,.92);
+      --blue: #3157ff;
+      --cyan: #20d6c7;
+      --lime: #b8ff5c;
+      --violet: #8d4cff;
+      --orange: #ff9b52;
+      --shadow: 0 30px 90px rgba(17, 29, 74, .18);
+      --radius: 28px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(49,87,255,.24), transparent 28%),
+        radial-gradient(circle at 80% 5%, rgba(32,214,199,.22), transparent 22%),
+        radial-gradient(circle at 80% 65%, rgba(141,76,255,.18), transparent 30%),
+        linear-gradient(180deg, #f8fbff 0%, #eef4ff 46%, #f9fbff 100%);
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .24;
+      background-image:
+        linear-gradient(rgba(49,87,255,.14) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(49,87,255,.14) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(180deg, black, transparent 72%);
+    }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(20px);
+      background: rgba(247,251,255,.72);
+      border-bottom: 1px solid rgba(49,87,255,.1);
+    }
+    .topbar-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: -.03em;
+    }
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--violet));
+      box-shadow: 0 16px 36px rgba(49,87,255,.28);
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 12px; color: #3b4668; font-weight: 750; }
+    .nav a { text-decoration: none; padding: 10px 12px; border-radius: 999px; }
+    .nav a:hover { background: rgba(255,255,255,.7); }
+    .hero {
+      position: relative;
+      padding: 72px 0 44px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
+      gap: 34px;
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(49,87,255,.13);
+      color: #3850b8;
+      font-weight: 900;
+      box-shadow: 0 10px 30px rgba(49,87,255,.08);
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 7px rgba(32,214,199,.15);
+    }
+    h1 {
+      margin: 22px 0 20px;
+      font-size: clamp(44px, 7vw, 86px);
+      line-height: .92;
+      letter-spacing: -.07em;
+    }
+    .lead {
+      max-width: 760px;
+      color: #2e385d;
+      font-size: clamp(20px, 2.2vw, 28px);
+      line-height: 1.28;
+      margin: 0 0 26px;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0 18px; }
+    .btn {
+      min-height: 58px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 24px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn.primary {
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--violet));
+      box-shadow: 0 20px 46px rgba(49,87,255,.26);
+    }
+    .btn.secondary {
+      background: rgba(255,255,255,.76);
+      border-color: rgba(49,87,255,.14);
+      color: #263056;
+    }
+    .hero-card {
+      position: relative;
+      min-height: 560px;
+      border-radius: 38px;
+      padding: 26px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 72% 18%, rgba(184,255,92,.95), transparent 18%),
+        radial-gradient(circle at 12% 24%, rgba(32,214,199,.7), transparent 24%),
+        radial-gradient(circle at 78% 76%, rgba(141,76,255,.7), transparent 24%),
+        linear-gradient(145deg, #13245c, #10162f 56%, #203b9a);
+      box-shadow: var(--shadow);
+      color: white;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+      background-size: 34px 34px;
+      transform: perspective(700px) rotateX(55deg) translateY(80px);
+      transform-origin: bottom;
+      opacity: .5;
+    }
+    .glass {
+      position: relative;
+      z-index: 1;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.12);
+      backdrop-filter: blur(18px);
+      border-radius: 30px;
+      padding: 26px;
+    }
+    .glass h2 { font-size: 42px; line-height: .98; letter-spacing: -.05em; margin: 0 0 16px; }
+    .metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
+    .metric {
+      border-radius: 22px;
+      padding: 18px;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .metric strong { display: block; font-size: 28px; line-height: 1; }
+    .metric span { display: block; margin-top: 8px; color: rgba(255,255,255,.78); font-weight: 700; }
+    .poster-showcase {
+      margin-top: 34px;
+      overflow: hidden;
+      border-radius: 34px;
+      background: rgba(255,255,255,.48);
+      border: 1px solid rgba(255,255,255,.62);
+      box-shadow: 0 34px 90px rgba(18, 26, 65, .22);
+    }
+    .poster-showcase img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .asset-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .asset-tile {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 24px;
+      background: #fff;
+      border: 1px solid rgba(16, 33, 84, .1);
+      box-shadow: 0 24px 54px rgba(19, 28, 65, .12);
+    }
+    .asset-tile img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .asset-tile span {
+      display: block;
+      padding: 12px 14px 14px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    section { padding: 48px 0; }
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 4.8vw, 58px);
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .section-title p { max-width: 540px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.45; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      border-radius: var(--radius);
+      padding: 26px;
+      background: var(--card);
+      border: 1px solid rgba(49,87,255,.12);
+      box-shadow: 0 18px 48px rgba(17,29,74,.08);
+    }
+    .card h3 { margin: 0 0 12px; font-size: 26px; line-height: 1.05; letter-spacing: -.035em; }
+    .card p, .card li { color: #414b6f; font-size: 17px; line-height: 1.55; }
+    .card ul { padding-left: 20px; margin: 12px 0 0; }
+    .program {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 18px;
+    }
+    .month {
+      min-height: 360px;
+      color: white;
+      border-radius: 34px;
+      padding: 28px;
+      background: linear-gradient(145deg, #15245f, #3157ff);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .month:nth-child(2) { background: linear-gradient(145deg, #102e44, #18a999); }
+    .month:nth-child(3) { background: linear-gradient(145deg, #3a154e, #ff7e52); }
+    .month::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -70px;
+      bottom: -70px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.14);
+      filter: blur(2px);
+    }
+    .month h3 { position: relative; z-index: 1; margin: 0 0 14px; font-size: 34px; line-height: 1; letter-spacing: -.045em; }
+    .month p, .month li { position: relative; z-index: 1; color: rgba(255,255,255,.82); font-size: 17px; line-height: 1.5; }
+    .pricing {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .price-main {
+      border-radius: 36px;
+      padding: 34px;
+      background: #111d4a;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+    .price-main strong { display: block; font-size: clamp(54px, 7vw, 96px); letter-spacing: -.07em; line-height: .9; }
+    .price-main span { color: rgba(255,255,255,.76); font-size: 19px; }
+    .timeline {
+      display: grid;
+      gap: 12px;
+      counter-reset: item;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 20px;
+      background: var(--card-strong);
+      border-radius: 22px;
+      border: 1px solid rgba(49,87,255,.1);
+    }
+    .step::before {
+      counter-increment: item;
+      content: counter(item);
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      color: white;
+      font-weight: 950;
+    }
+    .step h3 { margin: 0 0 6px; font-size: 21px; }
+    .step p { margin: 0; color: var(--muted); line-height: 1.45; }
+    .footer {
+      margin-top: 42px;
+      padding: 36px 0 54px;
+      color: #56617f;
+    }
+    .machine {
+      margin-top: 28px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: rgba(16,22,47,.42);
+    }
+    @media (max-width: 920px) {
+      .hero-grid, .pricing { grid-template-columns: 1fr; }
+      .hero-card { min-height: 460px; }
+      .cards, .program, .asset-strip { grid-template-columns: 1fr; }
+      .section-title { display: block; }
+      .section-title p { margin-top: 12px; }
+      .nav { display: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Летняя школа soft skills для подростков с Татьяной Мунн",
+    "description": "Практическая летняя школа для подростков 8-11 классов: эмоциональный интеллект, личная эффективность, коммуникация и конфликты.",
+    "provider": {
+      "@type": "Person",
+      "name": "Татьяна Мунн",
+      "jobTitle": "психолог МГУ, спикер, практикующий психолог"
+    },
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "подростки 8-11 классов"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "50000",
+        "priceCurrency": "RUB",
+        "name": "Полная летняя программа"
+      },
+      {
+        "@type": "Offer",
+        "price": "20000",
+        "priceCurrency": "RUB",
+        "name": "Месячный блок"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">TM</span>
+        <span>Татьяна Мунн</span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#formats">Форматы</a>
+        <a href="#program">Программа</a>
+        <a href="#price">Стоимость</a>
+        <a href="#parents">Родителям</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Москва, лето 2026, подростки 8-11 классов</div>
+          <h1>Летняя школа soft skills для подростков</h1>
+          <p class="lead">12 суббот, где подростки учатся понимать эмоции, говорить о себе, договариваться, решать конфликты и собирать личную систему эффективности перед старшими классами, экзаменами и университетом.</p>
+          <div class="actions">
+            <a class="btn primary" href="#open">Записаться на открытый урок</a>
+            <a class="btn secondary" href="#program">Посмотреть программу</a>
+          </div>
+          <p class="small">Ведущая: Татьяна Мунн, психолог МГУ, спикер, практикующий психолог.</p>
+          <div class="poster-showcase">
+            <img src="../assets/teen-softskills/tatyana-munn-teen-softskills-summer-school-2026-poster.png" alt="Летняя школа soft skills для подростков с Татьяной Мунн, психологом МГУ">
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Ключевые параметры школы">
+          <div class="glass">
+            <h2>Не лагерь ради развлечения. Школа навыков взрослой жизни.</h2>
+            <p>Практика, игры, упражнения, обратная связь и понятные инструменты для общения с родителями, сверстниками и самим собой.</p>
+            <div class="metric-grid">
+              <div class="metric"><strong>12</strong><span>суббот летом</span></div>
+              <div class="metric"><strong>10-15</strong><span>человек в группе</span></div>
+              <div class="metric"><strong>3</strong><span>месячных блока</span></div>
+              <div class="metric"><strong>50 000 ₽</strong><span>за всё лето</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="formats">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Форматы участия</h2>
+          <p>Можно прийти на открытый урок, выбрать один месяц или пройти всю летнюю программу.</p>
+        </div>
+        <div class="cards">
+          <article class="card" id="open">
+            <h3>Открытый урок</h3>
+            <p>Каждую субботу во время школы можно прийти на двухчасовой открытый формат, посмотреть подход и решить, подходит ли программа подростку.</p>
+            <ul>
+              <li>субботы, 10:00-12:00;</li>
+              <li>регистрация обязательна;</li>
+              <li>вход свободный.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Полная школа</h3>
+            <p>Три месяца практики: эмоции, личная эффективность, коммуникация, конфликты, уверенность и умение говорить о своих потребностях.</p>
+            <ul>
+              <li>субботы, 12:00-19:00;</li>
+              <li>июнь, июль, август;</li>
+              <li>сертификат участника.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Месячный блок</h3>
+            <p>Если семья уезжает на часть лета, можно присоединиться к одному тематическому месяцу без покупки всей программы.</p>
+            <ul>
+              <li>4 субботы в месяц;</li>
+              <li>20 000 рублей;</li>
+              <li>можно продолжить дальше.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Программа по месяцам</h2>
+          <p>Каждый блок самостоятельный, но вместе они собираются в целостную систему soft skills.</p>
+        </div>
+        <div class="program">
+          <article class="month">
+            <h3>Июнь: эмоциональный интеллект</h3>
+            <p>Подросток учится замечать эмоции, понимать реакции, снижать напряжение и говорить о состоянии без взрыва или закрытости.</p>
+            <ul>
+              <li>как устроены эмоции;</li>
+              <li>что делать со злостью, тревогой и стыдом;</li>
+              <li>как не копить напряжение.</li>
+            </ul>
+          </article>
+          <article class="month">
+            <h3>Июль: личная эффективность</h3>
+            <p>Навыки внимания, целей, времени, выбора и личной ответственности без давления и постоянного контроля взрослых.</p>
+            <ul>
+              <li>как ставить понятные цели;</li>
+              <li>как доводить дела до конца;</li>
+              <li>как восстанавливаться и не выгорать.</li>
+            </ul>
+          </article>
+          <article class="month">
+            <h3>Август: общение и конфликты</h3>
+            <p>Практика диалога: как говорить с родителями, сверстниками и учителями, просить, отказывать, договариваться и выдерживать конфликт.</p>
+            <ul>
+              <li>личные границы;</li>
+              <li>конфликты и переговоры;</li>
+              <li>уверенная самопрезентация.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="asset-strip" aria-label="Баннеры тематических блоков">
+          <figure class="asset-tile">
+            <img src="../assets/teen-softskills/tatyana-munn-teen-softskills-june-emotional-intelligence-2026-poster.png" alt="Июньский блок: эмоциональный интеллект для подростков, Татьяна Мунн">
+            <span>Июнь: эмоциональный интеллект</span>
+          </figure>
+          <figure class="asset-tile">
+            <img src="../assets/teen-softskills/tatyana-munn-teen-softskills-july-personal-effectiveness-2026-poster.png" alt="Июльский блок: личная эффективность для подростков, Татьяна Мунн">
+            <span>Июль: личная эффективность</span>
+          </figure>
+          <figure class="asset-tile">
+            <img src="../assets/teen-softskills/tatyana-munn-teen-softskills-august-communication-conflicts-2026-poster.png" alt="Августовский блок: общение и конфликты для подростков, Татьяна Мунн">
+            <span>Август: общение и конфликты</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="price">
+      <div class="wrap">
+        <div class="pricing">
+          <div class="price-main">
+            <span>Полная программа на лето</span>
+            <strong>50 000 ₽</strong>
+            <p>Или по месячным блокам: 20 000 ₽ за месяц. Один полный субботний день получается около 5 000 ₽.</p>
+          </div>
+          <div class="card">
+            <h3>Что входит</h3>
+            <ul>
+              <li>практические занятия и упражнения;</li>
+              <li>психологические игры и разбор ситуаций;</li>
+              <li>обратная связь от ведущей;</li>
+              <li>материалы программы;</li>
+              <li>сертификат участника.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parents">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Почему это нужно родителям</h2>
+          <p>Летом у подростков появляется пространство, которое можно использовать не только для отдыха, но и для взросления.</p>
+        </div>
+        <div class="timeline">
+          <div class="step">
+            <div>
+              <h3>Подросток учится говорить о себе</h3>
+              <p>Не “со мной всё нормально”, а понятнее: что чувствует, чего хочет, где ему сложно и о чём нужно договориться.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Конфликты становятся управляемее</h3>
+              <p>Мы разбираем не абстрактную психологию, а реальные ситуации: родители, друзья, учёба, границы, просьбы и давление.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Это подготовка к старшим классам и университету</h3>
+              <p>Эмоциональная грамотность, самопрезентация и личная эффективность понадобятся раньше, чем кажется.</p>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://t.me/Tatiana_Moonn">Задать вопрос в Telegram</a>
+          <a class="btn secondary" href="#formats">Выбрать формат</a>
+        </div>
+        <p class="machine">Кратко для поисковых систем и ИИ-ассистентов: летняя школа soft skills для подростков 8-11 классов в Москве; Татьяна Мунн, психолог МГУ; эмоциональный интеллект подростков; личная эффективность подростков; коммуникация и конфликты; психологическая школа для подростков; soft skills summer school; сертификат участника; образовательная программа для подростков.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Страница подготовлена как временная GitHub Pages-версия до подключения к домену `moonn.ru`.</p>
+    </div>
+  </footer>
+</body>
+</html>
