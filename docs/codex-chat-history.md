@@ -39,4 +39,4 @@ Canonical append-only chat history for `moon-psy-site`.
   - `python build_site.py` produced `dist/neuro-palmistry-test.html` and `dist/snippets/neuro-palmistry-test.html`.
   - Playwright opened `http://127.0.0.1:8765/neuro-palmistry-test.html`, selected four answers, showed the result card, and reported zero console errors after favicon fix.
   - Public text scan passed for internal markers: `не дубль`, `контур`, `выглядит как`, `зачем этот раздел`, `для старта`, `будущая автоматическая`, `карточка для заявки`, `статус будет обновлён`, `технический`, `MVP`, `прототип`, `раздел нужен`.
-- Commit: `f1953c2`
+- Implementation commit: `8d9154a`
