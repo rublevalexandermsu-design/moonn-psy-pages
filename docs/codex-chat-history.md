@@ -883,3 +883,48 @@ Canonical append-only chat history for `moon-psy-site`.
   - `https://carry-pacific-flatfish.tilda.ws/`
 - Boundary:
   - Production `moonn.ru` was not changed.
+
+
+## 2026-05-01T20:55:00+03:00 — Radiant Sanctuary rolled out to all copied staging pages
+
+- Project: `moon-psy-site`.
+- Workstream: `staging-design-system` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: apply the approved visual design to all copied staging pages, preserve original button gradients, then provide several pages for visual review.
+- Strategic assessment:
+  - Platform value: high, because the staging copy now has one reusable visual system before payment/video and SEO work begins.
+  - Obsolescence risk: medium if each page stores a full CSS copy; lower after switching to a short CDN snippet tied to the canonical Git CSS.
+  - Stronger architecture: canonical CSS in Git, short page-level Tilda HEAD snippet per copied page, machine verification across the registry.
+  - Reuse: the same rollout pattern can be used for future copied pages and other Tilda projects.
+  - 3-12 month risk if skipped: copied pages would drift visually, and product/payment pages would be tested on inconsistent layouts.
+- Actions:
+  - Tried project-level Tilda HEAD first; it saved in Tilda but did not propagate reliably to already published pages.
+  - Cleared the unused project-level HEAD after deciding against it.
+  - Added a short marked page-level snippet to all `73` `copied_verified` pages.
+  - Snippet loads canonical CSS from:
+    `https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@codex/tilda-api-sync/assets/tilda-radiant-sanctuary.css`.
+  - Re-ran missing pages in verified mode after the first quick pass showed some Tilda saves were not reflected live.
+  - Published staging and ran a live HTTP check across all `73` copied URLs.
+  - Opened one control page in Browser Use:
+    `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva?review-theme=1`.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+  - Updated `docs/tilda-radiant-sanctuary.md`.
+- Verification:
+  - Checked live staging URLs: `73`.
+  - URLs with theme/CDN marker: `73`.
+  - Failed URLs: `0`.
+  - Confirmed forced theme button gradient is absent.
+  - Confirmed forced white button text is absent.
+- Review sample URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva`
+  - `https://carry-pacific-flatfish.tilda.ws/events_tp`
+  - `https://carry-pacific-flatfish.tilda.ws/kurs-ei`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/benefits-of-ei`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_depression`
+- Incident:
+  - Symptom: Tilda project-level HEAD and first publish-all attempt left a subset of pages without the theme in live HTML.
+  - Root cause: project-level HEAD did not reliably propagate to already published pages; quick page HEAD saves also needed editor reload verification, and final publication only completed after using publish-all from the project/search context.
+  - Solution: use page-level marked CDN snippets, verify editor persistence after save for pages that miss live checks, then verify live output across every copied URL.
+  - Follow-up rule: for future Tilda mass rollouts, do not trust editor save or publish-all alone; require registry-driven live URL verification.
+- Boundary:
+  - Production `moonn.ru` was not changed.

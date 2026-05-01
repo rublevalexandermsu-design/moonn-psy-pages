@@ -136,6 +136,35 @@ The page is not considered ready until these checks pass:
   - no longer contains the removed forced theme button gradient.
 - Production `moonn.ru` was not changed.
 
+### 2026-05-01 rollout to copied staging pages
+
+- Applied the `Radiant Sanctuary` theme to all `copied_verified` staging pages from `registry/tilda/moonn-staging-page-map.json`.
+- Scope:
+  - checked copied staging pages: `73`;
+  - live pages with theme after final publication: `73`;
+  - failures after final live check: `0`.
+- Final implementation:
+  - each copied page has a short marked page-level HEAD snippet;
+  - the snippet adds `moonn-radiant-sanctuary` to `<html>`;
+  - the snippet loads the canonical CSS from GitHub CDN:
+    `https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@codex/tilda-api-sync/assets/tilda-radiant-sanctuary.css`.
+- Reason for page-level CDN snippet:
+  - project-level HEAD saved in Tilda but did not reliably appear on already published staging pages;
+  - inserting full CSS into 73 pages would create large duplicated page HEAD blocks;
+  - the CDN snippet keeps each page small and lets future theme changes happen through the canonical Git file.
+- Button regression guard:
+  - final live check confirmed the old forced theme button gradient is absent;
+  - original Tilda button gradients remain page-authored.
+- Production `moonn.ru` was not changed.
+
+Review sample URLs:
+
+- `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva`
+- `https://carry-pacific-flatfish.tilda.ws/events_tp`
+- `https://carry-pacific-flatfish.tilda.ws/kurs-ei`
+- `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/benefits-of-ei`
+- `https://carry-pacific-flatfish.tilda.ws/uslugi_depression`
+
 ## Tilda Editor Note
 
 The page HEAD code editor has both a visible code editor textarea and a hidden `textarea[name="headcode"]`.
