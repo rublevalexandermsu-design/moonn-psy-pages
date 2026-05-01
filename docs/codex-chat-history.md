@@ -42,3 +42,30 @@ Canonical append-only chat history for `moon-psy-site`.
 - Risks:
   - API keys were exposed in chat/screenshot and should be regenerated after the workflow is stable.
   - A direct copy of every page may carry old tests, duplicate pages, and SEO debt into the staging project.
+
+## 2026-05-01T12:22:00+03:00 — Tilda editable staging project created
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: use the corrected Tilda password, enter the cabinet, and set up a Tilda-side staging project so future changes can be tested in Tilda before production.
+- Decisions:
+  - Use Playwright MCP as fallback because Browser Use backend `iab` still fails with missing `codex app-server`.
+  - Create a separate Tilda project instead of changing `Moonn.ru`.
+  - Name the staging project `Moonn Staging`.
+  - Do not bulk-copy pages yet; require a copy scope because the source project has many drafts/tests and Tilda has a new-page limit.
+- Created or changed files:
+  - `docs/tilda-api-staging.md`
+  - `docs/codex-chat-history.md`
+  - local `.env` updated with `TILDA_STAGING_PROJECT_ID`.
+- Verified facts:
+  - Login to Tilda succeeded.
+  - Production project `Moonn.ru` is visible in the account.
+  - Business plan allows 5 sites; 3 were used before creating staging.
+  - Created Tilda project `Moonn Staging`, project id `25075076`.
+- Open questions:
+  - Copy scope: homepage pilot, canonical public pages, or full page copy in batches.
+  - Whether to connect a temporary public staging domain before or after copying the first page.
+- Risks:
+  - Bulk copy can pollute staging with old test pages and may hit Tilda's daily page creation limit.
+  - Production safety rule: duplicate first, move only duplicates, never move original pages.

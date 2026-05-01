@@ -3,6 +3,7 @@
 ## Canon
 
 - Production project in Tilda: `Moonn.ru`, project id `8326812`.
+- Editable staging project in Tilda: `Moonn Staging`, project id `25075076`.
 - Local API credentials are stored only in `.env`; they must not be committed.
 - The Tilda API is read/export-oriented. It is used for local snapshots, registry sync, and audit inputs.
 - Editable project cloning inside Tilda is not available through the documented API.
@@ -49,9 +50,20 @@ http://127.0.0.1:8787/index.html
 
 - API access works.
 - Project `Moonn.ru` was found.
+- Empty Tilda staging project `Moonn Staging` was created with project id `25075076`.
 - Local full-page snapshot exported 131 published pages.
 - Local homepage opened in browser at `http://127.0.0.1:8787/index.html`.
 - Browser reported one JavaScript console error: `Unexpected token 'function'`.
+
+## Next copy gate
+
+Before copying pages into `Moonn Staging`, choose one scope:
+
+- `pilot`: duplicate and move only the production homepage.
+- `canonical`: copy the core public pages only after reviewing `published-pages.json`.
+- `full`: copy all pages in batches; this is not recommended as the first pass because the source project includes drafts, tests, and archive-style pages.
+
+For production safety, never move an original page. Only move duplicated pages into staging.
 
 ## Initial homepage SEO signals
 
