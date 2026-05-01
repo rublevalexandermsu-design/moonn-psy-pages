@@ -5,6 +5,7 @@
   "workstream": "seo-aeo-retrofit",
   "source": "Google Search Console Page indexing, authenticated browser view",
   "property": "https://moonn.ru/",
+  "url_decision_table": "registry/seo/moonn-gsc-url-decision-table.json",
   "summary": {
     "indexed_pages": 29,
     "not_indexed_pages": 116,

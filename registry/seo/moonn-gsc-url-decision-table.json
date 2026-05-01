@@ -1,0 +1,734 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-05-01T21:15:02+03:00",
+  "project": "moon-psy-site",
+  "workstream": "seo-aeo-retrofit",
+  "scope": "GSC URL-level remediation decisions before Tilda production edits",
+  "source": [
+    "Google Search Console Page indexing authenticated view",
+    "registry/seo/moonn-gsc-indexing-diagnostics.json",
+    "https://moonn.ru/sitemap.xml",
+    "live HEAD checks on 2026-05-01"
+  ],
+  "policy": {
+    "production_changes": "not_applied",
+    "staging_first": true,
+    "action_time_confirmation_required_for": [
+      "Tilda production page edits",
+      "Tilda redirect/publication changes",
+      "Google Search Console validation or indexing requests",
+      "Yandex Webmaster/Metrica binding or settings changes"
+    ],
+    "decision_actions": [
+      "fix_link",
+      "301_redirect",
+      "keep_noindex",
+      "open_to_index",
+      "strengthen_seo_content",
+      "monitor_only",
+      "needs_owner_decision"
+    ]
+  },
+  "summary": {
+    "gsc_not_indexed_pages": 116,
+    "gsc_reason_groups": 5,
+    "url_rows_recorded": 31,
+    "priority_rows": {
+      "p0": 2,
+      "p1": 15,
+      "p2": 11,
+      "p3": 3
+    },
+    "first_batch": "404 URLs from GSC, because they include concrete link and redirect defects"
+  },
+  "live_check_2026_05_01": {
+    "confirmed_404_urls": [
+      "https://moonn.ru/http://wa.me/+79777770303",
+      "https://moonn.ru/emotionalnaya-vygoranie",
+      "https://moonn.ru/static.tildacdn.com/",
+      "https://moonn.ru/zaprocy",
+      "https://moonn.ru/bystraya-psihologiya.html",
+      "https://moonn.ru/leksii.html",
+      "https://moonn.ru/kurs-duhovnoy-psihologii.html",
+      "https://moonn.ru/zaprocy.html",
+      "https://moonn.ru/podrostki.html"
+    ],
+    "confirmed_candidate_targets_200": [
+      "https://moonn.ru/vigoranie_article",
+      "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+      "https://moonn.ru/psiholog-konsultacii-moskva",
+      "https://moonn.ru/lectures1",
+      "https://moonn.ru/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "https://moonn.ru/uslugi_podrostki",
+      "https://moonn.ru/page120899276.html",
+      "https://moonn.ru/page120915666.html",
+      "https://moonn.ru/page120920636.html",
+      "https://moonn.ru/page120929166.html",
+      "https://moonn.ru/page120952796.html"
+    ]
+  },
+  "rows": [
+    {
+      "id": "GSC-404-001",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/http://wa.me/+79777770303",
+      "live_status": 404,
+      "priority": "P0",
+      "decision": "fix_link",
+      "secondary_decision": "301_redirect",
+      "target_url": "https://wa.me/79777770303",
+      "target_type": "external_whatsapp",
+      "rationale": "The URL is an external WhatsApp link accidentally wrapped as an internal moonn.ru path. This is a real user-flow defect and an SEO crawl waste.",
+      "implementation_plan": [
+        "Find the button/link in Tilda that contains `http://wa.me/+79777770303` without a proper external URL setting.",
+        "Replace it with `https://wa.me/79777770303` or the approved current WhatsApp link.",
+        "Add a 301 redirect from `/http://wa.me/+79777770303` to the correct external/contact destination if Tilda supports it; otherwise make sure the broken internal link disappears from all pages.",
+        "After publication, re-run live crawl and then validate the GSC 404 group."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-002",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/static.tildacdn.com/",
+      "live_status": 404,
+      "priority": "P0",
+      "decision": "fix_link",
+      "secondary_decision": "keep_noindex",
+      "target_url": null,
+      "target_type": "malformed_asset_host",
+      "rationale": "This is likely a malformed asset reference where `static.tildacdn.com` was written as a relative/internal URL. It should not be an indexable site page.",
+      "implementation_plan": [
+        "Search Tilda page HTML/links for `moonn.ru/static.tildacdn.com` or bare `static.tildacdn.com` used without protocol.",
+        "Replace asset references with full `https://static.tildacdn.com/...` URLs where needed.",
+        "Do not create an SEO page for this path.",
+        "Keep this path out of sitemap and index."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-003",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/emotionalnaya-vygoranie",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/vigoranie_article",
+      "alternate_target_url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+      "target_type": "public_article_or_knowledge_base",
+      "rationale": "The old Russian-transliterated burnout URL has search intent. There are live 200 pages about burnout, so this should not remain 404.",
+      "implementation_plan": [
+        "Map the legacy path `/emotionalnaya-vygoranie` to the most relevant canonical burnout page.",
+        "Preferred first target: `/vigoranie_article` if it is the main public article on burnout.",
+        "Alternative target: `/emotional-intelligence/knowledge-base/burnout` if the EI knowledge-base page becomes the canonical evergreen page.",
+        "Improve the selected target with unique title, description, H1, internal links and Article/FAQ schema before asking GSC to reprocess."
+      ],
+      "needs_owner_decision": true,
+      "owner_question": "Which page should become the canonical burnout page: `/vigoranie_article` or `/emotional-intelligence/knowledge-base/burnout`?",
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-004",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/zaprocy",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/page120952796.html",
+      "alternate_target_url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "target_type": "consultation_search_intent",
+      "rationale": "The path means `requests/problems psychologist works with`. A matching live Tilda page exists as page120952796.html, but it has a weak technical URL. This should be normalized.",
+      "implementation_plan": [
+        "Decide whether `/zaprocy` should become a public canonical alias for the page `С какими запросами работает психолог`.",
+        "If yes, set/keep a clean alias and redirect `/zaprocy.html` to `/zaprocy`.",
+        "If not, redirect both `/zaprocy` and `/zaprocy.html` to `/psiholog-konsultacii-moskva`.",
+        "Add internal links from consultation and services pages if the page stays indexable."
+      ],
+      "needs_owner_decision": true,
+      "owner_question": "Keep a separate public page for `с какими запросами работает психолог`, or fold it into the main consultation page?",
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-005",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/zaprocy.html",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/page120952796.html",
+      "alternate_target_url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "target_type": "legacy_html_duplicate",
+      "rationale": "This is the .html version of the same legacy search-intent page and should be consolidated with the canonical URL.",
+      "implementation_plan": [
+        "Apply the same canonical decision as `/zaprocy`.",
+        "Use one redirect chain only: `/zaprocy.html` -> final canonical URL.",
+        "Avoid leaving both `/zaprocy` and `/page120952796.html` as competing indexable pages."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-006",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/bystraya-psihologiya.html",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/page120899276.html",
+      "alternate_target_url": "https://moonn.ru/",
+      "target_type": "method_or_brand_page",
+      "rationale": "A live page exists for `Быстрая психология — метод Татьяны Мунн`, but it is exposed as a page*.html URL. The legacy clean name should redirect to a clean canonical method page.",
+      "implementation_plan": [
+        "Set a clean alias such as `/bystraya-psihologiya` for the method page, if this page is meant to rank.",
+        "Redirect `/bystraya-psihologiya.html` to the clean alias.",
+        "If the method page is not ready, temporarily redirect to homepage or consultation page, but do not leave 404.",
+        "Add Person/Service schema references to connect the method with Tatyana Munn/Kumskova."
+      ],
+      "needs_owner_decision": true,
+      "owner_question": "Should `Быстрая психология` be a separate SEO method page or a section of the homepage/consultation page?",
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-007",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/leksii.html",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/lectures1",
+      "alternate_target_url": "https://moonn.ru/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "target_type": "lectures_events",
+      "rationale": "The old lectures URL should consolidate into the current lecture/speaker/event page rather than remain 404.",
+      "implementation_plan": [
+        "Choose canonical lecture hub: `/lectures1` for lecture catalog, or `/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn` for speaker/event landing.",
+        "Redirect `/leksii.html` to that canonical page.",
+        "Ensure the selected page has unique metadata around `лекции Татьяны Мунн`, `психолог МГУ`, `эмоциональный интеллект`."
+      ],
+      "needs_owner_decision": true,
+      "owner_question": "Which page is the canonical lecture hub: `/lectures1` or `/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn`?",
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-008",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/kurs-duhovnoy-psihologii.html",
+      "live_status": 404,
+      "priority": "P2",
+      "decision": "301_redirect",
+      "secondary_decision": "needs_owner_decision",
+      "target_url": "https://moonn.ru/page120915666.html",
+      "alternate_target_url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "target_type": "course_or_retired_product",
+      "rationale": "A live page with a matching course title exists as a page*.html URL. It should either be productized with a clean URL or retired into the paid-products hub.",
+      "implementation_plan": [
+        "Confirm whether the spiritual psychology course is an active product, archived product, or test page.",
+        "If active: assign a clean alias, unique metadata, product/course schema and redirect the old .html URL.",
+        "If archived/test: redirect to the paid-products hub or mark noindex/remove from sitemap.",
+        "Do not optimize it as active until the business status is confirmed."
+      ],
+      "needs_owner_decision": true,
+      "owner_question": "Is `Курс по духовной психологии` an active paid product or an old/test page?",
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-404-009",
+      "gsc_reason": "Not found (404)",
+      "url": "https://moonn.ru/podrostki.html",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/uslugi_podrostki",
+      "alternate_target_url": "https://moonn.ru/page120929166.html",
+      "target_type": "consultation_service",
+      "rationale": "Teen psychology has commercial/search value and a live service target. The old .html path should be redirected to the canonical service page.",
+      "implementation_plan": [
+        "Use `/uslugi_podrostki` as the likely canonical service page if it is the strongest current page.",
+        "Redirect `/podrostki.html` to the selected canonical page.",
+        "If `/page120929166.html` is a stronger landing, give it a clean alias and avoid duplicate competition with `/uslugi_podrostki`.",
+        "Improve service metadata and internal links before GSC validation."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-ROBOTS-001",
+      "gsc_reason": "Blocked by robots.txt",
+      "url": "https://moonn.ru/psiholog",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "needs_owner_decision",
+      "secondary_decision": "301_redirect_or_open_to_index",
+      "target_url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "target_type": "legacy_or_active_landing",
+      "rationale": "The page is live but blocked by `Disallow: /psiholog`. It may be a duplicate landing. Blocking alone leaves a confusing live page state.",
+      "implementation_plan": [
+        "Compare `/psiholog` with `/psiholog-konsultacii-moskva` and homepage.",
+        "If duplicate: redirect `/psiholog` to the main consultation page.",
+        "If active and unique: narrow robots.txt and open it to index with unique metadata/canonical.",
+        "Do not globally remove the robots rule until all `/psiholog*` paths are classified."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-ROBOTS-002",
+      "gsc_reason": "Blocked by robots.txt",
+      "url": "https://moonn.ru/psiholog-moskva-online",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "needs_owner_decision",
+      "secondary_decision": "301_redirect_or_open_to_index",
+      "target_url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "target_type": "legacy_or_active_landing",
+      "rationale": "`Disallow: /psiholog` also blocks this more specific landing because robots patterns are prefix-based. This may be accidental overblocking.",
+      "implementation_plan": [
+        "Inspect whether this page has unique content/search intent or is a duplicate/test page.",
+        "If duplicate: redirect to `/psiholog-konsultacii-moskva`.",
+        "If active: remove/narrow the broad robots prefix and ensure the page has unique canonical metadata.",
+        "Keep staging checks before production robots changes."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CANONICAL-001",
+      "gsc_reason": "Alternate page with proper canonical tag",
+      "url": "https://moonn.ru/?ysclid=m6xfh8ksf6316418997",
+      "live_status": "not_rechecked",
+      "priority": "P3",
+      "decision": "monitor_only",
+      "secondary_decision": null,
+      "target_url": "https://moonn.ru/",
+      "target_type": "tracking_parameter",
+      "rationale": "Yandex click-id parameters are expected alternate URLs if the canonical points to the clean homepage.",
+      "implementation_plan": [
+        "Do not try to index parameter URLs.",
+        "Keep canonical to homepage.",
+        "Monitor only unless GSC starts showing canonical conflicts."
+      ],
+      "needs_owner_decision": false,
+      "status": "monitoring"
+    },
+    {
+      "id": "GSC-CANONICAL-002",
+      "gsc_reason": "Alternate page with proper canonical tag",
+      "url": "https://moonn.ru/page35668815.html",
+      "live_status": "not_rechecked",
+      "priority": "P2",
+      "decision": "301_redirect",
+      "secondary_decision": "monitor_only",
+      "target_url": "https://moonn.ru/events",
+      "target_type": "legacy_tilda_page",
+      "rationale": "A page*.html URL is a technical Tilda path. Even if canonical is correct, redirecting public legacy page URLs reduces duplicate crawl noise.",
+      "implementation_plan": [
+        "Verify the exact current page represented by page35668815.html.",
+        "If it corresponds to events, redirect to `/events`.",
+        "If not, map it to the matching clean alias.",
+        "Do not prioritize above 404 and robots issues."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-001",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/20251201",
+      "live_status": 200,
+      "priority": "P2",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/20251201",
+      "target_type": "future_event_or_news",
+      "rationale": "This appears to be a public future/date event page. It can support entity SEO if it has event/news schema and links from the event hub.",
+      "implementation_plan": [
+        "Confirm the event is public and should be found in search.",
+        "Add Event/NewsArticle schema, clear date, place, speaker and organization fields.",
+        "Link from `/events`, `/speaker`, and relevant news/lecture hubs.",
+        "If it was only a test, set noindex and remove from sitemap."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-002",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/20251213",
+      "live_status": 200,
+      "priority": "P2",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/20251213",
+      "target_type": "future_event_or_news",
+      "rationale": "Likely a dated public event page. It should either become a structured event/news page or be kept out of the index if it is a draft.",
+      "implementation_plan": [
+        "Classify as public event, archive, or test.",
+        "For public event: add Event schema and internal links.",
+        "For test/draft: noindex/remove from sitemap."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-003",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/20251216",
+      "live_status": 200,
+      "priority": "P2",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/20251216",
+      "target_type": "future_event_or_news",
+      "rationale": "Likely a dated conference/publication page. It can strengthen author/entity SEO if structured correctly.",
+      "implementation_plan": [
+        "Classify as public event, archive, or test.",
+        "For public event: add Event/NewsArticle schema and internal links.",
+        "For test/draft: noindex/remove from sitemap."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-004",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/about_gaslight",
+      "live_status": "not_rechecked",
+      "priority": "P2",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/abuse_gaslight",
+      "target_type": "article_topic_duplicate",
+      "rationale": "The sitemap already has `/abuse_gaslight`, so `/about_gaslight` looks like a duplicate/old topic URL.",
+      "implementation_plan": [
+        "Verify whether `/about_gaslight` exists in Tilda or external links.",
+        "If duplicate, redirect to `/abuse_gaslight`.",
+        "If unique, merge content or assign a clear canonical to avoid two gaslighting pages competing."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-005",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/aromatherapy",
+      "live_status": 200,
+      "priority": "P2",
+      "decision": "needs_owner_decision",
+      "secondary_decision": "keep_noindex_or_strengthen_seo_content",
+      "target_url": "https://moonn.ru/aromatherapy",
+      "target_type": "non_core_article",
+      "rationale": "This page is live and in sitemap but may be outside the core psychology/EI/service positioning. It should not be optimized unless it supports the site strategy.",
+      "implementation_plan": [
+        "Decide whether aromatherapy belongs to the public expert cluster.",
+        "If yes: improve title/description/H1 and link it from a relevant article hub.",
+        "If no: set noindex or remove from sitemap to avoid diluting topical authority."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-006",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/article_gadget_addiction",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/article_gadget_addiction",
+      "target_type": "public_article",
+      "rationale": "Teen gadget addiction is relevant to consultations, adolescents and psychology content. This page should be strengthened rather than ignored.",
+      "implementation_plan": [
+        "Add unique SEO metadata and Article/FAQ schema.",
+        "Link from adolescent consultation pages and knowledge base.",
+        "Add image alt and author/entity references to Tatyana Munn/Kumskova."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-007",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/article_toxic_job",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/article_toxic_job",
+      "target_type": "public_article",
+      "rationale": "Toxic work content supports consultations, workplace conflict pages and emotional intelligence positioning.",
+      "implementation_plan": [
+        "Add unique SEO metadata and Article/FAQ schema.",
+        "Link from workplace conflict/service pages and EI article hub.",
+        "Connect to author/entity schema."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-008",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/articles/eq-iq-rukovoditely",
+      "live_status": "not_rechecked",
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/articles/eq-dlya-rukovoditeley",
+      "target_type": "article_slug_duplicate",
+      "rationale": "The sitemap contains `/articles/eq-dlya-rukovoditeley`; the GSC URL looks like an alternate/old slug for the same leadership EI topic.",
+      "implementation_plan": [
+        "Verify that both slugs refer to the same topic.",
+        "Redirect the old slug to `/articles/eq-dlya-rukovoditeley`.",
+        "Improve the target page for leadership/EI search intent."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-009",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "target_type": "knowledge_hub",
+      "rationale": "This is one of the four strategic site blocks and should be indexable as a hub if it is public.",
+      "implementation_plan": [
+        "Strengthen as a hub with unique title/description/H1.",
+        "Add internal links to EI article and knowledge-base clusters.",
+        "Add BreadcrumbList and ItemList schema for hub structure."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-DISCOVERED-010",
+      "gsc_reason": "Discovered - currently not indexed",
+      "url": "https://moonn.ru/cta",
+      "live_status": "not_rechecked",
+      "priority": "P2",
+      "decision": "keep_noindex",
+      "secondary_decision": "remove_from_sitemap",
+      "target_url": null,
+      "target_type": "utility_or_test_page",
+      "rationale": "`/cta` sounds like a utility call-to-action page, not a search landing. It should not be indexed unless it is a real public page.",
+      "implementation_plan": [
+        "Verify page purpose in Tilda.",
+        "If utility/test: set noindex and remove from sitemap.",
+        "If public landing: rename, add unique metadata and link from hubs."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-001",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/emotional-intelligence/articles",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/emotional-intelligence/articles",
+      "target_type": "article_hub",
+      "rationale": "Google crawled the article hub but did not index it. As a strategic EI hub, it needs stronger uniqueness, internal links and structured data.",
+      "implementation_plan": [
+        "Add unique title/description/H1 and intro copy around emotional intelligence articles.",
+        "Add ItemList schema listing the child articles.",
+        "Link to/from the main EI hub and knowledge-base hub."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-002",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/emotional-intelligence/articles/why-it-matters",
+      "live_status": 404,
+      "priority": "P1",
+      "decision": "301_redirect",
+      "secondary_decision": "strengthen_seo_content",
+      "target_url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
+      "target_type": "old_article_slug",
+      "rationale": "A matching sitemap URL exists as `/why-ei-matters`; the GSC URL is a broken old slug.",
+      "implementation_plan": [
+        "Redirect `/emotional-intelligence/articles/why-it-matters` to `/emotional-intelligence/articles/why-ei-matters`.",
+        "Check internal links that may still point to the old slug.",
+        "Improve the canonical target page metadata and internal linking."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-003",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/semeyniy_psiholog",
+      "live_status": 200,
+      "priority": "P1",
+      "decision": "strengthen_seo_content",
+      "secondary_decision": "open_to_index",
+      "target_url": "https://moonn.ru/semeyniy_psiholog",
+      "target_type": "consultation_service_article",
+      "rationale": "Family psychologist search intent is commercially relevant. This should be strengthened or consolidated with service pages.",
+      "implementation_plan": [
+        "Check whether this duplicates `/uslugi_sohranit_brak`, `/uslugi_razvod`, or consultation hub pages.",
+        "If unique: add service-focused metadata and links.",
+        "If duplicate: redirect to the strongest canonical family consultation page."
+      ],
+      "needs_owner_decision": false,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-004",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/water",
+      "live_status": 200,
+      "priority": "P2",
+      "decision": "needs_owner_decision",
+      "secondary_decision": "keep_noindex_or_strengthen_seo_content",
+      "target_url": "https://moonn.ru/water",
+      "target_type": "non_core_article",
+      "rationale": "The page is live but may be outside the core psychology/EI topical map. Google crawled but did not index it, which may be appropriate.",
+      "implementation_plan": [
+        "Decide whether this supports the expert content strategy.",
+        "If non-core: noindex/remove from sitemap.",
+        "If core: rewrite around psychological/behavioral relevance and link from a suitable hub."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-005",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/page44548639.html",
+      "live_status": "not_rechecked",
+      "priority": "P2",
+      "decision": "301_redirect",
+      "secondary_decision": "needs_owner_decision",
+      "target_url": null,
+      "target_type": "legacy_tilda_page",
+      "rationale": "A page*.html URL is a technical Tilda legacy path. It should be mapped to a clean alias or noindexed/removed if test content.",
+      "implementation_plan": [
+        "Identify the page title in Tilda.",
+        "If it has public value, assign a clean alias and redirect the page*.html URL.",
+        "If it is test/private, noindex/remove from sitemap."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-006",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/pplsay",
+      "live_status": "not_rechecked",
+      "priority": "P2",
+      "decision": "needs_owner_decision",
+      "secondary_decision": "301_redirect_or_keep_noindex",
+      "target_url": "https://moonn.ru/otzivi",
+      "target_type": "reviews_or_legacy_page",
+      "rationale": "The slug suggests testimonials/reviews. If it duplicates `/otzivi`, consolidate to one reviews page.",
+      "implementation_plan": [
+        "Verify page content.",
+        "If duplicate testimonials: redirect to `/otzivi`.",
+        "If separate public proof page: optimize and link from homepage/contact/service pages.",
+        "If test: noindex/remove."
+      ],
+      "needs_owner_decision": true,
+      "status": "planned_not_applied"
+    },
+    {
+      "id": "GSC-CRAWLED-007",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/tpost/...",
+      "live_status": "not_rechecked",
+      "priority": "P3",
+      "decision": "301_redirect",
+      "secondary_decision": "monitor_only",
+      "target_url": null,
+      "target_type": "tilda_posts_duplicate",
+      "rationale": "Tilda tpost URLs are often duplicate post URLs. They should not compete with canonical site pages.",
+      "implementation_plan": [
+        "Export the exact tpost URLs from GSC.",
+        "Map each to the matching article/page canonical.",
+        "Redirect or canonicalize; keep AMP/tpost variants out of the sitemap."
+      ],
+      "needs_owner_decision": false,
+      "status": "pending_full_gsc_export"
+    },
+    {
+      "id": "GSC-CRAWLED-008",
+      "gsc_reason": "Crawled - currently not indexed",
+      "url": "https://moonn.ru/tpost/...amp=true",
+      "live_status": "not_rechecked",
+      "priority": "P3",
+      "decision": "monitor_only",
+      "secondary_decision": "301_redirect_or_canonical",
+      "target_url": null,
+      "target_type": "amp_duplicate",
+      "rationale": "AMP parameter variants are usually not canonical pages. They should consolidate to canonical article URLs.",
+      "implementation_plan": [
+        "Export exact AMP URLs.",
+        "Verify canonical tags.",
+        "Avoid optimizing AMP variants directly."
+      ],
+      "needs_owner_decision": false,
+      "status": "pending_full_gsc_export"
+    }
+  ],
+  "next_execution_batches": [
+    {
+      "batch": "B1",
+      "name": "404 technical fixes and redirect map",
+      "rows": [
+        "GSC-404-001",
+        "GSC-404-002",
+        "GSC-404-003",
+        "GSC-404-004",
+        "GSC-404-005",
+        "GSC-404-006",
+        "GSC-404-007",
+        "GSC-404-008",
+        "GSC-404-009"
+      ],
+      "requires_tilda_production_confirmation": true
+    },
+    {
+      "batch": "B2",
+      "name": "Robots /psiholog prefix decision",
+      "rows": [
+        "GSC-ROBOTS-001",
+        "GSC-ROBOTS-002"
+      ],
+      "requires_owner_classification": true
+    },
+    {
+      "batch": "B3",
+      "name": "Public hubs and articles to strengthen",
+      "rows": [
+        "GSC-DISCOVERED-006",
+        "GSC-DISCOVERED-007",
+        "GSC-DISCOVERED-009",
+        "GSC-CRAWLED-001",
+        "GSC-CRAWLED-003"
+      ],
+      "requires_staging_seo_edit_first": true
+    },
+    {
+      "batch": "B4",
+      "name": "Potential test/non-core pages",
+      "rows": [
+        "GSC-DISCOVERED-005",
+        "GSC-DISCOVERED-010",
+        "GSC-CRAWLED-004"
+      ],
+      "requires_owner_classification": true
+    }
+  ]
+}

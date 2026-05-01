@@ -86,6 +86,7 @@
         "Validated pages are submitted for recrawl."
       ],
       "diagnostic_registry": "registry/seo/moonn-gsc-indexing-diagnostics.json",
+      "url_decision_table": "registry/seo/moonn-gsc-url-decision-table.json",
       "reason_groups": [
         {"reason": "Not found (404)", "count": 9, "action": "fix_or_redirect"},
         {"reason": "Blocked by robots.txt", "count": 2, "action": "decide_redirect_or_unblock"},

@@ -793,6 +793,38 @@ Canonical append-only chat history for `moon-psy-site`.
   - Production `moonn.ru` was not changed.
 
 
+## 2026-05-01T21:15:02+03:00 — GSC URL decision table created for Moonn SEO fixes
+
+- Project: `moon-psy-site`.
+- Workstream: `seo-aeo-retrofit` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: start from Google Search Console reasons and create a URL-level decision table that says what to fix, redirect, keep noindex, open to index, or strengthen.
+- Strategic assessment:
+  - Platform value: high, because GSC exclusions are now routed through a reusable decision registry instead of ad hoc page edits.
+  - Obsolescence risk: low if the registry is refreshed from GSC exports before bulk edits.
+  - Stronger architecture: GSC reason -> URL decision -> staging check -> production confirmation -> live check -> GSC validation.
+  - Reuse: the same registry format can be reused for other Tilda projects and future SEO batches.
+  - 3-12 month risk if skipped: old Tilda URLs, test pages, malformed external links and weak hubs would remain mixed together, making SEO work noisy and unsafe.
+- Actions:
+  - Confirmed all nine visible GSC 404 sample URLs still return `404`.
+  - Confirmed candidate replacement URLs return `200`.
+  - Created `registry/seo/moonn-gsc-url-decision-table.json`.
+  - Created human-readable table `docs/seo/moonn-gsc-url-decision-table.md`.
+  - Linked the decision table from `registry/seo/moonn-gsc-indexing-diagnostics.json` and `registry/seo/moonn-seo-remediation-backlog.json`.
+- Key decisions:
+  - Fix malformed WhatsApp and Tilda CDN links before content SEO.
+  - Redirect old `.html` URLs to canonical clean pages instead of leaving crawl 404s.
+  - Do not optimize utility/test/non-core pages until they are classified.
+  - Do not change production Tilda or submit GSC validation until link/redirect fixes are live.
+- Open questions:
+  - Which page is canonical for burnout: `/vigoranie_article` or `/emotional-intelligence/knowledge-base/burnout`.
+  - Whether `/zaprocy` should become a public canonical page or redirect into consultation hub.
+  - Whether `Курс по духовной психологии` is an active paid product or an old/test page.
+  - Whether `/psiholog` and `/psiholog-moskva-online` are active SEO landings or legacy duplicates.
+- Boundary:
+  - Production `moonn.ru`, Tilda redirects, Google Search Console and Yandex settings were not changed.
+
+
 ## 2026-05-01T19:25:00+03:00 — Homepage SEO/AEO pilot manifest for Moonn staging
 
 - Project: `moon-psy-site`.
