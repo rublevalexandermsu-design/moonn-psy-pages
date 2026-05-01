@@ -208,7 +208,21 @@
       "property": "https://moonn.ru/",
       "visible_status": "registered",
       "visible_clicks": 221,
-      "visible_period_from_chart": "2026-01-29 to approximately 2026-04-28",
+      "visible_impressions": 12400,
+      "visible_ctr_percent": 1.8,
+      "visible_average_position": 6.9,
+      "visible_period_from_chart": "last 3 months",
+      "visible_top_query_samples": [
+        "татьяна мунн",
+        "дневник эмоций как вести",
+        "дневник эмоций",
+        "moonn"
+      ],
+      "page_indexing_visible": {
+        "indexed_pages": 29,
+        "not_indexed_pages": 116,
+        "not_indexed_reason_count": 5
+      },
       "next_reports_to_open": [
         "Performance full report",
         "Pages indexing",
@@ -234,7 +248,60 @@
         "Search queries",
         "Indexing pages",
         "Sitemap files"
-      ]
+      ],
+      "dashboard_popular_queries": [
+        {
+          "query": "татьяна мунн психолог",
+          "impressions": 59,
+          "clicks": 24
+        },
+        {
+          "query": "татьяна мунн",
+          "impressions": 39,
+          "clicks": 20
+        },
+        {
+          "query": "татьяна мунн психолог отзывы",
+          "impressions": 13,
+          "clicks": 6
+        },
+        {
+          "query": "татьяна мун",
+          "impressions": 5,
+          "clicks": 3
+        },
+        {
+          "query": "татьяна мунн лекции",
+          "impressions": 5,
+          "clicks": 3
+        },
+        {
+          "query": "татьяна кумскова мунн отзывы",
+          "impressions": 3,
+          "clicks": 2
+        },
+        {
+          "query": "расставьте в правильной последователь...",
+          "impressions": 1,
+          "clicks": 2
+        },
+        {
+          "query": "спикеры по эмоциональному интелли...",
+          "impressions": 1,
+          "clicks": 2
+        },
+        {
+          "query": "городская психологическая програм...",
+          "impressions": 1,
+          "clicks": 2
+        },
+        {
+          "query": "мун татьяна вильямовна",
+          "impressions": 2,
+          "clicks": 2
+        }
+      ],
+      "query_interpretation": "The visible Yandex Webmaster dashboard is dominated by branded queries and confirms an active `Мунн`/`Кумскова` entity-bridge search pattern."
     },
     "yandex_metrica": {
       "visible_status": "registered",
@@ -264,6 +331,12 @@
       "decision_needed": "Keep 96397286 as the canonical moonn.ru counter unless a later Tilda/Metrica audit contradicts the live HTML check.",
       "canonical_counter": "96397286",
       "canonical_counter_evidence": "Live https://moonn.ru/ HTML contains Yandex Metrica id 96397286.",
+      "canonical_counter_visible_week": {
+        "period": "2026-04-25 to 2026-05-01",
+        "visits": 1,
+        "views": 1,
+        "visitors": 1
+      },
       "legacy_or_auxiliary_counter_candidates": [
         "90988994",
         "96319807"

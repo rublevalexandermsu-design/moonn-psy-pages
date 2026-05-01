@@ -895,12 +895,16 @@ Canonical append-only chat history for `moon-psy-site`.
 - Request: user opened registered Google Search Console, Yandex Webmaster, and Yandex Metrica pages and provided screenshots for `moonn.ru`.
 - Verified facts from screenshots:
   - Google Search Console property `https://moonn.ru/` is registered.
-  - GSC overview shows `221 total web search clicks` for the visible chart period from 2026-01-29 to approximately late April 2026.
+  - GSC Performance last 3 months shows 221 clicks, 12.4K impressions, 1.8% average CTR, and 6.9 average position.
+  - GSC visible query samples include `татьяна мунн`, `дневник эмоций как вести`, `дневник эмоций`, and `moonn`.
+  - GSC Page indexing shows 29 indexed pages, 116 not indexed pages, and 5 not-indexed reason groups.
   - Yandex Webmaster host `https://moonn.ru` is registered.
   - Yandex Webmaster diagnostics show 0 errors and 1 recommendation.
   - Yandex Webmaster shows 9 duplicate titles and 35 duplicate descriptions.
   - Yandex Webmaster recommends binding a Metrica counter to the site.
+  - Yandex Webmaster dashboard popular query sample: `татьяна мунн психолог` 59 impressions / 24 clicks; `татьяна мунн` 39 / 20; `татьяна мунн психолог отзывы` 13 / 6; `татьяна мунн лекции` 5 / 3; `татьяна кумскова мунн отзывы` 3 / 2.
   - Yandex Metrica shows three counters: `90988994` for Yandex Business, `96397286` for `www.moonn.ru`, and `96319807` for `www.moonn.ru`.
+  - Canonical Metrica counter `96397286` overview for 2026-04-25 to 2026-05-01 shows 1 visit, 1 view, and 1 visitor.
 - Decision:
   - Do not delete or modify counters yet.
   - Live HTML confirms Yandex Metrica counter `96397286` is installed on `https://moonn.ru/`; use it as the canonical site counter unless a later Tilda/Metrica audit contradicts this.

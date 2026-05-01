@@ -172,21 +172,37 @@ Exports needed:
 From the user-provided authenticated screenshots on 2026-05-01:
 
 - Google Search Console is registered for `https://moonn.ru/`.
-- Google Search Console overview shows `221 total web search clicks` for the visible chart period from 2026-01-29 to approximately late April 2026.
+- Google Search Console Performance for the last 3 months shows:
+  - 221 total clicks.
+  - 12.4K total impressions.
+  - 1.8% average CTR.
+  - 6.9 average position.
+- Google Search Console visible top query samples include `татьяна мунн`, `дневник эмоций как вести`, `дневник эмоций`, and `moonn`.
+- Google Search Console Page indexing shows 29 indexed pages and 116 not indexed pages across 5 reason groups.
 - Yandex Webmaster is registered for `https://moonn.ru`.
 - Yandex Webmaster diagnostics show `0 errors` and `1 recommendation`.
 - Yandex Webmaster shows `9 duplicating title` and `35 duplicating description`.
 - Yandex Webmaster recommends binding Yandex Metrica to the site, so the search robot receives signals about new pages.
+- Yandex Webmaster dashboard visible popular queries:
+  - `татьяна мунн психолог`: 59 impressions, 24 clicks.
+  - `татьяна мунн`: 39 impressions, 20 clicks.
+  - `татьяна мунн психолог отзывы`: 13 impressions, 6 clicks.
+  - `татьяна мунн лекции`: 5 impressions, 3 clicks.
+  - `татьяна кумскова мунн отзывы`: 3 impressions, 2 clicks.
+  - Small visible long-tail includes emotional-intelligence/speaker and misspelled-name variants.
 - Yandex Metrica shows three counters:
   - `90988994`, Yandex Business source, goal `Клик на позвонить`, visible week visits `0`.
   - `96397286`, `www.moonn.ru`, goal `Автоцель: отправка формы`, visible week visits `1`.
   - `96319807`, `www.moonn.ru`, goal `Автоцель: поиск по сайту`, visible week visits `0`.
+- Canonical Metrica counter `96397286` overview for 2026-04-25 to 2026-05-01 shows 1 visit, 1 view, 1 visitor.
 
 Immediate interpretation:
 
 - The canonical analytics counter for `moonn.ru` is `96397286`; live HTML contains this Yandex Metrica id.
 - Duplicate title/description problems are already confirmed in Yandex and should become the first mass SEO repair after the homepage pilot.
 - Yandex Webmaster should be connected to the chosen Metrica counter; do not delete or change counters until the canonical counter is verified.
+- Entity linking is confirmed by real search behavior: users search both `Татьяна Мунн` and `Татьяна Кумскова/Мунн` variants.
+- Google indexation is currently thin relative to the copied/published page volume: only 29 indexed pages are visible in GSC, while 116 pages are not indexed. The next SEO work must diagnose the 5 exclusion reason groups before mass publishing more pages.
 
 Next reports to open:
 
