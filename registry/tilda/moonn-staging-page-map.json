@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T14:32:00+03:00",
+  "updated_at": "2026-05-01T15:05:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 27,
-  "pending_pages": 104,
+  "copied_pages": 30,
+  "pending_pages": 101,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -1187,13 +1187,14 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "98329166",
-      "staging_page_id": null,
+      "staging_page_id": "138676856",
       "title": "онлайн-тренинг \"Среда Трансформации\" стартует 31 декабря 2025 года. Автор и ведущий психолог Татьяна Мунн",
       "alias": "st2",
       "sort": 1030,
       "published": "1764141282",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/st2",
+      "verified_at": "2026-05-01T15:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
@@ -1451,25 +1452,27 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "69732653",
-      "staging_page_id": null,
+      "staging_page_id": "138676976",
       "title": "онлайн-тренинг \"Среда Трансформации\". психолог Татьяна Мунн",
       "alias": "st1",
       "sort": 1550,
       "published": "1753871636",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/st1",
+      "verified_at": "2026-05-01T15:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "57927493",
-      "staging_page_id": null,
+      "staging_page_id": "138677186",
       "title": "Обучение методу Быстрая Психология 3 дня - 29.11 - 01.12.2024, г. Москва",
       "alias": "seminar555",
       "sort": 1560,
       "published": "1732182151",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/seminar555",
+      "verified_at": "2026-05-01T15:05:00+03:00"
     },
     {
       "source_project_id": "8326812",

@@ -345,3 +345,40 @@ Canonical append-only chat history for `moon-psy-site`.
 - Follow-up implementation note:
   - Next batches should filter pending pages by `published`/live availability before opening the Tilda UI.
   - The registry can keep skipped pages as non-copy candidates instead of treating them as missing staging work.
+
+
+## 2026-05-01T15:05:00+03:00 — Tilda paid/course pages copied to staging
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying priority pages, using the new rule to copy only source pages that are published and accessible.
+- Strategic assessment:
+  - Platform value: high, because paid/course pages are part of the conversion branch that must be safely editable in staging.
+  - Obsolescence risk: medium while the source pages contain date-specific offers; staging copy still preserves the public production baseline before edits.
+  - Stronger architecture: use the eligibility gate first (`published` + live source URL 200), then duplicate/move/publish/verify.
+  - Reuse: this paid-product copy flow should become the standard for future product, course, event, and grant landing pages.
+  - 3-12 month risk if skipped: product edits may be tested on incomplete pages or accidentally applied to production without a safe mirror.
+- Eligibility check:
+  - `https://moonn.ru/st2` returned `200`.
+  - `https://moonn.ru/st1` returned `200`.
+  - `https://moonn.ru/seminar555` returned `200`.
+  - Pages with empty alias or obvious test wording were not copied in this batch.
+- Actions:
+  - Copied and normalized three paid/course pages:
+    - `98329166` -> `138676856`, alias `st2`.
+    - `69732653` -> `138676976`, alias `st1`.
+    - `57927493` -> `138677186`, alias `seminar555`.
+  - Published all pages in `Moonn Staging` and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/st2`
+  - `https://carry-pacific-flatfish.tilda.ws/st1`
+  - `https://carry-pacific-flatfish.tilda.ws/seminar555`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 30.
+  - Pending staging pages: 101.
+- Follow-up priority:
+  - Continue with other published/accessibly live paid-product, consultation, event, and high-value SEO pages.
+  - Keep skipping inaccessible, unpublished, empty-alias/test-looking pages unless the user explicitly confirms they are part of the public copy scope.
