@@ -828,6 +828,37 @@ Canonical append-only chat history for `moon-psy-site`.
   - No mass Tilda page HEAD update was performed during this audit entry because that would publish public staging-page changes and requires action-time confirmation.
 
 
+## 2026-05-01T19:39:57+03:00 — All copied Tilda pages pinned to verified CSS and republished
+
+- Project: `moon-psy-site`.
+- Workstream: `staging-design-system` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: after confirmation, fix the same card/text-column regression on all copied staging pages.
+- Actions:
+  - Updated page-level HEAD snippets for all `73` `copied_verified` staging pages to use the verified pinned CSS:
+    `https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@102fb3d/assets/tilda-radiant-sanctuary.css`.
+  - Recovered from a mid-run Tilda login reset and retried the five missed pages:
+    `psychoanalys`, `geshtalt`, `schematherapy`, `uslugi_fin_blocks`, `uslugi_podrostki`.
+  - Published all pages in `Moonn Staging`.
+- Verification:
+  - Live pages checked: `73`.
+  - Pages loading pinned CSS `@102fb3d`: `73`.
+  - Pages still loading branch CSS `@codex/tilda-api-sync`: `0`.
+  - Browser card/grid audit completed: `73`.
+  - Real card/grid regressions after final audit: `0`.
+  - One final warning on `/emotional-intelligence/` was reviewed as a false positive: the `t686` block has native `overflow:hidden` and matching 1200px/560px geometry on production.
+- Incident/process note:
+  - Browser Use MCP became unresponsive during the long Tilda editor run; fallback Playwright was used in a separate browser window after the user confirmed and reauthenticated Tilda.
+  - Follow-up rule: long Tilda mass edits should run in bounded batches with progress artifacts and login recovery, then publish only after every editor page verifies.
+- Artifacts:
+  - `artifacts/tilda-pin-all-102fb3d-playwright/editor-results.json`
+  - `artifacts/tilda-pin-all-102fb3d-playwright/retry-5-results.json`
+  - `artifacts/tilda-pin-all-102fb3d-playwright/live-html-results.json`
+  - `artifacts/tilda-all-pages-card-audit-102fb3d-final/summary.json`
+- Boundary:
+  - Production `moonn.ru` was not changed.
+
+
   - This is a staging homepage pilot only, not a full site-level rollout.
 - Next step:
   - User visual review of the staging homepage.
