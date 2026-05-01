@@ -505,3 +505,44 @@ Canonical append-only chat history for `moon-psy-site`.
   - Pending staging pages: 86.
 - Follow-up priority:
   - Continue with published psychotherapy/service method pages (`kpt`, `psychoanalys`, `geshtalt`, `schematherapy`, `uslugi_*`) or high-value event/news pages, still skipping test-looking pages unless explicitly requested.
+
+
+## 2026-05-01T16:12:00+03:00 — Tilda psychotherapy method pages copied to staging
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying published/live pages from the original Moonn project into staging.
+- Strategic assessment:
+  - Platform value: high, because these method/service pages support the professional expertise and consultation funnel.
+  - Obsolescence risk: medium, because psychology-method pages may later need editorial and legal/compliance review before public changes.
+  - Stronger architecture: source-live eligibility -> duplicate -> move -> publish staging -> verify live URL remains the canonical copy workflow.
+  - Reuse: the same process applies to the remaining `uslugi_*` service pages and public events/news pages.
+  - 3-12 month risk if skipped: staging lacks core expertise pages, so future SEO/service changes cannot be tested against a complete mirror.
+- Eligibility check:
+  - `https://moonn.ru/kpt` returned `200`.
+  - `https://moonn.ru/psychoanalys` returned `200`.
+  - `https://moonn.ru/geshtalt` returned `200`.
+  - `https://moonn.ru/schematherapy` returned `200`.
+  - `https://moonn.ru/uslugi_fin_blocks` returned `200`.
+- Actions:
+  - Copied and normalized five method/service pages:
+    - `63403669` -> `138682206`, alias `kpt`.
+    - `63398035` -> `138682476`, alias `psychoanalys`.
+    - `63388057` -> `138682696`, alias `geshtalt`.
+    - `63409841` -> `138682896`, alias `schematherapy`.
+    - `63711321` -> `138683016`, alias `uslugi_fin_blocks`.
+  - Published all pages in `Moonn Staging` and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/kpt`
+  - `https://carry-pacific-flatfish.tilda.ws/psychoanalys`
+  - `https://carry-pacific-flatfish.tilda.ws/geshtalt`
+  - `https://carry-pacific-flatfish.tilda.ws/schematherapy`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_fin_blocks`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 50.
+  - Pending staging pages: 81.
+- Follow-up priority:
+  - Continue with remaining published `uslugi_*` service pages and public EI/event/news pages, skipping test-looking pages unless explicitly requested.

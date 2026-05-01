@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T15:55:00+03:00",
+  "updated_at": "2026-05-01T16:12:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 45,
-  "pending_pages": 86,
+  "copied_pages": 50,
+  "pending_pages": 81,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -713,61 +713,66 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63403669",
-      "staging_page_id": null,
+      "staging_page_id": "138682206",
       "title": "Когнитивно-поведенческая терапия: что это такое и как это работает. Психолог Татьяна Мунн",
       "alias": "kpt",
       "sort": 620,
       "published": "1740424779",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/kpt",
+      "verified_at": "2026-05-01T16:12:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63398035",
-      "staging_page_id": null,
+      "staging_page_id": "138682476",
       "title": "Психоанализ как метод психотерапии. Психолог Татьяна Мунн",
       "alias": "psychoanalys",
       "sort": 630,
       "published": "1739792503",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/psychoanalys",
+      "verified_at": "2026-05-01T16:12:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63388057",
-      "staging_page_id": null,
+      "staging_page_id": "138682696",
       "title": "Гештальт-терапия: путь к гармонии через осознанность и принятие. Психолог Татьяна Мунн",
       "alias": "geshtalt",
       "sort": 640,
       "published": "1739788733",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/geshtalt",
+      "verified_at": "2026-05-01T16:12:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63409841",
-      "staging_page_id": null,
+      "staging_page_id": "138682896",
       "title": "Схематерапия: виды и описание схем. Психолог Татьяна Мунн",
       "alias": "schematherapy",
       "sort": 650,
       "published": "1739963748",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/schematherapy",
+      "verified_at": "2026-05-01T16:12:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63711321",
-      "staging_page_id": null,
+      "staging_page_id": "138683016",
       "title": "Проработка финансовых блоков. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
       "alias": "uslugi_fin_blocks",
       "sort": 660,
       "published": "1743848447",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_fin_blocks",
+      "verified_at": "2026-05-01T16:12:00+03:00"
     },
     {
       "source_project_id": "8326812",
