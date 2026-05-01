@@ -39,6 +39,7 @@ The CSS adds:
 - Glass-style buttons and navigation.
 - Original Tilda button gradients are preserved; the theme only adds hover brightness/shadow.
 - Original Tilda card and text-column substrates are preserved; the theme does not globally restyle `.t-item` or `.t-card__col` geometry.
+- Original Tilda container widths are preserved; the theme does not globally override `.t-container` or `.t-container_flex` width.
 - Tilda button normalization.
 - Focus states for forms.
 - Reduced-motion safety.
@@ -164,6 +165,7 @@ The page is not considered ready until these checks pass:
   - removed global card/substrate restyling for `.t-item` and `.t-card__col`;
   - removed global `.t-rec:nth-of-type(odd)` background override;
   - removed forced transparent background and overflow clipping from `.t-rec`.
+  - removed global `.t-container` width narrowing that could wrap 3-column Tilda grids into 2-column layouts.
 - Kept the shared visual layer:
   - page/section gradient orbs;
   - Zero Block orb styling;

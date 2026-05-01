@@ -946,10 +946,11 @@ Canonical append-only chat history for `moon-psy-site`.
   - 3-12 month risk if skipped: every future copied page with `.t-item` or card grids could silently lose its layout or readable substrates.
 - Incident:
   - Symptom: staging pages such as `/emotional-intelligence/articles/benefits-of-ei` and `/uslugi_depression` showed text/card columns that looked clipped, shifted, or stripped of their original white backing.
-  - Root cause: the all-page CSS rollout used broad selectors for `.t-item`, `.t-card__col`, and related Tilda wrappers, plus forced `.t-rec` background and overflow rules.
-  - Solution: remove global card/substrate restyling, remove the forced odd-section background override, and remove forced transparent background/overflow clipping from `.t-rec`.
-  - Follow-up rule: future shared Tilda themes may enhance buttons, typography, and ambient background, but must not globally override generic Tilda block/card classes without page-specific QA.
+  - Root cause: the all-page CSS rollout used broad selectors for `.t-item`, `.t-card__col`, and related Tilda wrappers, forced `.t-rec` background/overflow rules, and narrowed the standard `.t-container` width from Tilda's 1200px grid.
+  - Solution: remove global card/substrate restyling, remove the forced odd-section background override, remove forced transparent background/overflow clipping from `.t-rec`, and remove global `.t-container` width narrowing.
+  - Follow-up rule: future shared Tilda themes may enhance buttons, typography, and ambient background, but must not globally override generic Tilda block/card/container classes without page-specific QA.
 - Changed files:
+  - `.gitignore`
   - `assets/tilda-radiant-sanctuary.css`
   - `docs/tilda-radiant-sanctuary.md`
   - `registry/tilda/moonn-staging-page-map.json`

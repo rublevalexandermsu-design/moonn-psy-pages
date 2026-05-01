@@ -3,6 +3,7 @@ dist/
 .codex-server.pid
 .playwright-cli/
 output/
+artifacts/
 __pycache__/
 .DS_Store
 

@@ -193,11 +193,6 @@ html.moonn-radiant-sanctuary .tn-elem {
   z-index: 2;
 }
 
-html.moonn-radiant-sanctuary .t-container,
-html.moonn-radiant-sanctuary .t-container_flex {
-  max-width: min(1180px, calc(100vw - 32px));
-}
-
 html.moonn-radiant-sanctuary .t-title,
 html.moonn-radiant-sanctuary .t-name,
 html.moonn-radiant-sanctuary .tn-atom {
@@ -378,11 +373,6 @@ html.moonn-radiant-sanctuary [data-elem-type="text"] .tn-atom {
 }
 
 @media (max-width: 960px) {
-  html.moonn-radiant-sanctuary .t-container,
-  html.moonn-radiant-sanctuary .t-container_flex {
-    max-width: calc(100vw - 24px);
-  }
-
   html.moonn-radiant-sanctuary .t-title {
     word-break: normal;
     overflow-wrap: anywhere;
