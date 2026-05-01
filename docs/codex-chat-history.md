@@ -246,3 +246,41 @@ Canonical append-only chat history for `moon-psy-site`.
   - Pending staging pages: 113.
 - Follow-up priority:
   - Continue with EI knowledge-base child pages and paid-product pages (`st1`, `st2`, `seminar555`, masterclass/seminar pages) before broad article/archive copying.
+
+
+## 2026-05-01T14:05:00+03:00 — Tilda EI knowledge-base core pages copied
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying the priority staging pages for lectures, courses, paid products, and knowledge/expertise pages.
+- Strategic assessment:
+  - Platform value: high, because staging becomes an editable Tilda mirror for the EI knowledge branch.
+  - Obsolescence risk: medium if copying remains purely manual; the registry keeps state until a safer automation route is built.
+  - Stronger architecture: keep canonical page map and batch verification, then later turn this into a repeatable Tilda sync workflow.
+  - Reuse: same copy-map-verify pattern applies to courses, grants, event pages, and future platform sites.
+  - 3-12 month risk if skipped: staging diverges from production and page edits become unreliable when moved back to the main Moonn site.
+- Actions:
+  - Copied and normalized four core EI knowledge-base pages:
+    - `91652966` -> `138670456`, alias `emotional-intelligence/knowledge-base/emotional-intelligence`.
+    - `91665726` -> `138670576`, alias `emotional-intelligence/knowledge-base/self-awareness`.
+    - `91670976` -> `138670746`, alias `emotional-intelligence/knowledge-base/self-regulation`.
+    - `91686486` -> `138670916`, alias `emotional-intelligence/knowledge-base/empathy`.
+  - Published/verified the staging pages through the Browser Use visible browser flow.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-intelligence`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-awareness`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-regulation`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/empathy`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 22.
+  - Pending staging pages: 109.
+- Incident / process note:
+  - Symptom: clicking the project-level publish control caused the Browser Use bridge to time out once.
+  - Root cause: Tilda publish UI can hang the automation bridge even when the page state has already changed.
+  - Resolution: reconnected to the visible browser tab and verified the live public URLs directly.
+  - Follow-up rule: after any Tilda publish/control timeout, verify live URLs before retrying or reporting failure.
+- Follow-up priority:
+  - Continue copying the remaining EI knowledge-base skill pages (`emotional-literacy`, `social-intelligence`, `intrinsic-motivation`, `burnout`, `nonviolent-communication`) and then paid-product/seminar pages.

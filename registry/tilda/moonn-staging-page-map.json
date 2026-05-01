@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T13:32:39.9419017+03:00",
+  "updated_at": "2026-05-01T14:05:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 18,
-  "pending_pages": 113,
+  "copied_pages": 22,
+  "pending_pages": 109,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -962,49 +962,53 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91652966",
-      "staging_page_id": null,
+      "staging_page_id": "138670456",
       "title": "Что такое эмоциональный интеллект и как он работает | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/emotional-intelligence",
       "sort": 840,
       "published": "1762171002",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-intelligence",
+      "verified_at": "2026-05-01T14:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91665726",
-      "staging_page_id": null,
+      "staging_page_id": "138670576",
       "title": "Самоосознанность: ключевой навык эмоционального интеллекта | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/self-awareness",
       "sort": 850,
       "published": "1762160260",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-awareness",
+      "verified_at": "2026-05-01T14:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91670976",
-      "staging_page_id": null,
+      "staging_page_id": "138670746",
       "title": "Саморегуляция — ключевой навык эмоционального интеллекта | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/self-regulation",
       "sort": 860,
       "published": "1762160263",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-regulation",
+      "verified_at": "2026-05-01T14:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91686486",
-      "staging_page_id": null,
+      "staging_page_id": "138670916",
       "title": "Эмпатия — ключевой навык эмоционального интеллекта | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/empathy",
       "sort": 870,
       "published": "1762160267",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/empathy",
+      "verified_at": "2026-05-01T14:05:00+03:00"
     },
     {
       "source_project_id": "8326812",
