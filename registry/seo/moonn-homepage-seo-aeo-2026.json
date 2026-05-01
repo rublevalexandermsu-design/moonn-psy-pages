@@ -202,6 +202,74 @@
       "button click popularity"
     ]
   },
+  "analytics_access_observations": {
+    "checked_from_user_screenshots_at": "2026-05-01T20:15:00+03:00",
+    "google_search_console": {
+      "property": "https://moonn.ru/",
+      "visible_status": "registered",
+      "visible_clicks": 221,
+      "visible_period_from_chart": "2026-01-29 to approximately 2026-04-28",
+      "next_reports_to_open": [
+        "Performance full report",
+        "Pages indexing",
+        "Sitemaps",
+        "Core Web Vitals"
+      ]
+    },
+    "yandex_webmaster": {
+      "host": "https://moonn.ru",
+      "visible_status": "registered",
+      "diagnostics": {
+        "errors": 0,
+        "recommendations": 1
+      },
+      "visible_issues": {
+        "duplicate_titles": 9,
+        "duplicate_descriptions": 35
+      },
+      "visible_recommendation": "Bind Yandex Metrica counter to Webmaster so the search robot receives signals about new pages.",
+      "next_reports_to_open": [
+        "Duplicate titles",
+        "Duplicate descriptions",
+        "Search queries",
+        "Indexing pages",
+        "Sitemap files"
+      ]
+    },
+    "yandex_metrica": {
+      "visible_status": "registered",
+      "visible_counters": [
+        {
+          "name": "Психолог Татьяна Мунн Быс...",
+          "domain_or_source": "Яндекс Бизнес",
+          "counter_id": "90988994",
+          "visible_week_visits": 0,
+          "visible_goal": "Клик на позвонить"
+        },
+        {
+          "name": "Счетчик 1 Сайт moonn.ru",
+          "domain_or_source": "www.moonn.ru",
+          "counter_id": "96397286",
+          "visible_week_visits": 1,
+          "visible_goal": "Автоцель: отправка формы"
+        },
+        {
+          "name": "Счетчик сайт moonn.ru 1",
+          "domain_or_source": "www.moonn.ru",
+          "counter_id": "96319807",
+          "visible_week_visits": 0,
+          "visible_goal": "Автоцель: поиск по сайту"
+        }
+      ],
+      "decision_needed": "Keep 96397286 as the canonical moonn.ru counter unless a later Tilda/Metrica audit contradicts the live HTML check.",
+      "canonical_counter": "96397286",
+      "canonical_counter_evidence": "Live https://moonn.ru/ HTML contains Yandex Metrica id 96397286.",
+      "legacy_or_auxiliary_counter_candidates": [
+        "90988994",
+        "96319807"
+      ]
+    }
+  },
   "implementation_checklist": [
     "Keep staging noindex while testing.",
     "Run Tilda Site Settings -> SEO -> SEO Assistant before manual edits.",

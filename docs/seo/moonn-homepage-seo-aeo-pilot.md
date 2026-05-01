@@ -167,6 +167,36 @@ Exports needed:
 - Core Web Vitals/page experience;
 - click goals for forms, messengers, payments, and course pages.
 
+## First Analytics Access Facts
+
+From the user-provided authenticated screenshots on 2026-05-01:
+
+- Google Search Console is registered for `https://moonn.ru/`.
+- Google Search Console overview shows `221 total web search clicks` for the visible chart period from 2026-01-29 to approximately late April 2026.
+- Yandex Webmaster is registered for `https://moonn.ru`.
+- Yandex Webmaster diagnostics show `0 errors` and `1 recommendation`.
+- Yandex Webmaster shows `9 duplicating title` and `35 duplicating description`.
+- Yandex Webmaster recommends binding Yandex Metrica to the site, so the search robot receives signals about new pages.
+- Yandex Metrica shows three counters:
+  - `90988994`, Yandex Business source, goal `Клик на позвонить`, visible week visits `0`.
+  - `96397286`, `www.moonn.ru`, goal `Автоцель: отправка формы`, visible week visits `1`.
+  - `96319807`, `www.moonn.ru`, goal `Автоцель: поиск по сайту`, visible week visits `0`.
+
+Immediate interpretation:
+
+- The canonical analytics counter for `moonn.ru` is `96397286`; live HTML contains this Yandex Metrica id.
+- Duplicate title/description problems are already confirmed in Yandex and should become the first mass SEO repair after the homepage pilot.
+- Yandex Webmaster should be connected to the chosen Metrica counter; do not delete or change counters until the canonical counter is verified.
+
+Next reports to open:
+
+- Google Search Console → Performance → full report → Queries and Pages.
+- Google Search Console → Indexing → Pages and Sitemaps.
+- Yandex Webmaster → Duplicates titles/descriptions detail pages.
+- Yandex Webmaster → Search queries and Indexing.
+- Yandex Metrica → canonical counter `96397286` → Traffic sources, Search phrases, Pages, Goals.
+- Tilda → Site Settings → SEO → SEO Assistant.
+
 ## Tilda Implementation Order
 
 1. Keep staging `noindex,nofollow`.

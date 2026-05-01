@@ -887,6 +887,33 @@ Canonical append-only chat history for `moon-psy-site`.
   - Tilda staging and production were not changed.
 
 
+## 2026-05-01T20:15:00+03:00 — First authenticated SEO analytics observations
+
+- Project: `moon-psy-site`.
+- Workstream: `seo-aeo-retrofit`.
+- Branch: `codex/tilda-api-sync`.
+- Request: user opened registered Google Search Console, Yandex Webmaster, and Yandex Metrica pages and provided screenshots for `moonn.ru`.
+- Verified facts from screenshots:
+  - Google Search Console property `https://moonn.ru/` is registered.
+  - GSC overview shows `221 total web search clicks` for the visible chart period from 2026-01-29 to approximately late April 2026.
+  - Yandex Webmaster host `https://moonn.ru` is registered.
+  - Yandex Webmaster diagnostics show 0 errors and 1 recommendation.
+  - Yandex Webmaster shows 9 duplicate titles and 35 duplicate descriptions.
+  - Yandex Webmaster recommends binding a Metrica counter to the site.
+  - Yandex Metrica shows three counters: `90988994` for Yandex Business, `96397286` for `www.moonn.ru`, and `96319807` for `www.moonn.ru`.
+- Decision:
+  - Do not delete or modify counters yet.
+  - Live HTML confirms Yandex Metrica counter `96397286` is installed on `https://moonn.ru/`; use it as the canonical site counter unless a later Tilda/Metrica audit contradicts this.
+  - Treat counters `90988994` and `96319807` as auxiliary/legacy candidates for now.
+  - Treat duplicate title/description remediation as the first mass SEO repair after homepage pilot.
+- Changed files:
+  - `registry/seo/moonn-homepage-seo-aeo-2026.json`
+  - `docs/seo/moonn-homepage-seo-aeo-pilot.md`
+  - `docs/codex-chat-history.md`
+- Boundary:
+  - No Search Console, Yandex Webmaster, Metrica, Tilda, or production site settings were changed.
+
+
 ## 2026-05-01T19:13:04+03:00 — All copied Tilda pages audited for card/grid regression
 
 - Project: `moon-psy-site`.
