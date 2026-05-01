@@ -828,6 +828,35 @@ Canonical append-only chat history for `moon-psy-site`.
   - Production `moonn.ru` was not changed.
 
 
+## 2026-05-01T19:45:00+03:00 — Entity linking for Tatiana Moonn, Yandex Services, and MSU Istina
+
+- Project: `moon-psy-site`.
+- Workstream: `seo-aeo-retrofit`.
+- Branch: `codex/tilda-api-sync`.
+- Request: account for the fact that Yandex Services uses the required real-name variant `Татьяна Мунн (Кумскова)` / `Татьяна Кумскова`, while the site mostly says `Татьяна Мунн`; also find and connect the MSU Istina profile.
+- Strategic assessment:
+  - Platform value: high, because external high-authority profiles help search engines connect reviews, academic credibility, and the official site.
+  - Obsolescence risk: high if the site keeps only the public name and external platforms keep the legal/platform name.
+  - Stronger architecture: explicit entity graph using visible biography text plus `Person.alternateName` and `Person.sameAs`.
+  - Reuse: the same entity-linking model can be reused on speaker, reviews, consultations, lectures, and paid-course pages.
+  - 3-12 month risk if skipped: Yandex/Google/AI search may treat Moonn, Kumskova, Yandex Services, and Istina as weakly related or separate entities.
+- Verified facts:
+  - Yandex Services profile URL found from public snippets/descriptions: `https://yandex.ru/uslugi/profile/TatyanaKumskova-948629`.
+  - A public search result shows the name form `Татьяна Кумскова ( Татьяна Мунн)` on Yandex Services.
+  - MSU Istina profile found: `https://istina.msu.ru/workers/816305440/`.
+  - Istina profile name: `Кумскова Татьяна Михайловна`; IRID: `816305440`; public activity summary includes 4 articles, 1 учебный курс, and 4 conference talks.
+- Changed files:
+  - `registry/seo/moonn-homepage-seo-aeo-2026.json`
+  - `docs/seo/moonn-homepage-seo-aeo-pilot.md`
+  - `docs/seo/moonn-homepage-jsonld-draft.html`
+  - `docs/codex-chat-history.md`
+- Decision:
+  - Add both a visible identity bridge and schema-level `alternateName`/`sameAs`; do not hide the name connection only in structured data.
+- Boundary:
+  - Tilda staging was not changed in this step.
+  - Production `moonn.ru` was not changed.
+
+
 ## 2026-05-01T19:13:04+03:00 — All copied Tilda pages audited for card/grid regression
 
 - Project: `moon-psy-site`.

@@ -48,6 +48,9 @@
   "search_intent_map": {
     "brand": [
       "Татьяна Мунн",
+      "Татьяна Мунн Кумскова",
+      "Татьяна Кумскова психолог",
+      "Кумскова Татьяна Михайловна",
       "Татьяна Мунн психолог",
       "Татьяна Мунн отзывы",
       "Татьяна Мунн МГУ психолог"
@@ -68,6 +71,43 @@
       "конфликты на работе психолог",
       "быстрая психология"
     ]
+  },
+  "entity_linking": {
+    "canonical_public_name": "Татьяна Мунн",
+    "legal_or_platform_name_variants": [
+      "Кумскова Татьяна Михайловна",
+      "Татьяна Кумскова",
+      "Татьяна Кумскова (Татьяна Мунн)",
+      "Татьяна Мунн (Кумскова)"
+    ],
+    "reason": "Yandex Services and MSU Istina use the legal surname/name variant, while the public site primarily uses the brand/public name. Search engines may not merge these entities without explicit visible and structured linking.",
+    "verified_external_profiles": [
+      {
+        "platform": "Yandex Services",
+        "url": "https://yandex.ru/uslugi/profile/TatyanaKumskova-948629",
+        "observed_name": "Татьяна Кумскова (Татьяна Мунн)",
+        "evidence": "Public search result and Rutube video description reference the profile URL.",
+        "implementation_role": [
+          "sameAs in Person schema",
+          "visible trust/reviews link",
+          "reviews block source link"
+        ]
+      },
+      {
+        "platform": "MSU Istina",
+        "url": "https://istina.msu.ru/workers/816305440/",
+        "observed_name": "Кумскова Татьяна Михайловна",
+        "identifier": "IstinaResearcherID 816305440",
+        "evidence": "Istina public profile states the name and activity totals, including publications, one учебный курс, and conference talks.",
+        "implementation_role": [
+          "sameAs in Person schema",
+          "visible education/academic profile link",
+          "authority signal for MSU-related pages"
+        ]
+      }
+    ],
+    "visible_text_rule": "Add one concise identity bridge near the biography/trust section: `Татьяна Мунн — публичное имя психолога Татьяны Михайловны Кумсковой; профиль на Яндекс Услугах и научно-образовательный профиль МГУ ИСТИНА подтверждают внешние площадки.` Edit for tone before publishing.",
+    "schema_rule": "Add alternateName and sameAs to the Person entity. Do not hide the legal-name connection only in JSON-LD; it should be present in a concise visible biography/trust block."
   },
   "target_metadata": {
     "title": "Психолог МГУ Татьяна Мунн в Москве | быстрая психология",
@@ -136,9 +176,9 @@
       "BreadcrumbList"
     ],
     "deferred_entities": [
-      {
-        "type": "FAQPage",
-        "reason": "Add only after FAQ questions are visible on the page or inserted as real visible content."
+    {
+      "type": "FAQPage",
+      "reason": "Add only after FAQ questions are visible on the page or inserted as real visible content."
       },
       {
         "type": "Review",
@@ -166,6 +206,8 @@
     "Keep staging noindex while testing.",
     "Update page SEO title and description in Tilda page settings.",
     "Add page-level JSON-LD in Tilda HEAD for the homepage only.",
+    "Add visible identity bridge between `Татьяна Мунн`, `Татьяна Кумскова`, and `Кумскова Татьяна Михайловна` near the biography/trust section.",
+    "Add Yandex Services and MSU Istina links in visible trust/profile blocks.",
     "Set social preview image/title/description using the SEO-named asset.",
     "Fix primary H1/H2 hierarchy in page content.",
     "Add alt text to meaningful homepage images.",

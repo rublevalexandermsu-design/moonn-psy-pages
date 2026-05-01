@@ -59,6 +59,33 @@ For the homepage, use a page-level JSON-LD graph with:
 
 Do not add `FAQPage` or `Review` schema until those questions/reviews are visible on the page and verified.
 
+## Entity Linking: Moonn, Kumskova, Yandex Services, MSU Istina
+
+The public site mostly uses `Татьяна Мунн`, while important authority platforms use the legal/platform variant:
+
+- Yandex Services profile: `https://yandex.ru/uslugi/profile/TatyanaKumskova-948629`
+- MSU Istina profile: `https://istina.msu.ru/workers/816305440/`
+- Istina observed name: `Кумскова Татьяна Михайловна`, IRID `816305440`
+
+This should be handled on two levels:
+
+- visible text, so users and crawlers can read the identity bridge;
+- structured data, so search/AI systems can merge the entity graph.
+
+Recommended visible bridge near the biography/trust section:
+
+```text
+Татьяна Мунн — публичное имя психолога Татьяны Михайловны Кумсковой. Внешние профили: Яндекс Услуги с отзывами клиентов и научно-образовательный профиль МГУ ИСТИНА.
+```
+
+Recommended schema updates:
+
+- `Person.name`: `Татьяна Мунн`
+- `Person.alternateName`: `Татьяна Мунн (Кумскова)`, `Татьяна Кумскова`, `Кумскова Татьяна Михайловна`, `Татьяна.К.М.`
+- `Person.sameAs`: Yandex Services, MSU Istina, Telegram and other verified public profiles.
+
+Do not put the legal-name bridge only inside invisible JSON-LD. For entity reconciliation it should also appear in a concise, natural, visible biography/trust block.
+
 ## Image SEO
 
 Primary SEO asset prepared in the repo:
