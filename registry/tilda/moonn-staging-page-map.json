@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T14:05:00+03:00",
+  "updated_at": "2026-05-01T14:32:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 22,
-  "pending_pages": 109,
+  "copied_pages": 27,
+  "pending_pages": 104,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -1014,61 +1014,66 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91692166",
-      "staging_page_id": null,
+      "staging_page_id": "138672296",
       "title": "Эмоциональная грамотность — навык точного выражения чувств | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/emotional-literacy",
       "sort": 880,
       "published": "1762160272",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-literacy",
+      "verified_at": "2026-05-01T14:32:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91696586",
-      "staging_page_id": null,
+      "staging_page_id": "138672476",
       "title": "Социальные навыки и социальный интеллект: как развивать | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/social-intelligence",
       "sort": 890,
       "published": "1762160278",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/social-intelligence",
+      "verified_at": "2026-05-01T14:32:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91701376",
-      "staging_page_id": null,
+      "staging_page_id": "138672636",
       "title": "Внутренняя мотивация: как её развивать и не потерять | психолог и спикер Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/intrinsic-motivation",
       "sort": 900,
       "published": "1762160282",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/intrinsic-motivation",
+      "verified_at": "2026-05-01T14:32:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91715996",
-      "staging_page_id": null,
+      "staging_page_id": "138672816",
       "title": "Выгорание: признаки, причины и восстановление | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/burnout",
       "sort": 910,
       "published": "1762086338",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/burnout",
+      "verified_at": "2026-05-01T14:32:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91720476",
-      "staging_page_id": null,
+      "staging_page_id": "138672976",
       "title": "Ненасильственное общение (ННО/NVC): как говорить без конфликта | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base/nonviolent-communication",
       "sort": 920,
       "published": "1762160287",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/nonviolent-communication",
+      "verified_at": "2026-05-01T14:32:00+03:00"
     },
     {
       "source_project_id": "8326812",

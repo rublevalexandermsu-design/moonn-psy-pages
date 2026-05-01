@@ -284,3 +284,43 @@ Canonical append-only chat history for `moon-psy-site`.
   - Follow-up rule: after any Tilda publish/control timeout, verify live URLs before retrying or reporting failure.
 - Follow-up priority:
   - Continue copying the remaining EI knowledge-base skill pages (`emotional-literacy`, `social-intelligence`, `intrinsic-motivation`, `burnout`, `nonviolent-communication`) and then paid-product/seminar pages.
+
+
+## 2026-05-01T14:32:00+03:00 — Remaining EI knowledge-base skill pages copied
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue the same priority copying flow for the EI knowledge-base pages.
+- Strategic assessment:
+  - Platform value: high, because the EI knowledge-base branch now has the main skill/competency pages available for safe Tilda-side edits.
+  - Obsolescence risk: medium while publication depends on UI automation; reduced by keeping exact source-to-staging page IDs in the registry.
+  - Stronger architecture: continue toward a canonical Tilda staging sync workflow with copy map, publication step, and live URL verification.
+  - Reuse: the same flow applies to paid products, event pages, course pages, and future staging projects.
+  - 3-12 month risk if skipped: staging remains incomplete and future edits may be tested on a non-identical branch.
+- Actions:
+  - Copied and normalized five EI knowledge-base pages:
+    - `91692166` -> `138672296`, alias `emotional-intelligence/knowledge-base/emotional-literacy`.
+    - `91696586` -> `138672476`, alias `emotional-intelligence/knowledge-base/social-intelligence`.
+    - `91701376` -> `138672636`, alias `emotional-intelligence/knowledge-base/intrinsic-motivation`.
+    - `91715996` -> `138672816`, alias `emotional-intelligence/knowledge-base/burnout`.
+    - `91720476` -> `138672976`, alias `emotional-intelligence/knowledge-base/nonviolent-communication`.
+  - Published all pages in the staging project and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-literacy`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/social-intelligence`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/intrinsic-motivation`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/burnout`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/nonviolent-communication`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 27.
+  - Pending staging pages: 104.
+- Incident / process note:
+  - Symptom: after copying, four of five pages initially returned 404 on their staging aliases.
+  - Root cause: page duplication/move succeeded, but Tilda had not published all copied pages until the project-level publish confirmation was explicitly completed.
+  - Resolution: opened the project-level `Опубликовать все страницы` control, confirmed `Да`, then verified each public URL.
+  - Follow-up rule: copied Tilda pages are not complete until their staging aliases return a non-404 live page with the expected title.
+- Follow-up priority:
+  - Move next to paid-product/course/seminar pages (`st1`, `st2`, `seminar555`, masterclass/seminar pages), then remaining high-value search and expertise pages.
