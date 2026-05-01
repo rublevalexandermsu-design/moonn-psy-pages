@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T13:13:27.4767498+03:00",
+  "updated_at": "2026-05-01T13:25:35.4662179+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 9,
-  "pending_pages": 122,
+  "copied_pages": 14,
+  "pending_pages": 117,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -122,37 +122,37 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "90977486",
-      "staging_page_id": null,
+      "staging_page_id": "138667076",
       "title": "ЭМОЦИОНАЛЬНЫЙ ИНТЕЛЛЕКТ |  Татьяна Мунн",
       "alias": "emotional-intelligence/",
       "sort": 100,
       "published": "1763031354",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91652626",
-      "staging_page_id": null,
+      "staging_page_id": "138667176",
       "title": "База знаний по эмоциональному интеллекту: термины, модели, упражнения | Татьяна Мунн",
       "alias": "emotional-intelligence/knowledge-base",
       "sort": 110,
       "published": "1769803193",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91871866",
-      "staging_page_id": null,
+      "staging_page_id": "138667346",
       "title": "Статьи по эмоциональному интеллекту: глубокие разборы, практики, исследования | Татьяна Мунн",
       "alias": "emotional-intelligence/articles",
       "sort": 120,
       "published": "1764326867",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles"
     },
     {
       "source_project_id": "8326812",
@@ -1394,13 +1394,13 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "124264896",
-      "staging_page_id": null,
+      "staging_page_id": "138667516",
       "title": "Курс эмоциональный интеллект",
       "alias": "kurs-ei",
       "sort": 1370,
       "published": "1772956256",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/kurs-ei"
     },
     {
       "source_project_id": "8326812",
@@ -1418,13 +1418,13 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "124963886",
-      "staging_page_id": null,
+      "staging_page_id": "138667746",
       "title": "Программа Курса эмоциональный интеллект",
       "alias": "programmakursa",
       "sort": 1390,
       "published": "1772955590",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/programmakursa"
     },
     {
       "source_project_id": "8326812",

@@ -188,3 +188,35 @@ Canonical append-only chat history for `moon-psy-site`.
 - Open questions:
   - Whether to continue copying all 122 remaining pages over multiple batches/days, or first prioritize pages linked from navigation, forms, and conversion paths.
   - Whether to solve internal absolute `moonn.ru` links by block-level editing or by a reliable staging-only code injection path.
+
+## 2026-05-01T13:25:00+03:00 — Tilda priority pages for EI and courses copied
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: prioritize pages related to lectures, courses, paid products, videos, and future large site branches.
+- Site strategy recorded:
+  - Homepage is the hub.
+  - Four core branches: personal consultations; speaking/lectures/events; paid products/courses/masterclasses; knowledge base/expertise/emotional intelligence/search pages.
+  - Staging should prioritize these branches before low-value archive or test pages.
+- Actions:
+  - Copied and normalized five high-priority pages:
+    - `90977486` -> `138667076`, alias `emotional-intelligence/`.
+    - `91652626` -> `138667176`, alias `emotional-intelligence/knowledge-base`.
+    - `91871866` -> `138667346`, alias `emotional-intelligence/articles`.
+    - `124264896` -> `138667516`, alias `kurs-ei`.
+    - `124963886` -> `138667746`, alias `programmakursa`.
+  - Republished the staging project.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles`
+  - `https://carry-pacific-flatfish.tilda.ws/kurs-ei`
+  - `https://carry-pacific-flatfish.tilda.ws/programmakursa`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 14.
+  - Pending staging pages: 117.
+- Follow-up priority:
+  - Next copy candidates: individual EI knowledge-base pages, individual EI article pages, `st1`, `st2`, `seminar555`, masterclass/seminar pages, and key search pages that support paid products or expertise.
