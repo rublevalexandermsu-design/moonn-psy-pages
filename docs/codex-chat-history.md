@@ -546,3 +546,44 @@ Canonical append-only chat history for `moon-psy-site`.
   - Pending staging pages: 81.
 - Follow-up priority:
   - Continue with remaining published `uslugi_*` service pages and public EI/event/news pages, skipping test-looking pages unless explicitly requested.
+
+
+## 2026-05-01T16:30:00+03:00 — Tilda uslugi service pages copied to staging
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying the next published/live service pages from the original Moonn project into staging.
+- Strategic assessment:
+  - Platform value: high, because these consultation/service pages are part of the future editable staging mirror for commercial and SEO workflows.
+  - Obsolescence risk: medium, because health-adjacent service pages should later pass editorial and legal/publication review before major text changes.
+  - Stronger architecture: keep the staging mirror source-identical first, then improve pages through a separate reviewed content workflow.
+  - Reuse: the same live-source gate, Tilda duplicate/move flow, staging publish, and public URL verification applies to all remaining `uslugi_*` pages.
+  - 3-12 month risk if skipped: future changes could be tested against an incomplete copy and then behave differently on production.
+- Eligibility check:
+  - `https://moonn.ru/uslugi_podrostki` returned `200`.
+  - `https://moonn.ru/uslugi_konflikti_na_rabote` returned `200`.
+  - `https://moonn.ru/uslugi_otnosheniya_v_kollektive` returned `200`.
+  - `https://moonn.ru/uslugi_depression` returned `200`.
+  - `https://moonn.ru/uslugi_obida_na_roditelei` returned `200`.
+- Actions:
+  - Copied and normalized five service pages:
+    - `63713227` -> `138683686`, alias `uslugi_podrostki`.
+    - `63716871` -> `138683936`, alias `uslugi_konflikti_na_rabote`.
+    - `63718371` -> `138684096`, alias `uslugi_otnosheniya_v_kollektive`.
+    - `63747017` -> `138684276`, alias `uslugi_depression`.
+    - `63749211` -> `138684406`, alias `uslugi_obida_na_roditelei`.
+  - Published the `Moonn Staging` project and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_podrostki`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_konflikti_na_rabote`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_otnosheniya_v_kollektive`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_depression`
+  - `https://carry-pacific-flatfish.tilda.ws/uslugi_obida_na_roditelei`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 55.
+  - Pending staging pages: 76.
+- Follow-up priority:
+  - Continue with remaining published `uslugi_*` pages: `uslugi_procrastination`, `uslugi_sohranit_brak`, `uslugi_razvod`, `uslugi_lubovnaya_zavisimost`, `uslugi_gtr`, `uslugi_aerofobia`, then public EI/event/news pages.

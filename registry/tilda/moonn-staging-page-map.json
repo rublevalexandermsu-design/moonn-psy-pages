@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T16:12:00+03:00",
+  "updated_at": "2026-05-01T16:30:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 50,
-  "pending_pages": 81,
+  "copied_pages": 55,
+  "pending_pages": 76,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -778,61 +778,66 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63713227",
-      "staging_page_id": null,
+      "staging_page_id": "138683686",
       "title": "Психологическая консультация для подростков от 12 лет. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
       "alias": "uslugi_podrostki",
       "sort": 670,
       "published": "1743848458",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_podrostki",
+      "verified_at": "2026-05-01T16:30:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63716871",
-      "staging_page_id": null,
+      "staging_page_id": "138683936",
       "title": "Проработка внутренних конфликтов, связанных с работой. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
       "alias": "uslugi_konflikti_na_rabote",
       "sort": 680,
       "published": "1743848461",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_konflikti_na_rabote",
+      "verified_at": "2026-05-01T16:30:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63718371",
-      "staging_page_id": null,
+      "staging_page_id": "138684096",
       "title": "Налаживание отношений в коллективе. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
       "alias": "uslugi_otnosheniya_v_kollektive",
       "sort": 690,
       "published": "1740420689",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_otnosheniya_v_kollektive",
+      "verified_at": "2026-05-01T16:30:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63747017",
-      "staging_page_id": null,
+      "staging_page_id": "138684276",
       "title": "Депрессивное состояние: понимание и преодоление. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
       "alias": "uslugi_depression",
       "sort": 700,
       "published": "1743848465",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_depression",
+      "verified_at": "2026-05-01T16:30:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "63749211",
-      "staging_page_id": null,
+      "staging_page_id": "138684406",
       "title": "Обида на родителей - негативные чувства, связанные с детством. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
       "alias": "uslugi_obida_na_roditelei",
       "sort": 710,
       "published": "1740423725",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_obida_na_roditelei",
+      "verified_at": "2026-05-01T16:30:00+03:00"
     },
     {
       "source_project_id": "8326812",
