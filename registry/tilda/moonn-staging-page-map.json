@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T15:22:00+03:00",
+  "updated_at": "2026-05-01T15:37:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 34,
-  "pending_pages": 97,
+  "copied_pages": 39,
+  "pending_pages": 92,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -450,61 +450,66 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62920697",
-      "staging_page_id": null,
+      "staging_page_id": "138679266",
       "title": "Семейный психолог в Москве. в Кабинете и Онлайн",
       "alias": "semeyniy_psiholog",
       "sort": 410,
       "published": "1739215407",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/semeyniy_psiholog",
+      "verified_at": "2026-05-01T15:37:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62908693",
-      "staging_page_id": null,
+      "staging_page_id": "138679376",
       "title": "Психолог для психологов: Как найти поддержку для себя",
       "alias": "psy4psy",
       "sort": 420,
       "published": "1740425267",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/psy4psy",
+      "verified_at": "2026-05-01T15:37:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62890623",
-      "staging_page_id": null,
+      "staging_page_id": "138679646",
       "title": "Суицидальные мысли у подростков &amp; самоповреждение (сеплфхарм): Помощь психолога",
       "alias": "selfharm",
       "sort": 430,
       "published": "1739215402",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/selfharm",
+      "verified_at": "2026-05-01T15:37:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62652841",
-      "staging_page_id": null,
+      "staging_page_id": "138679846",
       "title": "Психологическая подготовка к Экзаменам. Экзамены без стресса: Как подготовиться психологически к успеху",
       "alias": "psypodgotovka1",
       "sort": 440,
       "published": "1740422602",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/psypodgotovka1",
+      "verified_at": "2026-05-01T15:37:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62126761",
-      "staging_page_id": null,
+      "staging_page_id": "138680006",
       "title": "Панические атаки - быстрое избавление за 1 месяц. Психолог. Москва. В кабинете и Онлайн",
       "alias": "panicheskie_ataki",
       "sort": 450,
       "published": "1740423715",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/panicheskie_ataki",
+      "verified_at": "2026-05-01T15:37:00+03:00"
     },
     {
       "source_project_id": "8326812",

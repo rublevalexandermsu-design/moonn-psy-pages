@@ -420,3 +420,44 @@ Canonical append-only chat history for `moon-psy-site`.
   - Pending staging pages: 97.
 - Follow-up priority:
   - Continue with published/accessibly live consultation service pages (`semeyniy_psiholog`, `psy4psy`, `selfharm`, `psypodgotovka1`, `panicheskie_ataki`) and/or key public events/news pages.
+
+
+## 2026-05-01T15:37:00+03:00 — Tilda consultation service pages copied to staging
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying the next published/accessibly live pages into the Tilda staging project.
+- Strategic assessment:
+  - Platform value: high, because these consultation service pages are practical conversion and SEO entry points.
+  - Obsolescence risk: medium, because service promises and dates/offers may need future editorial review; staging preserves the production baseline for safe edits.
+  - Stronger architecture: keep copying public service branches in batches with source-live eligibility, then verify staging live URLs before marking complete.
+  - Reuse: the same flow is now a stable Tilda page-copy workflow for service, event, product, and knowledge pages.
+  - 3-12 month risk if skipped: service pages remain outside staging, so later improvements could be tested on an incomplete mirror.
+- Eligibility check:
+  - `https://moonn.ru/semeyniy_psiholog` returned `200`.
+  - `https://moonn.ru/psy4psy` returned `200`.
+  - `https://moonn.ru/selfharm` returned `200`.
+  - `https://moonn.ru/psypodgotovka1` returned `200`.
+  - `https://moonn.ru/panicheskie_ataki` returned `200`.
+- Actions:
+  - Copied and normalized five consultation service pages:
+    - `62920697` -> `138679266`, alias `semeyniy_psiholog`.
+    - `62908693` -> `138679376`, alias `psy4psy`.
+    - `62890623` -> `138679646`, alias `selfharm`.
+    - `62652841` -> `138679846`, alias `psypodgotovka1`.
+    - `62126761` -> `138680006`, alias `panicheskie_ataki`.
+  - Published all pages in `Moonn Staging` and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/semeyniy_psiholog`
+  - `https://carry-pacific-flatfish.tilda.ws/psy4psy`
+  - `https://carry-pacific-flatfish.tilda.ws/selfharm`
+  - `https://carry-pacific-flatfish.tilda.ws/psypodgotovka1`
+  - `https://carry-pacific-flatfish.tilda.ws/panicheskie_ataki`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 39.
+  - Pending staging pages: 92.
+- Follow-up priority:
+  - Continue with the remaining published consultation/service pages (`phytotherapy`, `microbiom`, `aromatherapy`, `salt`, `vacuum_cups`, `water`) or public event/news pages, skipping test-looking pages unless explicitly requested.
