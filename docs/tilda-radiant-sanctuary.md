@@ -35,6 +35,7 @@ The CSS adds:
 
 - Plus Jakarta Sans typography.
 - Light radiant surface background.
+- Animated pink/violet/cyan gradient orbs behind the page and inside Zero Block artboards.
 - Glass-style buttons and navigation.
 - Soft card surfaces.
 - Tilda button normalization.
@@ -84,13 +85,38 @@ The page is not considered ready until these checks pass:
 - First-screen visual check passed: primary hero, menu, CTA buttons, and portrait area remain visible.
 - Production `moonn.ru` was not changed.
 
+### 2026-05-01 animated orb enhancement
+
+- User feedback: the first live theme pass was too subtle and did not show the requested moving gradient circles.
+- Added a stronger ambient layer:
+  - fixed page-level radial gradients on `body::before` and `body::after`;
+  - per-section orbs on `.t-rec::before` and `.t-rec::after`;
+  - Zero Block-specific orbs on `.t396__artboard::before` and `.t396__artboard::after`;
+  - slow `moonnAmbient*` and `moonnSectionOrb*` animations;
+  - reduced-motion support.
+- Restored the staging homepage HEAD to exactly one `moonn-radiant-sanctuary-theme` block after Tilda editor cleanup produced a duplicate/empty state.
+- Published only `Moonn Staging`.
+- Confirmed the live staging HTML contains:
+  - `moonn-radiant-sanctuary-theme`
+  - `moonnSectionOrbA`
+  - `t396__artboard::before`
+- Browser Use opened the live staging homepage and confirmed the main homepage text is present in the live DOM.
+- Production `moonn.ru` was not changed.
+
 ## Tilda Editor Note
 
 The page HEAD code editor has both a visible code editor textarea and a hidden `textarea[name="headcode"]`.
 
 Do not fill only the hidden `headcode` textarea. It does not reliably persist through Tilda's save action.
 
-Use the visible code editor field, save, reload the editor, and confirm the saved code appears in `headcode` before publishing.
+Use the visible Ace editor field, save, reload the editor, and confirm the saved code appears in `headcode` before publishing.
+
+If the HEAD editor needs to be replaced completely, first ensure the editor is empty. A direct `fill` into the visible Ace textarea can append a second copy when existing code is present. The verified recovery route for the current Tilda editor was:
+
+1. Clear the editor to an empty saved state.
+2. Type the full canonical snippet into the Ace input.
+3. Save and reload the editor.
+4. Confirm `textarea[name="headcode"]` contains exactly one `moonn-radiant-sanctuary-theme` block.
 
 ## Follow-Up Workstreams
 

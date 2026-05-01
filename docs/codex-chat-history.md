@@ -795,3 +795,35 @@ Canonical append-only chat history for `moon-psy-site`.
 - Next step:
   - User visual review of the staging homepage.
   - After approval, apply the theme to a small second batch: one consultation page, one lecture/product page, and one knowledge-base article, then compare for collisions.
+
+
+## 2026-05-01T19:10:00+03:00 — Animated gradient orbs added to staging homepage
+
+- Project: `moon-psy-site`.
+- Workstream: `staging-design-system` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: make the unified Tilda design visibly closer to the reference by adding soft moving pink/violet/cyan gradient circles behind the white sections and first-screen content.
+- Strategic assessment:
+  - Platform value: high, because the orbs become part of the reusable visual language for consultation, lecture, product, and knowledge-base pages.
+  - Obsolescence risk: low if kept in the canonical CSS theme instead of per-page manual shapes.
+  - Stronger architecture: one theme layer in Git, inserted into staging HEAD, then rolled out to selected pages after QA.
+  - Reuse: direct reuse on copied staging pages without touching Tilda block content.
+  - 3-12 month risk if skipped: the visual system remains too subtle and page-by-page redesign work will drift again.
+- Actions:
+  - Updated `assets/tilda-radiant-sanctuary.css` with animated ambient gradients and section-level orb pseudo-elements.
+  - Added Zero Block-specific orb support for `.t396__artboard`.
+  - Restored the staging homepage HEAD code to exactly one `moonn-radiant-sanctuary-theme` block.
+  - Published only `Moonn Staging`.
+  - Verified the live staging homepage HTML contains `moonn-radiant-sanctuary-theme`, `moonnSectionOrbA`, and `t396__artboard::before`.
+  - Opened the live staging homepage in Browser Use and confirmed the main homepage DOM text remains present.
+  - Updated `docs/tilda-radiant-sanctuary.md`.
+- Live staging URL:
+  - `https://carry-pacific-flatfish.tilda.ws/`
+- Incident:
+  - Symptom: replacing existing Tilda page HEAD through the visible Ace textarea produced a duplicate theme block; a subsequent cleanup attempt saved an empty HEAD.
+  - Root cause: Tilda's Ace editor and hidden `textarea[name="headcode"]` do not sync reliably when using direct fill/clipboard replacement against an already populated editor.
+  - Solution: restore from the canonical CSS file, type the snippet into an empty Ace editor state, save, reload, and verify the hidden `headcode` contains exactly one theme block.
+  - Follow-up rule: for future Tilda HEAD replacements, do not rely on hidden textarea fill and do not declare success until the editor reload shows exactly one canonical block and the public HTML contains the expected markers.
+- Boundary:
+  - Production `moonn.ru` was not changed.
+  - This remains a staging homepage pilot until the user approves rollout to a small second batch.

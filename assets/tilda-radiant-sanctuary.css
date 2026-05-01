@@ -17,6 +17,10 @@
   --moonn-primary-soft: #7427c7;
   --moonn-secondary: #b61759;
   --moonn-accent: #ff7aa8;
+  --moonn-cyan: #1db7ff;
+  --moonn-blob-pink: rgba(255, 45, 166, 0.68);
+  --moonn-blob-violet: rgba(116, 39, 199, 0.58);
+  --moonn-blob-cyan: rgba(29, 183, 255, 0.58);
   --moonn-glass: rgba(255, 255, 255, 0.72);
   --moonn-ghost: rgba(90, 0, 167, 0.15);
   --moonn-shadow: 0 22px 64px rgba(90, 0, 167, 0.08);
@@ -38,22 +42,143 @@ html.moonn-radiant-sanctuary body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(110deg, rgba(90, 0, 167, 0.08), transparent 28%),
-    linear-gradient(290deg, rgba(255, 122, 168, 0.10), transparent 32%);
-  filter: blur(8px);
-  opacity: 0.88;
+    radial-gradient(circle at 8% 18%, var(--moonn-blob-pink) 0 8%, rgba(116, 39, 199, 0.48) 14%, rgba(29, 183, 255, 0.34) 24%, transparent 37%),
+    radial-gradient(circle at 92% 8%, rgba(255, 45, 166, 0.62) 0 7%, rgba(116, 39, 199, 0.42) 15%, rgba(29, 183, 255, 0.30) 24%, transparent 35%),
+    radial-gradient(circle at 92% 76%, rgba(29, 183, 255, 0.35) 0 8%, rgba(116, 39, 199, 0.34) 18%, rgba(255, 45, 166, 0.26) 27%, transparent 38%);
+  filter: blur(10px) saturate(1.14);
+  opacity: 0.60;
+  transform: translate3d(0, 0, 0);
+  animation: moonnAmbientDrift 34s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary body::after {
+  content: "";
+  position: fixed;
+  inset: auto auto 7vh -8vw;
+  z-index: 0;
+  width: min(560px, 58vw);
+  aspect-ratio: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 35%, rgba(255, 78, 178, 0.62), rgba(116, 39, 199, 0.46) 42%, rgba(29, 183, 255, 0.35) 62%, transparent 74%);
+  filter: blur(2px) saturate(1.12);
+  opacity: 0.36;
+  animation: moonnAmbientFloat 28s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary body > * {
+  position: relative;
+  z-index: 1;
 }
 
 html.moonn-radiant-sanctuary .t-rec {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background-color: transparent !important;
+}
+
+html.moonn-radiant-sanctuary .t-rec > * {
+  position: relative;
+  z-index: 2;
+}
+
+html.moonn-radiant-sanctuary .t-rec::before,
+html.moonn-radiant-sanctuary .t-rec::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(8px) saturate(1.18);
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+html.moonn-radiant-sanctuary .t-rec:nth-of-type(4n + 1)::before {
+  width: min(420px, 52vw);
+  aspect-ratio: 1;
+  left: -12vw;
+  top: 7%;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 45, 166, 0.58), rgba(116, 39, 199, 0.46) 42%, rgba(29, 183, 255, 0.28) 62%, transparent 76%);
+  opacity: 0.42;
+  animation: moonnSectionOrbA 26s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary .t-rec:nth-of-type(4n + 2)::after {
+  width: min(360px, 48vw);
+  aspect-ratio: 1;
+  right: -10vw;
+  bottom: 4%;
+  background: radial-gradient(circle at 42% 38%, rgba(29, 183, 255, 0.48), rgba(116, 39, 199, 0.42) 43%, rgba(255, 45, 166, 0.30) 65%, transparent 78%);
+  opacity: 0.36;
+  animation: moonnSectionOrbB 31s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary .t-rec:nth-of-type(6n)::before {
+  width: min(300px, 40vw);
+  aspect-ratio: 1;
+  right: 9vw;
+  top: 9%;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 92, 184, 0.52), rgba(116, 39, 199, 0.38) 44%, rgba(29, 183, 255, 0.24) 64%, transparent 78%);
+  opacity: 0.30;
+  animation: moonnSectionOrbC 38s ease-in-out infinite alternate;
 }
 
 html.moonn-radiant-sanctuary .t-rec:nth-of-type(odd) {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.70), rgba(248, 241, 248, 0.42)) !important;
+}
+
+html.moonn-radiant-sanctuary .t396__artboard {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+html.moonn-radiant-sanctuary .t396__artboard::before,
+html.moonn-radiant-sanctuary .t396__artboard::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(3px) saturate(1.16);
+}
+
+html.moonn-radiant-sanctuary .t396__artboard::before {
+  width: min(440px, 54vw);
+  aspect-ratio: 1;
+  left: -10vw;
+  top: 9%;
+  background:
+    radial-gradient(circle at 36% 34%, rgba(255, 45, 166, 0.78), rgba(116, 39, 199, 0.60) 42%, rgba(29, 183, 255, 0.48) 63%, transparent 76%);
+  opacity: 0.70;
+  animation: moonnSectionOrbA 28s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary .t396__artboard::after {
+  width: min(320px, 42vw);
+  aspect-ratio: 1;
+  right: -7vw;
+  top: 6%;
+  background:
+    radial-gradient(circle at 38% 36%, rgba(255, 68, 176, 0.72), rgba(116, 39, 199, 0.55) 44%, rgba(29, 183, 255, 0.46) 64%, transparent 78%);
+  opacity: 0.58;
+  animation: moonnSectionOrbB 32s ease-in-out infinite alternate;
+}
+
+html.moonn-radiant-sanctuary .t396__carrier,
+html.moonn-radiant-sanctuary .t396__filter {
+  z-index: 0 !important;
+}
+
+html.moonn-radiant-sanctuary .t396__elem,
+html.moonn-radiant-sanctuary .tn-elem {
+  z-index: 2;
 }
 
 html.moonn-radiant-sanctuary .t-container,
@@ -211,6 +336,53 @@ html.moonn-radiant-sanctuary [data-elem-type="text"] .tn-atom {
   color: inherit;
 }
 
+@keyframes moonnAmbientDrift {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    background-position: 30px -18px, -26px 34px, 42px 24px;
+    transform: translate3d(1.4vw, -1.0vh, 0) scale(1.035);
+  }
+}
+
+@keyframes moonnAmbientFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(5vw, -5vh, 0) scale(1.12);
+  }
+}
+
+@keyframes moonnSectionOrbA {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(7vw, 4vh, 0) scale(1.10);
+  }
+}
+
+@keyframes moonnSectionOrbB {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(-6vw, -3vh, 0) scale(1.12);
+  }
+}
+
+@keyframes moonnSectionOrbC {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(-4vw, 5vh, 0) scale(1.08);
+  }
+}
+
 @media (max-width: 960px) {
   html.moonn-radiant-sanctuary .t-container,
   html.moonn-radiant-sanctuary .t-container_flex {
@@ -220,6 +392,24 @@ html.moonn-radiant-sanctuary [data-elem-type="text"] .tn-atom {
   html.moonn-radiant-sanctuary .t-title {
     word-break: normal;
     overflow-wrap: anywhere;
+  }
+
+  html.moonn-radiant-sanctuary body::before {
+    opacity: 0.48;
+    background:
+      radial-gradient(circle at 8% 18%, rgba(255, 45, 166, 0.50) 0 9%, rgba(116, 39, 199, 0.38) 17%, rgba(29, 183, 255, 0.28) 28%, transparent 42%),
+      radial-gradient(circle at 92% 10%, rgba(255, 45, 166, 0.42) 0 8%, rgba(116, 39, 199, 0.32) 18%, rgba(29, 183, 255, 0.24) 28%, transparent 42%);
+  }
+
+  html.moonn-radiant-sanctuary body::after {
+    width: 70vw;
+    opacity: 0.28;
+  }
+
+  html.moonn-radiant-sanctuary .t-rec:nth-of-type(4n + 1)::before,
+  html.moonn-radiant-sanctuary .t-rec:nth-of-type(4n + 2)::after,
+  html.moonn-radiant-sanctuary .t-rec:nth-of-type(6n)::before {
+    opacity: 0.26;
   }
 }
 
