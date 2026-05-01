@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T15:05:00+03:00",
+  "updated_at": "2026-05-01T15:22:00+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 30,
-  "pending_pages": 101,
+  "copied_pages": 34,
+  "pending_pages": 97,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -158,25 +158,27 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62977405",
-      "staging_page_id": null,
+      "staging_page_id": "138677856",
       "title": "Психология - полезная информация - книги, статьи, видео, ссылки. Психолог Татьяна Мунн",
       "alias": "recomend",
       "sort": 130,
       "published": "1748948160",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/recomend",
+      "verified_at": "2026-05-01T15:22:00+03:00"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "81167556",
-      "staging_page_id": null,
+      "staging_page_id": "138677976",
       "title": "Татьяна Мунн. Психолог. ОТЗЫВЫ",
       "alias": "otzivi",
       "sort": 140,
       "published": "1758863826",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/otzivi",
+      "verified_at": "2026-05-01T15:22:00+03:00"
     },
     {
       "source_project_id": "8326812",
@@ -194,13 +196,14 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "62119659",
-      "staging_page_id": null,
+      "staging_page_id": "138678166",
       "title": "Психолог в Москве - Татьяна Мунн. Онлайн и Оффлайн. Помощь Сертифицированного психолога",
       "alias": "psiholog_moskva",
       "sort": 170,
       "published": "1738233518",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/psiholog_moskva",
+      "verified_at": "2026-05-01T15:22:00+03:00"
     },
     {
       "source_project_id": "8326812",
@@ -266,13 +269,14 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "114846506",
-      "staging_page_id": null,
+      "staging_page_id": "138678336",
       "title": "Татьяна Мунн - психолог МГУ в Москве (высокий рейтинг, быстрые результаты)",
       "alias": "psiholog",
       "sort": 240,
       "published": "1769877847",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/psiholog",
+      "verified_at": "2026-05-01T15:22:00+03:00"
     },
     {
       "source_project_id": "8326812",

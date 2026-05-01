@@ -382,3 +382,41 @@ Canonical append-only chat history for `moon-psy-site`.
 - Follow-up priority:
   - Continue with other published/accessibly live paid-product, consultation, event, and high-value SEO pages.
   - Keep skipping inaccessible, unpublished, empty-alias/test-looking pages unless the user explicitly confirms they are part of the public copy scope.
+
+
+## 2026-05-01T15:22:00+03:00 — Tilda consultation and trust pages copied to staging
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying the next published/accessibly live pages into the Tilda staging project.
+- Strategic assessment:
+  - Platform value: high, because consultation, review, and recommendation pages support the main conversion path.
+  - Obsolescence risk: low for trust pages, medium for service landing pages if offers/contact blocks change later.
+  - Stronger architecture: keep building staging around real public navigation and conversion branches before lower-value archive pages.
+  - Reuse: the eligibility gate and copy/publish/verify pattern remains the standard for future batches.
+  - 3-12 month risk if skipped: staging would lack key trust and consultation pages, making future edits to the public funnel harder to validate safely.
+- Eligibility check:
+  - `https://moonn.ru/recomend` returned `200`.
+  - `https://moonn.ru/otzivi` returned `200`.
+  - `https://moonn.ru/psiholog_moskva` returned `200`.
+  - `https://moonn.ru/psiholog` returned `200`.
+- Actions:
+  - Copied and normalized four consultation/trust pages:
+    - `62977405` -> `138677856`, alias `recomend`.
+    - `81167556` -> `138677976`, alias `otzivi`.
+    - `62119659` -> `138678166`, alias `psiholog_moskva`.
+    - `114846506` -> `138678336`, alias `psiholog`.
+  - Published all pages in `Moonn Staging` and verified the new public URLs through Browser Use.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/recomend`
+  - `https://carry-pacific-flatfish.tilda.ws/otzivi`
+  - `https://carry-pacific-flatfish.tilda.ws/psiholog_moskva`
+  - `https://carry-pacific-flatfish.tilda.ws/psiholog`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 34.
+  - Pending staging pages: 97.
+- Follow-up priority:
+  - Continue with published/accessibly live consultation service pages (`semeyniy_psiholog`, `psy4psy`, `selfharm`, `psypodgotovka1`, `panicheskie_ataki`) and/or key public events/news pages.
