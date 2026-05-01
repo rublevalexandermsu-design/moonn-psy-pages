@@ -827,3 +827,29 @@ Canonical append-only chat history for `moon-psy-site`.
 - Boundary:
   - Production `moonn.ru` was not changed.
   - This remains a staging homepage pilot until the user approves rollout to a small second batch.
+
+
+## 2026-05-01T19:35:00+03:00 — Gradient orbs changed to scroll-bound behavior
+
+- Project: `moon-psy-site`.
+- Workstream: `staging-design-system` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: make the two large gradient circles move with scrolling and continue down the page instead of staying fixed to the first screen.
+- Strategic assessment:
+  - Platform value: high, because the behavior becomes part of the reusable visual system.
+  - Obsolescence risk: low, because the behavior is implemented in the canonical CSS file rather than manual Tilda shapes.
+  - Stronger architecture: scroll-bound document background plus section-local orbs gives the homepage and future pages the same design logic.
+  - Reuse: direct rollout to copied staging pages after visual approval.
+  - 3-12 month risk if skipped: the circles would feel like a first-screen decoration rather than a site-wide design language.
+- Actions:
+  - Changed `body::before` from `position: fixed` to document-bound `position: absolute`.
+  - Added `background-repeat: repeat-y` with staggered gradient layer sizes and positions.
+  - Kept slow background-position animation so the circles still drift subtly while scrolling.
+  - Replaced the Tilda homepage HEAD with exactly one canonical theme block.
+  - Published only `Moonn Staging`.
+  - Performed a slow Browser Use scroll check on the live staging homepage.
+  - Verified live HTML contains exactly one `moonn-radiant-sanctuary-theme` block and the scroll-bound markers `background-repeat: repeat-y` and `moonnSectionOrbA`.
+- Live staging URL:
+  - `https://carry-pacific-flatfish.tilda.ws/`
+- Boundary:
+  - Production `moonn.ru` was not changed.

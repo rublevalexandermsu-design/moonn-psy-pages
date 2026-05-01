@@ -38,26 +38,45 @@ html.moonn-radiant-sanctuary body {
   letter-spacing: 0;
 }
 
+html.moonn-radiant-sanctuary body {
+  position: relative;
+  overflow-x: clip;
+}
+
 html.moonn-radiant-sanctuary body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
+  min-height: 100vh;
   pointer-events: none;
   background:
     radial-gradient(circle at 8% 18%, var(--moonn-blob-pink) 0 8%, rgba(116, 39, 199, 0.48) 14%, rgba(29, 183, 255, 0.34) 24%, transparent 37%),
     radial-gradient(circle at 92% 8%, rgba(255, 45, 166, 0.62) 0 7%, rgba(116, 39, 199, 0.42) 15%, rgba(29, 183, 255, 0.30) 24%, transparent 35%),
-    radial-gradient(circle at 92% 76%, rgba(29, 183, 255, 0.35) 0 8%, rgba(116, 39, 199, 0.34) 18%, rgba(255, 45, 166, 0.26) 27%, transparent 38%);
+    radial-gradient(circle at 88% 72%, rgba(29, 183, 255, 0.35) 0 8%, rgba(116, 39, 199, 0.34) 18%, rgba(255, 45, 166, 0.26) 27%, transparent 38%),
+    radial-gradient(circle at 12% 86%, rgba(255, 68, 176, 0.32) 0 7%, rgba(116, 39, 199, 0.28) 18%, rgba(29, 183, 255, 0.22) 28%, transparent 40%);
+  background-repeat: repeat-y;
+  background-size:
+    100% 1480px,
+    100% 1720px,
+    100% 1560px,
+    100% 1880px;
+  background-position:
+    0 0,
+    0 220px,
+    0 620px,
+    0 960px;
   filter: blur(10px) saturate(1.14);
   opacity: 0.60;
   transform: translate3d(0, 0, 0);
-  animation: moonnAmbientDrift 34s ease-in-out infinite alternate;
+  animation: moonnAmbientDrift 42s ease-in-out infinite alternate;
 }
 
 html.moonn-radiant-sanctuary body::after {
   content: "";
-  position: fixed;
-  inset: auto auto 7vh -8vw;
+  position: absolute;
+  top: 64vh;
+  left: -8vw;
   z-index: 0;
   width: min(560px, 58vw);
   aspect-ratio: 1;
@@ -338,12 +357,20 @@ html.moonn-radiant-sanctuary [data-elem-type="text"] .tn-atom {
 
 @keyframes moonnAmbientDrift {
   0% {
-    background-position: 0 0, 0 0, 0 0;
+    background-position:
+      0 0,
+      0 220px,
+      0 620px,
+      0 960px;
     transform: translate3d(0, 0, 0) scale(1);
   }
   100% {
-    background-position: 30px -18px, -26px 34px, 42px 24px;
-    transform: translate3d(1.4vw, -1.0vh, 0) scale(1.035);
+    background-position:
+      34px -28px,
+      -30px 266px,
+      44px 674px,
+      -22px 1012px;
+    transform: translate3d(1.4vw, 0.8vh, 0) scale(1.035);
   }
 }
 

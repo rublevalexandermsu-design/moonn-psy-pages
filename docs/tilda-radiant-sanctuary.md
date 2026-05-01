@@ -89,7 +89,7 @@ The page is not considered ready until these checks pass:
 
 - User feedback: the first live theme pass was too subtle and did not show the requested moving gradient circles.
 - Added a stronger ambient layer:
-  - fixed page-level radial gradients on `body::before` and `body::after`;
+  - scroll-bound page-level radial gradients on `body::before` and `body::after`;
   - per-section orbs on `.t-rec::before` and `.t-rec::after`;
   - Zero Block-specific orbs on `.t396__artboard::before` and `.t396__artboard::after`;
   - slow `moonnAmbient*` and `moonnSectionOrb*` animations;
@@ -101,6 +101,20 @@ The page is not considered ready until these checks pass:
   - `moonnSectionOrbA`
   - `t396__artboard::before`
 - Browser Use opened the live staging homepage and confirmed the main homepage text is present in the live DOM.
+- Production `moonn.ru` was not changed.
+
+### 2026-05-01 scroll-bound orb behavior
+
+- User clarification: the two large background circles should move with the page during scrolling, not stay pinned to the first viewport.
+- Changed the ambient `body::before` layer from viewport-fixed to document-bound absolute positioning.
+- Added vertical `repeat-y` gradient layers with staggered background sizes and positions so the circles continue through lower white sections.
+- Kept slow background-position animation for subtle independent movement.
+- Published only `Moonn Staging`.
+- Performed a slow Browser Use scroll check on the live staging homepage.
+- Confirmed the live staging HTML contains:
+  - exactly one `moonn-radiant-sanctuary-theme` block;
+  - `background-repeat: repeat-y`;
+  - `moonnSectionOrbA`.
 - Production `moonn.ru` was not changed.
 
 ## Tilda Editor Note
