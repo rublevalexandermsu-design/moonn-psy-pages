@@ -4,7 +4,14 @@
   "project": "moon-psy-site",
   "workstream": "seo-aeo-retrofit",
   "source": "output/tilda-snapshot/pages/*.html",
-  "status": "prepared_not_applied",
+  "status": "locations_detected_not_applied",
+  "location_artifact": "registry/seo/moonn-source-link-locations-b1.json",
+  "last_attempted_at": "2026-05-01T23:05:00+03:00",
+  "attempt_summary": {
+    "project_head_normalizer": "Attempted but not applied. Tilda CodeMirror did not reliably accept programmatic insertion; live HTML after publish did not contain the `moonn-link-normalizer` marker.",
+    "publish_all": "Tilda publish-all was run after the attempted project-head change; live HTML check confirmed the normalizer was not present, so this did not create the intended sitewide fix.",
+    "next_safe_action": "Apply content-level edits to the affected Tilda source blocks using the generated page_id/record_id location registry, starting with homepage P0 block `rec2175794871`."
+  },
   "fixes": [
     {
       "id": "LINK-001",

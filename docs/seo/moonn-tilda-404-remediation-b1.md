@@ -79,3 +79,17 @@ Next gates:
 2. Fix source links in Tilda blocks: `http://wa.me/+79777770303`, `http://wa.me/79777770303`, and `http://.moonn.ru`.
 3. Crawl for `moonn.ru/http://wa.me`, `http://wa.me/`, `http://.moonn.ru`, and `moonn.ru/static.tildacdn.com`.
 4. Only after stable live checks pass, validate the GSC 404 group.
+
+## 2026-05-01 Follow-Up
+
+Redirect propagation was rechecked. A single live pass showed most of the non-WhatsApp redirects returning `301`, but two sampled requests still landed on Tilda servers returning `404`, so the GSC validation gate remains closed until the next stable check.
+
+The source-link cleanup was expanded into a block-level location registry:
+
+- artifact: `registry/seo/moonn-source-link-locations-b1.json`;
+- affected occurrences: `128`;
+- affected pages: `57`;
+- affected page/block pairs: `89`;
+- homepage P0 source block: page `42678538`, record `2175794871`, block type `1069`, pattern `/http://wa.me/+79777770303`.
+
+A project-level JavaScript normalizer was attempted as a fast safety layer, but it was not accepted reliably by Tilda's CodeMirror editor and did not appear in live HTML after publish-all. It is therefore not counted as applied. The next safe action is content-level editing of the generated source block list, starting with the homepage P0 block.

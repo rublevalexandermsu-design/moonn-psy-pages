@@ -1,0 +1,1289 @@
+{
+  "created_at": "2026-05-01T23:05:00+03:00",
+  "status": "source_locations_detected_not_applied",
+  "total_occurrences": 128,
+  "unique_pages": 57,
+  "unique_records": 89,
+  "items": [
+    {
+      "page_id": "63684093",
+      "alias": "abuse_gaslight",
+      "filename": "abuse_gaslight.html",
+      "title": "Статья - Абьюзинг и газлайтинг: в чем суть и отличия. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "869774909",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63684093",
+      "alias": "abuse_gaslight",
+      "filename": "abuse_gaslight.html",
+      "title": "Статья - Абьюзинг и газлайтинг: в чем суть и отличия. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "869774910",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63684093",
+      "alias": "abuse_gaslight",
+      "filename": "abuse_gaslight.html",
+      "title": "Статья - Абьюзинг и газлайтинг: в чем суть и отличия. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "869774909",
+      "record_type": "106"
+    },
+    {
+      "page_id": "95349086",
+      "alias": "articles/eq-dlya-rukovoditeley",
+      "filename": "articles__eq-dlya-rukovoditeley.html",
+      "title": "Эмоциональный интеллект лидера 50+: как руководителям сохранять устойчивость в условиях высокого давления",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1564665311",
+      "record_type": "106"
+    },
+    {
+      "page_id": "95349086",
+      "alias": "articles/eq-dlya-rukovoditeley",
+      "filename": "articles__eq-dlya-rukovoditeley.html",
+      "title": "Эмоциональный интеллект лидера 50+: как руководителям сохранять устойчивость в условиях высокого давления",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1564665321",
+      "record_type": "578"
+    },
+    {
+      "page_id": "95349086",
+      "alias": "articles/eq-dlya-rukovoditeley",
+      "filename": "articles__eq-dlya-rukovoditeley.html",
+      "title": "Эмоциональный интеллект лидера 50+: как руководителям сохранять устойчивость в условиях высокого давления",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "1564665311",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62966623",
+      "alias": "article_diary_of_emotions",
+      "filename": "article_diary_of_emotions.html",
+      "title": "Статья - Как вести Дневник Эмоций. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "864005795",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62966623",
+      "alias": "article_diary_of_emotions",
+      "filename": "article_diary_of_emotions.html",
+      "title": "Статья - Как вести Дневник Эмоций. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "864005795",
+      "record_type": "106"
+    },
+    {
+      "page_id": "64057747",
+      "alias": "article_femininity",
+      "filename": "article_femininity.html",
+      "title": "Статья - Потеря женственности в отношениях. внутренние и внешние факторы. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "873459241",
+      "record_type": "106"
+    },
+    {
+      "page_id": "64057747",
+      "alias": "article_femininity",
+      "filename": "article_femininity.html",
+      "title": "Статья - Потеря женственности в отношениях. внутренние и внешние факторы. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "873459244",
+      "record_type": "578"
+    },
+    {
+      "page_id": "64057747",
+      "alias": "article_femininity",
+      "filename": "article_femininity.html",
+      "title": "Статья - Потеря женственности в отношениях. внутренние и внешние факторы. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "873459241",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63692311",
+      "alias": "article_gadget_addiction",
+      "filename": "article_gadget_addiction.html",
+      "title": "Статья - Зависимость подростков от гаджетов и социальных сетей: причины, последствия и пути решения. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "869845874",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63692311",
+      "alias": "article_gadget_addiction",
+      "filename": "article_gadget_addiction.html",
+      "title": "Статья - Зависимость подростков от гаджетов и социальных сетей: причины, последствия и пути решения. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "869845875",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63692311",
+      "alias": "article_gadget_addiction",
+      "filename": "article_gadget_addiction.html",
+      "title": "Статья - Зависимость подростков от гаджетов и социальных сетей: причины, последствия и пути решения. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "869845874",
+      "record_type": "106"
+    },
+    {
+      "page_id": "64061157",
+      "alias": "article_toxic_job",
+      "filename": "article_toxic_job.html",
+      "title": "Статья - Как справиться с негативными эмоциями других людей на работе. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "873550468",
+      "record_type": "106"
+    },
+    {
+      "page_id": "64061157",
+      "alias": "article_toxic_job",
+      "filename": "article_toxic_job.html",
+      "title": "Статья - Как справиться с негативными эмоциями других людей на работе. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "873550471",
+      "record_type": "578"
+    },
+    {
+      "page_id": "64061157",
+      "alias": "article_toxic_job",
+      "filename": "article_toxic_job.html",
+      "title": "Статья - Как справиться с негативными эмоциями других людей на работе. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "873550468",
+      "record_type": "106"
+    },
+    {
+      "page_id": "135534246",
+      "alias": "baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "filename": "baza-znaniy-emocionalnyy-intellekt-psihologiya.html",
+      "title": "Полезная информация по психологии, эмоциональному интеллекту - книги, статьи, видео, ссылки. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "2175171681",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63574637",
+      "alias": "eintellect",
+      "filename": "eintellect.html",
+      "title": "Эмоциональный интеллект: Как стать хозяином своих эмоций и улучшить качество жизни. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "868889472",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63574637",
+      "alias": "eintellect",
+      "filename": "eintellect.html",
+      "title": "Эмоциональный интеллект: Как стать хозяином своих эмоций и улучшить качество жизни. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "868936418",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63574637",
+      "alias": "eintellect",
+      "filename": "eintellect.html",
+      "title": "Эмоциональный интеллект: Как стать хозяином своих эмоций и улучшить качество жизни. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "868889472",
+      "record_type": "106"
+    },
+    {
+      "page_id": "95339896",
+      "alias": "emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "filename": "emotional-intelligence__knowledge-base__male-loneliness-russia.html",
+      "title": "Статья - Мужское одиночество в России: скрытый кризис, о котором не принято говорить. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1564559301",
+      "record_type": "106"
+    },
+    {
+      "page_id": "95339896",
+      "alias": "emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "filename": "emotional-intelligence__knowledge-base__male-loneliness-russia.html",
+      "title": "Статья - Мужское одиночество в России: скрытый кризис, о котором не принято говорить. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1564559311",
+      "record_type": "578"
+    },
+    {
+      "page_id": "95339896",
+      "alias": "emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "filename": "emotional-intelligence__knowledge-base__male-loneliness-russia.html",
+      "title": "Статья - Мужское одиночество в России: скрытый кризис, о котором не принято говорить. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "1564559301",
+      "record_type": "106"
+    },
+    {
+      "page_id": "53668815",
+      "alias": "events",
+      "filename": "events.html",
+      "title": "Психолог Татьяна Мунн - ближайшие мероприятия. Бесплатные лекции по психологии.",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "787864694",
+      "record_type": "205"
+    },
+    {
+      "page_id": "63388057",
+      "alias": "geshtalt",
+      "filename": "geshtalt.html",
+      "title": "Гештальт-терапия: путь к гармонии через осознанность и принятие. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867367913",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63388057",
+      "alias": "geshtalt",
+      "filename": "geshtalt.html",
+      "title": "Гештальт-терапия: путь к гармонии через осознанность и принятие. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867367914",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63388057",
+      "alias": "geshtalt",
+      "filename": "geshtalt.html",
+      "title": "Гештальт-терапия: путь к гармонии через осознанность и принятие. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "867367913",
+      "record_type": "106"
+    },
+    {
+      "page_id": "42678538",
+      "alias": "",
+      "filename": "index.html",
+      "title": "Психолог МГУ в Москве - Татьяна Мунн. Быстрая Психология (Психотерапия). г.Москва moonn.ru",
+      "pattern": "http://wa.me/+79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "2175794871",
+      "record_type": "1069"
+    },
+    {
+      "page_id": "63403669",
+      "alias": "kpt",
+      "filename": "kpt.html",
+      "title": "Когнитивно-поведенческая терапия: что это такое и как это работает. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867494326",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63403669",
+      "alias": "kpt",
+      "filename": "kpt.html",
+      "title": "Когнитивно-поведенческая терапия: что это такое и как это работает. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867494327",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63403669",
+      "alias": "kpt",
+      "filename": "kpt.html",
+      "title": "Когнитивно-поведенческая терапия: что это такое и как это работает. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "867494326",
+      "record_type": "106"
+    },
+    {
+      "page_id": "68295899",
+      "alias": "lectures1",
+      "filename": "lectures1.html",
+      "title": " Лекции по ПСИХОЛОГИИ от Татьяны Мунн (МГУ)",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1006417701",
+      "record_type": "578"
+    },
+    {
+      "page_id": "81167556",
+      "alias": "otzivi",
+      "filename": "otzivi.html",
+      "title": "Татьяна Мунн. Психолог. ОТЗЫВЫ",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1352757161",
+      "record_type": "545"
+    },
+    {
+      "page_id": "62951593",
+      "alias": "",
+      "filename": "page62951593.html",
+      "title": "Статья - Книга Ненасильственное общение. Маршал Розенберг",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863884211",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62951593",
+      "alias": "",
+      "filename": "page62951593.html",
+      "title": "Статья - Книга Ненасильственное общение. Маршал Розенберг",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863884211",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62953471",
+      "alias": "",
+      "filename": "page62953471.html",
+      "title": "Статья - Книга 5 языков любви Гэри Чепмен",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863898730",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62953471",
+      "alias": "",
+      "filename": "page62953471.html",
+      "title": "Статья - Книга 5 языков любви Гэри Чепмен",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863898730",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62956267",
+      "alias": "",
+      "filename": "page62956267.html",
+      "title": "Статья - Книга Как говорить чтобы дети слушали и слушать чтобы дети говорили. Фабер и Мазлиш",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863922291",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62956267",
+      "alias": "",
+      "filename": "page62956267.html",
+      "title": "Статья - Книга Как говорить чтобы дети слушали и слушать чтобы дети говорили. Фабер и Мазлиш",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863922291",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62959307",
+      "alias": "",
+      "filename": "page62959307.html",
+      "title": "Статья - Книга 7 навыков высокоэффективных людей. Стивен Кови",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863947434",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62959307",
+      "alias": "",
+      "filename": "page62959307.html",
+      "title": "Статья - Книга 7 навыков высокоэффективных людей. Стивен Кови",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863947434",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62962631",
+      "alias": "",
+      "filename": "page62962631.html",
+      "title": "Статья - Книга 4 Соглашения. Дон Мигель Риус",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863973569",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62962631",
+      "alias": "",
+      "filename": "page62962631.html",
+      "title": "Статья - Книга 4 Соглашения. Дон Мигель Риус",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863973569",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62964151",
+      "alias": "",
+      "filename": "page62964151.html",
+      "title": "Статья - Книга Радикальное прощение. Колин Типпинг",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863985771",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62964151",
+      "alias": "",
+      "filename": "page62964151.html",
+      "title": "Статья - Книга Радикальное прощение. Колин Типпинг",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863985771",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62970147",
+      "alias": "",
+      "filename": "page62970147.html",
+      "title": "Статья - Почему плохо подавлять эмоции и как безопасно их выражать. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "864035613",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62970147",
+      "alias": "",
+      "filename": "page62970147.html",
+      "title": "Статья - Почему плохо подавлять эмоции и как безопасно их выражать. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "864035613",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63097209",
+      "alias": "",
+      "filename": "page63097209.html",
+      "title": "Статья - Книга 12 правил жизни. Джордан Питерсон",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865061664",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63097209",
+      "alias": "",
+      "filename": "page63097209.html",
+      "title": "Статья - Книга 12 правил жизни. Джордан Питерсон",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865307217",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63097209",
+      "alias": "",
+      "filename": "page63097209.html",
+      "title": "Статья - Книга 12 правил жизни. Джордан Питерсон",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "865061664",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63099675",
+      "alias": "",
+      "filename": "page63099675.html",
+      "title": "Статья - Книга Очарование женственности. Хелен Анделин",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865082787",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63099675",
+      "alias": "",
+      "filename": "page63099675.html",
+      "title": "Статья - Книга Очарование женственности. Хелен Анделин",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "865082787",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63102709",
+      "alias": "",
+      "filename": "page63102709.html",
+      "title": "Статья - Книга Поток Михай Чиксенмихайи. основные принципы",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865108932",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63102709",
+      "alias": "",
+      "filename": "page63102709.html",
+      "title": "Статья - Книга Поток Михай Чиксенмихайи. основные принципы",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "865108932",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63127703",
+      "alias": "",
+      "filename": "page63127703.html",
+      "title": "Статья - Книга Путь Художника. Джулия Кэмерон",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865325328",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63127703",
+      "alias": "",
+      "filename": "page63127703.html",
+      "title": "Статья - Книга Путь Художника. Джулия Кэмерон",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865325329",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63127703",
+      "alias": "",
+      "filename": "page63127703.html",
+      "title": "Статья - Книга Путь Художника. Джулия Кэмерон",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "865325328",
+      "record_type": "106"
+    },
+    {
+      "page_id": "135430346",
+      "alias": "psiholog-konsultacii-moskva",
+      "filename": "psiholog-konsultacii-moskva.html",
+      "title": "Консультации психолога в Москве - Психолог МГУ Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "2173824361",
+      "record_type": "959"
+    },
+    {
+      "page_id": "62908693",
+      "alias": "psy4psy",
+      "filename": "psy4psy.html",
+      "title": "Психолог для психологов: Как найти поддержку для себя",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863576102",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63398035",
+      "alias": "psychoanalys",
+      "filename": "psychoanalys.html",
+      "title": "Психоанализ как метод психотерапии. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867447956",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63398035",
+      "alias": "psychoanalys",
+      "filename": "psychoanalys.html",
+      "title": "Психоанализ как метод психотерапии. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867447957",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63398035",
+      "alias": "psychoanalys",
+      "filename": "psychoanalys.html",
+      "title": "Психоанализ как метод психотерапии. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "867447956",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62652841",
+      "alias": "psypodgotovka1",
+      "filename": "psypodgotovka1.html",
+      "title": "Психологическая подготовка к Экзаменам. Экзамены без стресса: Как подготовиться психологически к успеху",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "861500613",
+      "record_type": "578"
+    },
+    {
+      "page_id": "62652841",
+      "alias": "psypodgotovka1",
+      "filename": "psypodgotovka1.html",
+      "title": "Психологическая подготовка к Экзаменам. Экзамены без стресса: Как подготовиться психологически к успеху",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "861886626",
+      "record_type": "996"
+    },
+    {
+      "page_id": "62977405",
+      "alias": "recomend",
+      "filename": "recomend.html",
+      "title": "Психология - полезная информация - книги, статьи, видео, ссылки. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "864198145",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63131581",
+      "alias": "salt",
+      "filename": "salt.html",
+      "title": "Соль для здоровья - способы применения. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865403724",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63409841",
+      "alias": "schematherapy",
+      "filename": "schematherapy.html",
+      "title": "Схематерапия: виды и описание схем. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867548266",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63409841",
+      "alias": "schematherapy",
+      "filename": "schematherapy.html",
+      "title": "Схематерапия: виды и описание схем. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "867548267",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63409841",
+      "alias": "schematherapy",
+      "filename": "schematherapy.html",
+      "title": "Схематерапия: виды и описание схем. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "867548266",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62890623",
+      "alias": "selfharm",
+      "filename": "selfharm.html",
+      "title": "Суицидальные мысли у подростков &amp; самоповреждение (сеплфхарм): Помощь психолога",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863436355",
+      "record_type": "578"
+    },
+    {
+      "page_id": "62923441",
+      "alias": "semeynie_konflikti_article",
+      "filename": "semeynie_konflikti_article.html",
+      "title": "Управление конфликтами в семье - статья",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863660067",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62923441",
+      "alias": "semeynie_konflikti_article",
+      "filename": "semeynie_konflikti_article.html",
+      "title": "Управление конфликтами в семье - статья",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863660067",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62920697",
+      "alias": "semeyniy_psiholog",
+      "filename": "semeyniy_psiholog.html",
+      "title": "Семейный психолог в Москве. в Кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863635147",
+      "record_type": "718"
+    },
+    {
+      "page_id": "87231366",
+      "alias": "speaker",
+      "filename": "speaker.html",
+      "title": "Психолог МГУ Татьяна Мунн — спикер и эксперт по эмоциональному интеллекту, soft skills, психологии эмоций и состояний.",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1445529241",
+      "record_type": "257"
+    },
+    {
+      "page_id": "87231366",
+      "alias": "speaker",
+      "filename": "speaker.html",
+      "title": "Психолог МГУ Татьяна Мунн — спикер и эксперт по эмоциональному интеллекту, soft skills, психологии эмоций и состояний.",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1444734111",
+      "record_type": "213"
+    },
+    {
+      "page_id": "87231366",
+      "alias": "speaker",
+      "filename": "speaker.html",
+      "title": "Психолог МГУ Татьяна Мунн — спикер и эксперт по эмоциональному интеллекту, soft skills, психологии эмоций и состояний.",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1444846131",
+      "record_type": "508"
+    },
+    {
+      "page_id": "87231366",
+      "alias": "speaker",
+      "filename": "speaker.html",
+      "title": "Психолог МГУ Татьяна Мунн — спикер и эксперт по эмоциональному интеллекту, soft skills, психологии эмоций и состояний.",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1445125661",
+      "record_type": "561"
+    },
+    {
+      "page_id": "69732653",
+      "alias": "st1",
+      "filename": "st1.html",
+      "title": "онлайн-тренинг \"Среда Трансформации\". психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1062865026",
+      "record_type": "962"
+    },
+    {
+      "page_id": "69732653",
+      "alias": "st1",
+      "filename": "st1.html",
+      "title": "онлайн-тренинг \"Среда Трансформации\". психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1060387556",
+      "record_type": "718"
+    },
+    {
+      "page_id": "98329166",
+      "alias": "st2",
+      "filename": "st2.html",
+      "title": "онлайн-тренинг \"Среда Трансформации\" стартует 31 декабря 2025 года. Автор и ведущий психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1608442311",
+      "record_type": "962"
+    },
+    {
+      "page_id": "63579285",
+      "alias": "trauma",
+      "filename": "trauma.html",
+      "title": "Статья - Психология травмы: Влияние травматического опыта и методы терапии. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "868928811",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63579285",
+      "alias": "trauma",
+      "filename": "trauma.html",
+      "title": "Статья - Психология травмы: Влияние травматического опыта и методы терапии. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "868936601",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63579285",
+      "alias": "trauma",
+      "filename": "trauma.html",
+      "title": "Статья - Психология травмы: Влияние травматического опыта и методы терапии. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "868928811",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63836583",
+      "alias": "uslugi_aerofobia",
+      "filename": "uslugi_aerofobia.html",
+      "title": "Аэрофобия Консультации по страху полётов (аэрофобия). Психолог МГУ Татьяна Мунн — автор метода “Быстрая психология”. ",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870978971",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63836583",
+      "alias": "uslugi_aerofobia",
+      "filename": "uslugi_aerofobia.html",
+      "title": "Аэрофобия Консультации по страху полётов (аэрофобия). Психолог МГУ Татьяна Мунн — автор метода “Быстрая психология”. ",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870978979",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63836583",
+      "alias": "uslugi_aerofobia",
+      "filename": "uslugi_aerofobia.html",
+      "title": "Аэрофобия Консультации по страху полётов (аэрофобия). Психолог МГУ Татьяна Мунн — автор метода “Быстрая психология”. ",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870978971",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63747017",
+      "alias": "uslugi_depression",
+      "filename": "uslugi_depression.html",
+      "title": "Депрессивное состояние: понимание и преодоление. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870281487",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63747017",
+      "alias": "uslugi_depression",
+      "filename": "uslugi_depression.html",
+      "title": "Депрессивное состояние: понимание и преодоление. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870281491",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63747017",
+      "alias": "uslugi_depression",
+      "filename": "uslugi_depression.html",
+      "title": "Депрессивное состояние: понимание и преодоление. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870281487",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63711321",
+      "alias": "uslugi_fin_blocks",
+      "filename": "uslugi_fin_blocks.html",
+      "title": "Проработка финансовых блоков. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870006047",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63711321",
+      "alias": "uslugi_fin_blocks",
+      "filename": "uslugi_fin_blocks.html",
+      "title": "Проработка финансовых блоков. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870006049",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63711321",
+      "alias": "uslugi_fin_blocks",
+      "filename": "uslugi_fin_blocks.html",
+      "title": "Проработка финансовых блоков. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870006047",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63758713",
+      "alias": "uslugi_gtr",
+      "filename": "uslugi_gtr.html",
+      "title": "Тревожные расстройства: когда тревога становится болезнью. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870371680",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63758713",
+      "alias": "uslugi_gtr",
+      "filename": "uslugi_gtr.html",
+      "title": "Тревожные расстройства: когда тревога становится болезнью. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870371685",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63758713",
+      "alias": "uslugi_gtr",
+      "filename": "uslugi_gtr.html",
+      "title": "Тревожные расстройства: когда тревога становится болезнью. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870371680",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63716871",
+      "alias": "uslugi_konflikti_na_rabote",
+      "filename": "uslugi_konflikti_na_rabote.html",
+      "title": "Проработка внутренних конфликтов, связанных с работой. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870053088",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63716871",
+      "alias": "uslugi_konflikti_na_rabote",
+      "filename": "uslugi_konflikti_na_rabote.html",
+      "title": "Проработка внутренних конфликтов, связанных с работой. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870053092",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63716871",
+      "alias": "uslugi_konflikti_na_rabote",
+      "filename": "uslugi_konflikti_na_rabote.html",
+      "title": "Проработка внутренних конфликтов, связанных с работой. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870053088",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63757347",
+      "alias": "uslugi_lubovnaya_zavisimost",
+      "filename": "uslugi_lubovnaya_zavisimost.html",
+      "title": "Любовные зависимости и привязанности. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870360267",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63757347",
+      "alias": "uslugi_lubovnaya_zavisimost",
+      "filename": "uslugi_lubovnaya_zavisimost.html",
+      "title": "Любовные зависимости и привязанности. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870360272",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63757347",
+      "alias": "uslugi_lubovnaya_zavisimost",
+      "filename": "uslugi_lubovnaya_zavisimost.html",
+      "title": "Любовные зависимости и привязанности. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870360267",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63749211",
+      "alias": "uslugi_obida_na_roditelei",
+      "filename": "uslugi_obida_na_roditelei.html",
+      "title": "Обида на родителей - негативные чувства, связанные с детством. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870299411",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63749211",
+      "alias": "uslugi_obida_na_roditelei",
+      "filename": "uslugi_obida_na_roditelei.html",
+      "title": "Обида на родителей - негативные чувства, связанные с детством. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870299415",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63749211",
+      "alias": "uslugi_obida_na_roditelei",
+      "filename": "uslugi_obida_na_roditelei.html",
+      "title": "Обида на родителей - негативные чувства, связанные с детством. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870299411",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63718371",
+      "alias": "uslugi_otnosheniya_v_kollektive",
+      "filename": "uslugi_otnosheniya_v_kollektive.html",
+      "title": "Налаживание отношений в коллективе. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870065747",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63718371",
+      "alias": "uslugi_otnosheniya_v_kollektive",
+      "filename": "uslugi_otnosheniya_v_kollektive.html",
+      "title": "Налаживание отношений в коллективе. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870065751",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63718371",
+      "alias": "uslugi_otnosheniya_v_kollektive",
+      "filename": "uslugi_otnosheniya_v_kollektive.html",
+      "title": "Налаживание отношений в коллективе. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870065747",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63713227",
+      "alias": "uslugi_podrostki",
+      "filename": "uslugi_podrostki.html",
+      "title": "Психологическая консультация для подростков от 12 лет. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870021133",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63713227",
+      "alias": "uslugi_podrostki",
+      "filename": "uslugi_podrostki.html",
+      "title": "Психологическая консультация для подростков от 12 лет. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870021137",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63713227",
+      "alias": "uslugi_podrostki",
+      "filename": "uslugi_podrostki.html",
+      "title": "Психологическая консультация для подростков от 12 лет. Психолог МГУ Москва - Татьяна Мунн. В кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870021133",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63750667",
+      "alias": "uslugi_procrastination",
+      "filename": "uslugi_procrastination.html",
+      "title": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870310589",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63750667",
+      "alias": "uslugi_procrastination",
+      "filename": "uslugi_procrastination.html",
+      "title": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870310593",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63750667",
+      "alias": "uslugi_procrastination",
+      "filename": "uslugi_procrastination.html",
+      "title": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870310589",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63755367",
+      "alias": "uslugi_razvod",
+      "filename": "uslugi_razvod.html",
+      "title": "Помощь при расставании, измене, разводе. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870345775",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63755367",
+      "alias": "uslugi_razvod",
+      "filename": "uslugi_razvod.html",
+      "title": "Помощь при расставании, измене, разводе. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870345779",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63755367",
+      "alias": "uslugi_razvod",
+      "filename": "uslugi_razvod.html",
+      "title": "Помощь при расставании, измене, разводе. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870345775",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63752263",
+      "alias": "uslugi_sohranit_brak",
+      "filename": "uslugi_sohranit_brak.html",
+      "title": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870322722",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63752263",
+      "alias": "uslugi_sohranit_brak",
+      "filename": "uslugi_sohranit_brak.html",
+      "title": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "870322726",
+      "record_type": "578"
+    },
+    {
+      "page_id": "63752263",
+      "alias": "uslugi_sohranit_brak",
+      "filename": "uslugi_sohranit_brak.html",
+      "title": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога. Психолог МГУ Москва - Татьяна Мунн. Прием в кабинете и Онлайн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "870322722",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63138325",
+      "alias": "vacuum_cups",
+      "filename": "vacuum_cups.html",
+      "title": "Вакуумные банки для психологического здоровья. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "865411554",
+      "record_type": "578"
+    },
+    {
+      "page_id": "73626523",
+      "alias": "vecherinka369",
+      "filename": "vecherinka369.html",
+      "title": "Психологическая ВЕЧЕРИНКА \"Среда Трансформации\" 22.10.2025. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1212287486",
+      "record_type": "718"
+    },
+    {
+      "page_id": "73626523",
+      "alias": "vecherinka369",
+      "filename": "vecherinka369.html",
+      "title": "Психологическая ВЕЧЕРИНКА \"Среда Трансформации\" 22.10.2025. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "1212289836",
+      "record_type": "561"
+    },
+    {
+      "page_id": "62988415",
+      "alias": "vigoranie_article",
+      "filename": "vigoranie_article.html",
+      "title": "Статья - Выгорание на работе: как распознать, предотвратить и справиться. Психолог Татьяна Мунн",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "864182267",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62988415",
+      "alias": "vigoranie_article",
+      "filename": "vigoranie_article.html",
+      "title": "Статья - Выгорание на работе: как распознать, предотвратить и справиться. Психолог Татьяна Мунн",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "864182267",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62923037",
+      "alias": "vospitanie_article",
+      "filename": "vospitanie_article.html",
+      "title": "Воспитание ребенка - статья",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "863654056",
+      "record_type": "106"
+    },
+    {
+      "page_id": "62923037",
+      "alias": "vospitanie_article",
+      "filename": "vospitanie_article.html",
+      "title": "Воспитание ребенка - статья",
+      "pattern": "http://.moonn.ru",
+      "replacement": "https://moonn.ru",
+      "record_id": "863654056",
+      "record_type": "106"
+    },
+    {
+      "page_id": "63552425",
+      "alias": "water",
+      "filename": "water.html",
+      "title": "вода и здоровье - влияние воды на психоэмоциональное состояние. Психолог Татьяна Мунн (МГУ)",
+      "pattern": "http://wa.me/79777770303",
+      "replacement": "https://wa.me/79777770303",
+      "record_id": "868702218",
+      "record_type": "578"
+    }
+  ]
+}

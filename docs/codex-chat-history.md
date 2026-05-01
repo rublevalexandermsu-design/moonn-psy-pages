@@ -830,6 +830,42 @@ Canonical append-only chat history for `moon-psy-site`.
   - Fix source links for `http://wa.me/+79777770303`, `http://wa.me/79777770303`, and `http://.moonn.ru`.
 
 
+## 2026-05-01T23:05:00+03:00 — Moonn source-link cleanup locations generated
+
+- Project: `moon-psy-site`.
+- Workstream: `seo-aeo-retrofit` under `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue the correct next step: re-check Tilda redirect cache, then fix WhatsApp/source-link errors in Tilda blocks.
+- Strategic assessment:
+  - Platform value: high, because this moves from redirect symptoms to the source blocks that generate bad crawl paths.
+  - Obsolescence risk: low for link normalization, but high for a JS-only workaround because static source links would remain dirty.
+  - Stronger architecture: use generated page/block location registry before editing production Tilda content.
+  - Reuse: the same location detector can support future Tilda SEO cleanup batches.
+  - 3-12 month risk if skipped: GSC will keep rediscovering malformed `moonn.ru/http://...` URLs from stale block content.
+- Actions:
+  - Rechecked the 8 non-WhatsApp redirect URLs on `https://moonn.ru`.
+  - Opened production project HEAD in Tilda and attempted a project-wide link normalizer as a fast safety layer.
+  - Ran Tilda publish-all after the attempted project-head change.
+  - Verified live HTML: the normalizer marker was not present, so the project-head attempt is not counted as applied.
+  - Generated exact source-link locations from the Tilda snapshot.
+- Verification:
+  - Current redirect pass: most non-WhatsApp URLs returned `301`, but not all sampled URLs were stable, so GSC validation remains blocked.
+  - Source-link location registry: `128` occurrences, `57` affected pages, `89` affected page/block pairs.
+  - Homepage P0 source: page `42678538`, record `2175794871`, block type `1069`, pattern `/http://wa.me/+79777770303`.
+- Changed files:
+  - `registry/seo/moonn-source-link-locations-b1.json`
+  - `registry/seo/moonn-source-link-fixes-b1.json`
+  - `docs/seo/moonn-tilda-404-remediation-b1.md`
+- Incident:
+  - Symptom: Tilda CodeMirror did not reliably accept programmatic project-head insertion; live HTML did not contain the expected marker after publish-all.
+  - Root cause: CodeMirror content and the accessibility textarea are not the same persistence surface; setting the UIA edit value can show a marker in accessibility but not save into Tilda's actual editor model.
+  - Solution: do not use project-head JS as an unverified shortcut; switch to block-level source location registry and edit the actual content blocks.
+  - Follow-up rule: for Tilda CodeMirror fields, final proof must be live HTML marker after publish; UIA field text alone is not a valid save signal.
+- Open follow-up:
+  - Start content-level edits with homepage P0 block `rec2175794871`.
+  - Then batch repeated footer/contact blocks of type `106`, `578`, and related service-page blocks from `registry/seo/moonn-source-link-locations-b1.json`.
+
+
 ## 2026-05-01T21:15:02+03:00 — GSC URL decision table created for Moonn SEO fixes
 
 - Project: `moon-psy-site`.
