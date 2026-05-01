@@ -220,3 +220,29 @@ Canonical append-only chat history for `moon-psy-site`.
   - Pending staging pages: 117.
 - Follow-up priority:
   - Next copy candidates: individual EI knowledge-base pages, individual EI article pages, `st1`, `st2`, `seminar555`, masterclass/seminar pages, and key search pages that support paid products or expertise.
+
+## 2026-05-01T13:32:00+03:00 — Tilda EI article pages copied
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue copying the pages recommended by the staging strategy, especially lectures, courses, paid products, videos, and knowledge/expertise pages.
+- Actions:
+  - Copied and normalized four priority emotional-intelligence article pages:
+    - `90782146` -> `138668556`, alias `emotional-intelligence/articles/what-is-emotional-intelligence`.
+    - `90952996` -> `138668766`, alias `emotional-intelligence/articles/emotional-intelligence-skills`.
+    - `91163626` -> `138668916`, alias `emotional-intelligence/articles/why-ei-matters`.
+    - `91171146` -> `138669216`, alias `emotional-intelligence/articles/benefits-of-ei`.
+  - Republished the staging project.
+  - Updated `registry/tilda/moonn-staging-page-map.json`.
+- Verified live staging URLs:
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/what-is-emotional-intelligence`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/emotional-intelligence-skills`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/why-ei-matters`
+  - `https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/benefits-of-ei`
+- Current copy state:
+  - Published production pages: 131.
+  - Copied and verified staging pages: 18.
+  - Pending staging pages: 113.
+- Follow-up priority:
+  - Continue with EI knowledge-base child pages and paid-product pages (`st1`, `st2`, `seminar555`, masterclass/seminar pages) before broad article/archive copying.

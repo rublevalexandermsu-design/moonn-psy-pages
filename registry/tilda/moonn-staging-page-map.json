@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-05-01T13:25:35.4662179+03:00",
+  "updated_at": "2026-05-01T13:32:39.9419017+03:00",
   "source_project_id": "8326812",
   "source_project_name": "Moonn.ru",
   "staging_project_id": "25075076",
   "staging_project_name": "Moonn Staging",
   "staging_base_url": "https://carry-pacific-flatfish.tilda.ws",
   "published_source_pages": 131,
-  "copied_pages": 14,
-  "pending_pages": 117,
+  "copied_pages": 18,
+  "pending_pages": 113,
   "tilda_known_limit_note": "Tilda page duplication has a daily new-page limit; copy remaining pages in batches and update this registry after each batch.",
   "pages": [
     {
@@ -890,49 +890,49 @@
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "90782146",
-      "staging_page_id": null,
+      "staging_page_id": "138668556",
       "title": "Что такое эмоциональный интеллект — простое объяснение с примерами | Татьяна Мунн",
       "alias": "emotional-intelligence/articles/what-is-emotional-intelligence",
       "sort": 780,
       "published": "1762170743",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/what-is-emotional-intelligence"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "90952996",
-      "staging_page_id": null,
+      "staging_page_id": "138668766",
       "title": "5 ключевых навыков эмоционального интеллекта: от осознанности до влияния",
       "alias": "emotional-intelligence/articles/emotional-intelligence-skills",
       "sort": 790,
       "published": "1762171159",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/emotional-intelligence-skills"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91163626",
-      "staging_page_id": null,
+      "staging_page_id": "138668916",
       "title": "Почему эмоциональный интеллект важнее IQ в карьере и жизни | Научные доказательства",
       "alias": "emotional-intelligence/articles/why-ei-matters",
       "sort": 800,
       "published": "1762160240",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/why-ei-matters"
     },
     {
       "source_project_id": "8326812",
       "staging_project_id": "25075076",
       "source_page_id": "91171146",
-      "staging_page_id": null,
+      "staging_page_id": "138669216",
       "title": "Преимущества эмоционального интеллекта: что даёт развитый EQ в жизни и работе",
       "alias": "emotional-intelligence/articles/benefits-of-ei",
       "sort": 810,
       "published": "1762160245",
-      "status": "pending_copy",
-      "staging_url": null
+      "status": "copied_verified",
+      "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/benefits-of-ei"
     },
     {
       "source_project_id": "8326812",
