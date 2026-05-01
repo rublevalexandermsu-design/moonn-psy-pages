@@ -324,3 +324,24 @@ Canonical append-only chat history for `moon-psy-site`.
   - Follow-up rule: copied Tilda pages are not complete until their staging aliases return a non-404 live page with the expected title.
 - Follow-up priority:
   - Move next to paid-product/course/seminar pages (`st1`, `st2`, `seminar555`, masterclass/seminar pages), then remaining high-value search and expertise pages.
+
+
+## 2026-05-01T14:40:00+03:00 — Tilda staging copy selection rule updated
+
+- Project: `moon-psy-site`.
+- Workstream: `tilda-api-sync`.
+- Branch: `codex/tilda-api-sync`.
+- Request: for future copy runs, copy only source pages that are available/published; do not copy inaccessible or unpublished test pages from Tatiana's original Tilda project.
+- Strategic assessment:
+  - Platform value: high, because staging should mirror the real public site, not internal experiments.
+  - Obsolescence risk: low; the rule is based on current production visibility and can be verified before each batch.
+  - Stronger architecture: source-page eligibility must be an explicit gate before duplication: published/accessibly live in production -> copy candidate; unpublished/inaccessible/test -> skip.
+  - Reuse: the same eligibility gate should be used for courses, events, articles, grants, and future Tilda staging projects.
+  - 3-12 month risk if ignored: staging becomes polluted with old test pages, making future edits, navigation checks, SEO review, and migration back to production less reliable.
+- Decision:
+  - Canonical copy rule: only duplicate production pages that are published and accessible in the original Moonn project.
+  - Do not copy pages that are not in access, are unpublished, or are known test/draft pages from Tatiana's original project.
+  - Before each batch, check source `published` status and, when needed, source live URL accessibility.
+- Follow-up implementation note:
+  - Next batches should filter pending pages by `published`/live availability before opening the Tilda UI.
+  - The registry can keep skipped pages as non-copy candidates instead of treating them as missing staging work.
