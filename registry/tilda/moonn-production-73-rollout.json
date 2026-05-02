@@ -120,13 +120,12 @@
     "alias": "emotional-intelligence",
     "source_page_id": "90977486",
     "staging_page_id": "138667076",
-    "production_url": "https://moonn.ru/emotional-intelligence",
+    "production_url": "https://moonn.ru/emotional-intelligence/",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/",
     "cluster": "unclassified",
     "rollout_status": "pending",
     "design_status": "head_saved_but_live_url_error",
-    "live_status": 404,
-    "live_error": "HTTP Error 404: Not Found"
+    "url_note": "Canonical live URL requires trailing slash; no-slash URL returns 404 as of 2026-05-02."
   },
   {
     "alias": "emotional-intelligence/knowledge-base",

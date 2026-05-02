@@ -54,19 +54,26 @@ Result:
 - Heading issue pages: `53`.
 - Image alt issue pages: `72`.
 
-Current live error:
+Initial live error:
 
 - `https://moonn.ru/emotional-intelligence` returns `404`.
+
+Resolution:
+
+- The live canonical URL is `https://moonn.ru/emotional-intelligence/`.
+- `registry/tilda/moonn-production-73-rollout.json` was updated to use the trailing-slash URL.
+- After re-audit: `73` pages return `200 OK`.
 
 ## Design Rollout Result
 
 Completed: 2026-05-02.
 
 - Production pages processed through Tilda UI automation: `73`.
-- Live pages with verified `Radiant Sanctuary` theme: `72`.
+- Live pages with verified `Radiant Sanctuary` theme: `73`.
 - Live pages missing the theme after publication: `0`.
-- Page with saved Tilda HEAD but live URL error: `1`.
-  - `https://moonn.ru/emotional-intelligence` returns `404`.
+- Page URL correction:
+  - `https://moonn.ru/emotional-intelligence` returned `404`.
+  - `https://moonn.ru/emotional-intelligence/` returns `200 OK` and is now the registry URL.
 - Verified live markers:
   - `moonn-radiant-sanctuary-theme`;
   - pinned CSS `https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@102fb3d/assets/tilda-radiant-sanctuary.css`.
@@ -83,7 +90,7 @@ Completed: 2026-05-02.
 ## Rollout Order
 
 1. Apply the verified `Radiant Sanctuary` design snippet to the production page HEAD of the `73` original pages. Completed.
-2. Publish and verify live HTML for all `73` pages. Completed for `72` live URLs; blocked by one `404` URL:
+2. Publish and verify live HTML for all `73` pages. Completed:
    - exactly one `moonn-radiant-sanctuary-theme` marker;
    - pinned CSS `@102fb3d`;
    - no regression of known card/substrate/button rules.

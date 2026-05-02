@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "source": "registry\\tilda\\moonn-production-73-rollout.json",
   "page_count": 73,
-  "ok_count": 72,
-  "error_count": 1,
-  "theme_missing_count": 1,
-  "pinned_theme_missing_count": 1,
+  "ok_count": 73,
+  "error_count": 0,
+  "theme_missing_count": 0,
+  "pinned_theme_missing_count": 0,
   "link_issue_pages": 44,
   "link_issue_totals": {
     "http_wa": 69,
@@ -196,7 +196,7 @@
       "h2_count": 0
     },
     {
-      "url": "https://moonn.ru/emotional-intelligence",
+      "url": "https://moonn.ru/emotional-intelligence/",
       "alias": "emotional-intelligence",
       "h1_count": 0,
       "h1": [],
@@ -657,6 +657,12 @@
       "alias": "lectures1",
       "image_count": 6,
       "images_missing_alt": 6
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/",
+      "alias": "emotional-intelligence",
+      "image_count": 4,
+      "images_missing_alt": 4
     },
     {
       "url": "https://moonn.ru/emotional-intelligence/knowledge-base",
@@ -1312,19 +1318,19 @@
       "alias": "emotional-intelligence",
       "source_page_id": "90977486",
       "staging_page_id": "138667076",
-      "url": "https://moonn.ru/emotional-intelligence",
+      "url": "https://moonn.ru/emotional-intelligence/",
       "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/",
-      "status": 404,
-      "title": "404 Page Not Found.",
-      "description": "",
-      "canonical": "",
-      "robots": "noindex",
+      "status": 200,
+      "title": "ЭМОЦИОНАЛЬНЫЙ ИНТЕЛЛЕКТ",
+      "description": "Татьяна Мунн — практикующий психолог, спикер, преподаватель МГУ, автор метода «Быстрая психология», эксперт по soft skills и эмоциональному интеллекту.",
+      "canonical": "moonn.ru/emotional-intelligence/",
+      "robots": "",
       "h1": [],
       "h2": [],
-      "image_count": 1,
-      "images_missing_alt": 0,
-      "theme_marker_count": 0,
-      "pinned_theme_count": 0,
+      "image_count": 4,
+      "images_missing_alt": 4,
+      "theme_marker_count": 2,
+      "pinned_theme_count": 1,
       "link_issues": {
         "http_wa": 0,
         "http_twa": 0,
@@ -1332,7 +1338,7 @@
         "bad_plus_wa": 0,
         "internalized_bad_plus_wa": 0
       },
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "alias": "emotional-intelligence/knowledge-base",

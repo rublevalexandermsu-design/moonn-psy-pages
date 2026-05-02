@@ -1550,11 +1550,10 @@ Canonical append-only chat history for `moon-psy-site`.
   - Re-ran `python scripts\seo_audit_production_73.py` after each batch.
 - Verification:
   - Production pages in scope: `73`.
-  - Live `200 OK`: `72`.
-  - Live pages with verified design marker and pinned CSS: `72`.
+  - Live `200 OK`: initially `72`; after correcting the registry URL for `/emotional-intelligence/`, `73`.
+  - Live pages with verified design marker and pinned CSS: `73`.
   - Live pages missing design among reachable URLs: `0`.
-  - One scoped URL still returns `404`: `https://moonn.ru/emotional-intelligence`.
-  - The `404` page has a Tilda page id and was processed in Tilda, but the public alias must be fixed separately.
+  - URL finding: `https://moonn.ru/emotional-intelligence` returns `404`, while `https://moonn.ru/emotional-intelligence/` returns `200 OK`; the production rollout registry now uses the trailing-slash canonical URL.
 - Remaining SEO baseline after design rollout:
   - Pages with link issues: `44`.
   - Link totals: `http_wa=69`, `http_twa=4`, `bad_domain=26`, `bad_plus_wa=0`, `internalized_bad_plus_wa=0`.
