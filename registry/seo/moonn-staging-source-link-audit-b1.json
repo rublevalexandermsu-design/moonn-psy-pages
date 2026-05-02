@@ -783,6 +783,32 @@
         "http_wa": [
           "2173824361"
         ]
+      },
+      "remediation": {
+        "status": "fixed_on_staging",
+        "fixed_at": "2026-05-02T12:50:29+03:00",
+        "verification_url": "https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva?verify=1777728629",
+        "verification_artifact": "output/live-staging-psiholog-after-link-fix.html",
+        "source_fixes": [
+          {
+            "record_id": "2224930001",
+            "card": "Записаться через WhatsApp",
+            "from": "http://wa.me/79777770303",
+            "to": "https://wa.me/79777770303"
+          },
+          {
+            "record_id": "2224930061",
+            "card": "WHATSSAPP",
+            "from": "http://twa.me/79777770303",
+            "to": "https://wa.me/79777770303"
+          }
+        ],
+        "verified_counts": {
+          "http_wa": 0,
+          "http_twa": 0,
+          "https_wa": 3,
+          "bad_domain": 0
+        }
       }
     },
     {

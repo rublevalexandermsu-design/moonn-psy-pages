@@ -75,16 +75,28 @@ Resolved browser route, 2026-05-02:
 
 - Page id: `138661976`.
 - Live staging URL: `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva`.
-- Action completed: opened the page in the correct Chrome `Profile 5` / `Alexander`, saved the visible content panel, and published the staging page.
-- Verification after publish:
+- First pass: opened the page in the correct Chrome `Profile 5` / `Alexander`, saved the visible content panel, and published the staging page.
+- First-pass verification after publish:
   - `http://wa.me/79777770303`: still `1`.
   - `http://twa.me/79777770303`: also present as an additional typo not counted in the first audit.
   - `http://.moonn.ru`: `0`.
-- Root cause update:
+- Root cause:
   - The visible top card block is already updated and links internally to `#rec2173806101` / `#rec...`.
   - The remaining defects are in lower legacy duplicated blocks, not in the first visible card block:
     - `rec2224930001`: `http://wa.me/79777770303`.
     - `rec2224930061`: `http://twa.me/79777770303`.
+- Source fixes applied on staging, 2026-05-02:
+  - `rec2224930001`, card `Записаться через WhatsApp`: changed `http://wa.me/79777770303` to `https://wa.me/79777770303`.
+  - `rec2224930061`, card `WHATSSAPP`: changed typo `http://twa.me/79777770303` to `https://wa.me/79777770303`.
+  - Published the staging page from Tilda project `25075076`.
+- Live verification after final publish:
+  - Verification URL: `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva?verify=1777728629`.
+  - Saved HTML evidence: `output/live-staging-psiholog-after-link-fix.html`.
+  - `http://wa.me/79777770303`: `0`.
+  - `http://twa.me/79777770303`: `0`.
+  - `https://wa.me/79777770303`: `3`.
+  - `http://.moonn.ru`: `0`.
+  - Tilda project id `25075076`: confirmed in live HTML.
 - Follow-up rule:
   - Before editing a Tilda page with repeated blocks, verify the exact live `rec` id from current staging HTML, then scroll to that block in the editor. Do not assume the first visually similar block is the defective one.
 

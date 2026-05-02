@@ -1472,3 +1472,27 @@ Canonical append-only chat history for `moon-psy-site`.
     - `rec2224930061`: typo `twa.me`.
 - Boundary:
   - Production `moonn.ru` was not changed.
+
+## 2026-05-02T12:50:29+03:00 — Staging consultation page source-link defects fixed
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn SEO / staging source-link cleanup`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue the proposed next step and fix the remaining source-link errors on the copied Tilda page before transferring the pattern to production.
+- Actions:
+  - Continued in regular Chrome `Profile 5` / `Alexander`, not Browser Use's isolated unauthenticated browser.
+  - Confirmed the Tilda editor context was staging project `25075076` / `Moonn Staging`, page `138661976`.
+  - Edited lower legacy block `rec2224930001`, card `Записаться через WhatsApp`: `http://wa.me/79777770303` -> `https://wa.me/79777770303`.
+  - Edited lower legacy block `rec2224930061`, card `WHATSSAPP`: `http://twa.me/79777770303` -> `https://wa.me/79777770303`.
+  - Published `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva`.
+- Verification:
+  - Live verification URL: `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva?verify=1777728629`.
+  - Saved evidence: `output/live-staging-psiholog-after-link-fix.html`.
+  - Live counts: `http://wa.me/79777770303` = `0`, `http://twa.me/79777770303` = `0`, `https://wa.me/79777770303` = `3`, `http://.moonn.ru` = `0`.
+  - Live HTML confirms Tilda project `25075076`.
+- Incident / rule:
+  - Symptom: the first visible card block looked like the target but was not the defective source.
+  - Root cause: the page contains repeated legacy duplicated card blocks with similar visual structure.
+  - Follow-up rule: for Tilda SEO/source-link cleanup, locate and edit by live `rec` id and card label, then verify the published HTML counters before marking the page fixed.
+- Boundary:
+  - Production `moonn.ru` was not changed.
