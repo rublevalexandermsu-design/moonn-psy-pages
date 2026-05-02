@@ -95,9 +95,10 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=3)
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--out", default="output/tilda-production-theme-rollout-ui.json")
+    parser.add_argument("--rollout", default=str(ROLLOUT.relative_to(ROOT)))
     args = parser.parse_args()
 
-    pages = json.loads(ROLLOUT.read_text(encoding="utf-8"))
+    pages = json.loads((ROOT / args.rollout).read_text(encoding="utf-8"))
     selected = pages[args.offset : args.offset + args.limit]
     snippet = SNIPPET.read_text(encoding="utf-8-sig")
     window = chrome_window()

@@ -1619,3 +1619,43 @@ Canonical append-only chat history for `moon-psy-site`.
   - Design is complete for the production `73`.
   - SEO is not complete and should not be reported as complete.
   - The next safe production task is source-link cleanup in real Tilda blocks, verified by live HTML counters, then headings/alt/native metadata.
+
+## 2026-05-02T20:35:00+03:00 — Production scope expanded to 83 pages and design completed
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn production SEO/design rollout`.
+- Branch: `codex/tilda-api-sync`.
+- Request: finish SEO/design for `83` original production pages and verify the result.
+- Strategic assessment:
+  - Platform value: high; the SEO scope is now larger and must be represented as a canonical manifest.
+  - Obsolescence risk: high if the `83` pages are inferred manually in chat without a registry.
+  - Stronger architecture: expand the `73` verified scope with the next `10` published alias pages, not blank-alias legacy pages.
+  - Reuse: the `83` manifest can drive future source-link cleanup, schema, alt, heading, and metadata batches.
+  - 3-12 month risk: without a stable `83` manifest, GSC, Tilda, SEO reports, and future payment/video work will drift.
+- Actions:
+  - Created `scripts/build_production_83_scope.py`.
+  - Created `registry/tilda/moonn-production-83-rollout.json`.
+  - Updated `scripts/seo_audit_production_73.py` to accept `--scope` and `--out`.
+  - Updated `scripts/tilda_production_theme_rollout_ui.py` to accept a custom rollout manifest.
+  - Applied and published the verified design snippet to the `10` newly added production pages.
+  - Generated `registry/seo/moonn-production-83-seo-audit.json`.
+  - Generated `registry/seo/moonn-production-83-schema-snippets.json`.
+  - Generated `registry/seo/moonn-production-83-link-issue-pages.json`.
+  - Created final status artifact: `docs/seo/moonn-production-83-final-status-2026-05-02.md`.
+- Verified facts:
+  - Pages in scope: `83`.
+  - Live `200 OK`: `83`.
+  - Errors: `0`.
+  - Production design missing: `0`.
+  - Schema missing in live HTML: `83`.
+  - JSON-LD missing in live HTML: `82`.
+  - Pages with bad source links: `46`.
+  - Bad links: `http_wa=73`, `http_twa=4`, `bad_domain=28`.
+  - Heading issue pages: `63`.
+  - Image alt issue pages: `83`.
+  - Duplicate title groups: `1`.
+  - Duplicate description groups: `4`.
+- Decision:
+  - Design is complete for the production `83`.
+  - SEO/AEO is audited and structurally prepared, but not fully complete in live HTML.
+  - Do not claim that SEO is fully done until source links, headings, image alt, duplicate metadata, and schema are visible in live HTML.

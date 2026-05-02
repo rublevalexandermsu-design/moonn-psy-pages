@@ -1,5 +1,6 @@
 import json
 import re
+import argparse
 from collections import defaultdict
 from dataclasses import asdict, dataclass
 from html import unescape
@@ -147,11 +148,18 @@ def group_duplicates(audits: list[PageAudit], field: str) -> list[dict]:
 
 
 def main() -> int:
-    pages = json.loads(ROLLOUT.read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser(description="Audit Moonn production Tilda pages for SEO/design markers.")
+    parser.add_argument("--scope", default=str(ROLLOUT.relative_to(ROOT)))
+    parser.add_argument("--out", default=str(OUT.relative_to(ROOT)))
+    args = parser.parse_args()
+
+    scope_path = ROOT / args.scope
+    out_path = ROOT / args.out
+    pages = json.loads(scope_path.read_text(encoding="utf-8"))
     audits = [audit_page(page) for page in pages]
     result = {
         "schema_version": "1.0",
-        "source": str(ROLLOUT.relative_to(ROOT)),
+        "source": str(scope_path.relative_to(ROOT)),
         "page_count": len(audits),
         "ok_count": sum(1 for audit in audits if audit.status == 200),
         "error_count": sum(1 for audit in audits if audit.status != 200 or audit.error),
@@ -183,8 +191,8 @@ def main() -> int:
         ],
         "pages": [asdict(audit) for audit in audits],
     }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         json.dumps(
             {

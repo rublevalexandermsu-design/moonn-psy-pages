@@ -1,5 +1,6 @@
 import json
 import re
+import argparse
 from pathlib import Path
 
 
@@ -155,7 +156,14 @@ def page_schema(page: dict) -> dict:
 
 
 def main() -> int:
-    audit = json.loads(AUDIT.read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser(description="Generate page-specific Moonn schema.org JSON-LD snippets from a production SEO audit.")
+    parser.add_argument("--audit", default=str(AUDIT.relative_to(ROOT)))
+    parser.add_argument("--out", default=str(OUT.relative_to(ROOT)))
+    args = parser.parse_args()
+
+    audit_path = ROOT / args.audit
+    out_path = ROOT / args.out
+    audit = json.loads(audit_path.read_text(encoding="utf-8"))
     snippets = []
     for page in audit["pages"]:
         schema = page_schema(page)
@@ -177,8 +185,8 @@ def main() -> int:
                 "snippet": snippet,
             }
         )
-    OUT.write_text(json.dumps({"schema_version": "1.0", "source": str(AUDIT.relative_to(ROOT)), "count": len(snippets), "snippets": snippets}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"out": str(OUT.relative_to(ROOT)), "count": len(snippets)}, ensure_ascii=False))
+    out_path.write_text(json.dumps({"schema_version": "1.0", "source": str(audit_path.relative_to(ROOT)), "count": len(snippets), "snippets": snippets}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"out": str(out_path.relative_to(ROOT)), "count": len(snippets)}, ensure_ascii=False))
     return 0
 
 

@@ -1,0 +1,558 @@
+{
+  "source": "registry/seo/moonn-production-83-seo-audit.json",
+  "count": 46,
+  "pages": [
+    {
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "alias": "psiholog-konsultacii-moskva",
+      "source_page_id": "135430346",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 1,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "alias": "vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "source_page_id": "135442186",
+      "link_issues": {
+        "http_wa": 0,
+        "http_twa": 1,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "alias": "platnye-treningi-seminary-programmy-tatiana-moonn",
+      "source_page_id": "135444166",
+      "link_issues": {
+        "http_wa": 0,
+        "http_twa": 1,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "alias": "baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "source_page_id": "135534246",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 1,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/speaker",
+      "alias": "speaker",
+      "source_page_id": "87231366",
+      "link_issues": {
+        "http_wa": 4,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/events",
+      "alias": "events",
+      "source_page_id": "53668815",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/lectures1",
+      "alias": "lectures1",
+      "source_page_id": "68295899",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/recomend",
+      "alias": "recomend",
+      "source_page_id": "62977405",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/otzivi",
+      "alias": "otzivi",
+      "source_page_id": "81167556",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/vospitanie_article",
+      "alias": "vospitanie_article",
+      "source_page_id": "62923037",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/semeynie_konflikti_article",
+      "alias": "semeynie_konflikti_article",
+      "source_page_id": "62923441",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/vigoranie_article",
+      "alias": "vigoranie_article",
+      "source_page_id": "62988415",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/article_diary_of_emotions",
+      "alias": "article_diary_of_emotions",
+      "source_page_id": "62966623",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/eintellect",
+      "alias": "eintellect",
+      "source_page_id": "63574637",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/trauma",
+      "alias": "trauma",
+      "source_page_id": "63579285",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/abuse_gaslight",
+      "alias": "abuse_gaslight",
+      "source_page_id": "63684093",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/article_gadget_addiction",
+      "alias": "article_gadget_addiction",
+      "source_page_id": "63692311",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/article_femininity",
+      "alias": "article_femininity",
+      "source_page_id": "64057747",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/article_toxic_job",
+      "alias": "article_toxic_job",
+      "source_page_id": "64061157",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/semeyniy_psiholog",
+      "alias": "semeyniy_psiholog",
+      "source_page_id": "62920697",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/psy4psy",
+      "alias": "psy4psy",
+      "source_page_id": "62908693",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/selfharm",
+      "alias": "selfharm",
+      "source_page_id": "62890623",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/psypodgotovka1",
+      "alias": "psypodgotovka1",
+      "source_page_id": "62652841",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/salt",
+      "alias": "salt",
+      "source_page_id": "63131581",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/vacuum_cups",
+      "alias": "vacuum_cups",
+      "source_page_id": "63138325",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/water",
+      "alias": "water",
+      "source_page_id": "63552425",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/kpt",
+      "alias": "kpt",
+      "source_page_id": "63403669",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/psychoanalys",
+      "alias": "psychoanalys",
+      "source_page_id": "63398035",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/geshtalt",
+      "alias": "geshtalt",
+      "source_page_id": "63388057",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/schematherapy",
+      "alias": "schematherapy",
+      "source_page_id": "63409841",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_fin_blocks",
+      "alias": "uslugi_fin_blocks",
+      "source_page_id": "63711321",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_podrostki",
+      "alias": "uslugi_podrostki",
+      "source_page_id": "63713227",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_konflikti_na_rabote",
+      "alias": "uslugi_konflikti_na_rabote",
+      "source_page_id": "63716871",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
+      "alias": "uslugi_otnosheniya_v_kollektive",
+      "source_page_id": "63718371",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_depression",
+      "alias": "uslugi_depression",
+      "source_page_id": "63747017",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_obida_na_roditelei",
+      "alias": "uslugi_obida_na_roditelei",
+      "source_page_id": "63749211",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_procrastination",
+      "alias": "uslugi_procrastination",
+      "source_page_id": "63750667",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_sohranit_brak",
+      "alias": "uslugi_sohranit_brak",
+      "source_page_id": "63752263",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_razvod",
+      "alias": "uslugi_razvod",
+      "source_page_id": "63755367",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+      "alias": "uslugi_lubovnaya_zavisimost",
+      "source_page_id": "63757347",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_gtr",
+      "alias": "uslugi_gtr",
+      "source_page_id": "63758713",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/uslugi_aerofobia",
+      "alias": "uslugi_aerofobia",
+      "source_page_id": "63836583",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/st2",
+      "alias": "st2",
+      "source_page_id": "98329166",
+      "link_issues": {
+        "http_wa": 1,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/st1",
+      "alias": "st1",
+      "source_page_id": "69732653",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 0,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "alias": "emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "source_page_id": "95339896",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    },
+    {
+      "url": "https://moonn.ru/articles/eq-dlya-rukovoditeley",
+      "alias": "articles/eq-dlya-rukovoditeley",
+      "source_page_id": "95349086",
+      "link_issues": {
+        "http_wa": 2,
+        "http_twa": 0,
+        "bad_domain": 1,
+        "bad_plus_wa": 0,
+        "internalized_bad_plus_wa": 0
+      }
+    }
+  ]
+}
