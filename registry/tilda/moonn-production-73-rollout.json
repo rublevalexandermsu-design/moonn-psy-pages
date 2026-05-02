@@ -6,7 +6,11 @@
     "production_url": "https://moonn.ru/",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psiholog-konsultacii-moskva",
@@ -15,7 +19,11 @@
     "production_url": "https://moonn.ru/psiholog-konsultacii-moskva",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
@@ -24,7 +32,11 @@
     "production_url": "https://moonn.ru/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "platnye-treningi-seminary-programmy-tatiana-moonn",
@@ -33,7 +45,11 @@
     "production_url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/platnye-treningi-seminary-programmy-tatiana-moonn",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "baza-znaniy-emocionalnyy-intellekt-psihologiya",
@@ -42,7 +58,11 @@
     "production_url": "https://moonn.ru/baza-znaniy-emocionalnyy-intellekt-psihologiya",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/baza-znaniy-emocionalnyy-intellekt-psihologiya",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "events_tp",
@@ -51,7 +71,11 @@
     "production_url": "https://moonn.ru/events_tp",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/events_tp",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "speaker",
@@ -60,7 +84,11 @@
     "production_url": "https://moonn.ru/speaker",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/speaker",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "events",
@@ -69,7 +97,11 @@
     "production_url": "https://moonn.ru/events",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/events",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "lectures1",
@@ -78,7 +110,11 @@
     "production_url": "https://moonn.ru/lectures1",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/lectures1",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence",
@@ -87,7 +123,10 @@
     "production_url": "https://moonn.ru/emotional-intelligence",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "head_saved_but_live_url_error",
+    "live_status": 404,
+    "live_error": "HTTP Error 404: Not Found"
   },
   {
     "alias": "emotional-intelligence/knowledge-base",
@@ -96,7 +135,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/articles",
@@ -105,7 +148,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/articles",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "recomend",
@@ -114,7 +161,11 @@
     "production_url": "https://moonn.ru/recomend",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/recomend",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "otzivi",
@@ -123,7 +174,11 @@
     "production_url": "https://moonn.ru/otzivi",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/otzivi",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psiholog_moskva",
@@ -132,7 +187,11 @@
     "production_url": "https://moonn.ru/psiholog_moskva",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psiholog_moskva",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psihology",
@@ -141,7 +200,11 @@
     "production_url": "https://moonn.ru/psihology",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psihology",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psiholog",
@@ -150,7 +213,11 @@
     "production_url": "https://moonn.ru/psiholog",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psiholog",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "shppp333",
@@ -159,7 +226,11 @@
     "production_url": "https://moonn.ru/shppp333",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/shppp333",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "vospitanie_article",
@@ -168,7 +239,11 @@
     "production_url": "https://moonn.ru/vospitanie_article",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/vospitanie_article",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "semeynie_konflikti_article",
@@ -177,7 +252,11 @@
     "production_url": "https://moonn.ru/semeynie_konflikti_article",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/semeynie_konflikti_article",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "vigoranie_article",
@@ -186,7 +265,11 @@
     "production_url": "https://moonn.ru/vigoranie_article",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/vigoranie_article",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "article_diary_of_emotions",
@@ -195,7 +278,11 @@
     "production_url": "https://moonn.ru/article_diary_of_emotions",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/article_diary_of_emotions",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "eintellect",
@@ -204,7 +291,11 @@
     "production_url": "https://moonn.ru/eintellect",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/eintellect",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "trauma",
@@ -213,7 +304,11 @@
     "production_url": "https://moonn.ru/trauma",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/trauma",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "abuse_gaslight",
@@ -222,7 +317,11 @@
     "production_url": "https://moonn.ru/abuse_gaslight",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/abuse_gaslight",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "article_gadget_addiction",
@@ -231,7 +330,11 @@
     "production_url": "https://moonn.ru/article_gadget_addiction",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/article_gadget_addiction",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "article_femininity",
@@ -240,7 +343,11 @@
     "production_url": "https://moonn.ru/article_femininity",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/article_femininity",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "article_toxic_job",
@@ -249,7 +356,11 @@
     "production_url": "https://moonn.ru/article_toxic_job",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/article_toxic_job",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "semeyniy_psiholog",
@@ -258,7 +369,11 @@
     "production_url": "https://moonn.ru/semeyniy_psiholog",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/semeyniy_psiholog",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psy4psy",
@@ -267,7 +382,11 @@
     "production_url": "https://moonn.ru/psy4psy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psy4psy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "selfharm",
@@ -276,7 +395,11 @@
     "production_url": "https://moonn.ru/selfharm",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/selfharm",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psypodgotovka1",
@@ -285,7 +408,11 @@
     "production_url": "https://moonn.ru/psypodgotovka1",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psypodgotovka1",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "panicheskie_ataki",
@@ -294,7 +421,11 @@
     "production_url": "https://moonn.ru/panicheskie_ataki",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/panicheskie_ataki",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "phytotherapy",
@@ -303,7 +434,11 @@
     "production_url": "https://moonn.ru/phytotherapy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/phytotherapy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "microbiom",
@@ -312,7 +447,11 @@
     "production_url": "https://moonn.ru/microbiom",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/microbiom",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "aromatherapy",
@@ -321,7 +460,11 @@
     "production_url": "https://moonn.ru/aromatherapy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/aromatherapy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "salt",
@@ -330,7 +473,11 @@
     "production_url": "https://moonn.ru/salt",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/salt",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "vacuum_cups",
@@ -339,7 +486,11 @@
     "production_url": "https://moonn.ru/vacuum_cups",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/vacuum_cups",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "water",
@@ -348,7 +499,11 @@
     "production_url": "https://moonn.ru/water",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/water",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "kpt",
@@ -357,7 +512,11 @@
     "production_url": "https://moonn.ru/kpt",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/kpt",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "psychoanalys",
@@ -366,7 +525,11 @@
     "production_url": "https://moonn.ru/psychoanalys",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/psychoanalys",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "geshtalt",
@@ -375,7 +538,11 @@
     "production_url": "https://moonn.ru/geshtalt",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/geshtalt",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "schematherapy",
@@ -384,7 +551,11 @@
     "production_url": "https://moonn.ru/schematherapy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/schematherapy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_fin_blocks",
@@ -393,7 +564,11 @@
     "production_url": "https://moonn.ru/uslugi_fin_blocks",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_fin_blocks",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_podrostki",
@@ -402,7 +577,11 @@
     "production_url": "https://moonn.ru/uslugi_podrostki",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_podrostki",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_konflikti_na_rabote",
@@ -411,7 +590,11 @@
     "production_url": "https://moonn.ru/uslugi_konflikti_na_rabote",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_konflikti_na_rabote",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_otnosheniya_v_kollektive",
@@ -420,7 +603,11 @@
     "production_url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_otnosheniya_v_kollektive",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_depression",
@@ -429,7 +616,11 @@
     "production_url": "https://moonn.ru/uslugi_depression",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_depression",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_obida_na_roditelei",
@@ -438,7 +629,11 @@
     "production_url": "https://moonn.ru/uslugi_obida_na_roditelei",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_obida_na_roditelei",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_procrastination",
@@ -447,7 +642,11 @@
     "production_url": "https://moonn.ru/uslugi_procrastination",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_procrastination",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_sohranit_brak",
@@ -456,7 +655,11 @@
     "production_url": "https://moonn.ru/uslugi_sohranit_brak",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_sohranit_brak",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_razvod",
@@ -465,7 +668,11 @@
     "production_url": "https://moonn.ru/uslugi_razvod",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_razvod",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_lubovnaya_zavisimost",
@@ -474,7 +681,11 @@
     "production_url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_lubovnaya_zavisimost",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_gtr",
@@ -483,7 +694,11 @@
     "production_url": "https://moonn.ru/uslugi_gtr",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_gtr",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "uslugi_aerofobia",
@@ -492,7 +707,11 @@
     "production_url": "https://moonn.ru/uslugi_aerofobia",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/uslugi_aerofobia",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/articles/what-is-emotional-intelligence",
@@ -501,7 +720,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/what-is-emotional-intelligence",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/articles/emotional-intelligence-skills",
@@ -510,7 +733,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/articles/emotional-intelligence-skills",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/emotional-intelligence-skills",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/articles/why-ei-matters",
@@ -519,7 +746,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/why-ei-matters",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/articles/benefits-of-ei",
@@ -528,7 +759,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/articles/benefits-of-ei",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/articles/benefits-of-ei",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/emotional-intelligence",
@@ -537,7 +772,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-intelligence",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-intelligence",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/self-awareness",
@@ -546,7 +785,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-awareness",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-awareness",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/self-regulation",
@@ -555,7 +798,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-regulation",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/self-regulation",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/empathy",
@@ -564,7 +811,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/empathy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/empathy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/emotional-literacy",
@@ -573,7 +824,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-literacy",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/emotional-literacy",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/social-intelligence",
@@ -582,7 +837,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/social-intelligence",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/social-intelligence",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/intrinsic-motivation",
@@ -591,7 +850,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/intrinsic-motivation",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/intrinsic-motivation",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/burnout",
@@ -600,7 +863,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/burnout",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "emotional-intelligence/knowledge-base/nonviolent-communication",
@@ -609,7 +876,11 @@
     "production_url": "https://moonn.ru/emotional-intelligence/knowledge-base/nonviolent-communication",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/emotional-intelligence/knowledge-base/nonviolent-communication",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "st2",
@@ -618,7 +889,11 @@
     "production_url": "https://moonn.ru/st2",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/st2",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "kurs-ei",
@@ -627,7 +902,11 @@
     "production_url": "https://moonn.ru/kurs-ei",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/kurs-ei",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "programmakursa",
@@ -636,7 +915,11 @@
     "production_url": "https://moonn.ru/programmakursa",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/programmakursa",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "st1",
@@ -645,7 +928,11 @@
     "production_url": "https://moonn.ru/st1",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/st1",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   },
   {
     "alias": "seminar555",
@@ -654,6 +941,10 @@
     "production_url": "https://moonn.ru/seminar555",
     "staging_url": "https://carry-pacific-flatfish.tilda.ws/seminar555",
     "cluster": "unclassified",
-    "rollout_status": "pending"
+    "rollout_status": "pending",
+    "design_status": "verified_live",
+    "live_status": 200,
+    "theme_marker_count": 2,
+    "pinned_theme_count": 1
   }
 ]

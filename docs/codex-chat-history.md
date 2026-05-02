@@ -1527,3 +1527,38 @@ Canonical append-only chat history for `moon-psy-site`.
   - Tilda API is used for snapshots/audits/verification only.
   - Production edits still require Tilda UI automation because documented public API does not provide block/page-HEAD/native-SEO write methods.
   - Next production action should be a small batch rollout of the verified `Radiant Sanctuary` page-level HEAD snippet, then live HTML verification before scaling to all `73`.
+
+## 2026-05-02T14:35:00+03:00 — Production design rolled out to original 73-page scope
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn production SEO/design rollout`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue applying the verified staging design and SEO work to the original `73` production pages.
+- Actions:
+  - Created `scripts/tilda_production_theme_rollout_ui.py` to apply the verified page-level Tilda HEAD snippet through authenticated Chrome UI automation.
+  - Used the production rollout registry `registry/tilda/moonn-production-73-rollout.json`.
+  - Applied the pinned `Radiant Sanctuary` snippet to the original Tilda pages in production project `8326812`.
+  - Published pages in batches:
+    - `output/tilda-production-theme-rollout-batch-0-3.json`;
+    - `output/tilda-production-theme-rollout-batch-3-13.json`;
+    - `output/tilda-production-theme-rollout-batch-13-23.json`;
+    - `output/tilda-production-theme-rollout-batch-23-33.json`;
+    - `output/tilda-production-theme-rollout-batch-33-43.json`;
+    - `output/tilda-production-theme-rollout-batch-43-53.json`;
+    - `output/tilda-production-theme-rollout-batch-53-63.json`;
+    - `output/tilda-production-theme-rollout-batch-63-73.json`.
+  - Re-ran `python scripts\seo_audit_production_73.py` after each batch.
+- Verification:
+  - Production pages in scope: `73`.
+  - Live `200 OK`: `72`.
+  - Live pages with verified design marker and pinned CSS: `72`.
+  - Live pages missing design among reachable URLs: `0`.
+  - One scoped URL still returns `404`: `https://moonn.ru/emotional-intelligence`.
+  - The `404` page has a Tilda page id and was processed in Tilda, but the public alias must be fixed separately.
+- Remaining SEO baseline after design rollout:
+  - Pages with link issues: `44`.
+  - Link totals: `http_wa=69`, `http_twa=4`, `bad_domain=26`, `bad_plus_wa=0`, `internalized_bad_plus_wa=0`.
+  - Heading issue pages: `53`.
+  - Image alt issue pages: `72`.
+- Follow-up rule:
+  - Production visual rollout is not a substitute for SEO completion. Continue with source-link cleanup, URL/alias fix for `/emotional-intelligence`, and page-specific SEO/AEO manifests.
