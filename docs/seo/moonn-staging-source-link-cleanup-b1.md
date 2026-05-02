@@ -65,6 +65,29 @@ Current blocked state, 2026-05-02:
 - Browser Use in-app tab opens the direct staging editor URL as `https://tilda.ru/404/pagenotpublished/`.
 - No staging page source edits were made in this session after the audit.
 
+Resolved browser route, 2026-05-02:
+
+- Correct browser route for Tilda UI work: regular Google Chrome profile `Profile 5` / `Alexander`.
+- Do not use Browser Use's isolated in-app tab for authenticated Tilda editing unless it is explicitly re-authenticated.
+- Do not use Chrome `Profile 3` for this workstream; it opens Tilda as an unauthenticated session.
+
+## Staging Page Check: `psiholog-konsultacii-moskva`
+
+- Page id: `138661976`.
+- Live staging URL: `https://carry-pacific-flatfish.tilda.ws/psiholog-konsultacii-moskva`.
+- Action completed: opened the page in the correct Chrome `Profile 5` / `Alexander`, saved the visible content panel, and published the staging page.
+- Verification after publish:
+  - `http://wa.me/79777770303`: still `1`.
+  - `http://twa.me/79777770303`: also present as an additional typo not counted in the first audit.
+  - `http://.moonn.ru`: `0`.
+- Root cause update:
+  - The visible top card block is already updated and links internally to `#rec2173806101` / `#rec...`.
+  - The remaining defects are in lower legacy duplicated blocks, not in the first visible card block:
+    - `rec2224930001`: `http://wa.me/79777770303`.
+    - `rec2224930061`: `http://twa.me/79777770303`.
+- Follow-up rule:
+  - Before editing a Tilda page with repeated blocks, verify the exact live `rec` id from current staging HTML, then scroll to that block in the editor. Do not assume the first visually similar block is the defective one.
+
 ## UI Incident
 
 - Symptom: while preparing the first staging UI edit, manual pointer automation switched focus to an unrelated Chrome/Timepad tab.

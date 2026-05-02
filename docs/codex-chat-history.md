@@ -1442,3 +1442,33 @@ Canonical append-only chat history for `moon-psy-site`.
   - No production page was changed.
 - Open issue:
   - User needs to restore or expose an authenticated Tilda staging editor session before UI source-link edits can continue.
+
+## 2026-05-02T12:05:00+03:00 — Correct Chrome profile restored for Tilda staging
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn SEO / staging source-link cleanup`.
+- Branch: `codex/tilda-api-sync`.
+- Request: continue the Tilda SEO cleanup without asking the user to re-login; use the same Chrome account/profile that worked earlier.
+- Actions:
+  - Inspected local Chrome profiles and found the correct Tilda route: regular Chrome `Profile 5` / `Alexander`.
+  - Opened Tilda through that profile and confirmed access to `Moonn Staging`.
+  - Opened staging page `psiholog-konsultacii-moskva`, page id `138661976`.
+  - Saved the visible card block content panel and published the staging page.
+  - Verified live staging HTML after publish.
+- Verification:
+  - Live staging page belongs to Tilda project `25075076`.
+  - `http://.moonn.ru` count on this page is `0`.
+  - `http://wa.me/79777770303` remains `1`.
+  - Additional typo found: `http://twa.me/79777770303`.
+- Incident:
+  - Symptom: I initially tried Browser Use / wrong Chrome profile and asked for login again.
+  - Root cause: I did not preserve the working browser-profile route as an operational rule.
+  - Solution: record `Profile 5 / Alexander` as the canonical Tilda UI route for this workstream.
+  - Follow-up rule: before any Tilda UI work, inspect active Chrome profile and project breadcrumb; do not switch to Browser Use unless explicitly re-authenticated.
+- Source-link finding:
+  - The visible top card block was not the defective block.
+  - The remaining bad links are in lower legacy duplicated blocks:
+    - `rec2224930001`: old WhatsApp URL.
+    - `rec2224930061`: typo `twa.me`.
+- Boundary:
+  - Production `moonn.ru` was not changed.
