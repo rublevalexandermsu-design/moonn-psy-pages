@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-05-03",
+  "currency": "RUB",
+  "default_price_rub": 1300,
+  "canonical_store_page": {
+    "url": "https://moonn.ru/lectures1",
+    "tilda_page_id": "68295899",
+    "alias": "lectures1",
+    "role": "storefront"
+  },
+  "access_model": {
+    "tilda_module": "Tilda Members / Courses",
+    "payment_receiver": "Tilda cart ST100 + configured payment system",
+    "delivery_rule": "Add buyer to the matching Members group only after successful payment.",
+    "video_protection_rule": "Do not rely on public or unlisted YouTube links as protection. Use a protected Tilda Members/course page and avoid exposing the raw video link where possible."
+  },
+  "lectures": [
+    {
+      "lecture_id": "lectures1-storefront",
+      "title": "Лекции по психологии от Татьяны Мунн",
+      "price_rub": 1300,
+      "source_page_url": "https://moonn.ru/lectures1",
+      "source_tilda_page_id": "68295899",
+      "timepad_source_url": null,
+      "video_source_url": null,
+      "tilda_product_sku": null,
+      "tilda_member_group": null,
+      "protected_watch_page_url": null,
+      "qr_target_url": "https://moonn.ru/lectures1",
+      "status": "needs_video",
+      "required_user_input": [
+        "list of final lecture titles",
+        "matching video URL for each lecture",
+        "confirmation of which payment system is live in Tilda",
+        "approval to test one 1300 RUB payment path in staging or with a safe test mode"
+      ],
+      "notes": "Canonical storefront candidate found by read-only Tilda audit."
+    },
+    {
+      "lecture_id": "events-tp-timepad-archive",
+      "title": "Лекции по психологии / Timepad-linked events",
+      "price_rub": 1300,
+      "source_page_url": "https://moonn.ru/events_tp",
+      "source_tilda_page_id": "66814657",
+      "timepad_source_url": "multiple Timepad links found in page audit",
+      "video_source_url": null,
+      "tilda_product_sku": null,
+      "tilda_member_group": null,
+      "protected_watch_page_url": null,
+      "qr_target_url": "https://moonn.ru/events_tp",
+      "status": "candidate",
+      "required_user_input": [
+        "decision whether this page stays registration/events or becomes paid recording archive"
+      ],
+      "notes": "Audit found 11 Timepad links. This is likely an events page, not necessarily the paid recording storefront."
+    },
+    {
+      "lecture_id": "psypodgotovka-exam-recordings",
+      "title": "Психологическая подготовка к экзаменам",
+      "price_rub": 1300,
+      "source_page_url": "https://moonn.ru/psypodgotovka1",
+      "source_tilda_page_id": "62652841",
+      "timepad_source_url": null,
+      "video_source_url": null,
+      "tilda_product_sku": null,
+      "tilda_member_group": null,
+      "protected_watch_page_url": null,
+      "qr_target_url": "https://moonn.ru/psypodgotovka1",
+      "status": "candidate",
+      "required_user_input": [
+        "confirm whether this is one paid lecture, a bundle, or a free lead magnet",
+        "video URL(s)"
+      ],
+      "notes": "Page text already contains signals about purchasing lecture recordings."
+    },
+    {
+      "lecture_id": "seminar555-recordings",
+      "title": "Обучение методу Быстрая Психология",
+      "price_rub": 1300,
+      "source_page_url": "https://moonn.ru/seminar555",
+      "source_tilda_page_id": "57927493",
+      "timepad_source_url": null,
+      "video_source_url": "multiple YouTube links found in page audit",
+      "tilda_product_sku": null,
+      "tilda_member_group": null,
+      "protected_watch_page_url": null,
+      "qr_target_url": "https://moonn.ru/seminar555",
+      "status": "candidate",
+      "required_user_input": [
+        "confirm whether existing YouTube links are previews or paid full videos",
+        "final sales model: one lecture, 3-day bundle, or course"
+      ],
+      "notes": "Audit found 3 YouTube links. Needs access model decision before selling."
+    }
+  ]
+}
