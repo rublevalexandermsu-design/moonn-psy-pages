@@ -174,6 +174,26 @@ Required matching fields:
 - `match_confidence`;
 - `approved_for_paid_access`.
 
+## YouTube Studio Matching Result
+
+YouTube Studio owner view was used to inspect the private channel content without committing private video ids or Studio URLs.
+
+Safe results:
+
+- Five `events_tp` lectures have unique private recording matches and can move to protected Tilda product/watch-page setup after payment-provider verification.
+- Four `events_tp` lectures have multiple plausible recording candidates and need owner selection before paid setup.
+- The recurring Timepad event `3334362` is not a single sellable recording yet.
+
+Committed artifact:
+
+- `registry/products/paid-video-lectures-youtube-match-status-2026-05-03.json`
+
+Local-only artifact:
+
+- `output/youtube-private-map/private-youtube-video-map.local.json`
+
+Do not expose private YouTube links on public Tilda pages. The public sales page should link only to the Tilda checkout/product flow; the selected video belongs inside a protected Members/Courses watch page after successful payment.
+
 ## Official Tilda References Checked
 
 - Tilda customer accounts for online store: `https://help-ru.tilda.cc/online-store/customer-accounts`

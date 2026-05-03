@@ -43,3 +43,37 @@ Append-only project history for `moon-psy-site`.
 - Risk notes:
   - Money/payment settings, seller requisites and paid content access are high-risk.
   - YouTube unlisted links are not real copy protection; use protected Tilda access as the minimum safe layer.
+
+## 2026-05-03 — Private YouTube Matching For Paid Lectures
+
+- Project: Moonn / Tilda site.
+- Workstream: paid video lectures and protected access.
+- Branch: `codex/moonn-paid-video-lectures`.
+- User request:
+  - use owner access to the YouTube channel because recordings are private/hidden;
+  - match recordings by title/date to the `events_tp` lecture list;
+  - prepare the paid-access rollout without exposing raw private links.
+- Decisions:
+  - Store private video ids and Studio URLs only in local ignored output, not in Git.
+  - Commit only sanitized match status and manifest state.
+  - Keep live payment/product creation behind a high-risk gate until Tilda payment provider/seller settings are visually verified.
+- Created or changed files:
+  - `.gitignore`
+  - `registry/products/paid-video-lectures.manifest.json`
+  - `registry/products/paid-video-lectures-youtube-match-status-2026-05-03.json`
+  - `docs/paid-video-lectures-youtube-matching-status-2026-05-03.md`
+  - `docs/paid-video-lectures-tilda-plan-2026-05-03.md`
+- Verified:
+  - YouTube Studio owner view opened for the correct channel.
+  - February-March 2026 lecture recordings were found in Studio.
+  - Five lecture mappings are unique enough for a first protected Tilda pilot.
+  - Four lecture mappings need owner selection because multiple plausible recordings exist.
+- Open questions / blockers:
+  - Select the correct duplicate for `2604 Духовная психология`.
+  - Select the correct duplicate for `2607 Психология мужчины`.
+  - Select the correct `2608 ИИ и ЭИ` recording.
+  - Decide whether `Быстрая психология` should sell part 1, part 2, or both as one product.
+  - Verify Tilda payment provider and run one approved test purchase.
+- Risk notes:
+  - Shared credentials and private video links are sensitive; rotate the password after the setup session.
+  - Public sales pages must not expose raw private or unlisted YouTube links.

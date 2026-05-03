@@ -35,7 +35,9 @@
         "matching video URL",
         "confirm whether this Timepad event should be sold as a recording"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "This Timepad entry looks like a recurring/free lecture series rather than one sellable recording. Keep out of paid rollout until owner confirms a specific recording or bundle.",
+      "video_match_status": "not_single_recording_series_event",
+      "video_match_candidate_count": 0
     },
     {
       "lecture_id": "timepad-3796319",
@@ -53,10 +55,12 @@
       "qr_target_url": "https://moonn.ru/events_tp",
       "status": "needs_video",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "select the correct private YouTube candidate from the sanitized match report",
+        "visual verification of current Tilda payment provider before creating paid access"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Multiple private YouTube Studio candidates matched by title/date. Choose the final recording before creating Tilda paid access. Raw video ids are local-only.",
+      "video_match_status": "matched_private_needs_selection",
+      "video_match_candidate_count": 2
     },
     {
       "lecture_id": "timepad-3796462",
@@ -72,12 +76,14 @@
       "protected_watch_page_url": null,
       "qr_image_file": "assets/qr/tatyana-munn-paid-lectures-events-tp-qr.png",
       "qr_target_url": "https://moonn.ru/events_tp",
-      "status": "needs_video",
+      "status": "needs_tilda_product",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "visual verification of current Tilda payment provider",
+        "approval to create one protected Tilda product/watch-page test for this lecture"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Private YouTube Studio recording matched by title/date. Raw video id is stored only in local output and must not be committed or exposed publicly. Next step: create protected Tilda product/watch page after payment-provider verification.",
+      "video_match_status": "matched_private_unique",
+      "video_match_candidate_count": 1
     },
     {
       "lecture_id": "timepad-3796469",
@@ -93,12 +99,14 @@
       "protected_watch_page_url": null,
       "qr_image_file": "assets/qr/tatyana-munn-paid-lectures-events-tp-qr.png",
       "qr_target_url": "https://moonn.ru/events_tp",
-      "status": "needs_video",
+      "status": "needs_tilda_product",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "visual verification of current Tilda payment provider",
+        "approval to create one protected Tilda product/watch-page test for this lecture"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Private YouTube Studio recording matched by title/date. Raw video id is stored only in local output and must not be committed or exposed publicly. Next step: create protected Tilda product/watch page after payment-provider verification.",
+      "video_match_status": "matched_private_unique",
+      "video_match_candidate_count": 1
     },
     {
       "lecture_id": "timepad-3796473",
@@ -116,10 +124,12 @@
       "qr_target_url": "https://moonn.ru/events_tp",
       "status": "needs_video",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "select the correct private YouTube candidate from the sanitized match report",
+        "visual verification of current Tilda payment provider before creating paid access"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Multiple private YouTube Studio candidates matched by title/date. Choose the final recording before creating Tilda paid access. Raw video ids are local-only.",
+      "video_match_status": "matched_private_needs_selection",
+      "video_match_candidate_count": 2
     },
     {
       "lecture_id": "timepad-3808776",
@@ -137,10 +147,12 @@
       "qr_target_url": "https://moonn.ru/events_tp",
       "status": "needs_video",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "select the correct private YouTube candidate from the sanitized match report",
+        "visual verification of current Tilda payment provider before creating paid access"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Multiple private YouTube Studio candidates matched by title/date. Choose the final recording before creating Tilda paid access. Raw video ids are local-only.",
+      "video_match_status": "matched_private_needs_selection",
+      "video_match_candidate_count": 2
     },
     {
       "lecture_id": "timepad-3808782",
@@ -156,12 +168,14 @@
       "protected_watch_page_url": null,
       "qr_image_file": "assets/qr/tatyana-munn-paid-lectures-events-tp-qr.png",
       "qr_target_url": "https://moonn.ru/events_tp",
-      "status": "needs_video",
+      "status": "needs_tilda_product",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "visual verification of current Tilda payment provider",
+        "approval to create one protected Tilda product/watch-page test for this lecture"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Private YouTube Studio recording matched by title/date. Raw video id is stored only in local output and must not be committed or exposed publicly. Next step: create protected Tilda product/watch page after payment-provider verification.",
+      "video_match_status": "matched_private_unique",
+      "video_match_candidate_count": 1
     },
     {
       "lecture_id": "timepad-3808783",
@@ -177,12 +191,14 @@
       "protected_watch_page_url": null,
       "qr_image_file": "assets/qr/tatyana-munn-paid-lectures-events-tp-qr.png",
       "qr_target_url": "https://moonn.ru/events_tp",
-      "status": "needs_video",
+      "status": "needs_tilda_product",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "visual verification of current Tilda payment provider",
+        "approval to create one protected Tilda product/watch-page test for this lecture"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Private YouTube Studio recording matched by title/date. Raw video id is stored only in local output and must not be committed or exposed publicly. Next step: create protected Tilda product/watch page after payment-provider verification.",
+      "video_match_status": "matched_private_unique",
+      "video_match_candidate_count": 1
     },
     {
       "lecture_id": "timepad-3808788",
@@ -200,10 +216,12 @@
       "qr_target_url": "https://moonn.ru/events_tp",
       "status": "needs_video",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "select the correct private YouTube candidate from the sanitized match report",
+        "visual verification of current Tilda payment provider before creating paid access"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Multiple private YouTube Studio candidates matched by title/date. Choose the final recording before creating Tilda paid access. Raw video ids are local-only.",
+      "video_match_status": "matched_private_needs_selection",
+      "video_match_candidate_count": 2
     },
     {
       "lecture_id": "timepad-3808803",
@@ -219,12 +237,14 @@
       "protected_watch_page_url": null,
       "qr_image_file": "assets/qr/tatyana-munn-paid-lectures-events-tp-qr.png",
       "qr_target_url": "https://moonn.ru/events_tp",
-      "status": "needs_video",
+      "status": "needs_tilda_product",
       "required_user_input": [
-        "matching video URL",
-        "confirm whether this Timepad event should be sold as a recording"
+        "visual verification of current Tilda payment provider",
+        "approval to create one protected Tilda product/watch-page test for this lecture"
       ],
-      "notes": "Generated from the live events_tp Timepad link list. Product/access records are planned, not yet created in Tilda."
+      "notes": "Private YouTube Studio recording matched by title/date. Raw video id is stored only in local output and must not be committed or exposed publicly. Next step: create protected Tilda product/watch page after payment-provider verification.",
+      "video_match_status": "matched_private_unique",
+      "video_match_candidate_count": 1
     }
   ]
 }
