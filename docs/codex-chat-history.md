@@ -1756,3 +1756,37 @@ Canonical append-only chat history for `moon-psy-site`.
   - These changes are prepared in code, but they will not appear live until Tilda head snippets are updated to the new commit or to a stable loader.
 - Follow-up rule:
   - Do not use invisible keyword stuffing. Entity reconciliation must be visible, editorial, schema-backed, and sourced from the canonical entity graph registry.
+
+## 2026-05-03T15:05:00+03:00 — Moonn image SEO audit and rendered image rules prepared
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn production image SEO/AEO`.
+- Branch: `codex/tilda-api-sync`.
+- Request: check all images/covers on the 83 optimized production pages and improve SEO naming, alt/title, and image properties without occupying the user's Chrome screen.
+- Strategic assessment:
+  - Platform value: high; image SEO affects organic image search, snippets, social previews, and AI extraction.
+  - Obsolescence risk: medium if image names are changed manually without a manifest.
+  - Stronger architecture: generate an image SEO manifest from the rendered site and use it as the source for reupload/replacement and rendered attributes.
+  - Reuse: the same audit script can be reused for Timepad, MIBS pages, and future Tilda batches.
+  - 3-12 month risk: Tilda CDN filenames will stay technical (`photo.png`, `Rectangle...`, `____.jpg`) unless media replacement is tracked explicitly.
+- Actions:
+  - Added `scripts/seo_image_audit_production.py`.
+  - Generated `registry/seo/moonn-production-83-image-seo-audit.json`.
+  - Generated `registry/seo/moonn-production-83-image-seo-audit.csv`.
+  - Updated `scripts/build_moonn_seo_enhancer.py` to read image SEO audit data.
+  - Regenerated `assets/moonn-seo-aeo-enhancer.js` with page-specific image `alt`, `title`, and `data-moonn-recommended-filename` for regular `<img>` elements.
+  - Added `docs/seo/moonn-production-83-image-seo-2026-05-03.md`.
+- Verified facts:
+  - Pages checked: `83`.
+  - Errors: `0`.
+  - Visual objects found: `1490`.
+  - Regular `<img>` images: `446`.
+  - Tilda background/cover images: `1044`.
+  - Images/backgrounds needing true filename reupload: `1445`.
+  - `node --check assets/moonn-seo-aeo-enhancer.js` passed.
+  - Mock DOM execution confirmed contextual image `alt`, `title`, and recommended filename are applied.
+- Deployment boundary:
+  - Tilda CDN filenames cannot be changed by JS attributes; true filename SEO requires reupload/replacement in Tilda.
+  - Production Tilda still loads the older enhancer pinned to commit `8dd2572`; live pages need a head-code update to receive these rendered image rules.
+- Follow-up rule:
+  - Treat image SEO as a two-layer system: immediate rendered attributes and schema first, then source-level Tilda media reupload for true filename SEO.

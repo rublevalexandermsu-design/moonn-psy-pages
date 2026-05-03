@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "registry" / "seo" / "moonn-production-83-schema-snippets.json"
 AUDIT = ROOT / "registry" / "seo" / "moonn-production-83-seo-audit.json"
 ENTITY_GRAPH = ROOT / "registry" / "seo" / "moonn-authority-entity-graph.json"
+IMAGE_AUDIT = ROOT / "registry" / "seo" / "moonn-production-83-image-seo-audit.json"
 OUT = ROOT / "assets" / "moonn-seo-aeo-enhancer.js"
 
 
@@ -59,10 +60,35 @@ def enhance_person_schema(schema: dict, entity_graph: dict) -> dict:
     return schema
 
 
+def load_image_seo() -> dict:
+    if not IMAGE_AUDIT.exists():
+        return {}
+    audit = json.loads(IMAGE_AUDIT.read_text(encoding="utf-8"))
+    by_page = {}
+    for page in audit.get("pages", []):
+        key = path_key(page["url"])
+        rows = []
+        for image in page.get("images", []):
+            if image.get("kind") != "img":
+                continue
+            rows.append(
+                {
+                    "src": image["src"],
+                    "alt": image["proposed_alt"],
+                    "title": image["proposed_title"],
+                    "recommended_filename": image["proposed_filename"],
+                }
+            )
+        if rows:
+            by_page[key] = rows
+    return by_page
+
+
 def main() -> int:
     schema_manifest = json.loads(SCHEMA.read_text(encoding="utf-8"))
     audit = json.loads(AUDIT.read_text(encoding="utf-8"))
     entity_graph = json.loads(ENTITY_GRAPH.read_text(encoding="utf-8"))
+    image_seo = load_image_seo()
     page_meta = {}
     for page in audit["pages"]:
         page_meta[path_key(page["url"])] = {
@@ -86,6 +112,7 @@ def main() -> int:
         "scope": "moonn-production-83",
         "schemas": schemas,
         "page_meta": page_meta,
+        "image_seo": image_seo,
         "entity_bridge": {
             "text": entity_graph["person"]["visible_bridge_text"],
             "links": entity_graph["person"]["visible_bridge_links"],
@@ -163,11 +190,32 @@ def main() -> int:
   function improveImages() {{
     var meta = findPageMeta();
     var title = meta.title || document.title || 'Татьяна Мунн, психолог МГУ';
+    var pageImages = PAYLOAD.image_seo[normalizedPath()] || PAYLOAD.image_seo[normalizedPath() + '/'] || [];
+    function imageSeoFor(img) {{
+      var candidates = [
+        img.currentSrc || '',
+        img.getAttribute('src') || '',
+        img.getAttribute('data-original') || ''
+      ];
+      for (var i = 0; i < pageImages.length; i += 1) {{
+        if (candidates.indexOf(pageImages[i].src) !== -1) return pageImages[i];
+      }}
+      return null;
+    }}
     Array.prototype.forEach.call(document.querySelectorAll('img'), function (img, index) {{
       var alt = (img.getAttribute('alt') || '').trim();
-      if (!alt || alt === 'image' || alt === 'photo') {{
+      var seo = imageSeoFor(img);
+      var genericAlt = alt === title || alt.indexOf(title.slice(0, 48)) === 0;
+      if (seo && (!alt || alt === 'image' || alt === 'photo' || genericAlt || img.getAttribute('data-moonn-alt-fixed') === '1')) {{
+        img.setAttribute('alt', seo.alt);
+        img.setAttribute('data-moonn-alt-fixed', '1');
+        img.setAttribute('data-moonn-recommended-filename', seo.recommended_filename || '');
+      }} else if (!alt || alt === 'image' || alt === 'photo') {{
         img.setAttribute('alt', title + ' - изображение ' + (index + 1));
         img.setAttribute('data-moonn-alt-fixed', '1');
+      }}
+      if (seo && !img.getAttribute('title')) {{
+        img.setAttribute('title', seo.title);
       }}
       if (!img.getAttribute('loading')) {{
         img.setAttribute('loading', 'lazy');
