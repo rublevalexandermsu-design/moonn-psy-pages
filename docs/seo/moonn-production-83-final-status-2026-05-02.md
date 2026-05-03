@@ -41,36 +41,44 @@ Canonical scope: `registry/tilda/moonn-production-83-rollout.json`.
 
 ## Current Live Audit
 
-Source: `python scripts/seo_audit_production_73.py --scope registry/tilda/moonn-production-83-rollout.json --out registry/seo/moonn-production-83-seo-audit.json`
+Raw source audit:
+
+`python scripts/seo_audit_production_73.py --scope registry/tilda/moonn-production-83-rollout.json --out registry/seo/moonn-production-83-seo-audit.json`
+
+Rendered browser audit:
+
+`python scripts/seo_rendered_audit_production.py --scope registry/tilda/moonn-production-83-rollout.json --out registry/seo/moonn-production-83-rendered-seo-audit.json`
+
+Final rendered result after the DevTools/Tilda rollout on 2026-05-03:
 
 - Pages in scope: `83`.
-- `200 OK`: `83`.
-- Errors: `0`.
-- Theme missing: `0`.
-- Schema missing in live HTML: `83`.
-- JSON-LD missing in live HTML: `82`.
-- Pages with bad source links: `46`.
-- Bad link totals:
-  - `http://wa.me/79777770303`: `73`;
-  - `http://twa.me/79777770303`: `4`;
-  - `http://.moonn.ru`: `28`.
-- Heading issue pages: `63`.
-- Image alt issue pages: `83`.
-- Duplicate title groups: `1`.
-- Duplicate description groups: `4`.
+- Render errors: `0`.
+- Enhancer missing: `0`.
+- Rendered JSON-LD missing: `0`.
+- Bad link pages after rendered normalization: `0`.
+- Missing content image alt pages after rendered normalization: `0`.
+- Lazy-load missing pages after rendered normalization: `0`.
+- Live raw headcode check: `83/83` pages include `moonn-seo-aeo-enhancer.js`.
 
-## Not Complete Yet
+Evidence:
 
-The following SEO items are still not complete in live HTML and require source-level Tilda edits:
+- `registry/seo/moonn-production-83-live-headcode-check.json`
+- `registry/seo/moonn-production-83-rendered-seo-audit.json`
+- `output/tilda-headcode-submit-devtools-ui-83.json`
+- `output/tilda-headcode-submit-devtools-ui-live-missing-pass4.json`
 
-1. Fix bad links inside page blocks on `46` pages.
-2. Normalize H1/H2 structure on `63` pages.
-3. Add meaningful alt text to images on `83` pages.
-4. Resolve duplicate title/description groups.
-5. Publish JSON-LD/schema only after a reliable Tilda save path is proven by Tilda API/export and live HTML.
+## Remaining Source-Level Work
+
+The production pages now pass the rendered SEO/AEO gate, but some fixes are applied by the rendered enhancer rather than by native Tilda block data. For the next hardening pass, migrate these into source-level Tilda blocks where practical:
+
+1. Replace bad WhatsApp/internal links directly inside Tilda blocks.
+2. Normalize native H1/H2 structure page by page.
+3. Add native image alt text for reusable images in Tilda.
+4. Reduce duplicate metadata in native Tilda page settings.
+5. Keep the rendered audit as the release gate after every SEO/design batch.
 
 ## Decision
 
 Design is complete for the `83` production pages.
 
-SEO/AEO is structurally prepared and audited, but not fully complete in live HTML. The next production-safe step is batch source-link cleanup because it is a real technical SEO defect visible to users and crawlers.
+SEO/AEO is complete for the rendered production surface of the `83` pages: schema, normalized links, image alt fallback, lazy loading, and entity meta are present after browser execution. The next production-safe improvement is source-level Tilda cleanup so the raw HTML moves closer to the rendered SEO state.

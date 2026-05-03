@@ -1684,3 +1684,43 @@ Canonical append-only chat history for `moon-psy-site`.
 - Current boundary:
   - The SEO/AEO enhancer is prepared and available in GitHub, but it is not connected to production Tilda pages.
   - Full SEO remains blocked on source-level Tilda edits or a reliable authenticated browser/CodeMirror automation path.
+
+## 2026-05-03T11:45:00+03:00 — Full rendered SEO/AEO rollout completed on 83 production pages
+
+- Project: `moon-psy-site`.
+- Workstream: `Moonn production SEO/AEO rollout`.
+- Branch: `codex/tilda-api-sync`.
+- Request: try again and finish full SEO optimization for the `83` original production pages.
+- Strategic assessment:
+  - Platform value: high; this turns the SEO batch into a repeatable Tilda rollout and browser-rendered validation gate.
+  - Obsolescence risk: medium; rendered enhancement is effective now, but native Tilda source cleanup remains the stronger long-term state.
+  - Stronger architecture: use a canonical enhancer plus rendered audit instead of manually editing every block before proving the full SEO payload.
+  - Reuse: the DevTools submit script and rendered audit can be reused for future Tilda batches and staging/production parity checks.
+  - 3-12 month risk: if only raw HTML audits are used, JavaScript-applied SEO improvements will be falsely reported as missing; if only UI success logs are used, failed Tilda saves can be missed.
+- Actions:
+  - Confirmed that regular Chrome/Tilda session is the correct authenticated path.
+  - Found the real Tilda save path through DevTools console and internal `td__submit('/projects/submit/', {comm: 'editpageheadcode', ...})`.
+  - Added `scripts/tilda_headcode_submit_devtools_ui.py`.
+  - Added `scripts/seo_rendered_audit_production.py`.
+  - Updated `scripts/tilda_production_theme_rollout_ui.py` with a safer hard-navigation/editor path, although the final production rollout used the DevTools submit path.
+  - Published the SEO/AEO enhancer to all `83` production pages.
+  - Generated `registry/seo/moonn-production-83-live-headcode-check.json`.
+  - Generated `registry/seo/moonn-production-83-rendered-seo-audit.json`.
+  - Updated `docs/seo/moonn-production-83-final-status-2026-05-02.md`.
+- Verified facts:
+  - Live raw headcode check: `83/83` pages include `moonn-seo-aeo-enhancer.js`.
+  - Rendered audit pages: `83`.
+  - Rendered audit errors: `0`.
+  - Enhancer missing: `0`.
+  - Rendered JSON-LD missing: `0`.
+  - Bad link pages after rendered normalization: `0`.
+  - Missing content image alt pages after rendered normalization: `0`.
+  - Lazy-load missing pages: `0`.
+- Incident:
+  - Symptom: early rollout logs showed many pages as processed or already present while live pages were still missing the enhancer.
+  - Root cause: UI automation was reading hidden/stale Ace/UIA buffers and sometimes closing DevTools before submitting.
+  - Fix: use DevTools console input as the authoritative authenticated execution path; verify through live HTML and rendered browser audit, not through UI clipboard state.
+  - Follow-up rule: for Tilda HEAD changes, completion requires `td__submit OK`, publication, live raw marker check, and rendered DOM audit.
+- Remaining work:
+  - Rendered production SEO/AEO is complete for the `83` pages.
+  - Native source-level Tilda cleanup is still recommended for links, headings, alt text, and duplicate metadata so raw HTML converges with the rendered state.
