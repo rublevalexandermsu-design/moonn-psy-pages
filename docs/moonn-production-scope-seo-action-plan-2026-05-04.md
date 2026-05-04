@@ -82,7 +82,7 @@ Start with these clusters:
 
 Six scoped pages need canonical decisions:
 
-- `https://moonn.ru/articles/eq-dlya-rukoviteley` equivalent in report: `https://moonn.ru/articles/eq-dlya-rukovoditeley`
+- `https://moonn.ru/articles/eq-dlya-rukovoditeley`
 - `https://moonn.ru/emotional-intelligence/`
 - `https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence`
 - `https://moonn.ru/emotional-intelligence/knowledge-base/male-loneliness-russia`
