@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-06",
+  "sourcePlan": "docs/moonn-h1-h2-ui-apply-plan-2026-05-06.json",
+  "start": 23,
+  "limit": 1,
+  "results": [
+    {
+      "url": "https://moonn.ru/otzivi",
+      "pageId": "81167556",
+      "recId": "1352757211",
+      "setTag": "H2",
+      "visibleSignal": "Психолог Татьяна Мунн КОНТАКТЫ",
+      "status": "failed",
+      "error": "heading_tag_field_not_found"
+    }
+  ]
+}

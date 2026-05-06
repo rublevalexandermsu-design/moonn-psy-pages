@@ -1,0 +1,1126 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-06",
+  "sourceAudit": "docs/moonn-production-scope-seo-audit-2026-05-06.json",
+  "total": 58,
+  "missingH1": 44,
+  "multipleH1": 14,
+  "items": [
+    {
+      "url": "https://moonn.ru/",
+      "pageId": "42678538",
+      "kind": "home",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 5,
+      "currentH1": [
+        "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ Я ЧИТАЮ",
+        "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ ЧИТАЮ",
+        "ОБРАЗОВАНИЕ - МГУ"
+      ],
+      "targetH1": "Психолог МГУ Татьяна Мунн",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "ОБРАЗОВАНИЕ - МГУ",
+          "recommendedText": "Психолог МГУ Татьяна Мунн",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ Я ЧИТАЮ",
+          "to": "h2"
+        },
+        {
+          "text": "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ ЧИТАЮ",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/aromatherapy",
+      "pageId": "62470081",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Ароматерапия и эмоциональное состояние",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/",
+      "pageId": "90977486",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмоциональный интеллект",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles",
+      "pageId": "91871866",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Статьи по эмоциональному интеллекту",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/benefits-of-ei",
+      "pageId": "91171146",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Преимущества эмоционального интеллекта: что даёт развитый EQ в жизни и работе",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/emotional-intelligence-skills",
+      "pageId": "90952996",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "5 ключевых навыков эмоционального интеллекта: от осознанности до влияния",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence",
+      "pageId": "90782146",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Что такое эмоциональный интеллект?",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
+      "pageId": "91163626",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Почему эмоциональный интеллект важнее IQ в карьере и жизни | Научные доказательства",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/diagnostoka-ei",
+      "pageId": "91179886",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Диагностика эмоционального интеллекта: как измерить свой EQ | Тесты и методы",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/ei-leader-12",
+      "pageId": "99248306",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмоциональный интеллект лидера",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base",
+      "pageId": "91652626",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "База знаний по эмоциональному интеллекту",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/active-listening",
+      "pageId": "91729026",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Активное слушание: как научиться слышать и понимать людей",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+      "pageId": "91715996",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Выгорание: признаки, причины и восстановление",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-contagion",
+      "pageId": "91846096",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмоциональное заражение: как эмоции передаются людям и командам",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-intelligence",
+      "pageId": "91652966",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Что такое эмоциональный интеллект и как он работает",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-literacy",
+      "pageId": "91692166",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмоциональная грамотность — навык точного выражения чувств",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-maturity",
+      "pageId": "91854286",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмоциональная зрелость: как отличить и развивать",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/empathy",
+      "pageId": "91686486",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Эмпатия — ключевой навык эмоционального интеллекта",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/intrinsic-motivation",
+      "pageId": "91701376",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Внутренняя мотивация: как её развивать и не потерять | психолог и спикер Татьяна Мунн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/nonviolent-communication",
+      "pageId": "91720476",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Ненасильственное общение (ННО/NVC): как говорить без конфликта",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/personal-boundaries",
+      "pageId": "91724906",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Личные границы: как их выстраивать и защищать",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/psychological-safety",
+      "pageId": "91848716",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Психологическая безопасность команды: что это и как её создать",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-awareness",
+      "pageId": "91665726",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Самоосознанность: ключевой навык эмоционального интеллекта",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-regulation",
+      "pageId": "91670976",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Саморегуляция — ключевой навык эмоционального интеллекта",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/social-intelligence",
+      "pageId": "91696586",
+      "kind": "knowledge_base",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Социальные навыки и социальный интеллект: как развивать",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/events",
+      "pageId": "53668815",
+      "kind": "lecture_or_events",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Мероприятия Татьяны Мунн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/events_tp",
+      "pageId": "66814657",
+      "kind": "lecture_or_events",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Лекции Татьяны Мунн по психологии",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/lectures1",
+      "pageId": "68295899",
+      "kind": "lecture_or_events",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Архив лекций Татьяны Мунн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/microbiom",
+      "pageId": "62477227",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Микробиом и эмоциональное состояние",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/novosti",
+      "pageId": "103178546",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Командировка преподавателя МГУ Татьяны Мунн в филиал МГУ в г. Ташкенте (Узбекистан). 01–05 декабря 2025 года",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/otzivi",
+      "pageId": "81167556",
+      "kind": "other",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 2,
+      "currentH1": [
+        "ОТЗЫВЫ КЛИЕНТОВ Психолог Татьяна Мунн",
+        "Психолог Татьяна Мунн КОНТАКТЫ"
+      ],
+      "targetH1": "Отзывы о психологе Татьяне Мунн",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "ОТЗЫВЫ КЛИЕНТОВ Психолог Татьяна Мунн",
+          "recommendedText": "Отзывы о психологе Татьяне Мунн",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Психолог Татьяна Мунн КОНТАКТЫ",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/panicheskie_ataki",
+      "pageId": "62126761",
+      "kind": "other",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 7,
+      "currentH1": [
+        "Как БЫСТРО избавиться от ПАНИЧЕСКИХ АТАК?",
+        "Симптомы Панические Атак",
+        "Панические Атаки у ПОДРОСТКОВ"
+      ],
+      "targetH1": "Панические атаки",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Панические Атаки у ПОДРОСТКОВ",
+          "recommendedText": "Панические атаки",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Как БЫСТРО избавиться от ПАНИЧЕСКИХ АТАК?",
+          "to": "h2"
+        },
+        {
+          "text": "Симптомы Панические Атак",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/phytotherapy",
+      "pageId": "62462299",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Фитотерапия и эмоциональное состояние",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "pageId": "135444166",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Платные тренинги и лекции Татьяны Мунн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog",
+      "pageId": null,
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Психолог в Москве и онлайн: Татьяна Мунн, психолог МГУ",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "pageId": "135430346",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 2,
+      "currentH1": [
+        "Психологические Консультации в Москве Психолог МГУ - Татьяна Мунн",
+        "ОБРАЗОВАНИЕ - МГУ"
+      ],
+      "targetH1": "Консультации психолога в Москве и онлайн",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Психологические Консультации в Москве Психолог МГУ - Татьяна Мунн",
+          "recommendedText": "Консультации психолога в Москве и онлайн",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "ОБРАЗОВАНИЕ - МГУ",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog_moskva",
+      "pageId": "62119659",
+      "kind": "service",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Психолог в Москве",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psihology",
+      "pageId": "44682379",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Психологическая помощь в Москве и онлайн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psypodgotovka1",
+      "pageId": "62652841",
+      "kind": "other",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 8,
+      "currentH1": [
+        "ПСИХОЛОГИЧЕСКАЯ подготовка к экзаменам (ОГЭ, ЕГЭ, Экзамены в ВУЗах)",
+        "Как справиться со стрессом на экзаменах: Психологические стратегии для успеха",
+        "Проверенные методы управления тревогой перед экзаменами"
+      ],
+      "targetH1": "Психологическая подготовка",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "ПСИХОЛОГИЧЕСКАЯ подготовка к экзаменам (ОГЭ, ЕГЭ, Экзамены в ВУЗах)",
+          "recommendedText": "Психологическая подготовка",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Как справиться со стрессом на экзаменах: Психологические стратегии для успеха",
+          "to": "h2"
+        },
+        {
+          "text": "Проверенные методы управления тревогой перед экзаменами",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/salt",
+      "pageId": "63131581",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Соль и самочувствие",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/schematherapy",
+      "pageId": "63409841",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Схематерапия",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/selfharm",
+      "pageId": "62890623",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Самоповреждение у подростков",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/semeynie_konflikti_article",
+      "pageId": "62923441",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Семейные конфликты",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/semeyniy_psiholog",
+      "pageId": "62920697",
+      "kind": "service",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Семейный психолог",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/seminar555",
+      "pageId": "57927493",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Семинар по методу Быстрая психология",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/st1",
+      "pageId": null,
+      "kind": "test_or_staging",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "онлайн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/st2",
+      "pageId": null,
+      "kind": "test_or_staging",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "онлайн",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_aerofobia",
+      "pageId": "63836583",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 6,
+      "currentH1": [
+        "Боишься летать на самолётах?",
+        "Страх полетов на самолетах может проявляться у людей разных возрастов и социальных групп",
+        "Просмотр телевизора и новостей может значительно влиять на формирование и усиление страха перед полетами на самолетах"
+      ],
+      "targetH1": "Аэрофобия Консультации по страху полётов (аэрофобия)",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Боишься летать на самолётах?",
+          "recommendedText": "Аэрофобия Консультации по страху полётов (аэрофобия)",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Страх полетов на самолетах может проявляться у людей разных возрастов и социальных групп",
+          "to": "h2"
+        },
+        {
+          "text": "Просмотр телевизора и новостей может значительно влиять на формирование и усиление страха перед полетами на самолетах",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_depression",
+      "pageId": "63747017",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 6,
+      "currentH1": [
+        "Депрессивное состояние:",
+        "«Мне ничего не хочется»: симптомы депрессии",
+        "Почему возникает депрессия?"
+      ],
+      "targetH1": "Депрессивное состояние: понимание и преодоление",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Депрессивное состояние:",
+          "recommendedText": "Депрессивное состояние: понимание и преодоление",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "«Мне ничего не хочется»: симптомы депрессии",
+          "to": "h2"
+        },
+        {
+          "text": "Почему возникает депрессия?",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_gtr",
+      "pageId": "63758713",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 7,
+      "currentH1": [
+        "Тревожные расстройства:",
+        "Тревожное расстройство - что это?",
+        "Ключевые признаки ГТР :"
+      ],
+      "targetH1": "Тревожные расстройства: когда тревога становится болезнью",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Тревожные расстройства:",
+          "recommendedText": "Тревожные расстройства: когда тревога становится болезнью",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Тревожное расстройство - что это?",
+          "to": "h2"
+        },
+        {
+          "text": "Ключевые признаки ГТР :",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+      "pageId": "63757347",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 6,
+      "currentH1": [
+        "Любовные зависимости и привязанности:",
+        "Что такое любовная зависимость?",
+        "Почему возникает любовная зависимость?"
+      ],
+      "targetH1": "Любовные зависимости и привязанности",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Любовные зависимости и привязанности:",
+          "recommendedText": "Любовные зависимости и привязанности",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Что такое любовная зависимость?",
+          "to": "h2"
+        },
+        {
+          "text": "Почему возникает любовная зависимость?",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_obida_na_roditelei",
+      "pageId": "63749211",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 2,
+      "currentH1": [
+        "Обида на родителей:",
+        "Обиды на родителей - причины"
+      ],
+      "targetH1": "Обида на родителей - негативные чувства, связанные с детством",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Обида на родителей:",
+          "recommendedText": "Обида на родителей - негативные чувства, связанные с детством",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Обиды на родителей - причины",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
+      "pageId": "63718371",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 2,
+      "currentH1": [
+        "Налаживание отношений в коллективе",
+        "Профилактика конфликтов:"
+      ],
+      "targetH1": "Налаживание отношений в коллективе",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Налаживание отношений в коллективе",
+          "recommendedText": "Налаживание отношений в коллективе",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Профилактика конфликтов:",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_procrastination",
+      "pageId": "63750667",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 6,
+      "currentH1": [
+        "Прокрастинация",
+        "«Сделаю завтра»: Что такое прокрастинация?",
+        "Почему мы откладываем дела?"
+      ],
+      "targetH1": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Почему мы откладываем дела?",
+          "recommendedText": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Прокрастинация",
+          "to": "h2"
+        },
+        {
+          "text": "«Сделаю завтра»: Что такое прокрастинация?",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_razvod",
+      "pageId": "63755367",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 3,
+      "currentH1": [
+        "Психологическая помощь при расставании, измене, разводе:",
+        "Как пережить измену: восстановление доверия к себе и миру",
+        "Когда обращаться к психологу?"
+      ],
+      "targetH1": "Помощь при расставании, измене, разводе",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Психологическая помощь при расставании, измене, разводе:",
+          "recommendedText": "Помощь при расставании, измене, разводе",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Как пережить измену: восстановление доверия к себе и миру",
+          "to": "h2"
+        },
+        {
+          "text": "Когда обращаться к психологу?",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_sohranit_brak",
+      "pageId": "63752263",
+      "kind": "service",
+      "issues": [
+        "multiple_h1"
+      ],
+      "currentH1Count": 5,
+      "currentH1": [
+        "Как сохранить брак",
+        "Почему возникают кризисы в браке?",
+        "Как научиться понимать партнера?"
+      ],
+      "targetH1": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога",
+      "action": "keep_or_replace_first_h1_and_downgrade_rest",
+      "keep": [
+        {
+          "text": "Как сохранить брак",
+          "recommendedText": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога",
+          "action": "keep_as_h1_or_replace_text"
+        }
+      ],
+      "downgrade": [
+        {
+          "text": "Почему возникают кризисы в браке?",
+          "to": "h2"
+        },
+        {
+          "text": "Как научиться понимать партнера?",
+          "to": "h2"
+        }
+      ],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/vacuum_cups",
+      "pageId": "63138325",
+      "kind": "other",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Вакуумные банки и самочувствие",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/vospitanie_article",
+      "pageId": "62923037",
+      "kind": "article",
+      "issues": [
+        "missing_h1"
+      ],
+      "currentH1Count": 0,
+      "currentH1": [],
+      "targetH1": "Воспитание ребенка",
+      "action": "add_single_h1",
+      "keep": [],
+      "downgrade": [],
+      "sourceLevelGate": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    }
+  ]
+}

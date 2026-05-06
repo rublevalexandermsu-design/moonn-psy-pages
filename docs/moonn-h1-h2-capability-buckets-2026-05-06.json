@@ -1,0 +1,573 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-06",
+  "basis": "post-pilot Tilda UI capability check",
+  "counts": {
+    "supported_block_setting": 1,
+    "unsupported_needs_design_solution": 24,
+    "manual_verify": 27
+  },
+  "provenSupportedRecordTypes": [
+    "485"
+  ],
+  "provenUnsupportedRecordTypes": [
+    "18",
+    "578"
+  ],
+  "buckets": {
+    "supported_block_setting": [
+      {
+        "url": "https://moonn.ru/aromatherapy",
+        "pageId": "62470081",
+        "recId": "860030752",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Ароматерапия и психология",
+        "targetH1": "Ароматерапия и эмоциональное состояние",
+        "confidence": "high",
+        "recordType": "485"
+      }
+    ],
+    "unsupported_needs_design_solution": [
+      {
+        "url": "https://moonn.ru/emotional-intelligence/",
+        "pageId": "90977486",
+        "recId": "1500161991",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Эмоциональный интеллект — основа осознанного лидерства",
+        "targetH1": "Эмоциональный интеллект",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/articles",
+        "pageId": "91871866",
+        "recId": "1513039251",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "СТАТЬИ по Эмоциональному Интеллекту (ЭИ)",
+        "targetH1": "Статьи по эмоциональному интеллекту",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/articles/benefits-of-ei",
+        "pageId": "91171146",
+        "recId": "1503094811",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Преимущества и польза эмоционального интеллекта — почему это работает всегда",
+        "targetH1": "Преимущества эмоционального интеллекта: что даёт развитый EQ в жизни и работе",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence",
+        "pageId": "90782146",
+        "recId": "1499511631",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Что такое эмоциональный интеллект — просто о главном",
+        "targetH1": "Что такое эмоциональный интеллект?",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
+        "pageId": "91163626",
+        "recId": "1502985271",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Почему эмоциональный интеллект так важен — больше, чем просто «уметь чувствовать»",
+        "targetH1": "Почему эмоциональный интеллект важнее IQ в карьере и жизни | Научные доказательства",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/diagnostoka-ei",
+        "pageId": "91179886",
+        "recId": "1503206791",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Диагностика эмоционального интеллекта — как понять свой уровень EI",
+        "targetH1": "Диагностика эмоционального интеллекта: как измерить свой EQ | Тесты и методы",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base",
+        "pageId": "91652626",
+        "recId": "1510350791",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "БАЗА ЗНАНИЙ по Эмоциональному Интеллекту (ЭИ)",
+        "targetH1": "База знаний по эмоциональному интеллекту",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/active-listening",
+        "pageId": "91729026",
+        "recId": "1511259241",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "АКТИВНОЕ СЛУШАНИЕ",
+        "targetH1": "Активное слушание: как научиться слышать и понимать людей",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+        "pageId": "91715996",
+        "recId": "1511108531",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ВЫГОРАНИЕ",
+        "targetH1": "Выгорание: признаки, причины и восстановление",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-contagion",
+        "pageId": "91846096",
+        "recId": "1512705771",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ЭМОЦИОНАЛЬНЫЕ ЗАРАЖЕНИЕ",
+        "targetH1": "Эмоциональное заражение: как эмоции передаются людям и командам",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-intelligence",
+        "pageId": "91652966",
+        "recId": "1510355531",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ЭМОЦИОНАЛЬНЫЙ ИНТЕЛЛЕКТ (ЭИ / EI / EQ)",
+        "targetH1": "Что такое эмоциональный интеллект и как он работает",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-literacy",
+        "pageId": "91692166",
+        "recId": "1510837831",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ЭМОЦИОНАЛЬНАЯ ГРАМОТНОСТЬ",
+        "targetH1": "Эмоциональная грамотность — навык точного выражения чувств",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-maturity",
+        "pageId": "91854286",
+        "recId": "1512810211",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ЭМОЦИОНАЛЬНАЯ ЗРЕЛОСТЬ",
+        "targetH1": "Эмоциональная зрелость: как отличить и развивать",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/intrinsic-motivation",
+        "pageId": "91701376",
+        "recId": "1510942691",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ВНУТРЕННЯЯ МОТИВАЦИЯ",
+        "targetH1": "Внутренняя мотивация: как её развивать и не потерять | психолог и спикер Татьяна Мунн",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/nonviolent-communication",
+        "pageId": "91720476",
+        "recId": "1511159951",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "НЕНАСИЛЬСТВЕННОЕ ОБЩЕНИЕ (ННО/NVC)",
+        "targetH1": "Ненасильственное общение (ННО/NVC): как говорить без конфликта",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/personal-boundaries",
+        "pageId": "91724906",
+        "recId": "1511213641",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ЛИЧНЫЕ ГРАНИЦЫ",
+        "targetH1": "Личные границы: как их выстраивать и защищать",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/psychological-safety",
+        "pageId": "91848716",
+        "recId": "1512737921",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ПСИХОЛОГИЧЕСКАЯ БЕЗОПАСНОСТЬ",
+        "targetH1": "Психологическая безопасность команды: что это и как её создать",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-awareness",
+        "pageId": "91665726",
+        "recId": "1510513881",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "САМООСОЗНАННОСТЬ",
+        "targetH1": "Самоосознанность: ключевой навык эмоционального интеллекта",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-regulation",
+        "pageId": "91670976",
+        "recId": "1510571101",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "САМОРЕГУЛЯЦИЯ",
+        "targetH1": "Саморегуляция — ключевой навык эмоционального интеллекта",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/emotional-intelligence/knowledge-base/social-intelligence",
+        "pageId": "91696586",
+        "recId": "1510889821",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "СОЦИАЛЬНЫЕ НАВЫКИ (Социальный интеллект)",
+        "targetH1": "Социальные навыки и социальный интеллект: как развивать",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/microbiom",
+        "pageId": "62477227",
+        "recId": "860612642",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Микробиом и Психология",
+        "targetH1": "Микробиом и эмоциональное состояние",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/otzivi",
+        "pageId": "81167556",
+        "recId": "1352757211",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Психолог Татьяна Мунн КОНТАКТЫ",
+        "targetH1": "Отзывы о психологе Татьяне Мунн",
+        "recordType": "578"
+      },
+      {
+        "url": "https://moonn.ru/vacuum_cups",
+        "pageId": "63138325",
+        "recId": "865411513",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Вакуумные банки и баночный массаж",
+        "targetH1": "Вакуумные банки и самочувствие",
+        "confidence": "high",
+        "recordType": "18"
+      },
+      {
+        "url": "https://moonn.ru/vospitanie_article",
+        "pageId": "62923037",
+        "recId": "863654053",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ВОСПИТАНИЕ ДЕТЕЙ",
+        "targetH1": "Воспитание ребенка",
+        "confidence": "high",
+        "recordType": "18"
+      }
+    ],
+    "manual_verify": [
+      {
+        "url": "https://moonn.ru/events_tp",
+        "pageId": "66814657",
+        "recId": "1854076751",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Лекции Татьяны Мунн по психологии АПРЕЛЬ 2026",
+        "targetH1": "Лекции Татьяны Мунн по психологии",
+        "confidence": "high",
+        "recordType": "774"
+      },
+      {
+        "url": "https://moonn.ru/panicheskie_ataki",
+        "pageId": "62126761",
+        "recId": "857277983",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Симптомы Панические Атак",
+        "targetH1": "Панические атаки",
+        "recordType": "1152"
+      },
+      {
+        "url": "https://moonn.ru/panicheskie_ataki",
+        "pageId": "62126761",
+        "recId": "859637479",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Панические Атаки у ПОДРОСТКОВ",
+        "targetH1": "Панические атаки",
+        "recordType": "1152"
+      },
+      {
+        "url": "https://moonn.ru/panicheskie_ataki",
+        "pageId": "62126761",
+        "recId": "857279445",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Панические атаки - Способы решения",
+        "targetH1": "Панические атаки",
+        "recordType": "508"
+      },
+      {
+        "url": "https://moonn.ru/phytotherapy",
+        "pageId": "62462299",
+        "recId": "859970833",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ФИТОТЕРАПИЯ И ПСИХОЛОГИЯ Раскройте целебную силу растений",
+        "targetH1": "Фитотерапия и эмоциональное состояние",
+        "confidence": "high",
+        "recordType": "1001"
+      },
+      {
+        "url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+        "pageId": "135444166",
+        "recId": "2173943641",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "ОБУЧЕНИЕ психологии у Татьяны Мунн",
+        "targetH1": "Платные тренинги и лекции Татьяны Мунн",
+        "confidence": "high",
+        "recordType": "1241"
+      },
+      {
+        "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+        "pageId": "135430346",
+        "recId": "2173799451",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "ОБРАЗОВАНИЕ - МГУ",
+        "targetH1": "Консультации психолога в Москве и онлайн",
+        "recordType": "921"
+      },
+      {
+        "url": "https://moonn.ru/psypodgotovka1",
+        "pageId": "62652841",
+        "recId": "861500604",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Как справиться со стрессом на экзаменах: Психологические стратегии для успеха",
+        "targetH1": "Психологическая подготовка",
+        "recordType": "1001"
+      },
+      {
+        "url": "https://moonn.ru/psypodgotovka1",
+        "pageId": "62652841",
+        "recId": "861500606",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Проверенные методы управления тревогой перед экзаменами",
+        "targetH1": "Психологическая подготовка",
+        "recordType": "820"
+      },
+      {
+        "url": "https://moonn.ru/selfharm",
+        "pageId": "62890623",
+        "recId": "863408206",
+        "setTag": "H1",
+        "reason": "missing_h1",
+        "visibleSignal": "Суицидальные мысли и селфхарм (самоповреждения) у подростков",
+        "targetH1": "Самоповреждение у подростков",
+        "confidence": "high",
+        "recordType": "1001"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_aerofobia",
+        "pageId": "63836583",
+        "recId": "870978938",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Страх полетов на самолетах может проявляться у людей разных возрастов и социальных групп",
+        "targetH1": "Аэрофобия Консультации по страху полётов (аэрофобия)",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_aerofobia",
+        "pageId": "63836583",
+        "recId": "870999519",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Просмотр телевизора и новостей может значительно влиять на формирование и усиление страха перед полетами на самолетах",
+        "targetH1": "Аэрофобия Консультации по страху полётов (аэрофобия)",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_depression",
+        "pageId": "63747017",
+        "recId": "870281479",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "«Мне ничего не хочется»: симптомы депрессии",
+        "targetH1": "Депрессивное состояние: понимание и преодоление",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_depression",
+        "pageId": "63747017",
+        "recId": "870284531",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Почему возникает депрессия?",
+        "targetH1": "Депрессивное состояние: понимание и преодоление",
+        "recordType": "858"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_gtr",
+        "pageId": "63758713",
+        "recId": "870371668",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Тревожное расстройство - что это?",
+        "targetH1": "Тревожные расстройства: когда тревога становится болезнью",
+        "recordType": "497"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_gtr",
+        "pageId": "63758713",
+        "recId": "870371670",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Ключевые признаки ГТР :",
+        "targetH1": "Тревожные расстройства: когда тревога становится болезнью",
+        "recordType": "1000"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+        "pageId": "63757347",
+        "recId": "870361216",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Что такое любовная зависимость?",
+        "targetH1": "Любовные зависимости и привязанности",
+        "recordType": "497"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+        "pageId": "63757347",
+        "recId": "870362299",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Почему возникает любовная зависимость?",
+        "targetH1": "Любовные зависимости и привязанности",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_obida_na_roditelei",
+        "pageId": "63749211",
+        "recId": "870299398",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Обиды на родителей - причины",
+        "targetH1": "Обида на родителей - негативные чувства, связанные с детством",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
+        "pageId": "63718371",
+        "recId": "870068830",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Профилактика конфликтов:",
+        "targetH1": "Налаживание отношений в коллективе",
+        "recordType": "508"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_procrastination",
+        "pageId": "63750667",
+        "recId": "870310583",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "«Сделаю завтра»: Что такое прокрастинация?",
+        "targetH1": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+        "recordType": "858"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_procrastination",
+        "pageId": "63750667",
+        "recId": "870310582",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Почему мы откладываем дела?",
+        "targetH1": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+        "recordType": "510"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_procrastination",
+        "pageId": "63750667",
+        "recId": "870318300",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Когда обратиться к психологу:",
+        "targetH1": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+        "recordType": "491"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_razvod",
+        "pageId": "63755367",
+        "recId": "870345768",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Как пережить измену: восстановление доверия к себе и миру",
+        "targetH1": "Помощь при расставании, измене, разводе",
+        "recordType": "491"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_razvod",
+        "pageId": "63755367",
+        "recId": "870353589",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Когда обращаться к психологу?",
+        "targetH1": "Помощь при расставании, измене, разводе",
+        "recordType": "1000"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_sohranit_brak",
+        "pageId": "63752263",
+        "recId": "870323921",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Почему возникают кризисы в браке?",
+        "targetH1": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога",
+        "recordType": "508"
+      },
+      {
+        "url": "https://moonn.ru/uslugi_sohranit_brak",
+        "pageId": "63752263",
+        "recId": "870322715",
+        "setTag": "H2",
+        "reason": "multiple_h1_extra",
+        "visibleSignal": "Как научиться понимать партнера?",
+        "targetH1": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога",
+        "recordType": "820"
+      }
+    ]
+  }
+}

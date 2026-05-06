@@ -291,3 +291,43 @@ Append-only project history for `moon-psy-site`.
   - Review/noindex/rename decision for `st1` and `st2`.
   - Compliant Yandex Services reviews page.
   - Manual profile text synchronization for Yandex Services and MGU Istina.
+
+## 2026-05-06 — Moonn H1/H2 Source Cleanup Pilot
+
+- Project: Moonn / Tilda site.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: user asked to finish morning checklist points 2 and 3: final SEO audit and H1/H2 cleanup plan/application on original published pages.
+- Created files:
+  - `docs/moonn-production-scope-seo-audit-2026-05-06.json`
+  - `docs/moonn-production-scope-seo-audit-2026-05-06.md`
+  - `docs/moonn-production-scope-seo-audit-2026-05-06.csv`
+  - `docs/moonn-h1-h2-source-cleanup-packet-2026-05-06.json`
+  - `docs/moonn-h1-h2-source-cleanup-packet-2026-05-06.md`
+  - `docs/moonn-h1-h2-block-map-2026-05-06.json`
+  - `docs/moonn-h1-h2-block-map-2026-05-06.md`
+  - `docs/moonn-h1-h2-ui-apply-plan-2026-05-06.json`
+  - `docs/moonn-h1-h2-ui-apply-plan-2026-05-06.md`
+  - `docs/moonn-h1-h2-ui-apply-report-2026-05-06.json`
+  - `docs/moonn-h1-h2-capability-buckets-2026-05-06.json`
+  - `docs/moonn-h1-h2-capability-buckets-2026-05-06.md`
+  - `docs/moonn-h1-h2-implementation-status-2026-05-06.md`
+  - `scripts/build_moonn_h1_h2_block_map.py`
+  - `scripts/build_moonn_h1_h2_ui_apply_plan.py`
+  - `scripts/build_moonn_h1_h2_capability_buckets.py`
+  - `scripts/tilda_h1_h2_gui_apply.py`
+- Live change:
+  - Applied `SEO: тег для заголовка -> H1` to `https://moonn.ru/aromatherapy`, page `62470081`, record `860030752`, block type `485`.
+- Verified:
+  - Live production audit after the pilot: `83/83` URLs returned HTTP `200`.
+  - `missing_h1` decreased from `44` to `43`.
+  - `multiple_h1` remains `14`.
+  - Capability buckets: `1` supported block-setting action, `24` unsupported actions needing design solution, `27` manual-verify actions.
+- Incident:
+  - Symptom: automation initially tried to operate on the wrong Chrome tab / Codex window and later failed on several blocks.
+  - Root cause: GUI automation was not pinned to the authenticated Tilda tab strongly enough, and the initial plan assumed all Tilda blocks expose the same heading-tag UI field.
+  - Resolution: switched navigation to the real Chrome address-bar control and verified block capability visually. Found that block type `485` supports the SEO heading tag field, while tested block types `18` and `578` do not expose it.
+  - Follow-up rule: H1/H2 cleanup must be bucketed by proven Tilda block capability. Do not batch-apply SEO heading tags to block types until one record of that type has been verified in Tilda UI.
+- Residual work:
+  - Rebuild H1/H2 plan into `supported_block_setting`, `unsupported_needs_design_solution`, and `manual_verify`.
+  - For unsupported missing-H1 pages, choose a supported design-level solution: add a semantic H1 block or replace the hero/title block type.
+  - For multiple-H1 pages, test each secondary heading block type before live batch changes.

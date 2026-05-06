@@ -1,0 +1,3146 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-06",
+  "sourcePacket": "docs/moonn-h1-h2-source-cleanup-packet-2026-05-06.json",
+  "scope": "read_only_tilda_block_map_for_h1_h2_cleanup",
+  "total": 58,
+  "skipped": [],
+  "items": [
+    {
+      "url": "https://moonn.ru/",
+      "pageId": "42678538",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Психолог МГУ Татьяна Мунн",
+      "currentH1": [
+        "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ Я ЧИТАЮ",
+        "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ ЧИТАЮ",
+        "ОБРАЗОВАНИЕ - МГУ"
+      ],
+      "blockCountWithHeadingSignals": 44,
+      "relevantBlocks": [
+        {
+          "recId": "2175794861",
+          "recordType": "908",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1208109326",
+          "recordType": "962",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ Я ЧИТАЮ",
+              "attrs": "class=\"t962__title t-title t-title_xxs\" field=\"title\" style=\"padding-bottom: 20px;\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "2173916631",
+          "recordType": "962",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ТЕМЫ ЛЕКЦИЙ, КОТОРЫЕ ЧИТАЮ",
+              "attrs": "class=\"t962__title t-title t-title_xxs\" field=\"title\" style=\"padding-bottom: 20px;\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "860020874",
+          "recordType": "921",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ОБРАЗОВАНИЕ - МГУ",
+              "attrs": "class=\"t921__title t-title t-title_xs \" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/aromatherapy",
+      "pageId": "62470081",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Ароматерапия и эмоциональное состояние",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 16,
+      "relevantBlocks": [
+        {
+          "recId": "860030751",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Ароматерапия и психология"
+          ]
+        },
+        {
+          "recId": "860030752",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "Ароматерапия и психология"
+          ]
+        },
+        {
+          "recId": "860030754",
+          "recordType": "486",
+          "headings": [],
+          "textCandidates": [
+            "Что такое ароматерапия"
+          ]
+        },
+        {
+          "recId": "860036262",
+          "recordType": "1108",
+          "headings": [],
+          "textCandidates": [
+            "Ароматерапия может включать различные методы"
+          ]
+        },
+        {
+          "recId": "860030758",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "Ароматы и наше благополучие"
+          ]
+        },
+        {
+          "recId": "860039926",
+          "recordType": "548",
+          "headings": [],
+          "textCandidates": [
+            "Ароматерапия часто используется для"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/",
+      "pageId": "90977486",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмоциональный интеллект",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 7,
+      "relevantBlocks": [
+        {
+          "recId": "1500161991",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Эмоциональный интеллект — основа осознанного лидерства"
+          ]
+        },
+        {
+          "recId": "1500214191",
+          "recordType": "686",
+          "headings": [],
+          "textCandidates": [
+            "База знаний",
+            "Видео и подкасты",
+            "Тесты и упражнения",
+            "Курс «Эмоциональный интеллект для лидеров»"
+          ]
+        },
+        {
+          "recId": "1500162031",
+          "recordType": "820",
+          "headings": [],
+          "textCandidates": [
+            "Как применять эмоциональный интеллект на практике"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles",
+      "pageId": "91871866",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Статьи по эмоциональному интеллекту",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 4,
+      "relevantBlocks": [
+        {
+          "recId": "1513039251",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "СТАТЬИ по Эмоциональному Интеллекту (ЭИ)"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/benefits-of-ei",
+      "pageId": "91171146",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Преимущества эмоционального интеллекта: что даёт развитый EQ в жизни и работе",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 7,
+      "relevantBlocks": [
+        {
+          "recId": "1503094801",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1503094811",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Преимущества и польза эмоционального интеллекта — почему это работает всегда"
+          ]
+        },
+        {
+          "recId": "1503094841",
+          "recordType": "673",
+          "headings": [],
+          "textCandidates": [
+            "«Высокий EI — это когда ты можешь быть эмоциональным, но не зависимым от эмоций.»"
+          ]
+        },
+        {
+          "recId": "1503094851",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Что говорит наука"
+          ]
+        },
+        {
+          "recId": "1503094871",
+          "recordType": "503",
+          "headings": [],
+          "textCandidates": [
+            "Как применять эмоциональный интеллект на практике"
+          ]
+        },
+        {
+          "recId": "1503094881",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "7 ключевых преимуществ эмоционального интеллекта"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/emotional-intelligence-skills",
+      "pageId": "90952996",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "5 ключевых навыков эмоционального интеллекта: от осознанности до влияния",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1499777371",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1499777381",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Навыки эмоционального интеллекта — 5 основ зрелой личности"
+          ]
+        },
+        {
+          "recId": "1499795011",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Что говорит наука"
+          ]
+        },
+        {
+          "recId": "1499777431",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "5 практических шагов для развития EI"
+          ]
+        },
+        {
+          "recId": "1499777421",
+          "recordType": "503",
+          "headings": [],
+          "textCandidates": [
+            "Как применять эмоциональный интеллект на практике"
+          ]
+        },
+        {
+          "recId": "1499892701",
+          "recordType": "548",
+          "headings": [],
+          "textCandidates": [
+            "Модель пяти навыков EI (по Гоулману):"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence",
+      "pageId": "90782146",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Что такое эмоциональный интеллект?",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 4,
+      "relevantBlocks": [
+        {
+          "recId": "1497160681",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1499511631",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Что такое эмоциональный интеллект — просто о главном"
+          ]
+        },
+        {
+          "recId": "1499542001",
+          "recordType": "820",
+          "headings": [],
+          "textCandidates": [
+            "Как применять эмоциональный интеллект на практике"
+          ]
+        },
+        {
+          "recId": "1499668791",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "5 шагов к развитию эмоционального интеллекта"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
+      "pageId": "91163626",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Почему эмоциональный интеллект важнее IQ в карьере и жизни | Научные доказательства",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 7,
+      "relevantBlocks": [
+        {
+          "recId": "1502985261",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1502985271",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Почему эмоциональный интеллект так важен — больше, чем просто «уметь чувствовать»"
+          ]
+        },
+        {
+          "recId": "1502994561",
+          "recordType": "673",
+          "headings": [],
+          "textCandidates": [
+            "Человек с высоким эмоциональным интеллектом не теряет голову, даже когда другие теряют самообладание."
+          ]
+        },
+        {
+          "recId": "1502985301",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Что говорит наука"
+          ]
+        },
+        {
+          "recId": "1502985331",
+          "recordType": "503",
+          "headings": [],
+          "textCandidates": [
+            "Как применять эмоциональный интеллект на практике"
+          ]
+        },
+        {
+          "recId": "1502985321",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "5 причин, почему EI важнее IQ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/diagnostoka-ei",
+      "pageId": "91179886",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Диагностика эмоционального интеллекта: как измерить свой EQ | Тесты и методы",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 9,
+      "relevantBlocks": [
+        {
+          "recId": "1503206781",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1503206791",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Диагностика эмоционального интеллекта — как понять свой уровень EI"
+          ]
+        },
+        {
+          "recId": "1503206831",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Что говорит наука"
+          ]
+        },
+        {
+          "recId": "1503247851",
+          "recordType": "1108",
+          "headings": [],
+          "textCandidates": [
+            "Как проходит диагностика"
+          ]
+        },
+        {
+          "recId": "1503284841",
+          "recordType": "508",
+          "headings": [],
+          "textCandidates": [
+            "ПРИМЕРЫ ДИАГНОСТИЧЕСКИХ ВОПРОСОВ"
+          ]
+        },
+        {
+          "recId": "1503317681",
+          "recordType": "184",
+          "headings": [],
+          "textCandidates": [
+            "ЧТО ПОКАЗЫВАЕТ ТЕСТ НА EI"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/ei-leader-12",
+      "pageId": "99248306",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмоциональный интеллект лидера",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 3,
+      "relevantBlocks": [
+        {
+          "recId": "1622710001",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1622710011",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Что делать эффективному лидеру, если его руководитель — человек с низким эмоциональным интеллектом"
+          ]
+        },
+        {
+          "recId": "1622734411",
+          "recordType": "248",
+          "headings": [],
+          "textCandidates": [
+            "Лидер со зрелым эмоциональным интеллектом становится «буфером» между верхом и командой"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base",
+      "pageId": "91652626",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "База знаний по эмоциональному интеллекту",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 5,
+      "relevantBlocks": [
+        {
+          "recId": "1510350791",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "БАЗА ЗНАНИЙ по Эмоциональному Интеллекту (ЭИ)"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/active-listening",
+      "pageId": "91729026",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Активное слушание: как научиться слышать и понимать людей",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 7,
+      "relevantBlocks": [
+        {
+          "recId": "1511259241",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "АКТИВНОЕ СЛУШАНИЕ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+      "pageId": "91715996",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Выгорание: признаки, причины и восстановление",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1511108531",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ВЫГОРАНИЕ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-contagion",
+      "pageId": "91846096",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмоциональное заражение: как эмоции передаются людям и командам",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1512705761",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1512705771",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ЭМОЦИОНАЛЬНЫЕ ЗАРАЖЕНИЕ"
+          ]
+        },
+        {
+          "recId": "1512705801",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "КАК ЭТО РАБОТАЕТ"
+          ]
+        },
+        {
+          "recId": "1512705831",
+          "recordType": "1007",
+          "headings": [],
+          "textCandidates": [
+            "ПРАКТИКА"
+          ]
+        },
+        {
+          "recId": "1512705841",
+          "recordType": "497",
+          "headings": [],
+          "textCandidates": [
+            "ОШИБКИ И ЛОВУШКИ"
+          ]
+        },
+        {
+          "recId": "1512705881",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Вопросы для саморефлексии"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-intelligence",
+      "pageId": "91652966",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Что такое эмоциональный интеллект и как он работает",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510355521",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1510355531",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ЭМОЦИОНАЛЬНЫЙ ИНТЕЛЛЕКТ (ЭИ / EI / EQ)"
+          ]
+        },
+        {
+          "recId": "1513713071",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "КАК ЭТО РАБОТАЕТ"
+          ]
+        },
+        {
+          "recId": "1510372481",
+          "recordType": "1007",
+          "headings": [],
+          "textCandidates": [
+            "ПРАКТИКА"
+          ]
+        },
+        {
+          "recId": "1510381251",
+          "recordType": "497",
+          "headings": [],
+          "textCandidates": [
+            "ОШИБКИ И ЛОВУШКИ"
+          ]
+        },
+        {
+          "recId": "1510355571",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Вопросы для саморефлексии"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-literacy",
+      "pageId": "91692166",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмоциональная грамотность — навык точного выражения чувств",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510837831",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ЭМОЦИОНАЛЬНАЯ ГРАМОТНОСТЬ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-maturity",
+      "pageId": "91854286",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмоциональная зрелость: как отличить и развивать",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1512810211",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ЭМОЦИОНАЛЬНАЯ ЗРЕЛОСТЬ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/empathy",
+      "pageId": "91686486",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Эмпатия — ключевой навык эмоционального интеллекта",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 5,
+      "relevantBlocks": [
+        {
+          "recId": "1510754361",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1510754401",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "КАК ЭТО РАБОТАЕТ"
+          ]
+        },
+        {
+          "recId": "1510754421",
+          "recordType": "1007",
+          "headings": [],
+          "textCandidates": [
+            "ПРАКТИКА"
+          ]
+        },
+        {
+          "recId": "1510754431",
+          "recordType": "497",
+          "headings": [],
+          "textCandidates": [
+            "ОШИБКИ И ЛОВУШКИ"
+          ]
+        },
+        {
+          "recId": "1510754471",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Вопросы для саморефлексии"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/intrinsic-motivation",
+      "pageId": "91701376",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Внутренняя мотивация: как её развивать и не потерять | психолог и спикер Татьяна Мунн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510942691",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ВНУТРЕННЯЯ МОТИВАЦИЯ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/nonviolent-communication",
+      "pageId": "91720476",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Ненасильственное общение (ННО/NVC): как говорить без конфликта",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1511159951",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "НЕНАСИЛЬСТВЕННОЕ ОБЩЕНИЕ (ННО/NVC)"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/personal-boundaries",
+      "pageId": "91724906",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Личные границы: как их выстраивать и защищать",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1511213641",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ЛИЧНЫЕ ГРАНИЦЫ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/psychological-safety",
+      "pageId": "91848716",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Психологическая безопасность команды: что это и как её создать",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1512737921",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ПСИХОЛОГИЧЕСКАЯ БЕЗОПАСНОСТЬ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-awareness",
+      "pageId": "91665726",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Самоосознанность: ключевой навык эмоционального интеллекта",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510513881",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "САМООСОЗНАННОСТЬ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-regulation",
+      "pageId": "91670976",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Саморегуляция — ключевой навык эмоционального интеллекта",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510571101",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "САМОРЕГУЛЯЦИЯ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/social-intelligence",
+      "pageId": "91696586",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Социальные навыки и социальный интеллект: как развивать",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 6,
+      "relevantBlocks": [
+        {
+          "recId": "1510889811",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "1510889821",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "СОЦИАЛЬНЫЕ НАВЫКИ (Социальный интеллект)"
+          ]
+        },
+        {
+          "recId": "1510889851",
+          "recordType": "550",
+          "headings": [],
+          "textCandidates": [
+            "КАК ЭТО РАБОТАЕТ"
+          ]
+        },
+        {
+          "recId": "1510889871",
+          "recordType": "1007",
+          "headings": [],
+          "textCandidates": [
+            "ПРАКТИКА"
+          ]
+        },
+        {
+          "recId": "1510889881",
+          "recordType": "497",
+          "headings": [],
+          "textCandidates": [
+            "ОШИБКИ И ЛОВУШКИ"
+          ]
+        },
+        {
+          "recId": "1510889921",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Вопросы для саморефлексии"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/events",
+      "pageId": "53668815",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Мероприятия Татьяны Мунн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 12,
+      "relevantBlocks": [
+        {
+          "recId": "787864694",
+          "recordType": "205",
+          "headings": [],
+          "textCandidates": [
+            "Бесплатные Лекции по Психологии в Москве Психолог Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "787864695",
+          "recordType": "482",
+          "headings": [],
+          "textCandidates": [
+            "БЕСПЛАТНЫЕ Лекции по психологии \"БЫСТРАЯ ПСИХОЛОГИЯ\" Теория и Практика"
+          ]
+        },
+        {
+          "recId": "787880404",
+          "recordType": "482",
+          "headings": [],
+          "textCandidates": [
+            "РАСПИСАНИЕ ближайших выступлений в Москве. вход свободный, требуется регистрация"
+          ]
+        },
+        {
+          "recId": "1875581411",
+          "recordType": "482",
+          "headings": [],
+          "textCandidates": [
+            "РАСПИСАНИЕ ближайших выступлений в Москве. вход свободный, требуется регистрация"
+          ]
+        },
+        {
+          "recId": "813900461",
+          "recordType": "482",
+          "headings": [],
+          "textCandidates": [
+            "08 сентября 2024, воскресенье Музеон, зона 1. Фестиваль лето в Москве С 12.00 до 18.00 вход свободный"
+          ]
+        },
+        {
+          "recId": "813912915",
+          "recordType": "482",
+          "headings": [],
+          "textCandidates": [
+            "06 сентября 2024, пятница Лужники, зона 1. Фестиваль лето в Москве С 14.00 до 20.00 вход свободный"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/events_tp",
+      "pageId": "66814657",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Лекции Татьяны Мунн по психологии",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 13,
+      "relevantBlocks": [
+        {
+          "recId": "1854076751",
+          "recordType": "774",
+          "headings": [],
+          "textCandidates": [
+            "Лекции Татьяны Мунн по психологии АПРЕЛЬ 2026"
+          ]
+        },
+        {
+          "recId": "2169931711",
+          "recordType": "774",
+          "headings": [],
+          "textCandidates": [
+            "Лекции Татьяны Мунн по психологии МАЙ 2026"
+          ]
+        },
+        {
+          "recId": "2169965061",
+          "recordType": "774",
+          "headings": [],
+          "textCandidates": [
+            "Лекции Татьяны Мунн по психологии ИЮНЬ 2026"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/lectures1",
+      "pageId": "68295899",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Архив лекций Татьяны Мунн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 8,
+      "relevantBlocks": [
+        {
+          "recId": "1006080036",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Лекции по психологии"
+          ]
+        },
+        {
+          "recId": "1012475516",
+          "recordType": "94",
+          "headings": [],
+          "textCandidates": [
+            "открытые лекции по психологии проходят в парке горького каждый понедельник с 19.00 до 21.00"
+          ]
+        },
+        {
+          "recId": "1161773831",
+          "recordType": "588",
+          "headings": [],
+          "textCandidates": [
+            "Ссылка на регистрацию на открытые Лекции по Психологии в Парке Горького"
+          ]
+        },
+        {
+          "recId": "1006078046",
+          "recordType": "531",
+          "headings": [],
+          "textCandidates": [
+            "ЗАПИСИ ЛЕКЦИЙ ПО ПСИХОЛОГИИ"
+          ]
+        },
+        {
+          "recId": "1006089376",
+          "recordType": "531",
+          "headings": [],
+          "textCandidates": [
+            "ЛЕКЦИИ \"ТЕЛО и ПСИХОЛОГИЯ\""
+          ]
+        },
+        {
+          "recId": "1006219486",
+          "recordType": "847",
+          "headings": [],
+          "textCandidates": [
+            "ПСИХОЛОГИЯ ЭМОЦИЙ И СОСТОЯНИЙ",
+            "Психология ЭМОЦИЙ",
+            "Психология Переживаний",
+            "Панические атаки"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/microbiom",
+      "pageId": "62477227",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Микробиом и эмоциональное состояние",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 21,
+      "relevantBlocks": [
+        {
+          "recId": "860085673",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Микрофлора Кишечника и Психика"
+          ]
+        },
+        {
+          "recId": "860612642",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Микробиом и Психология"
+          ]
+        },
+        {
+          "recId": "860085674",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "Микробиом ЖКТ и Психологическое состояние организма"
+          ]
+        },
+        {
+          "recId": "860085886",
+          "recordType": "4",
+          "headings": [],
+          "textCandidates": [
+            "Видео с Ютуба - смотреть обязательно↓"
+          ]
+        },
+        {
+          "recId": "860085677",
+          "recordType": "921",
+          "headings": [],
+          "textCandidates": [
+            "Рекомендую прочитать книгу Дэвид ВИЛЬЯМ \"СуперКишечник\""
+          ]
+        },
+        {
+          "recId": "860085679",
+          "recordType": "1073",
+          "headings": [],
+          "textCandidates": [
+            "Для приготовления Живого Йогурта с Lactobacillus reuteri нам потребуются:",
+            "Йогуртница",
+            "Пробиотик",
+            "Молоко пастеризованное 1,5 литра"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/novosti",
+      "pageId": "103178546",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Командировка преподавателя МГУ Татьяны Мунн в филиал МГУ в г. Ташкенте (Узбекистан). 01–05 декабря 2025 года",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 5,
+      "relevantBlocks": [
+        {
+          "recId": "1680403171",
+          "recordType": "403",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн выступит на Московской Неделе Интерьера и Дизайна. Тема выступления \"Порядок в доме и в голове\".",
+            "Командировка преподавателя МГУ Татьяны Мунн в филиал МГУ в г. Ташкенте (Узбекистан). 01–05 декабря 2025 года",
+            "онлайн-тренинг \"Среда Трансформации\" стартует 31 декабря 2025 года. Автор и ведущий психолог Татьяна Мунн",
+            "18 ноября 2025 года Татьяна Мунн выступит на Конференции МГУСиТ по современным тенденциям развития физической культуры и спорта",
+            "19-21 ноября 2025 года - Психологическая подготовка к экзаменам – курс для студентов первых курсов МГУ - Лектор психолог Татьяны Мунн (МГУ)",
+            "Новости: 16 ноября 2025 года Татьяна Мунн выступит на Конгрессе специалистов БРИКС с докладом об эмоциональном интеллекте лидера"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/otzivi",
+      "pageId": "81167556",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Отзывы о психологе Татьяне Мунн",
+      "currentH1": [
+        "ОТЗЫВЫ КЛИЕНТОВ Психолог Татьяна Мунн",
+        "Психолог Татьяна Мунн КОНТАКТЫ"
+      ],
+      "blockCountWithHeadingSignals": 4,
+      "relevantBlocks": [
+        {
+          "recId": "1353100721",
+          "recordType": "46",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ОТЗЫВЫ КЛИЕНТОВ Психолог Татьяна Мунн",
+              "attrs": "class=\"t032__title t-title t-title_md\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "1352757161",
+          "recordType": "545",
+          "headings": [
+            {
+              "level": "h3",
+              "text": "Татьяна Мунн",
+              "attrs": "class=\"t545__title t-heading t-heading_xs \" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "1352757211",
+          "recordType": "578",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Психолог Татьяна Мунн КОНТАКТЫ",
+              "attrs": "class=\"t578__title t-title t-title_xs\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/panicheskie_ataki",
+      "pageId": "62126761",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Панические атаки",
+      "currentH1": [
+        "Как БЫСТРО избавиться от ПАНИЧЕСКИХ АТАК?",
+        "Симптомы Панические Атак",
+        "Панические Атаки у ПОДРОСТКОВ"
+      ],
+      "blockCountWithHeadingSignals": 14,
+      "relevantBlocks": [
+        {
+          "recId": "857270802",
+          "recordType": "180",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Как БЫСТРО избавиться от ПАНИЧЕСКИХ АТАК?",
+              "attrs": "class=\"t165__title t-heading t-heading_md\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "857277983",
+          "recordType": "1152",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Симптомы Панические Атак",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "859637479",
+          "recordType": "1152",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Панические Атаки у ПОДРОСТКОВ",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "857279445",
+          "recordType": "508",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Панические атаки - Способы решения",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Психотерапия",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__4427320723001\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Медикаментозное лечение",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__4427320723002\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Техника релаксации и дыхательные упражнения",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__4427320723000\""
+            },
+            {
+              "level": "h2",
+              "text": "4. Регулярная физическая активность",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__1738016531770\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/phytotherapy",
+      "pageId": "62462299",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Фитотерапия и эмоциональное состояние",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 14,
+      "relevantBlocks": [
+        {
+          "recId": "859970828",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Фитопсихология"
+          ]
+        },
+        {
+          "recId": "859970833",
+          "recordType": "1001",
+          "headings": [],
+          "textCandidates": [
+            "ФИТОТЕРАПИЯ И ПСИХОЛОГИЯ Раскройте целебную силу растений"
+          ]
+        },
+        {
+          "recId": "859970834",
+          "recordType": "486",
+          "headings": [],
+          "textCandidates": [
+            "Что такое фитотерапия?"
+          ]
+        },
+        {
+          "recId": "859987293",
+          "recordType": "921",
+          "headings": [],
+          "textCandidates": [
+            "Что такое фитотерапия?"
+          ]
+        },
+        {
+          "recId": "859970837",
+          "recordType": "846",
+          "headings": [],
+          "textCandidates": [
+            "Откройте для Успокаивающие ТРАВЫ"
+          ]
+        },
+        {
+          "recId": "859970838",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Откройте для себя УСПОКАИВАЮЩИЕ Травы",
+            "Ромашка известна своими седативными свойствами и помогает снять напряжение и улучшить сон",
+            "Обладает мягким успокаивающим действием и помогает уменьшить тревожность и стресс",
+            "Используется для снижения уровня стресса и улучшения сна",
+            "Помогает снизить ощущение тревожности и расслабить мышцы.",
+            "Чабрец (Тимьян)",
+            "Валериана",
+            "Может помочь облегчить симптомы беспокойства и улучшить сон"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "pageId": "135444166",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Платные тренинги и лекции Татьяны Мунн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 9,
+      "relevantBlocks": [
+        {
+          "recId": "2173943641",
+          "recordType": "1241",
+          "headings": [],
+          "textCandidates": [
+            "ОБУЧЕНИЕ психологии у Татьяны Мунн"
+          ]
+        },
+        {
+          "recId": "2173943941",
+          "recordType": "959",
+          "headings": [],
+          "textCandidates": [
+            "ПЛАТНЫЕ ПРОДУКТЫ - ОБУЧЕНИЯ, МАРАФОНЫ, ТРЕНИНГИ, СЕМИНАРЫ - от Татьяны Мунн"
+          ]
+        },
+        {
+          "recId": "2173943691",
+          "recordType": "908",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "2173943711",
+          "recordType": "1069",
+          "headings": [],
+          "textCandidates": [
+            "Инвестируй в свое саморазвитие",
+            "₽500 000"
+          ]
+        },
+        {
+          "recId": "2173943701",
+          "recordType": "858",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "2173943741",
+          "recordType": "959",
+          "headings": [],
+          "textCandidates": [
+            "СОЦИАЛЬНЫЕ СЕТИ Татьяны Мунн"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog",
+      "pageId": "114846506",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Психолог в Москве и онлайн: Татьяна Мунн, психолог МГУ",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 11,
+      "relevantBlocks": [
+        {
+          "recId": "1855730611",
+          "recordType": "1368",
+          "headings": [],
+          "textCandidates": [
+            "Психология"
+          ]
+        },
+        {
+          "recId": "1856304071",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Психология эмоций, выгорания и отношений"
+          ]
+        },
+        {
+          "recId": "1855730641",
+          "recordType": "544",
+          "headings": [],
+          "textCandidates": [
+            "Кто я и как работаю"
+          ]
+        },
+        {
+          "recId": "1855730661",
+          "recordType": "820",
+          "headings": [],
+          "textCandidates": [
+            "С какими запросами ко мне чаще всего приходят"
+          ]
+        },
+        {
+          "recId": "1855730671",
+          "recordType": "858",
+          "headings": [],
+          "textCandidates": [
+            "Как проходит работа"
+          ]
+        },
+        {
+          "recId": "1856319581",
+          "recordType": "1000",
+          "headings": [],
+          "textCandidates": [
+            "Чем отличается мой подход"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "pageId": "135430346",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Консультации психолога в Москве и онлайн",
+      "currentH1": [
+        "Психологические Консультации в Москве Психолог МГУ - Татьяна Мунн",
+        "ОБРАЗОВАНИЕ - МГУ"
+      ],
+      "blockCountWithHeadingSignals": 19,
+      "relevantBlocks": [
+        {
+          "recId": "2173770201",
+          "recordType": "959",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Психологические Консультации в Москве Психолог МГУ - Татьяна Мунн",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_left \" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Запись на консультацию",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724910\""
+            },
+            {
+              "level": "h2",
+              "text": "Стоимость услуг",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724911\""
+            },
+            {
+              "level": "h2",
+              "text": "Отзывы клиентов",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724912\""
+            },
+            {
+              "level": "h2",
+              "text": "Важная информация для новых клиентов",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724913\""
+            },
+            {
+              "level": "h2",
+              "text": "С какими запросами можно справиться быстро",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724915\""
+            },
+            {
+              "level": "h2",
+              "text": "Адрес кабинета",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__1776532601560\""
+            },
+            {
+              "level": "h2",
+              "text": "Дипломы и сертификаты",
+              "attrs": "class=\"t-card__title t-name t-name_lg \" field=\"li_title__8621719724914\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "2173799451",
+          "recordType": "921",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ОБРАЗОВАНИЕ - МГУ",
+              "attrs": "class=\"t921__title t-title t-title_xs \" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "2173770141",
+          "recordType": "858",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "2173770151",
+          "recordType": "908",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psiholog_moskva",
+      "pageId": "62119659",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Психолог в Москве",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 8,
+      "relevantBlocks": [
+        {
+          "recId": "857212255",
+          "recordType": "257",
+          "headings": [],
+          "textCandidates": [
+            "Психолог Москва. Быстрая Психология. Онлайн и Очно в Кабинете"
+          ]
+        },
+        {
+          "recId": "857212257",
+          "recordType": "996",
+          "headings": [],
+          "textCandidates": [
+            "Консультации психолога для взрослых и подростков"
+          ]
+        },
+        {
+          "recId": "857212260",
+          "recordType": "499",
+          "headings": [],
+          "textCandidates": [
+            "Преимущества работы со мной"
+          ]
+        },
+        {
+          "recId": "857212263",
+          "recordType": "849",
+          "headings": [],
+          "textCandidates": [
+            "Индивидуальные и семейные консультации психолога"
+          ]
+        },
+        {
+          "recId": "857212266",
+          "recordType": "244",
+          "headings": [],
+          "textCandidates": [
+            "Преодоление негативных состояний и решение психологических проблем"
+          ]
+        },
+        {
+          "recId": "857212259",
+          "recordType": "467",
+          "headings": [],
+          "textCandidates": [
+            "Психологическая консультация в Москве - ОЧНО (в кабинете) и ОНЛАЙН"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psihology",
+      "pageId": "44682379",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Психологическая помощь в Москве и онлайн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 2,
+      "relevantBlocks": [
+        {
+          "recId": "713914271",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Вы можете стать спокойным и уверенным в себе человеком в",
+            "Записаться",
+            "И получи Гайд \"Как быстро успокоиться\""
+          ]
+        },
+        {
+          "recId": "713966578",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Оставьте свои данные и получите PDF"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/psypodgotovka1",
+      "pageId": "62652841",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Психологическая подготовка",
+      "currentH1": [
+        "ПСИХОЛОГИЧЕСКАЯ подготовка к экзаменам (ОГЭ, ЕГЭ, Экзамены в ВУЗах)",
+        "Как справиться со стрессом на экзаменах: Психологические стратегии для успеха",
+        "Проверенные методы управления тревогой перед экзаменами"
+      ],
+      "blockCountWithHeadingSignals": 15,
+      "relevantBlocks": [
+        {
+          "recId": "861503852",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "ПСИХОЛОГИЧЕСКАЯ подготовка к экзаменам (ОГЭ, ЕГЭ, Экзамены в ВУЗах)",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "861500604",
+          "recordType": "1001",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Как справиться со стрессом на экзаменах: Психологические стратегии для успеха",
+              "attrs": "class=\"t1001__title t-title t-title_md t-margin_auto\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "861500606",
+          "recordType": "820",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Проверенные методы управления тревогой перед экзаменами",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Снижение стресса",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__1597587637270\""
+            },
+            {
+              "level": "h2",
+              "text": "Улучшение памяти",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__1597587637271\""
+            },
+            {
+              "level": "h2",
+              "text": "Практические навыки",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__1597587637272\""
+            },
+            {
+              "level": "h2",
+              "text": "Полезная информация для родителей и учителей",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__1597587637273\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "861500611",
+          "recordType": "678",
+          "headings": [],
+          "textCandidates": [
+            "Отправьте заявку на участие КУРС лекций \"ПСИХОЛОГИЧЕСКАЯ подготовка к экзаменам\""
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/salt",
+      "pageId": "63131581",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Соль и самочувствие",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 23,
+      "relevantBlocks": [
+        {
+          "recId": "865356634",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Соль для здоровья"
+          ]
+        },
+        {
+          "recId": "865357959",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Польза соли для организма"
+          ]
+        },
+        {
+          "recId": "865356635",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "Соль — это не просто привычная приправа на нашей кухне"
+          ]
+        },
+        {
+          "recId": "865356636",
+          "recordType": "486",
+          "headings": [],
+          "textCandidates": [
+            "Роль соли в организме"
+          ]
+        },
+        {
+          "recId": "865364924",
+          "recordType": "46",
+          "headings": [],
+          "textCandidates": [
+            "Методы использования соли для здоровья"
+          ]
+        },
+        {
+          "recId": "865356638",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "меры предосторожности"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/schematherapy",
+      "pageId": "63409841",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Схематерапия",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 5,
+      "relevantBlocks": [
+        {
+          "recId": "867548255",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Виды схем в Схематерапии:"
+          ]
+        },
+        {
+          "recId": "867566539",
+          "recordType": "248",
+          "headings": [],
+          "textCandidates": [
+            "Как работают схемы?"
+          ]
+        },
+        {
+          "recId": "867560612",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Как работать со схемами?"
+          ]
+        },
+        {
+          "recId": "867548264",
+          "recordType": "921",
+          "headings": [],
+          "textCandidates": [
+            "Дезадаптивные схемы"
+          ]
+        },
+        {
+          "recId": "867548267",
+          "recordType": "578",
+          "headings": [],
+          "textCandidates": [
+            "Контакты для связи"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/selfharm",
+      "pageId": "62890623",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Самоповреждение у подростков",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 17,
+      "relevantBlocks": [
+        {
+          "recId": "863408205",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Помощь психолога подросткам"
+          ]
+        },
+        {
+          "recId": "863408206",
+          "recordType": "1001",
+          "headings": [],
+          "textCandidates": [
+            "Суицидальные мысли и селфхарм (самоповреждения) у подростков"
+          ]
+        },
+        {
+          "recId": "863441811",
+          "recordType": "46",
+          "headings": [],
+          "textCandidates": [
+            "Самоповреждение (селфхарм)"
+          ]
+        },
+        {
+          "recId": "863429212",
+          "recordType": "491",
+          "headings": [],
+          "textCandidates": [
+            "Распространенные способы самоповреждения"
+          ]
+        },
+        {
+          "recId": "863409224",
+          "recordType": "899",
+          "headings": [],
+          "textCandidates": [
+            "Причины самоповреждения у подростков: почему это происходит?"
+          ]
+        },
+        {
+          "recId": "863408973",
+          "recordType": "486",
+          "headings": [],
+          "textCandidates": [
+            "Самоповреждение. Чем это опасно?"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/semeynie_konflikti_article",
+      "pageId": "62923441",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Семейные конфликты",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 1,
+      "relevantBlocks": [
+        {
+          "recId": "863657748",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Управление конфликтами в семье"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/semeyniy_psiholog",
+      "pageId": "62920697",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Семейный психолог",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 11,
+      "relevantBlocks": [
+        {
+          "recId": "863635131",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "Консультации семейного психолога"
+          ]
+        },
+        {
+          "recId": "863635132",
+          "recordType": "1001",
+          "headings": [],
+          "textCandidates": [
+            "Преодоление семейных трудностей: профессиональная психологическая помощь и поддержка"
+          ]
+        },
+        {
+          "recId": "863645506",
+          "recordType": "1118",
+          "headings": [],
+          "textCandidates": [
+            "Частые причины конфликтов в парах"
+          ]
+        },
+        {
+          "recId": "863637300",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "в кабинете",
+            "БЫСТРАЯ ПСИХОЛОГИЯ",
+            "Автор метода. Практикующий психолог МГУ им. Ломоносова, ф-т Психологии ЭКСПЕРТ по психологии ЭМОЦИЙ",
+            "moonn_tatiana",
+            "БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ",
+            "СЕМЕЙНЫЕ",
+            "консультации"
+          ]
+        },
+        {
+          "recId": "863635133",
+          "recordType": "544",
+          "headings": [],
+          "textCandidates": [
+            "Татьяна Мунн"
+          ]
+        },
+        {
+          "recId": "863635140",
+          "recordType": "792",
+          "headings": [],
+          "textCandidates": [
+            "Услуги и цены",
+            "Семейная консультация - 2 часа",
+            "Абонемент на 5 встреч (10 часов)",
+            "Онлайн консультация - 1 час"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/seminar555",
+      "pageId": "57927493",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Семинар по методу Быстрая психология",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 19,
+      "relevantBlocks": [
+        {
+          "recId": "824726050",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "11.00 - 20.00",
+            "ПСИХОЛОГИЯ",
+            "29 ноября - 01 декабря 2024",
+            "Обучение методу",
+            "Автор метода. Практикующий психолог МГУ им. Ломоносова, ф-т Психологии ЭКСПЕРТ по психологии ЭМОЦИЙ",
+            "moonn_tatiana",
+            "БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ • БЫСТРАЯ ПСИХОЛОГИЯ",
+            "От стресса к гармонии: быстрое снятие негативных эмоциональных состояний"
+          ]
+        },
+        {
+          "recId": "824769876",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Частые вопросы",
+            "Программа",
+            "Место проведения",
+            "Для кого семинар?",
+            "С какими проблемами научитесь работать?",
+            "Этапы работы метода",
+            "Варианты участия",
+            "Об авторе"
+          ]
+        },
+        {
+          "recId": "822908149",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Для кого этот семинар?",
+            "О СЕМИНАРЕ"
+          ]
+        },
+        {
+          "recId": "822908150",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Коучи смогут узнать о последних тенденциях в психологии, что поможет им лучше понимать своих клиентов и их потребности, и помогать им быстрее достигать своих целей.",
+            "Специалисты помогающих профессий узнают методы психологической поддержки, что расширит их арсенал инструментов для работы с сильными эмоциями клиентов.",
+            "Специалисты помогающих профессий",
+            "Семинар даст психологам новые инструменты и техники, которые они смогут применять в своей практике для более эффективной работы с клиентами.",
+            "Уровень подготовки - любой",
+            "HR-специалисты получат важные знания о психологических аспектах внутренних переживаний сотрудников, что позволит улучшить атмосферу в коллективе.",
+            "HR-Специалисты",
+            "Психологи"
+          ]
+        },
+        {
+          "recId": "823200219",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Программа семинара",
+            "ДЛИТЕЛЬНОСТЬ — 3 ДНЯ"
+          ]
+        },
+        {
+          "recId": "822908160",
+          "recordType": "396",
+          "headings": [],
+          "textCandidates": [
+            "Изучение, анализ проблемы",
+            "11.00-20.00",
+            "29 НОЯБРЯ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/st1",
+      "pageId": "69732653",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "онлайн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 15,
+      "relevantBlocks": [
+        {
+          "recId": "1060387551",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Трансформационный онлайн-тренинг:"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/st2",
+      "pageId": "98329166",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "онлайн",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 11,
+      "relevantBlocks": [
+        {
+          "recId": "1608442161",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Трансформационный онлайн-тренинг:"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_aerofobia",
+      "pageId": "63836583",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Аэрофобия Консультации по страху полётов (аэрофобия)",
+      "currentH1": [
+        "Боишься летать на самолётах?",
+        "Страх полетов на самолетах может проявляться у людей разных возрастов и социальных групп",
+        "Просмотр телевизора и новостей может значительно влиять на формирование и усиление страха перед полетами на самолетах"
+      ],
+      "blockCountWithHeadingSignals": 8,
+      "relevantBlocks": [
+        {
+          "recId": "870978936",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Боишься летать на самолётах?",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870978938",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Страх полетов на самолетах может проявляться у людей разных возрастов и социальных групп",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Дети и подростки, летящие с родителями в отпуск",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__4358460501270\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Пожилые люди",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__4358460501271\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Люди из бизнеса, которые летают в командировки",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__4358460501272\""
+            },
+            {
+              "level": "h2",
+              "text": "4. Люди, чья семья живет в другой стране",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__4358460501273\""
+            },
+            {
+              "level": "h2",
+              "text": "5. Другие группы, вынужденные летать",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__1740246783759\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870999519",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Просмотр телевизора и новостей может значительно влиять на формирование и усиление страха перед полетами на самолетах",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Акцент на негативных событиях",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__3578709789380\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Эмоциональная подача информации",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__3578709789381\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Эффект \"доступности\"",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__3578709789382\""
+            },
+            {
+              "level": "h2",
+              "text": "4. Влияние на детей и подростков",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__3578709789383\""
+            },
+            {
+              "level": "h2",
+              "text": "5. Поддержание страха у тех, кто уже боится",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__3578709789384\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_depression",
+      "pageId": "63747017",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Депрессивное состояние: понимание и преодоление",
+      "currentH1": [
+        "Депрессивное состояние:",
+        "«Мне ничего не хочется»: симптомы депрессии",
+        "Почему возникает депрессия?"
+      ],
+      "blockCountWithHeadingSignals": 12,
+      "relevantBlocks": [
+        {
+          "recId": "870281477",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Депрессивное состояние:",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870281479",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "«Мне ничего не хочется»: симптомы депрессии",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Эмоциональные симптомы",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368620\""
+            },
+            {
+              "level": "h2",
+              "text": "Физические симптомы",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368621\""
+            },
+            {
+              "level": "h2",
+              "text": "Поведенческие изменения",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8397513368622\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870284531",
+          "recordType": "858",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Почему возникает депрессия?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Биологические причины",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198050\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Психологические факторы",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198051\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Социальные причины",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198052\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870281484",
+          "recordType": "248",
+          "headings": [],
+          "textCandidates": [
+            "Депрессия"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_gtr",
+      "pageId": "63758713",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Тревожные расстройства: когда тревога становится болезнью",
+      "currentH1": [
+        "Тревожные расстройства:",
+        "Тревожное расстройство - что это?",
+        "Ключевые признаки ГТР :"
+      ],
+      "blockCountWithHeadingSignals": 12,
+      "relevantBlocks": [
+        {
+          "recId": "870371666",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Тревожные расстройства:",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870371668",
+          "recordType": "497",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Тревожное расстройство - что это?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Генерализованное тревожное расстройство (ГТР)",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501270\""
+            },
+            {
+              "level": "h2",
+              "text": "Паническое расстройство",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501271\""
+            },
+            {
+              "level": "h2",
+              "text": "Социальное тревожное расстройство",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501272\""
+            },
+            {
+              "level": "h2",
+              "text": "Специфические фобии",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501273\""
+            },
+            {
+              "level": "h2",
+              "text": "Обсессивно-компульсивное расстройство (ОКР)",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__1740246783759\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870371670",
+          "recordType": "1000",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Ключевые признаки ГТР :",
+              "attrs": "class=\"t-section__title t-title t-title_xs\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Постоянное беспокойство",
+              "attrs": "class=\"t-name t-name_md t1000__bottommargin\" field=\"li_title__2747513368620\""
+            },
+            {
+              "level": "h2",
+              "text": "Трудности с концентрацией",
+              "attrs": "class=\"t-name t-name_md t1000__bottommargin\" field=\"li_title__2747513368621\""
+            },
+            {
+              "level": "h2",
+              "text": "Мышечное напряжение",
+              "attrs": "class=\"t-name t-name_md t1000__bottommargin\" field=\"li_title__2747513368622\""
+            },
+            {
+              "level": "h2",
+              "text": "Раздражительность",
+              "attrs": "class=\"t-name t-name_md t1000__bottommargin\" field=\"li_title__1740244557607\""
+            },
+            {
+              "level": "h2",
+              "text": "Проблемы со сном",
+              "attrs": "class=\"t-name t-name_md t1000__bottommargin\" field=\"li_title__1740244559792\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+      "pageId": "63757347",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Любовные зависимости и привязанности",
+      "currentH1": [
+        "Любовные зависимости и привязанности:",
+        "Что такое любовная зависимость?",
+        "Почему возникает любовная зависимость?"
+      ],
+      "blockCountWithHeadingSignals": 10,
+      "relevantBlocks": [
+        {
+          "recId": "870360255",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Любовные зависимости и привязанности:",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870361216",
+          "recordType": "497",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Что такое любовная зависимость?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Одержимостью",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501270\""
+            },
+            {
+              "level": "h2",
+              "text": "Страхом потери",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501271\""
+            },
+            {
+              "level": "h2",
+              "text": "Саморазрушением",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501272\""
+            },
+            {
+              "level": "h2",
+              "text": "Отрицанием реальности",
+              "attrs": "class=\"t497__name t-name t-name_lg\" field=\"li_title__4358460501273\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870362299",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Почему возникает любовная зависимость?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Дефицит родительской любви",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__2747513368620\""
+            },
+            {
+              "level": "h2",
+              "text": "Низкая самооценка",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__2747513368621\""
+            },
+            {
+              "level": "h2",
+              "text": "Страх одиночества",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__2747513368622\""
+            },
+            {
+              "level": "h2",
+              "text": "Травмы прошлого",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__1740244557607\""
+            },
+            {
+              "level": "h2",
+              "text": "Созависимые паттерны",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__1740244559792\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_obida_na_roditelei",
+      "pageId": "63749211",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Обида на родителей - негативные чувства, связанные с детством",
+      "currentH1": [
+        "Обида на родителей:",
+        "Обиды на родителей - причины"
+      ],
+      "blockCountWithHeadingSignals": 8,
+      "relevantBlocks": [
+        {
+          "recId": "870299396",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Обида на родителей:",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870299398",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Обиды на родителей - причины",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Авторитарное воспитание",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368620\""
+            },
+            {
+              "level": "h2",
+              "text": "Эмоциональная отдалённость",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368621\""
+            },
+            {
+              "level": "h2",
+              "text": "Безучастность родителей",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8397513368622\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870299408",
+          "recordType": "248",
+          "headings": [],
+          "textCandidates": [
+            "Обида на родителей"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
+      "pageId": "63718371",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Налаживание отношений в коллективе",
+      "currentH1": [
+        "Налаживание отношений в коллективе",
+        "Профилактика конфликтов:"
+      ],
+      "blockCountWithHeadingSignals": 9,
+      "relevantBlocks": [
+        {
+          "recId": "870065736",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Налаживание отношений в коллективе",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870068830",
+          "recordType": "508",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Профилактика конфликтов:",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Четкие правила игры",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__7117320723000\""
+            },
+            {
+              "level": "h2",
+              "text": "Культура обратной связи",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__7127320723001\""
+            },
+            {
+              "level": "h2",
+              "text": "Обучение soft skills",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__7127320723002\""
+            },
+            {
+              "level": "h2",
+              "text": "Прозрачность решений",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__1740160980828\""
+            },
+            {
+              "level": "h2",
+              "text": "Поощрение инициативы",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__1740160982601\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_procrastination",
+      "pageId": "63750667",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Прокрастинация: Почему мы откладываем дела на потом и как перестать это делать",
+      "currentH1": [
+        "Прокрастинация",
+        "«Сделаю завтра»: Что такое прокрастинация?",
+        "Почему мы откладываем дела?"
+      ],
+      "blockCountWithHeadingSignals": 10,
+      "relevantBlocks": [
+        {
+          "recId": "870310580",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Прокрастинация",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870310583",
+          "recordType": "858",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "«Сделаю завтра»: Что такое прокрастинация?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Осознанность",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198050\""
+            },
+            {
+              "level": "h2",
+              "text": "Эмоциональный дискомфорт",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198051\""
+            },
+            {
+              "level": "h2",
+              "text": "Парадокс",
+              "attrs": "class=\"t-card__title t-name t-name_lg t858__bottommargin\" field=\"li_title__9598461198052\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870310582",
+          "recordType": "510",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Почему мы откладываем дела?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Страх неудачи или успеха",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368620\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Перфекционизм",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8387513368621\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Неопределенность и абстрактные цели",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__8397513368622\""
+            },
+            {
+              "level": "h2",
+              "text": "4. Эмоциональное избегание",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__1740235050858\""
+            },
+            {
+              "level": "h2",
+              "text": "5. Низкая самоэффективность",
+              "attrs": "class=\"t-name t-name_md t510__bottommargin\" field=\"li_title__1740235052704\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870310585",
+          "recordType": "577",
+          "headings": [],
+          "textCandidates": [
+            "Чем опасна прокрастинация?"
+          ]
+        },
+        {
+          "recId": "870318300",
+          "recordType": "491",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Когда обратиться к психологу:",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Прокрастинация длится больше 6 месяцев.",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4828703177250\""
+            },
+            {
+              "level": "h2",
+              "text": "Вы заметили у себя признаки выгорания или апатии.",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4828703177251\""
+            },
+            {
+              "level": "h2",
+              "text": "Самостоятельные методы не дают результата.",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4828703177252\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_razvod",
+      "pageId": "63755367",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Помощь при расставании, измене, разводе",
+      "currentH1": [
+        "Психологическая помощь при расставании, измене, разводе:",
+        "Как пережить измену: восстановление доверия к себе и миру",
+        "Когда обращаться к психологу?"
+      ],
+      "blockCountWithHeadingSignals": 9,
+      "relevantBlocks": [
+        {
+          "recId": "870345763",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Психологическая помощь при расставании, измене, разводе:",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870345768",
+          "recordType": "491",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Как пережить измену: восстановление доверия к себе и миру",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Признайте свои чувства",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4071279303880\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Откажитесь от мести",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4071279303881\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Проработайте травму с психологом",
+              "attrs": "class=\"t-card__title t-name t-name_sm\" field=\"li_title__4071279303882\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870353589",
+          "recordType": "1000",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Когда обращаться к психологу?",
+              "attrs": "class=\"t-section__title t-title t-title_xs\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "— Вы думаете о самоубийстве или членовредительстве.",
+              "attrs": "class=\"t-name t-name_md \" field=\"li_title__6511309525220\""
+            },
+            {
+              "level": "h2",
+              "text": "— Не можете выполнять базовые обязанности (работать, ухаживать за детьми).",
+              "attrs": "class=\"t-name t-name_md \" field=\"li_title__6521309525221\""
+            },
+            {
+              "level": "h2",
+              "text": "— Испытываете панические атаки или приступы неконтролируемого гнева.",
+              "attrs": "class=\"t-name t-name_md \" field=\"li_title__6521309525222\""
+            },
+            {
+              "level": "h2",
+              "text": "— Заметили, что «застряли» на одной из стадий горя дольше 3–4 месяцев.",
+              "attrs": "class=\"t-name t-name_md \" field=\"li_title__1740242852151\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/uslugi_sohranit_brak",
+      "pageId": "63752263",
+      "issues": [
+        "multiple_h1"
+      ],
+      "targetH1": "Как сохранить брак: преодоление кризисов, восстановление доверия и искусство диалога",
+      "currentH1": [
+        "Как сохранить брак",
+        "Почему возникают кризисы в браке?",
+        "Как научиться понимать партнера?"
+      ],
+      "blockCountWithHeadingSignals": 9,
+      "relevantBlocks": [
+        {
+          "recId": "870322708",
+          "recordType": "18",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Как сохранить брак",
+              "attrs": "class=\"t001__title t-title t-title_xl\" field=\"title\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870323921",
+          "recordType": "508",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Почему возникают кризисы в браке?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "Накопленные обиды и невысказанные эмоции",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__5927320723000\""
+            },
+            {
+              "level": "h2",
+              "text": "Изменение ролей",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__5927320723001\""
+            },
+            {
+              "level": "h2",
+              "text": "Рутина и потеря эмоциональной связи",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__5927320723002\""
+            },
+            {
+              "level": "h2",
+              "text": "Внешние стрессоры",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__1740237067473\""
+            },
+            {
+              "level": "h2",
+              "text": "Несовпадение ценностей",
+              "attrs": "class=\"t-name t-name_md t508__bottommargin\" field=\"li_title__1740237069291\""
+            }
+          ],
+          "textCandidates": []
+        },
+        {
+          "recId": "870322715",
+          "recordType": "820",
+          "headings": [
+            {
+              "level": "h1",
+              "text": "Как научиться понимать партнера?",
+              "attrs": "class=\"js-block-header-title t-section__title t-title t-title_xs t-align_center t-margin_auto\" data-editable=\"true\" field=\"btitle\""
+            },
+            {
+              "level": "h2",
+              "text": "1. Откажитесь от ярлыков",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__4071279303880\""
+            },
+            {
+              "level": "h2",
+              "text": "2. Примите различия",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__4071279303881\""
+            },
+            {
+              "level": "h2",
+              "text": "3. Задавайте вопросы",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__4071279303882\""
+            },
+            {
+              "level": "h2",
+              "text": "4. Практикуйте эмпатию",
+              "attrs": "class=\"t-name t-name_md t820__bottommargin\" field=\"li_title__4071279303883\""
+            }
+          ],
+          "textCandidates": []
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/vacuum_cups",
+      "pageId": "63138325",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Вакуумные банки и самочувствие",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 11,
+      "relevantBlocks": [
+        {
+          "recId": "865411512",
+          "recordType": "454",
+          "headings": [],
+          "textCandidates": [
+            "вакуумные банки для здоровья. баночный массаж"
+          ]
+        },
+        {
+          "recId": "865411513",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "Вакуумные банки и баночный массаж"
+          ]
+        },
+        {
+          "recId": "865411515",
+          "recordType": "485",
+          "headings": [],
+          "textCandidates": [
+            "Что такое баночный массаж"
+          ]
+        },
+        {
+          "recId": "865413245",
+          "recordType": "510",
+          "headings": [],
+          "textCandidates": [
+            "Польза баночного массажа для организма"
+          ]
+        },
+        {
+          "recId": "865414972",
+          "recordType": "490",
+          "headings": [],
+          "textCandidates": [
+            "Как баночный массаж влияет на психологическое состояние?",
+            "Снижение уровня стресса",
+            "Эмоциональная разгрузка",
+            "Улучшение настроения"
+          ]
+        },
+        {
+          "recId": "865418457",
+          "recordType": "1000",
+          "headings": [],
+          "textCandidates": [
+            "С какими проблемами помогает справиться баночный массаж?"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    },
+    {
+      "url": "https://moonn.ru/vospitanie_article",
+      "pageId": "62923037",
+      "issues": [
+        "missing_h1"
+      ],
+      "targetH1": "Воспитание ребенка",
+      "currentH1": [],
+      "blockCountWithHeadingSignals": 1,
+      "relevantBlocks": [
+        {
+          "recId": "863654053",
+          "recordType": "18",
+          "headings": [],
+          "textCandidates": [
+            "ВОСПИТАНИЕ ДЕТЕЙ"
+          ]
+        }
+      ],
+      "uiAction": "Tilda block editor: convert exactly one main visible heading to H1; convert extra section headings to H2/H3 without changing visible text/design."
+    }
+  ]
+}
