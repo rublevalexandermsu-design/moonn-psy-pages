@@ -10,6 +10,47 @@ OUT_PATH = ROOT / "docs" / "moonn-global-semantic-heading-layer-2026-05-06.html"
 ASSET_PATH = ROOT / "assets" / "moonn-semantic-heading-layer.js"
 
 
+MANUAL_H1_PROMOTIONS = [
+    {
+        "path": "/emotional-intelligence/knowledge-base/empathy",
+        "recId": "1510754371",
+        "text": "Эмпатия — ключевой навык эмоционального интеллекта",
+        "insertIfMissing": True,
+        "source": "manual-rendered-h1",
+    },
+    {
+        "path": "/psiholog",
+        "recId": "1856304071",
+        "text": "Психология эмоций, выгорания и отношений",
+        "source": "manual-rendered-h1",
+    },
+    {
+        "path": "/psihology",
+        "recId": "713914271",
+        "text": "Вы можете стать спокойным и уверенным в себе человеком",
+        "source": "manual-rendered-h1",
+    },
+    {
+        "path": "/seminar555",
+        "recId": "824726050",
+        "text": "От стресса к гармонии: быстрое снятие негативных эмоциональных состояний",
+        "source": "manual-rendered-h1",
+    },
+    {
+        "path": "/st1",
+        "recId": "1060387551",
+        "text": "Трансформационный онлайн-тренинг: \"СРЕДА Трансформации\" РАСКРОЙ СВОЙ ПОТЕНЦИАЛ",
+        "source": "manual-rendered-h1",
+    },
+    {
+        "path": "/st2",
+        "recId": "1608442161",
+        "text": "Трансформационный онлайн-тренинг: \"СРЕДА Трансформации\" РАСКРОЙ СВОЙ ПОТЕНЦИАЛ",
+        "source": "manual-rendered-h1",
+    },
+]
+
+
 def path_from_url(url: str) -> str:
     return url.replace("https://moonn.ru", "") or "/"
 
@@ -89,6 +130,22 @@ def main() -> int:
         }
         items_by_key[(item["path"], item["recId"], item["tag"], item["text"])] = item
 
+    for manual in MANUAL_H1_PROMOTIONS:
+        for key in list(items_by_key):
+            existing = items_by_key[key]
+            if existing["path"] == manual["path"] and existing["tag"] == "h1":
+                del items_by_key[key]
+        item = {
+            "path": manual["path"],
+            "recId": manual["recId"],
+            "tag": "h1",
+            "text": manual["text"],
+            "source": manual["source"],
+        }
+        if manual.get("insertIfMissing"):
+            item["insertIfMissing"] = True
+        items_by_key[(item["path"], item["recId"], item["tag"], item["text"])] = item
+
     # For pages that already have several H1 tags, enforce one rendered H1. If a
     # page-level H1 is explicitly promoted above, all other H1s are downgraded.
     # Otherwise, the first existing H1 remains and the rest are downgraded.
@@ -125,6 +182,22 @@ def main() -> int:
     next.innerHTML=el.innerHTML;
     el.parentNode.replaceChild(next,el);
   }}
+  function insertAccessibleH1(rec, text){{
+    if(!rec || !text || rec.querySelector('h1')) return;
+    var h=document.createElement('h1');
+    h.textContent=text;
+    h.setAttribute('data-moonn-semantic-heading','true');
+    h.style.position='absolute';
+    h.style.width='1px';
+    h.style.height='1px';
+    h.style.padding='0';
+    h.style.margin='-1px';
+    h.style.overflow='hidden';
+    h.style.clip='rect(0,0,0,0)';
+    h.style.whiteSpace='nowrap';
+    h.style.border='0';
+    rec.insertBefore(h, rec.firstChild);
+  }}
   function apply(){{
     var path=location.pathname.replace(/\\/$/,'') || '/';
     MOONN_HEADING_MAP.forEach(function(item){{
@@ -132,11 +205,12 @@ def main() -> int:
       if(!samePath(itemPath,path)) return;
       var rec=document.getElementById('rec'+item.recId);
       if(!rec) return;
-      var candidates=Array.prototype.slice.call(rec.querySelectorAll('[field="title"],[field="btitle"],.js-block-header-title,.t-title,h1,h2'));
+      var candidates=Array.prototype.slice.call(rec.querySelectorAll('[field="title"],[field="btitle"],.js-block-header-title,.t-title,.t-heading,.t-name,.tn-atom,h1,h2'));
       var target=candidates.find(function(el){{return norm(el.textContent)===norm(item.text);}})
         || candidates.find(function(el){{return norm(el.textContent).indexOf(norm(item.text).slice(0,24))!==-1;}})
-        || candidates[0];
+        || (item.insertIfMissing ? null : candidates[0]);
       if(target) replaceTag(target,item.tag);
+      else if(item.insertIfMissing && item.tag==='h1') insertAccessibleH1(rec,item.text);
     }});
     MOONN_PAGE_RULES.forEach(function(rule){{
       if(!samePath(rule.path,path)) return;

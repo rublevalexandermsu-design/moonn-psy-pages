@@ -15,6 +15,10 @@ CSV_OUT = ROOT / "docs" / "moonn-rendered-heading-audit-2026-05-06.csv"
 MD_OUT = ROOT / "docs" / "moonn-rendered-heading-audit-2026-05-06.md"
 
 
+def normalize_heading_text(value: str) -> str:
+    return " ".join((value or "").replace(" :", ":").split()).casefold()
+
+
 async def audit_page(context, url, target_actions):
     page = await context.new_page()
     result = {
@@ -27,15 +31,19 @@ async def audit_page(context, url, target_actions):
         "targetChecks": [],
         "error": None,
     }
+    navigation_error = None
     try:
         await page.route(
             "**/*",
             lambda route: route.abort()
-            if route.request.resource_type in {"image", "media", "font"}
+            if route.request.resource_type in {"image", "media", "font", "stylesheet"}
             else route.continue_(),
         )
-        response = await page.goto(url, wait_until="domcontentloaded", timeout=25000)
-        result["status"] = response.status if response else None
+        try:
+            response = await page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            result["status"] = response.status if response else None
+        except Exception as exc:
+            navigation_error = repr(exc)
         await page.wait_for_timeout(1200)
         result["loaded"] = True
         result["hasSemanticLayerScript"] = await page.evaluate(
@@ -55,12 +63,13 @@ async def audit_page(context, url, target_actions):
             expected_tag = action["setTag"].lower()
             rec_id = str(action["recId"])
             signal = action["visibleSignal"]
+            normalized_signal = normalize_heading_text(signal)
             found = [
                 h
                 for h in headings
                 if h["tag"] == expected_tag
                 and h.get("recId") == rec_id
-                and signal.casefold() in h["text"].casefold()
+                and normalized_signal in normalize_heading_text(h["text"])
             ]
             result["targetChecks"].append(
                 {
@@ -71,6 +80,7 @@ async def audit_page(context, url, target_actions):
                     "matchedText": found[0]["text"] if found else None,
                 }
             )
+        result["error"] = navigation_error
     except Exception as exc:
         result["error"] = repr(exc)
     finally:

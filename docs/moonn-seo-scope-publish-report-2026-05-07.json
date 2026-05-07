@@ -1,0 +1,649 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-07",
+  "projectId": "8326812",
+  "sourcePacket": "docs\\moonn-production-seo-strengthening-packets-2026-05-04.json",
+  "totalScopePages": 80,
+  "results": [
+    {
+      "pageId": "42678538",
+      "url": "https://moonn.ru/",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 1,
+      "status": "published"
+    },
+    {
+      "pageId": "63684093",
+      "url": "https://moonn.ru/abuse_gaslight",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 2,
+      "status": "published"
+    },
+    {
+      "pageId": "62470081",
+      "url": "https://moonn.ru/aromatherapy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 3,
+      "status": "published"
+    },
+    {
+      "pageId": "62966623",
+      "url": "https://moonn.ru/article_diary_of_emotions",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 4,
+      "status": "published"
+    },
+    {
+      "pageId": "64057747",
+      "url": "https://moonn.ru/article_femininity",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 5,
+      "status": "published"
+    },
+    {
+      "pageId": "63692311",
+      "url": "https://moonn.ru/article_gadget_addiction",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 6,
+      "status": "published"
+    },
+    {
+      "pageId": "64061157",
+      "url": "https://moonn.ru/article_toxic_job",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 7,
+      "status": "published"
+    },
+    {
+      "pageId": "95349086",
+      "url": "https://moonn.ru/articles/eq-dlya-rukovoditeley",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 8,
+      "status": "published"
+    },
+    {
+      "pageId": "135534246",
+      "url": "https://moonn.ru/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 9,
+      "status": "published"
+    },
+    {
+      "pageId": "63574637",
+      "url": "https://moonn.ru/eintellect",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 10,
+      "status": "published"
+    },
+    {
+      "pageId": "90977486",
+      "url": "https://moonn.ru/emotional-intelligence/",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 11,
+      "status": "published"
+    },
+    {
+      "pageId": "91871866",
+      "url": "https://moonn.ru/emotional-intelligence/articles",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 12,
+      "status": "published"
+    },
+    {
+      "pageId": "91171146",
+      "url": "https://moonn.ru/emotional-intelligence/articles/benefits-of-ei",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 13,
+      "status": "published"
+    },
+    {
+      "pageId": "90952996",
+      "url": "https://moonn.ru/emotional-intelligence/articles/emotional-intelligence-skills",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 14,
+      "status": "published"
+    },
+    {
+      "pageId": "90782146",
+      "url": "https://moonn.ru/emotional-intelligence/articles/what-is-emotional-intelligence",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 15,
+      "status": "published"
+    },
+    {
+      "pageId": "91163626",
+      "url": "https://moonn.ru/emotional-intelligence/articles/why-ei-matters",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 16,
+      "status": "published"
+    },
+    {
+      "pageId": "91179886",
+      "url": "https://moonn.ru/emotional-intelligence/diagnostoka-ei",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 17,
+      "status": "published"
+    },
+    {
+      "pageId": "99248306",
+      "url": "https://moonn.ru/emotional-intelligence/ei-leader-12",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 18,
+      "status": "published"
+    },
+    {
+      "pageId": "91652626",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 19,
+      "status": "published"
+    },
+    {
+      "pageId": "91729026",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/active-listening",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 20,
+      "status": "published"
+    },
+    {
+      "pageId": "91715996",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/burnout",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 21,
+      "status": "published"
+    },
+    {
+      "pageId": "91846096",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-contagion",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 22,
+      "status": "published"
+    },
+    {
+      "pageId": "91652966",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-intelligence",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 23,
+      "status": "published"
+    },
+    {
+      "pageId": "91692166",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-literacy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 24,
+      "status": "published"
+    },
+    {
+      "pageId": "91854286",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/emotional-maturity",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 25,
+      "status": "published"
+    },
+    {
+      "pageId": "91686486",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/empathy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 26,
+      "status": "published"
+    },
+    {
+      "pageId": "91701376",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/intrinsic-motivation",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 27,
+      "status": "published"
+    },
+    {
+      "pageId": "95339896",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 28,
+      "status": "published"
+    },
+    {
+      "pageId": "91720476",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/nonviolent-communication",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 29,
+      "status": "published"
+    },
+    {
+      "pageId": "91724906",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/personal-boundaries",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 30,
+      "status": "published"
+    },
+    {
+      "pageId": "91848716",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/psychological-safety",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 31,
+      "status": "published"
+    },
+    {
+      "pageId": "91665726",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-awareness",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 32,
+      "status": "published"
+    },
+    {
+      "pageId": "91670976",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/self-regulation",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 33,
+      "status": "published"
+    },
+    {
+      "pageId": "91696586",
+      "url": "https://moonn.ru/emotional-intelligence/knowledge-base/social-intelligence",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 34,
+      "status": "published"
+    },
+    {
+      "pageId": "53668815",
+      "url": "https://moonn.ru/events",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 35,
+      "status": "published"
+    },
+    {
+      "pageId": "66814657",
+      "url": "https://moonn.ru/events_tp",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 36,
+      "status": "published"
+    },
+    {
+      "pageId": "63388057",
+      "url": "https://moonn.ru/geshtalt",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 37,
+      "status": "published"
+    },
+    {
+      "pageId": "63403669",
+      "url": "https://moonn.ru/kpt",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 38,
+      "status": "published"
+    },
+    {
+      "pageId": "124264896",
+      "url": "https://moonn.ru/kurs-ei",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 39,
+      "status": "published"
+    },
+    {
+      "pageId": "68295899",
+      "url": "https://moonn.ru/lectures1",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 40,
+      "status": "published"
+    },
+    {
+      "pageId": "62477227",
+      "url": "https://moonn.ru/microbiom",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 41,
+      "status": "published"
+    },
+    {
+      "pageId": "103178546",
+      "url": "https://moonn.ru/novosti",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 42,
+      "status": "published"
+    },
+    {
+      "pageId": "81167556",
+      "url": "https://moonn.ru/otzivi",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 43,
+      "status": "published"
+    },
+    {
+      "pageId": "62126761",
+      "url": "https://moonn.ru/panicheskie_ataki",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 44,
+      "status": "published"
+    },
+    {
+      "pageId": "62462299",
+      "url": "https://moonn.ru/phytotherapy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 45,
+      "status": "published"
+    },
+    {
+      "pageId": "135444166",
+      "url": "https://moonn.ru/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 46,
+      "status": "published"
+    },
+    {
+      "pageId": "124963886",
+      "url": "https://moonn.ru/programmakursa",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 47,
+      "status": "published"
+    },
+    {
+      "pageId": "62908693",
+      "url": "https://moonn.ru/psy4psy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 48,
+      "status": "published"
+    },
+    {
+      "pageId": "63398035",
+      "url": "https://moonn.ru/psychoanalys",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 49,
+      "status": "published"
+    },
+    {
+      "pageId": "62652841",
+      "url": "https://moonn.ru/psypodgotovka1",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 50,
+      "status": "published"
+    },
+    {
+      "pageId": "62977405",
+      "url": "https://moonn.ru/recomend",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 51,
+      "status": "published"
+    },
+    {
+      "pageId": "63131581",
+      "url": "https://moonn.ru/salt",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 52,
+      "status": "published"
+    },
+    {
+      "pageId": "63409841",
+      "url": "https://moonn.ru/schematherapy",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 53,
+      "status": "published"
+    },
+    {
+      "pageId": "62890623",
+      "url": "https://moonn.ru/selfharm",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 54,
+      "status": "published"
+    },
+    {
+      "pageId": "62923441",
+      "url": "https://moonn.ru/semeynie_konflikti_article",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 55,
+      "status": "published"
+    },
+    {
+      "pageId": "62920697",
+      "url": "https://moonn.ru/semeyniy_psiholog",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 56,
+      "status": "published"
+    },
+    {
+      "pageId": "57927493",
+      "url": "https://moonn.ru/seminar555",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 57,
+      "status": "published"
+    },
+    {
+      "pageId": "43765245",
+      "url": "https://moonn.ru/shppp333",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 58,
+      "status": "published"
+    },
+    {
+      "pageId": "87231366",
+      "url": "https://moonn.ru/speaker",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 59,
+      "status": "published"
+    },
+    {
+      "pageId": "63579285",
+      "url": "https://moonn.ru/trauma",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 60,
+      "status": "published"
+    },
+    {
+      "pageId": "63836583",
+      "url": "https://moonn.ru/uslugi_aerofobia",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 61,
+      "status": "published"
+    },
+    {
+      "pageId": "63747017",
+      "url": "https://moonn.ru/uslugi_depression",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 62,
+      "status": "published"
+    },
+    {
+      "pageId": "63711321",
+      "url": "https://moonn.ru/uslugi_fin_blocks",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 63,
+      "status": "published"
+    },
+    {
+      "pageId": "63758713",
+      "url": "https://moonn.ru/uslugi_gtr",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 64,
+      "status": "published"
+    },
+    {
+      "pageId": "63716871",
+      "url": "https://moonn.ru/uslugi_konflikti_na_rabote",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 65,
+      "status": "published"
+    },
+    {
+      "pageId": "63757347",
+      "url": "https://moonn.ru/uslugi_lubovnaya_zavisimost",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 66,
+      "status": "published"
+    },
+    {
+      "pageId": "63749211",
+      "url": "https://moonn.ru/uslugi_obida_na_roditelei",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 67,
+      "status": "published"
+    },
+    {
+      "pageId": "63718371",
+      "url": "https://moonn.ru/uslugi_otnosheniya_v_kollektive",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 68,
+      "status": "published"
+    },
+    {
+      "pageId": "63713227",
+      "url": "https://moonn.ru/uslugi_podrostki",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 69,
+      "status": "published"
+    },
+    {
+      "pageId": "63750667",
+      "url": "https://moonn.ru/uslugi_procrastination",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 70,
+      "status": "published"
+    },
+    {
+      "pageId": "63755367",
+      "url": "https://moonn.ru/uslugi_razvod",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 71,
+      "status": "published"
+    },
+    {
+      "pageId": "63752263",
+      "url": "https://moonn.ru/uslugi_sohranit_brak",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 72,
+      "status": "published"
+    },
+    {
+      "pageId": "63138325",
+      "url": "https://moonn.ru/vacuum_cups",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 73,
+      "status": "published"
+    },
+    {
+      "pageId": "62988415",
+      "url": "https://moonn.ru/vigoranie_article",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 74,
+      "status": "published"
+    },
+    {
+      "pageId": "62923037",
+      "url": "https://moonn.ru/vospitanie_article",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 75,
+      "status": "published"
+    },
+    {
+      "pageId": "135442186",
+      "url": "https://moonn.ru/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 76,
+      "status": "published"
+    },
+    {
+      "pageId": "63552425",
+      "url": "https://moonn.ru/water",
+      "section": "readyToApply",
+      "decision": "strengthen_seo",
+      "index": 77,
+      "status": "published"
+    },
+    {
+      "pageId": "135430346",
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "section": "applyAfterRobotsFix",
+      "decision": "fix_robots_then_strengthen",
+      "index": 78,
+      "status": "published"
+    },
+    {
+      "pageId": "62119659",
+      "url": "https://moonn.ru/psiholog_moskva",
+      "section": "applyAfterRobotsFix",
+      "decision": "fix_robots_then_strengthen",
+      "index": 79,
+      "status": "published"
+    },
+    {
+      "pageId": "44682379",
+      "url": "https://moonn.ru/psihology",
+      "section": "applyAfterRobotsFix",
+      "decision": "fix_robots_then_strengthen",
+      "index": 80,
+      "status": "published"
+    }
+  ]
+}
