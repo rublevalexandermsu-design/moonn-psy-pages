@@ -1383,3 +1383,49 @@ Append-only project history for `moon-psy-site`.
   - `docs/moonn-seo-growth-check-2026-05-20.md`
 - Follow-up rule:
   - SEO reports must separate visibility, CTR, page-level demand, and conversion instead of compressing them into one "SEO worked" conclusion.
+
+## 2026-05-21 08:53 MSK — Moonn Five-Page SEO/AEO Sprint Implementation Packet
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: SEO/AEO growth, five-page commercial/trust sprint.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: user approved the five-page SEO/AEO/IEO sprint plan and asked to implement it for подростковый лагерь, gallery, exam support, consultations and reviews.
+- Strategic decision:
+  - Continue route B: five-page SEO sprint with measurable packets, AEO/FAQ/schema layer, click-goal contract and dated ledger.
+  - Do not jump directly to a 50+ page content cluster until the five selected pages have clean technical verification and measurement.
+- Created artifacts:
+  - `scripts/build_moonn_five_page_seo_sprint.py`
+  - `scripts/moonn_five_page_seo_sprint_audit.py`
+  - `assets/moonn-five-page-seo-sprint-layer.js`
+  - `docs/moonn-five-page-seo-packets-2026-05-21.json`
+  - `docs/moonn-five-page-seo-packets-2026-05-21.md`
+  - `docs/moonn-five-page-seo-packets-2026-05-21.csv`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.csv`
+  - `docs/moonn-five-page-reindex-urls-2026-05-21.txt`
+  - `docs/moonn-five-page-seo-sprint-head-snippet-2026-05-21.html`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-21.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-21.md`
+  - `docs/moonn-production-scope-seo-audit-2026-05-21.json`
+  - `docs/moonn-production-scope-seo-audit-2026-05-21.md`
+  - `docs/moonn-production-scope-seo-audit-2026-05-21.csv`
+- Updated artifacts:
+  - `scripts/tilda_page_seo_settings_ui_rollout.py` now supports `--packet`, `--mode pages` and `--dry-run`.
+  - `docs/moonn-seo-growth-backlog.md` now includes the five-page Tilda publication, HEAD/AEO, reindex and measurement follow-ups.
+- Verification:
+  - `python -m py_compile scripts\build_moonn_five_page_seo_sprint.py scripts\moonn_five_page_seo_sprint_audit.py scripts\tilda_page_seo_settings_ui_rollout.py` passed.
+  - `python scripts\build_moonn_five_page_seo_sprint.py` generated the packet, ledger, reindex list, head snippet and JS layer.
+  - `python scripts\moonn_final_seo_audit.py --production-scope` checked 83 production URLs: 83 HTTP 200.
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered` checked the five URLs.
+  - Tilda rollout dry-run selected page ids `140348786`, `140864526`, `62652841`, `135430346`, `81167556`.
+- Current T0 result:
+  - All five URLs return 200, are in sitemap and are not robots-blocked.
+  - Rendered H1 count is already one for all five pages.
+  - Raw HTML still needs live publication for updated title/description, AEO answer blocks and source-level cleanup.
+  - Missing raw image alt remains on all five pages.
+- Blocker:
+  - Authenticated Chrome/Tilda window was not available in the current desktop session; `scripts\tilda_page_seo_settings_ui_rollout.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --mode pages --limit 5` stopped with `No authenticated Google Chrome Tilda window found`.
+  - `windows-mcp` desktop tools were not exposed by the current tool search; do not claim live Tilda publication until Chrome/Tilda is actually opened and verified.
+- Follow-up rule:
+  - Five-page SEO changes must move through packet -> Tilda save/publish -> live HTML/rendered audit -> scoped reindex -> T+14/T+28 ledger update. Do not report SEO implementation as live when only source artifacts were prepared.

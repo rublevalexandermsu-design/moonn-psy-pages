@@ -1,0 +1,991 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-21T05:48:29.734415+00:00",
+  "project": "Moonn / Tatyana Munn site",
+  "workstream": "Moonn SEO/AEO growth five-page sprint",
+  "branch": "codex/moonn-seo-audit",
+  "measurementContract": {
+    "baseline": "Use GSC/Yandex.Metrika/Yandex Webmaster exports or GUI evidence before live edits.",
+    "reviewWindows": [
+      "T+3",
+      "T+14",
+      "T+28",
+      "T+56"
+    ],
+    "successMetric": "CTR >= 2.5-3% on target queries with 100+ impressions, plus tracked consultation/contact goals."
+  },
+  "pages": [
+    {
+      "key": "teen_camp",
+      "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+      "alias": "podrostkovyy-lager-psihologiya",
+      "sourcePageId": "140348786",
+      "role": "commercial_event",
+      "funnelRole": "lead_and_payment",
+      "priority": "P0",
+      "title": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+      "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+      "targetH1": "Подростковый психологический лагерь в Москве",
+      "intent": "Родитель ищет безопасную практическую программу для подростка, а не общую психологическую статью.",
+      "hypothesis": "Сужение страницы под родителя подростка и запросы про психологический лагерь даст больше релевантных показов и кликов, чем общий блок с программой.",
+      "targetQueries": [
+        "подростковый психологический лагерь Москва",
+        "лагерь для подростков психология",
+        "тревожность и общение подростков",
+        "психологический лагерь для подростков"
+      ],
+      "issues": [
+        "missing_h1_raw",
+        "placeholder_text",
+        "needs_cta_goal"
+      ],
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "rendered_h1",
+        "faq_aeo_block",
+        "click_goals"
+      ],
+      "blockedLiveChanges": [
+        "price",
+        "payment_provider",
+        "legal_text",
+        "personal_data"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "Event",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "answerBlock": {
+        "heading": "Кому подходит психологический лагерь",
+        "items": [
+          "Подростку 12+ трудно общаться, он стесняется, тревожится или избегает новых ситуаций.",
+          "Родителю важно дать ребёнку практику общения, уверенности и понимания эмоций в небольшой группе.",
+          "Формат подходит как первый мягкий шаг перед индивидуальной консультацией или программой развития навыков."
+        ],
+        "cta": "Уточнить участие",
+        "ctaGoal": "moonn_seo_teen_camp_contact"
+      },
+      "faq": [
+        {
+          "question": "Что даёт подростковый психологический лагерь?",
+          "answer": "Он помогает подростку безопасно потренировать общение, уверенность, понимание эмоций и взаимодействие со сверстниками в небольшой группе."
+        },
+        {
+          "question": "Кому подходит этот формат?",
+          "answer": "Формат подходит родителям подростков, которые видят тревожность, стеснение, сложности общения или снижение уверенности."
+        },
+        {
+          "question": "Можно ли сначала уточнить детали?",
+          "answer": "Да, перед участием можно написать Татьяне Мунн в Telegram или WhatsApp и обсудить возраст подростка, ожидания и формат."
+        }
+      ],
+      "seo": {
+        "title": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+        "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+        "canonical": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+        "h1": {
+          "targetH1": "Подростковый психологический лагерь в Москве",
+          "action": "keep_or_render_single_h1"
+        },
+        "imageAltPattern": "Подростковый психологический лагерь в Москве — Татьяна Мунн"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://moonn.ru/#tatiana-munn",
+            "name": "Татьяна Мунн",
+            "alternateName": [
+              "Кумскова Татьяна Михайловна",
+              "Татьяна Мунн (Кумскова)",
+              "Tatiana Moonn"
+            ],
+            "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
+            "url": "https://moonn.ru/",
+            "sameAs": [
+              "https://moonn.ru/",
+              "https://moonn.timepad.ru/events/",
+              "https://miiiips.ru/author-tatyana-munn-kumskova.html",
+              "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629",
+              "https://istina.msu.ru/workers/816305440/",
+              "https://psyjournals.ru/authors/15337"
+            ],
+            "knowsAbout": [
+              "психология подростков",
+              "эмоциональный интеллект",
+              "тревога",
+              "стресс перед экзаменом",
+              "отношения",
+              "саморегуляция"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://moonn.ru/#website",
+            "url": "https://moonn.ru/",
+            "name": "Татьяна Мунн",
+            "publisher": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moonn.ru/podrostkovyy-lager-psihologiya#webpage",
+            "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+            "name": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+            "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+            "isPartOf": {
+              "@id": "https://moonn.ru/#website"
+            },
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "author": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU",
+            "keywords": [
+              "подростковый психологический лагерь Москва",
+              "лагерь для подростков психология",
+              "тревожность и общение подростков",
+              "психологический лагерь для подростков"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://moonn.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Подростковый психологический лагерь в Москве",
+                "item": "https://moonn.ru/podrostkovyy-lager-psihologiya"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://moonn.ru/podrostkovyy-lager-psihologiya#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Что даёт подростковый психологический лагерь?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Он помогает подростку безопасно потренировать общение, уверенность, понимание эмоций и взаимодействие со сверстниками в небольшой группе."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Кому подходит этот формат?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Формат подходит родителям подростков, которые видят тревожность, стеснение, сложности общения или снижение уверенности."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Можно ли сначала уточнить детали?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да, перед участием можно написать Татьяне Мунн в Telegram или WhatsApp и обсудить возраст подростка, ожидания и формат."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Event",
+            "@id": "https://moonn.ru/podrostkovyy-lager-psihologiya#event",
+            "name": "Подростковый психологический лагерь в Москве",
+            "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+            "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2026-07-06",
+            "endDate": "2026-07-10",
+            "location": {
+              "@type": "Place",
+              "name": "Москва, Цветной бульвар",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Москва",
+                "addressCountry": "RU"
+              }
+            },
+            "organizer": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "performer": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "art_gallery",
+      "url": "https://moonn.ru/kartiny-tatiany-munn",
+      "alias": "kartiny-tatiany-munn",
+      "sourcePageId": "140864526",
+      "role": "trust_and_product",
+      "funnelRole": "trust_and_art_purchase",
+      "priority": "P1",
+      "title": "Картины Татьяны Мунн | галерея, арт и персональный код",
+      "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+      "targetH1": "Галерея картин Татьяны Мунн",
+      "intent": "Посетитель смотрит личный стиль, доверие, визуальный продукт и способ выбрать работу.",
+      "hypothesis": "Галерея лучше работает как доверительный и продуктовый слой, если отделить арт-интент от общей психологии и добавить понятный CTA.",
+      "targetQueries": [
+        "картины Татьяны Мунн",
+        "галерея Татьяны Мунн",
+        "авторские картины психолога",
+        "энергетические картины Татьяна Мунн"
+      ],
+      "issues": [
+        "needs_art_intent",
+        "needs_cta_goal"
+      ],
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "faq_aeo_block",
+        "click_goals"
+      ],
+      "blockedLiveChanges": [
+        "prices",
+        "payment_provider",
+        "unsupported_art_claims"
+      ],
+      "schemaTypes": [
+        "CollectionPage",
+        "ItemList",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "answerBlock": {
+        "heading": "Как выбрать картину",
+        "items": [
+          "Откройте галерею и выберите работу, которая эмоционально откликается по цвету, форме и настроению.",
+          "Если нужна помощь с выбором, можно написать Татьяне и обсудить задачу: интерьер, подарок или личная история.",
+          "Галерея усиливает доверие к авторскому стилю Татьяны Мунн, но не является медицинским или терапевтическим обещанием."
+        ],
+        "cta": "Обсудить картину",
+        "ctaGoal": "moonn_seo_art_contact"
+      },
+      "faq": [
+        {
+          "question": "Можно ли купить картину Татьяны Мунн?",
+          "answer": "Да, страницу нужно использовать как галерею и точку контакта: посетитель выбирает работу и уточняет доступность или заказ."
+        },
+        {
+          "question": "Это психологическая услуга?",
+          "answer": "Нет, галерея является отдельным авторским арт-направлением и доверительным слоем сайта."
+        }
+      ],
+      "seo": {
+        "title": "Картины Татьяны Мунн | галерея, арт и персональный код",
+        "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+        "canonical": "https://moonn.ru/kartiny-tatiany-munn",
+        "h1": {
+          "targetH1": "Галерея картин Татьяны Мунн",
+          "action": "keep_or_render_single_h1"
+        },
+        "imageAltPattern": "Галерея картин Татьяны Мунн — Татьяна Мунн"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://moonn.ru/#tatiana-munn",
+            "name": "Татьяна Мунн",
+            "alternateName": [
+              "Кумскова Татьяна Михайловна",
+              "Татьяна Мунн (Кумскова)",
+              "Tatiana Moonn"
+            ],
+            "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
+            "url": "https://moonn.ru/",
+            "sameAs": [
+              "https://moonn.ru/",
+              "https://moonn.timepad.ru/events/",
+              "https://miiiips.ru/author-tatyana-munn-kumskova.html",
+              "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629",
+              "https://istina.msu.ru/workers/816305440/",
+              "https://psyjournals.ru/authors/15337"
+            ],
+            "knowsAbout": [
+              "психология подростков",
+              "эмоциональный интеллект",
+              "тревога",
+              "стресс перед экзаменом",
+              "отношения",
+              "саморегуляция"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://moonn.ru/#website",
+            "url": "https://moonn.ru/",
+            "name": "Татьяна Мунн",
+            "publisher": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moonn.ru/kartiny-tatiany-munn#webpage",
+            "url": "https://moonn.ru/kartiny-tatiany-munn",
+            "name": "Картины Татьяны Мунн | галерея, арт и персональный код",
+            "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+            "isPartOf": {
+              "@id": "https://moonn.ru/#website"
+            },
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "author": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU",
+            "keywords": [
+              "картины Татьяны Мунн",
+              "галерея Татьяны Мунн",
+              "авторские картины психолога",
+              "энергетические картины Татьяна Мунн"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://moonn.ru/kartiny-tatiany-munn#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://moonn.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Галерея картин Татьяны Мунн",
+                "item": "https://moonn.ru/kartiny-tatiany-munn"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://moonn.ru/kartiny-tatiany-munn#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Можно ли купить картину Татьяны Мунн?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да, страницу нужно использовать как галерею и точку контакта: посетитель выбирает работу и уточняет доступность или заказ."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Это психологическая услуга?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Нет, галерея является отдельным авторским арт-направлением и доверительным слоем сайта."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://moonn.ru/kartiny-tatiany-munn#gallery",
+            "name": "Галерея картин Татьяны Мунн",
+            "url": "https://moonn.ru/kartiny-tatiany-munn",
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа."
+          }
+        ]
+      }
+    },
+    {
+      "key": "exam_support",
+      "url": "https://moonn.ru/psypodgotovka1",
+      "alias": "psypodgotovka1",
+      "sourcePageId": "62652841",
+      "role": "commercial_service",
+      "funnelRole": "lead",
+      "priority": "P0",
+      "title": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+      "targetH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "intent": "Родитель или подросток ищет помощь перед экзаменами, а не общий текст о подготовке.",
+      "hypothesis": "Уточнение под ОГЭ/ЕГЭ и тревогу перед экзаменами увеличит CTR по низко- и среднечастотным запросам.",
+      "targetQueries": [
+        "подготовка к ЕГЭ без паники",
+        "стресс перед экзаменом",
+        "психологическая подготовка к ОГЭ",
+        "как справиться с тревогой перед экзаменом"
+      ],
+      "issues": [
+        "needs_intent_refocus",
+        "needs_cta_goal"
+      ],
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "faq_aeo_block",
+        "click_goals"
+      ],
+      "blockedLiveChanges": [
+        "medical_claims",
+        "guaranteed_exam_result"
+      ],
+      "schemaTypes": [
+        "WebPage",
+        "ProfessionalService",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "answerBlock": {
+        "heading": "Что делать, если экзамены вызывают панику",
+        "items": [
+          "Сначала важно снизить телесное напряжение и вернуть ощущение контроля, а не просто заставлять подростка больше учиться.",
+          "На консультации разбираются тревога, страх ошибки, давление родителей, стеснение и сценарии поведения на экзамене.",
+          "Цель страницы - привести родителя или подростка к понятному шагу: коротко описать ситуацию и записаться на консультацию."
+        ],
+        "cta": "Записаться на консультацию",
+        "ctaGoal": "moonn_seo_exam_consult"
+      },
+      "faq": [
+        {
+          "question": "Помогает ли психологическая подготовка к ЕГЭ и ОГЭ?",
+          "answer": "Она не заменяет учебную подготовку, но помогает снизить тревогу, собраться, справляться со страхом ошибки и спокойнее проходить экзаменационный период."
+        },
+        {
+          "question": "Когда лучше обращаться?",
+          "answer": "Лучше обращаться заранее, но даже короткая работа перед экзаменом может помочь подростку структурировать тревогу и план действий."
+        }
+      ],
+      "seo": {
+        "title": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+        "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+        "canonical": "https://moonn.ru/psypodgotovka1",
+        "h1": {
+          "targetH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+          "action": "keep_or_render_single_h1"
+        },
+        "imageAltPattern": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ — Татьяна Мунн"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://moonn.ru/#tatiana-munn",
+            "name": "Татьяна Мунн",
+            "alternateName": [
+              "Кумскова Татьяна Михайловна",
+              "Татьяна Мунн (Кумскова)",
+              "Tatiana Moonn"
+            ],
+            "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
+            "url": "https://moonn.ru/",
+            "sameAs": [
+              "https://moonn.ru/",
+              "https://moonn.timepad.ru/events/",
+              "https://miiiips.ru/author-tatyana-munn-kumskova.html",
+              "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629",
+              "https://istina.msu.ru/workers/816305440/",
+              "https://psyjournals.ru/authors/15337"
+            ],
+            "knowsAbout": [
+              "психология подростков",
+              "эмоциональный интеллект",
+              "тревога",
+              "стресс перед экзаменом",
+              "отношения",
+              "саморегуляция"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://moonn.ru/#website",
+            "url": "https://moonn.ru/",
+            "name": "Татьяна Мунн",
+            "publisher": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moonn.ru/psypodgotovka1#webpage",
+            "url": "https://moonn.ru/psypodgotovka1",
+            "name": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+            "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+            "isPartOf": {
+              "@id": "https://moonn.ru/#website"
+            },
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "author": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU",
+            "keywords": [
+              "подготовка к ЕГЭ без паники",
+              "стресс перед экзаменом",
+              "психологическая подготовка к ОГЭ",
+              "как справиться с тревогой перед экзаменом"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://moonn.ru/psypodgotovka1#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://moonn.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+                "item": "https://moonn.ru/psypodgotovka1"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://moonn.ru/psypodgotovka1#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Помогает ли психологическая подготовка к ЕГЭ и ОГЭ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Она не заменяет учебную подготовку, но помогает снизить тревогу, собраться, справляться со страхом ошибки и спокойнее проходить экзаменационный период."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Когда лучше обращаться?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Лучше обращаться заранее, но даже короткая работа перед экзаменом может помочь подростку структурировать тревогу и план действий."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://moonn.ru/psypodgotovka1#service",
+            "name": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+            "url": "https://moonn.ru/psypodgotovka1",
+            "provider": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "areaServed": [
+              "Москва",
+              "Онлайн"
+            ],
+            "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью."
+          }
+        ]
+      }
+    },
+    {
+      "key": "consultations",
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "alias": "psiholog-konsultacii-moskva",
+      "sourcePageId": "135430346",
+      "role": "main_commercial_service",
+      "funnelRole": "lead",
+      "priority": "P0",
+      "title": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+      "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+      "targetH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+      "intent": "Пользователь ищет личную консультацию психолога, способ записи и понятные направления работы.",
+      "hypothesis": "Разделение интентов взрослые/подростки/онлайн/Москва и один H1 должны улучшить релевантность коммерческих запросов.",
+      "targetQueries": [
+        "психолог подростку",
+        "психолог онлайн",
+        "психолог в Москве",
+        "психолог МГУ",
+        "консультация психолога Татьяна Мунн"
+      ],
+      "issues": [
+        "multiple_h1_raw",
+        "needs_cta_goal"
+      ],
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "rendered_h1",
+        "faq_aeo_block",
+        "click_goals"
+      ],
+      "blockedLiveChanges": [
+        "medical_claims",
+        "guarantees",
+        "prices"
+      ],
+      "schemaTypes": [
+        "ProfessionalService",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "answerBlock": {
+        "heading": "С чем можно обратиться",
+        "items": [
+          "Тревога, стресс, отношения, эмоциональное напряжение, подростковые сложности и вопросы родителей.",
+          "Формат можно выбрать под задачу: очно в Москве или онлайн, если удобнее начать дистанционно.",
+          "Первый шаг - коротко описать ситуацию и выбрать удобный способ записи."
+        ],
+        "cta": "Выбрать время консультации",
+        "ctaGoal": "moonn_seo_consult_booking"
+      },
+      "faq": [
+        {
+          "question": "Можно ли записаться онлайн?",
+          "answer": "Да, консультацию можно провести онлайн или очно в Москве, если такой формат подходит вашей ситуации."
+        },
+        {
+          "question": "Работает ли Татьяна Мунн с подростками?",
+          "answer": "Да, отдельный фокус сайта - подростки, родители, экзаменационный стресс, общение и уверенность."
+        }
+      ],
+      "seo": {
+        "title": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+        "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+        "canonical": "https://moonn.ru/psiholog-konsultacii-moskva",
+        "h1": {
+          "targetH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+          "action": "keep_or_render_single_h1"
+        },
+        "imageAltPattern": "Психолог в Москве и онлайн: консультации Татьяны Мунн — Татьяна Мунн"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://moonn.ru/#tatiana-munn",
+            "name": "Татьяна Мунн",
+            "alternateName": [
+              "Кумскова Татьяна Михайловна",
+              "Татьяна Мунн (Кумскова)",
+              "Tatiana Moonn"
+            ],
+            "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
+            "url": "https://moonn.ru/",
+            "sameAs": [
+              "https://moonn.ru/",
+              "https://moonn.timepad.ru/events/",
+              "https://miiiips.ru/author-tatyana-munn-kumskova.html",
+              "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629",
+              "https://istina.msu.ru/workers/816305440/",
+              "https://psyjournals.ru/authors/15337"
+            ],
+            "knowsAbout": [
+              "психология подростков",
+              "эмоциональный интеллект",
+              "тревога",
+              "стресс перед экзаменом",
+              "отношения",
+              "саморегуляция"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://moonn.ru/#website",
+            "url": "https://moonn.ru/",
+            "name": "Татьяна Мунн",
+            "publisher": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moonn.ru/psiholog-konsultacii-moskva#webpage",
+            "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+            "name": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+            "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+            "isPartOf": {
+              "@id": "https://moonn.ru/#website"
+            },
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "author": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU",
+            "keywords": [
+              "психолог подростку",
+              "психолог онлайн",
+              "психолог в Москве",
+              "психолог МГУ",
+              "консультация психолога Татьяна Мунн"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://moonn.ru/psiholog-konsultacii-moskva#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://moonn.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+                "item": "https://moonn.ru/psiholog-konsultacii-moskva"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://moonn.ru/psiholog-konsultacii-moskva#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Можно ли записаться онлайн?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да, консультацию можно провести онлайн или очно в Москве, если такой формат подходит вашей ситуации."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Работает ли Татьяна Мунн с подростками?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да, отдельный фокус сайта - подростки, родители, экзаменационный стресс, общение и уверенность."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://moonn.ru/psiholog-konsultacii-moskva#service",
+            "name": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+            "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+            "provider": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "areaServed": [
+              "Москва",
+              "Онлайн"
+            ],
+            "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях."
+          }
+        ]
+      }
+    },
+    {
+      "key": "reviews",
+      "url": "https://moonn.ru/otzivi",
+      "alias": "otzivi",
+      "sourcePageId": "81167556",
+      "role": "trust",
+      "funnelRole": "trust_to_lead",
+      "priority": "P0",
+      "title": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+      "description": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+      "targetH1": "Отзывы о психологе Татьяне Мунн",
+      "intent": "Пользователь проверяет доверие перед записью на консультацию.",
+      "hypothesis": "Страница отзывов должна поднимать доверие и переходы к записи, а не пытаться конкурировать как общая SEO-статья.",
+      "targetQueries": [
+        "Татьяна Мунн отзывы",
+        "психолог Татьяна Мунн отзывы",
+        "Татьяна Мунн Яндекс Услуги",
+        "отзывы о психологе Татьяне Мунн"
+      ],
+      "issues": [
+        "multiple_h1_raw",
+        "raw_head_cleanup",
+        "needs_trust_cta_goal"
+      ],
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "rendered_h1",
+        "faq_aeo_block",
+        "click_goals"
+      ],
+      "blockedLiveChanges": [
+        "fake_rating",
+        "aggregate_rating",
+        "full_review_mirror_without_gate"
+      ],
+      "schemaTypes": [
+        "ProfilePage",
+        "ItemList",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "answerBlock": {
+        "heading": "Как проверять отзывы",
+        "items": [
+          "Смотрите не только текст отзыва, но и источник: Яндекс Услуги, мероприятия, публичные лекции и внешние профили.",
+          "На странице сохраняется осторожная позиция: без искусственного рейтинга, накрученных чисел и неподтверждённых обещаний.",
+          "Если отзывы совпадают с вашим запросом, следующий шаг - перейти к консультации или задать вопрос напрямую."
+        ],
+        "cta": "Перейти к записи",
+        "ctaGoal": "moonn_seo_reviews_to_booking"
+      },
+      "faq": [
+        {
+          "question": "Где проверить отзывы о Татьяне Мунн?",
+          "answer": "Основной проверяемый внешний источник - профиль Татьяны Мунн на Яндекс Услугах, а также публичные страницы мероприятий и профили."
+        },
+        {
+          "question": "Почему на странице нет искусственного рейтинга?",
+          "answer": "Рейтинг и aggregateRating не публикуются без отдельного legal/platform gate, чтобы не создавать неподтверждённые SEO-сигналы."
+        }
+      ],
+      "seo": {
+        "title": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+        "description": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+        "canonical": "https://moonn.ru/otzivi",
+        "h1": {
+          "targetH1": "Отзывы о психологе Татьяне Мунн",
+          "action": "keep_or_render_single_h1"
+        },
+        "imageAltPattern": "Отзывы о психологе Татьяне Мунн — Татьяна Мунн"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://moonn.ru/#tatiana-munn",
+            "name": "Татьяна Мунн",
+            "alternateName": [
+              "Кумскова Татьяна Михайловна",
+              "Татьяна Мунн (Кумскова)",
+              "Tatiana Moonn"
+            ],
+            "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
+            "url": "https://moonn.ru/",
+            "sameAs": [
+              "https://moonn.ru/",
+              "https://moonn.timepad.ru/events/",
+              "https://miiiips.ru/author-tatyana-munn-kumskova.html",
+              "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629",
+              "https://istina.msu.ru/workers/816305440/",
+              "https://psyjournals.ru/authors/15337"
+            ],
+            "knowsAbout": [
+              "психология подростков",
+              "эмоциональный интеллект",
+              "тревога",
+              "стресс перед экзаменом",
+              "отношения",
+              "саморегуляция"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://moonn.ru/#website",
+            "url": "https://moonn.ru/",
+            "name": "Татьяна Мунн",
+            "publisher": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://moonn.ru/otzivi#webpage",
+            "url": "https://moonn.ru/otzivi",
+            "name": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+            "description": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+            "isPartOf": {
+              "@id": "https://moonn.ru/#website"
+            },
+            "about": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "author": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "inLanguage": "ru-RU",
+            "keywords": [
+              "Татьяна Мунн отзывы",
+              "психолог Татьяна Мунн отзывы",
+              "Татьяна Мунн Яндекс Услуги",
+              "отзывы о психологе Татьяне Мунн"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://moonn.ru/otzivi#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://moonn.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Отзывы о психологе Татьяне Мунн",
+                "item": "https://moonn.ru/otzivi"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://moonn.ru/otzivi#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Где проверить отзывы о Татьяне Мунн?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Основной проверяемый внешний источник - профиль Татьяны Мунн на Яндекс Услугах, а также публичные страницы мероприятий и профили."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Почему на странице нет искусственного рейтинга?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Рейтинг и aggregateRating не публикуются без отдельного legal/platform gate, чтобы не создавать неподтверждённые SEO-сигналы."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://moonn.ru/otzivi#reviews-profile",
+            "name": "Отзывы о психологе Татьяне Мунн",
+            "url": "https://moonn.ru/otzivi",
+            "mainEntity": {
+              "@id": "https://moonn.ru/#tatiana-munn"
+            },
+            "sameAs": "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629"
+          }
+        ]
+      }
+    }
+  ]
+}

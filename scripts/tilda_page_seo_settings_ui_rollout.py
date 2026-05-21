@@ -10,7 +10,7 @@ from pywinauto.keyboard import send_keys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKETS = ROOT / "docs" / "moonn-production-seo-strengthening-packets-2026-05-04.json"
+DEFAULT_PACKETS = ROOT / "docs" / "moonn-production-seo-strengthening-packets-2026-05-04.json"
 
 
 def chrome_window():
@@ -196,8 +196,10 @@ def publish_page(window, project_id, page_id):
     time.sleep(6.0)
 
 
-def load_pages(mode):
-    data = json.loads(PACKETS.read_text(encoding="utf-8"))
+def load_pages(mode, packet_path):
+    data = json.loads(packet_path.read_text(encoding="utf-8"))
+    if mode == "pages":
+        return data["pages"]
     if mode == "ready":
         return data["readyToApply"]
     if mode == "after-robots":
@@ -210,16 +212,28 @@ def load_pages(mode):
 def main():
     parser = argparse.ArgumentParser(description="Apply Moonn page-specific SEO settings through visible Tilda UI in authenticated Google Chrome.")
     parser.add_argument("--project-id", default="8326812")
-    parser.add_argument("--mode", choices=["ready", "after-robots", "all"], default="ready")
+    parser.add_argument("--packet", default=str(DEFAULT_PACKETS.relative_to(ROOT)))
+    parser.add_argument("--mode", choices=["ready", "after-robots", "all", "pages"], default="ready")
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=1)
+    parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--publish", action="store_true")
     parser.add_argument("--out", default="output/tilda-page-seo-settings-ui-rollout.json")
     args = parser.parse_args()
 
-    pages = load_pages(args.mode)
+    packet_path = ROOT / args.packet
+    pages = load_pages(args.mode, packet_path)
     selected = pages[args.offset : args.offset + args.limit]
     out_path = ROOT / args.out
+    if args.dry_run:
+        print(json.dumps({
+            "packet": str(packet_path.relative_to(ROOT)),
+            "mode": args.mode,
+            "selected": len(selected),
+            "pageIds": [str(page["sourcePageId"]) for page in selected],
+            "publishRequested": args.publish,
+        }, ensure_ascii=False))
+        return
     if out_path.exists():
         results = json.loads(out_path.read_text(encoding="utf-8"))
     else:
@@ -233,6 +247,7 @@ def main():
             "url": page["url"],
             "alias": page.get("alias"),
             "mode": args.mode,
+            "packet": str(packet_path.relative_to(ROOT)),
             "publishRequested": args.publish,
         }
         try:
