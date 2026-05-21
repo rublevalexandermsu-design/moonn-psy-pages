@@ -1429,3 +1429,41 @@ Append-only project history for `moon-psy-site`.
   - `windows-mcp` desktop tools were not exposed by the current tool search; do not claim live Tilda publication until Chrome/Tilda is actually opened and verified.
 - Follow-up rule:
   - Five-page SEO changes must move through packet -> Tilda save/publish -> live HTML/rendered audit -> scoped reindex -> T+14/T+28 ledger update. Do not report SEO implementation as live when only source artifacts were prepared.
+
+## 2026-05-21 — Moonn Five-Page SEO/AEO Tilda Live Publication
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: SEO/AEO growth, five-page commercial/trust sprint.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: user rejected source-only completion and explicitly required Codex to enter Tilda through Alexander/Rublev Google Chrome and implement the SEO plan live.
+- Correction:
+  - Found the active Chrome window with `rublevalexandermsu@gmail.com`.
+  - Updated `scripts/tilda_page_seo_settings_ui_rollout.py` so it can use the Rublev Chrome window even when a Tilda tab is not already open.
+  - DevTools console was unavailable in the visible Chrome session, so the rollout path was corrected to use Chrome address-bar `javascript:` execution in the authenticated Tilda context.
+- Live changes:
+  - Saved SEO title, description, canonical, noindex=false and nofollow=false for the five scoped Tilda pages:
+    - `140348786` / `https://moonn.ru/podrostkovyy-lager-psihologiya`
+    - `140864526` / `https://moonn.ru/kartiny-tatiany-munn`
+    - `62652841` / `https://moonn.ru/psypodgotovka1`
+    - `135430346` / `https://moonn.ru/psiholog-konsultacii-moskva`
+    - `81167556` / `https://moonn.ru/otzivi`
+  - Published only those five pages.
+  - Added `scripts/tilda_five_page_head_layer_ui_rollout.py` and used each page's Tilda `editheadcode` / `aceeditor_head` editor to add the five-page AEO/FAQ/schema layer.
+  - Published only those five pages again after the HEAD layer save.
+- Verification:
+  - `output/tilda-five-page-seo-settings-ui-rollout-2026-05-21.json`: 10 successful records, first save pass and second save+publish pass, `0` errors.
+  - `output/tilda-five-page-head-layer-ui-rollout-2026-05-21.json`: five successful page HEAD saves and publishes, `0` errors.
+  - Raw live HTML contains `moonn-five-page-seo-sprint-layer.js` and commit `49a093e` on all five URLs.
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered`:
+    - all five URLs return `200`;
+    - all five are in sitemap;
+    - none are blocked by robots.txt;
+    - rendered H1 count is `1` on all five;
+    - rendered AEO answer block count is `1` on all five;
+    - rendered placeholders are absent on all five.
+- Remaining source-level cleanup:
+  - Raw HTML still contains missing alt attributes on all five pages.
+  - Camp/gallery still have raw placeholder strings, although rendered placeholders are hidden.
+  - Camp/consultations/reviews still have raw H1 issues, although rendered H1 is corrected.
+- Follow-up rule:
+  - When authenticated Chrome is available, Tilda GUI fallback must be attempted before reporting blocker. If DevTools is unavailable, use verified address-bar `javascript:` execution or Tilda page-specific `editheadcode`/Ace editor flow, then verify live HTML and rendered browser output.

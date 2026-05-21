@@ -173,10 +173,16 @@ def rendered_audit(pages: list[dict]) -> list[dict]:
             audit = {"url": page["url"], "renderedStatus": "ok"}
             try:
                 browser_page = context.new_page()
-                browser_page.goto(page["url"], wait_until="networkidle", timeout=45000)
+                try:
+                    browser_page.goto(page["url"], wait_until="networkidle", timeout=45000)
+                except Exception:
+                    browser_page.goto(page["url"], wait_until="domcontentloaded", timeout=45000)
+                    browser_page.wait_for_timeout(5000)
                 h1_values = [text.strip() for text in browser_page.locator("h1").all_inner_texts() if text.strip()]
                 schema_count = browser_page.locator('script[type="application/ld+json"]').count()
                 answer_block_count = browser_page.locator("#moonn-five-page-answer-block").count()
+                body_text = browser_page.locator("body").inner_text(timeout=10000)
+                rendered_placeholders = [text for text in PLACEHOLDERS if text in body_text]
                 audit.update(
                     {
                         "titleRendered": browser_page.title(),
@@ -184,6 +190,7 @@ def rendered_audit(pages: list[dict]) -> list[dict]:
                         "h1Rendered": h1_values,
                         "jsonLdCountRendered": schema_count,
                         "answerBlockCountRendered": answer_block_count,
+                        "placeholderHitsRendered": rendered_placeholders,
                     }
                 )
                 browser_page.close()

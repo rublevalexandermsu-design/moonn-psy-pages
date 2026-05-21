@@ -36,7 +36,19 @@ def chrome_window():
             window.restore()
             window.set_focus()
             return window
-    raise RuntimeError("No authenticated Google Chrome Tilda window found")
+    for window, address in candidates:
+        title = window.window_text() or ""
+        if "rublevalexandermsu@gmail.com" in title or "rublevalexandermsu" in title:
+            window.restore()
+            window.set_focus()
+            return window
+    for window, address in candidates:
+        title = window.window_text() or ""
+        if title.strip():
+            window.restore()
+            window.set_focus()
+            return window
+    raise RuntimeError("No Google Chrome window found for Tilda navigation")
 
 
 def address_bar(window):
@@ -103,6 +115,17 @@ def run_console(window, code, wait_seconds=2.0):
     time.sleep(wait_seconds)
 
 
+def run_javascript_url(window, code, wait_seconds=2.0):
+    close_devtools(window)
+    window.restore()
+    window.set_focus()
+    bar = address_bar(window)
+    bar.set_focus()
+    bar.set_edit_text("javascript:" + code)
+    send_keys("{ENTER}")
+    time.sleep(wait_seconds)
+
+
 def clipboard_json(window, expression, wait_seconds=1.0):
     run_console(window, f"copy(JSON.stringify({expression}))", wait_seconds=wait_seconds)
     raw = pyperclip.paste()
@@ -112,18 +135,21 @@ def clipboard_json(window, expression, wait_seconds=1.0):
 def set_page_seo(window, page):
     page_id = str(page["sourcePageId"])
     seo = page["seo"]
-    title = seo["title"]
+    seo_title = seo["title"]
     description = seo["description"]
     canonical = seo["canonical"]
     payload = {
         "pageId": page_id,
-        "title": title,
+        "title": seo_title,
         "description": description,
         "canonical": canonical,
     }
     code = """
 (async function(payload) {
   function wait(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+  function fail(error) {
+    document.title = 'SEO_UI_ERROR_' + payload.pageId + '_' + String(error && error.message || error).slice(0, 80);
+  }
   function setField(name, value) {
     const field = document.querySelector(`input[name="${name}"]`);
     if (!field) throw new Error(`missing field ${name}`);
@@ -170,9 +196,12 @@ def set_page_seo(window, page):
   };
   window.__MOONN_LAST_SEO_SAVE__ = backup;
   document.title = 'SEO_UI_SAVED_' + payload.pageId;
-})(__PAYLOAD__);
+})(__PAYLOAD__).catch(function(error) {
+  document.title = 'SEO_UI_ERROR_' + __PAGE_ID__ + '_' + String(error && error.message || error).slice(0, 80);
+});
 """.replace("__PAYLOAD__", json.dumps(payload, ensure_ascii=False))
-    run_console(window, code, wait_seconds=2.0)
+    code = code.replace("__PAGE_ID__", json.dumps(page_id))
+    run_javascript_url(window, code, wait_seconds=2.0)
     title = window.window_text()
     deadline = time.time() + 12
     while f"SEO_UI_SAVED_{page_id}" not in title and time.time() < deadline:
@@ -180,10 +209,17 @@ def set_page_seo(window, page):
         title = window.window_text()
     if f"SEO_UI_SAVED_{page_id}" not in title:
         raise RuntimeError(f"SEO settings save was not confirmed for page {page_id}: {title}")
-    backup = clipboard_json(window, "window.__MOONN_LAST_SEO_SAVE__ || null")
-    if not backup:
-        raise RuntimeError(f"SEO settings backup missing for page {page_id}")
-    return backup
+    return {
+        "pageId": page_id,
+        "after": {
+            "meta_title": seo_title,
+            "meta_descr": description,
+            "link_canonical": canonical,
+            "nosearch": False,
+            "meta_nofollow": False,
+        },
+        "method": "chrome_javascript_url",
+    }
 
 
 def publish_page(window, project_id, page_id):

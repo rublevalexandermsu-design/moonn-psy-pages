@@ -1,7 +1,7 @@
 {
   "version": 1,
   "createdAt": "2026-05-21T05:48:29.734739+00:00",
-  "status": "baseline_and_change_contract_created",
+  "status": "live_seo_metadata_and_aeo_layer_published",
   "sourceReport": "docs/moonn-seo-growth-check-2026-05-20.md",
   "pages": [
     {
@@ -22,16 +22,36 @@
         "page_specific_schema",
         "metrika_click_goals"
       ],
-      "changesApplied": [],
+      "changesApplied": [
+        "seo_title_description_canonical_saved_in_tilda",
+        "five_page_aeo_faq_schema_layer_saved_in_page_head",
+        "scoped_tilda_page_publish_completed",
+        "rendered_browser_audit_completed"
+      ],
       "reindexDate": null,
-      "tPlus3": null,
+      "tPlus3": {
+        "status": "early_live_check_passed_with_source_cleanup_remaining",
+        "checkedAt": "2026-05-21T08:00:41.401572+00:00",
+        "liveHttp200": true,
+        "inSitemap": true,
+        "robotsBlocked": false,
+        "renderedH1Count": 1,
+        "renderedAnswerBlock": 1,
+        "renderedPlaceholders": 0,
+        "remainingSourceCleanup": [
+          "raw_h1_or_placeholder_where_reported",
+          "raw_image_alt_missing"
+        ],
+        "evidence": "docs/moonn-five-page-seo-sprint-audit-2026-05-21.json"
+      },
       "tPlus14": null,
       "tPlus28": null,
       "tPlus56": null,
       "blockers": [
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification."
-      ]
+      ],
+      "publicationDate": "2026-05-21"
     },
     {
       "url": "https://moonn.ru/kartiny-tatiany-munn",
@@ -51,16 +71,36 @@
         "page_specific_schema",
         "metrika_click_goals"
       ],
-      "changesApplied": [],
+      "changesApplied": [
+        "seo_title_description_canonical_saved_in_tilda",
+        "five_page_aeo_faq_schema_layer_saved_in_page_head",
+        "scoped_tilda_page_publish_completed",
+        "rendered_browser_audit_completed"
+      ],
       "reindexDate": null,
-      "tPlus3": null,
+      "tPlus3": {
+        "status": "early_live_check_passed_with_source_cleanup_remaining",
+        "checkedAt": "2026-05-21T08:00:41.401572+00:00",
+        "liveHttp200": true,
+        "inSitemap": true,
+        "robotsBlocked": false,
+        "renderedH1Count": 1,
+        "renderedAnswerBlock": 1,
+        "renderedPlaceholders": 0,
+        "remainingSourceCleanup": [
+          "raw_h1_or_placeholder_where_reported",
+          "raw_image_alt_missing"
+        ],
+        "evidence": "docs/moonn-five-page-seo-sprint-audit-2026-05-21.json"
+      },
       "tPlus14": null,
       "tPlus28": null,
       "tPlus56": null,
       "blockers": [
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification."
-      ]
+      ],
+      "publicationDate": "2026-05-21"
     },
     {
       "url": "https://moonn.ru/psypodgotovka1",
@@ -80,16 +120,36 @@
         "page_specific_schema",
         "metrika_click_goals"
       ],
-      "changesApplied": [],
+      "changesApplied": [
+        "seo_title_description_canonical_saved_in_tilda",
+        "five_page_aeo_faq_schema_layer_saved_in_page_head",
+        "scoped_tilda_page_publish_completed",
+        "rendered_browser_audit_completed"
+      ],
       "reindexDate": null,
-      "tPlus3": null,
+      "tPlus3": {
+        "status": "early_live_check_passed_with_source_cleanup_remaining",
+        "checkedAt": "2026-05-21T08:00:41.401572+00:00",
+        "liveHttp200": true,
+        "inSitemap": true,
+        "robotsBlocked": false,
+        "renderedH1Count": 1,
+        "renderedAnswerBlock": 1,
+        "renderedPlaceholders": 0,
+        "remainingSourceCleanup": [
+          "raw_h1_or_placeholder_where_reported",
+          "raw_image_alt_missing"
+        ],
+        "evidence": "docs/moonn-five-page-seo-sprint-audit-2026-05-21.json"
+      },
       "tPlus14": null,
       "tPlus28": null,
       "tPlus56": null,
       "blockers": [
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification."
-      ]
+      ],
+      "publicationDate": "2026-05-21"
     },
     {
       "url": "https://moonn.ru/psiholog-konsultacii-moskva",
@@ -110,16 +170,36 @@
         "page_specific_schema",
         "metrika_click_goals"
       ],
-      "changesApplied": [],
+      "changesApplied": [
+        "seo_title_description_canonical_saved_in_tilda",
+        "five_page_aeo_faq_schema_layer_saved_in_page_head",
+        "scoped_tilda_page_publish_completed",
+        "rendered_browser_audit_completed"
+      ],
       "reindexDate": null,
-      "tPlus3": null,
+      "tPlus3": {
+        "status": "early_live_check_passed_with_source_cleanup_remaining",
+        "checkedAt": "2026-05-21T08:00:41.401572+00:00",
+        "liveHttp200": true,
+        "inSitemap": true,
+        "robotsBlocked": false,
+        "renderedH1Count": 1,
+        "renderedAnswerBlock": 1,
+        "renderedPlaceholders": 0,
+        "remainingSourceCleanup": [
+          "raw_h1_or_placeholder_where_reported",
+          "raw_image_alt_missing"
+        ],
+        "evidence": "docs/moonn-five-page-seo-sprint-audit-2026-05-21.json"
+      },
       "tPlus14": null,
       "tPlus28": null,
       "tPlus56": null,
       "blockers": [
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification."
-      ]
+      ],
+      "publicationDate": "2026-05-21"
     },
     {
       "url": "https://moonn.ru/otzivi",
@@ -139,16 +219,37 @@
         "page_specific_schema",
         "metrika_click_goals"
       ],
-      "changesApplied": [],
+      "changesApplied": [
+        "seo_title_description_canonical_saved_in_tilda",
+        "five_page_aeo_faq_schema_layer_saved_in_page_head",
+        "scoped_tilda_page_publish_completed",
+        "rendered_browser_audit_completed"
+      ],
       "reindexDate": null,
-      "tPlus3": null,
+      "tPlus3": {
+        "status": "early_live_check_passed_with_source_cleanup_remaining",
+        "checkedAt": "2026-05-21T08:00:41.401572+00:00",
+        "liveHttp200": true,
+        "inSitemap": true,
+        "robotsBlocked": false,
+        "renderedH1Count": 1,
+        "renderedAnswerBlock": 1,
+        "renderedPlaceholders": 0,
+        "remainingSourceCleanup": [
+          "raw_h1_or_placeholder_where_reported",
+          "raw_image_alt_missing"
+        ],
+        "evidence": "docs/moonn-five-page-seo-sprint-audit-2026-05-21.json"
+      },
       "tPlus14": null,
       "tPlus28": null,
       "tPlus56": null,
       "blockers": [
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification."
-      ]
+      ],
+      "publicationDate": "2026-05-21"
     }
-  ]
+  ],
+  "lastUpdatedAt": "2026-05-21T08:00:41.401572+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "runDate": "2026-05-21",
-  "createdAt": "2026-05-21T05:52:05.394103+00:00",
+  "createdAt": "2026-05-21T08:00:09.749242+00:00",
   "packet": "docs\\moonn-five-page-seo-packets-2026-05-21.json",
   "pages": [
     {
@@ -13,13 +13,13 @@
       "expectedTitle": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
       "expectedDescription": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
       "expectedH1": "Подростковый психологический лагерь в Москве",
-      "title": "Подростковый лагерь по психологии — Татьяна Мунн",
-      "description": "Городской психологический лагерь для подростков 6–10 июля в Москве: эмоции, общение, уверенность, безопасная камерная группа и практика с психологом Татьяной Мунн.",
+      "title": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+      "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
       "canonical": "https://moonn.ru/podrostkovyy-lager-psihologiya",
       "robots": "",
       "h1CountRaw": 0,
       "h1Raw": [],
-      "jsonLdCountRaw": 4,
+      "jsonLdCountRaw": 6,
       "imageCountRaw": 3,
       "imagesMissingAltRaw": 3,
       "placeholderHitsRaw": [
@@ -29,8 +29,6 @@
         "Html code will be here"
       ],
       "issues": [
-        "title_not_yet_updated",
-        "description_not_yet_updated",
         "raw_h1_count_not_one",
         "placeholder_text",
         "images_missing_alt"
@@ -39,13 +37,14 @@
       "rendered": {
         "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
         "renderedStatus": "ok",
-        "titleRendered": "Подростковый лагерь по психологии — Татьяна Мунн",
+        "titleRendered": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
         "h1CountRendered": 1,
         "h1Rendered": [
-          "Лето, которое помогает подростку понять себя и стать увереннее"
+          "Подростковый психологический лагерь в Москве"
         ],
-        "jsonLdCountRendered": 4,
-        "answerBlockCountRendered": 0
+        "jsonLdCountRendered": 6,
+        "answerBlockCountRendered": 1,
+        "placeholderHitsRendered": []
       }
     },
     {
@@ -57,8 +56,8 @@
       "expectedTitle": "Картины Татьяны Мунн | галерея, арт и персональный код",
       "expectedDescription": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
       "expectedH1": "Галерея картин Татьяны Мунн",
-      "title": "Картины Татьяны Мунн | 3D-галерея и персональный код",
-      "description": "3D-галерея энергетических картин Татьяны Мунн: каталог работ, персональный код и онлайн-оплата через корзину сайта.",
+      "title": "Картины Татьяны Мунн | галерея, арт и персональный код",
+      "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
       "canonical": "https://moonn.ru/kartiny-tatiany-munn",
       "robots": "",
       "h1CountRaw": 1,
@@ -73,16 +72,21 @@
         "Your Email"
       ],
       "issues": [
-        "title_not_yet_updated",
-        "description_not_yet_updated",
         "placeholder_text",
         "images_missing_alt"
       ],
       "readyForReindexAfterPublication": true,
       "rendered": {
         "url": "https://moonn.ru/kartiny-tatiany-munn",
-        "renderedStatus": "error",
-        "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://moonn.ru/kartiny-tatiany-munn\", waiting until \"networkidle\"\n"
+        "renderedStatus": "ok",
+        "titleRendered": "Картины Татьяны Мунн | галерея, арт и персональный код",
+        "h1CountRendered": 1,
+        "h1Rendered": [
+          "Галерея картин Татьяны Мунн"
+        ],
+        "jsonLdCountRendered": 5,
+        "answerBlockCountRendered": 1,
+        "placeholderHitsRendered": []
       }
     },
     {
@@ -94,8 +98,8 @@
       "expectedTitle": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
       "expectedDescription": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
       "expectedH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
-      "title": "Психологическая подготовка к ОГЭ и ЕГЭ — Татьяна Мунн",
-      "description": "Психологическая подготовка к экзаменам без паники: психологическая поддержка подростков, студентов и родителей при тревоге, экзаменах, общении и учебной.",
+      "title": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
       "canonical": "https://moonn.ru/psypodgotovka1",
       "robots": "",
       "h1CountRaw": 1,
@@ -107,21 +111,20 @@
       "imagesMissingAltRaw": 3,
       "placeholderHitsRaw": [],
       "issues": [
-        "title_not_yet_updated",
-        "description_not_yet_updated",
         "images_missing_alt"
       ],
       "readyForReindexAfterPublication": true,
       "rendered": {
         "url": "https://moonn.ru/psypodgotovka1",
         "renderedStatus": "ok",
-        "titleRendered": "Психологическая подготовка к ОГЭ и ЕГЭ — Татьяна Мунн",
+        "titleRendered": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
         "h1CountRendered": 1,
         "h1Rendered": [
-          "Психологическая подготовка к экзаменам без паники"
+          "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ"
         ],
-        "jsonLdCountRendered": 5,
-        "answerBlockCountRendered": 0
+        "jsonLdCountRendered": 6,
+        "answerBlockCountRendered": 1,
+        "placeholderHitsRendered": []
       }
     },
     {
@@ -133,8 +136,8 @@
       "expectedTitle": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
       "expectedDescription": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
       "expectedH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
-      "title": "Консультации психолога в Москве и онлайн: психолог МГУ Татьяна Мунн",
-      "description": "Консультации психолога в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, в Москве и онлайн. Стресс, отношения, эмоции и личные состояния.",
+      "title": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+      "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
       "canonical": "https://moonn.ru/psiholog-konsultacii-moskva",
       "robots": "",
       "h1CountRaw": 2,
@@ -147,8 +150,6 @@
       "imagesMissingAltRaw": 13,
       "placeholderHitsRaw": [],
       "issues": [
-        "title_not_yet_updated",
-        "description_not_yet_updated",
         "raw_h1_count_not_one",
         "images_missing_alt"
       ],
@@ -156,13 +157,14 @@
       "rendered": {
         "url": "https://moonn.ru/psiholog-konsultacii-moskva",
         "renderedStatus": "ok",
-        "titleRendered": "Консультации психолога в Москве и онлайн: психолог МГУ Татьяна Мунн",
+        "titleRendered": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
         "h1CountRendered": 1,
         "h1Rendered": [
-          "Психологические Консультации в Москве\nПсихолог МГУ - Татьяна Мунн"
+          "Психолог в Москве и онлайн: консультации Татьяны Мунн"
         ],
-        "jsonLdCountRendered": 4,
-        "answerBlockCountRendered": 0
+        "jsonLdCountRendered": 5,
+        "answerBlockCountRendered": 1,
+        "placeholderHitsRendered": []
       }
     },
     {
@@ -174,8 +176,8 @@
       "expectedTitle": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
       "expectedDescription": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
       "expectedH1": "Отзывы о психологе Татьяне Мунн",
-      "title": "Отзывы о психологе Татьяне Мунн — проверяемые источники",
-      "description": "Отзывы о психологе Татьяне Мунн из проверяемых источников: подтверждения опыта Татьяны Мунн, отзывы, мероприятия, лекции и внешние источники для проверки.",
+      "title": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+      "description": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
       "canonical": "https://moonn.ru/otzivi",
       "robots": "",
       "h1CountRaw": 2,
@@ -188,8 +190,6 @@
       "imagesMissingAltRaw": 12,
       "placeholderHitsRaw": [],
       "issues": [
-        "title_not_yet_updated",
-        "description_not_yet_updated",
         "raw_h1_count_not_one",
         "images_missing_alt"
       ],
@@ -197,13 +197,14 @@
       "rendered": {
         "url": "https://moonn.ru/otzivi",
         "renderedStatus": "ok",
-        "titleRendered": "Отзывы о психологе Татьяне Мунн — проверяемые источники",
+        "titleRendered": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
         "h1CountRendered": 1,
         "h1Rendered": [
-          "ОТЗЫВЫ КЛИЕНТОВПсихолог Татьяна Мунн"
+          "Отзывы о психологе Татьяне Мунн"
         ],
-        "jsonLdCountRendered": 4,
-        "answerBlockCountRendered": 0
+        "jsonLdCountRendered": 5,
+        "answerBlockCountRendered": 1,
+        "placeholderHitsRendered": []
       }
     }
   ]
