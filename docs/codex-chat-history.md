@@ -1479,8 +1479,9 @@ Append-only project history for `moon-psy-site`.
 
 ## 2026-05-23 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit OK)
 
-- Ran: `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --rendered --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-23`.
+- Ran (non-rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --out-prefix moonn-five-page-seo-sprint-audit-2026-05-23`.
   - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-23.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-23.md`.
-- Verified (from this host): HTTP 200 for all five pages; in sitemap; robots not blocked; rendered H1 count = 1; answer block present on all pages.
+- Verified (from this host): HTTP 200 for all five pages; in sitemap; robots not blocked.
 - Remaining issues: raw HTML placeholders are still present on 2 pages (camp/gallery); missing `alt` on images remains across all five pages; both require explicit approval for Tilda source edits.
+- Blocker: rendered/DOM verification via Playwright is still not confirmed as working in this environment (2026-05-22 recorded Playwright `WinError 5`).
 - Next action (unchanged): proceed with scoped reindex of only `docs/moonn-five-page-reindex-urls-2026-05-21.txt` + sitemap if GSC/Yandex Webmaster access is available via API or authenticated Chrome GUI (no 83-URL batch).

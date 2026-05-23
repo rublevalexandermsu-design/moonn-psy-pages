@@ -31,7 +31,7 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 
 ## 2026-05-23 — Supervisor Run
 
-1. `OK` Live + rendered audit succeeded from this host: all 5 URLs returned HTTP 200, are in sitemap, and are not blocked by robots; rendered H1 count = 1 and AEO answer block present on all pages. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-23.json`.
-2. `P0` Intermittent access risk: 2026-05-22 live fetch failures/403 likely depended on environment/network/UA; keep daily monitoring and treat as a real risk until confirmed stable via authenticated Chrome GUI as well.
+1. `OK` Five-page non-rendered audit succeeded from this host: all 5 URLs returned HTTP 200, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-23.json`.
+2. `P0` Rendered verification remains unproven on this host: 2026-05-22 showed Playwright `WinError 5` and sandbox HTTP issues; keep treating rendered/DOM checks as GUI-only until Playwright is confirmed working.
 3. `P0` Source cleanup remains: raw HTML still contains placeholder strings on 2 pages (camp/gallery) and missing `alt` on images across all 5 pages; requires explicit approval for Tilda source edits.
-4. `P1` Tooling hardening: `scripts/moonn_five_page_seo_sprint_audit.py` now auto-falls back to the latest `docs/moonn-five-page-seo-packets-*.json` when today’s packet file is absent, to prevent daily supervisor runs from failing.
+4. `P1` MIIIIPS PR #11 deploy/merge verification is still blocked: the referenced PR number was not found in `rublevalexandermsu-design/moonn-psy-pages`; needs the correct repo link or a saved canonical PR URL in the registry.
