@@ -14,6 +14,28 @@ Append-only project history for `moon-psy-site`.
   - `docs/teen-psychology-camp-2026/tilda-page-final.html`
   - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
   - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+
+## 2026-05-23 — Moonn Teen Camp Offer Expansion From Competitor Benchmark
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: teen psychology camp Tilda page, conversion and parent-objection handling.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: user compared the page with a competitor flyer/site and asked to strengthen the teen camp offer, including neural-network practice, trust, parent-facing answers and visual non-text-heavy presentation.
+- Decision:
+  - Use competitor structure as a benchmark, not copy: broaden the offer from "psychology sessions" to a practical teen camp experience with soft skills, mini-projects, city tasks, AI literacy, parent reassurance and clear outcomes.
+  - Add neural-network practice only as an honest operational promise: participants use their own laptop if possible, and the block covers prompts, checking answers, mini-project ideas and digital safety.
+- Changed files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+- Live publication:
+  - Saved exact page HEAD for Tilda page `140348786` in project `8326812` through the Alexander/Rublev Chrome window.
+  - Published the Tilda page after HEAD save.
+- Verification:
+  - Raw live HTML returned HTTP `200`, contained commit `8c7debea81af22a73e618f9b84794693306190da` and loader version `20260523-offer-visual-ai`.
+  - Raw live HTML did not contain old technical/public-copy regression strings or old native placeholder `Book design is the art`.
+  - Browser DOM check reported `imgs=13/13 bad=0 miss=0 sections=7`.
+  - Visual scroll-through confirmed the new neural-network section, parent reassurance section, five-day program, trust section and FAQ are visible.
 - Live publication:
   - Saved exact page HEAD for Tilda page `140348786` in project `8326812` through the Alexander/Rublev Chrome window.
   - Published the Tilda page after HEAD save.
