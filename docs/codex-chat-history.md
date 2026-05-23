@@ -14,6 +14,14 @@ Append-only project history for `moon-psy-site`.
   - `docs/teen-psychology-camp-2026/tilda-page-final.html`
   - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
   - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+- Live publication:
+  - Saved exact page HEAD for Tilda page `140348786` in project `8326812` through the Alexander/Rublev Chrome window.
+  - Published the Tilda page after HEAD save.
+- Verification:
+  - Raw live HTML returned HTTP `200`, contained commit `28492062999fe4696ec584ceb8c5f4dac1434768` and loader version `20260523-visual-copy-fix`.
+  - Raw live HTML did not contain `Длинный день разбит`, `понятные блоки`, `Примерная логика`, `Мы обновили блок`, or old native placeholder `Book design is the art`.
+  - Browser DOM check reported `imgs=8/8 bad=0 miss=0 invisible=0`.
+  - Visual scroll-through confirmed the hero image, gallery images, daily rhythm block, and five-day program cards are visible.
 - Live verification:
   - Tilda page-specific HEAD was replaced with the current teen camp loader and page `140348786` was published.
   - Browser DOM check on `https://moonn.ru/podrostkovyy-lager-psihologiya?qa=after-head-replace-20260523` confirmed: `12-19`, lunch/break text, parent-presence answer and day-plan text are visible; `Book design is the art`, `Html code will be here`, `Your Name`, `Your Email`, `Payment method`, `Checkout` are not visible.
