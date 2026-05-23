@@ -22,6 +22,15 @@ Append-only project history for `moon-psy-site`.
   - The old five-page SEO runtime layer was still repainting the page after the camp loader. The page-specific HEAD was replaced instead of appended so the live DOM is controlled by the teen camp loader.
   - Raw Tilda HTML still contains legacy placeholder records and native cart labels below the loader; the rendered page is fixed, but a future stronger cleanup should replace/delete those native placeholder records in Tilda rather than relying only on the loader.
 
+### Native Placeholder Cleanup
+
+- Trigger: user approved removal of the old native Tilda placeholder records.
+- Action: deleted native records `rec2251668081` (`Book design is the art`), `rec2250975141` (`About design thinking`) and `rec2250898451` (`Html code will be here`) in the Tilda editor, then republished page `140348786`.
+- Boundary: preserved the native Tilda cart/payment record because it is required for the existing checkout flow.
+- Verification:
+  - Raw HTML check on `https://moonn.ru/podrostkovyy-lager-psihologiya?qa=raw-clean-native-20260523`: old placeholder texts and record ids are absent; cart marker remains present; current teen camp loader remains present.
+  - Rendered DOM check on `https://moonn.ru/podrostkovyy-lager-psihologiya?qa=dom-clean-native-20260523`: `12-19`, lunch/breaks, parent-presence answer and day-plan text are visible; placeholder texts are absent.
+
 ## 2026-05-03 — Paid Video Lectures On `events_tp`
 
 - Project: Moonn / Tilda site.
