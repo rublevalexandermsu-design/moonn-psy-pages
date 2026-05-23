@@ -1514,3 +1514,19 @@ Append-only project history for `moon-psy-site`.
 - Remaining issues: raw HTML placeholders are still present on 2 pages (camp/gallery); missing `alt` on images remains across all five pages; both require explicit approval for Tilda source edits.
 - Blocker: rendered/DOM verification via Playwright is still not confirmed as working in this environment (2026-05-22 recorded Playwright `WinError 5`).
 - Next action (unchanged): proceed with scoped reindex of only `docs/moonn-five-page-reindex-urls-2026-05-21.txt` + sitemap if GSC/Yandex Webmaster access is available via API or authenticated Chrome GUI (no 83-URL batch).
+
+## 2026-05-23 — Moonn Teen Camp Visual Regression Correction
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: teen psychology camp Tilda page, Timepad-facing copy follow-up.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: user reported that after the previous teen-camp page update most visual blocks lost images, the page contained internal/technical public copy, and the five-day program was described as approximate.
+- Incident:
+  - Symptom: live page screenshots showed blank visual areas after the first block and public copy such as "понятные блоки", "примерная логика", "мы обновили блок", and "готовые файлы для страницы".
+  - Root cause: the previous completion report relied on raw HTML and DOM text checks, but did not perform a full scroll-through visual QA pass after changing the Tilda loader/native records.
+  - Fix: restored the pre-regression page structure from the existing branch history, kept the original gallery assets, made reveal animation non-blocking by default, rewrote public copy, added a separate daily rhythm block with breaks and lunch, and renamed the five-day section to a direct program.
+  - Follow-up rule: for Tilda/frontend publication tasks, do not report ready until the live page has been checked across hero, gallery, program, pricing/payment, and footer by raw HTML, rendered DOM, and visual scroll-through.
+- Changed files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`

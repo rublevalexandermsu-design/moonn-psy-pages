@@ -156,12 +156,6 @@
     .day-tag { display:inline-flex;align-items:center;justify-content:center;min-width:88px;height:40px;border-radius:999px;background:#ebe6ff;color:#6e46c7;font-size:14px;font-weight:900;margin-bottom:14px; }
     .day-card h4 { margin:0 0 10px;font-size:22px;line-height:1.1;letter-spacing:-.02em; }
     .day-card p { margin:0;color:#65709a;font-size:16px;line-height:1.55; }
-    .daily-flow { display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start; }
-    .timeline { display:grid;gap:12px; }
-    .time-row { display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start;padding:16px 18px;border-radius:20px;background:rgba(255,255,255,.86);border:1px solid var(--line);box-shadow:var(--shadow); }
-    .time-row strong { color:#2439a7;font-size:17px;line-height:1.25; }
-    .time-row span { color:#65709a;font-size:17px;line-height:1.5; }
-    .faq-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px; }
 
     .pricing-wrap { display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch; }
     .pricing-card { position:relative;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(248,243,255,.95));border:1px solid rgba(126,98,186,.12);border-radius:28px;box-shadow:var(--shadow-hover); }
@@ -169,6 +163,10 @@
     .old-price { font-size:26px;color:#6a75a1;text-decoration:line-through;opacity:.9; }
     .list { margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px; }
     .list li { display:flex;gap:10px;align-items:flex-start;color:#64709a;font-size:18px;line-height:1.5; }
+    .day-rhythm { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .rhythm-item { display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start;padding:18px 20px;border-radius:20px;background:rgba(255,255,255,.86);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .rhythm-time { color:#1f42b8;font-size:15px;font-weight:900;line-height:1.35;white-space:nowrap; }
+    .rhythm-item p { margin:0;color:#65709a;font-size:16px;line-height:1.5; }
 
     .cta-box { position:relative;overflow:hidden;padding:34px;border-radius:34px;background:linear-gradient(135deg, rgba(48,73,201,.96), rgba(123,86,226,.95));color:#fff;box-shadow:0 22px 55px rgba(57,79,196,.22); }
     .cta-box::before { content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-60px;top:-60px;background:rgba(255,255,255,.11);filter:blur(8px); }
@@ -241,7 +239,7 @@
     }
     footer { padding:22px 0 40px;color:#7b81a4;font-size:15px; }
 
-    .reveal { opacity:0; transform:translateY(22px); transition:opacity .55s ease, transform .55s ease; }
+    .reveal { opacity:1; transform:none; transition:opacity .55s ease, transform .55s ease; }
     .reveal.visible { opacity:1; transform:none; }
 
     @media (max-width: 1100px) {
@@ -249,8 +247,6 @@
       .cards-4 { grid-template-columns:repeat(2,1fr); }
       .cards-5 { grid-template-columns:repeat(2,1fr); }
       .program { grid-template-columns:repeat(2,1fr); }
-      .daily-flow { grid-template-columns:1fr; }
-      .faq-grid { grid-template-columns:1fr; }
       .hero-visual { min-height:470px; }
       .hero-card { min-height:470px; }
     }
@@ -258,7 +254,8 @@
       .site-header .inner { padding:12px 0; align-items:flex-start; }
       .nav { display:none; }
       .cards-4, .cards-5, .program { grid-template-columns:1fr; }
-      .time-row { grid-template-columns:1fr; gap:6px; }
+      .day-rhythm { grid-template-columns:1fr; }
+      .rhythm-item { grid-template-columns:82px 1fr; }
       .gallery-grid { grid-template-columns:1fr; }
       .span-7,.span-5,.span-4,.span-8 { grid-column:span 1; }
       .speaker-card { position:static; margin:14px; max-width:none; }
@@ -268,7 +265,15 @@
     }
   </style>
 
-<div class="teen-camp-page">
+  <link rel="canonical" href="https://moonn.ru/podrostkovyy-lager-psihologiya" />
+  <meta property="og:title" content="Подростковый лагерь по психологии — Татьяна Мунн" />
+  <meta property="og:description" content="Городской психологический лагерь для подростков 6–10 июля: эмоции, общение, уверенность, безопасная камерная группа и практика с психологом Татьяной Мунн." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://moonn.ru/podrostkovyy-lager-psihologiya" />
+  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" />
+</head>
+<body>
+  <div class="teen-camp-page">
   <header class="site-header">
     <div class="wrap inner">
       <a class="brand" href="#top">
@@ -280,7 +285,6 @@
       </a>
       <nav class="nav">
         <a href="#program">Программа</a>
-        <a href="#day-format">День</a>
         <a href="#gallery">Фото</a>
         <a href="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать PDF</a>
         <a href="#signup" class="cta">Записаться</a>
@@ -292,7 +296,7 @@
     <section class="hero section">
       <div class="wrap hero-grid">
         <div class="reveal visible">
-          <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | подростки 12-19 лет | 10:00 - 18:00</div>
+          <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | понедельник - пятница | 10:00 - 18:00</div>
           <h1>Лето, которое помогает подростку понять себя и стать увереннее</h1>
           <p class="lead">Городской лагерь по психологии в центре Москвы, на Цветном бульваре. Небольшая камерная группа 3 - 5 человек, живая практика, общение, эмоции, уверенность в себе, навыки взаимодействия и безопасная поддерживающая атмосфера.</p>
           <div class="btns">
@@ -300,10 +304,11 @@
             <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Узнать про стоимость и рассрочку</a>
           </div>
           <ul class="hero-points">
-            <li><span class="check">✓</span>Камерная группа 3 - 5 подростков 12-19 лет</li>
+            <li><span class="check">✓</span>Камерная группа 3 - 5 подростков</li>
+            <li><span class="check">✓</span>Центр Москвы, Цветной бульвар</li>
             <li><span class="check">✓</span>В расписании есть перерывы и обеденное время</li>
             <li><span class="check">✓</span>Предзапись до 15 мая - 30 000 ₽</li>
-            <li><span class="check">✓</span>Присутствие родителей на занятиях не требуется</li>
+            <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
           </ul>
         </div>
         <div class="hero-visual reveal visible">
@@ -312,7 +317,7 @@
             <div class="overlay-top"></div>
             <div class="hero-label">
               <span>Цветной бульвар</span>
-              <span>12-19 лет</span>
+              <span>3 - 5 подростков</span>
               <span>Практика и общение</span>
             </div>
             <div class="floating-price">
@@ -335,9 +340,9 @@
       <div class="wrap">
         <div class="cards-4">
           <div class="card reveal">
-            <div class="metric">12-19</div>
-            <h3>Возраст участников</h3>
-            <p>Программа рассчитана на подростков примерно с 12 до 19 лет. Если участнику 12-13 или 18-19, можно заранее уточнить состав группы.</p>
+            <div class="metric">5</div>
+            <h3>Дней включённой практики</h3>
+            <p>Пять насыщенных дней, в которых подросток не просто слушает, а пробует, обсуждает, задаёт вопросы и получает опыт общения.</p>
           </div>
           <div class="card reveal">
             <div class="metric">3 - 5</div>
@@ -345,9 +350,9 @@
             <p>Камерный формат, где каждому подростку хватает внимания, контакта, поддержки и пространства раскрыться.</p>
           </div>
           <div class="card reveal">
-            <div class="metric">8</div>
-            <h3>Часов не подряд</h3>
-            <p>День длится с 10:00 до 18:00, но это не сплошная лекция: внутри есть смена формата, короткие паузы и обеденное время.</p>
+            <div class="metric">2</div>
+            <h3>Цены участия</h3>
+            <p>30 000 ₽ до 15 мая и 40 000 ₽ после. Возможна рассрочка по согласованию.</p>
           </div>
           <div class="card reveal">
             <div class="metric">1</div>
@@ -373,40 +378,11 @@
       </div>
     </section>
 
-    <section class="section" id="day-format">
-      <div class="wrap">
-        <p class="eyebrow">Как устроен день</p>
-        <h2 class="section-title">Длинный день разбит на понятные блоки</h2>
-        <p class="section-text">С 10:00 до 18:00 подростки не сидят семь-восемь часов подряд на лекции. День чередует обсуждения, упражнения, практику общения, прогулочные задания, паузы и обеденное время. Родителям не нужно присутствовать на занятиях: подросток участвует самостоятельно, а организационные вопросы можно уточнить до старта.</p>
-        <div class="daily-flow">
-          <div class="timeline">
-            <div class="time-row"><strong>10:00-10:20</strong><span>Сбор, мягкое включение, настрой на день и правила безопасного общения.</span></div>
-            <div class="time-row"><strong>10:20-11:30</strong><span>Тема дня: эмоции, уверенность, контакт, границы или самооценка.</span></div>
-            <div class="time-row"><strong>11:30-11:45</strong><span>Короткий перерыв, вода, отдых от интенсивного общения.</span></div>
-            <div class="time-row"><strong>11:45-13:00</strong><span>Практические упражнения, карточки, мини-разборы и работа в малой группе.</span></div>
-            <div class="time-row"><strong>13:00-14:00</strong><span>Обеденное время и спокойная пауза без учебной нагрузки.</span></div>
-          </div>
-          <div class="timeline">
-            <div class="time-row"><strong>14:00-15:15</strong><span>Городская или кабинетная практика: задания на общение и наблюдение за реакциями.</span></div>
-            <div class="time-row"><strong>15:15-15:30</strong><span>Перерыв и переключение формата.</span></div>
-            <div class="time-row"><strong>15:30-16:45</strong><span>Обсуждение опыта, ответы на вопросы, индивидуальные выводы участников.</span></div>
-            <div class="time-row"><strong>16:45-17:40</strong><span>Итоговое упражнение дня и закрепление навыка.</span></div>
-            <div class="time-row"><strong>17:40-18:00</strong><span>Завершение, короткая обратная связь, спокойный выход из программы.</span></div>
-          </div>
-        </div>
-        <div class="faq-grid" style="margin-top:18px;">
-          <div class="card reveal"><h3>Это точно для 12-19?</h3><p>Да, это подростковый формат для возраста примерно 12-19 лет. Состав группы небольшой, поэтому при пограничном возрасте лучше заранее написать организатору.</p></div>
-          <div class="card reveal"><h3>Будет ли обед?</h3><p>В расписании предусмотрено обеденное время и короткие перерывы. Это важно для внимания, энергии и спокойного участия подростков.</p></div>
-          <div class="card reveal"><h3>Родители присутствуют?</h3><p>На занятиях родители не присутствуют. Родитель помогает с записью, оплатой и организационными вопросами, а подросток участвует самостоятельно.</p></div>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="gallery">
       <div class="wrap">
         <p class="eyebrow">Визуально о формате</p>
         <h2 class="section-title">Как выглядит этот лагерь</h2>
-        <p class="section-text">Мы обновили блок с фотографиями так, чтобы он логично показывал разные моменты программы - знакомство, общение, задания, обсуждения, уличные практики и спокойную работу в малой группе.</p>
+        <p class="section-text">Формат сочетает кабинетную работу, упражнения в малой группе, городские задания, спокойные обсуждения и обратную связь.</p>
         <div class="gallery-grid">
           <article class="gallery-card span-7 reveal">
             <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/tatiana-moonn-teen-camp-city-communication.jpg" alt="Татьяна Мунн и подростки общаются в городской атмосфере" />
@@ -447,11 +423,31 @@
       </div>
     </section>
 
+    <section class="section" id="day">
+      <div class="wrap">
+        <p class="eyebrow">Как устроен день</p>
+        <h2 class="section-title">Ритм дня: занятия, отдых и обед</h2>
+        <p class="section-text">С 10:00 до 18:00 подростки не сидят весь день на лекции: темы сменяются упражнениями, обсуждениями, заданиями на общение, обедом и короткими паузами. Родители на занятиях не присутствуют; подросток участвует самостоятельно, а организационные вопросы можно уточнить до старта.</p>
+        <div class="day-rhythm">
+          <div class="rhythm-item"><div class="rhythm-time">10:00-10:20</div><p>Сбор, мягкое включение, настрой на день и правила безопасного общения.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">10:20-11:30</div><p>Тема дня: эмоции, уверенность, контакт, границы или самооценка.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:30-11:45</div><p>Короткий перерыв, вода и отдых от интенсивного общения.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:45-13:00</div><p>Практические упражнения, карточки, мини-разборы и работа в малой группе.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">13:00-14:00</div><p>Обеденное время и спокойная пауза без учебной нагрузки.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">14:00-15:15</div><p>Городская или кабинетная практика: задания на общение и наблюдение за реакциями.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">15:15-15:30</div><p>Перерыв и переключение перед второй частью дня.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">15:30-16:45</div><p>Обсуждение опыта, ответы на вопросы и индивидуальные выводы участников.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">16:45-17:40</div><p>Итоговое упражнение дня и закрепление навыка.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">17:40-18:00</div><p>Завершение, короткая обратная связь и спокойный выход из программы.</p></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="program">
       <div class="wrap">
         <p class="eyebrow">Программа лагеря</p>
-        <h2 class="section-title">Примерная логика 5 дней</h2>
-        <p class="section-text">Эта структура помогает родителю понять, что лагерь продуман не как набор случайных активностей, а как последовательный маршрут - от знакомства и включения до уверенности и навыков взаимодействия.</p>
+        <h2 class="section-title">Программа на 5 дней</h2>
+        <p class="section-text">Пять дней идут последовательно: знакомство и доверие, эмоции, общение и границы, уверенность, итоги и личные опоры.</p>
         <div class="program">
           <div class="day-card reveal">
             <div class="day-tag">День 1</div>
@@ -496,10 +492,9 @@
             <a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Обсудить рассрочку</a>
           </div>
           <ul class="list">
-            <li><span class="check">✓</span><span>Формат: городской лагерь с 6 по 10 июля, ежедневно с 10:00 до 18:00, с перерывами и обеденным временем.</span></li>
+            <li><span class="check">✓</span><span>Формат: городской лагерь с 6 по 10 июля, ежедневно с 10:00 до 18:00.</span></li>
             <li><span class="check">✓</span><span>Локация: центр Москвы, Цветной бульвар.</span></li>
-            <li><span class="check">✓</span><span>Группа: 3 - 5 подростков 12-19 лет в камерной атмосфере.</span></li>
-            <li><span class="check">✓</span><span>Присутствие родителей на занятиях не требуется.</span></li>
+            <li><span class="check">✓</span><span>Группа: 3 - 5 подростков в камерной атмосфере.</span></li>
             <li><span class="check">✓</span><span>После оплаты напишите в Telegram возраст подростка и ваши ожидания - мы сверим заявку и подтвердим участие.</span></li>
             <li><span class="check">✓</span><span>Перед оплатой можно уточнить детали участия и рассрочки. Обработка данных выполняется по <a href="/politic">политике сайта</a>.</span></li>
           </ul>
@@ -507,7 +502,7 @@
         <div class="pricing-card reveal">
           <p class="eyebrow">Материалы</p>
           <h3 style="margin:0 0 12px;font-size:34px;line-height:1.08;letter-spacing:-.03em;">Программа и постер лагеря</h3>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или сразу написать организатору, если нужно уточнить возраст, питание, перерывы и состав группы.</p>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или написать организатору, чтобы уточнить возраст, питание, перерывы и состав группы.</p>
           <div class="btns">
             <a class="btn ghost" href="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать программу PDF</a>
             <a class="btn secondary" href="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" download="poster.jpg">Скачать постер</a>
@@ -713,4 +708,4 @@
       }, true);
     })();
   </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Подростковый лагерь по психологии — Татьяна Мунн","description":"Городской подростковый лагерь по психологии для 12-19 лет: 6-10 июля, Цветной бульвар, камерная группа, практика общения, перерывы и обеденное время.","inLanguage":"ru-RU","typicalAgeRange":"12-19","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"30000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-05-15"}},{"@type":"FAQPage","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#faq","mainEntity":[{"@type":"Question","name":"Для какого возраста подростков этот лагерь?","acceptedAnswer":{"@type":"Answer","text":"Программа рассчитана на подростков примерно 12-19 лет. При пограничном возрасте можно заранее уточнить состав группы у организатора."}},{"@type":"Question","name":"День 10:00-18:00 проходит без перерывов?","acceptedAnswer":{"@type":"Answer","text":"Нет. День разбит на тематические блоки, практику, короткие паузы и обеденное время."}},{"@type":"Question","name":"Нужно ли присутствие родителей?","acceptedAnswer":{"@type":"Answer","text":"На занятиях родители не присутствуют. Подросток участвует самостоятельно, а родитель помогает с записью и организационными вопросами."}}]},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Подростковый лагерь по психологии — Татьяна Мунн","description":"Городской подростковый лагерь по психологии: 6–10 июля, Цветной бульвар, камерная группа, практика общения, эмоций и уверенности.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"30000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-05-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
