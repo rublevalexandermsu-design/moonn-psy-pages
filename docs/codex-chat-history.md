@@ -2,6 +2,26 @@
 
 Append-only project history for `moon-psy-site`.
 
+## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
+
+- Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.
+- Workstream: Moonn / teen psychology camp page `140348786`, branch `codex/moonn-seo-audit`.
+- Decisions:
+  - Keep the Moonn page as the existing paid teen psychology camp contour and answer the objection there without changing payment provider/settings.
+  - Add public-facing age, lunch/breaks, parent-presence and day-plan content; keep internal implementation notes out of visible text.
+  - Publish through authenticated Google Chrome for Rublev/Tilda, not through an unauthenticated Tilda login window.
+- Changed files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+- Live verification:
+  - Tilda page-specific HEAD was replaced with the current teen camp loader and page `140348786` was published.
+  - Browser DOM check on `https://moonn.ru/podrostkovyy-lager-psihologiya?qa=after-head-replace-20260523` confirmed: `12-19`, lunch/break text, parent-presence answer and day-plan text are visible; `Book design is the art`, `Html code will be here`, `Your Name`, `Your Email`, `Payment method`, `Checkout` are not visible.
+- Incident / follow-up:
+  - The first Tilda run used a non-authorized login window and failed to save HEAD. The corrected route used the already authorized Google Chrome profile.
+  - The old five-page SEO runtime layer was still repainting the page after the camp loader. The page-specific HEAD was replaced instead of appended so the live DOM is controlled by the teen camp loader.
+  - Raw Tilda HTML still contains legacy placeholder records and native cart labels below the loader; the rendered page is fixed, but a future stronger cleanup should replace/delete those native placeholder records in Tilda rather than relying only on the loader.
+
 ## 2026-05-03 — Paid Video Lectures On `events_tp`
 
 - Project: Moonn / Tilda site.
