@@ -1467,3 +1467,20 @@ Append-only project history for `moon-psy-site`.
   - Camp/consultations/reviews still have raw H1 issues, although rendered H1 is corrected.
 - Follow-up rule:
   - When authenticated Chrome is available, Tilda GUI fallback must be attempted before reporting blocker. If DevTools is unavailable, use verified address-bar `javascript:` execution or Tilda page-specific `editheadcode`/Ace editor flow, then verify live HTML and rendered browser output.
+
+## 2026-05-22 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Audit + Blockers)
+
+- Ran (non-rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --out-prefix moonn-five-page-seo-sprint-audit-2026-05-22`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-22.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-22.md`.
+- Blocker: `--rendered` fails in this environment (Playwright `WinError 5`, subprocess/pipes denied).
+- Blocker: sandbox HTTP fetch returned `http_ERROR` for all five URLs; Windows MCP lightweight fetch hit `403` for 4/5 URLs (non-browser access blocked), while `/otzivi` was fetchable.
+- Next action: run the rendered audit + robots/sitemap checks via authenticated Chrome GUI (Rublev profile), then proceed with scoped reindex submission of only `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (no 83-URL batch).
+- Risk flag: `/otzivi` public copy includes internal/technical explanatory paragraphs and placeholder-like blocks; keep in backlog until explicit approval for Tilda edits.
+
+## 2026-05-23 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit OK)
+
+- Ran: `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --rendered --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-23`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-23.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-23.md`.
+- Verified (from this host): HTTP 200 for all five pages; in sitemap; robots not blocked; rendered H1 count = 1; answer block present on all pages.
+- Remaining issues: raw HTML placeholders are still present on 2 pages (camp/gallery); missing `alt` on images remains across all five pages; both require explicit approval for Tilda source edits.
+- Next action (unchanged): proceed with scoped reindex of only `docs/moonn-five-page-reindex-urls-2026-05-21.txt` + sitemap if GSC/Yandex Webmaster access is available via API or authenticated Chrome GUI (no 83-URL batch).

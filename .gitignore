@@ -9,3 +9,8 @@ output/
 artifacts/
 tmp_*
 *.local.json
+
+# Local evidence screenshots (never commit; may contain private UI/account data)
+docs/teen-psychology-camp-2026/payment-after-setting-check.png
+docs/teen-psychology-camp-2026/payment-submit-test-check.png
+docs/teen-psychology-camp-2026/payment-ux-fix-check.png

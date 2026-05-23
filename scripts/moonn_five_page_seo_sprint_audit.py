@@ -6,6 +6,7 @@ import json
 import re
 import urllib.parse
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,15 +25,23 @@ HEADERS = {
 PLACEHOLDERS = ["Book design", "Your Name", "Your Email", "Html code will be here"]
 
 
-def fetch(url: str, timeout: int = 30) -> tuple[int | str, str]:
+def fetch(url: str, timeout: int = 30) -> tuple[int | None, str, str | None]:
     request = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             raw = response.read()
             charset = response.headers.get_content_charset() or "utf-8"
-            return response.status, raw.decode(charset, errors="replace")
+            return int(response.status), raw.decode(charset, errors="replace"), None
+    except urllib.error.HTTPError as exc:
+        try:
+            raw = exc.read()
+            charset = exc.headers.get_content_charset() if exc.headers else None
+            body = raw.decode(charset or "utf-8", errors="replace")
+        except Exception:  # noqa: BLE001
+            body = ""
+        return int(exc.code), body, f"HTTPError: {exc}"
     except Exception as exc:  # noqa: BLE001
-        return "ERROR", str(exc)
+        return None, "", str(exc)
 
 
 def visible_text(value: str) -> str:
@@ -60,29 +69,31 @@ def first_link(content: str, rel_value: str) -> str:
     return ""
 
 
-def sitemap_urls() -> set[str]:
-    status, body = fetch(SITEMAP_URL)
+def sitemap_urls() -> tuple[set[str] | None, str | None]:
+    status, body, error = fetch(SITEMAP_URL)
     if status != 200:
-        return set()
+        return None, error or f"status_{status}"
     root = ET.fromstring(body)
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    return {item.findtext("sm:loc", default="", namespaces=ns).strip() for item in root.findall("sm:url", ns)}
+    return ({item.findtext("sm:loc", default="", namespaces=ns).strip() for item in root.findall("sm:url", ns)}, None)
 
 
-def robots_disallows() -> list[str]:
-    status, body = fetch(ROBOTS_URL)
+def robots_disallows() -> tuple[list[str] | None, str | None]:
+    status, body, error = fetch(ROBOTS_URL)
     if status != 200:
-        return []
+        return None, error or f"status_{status}"
     rows: list[str] = []
     for line in body.splitlines():
         if line.lower().startswith("disallow:"):
             value = line.split(":", 1)[1].strip()
             if value:
                 rows.append(value)
-    return rows
+    return rows, None
 
 
-def robots_blocked(url: str, disallows: list[str]) -> bool:
+def robots_blocked(url: str, disallows: list[str] | None) -> bool | None:
+    if disallows is None:
+        return None
     path = urllib.parse.urlparse(url).path or "/"
     for rule in disallows:
         prefix = rule.rstrip("*")
@@ -91,21 +102,22 @@ def robots_blocked(url: str, disallows: list[str]) -> bool:
     return False
 
 
-def raw_audit_page(page: dict, sitemap: set[str], disallows: list[str]) -> dict:
+def raw_audit_page(page: dict, sitemap: set[str] | None, disallows: list[str] | None) -> dict:
     url = page["url"]
-    status, body = fetch(url)
+    status, body, error = fetch(url)
     item: dict = {
         "url": url,
         "pageId": page.get("sourcePageId", ""),
         "status": status,
-        "inSitemap": url in sitemap,
+        "inSitemap": (url in sitemap) if sitemap is not None else None,
         "robotsTxtBlocked": robots_blocked(url, disallows),
         "expectedTitle": page["seo"]["title"],
         "expectedDescription": page["seo"]["description"],
         "expectedH1": page["seo"]["h1"]["targetH1"],
     }
     if status != 200:
-        item["issues"] = [f"http_{status}"]
+        item["fetchError"] = error or "fetch_failed"
+        item["issues"] = [f"http_{status or 'ERROR'}"]
         return item
     title_match = re.search(r"<title[^>]*>(.*?)</title>", body, flags=re.I | re.S)
     title = visible_text(title_match.group(1)) if title_match else ""
@@ -134,9 +146,13 @@ def raw_audit_page(page: dict, sitemap: set[str], disallows: list[str]) -> dict:
         issues.append("images_missing_alt")
     if jsonld_count == 0:
         issues.append("missing_jsonld")
-    if item["robotsTxtBlocked"]:
+    if item["robotsTxtBlocked"] is None:
+        issues.append("robots_txt_unknown")
+    elif item["robotsTxtBlocked"]:
         issues.append("robots_txt_blocked")
-    if not item["inSitemap"]:
+    if item["inSitemap"] is None:
+        issues.append("sitemap_unknown")
+    elif not item["inSitemap"]:
         issues.append("not_in_sitemap")
     item.update(
         {
@@ -166,39 +182,42 @@ def rendered_audit(pages: list[dict]) -> list[dict]:
         return [{"url": page["url"], "renderedStatus": "skipped", "reason": f"playwright_unavailable: {exc}"} for page in pages]
 
     rows: list[dict] = []
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 1366, "height": 900})
-        for page in pages:
-            audit = {"url": page["url"], "renderedStatus": "ok"}
-            try:
-                browser_page = context.new_page()
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(viewport={"width": 1366, "height": 900})
+            for page in pages:
+                audit = {"url": page["url"], "renderedStatus": "ok"}
                 try:
-                    browser_page.goto(page["url"], wait_until="networkidle", timeout=45000)
-                except Exception:
-                    browser_page.goto(page["url"], wait_until="domcontentloaded", timeout=45000)
-                    browser_page.wait_for_timeout(5000)
-                h1_values = [text.strip() for text in browser_page.locator("h1").all_inner_texts() if text.strip()]
-                schema_count = browser_page.locator('script[type="application/ld+json"]').count()
-                answer_block_count = browser_page.locator("#moonn-five-page-answer-block").count()
-                body_text = browser_page.locator("body").inner_text(timeout=10000)
-                rendered_placeholders = [text for text in PLACEHOLDERS if text in body_text]
-                audit.update(
-                    {
-                        "titleRendered": browser_page.title(),
-                        "h1CountRendered": len(h1_values),
-                        "h1Rendered": h1_values,
-                        "jsonLdCountRendered": schema_count,
-                        "answerBlockCountRendered": answer_block_count,
-                        "placeholderHitsRendered": rendered_placeholders,
-                    }
-                )
-                browser_page.close()
-            except Exception as exc:  # noqa: BLE001
-                audit.update({"renderedStatus": "error", "error": str(exc)})
-            rows.append(audit)
-        context.close()
-        browser.close()
+                    browser_page = context.new_page()
+                    try:
+                        browser_page.goto(page["url"], wait_until="networkidle", timeout=45000)
+                    except Exception:
+                        browser_page.goto(page["url"], wait_until="domcontentloaded", timeout=45000)
+                        browser_page.wait_for_timeout(5000)
+                    h1_values = [text.strip() for text in browser_page.locator("h1").all_inner_texts() if text.strip()]
+                    schema_count = browser_page.locator('script[type="application/ld+json"]').count()
+                    answer_block_count = browser_page.locator("#moonn-five-page-answer-block").count()
+                    body_text = browser_page.locator("body").inner_text(timeout=10000)
+                    rendered_placeholders = [text for text in PLACEHOLDERS if text in body_text]
+                    audit.update(
+                        {
+                            "titleRendered": browser_page.title(),
+                            "h1CountRendered": len(h1_values),
+                            "h1Rendered": h1_values,
+                            "jsonLdCountRendered": schema_count,
+                            "answerBlockCountRendered": answer_block_count,
+                            "placeholderHitsRendered": rendered_placeholders,
+                        }
+                    )
+                    browser_page.close()
+                except Exception as exc:  # noqa: BLE001
+                    audit.update({"renderedStatus": "error", "error": str(exc)})
+                rows.append(audit)
+            context.close()
+            browser.close()
+    except Exception as exc:  # noqa: BLE001
+        return [{"url": page["url"], "renderedStatus": "skipped", "reason": f"playwright_failed: {exc}"} for page in pages]
     return rows
 
 
@@ -214,11 +233,16 @@ def write_markdown(path: Path, payload: dict) -> None:
     ]
     for page in payload["pages"]:
         issues = ", ".join(f"`{issue}`" for issue in page.get("issues", [])) or "`ok`"
+        fetch_error = (page.get("fetchError") or "").strip()
+        fetch_error_line = ""
+        if fetch_error and page.get("status") != 200:
+            fetch_error_line = f"- Fetch error: `{fetch_error[:160]}`"
         lines.extend(
             [
                 f"### {page['url']}",
                 "",
                 f"- HTTP: `{page['status']}`",
+                *( [fetch_error_line] if fetch_error_line else [] ),
                 f"- Sitemap: `{page['inSitemap']}`",
                 f"- Robots blocked: `{page['robotsTxtBlocked']}`",
                 f"- Raw H1 count: `{page.get('h1CountRaw')}`",
@@ -234,6 +258,18 @@ def write_markdown(path: Path, payload: dict) -> None:
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def resolve_packet_path(packet_arg: str) -> Path:
+    packet_path = (ROOT / packet_arg).resolve()
+    if packet_path.exists():
+        return packet_path
+
+    candidates = sorted(DOCS.glob("moonn-five-page-seo-packets-*.json"), key=lambda p: p.name)
+    if candidates:
+        return candidates[-1].resolve()
+
+    raise FileNotFoundError(f"Packet not found: {packet_arg}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Audit the five Moonn SEO sprint URLs.")
     parser.add_argument("--packet", default=str(DEFAULT_PACKET.relative_to(ROOT)))
@@ -241,10 +277,10 @@ def main() -> int:
     parser.add_argument("--out-prefix", default=f"moonn-five-page-seo-sprint-audit-{TODAY}")
     args = parser.parse_args()
 
-    packet_path = ROOT / args.packet
+    packet_path = resolve_packet_path(args.packet)
     packet = json.loads(packet_path.read_text(encoding="utf-8"))
-    sitemap = sitemap_urls()
-    disallows = robots_disallows()
+    sitemap, sitemap_error = sitemap_urls()
+    disallows, robots_error = robots_disallows()
     pages = [raw_audit_page(page, sitemap, disallows) for page in packet["pages"]]
     rendered_rows = rendered_audit(packet["pages"]) if args.rendered else []
     rendered_by_url = {row["url"]: row for row in rendered_rows}
@@ -256,10 +292,17 @@ def main() -> int:
         "runDate": TODAY,
         "createdAt": datetime.now(timezone.utc).isoformat(),
         "packet": str(packet_path.relative_to(ROOT)),
+        "inputs": {
+            "sitemapUrl": SITEMAP_URL,
+            "robotsUrl": ROBOTS_URL,
+            "sitemapFetchError": sitemap_error,
+            "robotsFetchError": robots_error,
+        },
         "pages": pages,
     }
-    json_path = DOCS / f"{args.out_prefix}.json"
-    md_path = DOCS / f"{args.out_prefix}.md"
+    out_prefix = Path(args.out_prefix).name
+    json_path = DOCS / f"{out_prefix}.json"
+    md_path = DOCS / f"{out_prefix}.md"
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_markdown(md_path, payload)
     print(json.dumps({"json": str(json_path.relative_to(ROOT)), "md": str(md_path.relative_to(ROOT)), "pages": len(pages)}, ensure_ascii=False))
