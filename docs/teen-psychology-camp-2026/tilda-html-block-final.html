@@ -137,6 +137,44 @@
 
     .section-title { margin:0 0 10px;font-size:clamp(34px,4vw,58px);line-height:1.02;letter-spacing:-.04em; }
     .section-text { margin:0 0 24px;color:#65709a;font-size:20px;line-height:1.65;max-width:840px; }
+    .feature-split { display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch; }
+    .feature-copy { display:flex;flex-direction:column;justify-content:center;min-height:460px; }
+    .feature-visual { position:relative;min-height:460px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow-hover);border:1px solid rgba(255,255,255,.72);background:#fff; }
+    .feature-visual img { width:100%;height:100%;object-fit:cover;display:block; }
+    .visual-shade { position:absolute;inset:0;background:linear-gradient(180deg, rgba(25,28,72,.04) 10%, rgba(25,28,72,.56) 100%); }
+    .visual-note { position:absolute;left:22px;right:22px;bottom:22px;padding:18px;border-radius:24px;background:rgba(255,255,255,.92);box-shadow:0 18px 42px rgba(30,33,80,.16); }
+    .visual-note strong { display:block;font-size:23px;line-height:1.1;margin-bottom:8px; }
+    .visual-note span { display:block;color:#65709a;font-size:16px;line-height:1.45; }
+    .skill-flow { display:grid;gap:12px;margin-top:20px; }
+    .skill-row { display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;padding:15px 16px;border-radius:20px;background:rgba(255,255,255,.84);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .skill-icon { width:42px;height:42px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:#ebe6ff;color:#6e46c7;font-weight:900;font-size:20px; }
+    .skill-row strong { display:block;font-size:18px;line-height:1.2;margin-bottom:4px; }
+    .skill-row span { display:block;color:#65709a;font-size:15px;line-height:1.45; }
+    .parent-panel { display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch; }
+    .parent-facts { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .fact-tile { padding:18px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .fact-tile b { display:block;color:#1b2a73;font-size:25px;line-height:1;margin-bottom:8px; }
+    .fact-tile span { display:block;color:#65709a;font-size:15px;line-height:1.45; }
+    .ai-lab { display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:28px;border-radius:34px;background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(233,244,255,.94));border:1px solid rgba(95,127,220,.16);box-shadow:var(--shadow-hover); }
+    .ai-screen { position:relative;min-height:420px;border-radius:28px;overflow:hidden;background:#111a3a;box-shadow:0 24px 58px rgba(33,45,105,.24); }
+    .ai-screen img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.56; }
+    .laptop-ui { position:absolute;left:8%;right:8%;bottom:10%;padding:18px;border-radius:22px;background:rgba(12,18,42,.88);border:1px solid rgba(255,255,255,.18);box-shadow:0 20px 50px rgba(0,0,0,.26);color:#fff; }
+    .ui-bar { display:flex;gap:7px;margin-bottom:14px; }
+    .ui-bar span { width:10px;height:10px;border-radius:50%;background:#ff6f91; }
+    .ui-bar span:nth-child(2){background:#ffd166;} .ui-bar span:nth-child(3){background:#55d6be;}
+    .prompt-line { padding:10px 12px;margin:8px 0;border-radius:12px;background:rgba(255,255,255,.09);font-size:14px;line-height:1.45; }
+    .prompt-line.accent { background:linear-gradient(135deg, rgba(95,206,255,.24), rgba(181,117,255,.22)); }
+    .trust-band { display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:stretch; }
+    .trust-photo { position:relative;border-radius:34px;overflow:hidden;min-height:430px;box-shadow:var(--shadow-hover); }
+    .trust-photo img { width:100%;height:100%;object-fit:cover;display:block; }
+    .trust-list { display:grid;gap:14px;align-content:center; }
+    .trust-item { padding:18px 20px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .trust-item strong { display:block;font-size:21px;line-height:1.15;margin-bottom:6px; }
+    .trust-item span { display:block;color:#65709a;font-size:16px;line-height:1.5; }
+    .faq-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .faq-item { padding:20px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .faq-item strong { display:block;font-size:20px;line-height:1.2;margin-bottom:8px; }
+    .faq-item p { margin:0;color:#65709a;font-size:16px;line-height:1.55; }
 
     .gallery-grid { display:grid;grid-template-columns:repeat(12,1fr);gap:18px; }
     .gallery-card { position:relative;overflow:hidden;border-radius:28px;min-height:290px;background:#fff;box-shadow:var(--shadow-hover);border:1px solid rgba(255,255,255,.6); }
@@ -244,6 +282,7 @@
 
     @media (max-width: 1100px) {
       .hero-grid, .pricing-wrap { grid-template-columns:1fr; }
+      .feature-split, .ai-lab, .parent-panel, .trust-band { grid-template-columns:1fr; }
       .cards-4 { grid-template-columns:repeat(2,1fr); }
       .cards-5 { grid-template-columns:repeat(2,1fr); }
       .program { grid-template-columns:repeat(2,1fr); }
@@ -254,6 +293,7 @@
       .site-header .inner { padding:12px 0; align-items:flex-start; }
       .nav { display:none; }
       .cards-4, .cards-5, .program { grid-template-columns:1fr; }
+      .parent-facts, .faq-grid { grid-template-columns:1fr; }
       .day-rhythm { grid-template-columns:1fr; }
       .rhythm-item { grid-template-columns:82px 1fr; }
       .gallery-grid { grid-template-columns:1fr; }
@@ -285,8 +325,10 @@
       </a>
       <nav class="nav">
         <a href="#program">Программа</a>
+        <a href="#day">День</a>
+        <a href="#ai">Нейросети</a>
+        <a href="#parents">Родителям</a>
         <a href="#gallery">Фото</a>
-        <a href="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать PDF</a>
         <a href="#signup" class="cta">Записаться</a>
       </nav>
     </div>
@@ -306,6 +348,7 @@
           <ul class="hero-points">
             <li><span class="check">✓</span>Камерная группа 3 - 5 подростков</li>
             <li><span class="check">✓</span>Центр Москвы, Цветной бульвар</li>
+            <li><span class="check">✓</span>Общение, уверенность, проекты и основы работы с нейросетями</li>
             <li><span class="check">✓</span>В расписании есть перерывы и обеденное время</li>
             <li><span class="check">✓</span>Предзапись до 15 мая - 30 000 ₽</li>
             <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
@@ -378,6 +421,27 @@
       </div>
     </section>
 
+    <section class="section" id="activities">
+      <div class="wrap feature-split">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Что подросток делает</p>
+          <h2 class="section-title">Не просто слушает, а пробует вживую</h2>
+          <p class="section-text">Каждый день построен вокруг практики: подростки общаются, обсуждают ситуации, делают упражнения, пробуют мини-проекты и тренируют навык проявляться без давления.</p>
+          <div class="skill-flow">
+            <div class="skill-row"><div class="skill-icon">1</div><div><strong>Командное общение</strong><span>Учимся договариваться, слышать другого и говорить о себе спокойнее.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">2</div><div><strong>Мини-проекты и идеи</strong><span>Подросток пробует оформить мысль, предложить решение и представить его группе.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">3</div><div><strong>Городские задания</strong><span>Практика выходит за пределы кабинета: наблюдение, контакт, уверенность в реальной среде.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">4</div><div><strong>Обратная связь</strong><span>Участник получает бережные выводы о своих сильных сторонах и точках роста.</span></div></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-camp-social-skills-city-practice.jpg" alt="Подростки выполняют городское задание и тренируют общение" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Soft skills в реальной жизни</strong><span>Общение, уверенность, умение договориться, выступить и не бояться проявляться.</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="gallery">
       <div class="wrap">
         <p class="eyebrow">Визуально о формате</p>
@@ -423,6 +487,32 @@
       </div>
     </section>
 
+    <section class="section" id="ai">
+      <div class="wrap">
+        <div class="ai-lab reveal">
+          <div>
+            <p class="eyebrow">Нейросети и цифровая грамотность</p>
+            <h2 class="section-title">Покажем, как использовать ИИ для идей и проектов</h2>
+            <p class="section-text">В программу добавлен практический блок по нейросетям: подростки учатся формулировать запрос, проверять ответ, улучшать идею и использовать ИИ как помощника, а не как замену собственному мышлению.</p>
+            <ul class="list">
+              <li><span class="check">✓</span><span>Работа проходит на личном ноутбуке участника, если есть возможность принести его на занятие.</span></li>
+              <li><span class="check">✓</span><span>Разбираем запросы для учебных идей, презентаций, мини-проектов и творческих задач.</span></li>
+              <li><span class="check">✓</span><span>Отдельно обсуждаем цифровую безопасность: что нельзя отправлять в нейросети и как проверять результат.</span></li>
+            </ul>
+          </div>
+          <div class="ai-screen" aria-label="Подросток работает с нейросетями на ноутбуке">
+            <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-camp-psychology-workshop-cabinet.jpg" alt="Подростки за рабочим столом на практическом занятии" />
+            <div class="laptop-ui">
+              <div class="ui-bar"><span></span><span></span><span></span></div>
+              <div class="prompt-line">Задача: придумать идею мини-проекта для подростковой команды</div>
+              <div class="prompt-line accent">ИИ помогает собрать варианты, а решение принимает участник</div>
+              <div class="prompt-line">Проверка: что полезно, что спорно, что нужно уточнить</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="day">
       <div class="wrap">
         <p class="eyebrow">Как устроен день</p>
@@ -439,6 +529,27 @@
           <div class="rhythm-item"><div class="rhythm-time">15:30-16:45</div><p>Обсуждение опыта, ответы на вопросы и индивидуальные выводы участников.</p></div>
           <div class="rhythm-item"><div class="rhythm-time">16:45-17:40</div><p>Итоговое упражнение дня и закрепление навыка.</p></div>
           <div class="rhythm-item"><div class="rhythm-time">17:40-18:00</div><p>Завершение, короткая обратная связь и спокойный выход из программы.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parents">
+      <div class="wrap parent-panel">
+        <div class="feature-visual reveal">
+          <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/tatiana-moonn-teen-camp-cafe-reflection.jpg" alt="Спокойное обсуждение и обратная связь в подростковой группе" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Родитель понимает формат заранее</strong><span>Возраст, ритм дня, самостоятельное участие, паузы и обратная связь не спрятаны в переписке.</span></div>
+        </div>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Что важно родителям</p>
+          <h2 class="section-title">Без ощущения, что ребёнка оставляют на 8 часов одного</h2>
+          <p class="section-text">Программа камерная и сопровождаемая. До старта можно написать возраст подростка и особенности, которые важно учитывать, чтобы понять, подходит ли группа.</p>
+          <div class="parent-facts">
+            <div class="fact-tile"><b>12-19</b><span>Возраст участников. При пограничном возрасте лучше заранее обсудить состав группы.</span></div>
+            <div class="fact-tile"><b>3-5</b><span>Камерная группа, где ведущая видит каждого подростка.</span></div>
+            <div class="fact-tile"><b>10-18</b><span>День включает практику, паузы, прогулочные задания и обеденное время.</span></div>
+            <div class="fact-tile"><b>0</b><span>Родителям не нужно присутствовать на занятиях: подросток участвует самостоятельно.</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -474,6 +585,56 @@
             <h4>Итоги и опора на будущее</h4>
             <p>Подведение итогов, личные выводы подростка, фиксация полезных навыков и того, что можно унести с собой дальше.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="outcome">
+      <div class="wrap feature-split">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">С чем подросток уходит</p>
+          <h2 class="section-title">Личные выводы, уверенность и опыт проявляться</h2>
+          <p class="section-text">Цель лагеря - не выдать подростку набор красивых фраз, а дать опыт: как говорить, как понимать своё состояние, как включаться в группу и как пользоваться новыми инструментами без тревоги.</p>
+          <div class="skill-flow">
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Понимание своих эмоций</strong><span>Подросток лучше замечает, что с ним происходит, и может говорить об этом спокойнее.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Навык общения</strong><span>Больше практики диалога, границ, договорённостей и выступления в малой группе.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Опора на себя</strong><span>Участник фиксирует личные выводы и упражнения, к которым можно возвращаться после лагеря.</span></div></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/teen-camp-group-activities-soft-skills.jpg" alt="Подростки обсуждают итоги и навыки после практики" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Финальный день закрепляет результат</strong><span>Итоги, личные выводы, обратная связь и план, что взять с собой дальше.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="wrap trust-band">
+        <div class="trust-photo reveal">
+          <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/tatiana-moonn-psychologist-msu-teen-camp-author.jpg" alt="Татьяна Мунн ведёт подростковый лагерь по психологии" />
+        </div>
+        <div class="trust-list reveal">
+          <p class="eyebrow">Кто ведёт лагерь</p>
+          <h2 class="section-title">Татьяна Мунн ведёт программу лично</h2>
+          <div class="trust-item"><strong>Психолог МГУ</strong><span>Профессиональная психологическая база и опыт работы с темами эмоций, общения, самооценки и уверенности.</span></div>
+          <div class="trust-item"><strong>Автор метода «Быстрая психология»</strong><span>Формат строится вокруг понятной практики, коротких разборов и действий, которые подростку легче применить в жизни.</span></div>
+          <div class="trust-item"><strong>Камерная группа вместо потока</strong><span>Небольшое количество участников позволяет держать контакт, темп и безопасную атмосферу.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <p class="eyebrow">Ответы на частые вопросы</p>
+        <h2 class="section-title">Перед записью</h2>
+        <div class="faq-grid">
+          <div class="faq-item"><strong>7 часов - это не слишком много?</strong><p>День не состоит из длинных лекций. Форматы сменяются: обсуждение, практика, паузы, обеденное время, прогулочные задания и обратная связь.</p></div>
+          <div class="faq-item"><strong>Будет ли обед?</strong><p>В расписании заложено обеденное время с 13:00 до 14:00. Детали по питанию лучше уточнить перед стартом, чтобы учесть особенности подростка.</p></div>
+          <div class="faq-item"><strong>Нужно ли родителям быть рядом?</strong><p>Нет. Родители помогают с записью и организационными вопросами, а подросток участвует в программе самостоятельно.</p></div>
+          <div class="faq-item"><strong>Что если подросток стесняется?</strong><p>Камерная группа и мягкий вход помогают включаться постепенно. Никого не заставляют выступать резко или через давление.</p></div>
+          <div class="faq-item"><strong>Нужен ли ноутбук для нейросетей?</strong><p>Если есть возможность, подросток может принести свой ноутбук для практического блока. Если такой возможности нет, напишите заранее - подскажем, как лучше организовать участие.</p></div>
+          <div class="faq-item"><strong>Как понять, подходит ли группа?</strong><p>Напишите возраст подростка, что сейчас важно развить и какие есть особенности. Мы сверим ожидания с форматом программы.</p></div>
         </div>
       </div>
     </section>
