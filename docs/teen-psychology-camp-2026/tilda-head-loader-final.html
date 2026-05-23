@@ -7,7 +7,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>
 (function() {
-  var pageUrl = 'https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@codex%2Fmoonn-seo-audit/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260523-age-breaks-lunch';
+  var pageUrl = 'https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@c03ab37dd667e232dc3536674d22e0c2783ef54b/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260523-age-breaks-lunch';
   function copyAttrs(from, to) {
     Array.prototype.slice.call(from.attributes || []).forEach(function(attr) {
       if (attr.name !== 'id') to.setAttribute(attr.name, attr.value);
@@ -29,8 +29,9 @@
     });
   }
   function mount(html) {
-    if (!document.body || document.body.dataset.teenCampMounted === '1') return;
+    if (!document.body) return;
     document.body.dataset.teenCampMounted = '1';
+    document.body.dataset.teenCampMountedVersion = '20260523-age-breaks-lunch';
     var parsed = new DOMParser().parseFromString(html, 'text/html');
     var style = parsed.querySelector('style');
     if (style) {
@@ -65,10 +66,15 @@
     });
     bootCart();
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { fetch(pageUrl).then(function(r) { return r.text(); }).then(mount); });
-  } else {
+  function loadAndMount() {
     fetch(pageUrl).then(function(r) { return r.text(); }).then(mount);
   }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadAndMount);
+  } else {
+    loadAndMount();
+  }
+  setTimeout(loadAndMount, 1200);
+  setTimeout(loadAndMount, 3500);
 })();
 </script>
