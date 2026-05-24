@@ -35,3 +35,11 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 2. `P0` Rendered verification remains unproven on this host: 2026-05-22 showed Playwright `WinError 5` and sandbox HTTP issues; keep treating rendered/DOM checks as GUI-only until Playwright is confirmed working.
 3. `P0` Source cleanup remains: raw HTML still contains placeholder strings on 2 pages (camp/gallery) and missing `alt` on images across all 5 pages; requires explicit approval for Tilda source edits.
 4. `P1` MIIIIPS PR #11 deploy/merge verification is still blocked: the referenced PR number was not found in `rublevalexandermsu-design/moonn-psy-pages`; needs the correct repo link or a saved canonical PR URL in the registry.
+
+## 2026-05-24 — Supervisor Run
+
+1. `OK` Five-page rendered audit is now working from this host and produced dated evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-24.json` + `.md`.
+2. `P0` Source cleanup still remains (approval-gated): placeholder strings detected on camp/gallery; missing image `alt` detected across all five pages (counts are in the 2026-05-24 audit).
+3. `P0` Analytics access is still missing: no API exports were found/verified for Yandex.Metrika counter `96397286`, Yandex Webmaster, or Google Search Console (requires authenticated Chrome GUI run in Rublev profile, or an approved export).
+4. `P1` Reindex follow-up is still pending: re-check GSC sitemap last-read/status and Pages indexing, plus Yandex indexing statuses (do not resubmit 83 URLs daily; re-submit only failed URLs after statuses are observed).
+5. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: needs a canonical PR URL (repo + PR link) or a saved registry pointer.

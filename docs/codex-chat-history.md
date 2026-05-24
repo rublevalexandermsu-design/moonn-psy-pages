@@ -1560,3 +1560,21 @@ Append-only project history for `moon-psy-site`.
   - `docs/teen-psychology-camp-2026/tilda-page-final.html`
   - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
   - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+
+## 2026-05-24 09:30 MSK — Supervisor Run: SEO/AEO + Analytics/Privacy Blockers
+
+- Workstream: Moonn SEO/AEO + privacy supervisor (limited, low-risk).
+- Branch: `codex/moonn-seo-supervisor-20260524` (scoped daily branch from `origin/codex/moonn-seo-audit`).
+- Verified (live HTTP, no DOM/GUI credentials used):
+  - `https://moonn.ru/`, `https://moonn.ru/events_tp`, `https://moonn.ru/lectures1`, `https://moonn.ru/psiholog-konsultacii-moskva` return HTTP `200`.
+  - `https://moonn.ru/sitemap.xml` returns HTTP `200` and contains the four priority URLs above.
+  - `https://moonn.ru/robots.txt` returns HTTP `200`.
+- Verified (five-page sprint, rendered audit from this host):
+  - Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-24.json` and `docs/moonn-five-page-seo-sprint-audit-2026-05-24.md`.
+  - All 5 scoped pages return `200`, are in sitemap, are not robots-blocked; rendered H1 = `1` on all 5.
+  - Remaining issues are approval-gated: missing image `alt` and placeholder strings detected by the audit on some pages.
+- Blockers:
+  - Analytics/growth (required for SEO success claims) is still not verified: no API exports or authenticated GUI screenshots were collected for Yandex.Metrika counter `96397286`, Yandex Webmaster, or Google Search Console in this run.
+  - MIIIIPS PR #11 deploy/merge verification is still blocked: canonical PR URL (repo+PR link) is not recorded in the repo docs/registry.
+- Deferred by policy:
+  - Weekly privacy/RKN layer is scheduled for Monday (next: 2026-05-25 MSK) unless explicitly requested; do not publish legal text changes without approval.
