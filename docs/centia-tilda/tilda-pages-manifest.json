@@ -1,0 +1,91 @@
+{
+  "scope": "centia_tilda_publication_artifacts",
+  "asset_ref": "codex%2Fstudia",
+  "asset_cdn_base": "https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@codex%2Fstudia",
+  "pages": [
+    {
+      "source": "dist/centia/contacts.html",
+      "block": "docs/centia-tilda/contacts-tilda-html-block.html",
+      "title": "Контакты студии Центия у Марьиной Рощи",
+      "description": "Контакты студии Центия: Москва, рядом с парком Фестивальный и метро Марьина Роща, запись на группы и пробные встречи.",
+      "recommended_alias": "fnt-kontakty"
+    },
+    {
+      "source": "dist/centia/deti-7-10.html",
+      "block": "docs/centia-tilda/deti-7-10-tilda-html-block.html",
+      "title": "Эмоции и общение для детей 7-10 лет | Центия",
+      "description": "Мягкая психологическая группа для детей 7-10 лет: эмоции, дружба, общение, просьбы, договоренности и уверенность в группе.",
+      "recommended_alias": "fnt-deti-7-10"
+    },
+    {
+      "source": "dist/centia/index.html",
+      "block": "docs/centia-tilda/index-tilda-html-block.html",
+      "title": "Центия — психологические группы для детей и взрослых в Марьиной Роще",
+      "description": "Студия Центия в Москве рядом с Марьиной Рощей: психологические группы для детей, подростков, родителей и взрослых, расписание, бронь и контакты.",
+      "recommended_alias": "fnt"
+    },
+    {
+      "source": "dist/centia/o-tatyane.html",
+      "block": "docs/centia-tilda/o-tatyane-tilda-html-block.html",
+      "title": "Татьяна Мунн — психолог МГУ, основатель студии Центия",
+      "description": "Татьяна Мунн: психолог МГУ, эксперт по психологии эмоций и состояний, автор метода «Быстрая психология» и основатель Центии.",
+      "recommended_alias": "fnt-o-tatyane"
+    },
+    {
+      "source": "dist/centia/oplata.html",
+      "block": "docs/centia-tilda/oplata-tilda-html-block.html",
+      "title": "Бронь и стоимость занятий | Центия",
+      "description": "Стоимость пробных встреч, разовых занятий, абонементов и брони места в психологических группах студии Центия.",
+      "recommended_alias": "fnt-bron"
+    },
+    {
+      "source": "dist/centia/podrostki-11-13.html",
+      "block": "docs/centia-tilda/podrostki-11-13-tilda-html-block.html",
+      "title": "Общение и уверенность для подростков 11-13 лет | Центия",
+      "description": "Подростковая группа 11-13 лет в студии Центия: общение, уверенность, дружба, обиды, конфликты и страх оценки.",
+      "recommended_alias": "fnt-podrostki-11-13"
+    },
+    {
+      "source": "dist/centia/podrostki-14-16.html",
+      "block": "docs/centia-tilda/podrostki-14-16-tilda-html-block.html",
+      "title": "Самооценка, тревога и общение для подростков 14-16 лет | Центия",
+      "description": "Главная подростковая группа Центии для 14-16 лет: самооценка, тревога, общение, конфликты, одиночество и мягкая практика контакта.",
+      "recommended_alias": "fnt-podrostki-14-16"
+    },
+    {
+      "source": "dist/centia/podrostki-15-17.html",
+      "block": "docs/centia-tilda/podrostki-15-17-tilda-html-block.html",
+      "title": "Стресс, экзамены и выбор будущего 15-17 лет | Центия",
+      "description": "Группа для подростков 15-17 лет: стресс перед экзаменами, тревога, прокрастинация, сильные стороны и выбор будущего.",
+      "recommended_alias": "fnt-podrostki-15-17"
+    },
+    {
+      "source": "dist/centia/prostranstvo.html",
+      "block": "docs/centia-tilda/prostranstvo-tilda-html-block.html",
+      "title": "Пространство студии Центия у Марьиной Рощи",
+      "description": "Светлая трансформируемая студия 30 м² у Марьиной Рощи: круг на пуфах, лекции, тренинги, мягкие практики и группы.",
+      "recommended_alias": "fnt-prostranstvo"
+    },
+    {
+      "source": "dist/centia/raspisanie.html",
+      "block": "docs/centia-tilda/raspisanie-tilda-html-block.html",
+      "title": "Расписание групп Центии на сентябрь и октябрь",
+      "description": "Расписание психологических групп Центии: дети 7-10, подростки 11-13, 14-16, 15-17, родительский клуб и взрослая группа.",
+      "recommended_alias": "fnt-raspisanie"
+    },
+    {
+      "source": "dist/centia/roditelyam.html",
+      "block": "docs/centia-tilda/roditelyam-tilda-html-block.html",
+      "title": "Родительский клуб в Марьиной Роще | Центия",
+      "description": "Родительский клуб Центии: встречи для родителей детей и подростков о контакте, границах, конфликтах и разговоре без давления.",
+      "recommended_alias": "fnt-roditelyam"
+    },
+    {
+      "source": "dist/centia/vzroslym.html",
+      "block": "docs/centia-tilda/vzroslym-tilda-html-block.html",
+      "title": "Стресс, выгорание и саморегуляция для взрослых | Центия",
+      "description": "Взрослая психологическая группа Центии: стресс, выгорание, тревога, усталость, раздражение и восстановление без давления.",
+      "recommended_alias": "fnt-vzroslym"
+    }
+  ]
+}

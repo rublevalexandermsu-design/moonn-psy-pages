@@ -1626,3 +1626,31 @@ Append-only project history for `moon-psy-site`.
 - Remaining gates:
   - No DNS/CNAME or live Moonn/Tilda publication was changed in this pass.
   - Production domain choice still requires explicit approval: recommended `centia.moonn.ru`, with `moonn.ru/centia` as SEO alternative if the current Tilda/domain architecture allows it safely.
+
+## 2026-05-24 — Centia Tilda Route Correction and Homepage Publication
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user reported that Codex was in the wrong Tilda context and asked to restore the earlier Moonn/Tilda route rather than working in the wrong place.
+- Corrected route:
+  - Tilda project `8326812` (`Moonn.ru`, domain `moonn.ru`) in Google Chrome profile `Alexander`.
+  - Used native Tilda `T123` HTML block route, matching earlier Moonn landing workflows.
+- Incident:
+  - Symptom: `tp__addRecord(123)` created a SoundCloud/T153 block instead of an HTML block.
+  - Root cause: Tilda template id `123` is not Tilda block `T123`; the correct HTML-code template is `tplid=131`, code `T123`.
+  - Fix: deleted wrong record `rec2304849101`, added correct T123 record `rec2304908271`, and saved `docs/centia-tilda/index-tilda-html-block.html`.
+  - Follow-up rule: before adding Tilda records by JS id, verify the template id from Tilda's live template registry instead of assuming the visible block code equals the template id.
+- Live publication:
+  - Published page id `143840376` as alias `fnt`.
+  - Live URL: `https://moonn.ru/fnt`.
+  - Report: `docs/centia-tilda-live-publication-2026-05-24.md`.
+- Verified:
+  - Live HTTP `200`.
+  - Live HTML contains `Центия` and `rec2304908271`.
+  - Live HTML does not contain `AVICII` or `SoundCloud`.
+  - Tilda API export confirms alias `fnt` and published timestamp `1779620215`.
+  - Browser visual check shows the rendered Centia page and image cards.
+  - Playwright live smoke saved `output/centia-live-qa-2026-05-24/summary.json`, `desktop.png`, and `mobile.png`.
+- Remaining gap:
+  - Only `/fnt` is live; the other 11 aliases in `docs/centia-tilda/tilda-pages-manifest.json` still return `404` and require their own Tilda pages before the whole multi-page site is complete.

@@ -100,6 +100,113 @@ PAGE_META: dict[str, dict[str, str]] = {
     },
 }
 
+CARD_IMAGE_BY_LABEL: dict[str, str] = {
+    "часто обижается или злится": "03_cards_children/01-children-card-emotion-cards.webp",
+    "сложно говорить о чувствах": "03_cards_children/02-children-card-drawing-feelings.webp",
+    "трудно договариваться в игре и классе": "03_cards_children/03-children-card-communication-games.webp",
+    "боится ошибки и оценки": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "хочется больше уверенности": "03_cards_children/08-children-card-soft-group-communication.webp",
+    "карточки эмоций": "03_cards_children/01-children-card-emotion-cards.webp",
+    "рисование состояний": "03_cards_children/02-children-card-drawing-feelings.webp",
+    "игры на общение": "03_cards_children/03-children-card-communication-games.webp",
+    "мини-сценки про дружбу": "03_cards_children/04-children-card-friendship-mini-scenes.webp",
+    "больше слов вместо крика или молчания": "03_cards_children/05-children-card-more-words-instead-of-crying.webp",
+    "понятнее, как просить и договариваться": "03_cards_children/06-children-card-asking-and-agreeing.webp",
+    "опыт, что его слышат": "03_cards_children/07-children-card-feeling-heard.webp",
+    "мягкая тренировка общения в группе": "03_cards_children/08-children-card-soft-group-communication.webp",
+    "подросток стесняется": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "трудно знакомиться": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "часто переживает из-за мнения других": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "сложно отстаивать себя спокойно": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "есть конфликты или одиночество": "04_cards_teens_adults/06-card-feeling-lonely.webp",
+    "разбор школьных ситуаций": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "игры на коммуникацию": "03_cards_children/03-children-card-communication-games.webp",
+    "работа с границами": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "разговор о дружбе и конфликтах": "04_cards_teens_adults/05-card-conflicts.webp",
+    "больше спокойствия в общении": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "меньше страха проявляться": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "тревога и напряжение": "04_cards_teens_adults/01-card-anxiety-and-tension.webp",
+    "страх оценки": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "сложности в общении": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "низкая самооценка": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+    "конфликты": "04_cards_teens_adults/05-card-conflicts.webp",
+    "ощущение одиночества": "04_cards_teens_adults/06-card-feeling-lonely.webp",
+    "работаем с тревожными мыслями": "04_cards_teens_adults/01-card-anxiety-and-tension.webp",
+    "тренируем спокойную коммуникацию": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "говорим о границах и образе себя": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+    "больше понимания себя": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+    "новые способы общения без агрессии и ухода": "04_cards_teens_adults/05-card-conflicts.webp",
+    "впереди экзамены": "04_cards_teens_adults/07-card-exams-ahead.webp",
+    "много тревоги": "04_cards_teens_adults/08-card-lots-of-anxiety.webp",
+    "сложно выбрать направление": "04_cards_teens_adults/09-card-hard-to-choose-direction.webp",
+    "есть прокрастинация": "04_cards_teens_adults/10-card-procrastination.webp",
+    "давление родителей и школы": "04_cards_teens_adults/08-card-lots-of-anxiety.webp",
+    "подросток говорит «я не знаю»": "04_cards_teens_adults/09-card-hard-to-choose-direction.webp",
+    "стресс и саморегуляция": "04_cards_teens_adults/01-card-anxiety-and-tension.webp",
+    "страх ошибки": "04_cards_teens_adults/02-card-fear-of-judgment.webp",
+    "план подготовки": "04_cards_teens_adults/07-card-exams-ahead.webp",
+    "спокойнее взгляд на экзамены": "04_cards_teens_adults/07-card-exams-ahead.webp",
+    "первый реалистичный план": "04_cards_teens_adults/09-card-hard-to-choose-direction.webp",
+    "подросток не слушает": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "много конфликтов": "04_cards_teens_adults/05-card-conflicts.webp",
+    "гаджеты и границы": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "тревога за учёбу": "04_cards_teens_adults/08-card-lots-of-anxiety.webp",
+    "ребёнок закрывается": "04_cards_teens_adults/06-card-feeling-lonely.webp",
+    "родитель срывается": "04_cards_teens_adults/15-card-lots-of-irritation.webp",
+    "разбор типичных ситуаций": "04_cards_teens_adults/05-card-conflicts.webp",
+    "фразы, которые помогают говорить": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "больше спокойствия в разговоре": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+    "понятнее, где поддержка, а где давление": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+    "усталость стала фоном": "04_cards_teens_adults/11-card-fatigue-became-background.webp",
+    "часто тревожно": "04_cards_teens_adults/12-card-often-anxious.webp",
+    "сложно отдыхать без вины": "04_cards_teens_adults/13-card-hard-to-rest-without-guilt.webp",
+    "тело в напряжении": "04_cards_teens_adults/14-card-body-in-tension.webp",
+    "много раздражения": "04_cards_teens_adults/15-card-lots-of-irritation.webp",
+    "хочется восстановиться, но непонятно как": "04_cards_teens_adults/16-card-want-to-recover-but-unclear-how.webp",
+    "объяснения о стрессе": "04_cards_teens_adults/11-card-fatigue-became-background.webp",
+    "упражнения на саморегуляцию": "04_cards_teens_adults/12-card-often-anxious.webp",
+    "мягкие телесные практики": "04_cards_teens_adults/14-card-body-in-tension.webp",
+    "практики на неделю": "04_cards_teens_adults/16-card-want-to-recover-but-unclear-how.webp",
+    "замечать напряжение раньше": "04_cards_teens_adults/14-card-body-in-tension.webp",
+    "получить инструменты восстановления": "04_cards_teens_adults/16-card-want-to-recover-but-unclear-how.webp",
+}
+
+CARD_IMAGE_BY_LABEL.update(
+    {
+        "спокойный круг обсуждения": "02_program_scenes/01-scene-group-discussion-circle-format.webp",
+        "маленький вывод для дома": "03_cards_children/06-children-card-asking-and-agreeing.webp",
+        "психолог мгу": "02_program_scenes/12-scene-warm-conversation-modern-interior.webp",
+        "эмоции и состояния": "03_cards_children/01-children-card-emotion-cards.webp",
+        "быстрая психология": "02_program_scenes/06-scene-bright-wellness-seminar.webp",
+        "упражнения на знакомство": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+        "опыт быть услышанным": "03_cards_children/07-children-card-feeling-heard.webp",
+        "понимание своих реакций": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+        "разбираем реальные ситуации": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+        "называем чувства": "03_cards_children/01-children-card-emotion-cards.webp",
+        "опыт безопасного разговора": "02_program_scenes/12-scene-warm-conversation-modern-interior.webp",
+        "меньше внутреннего давления": "04_cards_teens_adults/01-card-anxiety-and-tension.webp",
+        "сильные стороны": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+        "интересы и ценности": "04_cards_teens_adults/09-card-hard-to-choose-direction.webp",
+        "разговор о будущем без давления": "02_program_scenes/12-scene-warm-conversation-modern-interior.webp",
+        "больше ясности": "04_cards_teens_adults/09-card-hard-to-choose-direction.webp",
+        "понимание сильных сторон": "04_cards_teens_adults/04-card-low-self-esteem.webp",
+        "12 зелёных пуфов": "01_space_design/02-centia-studio-main-interior-green-seating.webp",
+        "15 мягких стульев": "01_space_design/05-centia-studio-flex-room-plants-seating.webp",
+        "арочные окна": "01_space_design/03-centia-studio-workshop-space-natural-light.webp",
+        "сакральная геометрия": "01_space_design/04-centia-studio-wellness-space-natural-light.webp",
+        "тв и флипчарт": "01_space_design/03-centia-studio-workshop-space-natural-light.webp",
+        "зелёный вход": "01_space_design/05-centia-studio-flex-room-plants-seating.webp",
+        "короткая теория": "02_program_scenes/06-scene-bright-wellness-seminar.webp",
+        "обсуждение без осуждения": "02_program_scenes/12-scene-warm-conversation-modern-interior.webp",
+        "границы и договорённости": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+        "меньше чувства вины": "04_cards_teens_adults/13-card-hard-to-rest-without-guilt.webp",
+        "новый язык контакта": "04_cards_teens_adults/03-card-communication-difficulties.webp",
+        "обсуждение в группе": "02_program_scenes/01-scene-group-discussion-circle-format.webp",
+        "лучше понимать свои состояния": "03_cards_children/01-children-card-emotion-cards.webp",
+        "почувствовать больше внутренней опоры": "04_cards_teens_adults/16-card-want-to-recover-but-unclear-how.webp",
+    }
+)
+
 
 def esc(value: Any) -> str:
     return html.escape("" if value is None else str(value), quote=True)
@@ -157,6 +264,30 @@ def externalize_data_images(page_html: str, page_stem: str, out_assets: Path) ->
 
 def collect_local_images(page_html: str) -> list[str]:
     return sorted(set(LOCAL_IMAGE_RE.findall(page_html)))
+
+
+def enrich_list_cards(page_html: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        label = re.sub(r"\s+", " ", match.group("label")).strip()
+        image = CARD_IMAGE_BY_LABEL.get(label.lower())
+        if not image:
+            return match.group(0)
+        image_src = f"assets/seo-images/{image}"
+        image_alt = f"Мини-изображение для карточки: {label}"
+        return (
+            '<div class="list-card card-with-image">'
+            f'<strong>{match.group("label")}</strong>'
+            f'{match.group("rest")}'
+            f'<img class="list-card-image" src="{esc(image_src)}" loading="lazy" decoding="async" alt="{esc(image_alt)}">'
+            "</div>"
+        )
+
+    return re.sub(
+        r'<div class="list-card"><strong>(?P<label>.*?)</strong>(?P<rest>(?:<p>.*?</p>)?)</div>',
+        replace,
+        page_html,
+        flags=re.DOTALL,
+    )
 
 
 def build_jsonld(root_site_url: str, filename: str, meta: dict[str, str], context: dict[str, Any]) -> str:
@@ -257,11 +388,18 @@ def inject_head(page_html: str, root_site_url: str, filename: str, meta: dict[st
   h1,h2,h3,.display-title,.section-title,.quote,.footer-logo,.final-cta h2,.program-content h3,.mode-text h3,.day-card h3,.price{{letter-spacing:0!important}}
   h1,h2,h3,p,a,button,summary,strong,span{{overflow-wrap:anywhere}}
   img{{background:#efe7d7}}
+  .list-card.card-with-image{{position:relative;overflow:hidden;min-height:230px;padding:20px;background:linear-gradient(135deg,rgba(255,253,247,.94),rgba(239,231,215,.82))!important;isolation:isolate}}
+  .list-card.card-with-image strong{{position:relative;z-index:2;max-width:72%;display:block}}
+  .list-card.card-with-image p{{position:relative;z-index:2;max-width:70%}}
+  .list-card-image{{position:absolute;right:0;bottom:0;width:64%;height:78%;object-fit:cover;object-position:center;border-radius:24px 0 8px 0;opacity:.92;z-index:1;filter:saturate(.92) contrast(1.02)}}
+  .list-card.card-with-image:after{{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(115deg,rgba(255,253,247,.96) 0%,rgba(255,253,247,.86) 32%,rgba(255,253,247,.18) 70%)}}
   @media(max-width:680px){{
     .section-head,.section-copy,.container,.hero-inner,.page-intro,.editorial-card p{{max-width:100%!important}}
     .section-title{{font-size:clamp(44px,16vw,82px)!important}}
     .hero h1{{font-size:clamp(58px,22vw,112px)!important}}
     .page-hero h1{{font-size:clamp(50px,16vw,96px)!important}}
+    .list-card.card-with-image{{min-height:190px}}
+    .list-card.card-with-image strong{{max-width:78%}}
   }}
 </style>
 """
@@ -353,6 +491,7 @@ def build_centia_site(out_dir: Path, root_site_url: str) -> list[str]:
             raise FileNotFoundError(f"Missing Centia source page: {source_file}")
         page_html = source_file.read_text(encoding="utf-8")
         page_html, images = externalize_data_images(page_html, Path(filename).stem, generated_assets)
+        page_html = enrich_list_cards(page_html)
         page_html = inject_head(page_html, root_site_url, filename, PAGE_META[filename], context)
         (centia_out / filename).write_text(page_html, encoding="utf-8")
         page_images[filename] = sorted(set(images + collect_local_images(page_html)))
