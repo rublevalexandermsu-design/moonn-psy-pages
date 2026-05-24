@@ -1700,3 +1700,31 @@ Append-only project history for `moon-psy-site`.
   - Root cause: the previous completion check stopped after the homepage `/fnt` and did not enforce manifest-wide page id, T123 record and publish checks.
   - Fix: made manifest-wide page creation/publication the completion gate and documented it in `docs/centia-tilda-live-publication-2026-05-24.md`.
   - Follow-up rule: never report a multi-page Tilda site as finished until every manifest alias has live HTTP/browser verification.
+
+## 2026-05-24 — Centia Operations Dashboard in Google Sheets
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user sent YouTube Short `https://youtube.com/shorts/dgpCSYY6P6I` and asked to create a similar Google Sheets dashboard for the studio project using this chat context and the Centia archive/context.
+- Verified external reference:
+  - YouTube oEmbed title: `Шаблоны в Гугл таблицах для устранения хаоса в твоей жизни`.
+  - Channel/author: `RITM`.
+- Actions:
+  - Used the existing Centia context JSON, Tilda manifest and project reports as source data.
+  - Built local workbook `output/centia-studio-dashboard-2026-05-24.xlsx`.
+  - Imported it to Google Drive as native Google Sheets.
+  - Added a project report: `docs/centia-operations-dashboard-2026-05-24.md`.
+- Google Sheets deliverable:
+  - Title: `Центия — операционный дашборд студии Марьина Роща`.
+  - URL: `https://docs.google.com/spreadsheets/d/1HFoSMv6un1NpoQJGm6_fDgDA-kIBFithpti5tXM6_ms/edit`.
+  - Spreadsheet id: `1HFoSMv6un1NpoQJGm6_fDgDA-kIBFithpti5tXM6_ms`.
+- Structure:
+  - 13 tabs: Dashboard, KPI goals, funnel, programs, schedule, revenue model, launch tasks, content/SEO, marketing, CRM, space/procurement, incidents, sources.
+  - Includes formulas, dropdown validations, task status chart and revenue chart.
+- Verified:
+  - Google Drive import returned `converted: true` and MIME type `application/vnd.google-apps.spreadsheet`.
+  - Google Sheets metadata confirmed all 13 tabs.
+  - `00 Dashboard!A1:C9` readback showed: live pages `12`, occupancy `70%`, planned monthly revenue `444,000 ₽`, blockers `0`.
+- Follow-up rule:
+  - The spreadsheet is the operational dashboard; canonical publication facts still live in repo manifests/reports first and should be refreshed into the Sheet after changes.
