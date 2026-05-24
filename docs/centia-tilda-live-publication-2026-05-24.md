@@ -50,19 +50,67 @@
 
 ## Remaining Gap
 
-The generated Centia Tilda manifest contains 12 page artifacts, but only the homepage alias `fnt` is live in Tilda right now. The following aliases returned HTTP `404` after the homepage publication:
+Closed in the follow-up pass on 2026-05-24. The generated Centia Tilda manifest contains 12 page artifacts, and all 12 aliases now have Tilda page ids, native T123 records and scoped publish timestamps.
 
-- `fnt-kontakty`
-- `fnt-deti-7-10`
-- `fnt-o-tatyane`
-- `fnt-bron`
-- `fnt-podrostki-11-13`
-- `fnt-podrostki-14-16`
-- `fnt-podrostki-15-17`
-- `fnt-prostranstvo`
-- `fnt-raspisanie`
-- `fnt-roditelyam`
-- `fnt-vzroslym`
+## Follow-Up Publication - 2026-05-24
+
+### Typography Fix
+
+- Reduced oversized generated display typography in `scripts/build_centia_site.py`.
+- Rebuilt the local site and Tilda HTML blocks.
+- Republished the homepage `fnt` with updated T123 content and updated Tilda page settings.
+- Live browser typography smoke for `https://moonn.ru/fnt` at 1440x900:
+  - hero H1 `Центия`: `172.8px`;
+  - hero lead: `29.52px`;
+  - first section title: `102.24px`;
+  - no horizontal overflow.
+
+### Multi-Page Tilda Publication
+
+| Alias | Tilda page id | T123 record id | Published timestamp |
+|---|---:|---:|---:|
+| `fnt` | `143840376` | `2304908271` | `1779623152` |
+| `fnt-kontakty` | `143856396` | `2305025801` | `1779622618` |
+| `fnt-deti-7-10` | `143856886` | `2305031561` | `1779622649` |
+| `fnt-o-tatyane` | `143856916` | `2305031891` | `1779622712` |
+| `fnt-bron` | `143856966` | `2305032101` | `1779622743` |
+| `fnt-podrostki-11-13` | `143857036` | `2305032481` | `1779622775` |
+| `fnt-podrostki-14-16` | `143857056` | `2305032671` | `1779622806` |
+| `fnt-podrostki-15-17` | `143857106` | `2305033041` | `1779622838` |
+| `fnt-prostranstvo` | `143857136` | `2305033261` | `1779622869` |
+| `fnt-raspisanie` | `143857186` | `2305033631` | `1779622901` |
+| `fnt-roditelyam` | `143857196` | `2305033841` | `1779622932` |
+| `fnt-vzroslym` | `143857236` | `2305034121` | `1779622963` |
+
+### Live Verification
+
+- Live URL check for every alias in `docs/centia-tilda/tilda-pages-manifest.json` returned HTTP `200`.
+- Each live page contains a Tilda record, the expected page title text and Centia content.
+- Playwright rendered `https://moonn.ru/fnt` and `https://moonn.ru/fnt-podrostki-14-16`.
+- Homepage internal link check found 11 `/fnt-*` links and `0` broken links.
+- The former broken route `https://moonn.ru/fnt-podrostki-14-16` now returns HTTP `200` and has H1 `Самооценка, тревога, общение`.
+
+### QA Artifacts
+
+- `output/centia-local-qa-2026-05-24-home-desktop.png`
+- `output/centia-local-qa-2026-05-24-home-mobile.png`
+- `output/centia-tilda-page-create-settings-2026-05-24.json`
+- `output/centia-tilda-block-publish-2026-05-24.json`
+- `output/centia-tilda-published-pages-2026-05-24.json`
+- `output/centia-live-url-check-2026-05-24.json`
+- `output/centia-live-qa-2026-05-24-home-desktop-typography.png`
+- `output/centia-live-qa-2026-05-24-teen-page.png`
+
+### Incident
+
+- Symptom: after the first publication pass, clicking internal group links such as the main teen group opened a Tilda `404`.
+- Root cause: the previous completion criterion stopped at the published homepage `/fnt`; it did not require a Tilda page id and publish event for every alias in the 12-page manifest.
+- Fix: created the missing Tilda pages, saved correct aliases/title/SEO settings, added native T123 HTML blocks, published each page and checked every live URL.
+- Follow-up rule: a Centia multi-page publication is not complete until manifest aliases, Tilda page ids, T123 record ids, publish timestamps and live URL checks all match.
+
+## Remaining Gap
+
+No remaining `404` gap for the 12-page Centia manifest after the follow-up pass. Future work is content/product refinement, not route completion.
 
 ## Follow-Up Rule
 

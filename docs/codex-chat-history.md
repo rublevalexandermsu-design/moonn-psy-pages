@@ -1654,3 +1654,49 @@ Append-only project history for `moon-psy-site`.
   - Playwright live smoke saved `output/centia-live-qa-2026-05-24/summary.json`, `desktop.png`, and `mobile.png`.
 - Remaining gap:
   - Only `/fnt` is live; the other 11 aliases in `docs/centia-tilda/tilda-pages-manifest.json` still return `404` and require their own Tilda pages before the whole multi-page site is complete.
+
+## 2026-05-24 — Centia Tilda Typography and Multi-Page Completion
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user reported that 100% browser zoom made the site feel oversized and that internal buttons such as the main teen group opened `404`.
+- Actions:
+  - Reduced generated display typography in `scripts/build_centia_site.py`.
+  - Rebuilt `dist/centia` and all Tilda HTML block artifacts in `docs/centia-tilda/`.
+  - Created the missing 11 Tilda pages under project `8326812`.
+  - Saved aliases, titles, descriptions, SEO titles, SEO descriptions and canonical URLs for all Centia pages.
+  - Added native T123 records to each new page and saved page-specific HTML blocks from the canonical artifact set.
+  - Republished all 12 Centia pages, including the homepage after the typography fix.
+- Tilda pages:
+  - `fnt` -> page `143840376`, record `2304908271`.
+  - `fnt-kontakty` -> page `143856396`, record `2305025801`.
+  - `fnt-deti-7-10` -> page `143856886`, record `2305031561`.
+  - `fnt-o-tatyane` -> page `143856916`, record `2305031891`.
+  - `fnt-bron` -> page `143856966`, record `2305032101`.
+  - `fnt-podrostki-11-13` -> page `143857036`, record `2305032481`.
+  - `fnt-podrostki-14-16` -> page `143857056`, record `2305032671`.
+  - `fnt-podrostki-15-17` -> page `143857106`, record `2305033041`.
+  - `fnt-prostranstvo` -> page `143857136`, record `2305033261`.
+  - `fnt-raspisanie` -> page `143857186`, record `2305033631`.
+  - `fnt-roditelyam` -> page `143857196`, record `2305033841`.
+  - `fnt-vzroslym` -> page `143857236`, record `2305034121`.
+- Verified:
+  - `python build_site.py --output dist`.
+  - `python scripts/build_centia_tilda_artifacts.py --ref codex%2Fstudia`.
+  - `python -m py_compile scripts\build_centia_site.py scripts\build_centia_tilda_artifacts.py`.
+  - Live HTTP check returned `200` for every alias in `docs/centia-tilda/tilda-pages-manifest.json`.
+  - Playwright rendered `https://moonn.ru/fnt` and `https://moonn.ru/fnt-podrostki-14-16`.
+  - Homepage internal link check found 11 `/fnt-*` links and `0` broken links.
+  - Live homepage typography at 1440x900: H1 `172.8px`, lead `29.52px`, first section title `102.24px`, no horizontal overflow.
+- QA artifacts:
+  - `output/centia-live-url-check-2026-05-24.json`
+  - `output/centia-tilda-published-pages-2026-05-24.json`
+  - `output/centia-tilda-block-publish-2026-05-24.json`
+  - `output/centia-live-qa-2026-05-24-home-desktop-typography.png`
+  - `output/centia-live-qa-2026-05-24-teen-page.png`
+- Incident:
+  - Symptom: internal route buttons returned `404` after the first Tilda pass.
+  - Root cause: the previous completion check stopped after the homepage `/fnt` and did not enforce manifest-wide page id, T123 record and publish checks.
+  - Fix: made manifest-wide page creation/publication the completion gate and documented it in `docs/centia-tilda-live-publication-2026-05-24.md`.
+  - Follow-up rule: never report a multi-page Tilda site as finished until every manifest alias has live HTTP/browser verification.
