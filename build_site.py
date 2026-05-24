@@ -7,6 +7,8 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from scripts.build_centia_site import build_centia_site
+
 
 ROOT = Path(__file__).resolve().parent
 DATA_PATH = ROOT / "data" / "site.json"
@@ -229,7 +231,7 @@ def build_llms_txt(site: dict[str, Any], pages: list[dict[str, Any]]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_sitemap(site: dict[str, Any], pages: list[dict[str, Any]]) -> str:
+def build_sitemap(site: dict[str, Any], pages: list[dict[str, Any]], extra_paths: list[str] | None = None) -> str:
     items = []
     for page in pages:
         url = site["site_url"].rstrip("/") + "/" + page["filename"]
@@ -241,6 +243,8 @@ def build_sitemap(site: dict[str, Any], pages: list[dict[str, Any]]) -> str:
     ]
     for url in static_urls:
         items.append(f"  <url><loc>{esc(url)}</loc></url>")
+    for path in extra_paths or []:
+        items.append(f"  <url><loc>{esc(site['site_url'].rstrip('/') + '/' + path)}</loc></url>")
     return (
         "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
         "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
@@ -288,11 +292,13 @@ def main() -> None:
         content = render_page(site, person, pages, page)
         (out_dir / page["filename"]).write_text(content, encoding="utf-8")
 
+    extra_paths = build_centia_site(out_dir, site["site_url"])
+
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     (out_dir / "CNAME").write_text((ROOT / "CNAME").read_text(encoding="utf-8"), encoding="utf-8")
     (out_dir / "robots.txt").write_text(build_robots(site), encoding="utf-8")
     (out_dir / "llms.txt").write_text(build_llms_txt(site, pages), encoding="utf-8")
-    (out_dir / "sitemap.xml").write_text(build_sitemap(site, pages), encoding="utf-8")
+    (out_dir / "sitemap.xml").write_text(build_sitemap(site, pages, extra_paths), encoding="utf-8")
 
 
 if __name__ == "__main__":

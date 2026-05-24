@@ -1576,3 +1576,53 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-05-24 — Centia Studio Site Workstream Start
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user asked to finish a new autonomous multi-page site for a 30 m2 psychological group studio near Maryina Roshcha, keep all studio work isolated in this branch, use provided GPT context and image/site zip artifacts, and plan SEO/domain strategy for a Moonn subdomain.
+- Checked facts:
+  - Source context file exists: `C:\Users\yanta\Downloads\centia_chat_context_for_codex.json`.
+  - Site source zip exists: `C:\Users\yanta\Downloads\centia_sequel_light.zip`.
+  - SEO image zip exists: `C:\Users\yanta\Downloads\centia_images_seo_clean_renamed.zip`.
+  - `moon-psy-site` is a separate git repo on remote `rublevalexandermsu-design/moonn-psy-pages`.
+  - Existing `moon-psy-site` branch was `codex/moonn-seo-audit`; a new scoped branch `codex/studia` was created for this workstream.
+- Decisions:
+  - Do not change `CNAME`, DNS or live Tilda pages in the first pass.
+  - Build Centia as `/centia/` under the existing Pages build until production domain approval.
+  - Recommended later production target: `centia.moonn.ru`; same-domain `moonn.ru/centia` may be stronger for SEO if it can be implemented without Tilda/GitHub conflict.
+  - Keep the generated Sequel-light design as source, but route it through a builder that externalizes data images, injects canonical/OG/schema and emits image sitemap/llms.
+- Changed files:
+  - `build_site.py`
+  - `scripts/build_centia_site.py`
+  - `centia/source/*`
+  - `centia/seo-images/*`
+  - `centia/centia_chat_context_for_codex.json`
+  - `docs/centia-studio-workstream-guard.md`
+  - `docs/centia-publication-compliance-record-2026-05-24.md`
+- Open checks:
+  - run build;
+  - run static SEO/text scan;
+  - run local browser visual QA desktop/mobile;
+  - commit and push only scoped Centia files.
+
+## 2026-05-24 — Centia Studio Site Build Verification
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Verified:
+  - `python build_site.py --output dist` completed successfully.
+  - Static scan found 12 Centia HTML pages, 13 source image assets, 42 optimized SEO WebP images, 1 H1 per page, valid JSON-LD, no broken local links, and no raster `data:image` leftovers.
+  - Local server returned HTTP `200` for `http://127.0.0.1:4187/centia/`.
+  - Playwright visual smoke checked 24 page/viewport combinations: 12 pages in desktop and 12 pages in mobile.
+  - Browser QA failures: `0`; checks covered HTTP status, H1 count, JSON-LD validity, visible image loading, text overflow and internal-public-copy markers.
+- QA artifacts:
+  - `output/centia-qa-2026-05-24/summary.json`
+  - `output/centia-qa-2026-05-24/desktop-index.png`
+  - `output/centia-qa-2026-05-24/mobile-index.png`
+- Remaining gates:
+  - No DNS/CNAME or live Moonn/Tilda publication was changed in this pass.
+  - Production domain choice still requires explicit approval: recommended `centia.moonn.ru`, with `moonn.ru/centia` as SEO alternative if the current Tilda/domain architecture allows it safely.
