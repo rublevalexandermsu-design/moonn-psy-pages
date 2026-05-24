@@ -35,3 +35,10 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 2. `P0` Rendered verification remains unproven on this host: 2026-05-22 showed Playwright `WinError 5` and sandbox HTTP issues; keep treating rendered/DOM checks as GUI-only until Playwright is confirmed working.
 3. `P0` Source cleanup remains: raw HTML still contains placeholder strings on 2 pages (camp/gallery) and missing `alt` on images across all 5 pages; requires explicit approval for Tilda source edits.
 4. `P1` MIIIIPS PR #11 deploy/merge verification is still blocked: the referenced PR number was not found in `rublevalexandermsu-design/moonn-psy-pages`; needs the correct repo link or a saved canonical PR URL in the registry.
+
+## 2026-05-24 — Supervisor Run
+
+1. `OK` Five-page rendered audit succeeded from this host: all 5 URLs returned HTTP 200, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-24.json`.
+2. `P0` AEO regression/scope issue: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is `0` (should be `1` for the five-page sprint). Needs investigation in live HTML/rendered DOM and Tilda HEAD injection for this page only (do not touch other URLs).
+3. `P0` Source cleanup unchanged: raw HTML still contains placeholder strings on 2 pages (camp/gallery) and missing `alt` on images across all 5 pages; requires explicit approval for Tilda source edits.
+4. `P1` Raw H1 remains non-canonical on 3 pages (camp/consultations/reviews) even though rendered H1 is `1`. Treat as technical debt until source-level H1 is fixed.

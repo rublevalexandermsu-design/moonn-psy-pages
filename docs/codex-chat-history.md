@@ -1560,3 +1560,19 @@ Append-only project history for `moon-psy-site`.
   - `docs/teen-psychology-camp-2026/tilda-page-final.html`
   - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
   - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+
+## 2026-05-24 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + AEO Gap)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Ran (rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-24.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-24.md`.
+- Verified (from this host):
+  - All five URLs: HTTP `200`, sitemap listed, robots not blocked.
+  - Rendered H1 count: `1` on all five URLs.
+- Regression / scope mismatch:
+  - `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is `0` (expected `1` for the sprint AEO layer).
+- Remaining issues (unchanged):
+  - Raw placeholder strings remain on camp/gallery pages.
+  - Missing raw image `alt` remains across all five pages.
+- Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
