@@ -42,3 +42,20 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 2. `P0` AEO regression/scope issue: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is `0` (should be `1` for the five-page sprint). Needs investigation in live HTML/rendered DOM and Tilda HEAD injection for this page only (do not touch other URLs).
 3. `P0` Source cleanup unchanged: raw HTML still contains placeholder strings on 2 pages (camp/gallery) and missing `alt` on images across all 5 pages; requires explicit approval for Tilda source edits.
 4. `P1` Raw H1 remains non-canonical on 3 pages (camp/consultations/reviews) even though rendered H1 is `1`. Treat as technical debt until source-level H1 is fixed.
+
+## 2026-05-25 — Supervisor Run
+
+1. `OK` Five-page rendered audit succeeded from this host: all 5 URLs returned HTTP `200`, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-25.json`.
+2. `P0` AEO gap persists on camp page: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is still `0` (expected `1` for the sprint layer). Investigate in live HTML/rendered DOM and the page’s Tilda HEAD injection for this page only (no other URLs).
+3. `P0` Source cleanup unchanged: raw placeholder strings remain on 2 pages (camp/gallery), and missing raw image `alt` remains across all 5 pages; requires explicit approval for Tilda source edits.
+4. `P1` Raw H1 remains non-canonical on 3 pages (camp/consultations/reviews) even though rendered H1 is `1`. Track as technical debt until source-level H1 is fixed.
+
+## 2026-05-25 — Supervisor Run (Monday, weekly privacy layer)
+
+1. `DONE 2026-05-25` Weekly privacy audit executed (low-risk, local script). Evidence: `docs/moonn-privacy-compliance-audit-2026-05-25.{json,md}`.
+2. `P0` Privacy publication gap: policy endpoints return `404` — `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request`. Treat as a hard blocker for RKN/privacy readiness until a legally approved publication plan is executed.
+3. `P0` Forms + consent gap (audit signal): `forms_without_detected_checkbox` flagged across most of the 83 URLs. Needs a constrained, page-template-level verification in Tilda (checkbox + consent link text) after explicit approval; do not “fix blindly” by injecting text via JS.
+4. `P0` AEO regression persists: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is still `0` (expected `1`). Next step is a single-page DOM/HEAD inspection in authenticated Chrome to confirm what exactly is missing (JSON-LD vs visible block vs selector drift).
+5. `P1` Image hygiene debt persists: missing `alt` is still non-trivial across the five pages (e.g., `/psiholog-konsultacii-moskva`, `/otzivi`). Prepare a source-level alt remediation packet (per-page list of image URLs -> target alt) before any live edits.
+6. `P0` Analytics evidence still blocked: no new API/export artifacts for Yandex.Metrika `96397286`, Yandex Webmaster, or GSC were produced in this run. Next action: bounded GUI-only collection via Rublev Chrome profile for `2026-04-29..today` (aggregate metrics + top landings/queries), without changing settings.
+7. `P1` MIIIIPS PR #11 remains untraceable from repo context: store the canonical repo+PR URL in a registry/doc to prevent repeated “unknown PR” blockers.

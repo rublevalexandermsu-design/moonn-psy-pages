@@ -1576,3 +1576,37 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-05-25 12:00 MSK — Supervisor Run: SEO/AEO + Weekly Privacy Audit (Audit-Only)
+
+- Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).
+- Branch: `codex/moonn-seo-supervisor-20260525` (base: `origin/codex/moonn-seo-audit`).
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered` (daily evidence).
+    - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-25.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-25.md`.
+  - `python scripts\\moonn_privacy_compliance_audit.py` (weekly layer, Monday).
+    - Output: `docs/moonn-privacy-compliance-audit-2026-05-25.json`, `docs/moonn-privacy-compliance-audit-2026-05-25.md`.
+- Verified (low-risk, from this host):
+  - Priority URLs return HTTP `200`: `/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`; `robots.txt` and `sitemap.xml` return `200`.
+- Findings / blockers:
+  - AEO regression persists: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is `0` (expected `1` for the five-page sprint); requires authenticated Chrome DOM/HEAD inspection before any fix.
+  - Privacy endpoints return `404`: `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` (publication requires operator details confirmation + legal approval; no changes were made).
+  - Audit flags `forms_without_detected_checkbox` broadly across the 83 URLs; treat as a verification task in Tilda templates (not a blind JS injection task).
+- Notes:
+  - No analytics exports/API evidence was collected in this run (Yandex.Metrika/Yandex Webmaster/GSC remain access-blocked here).
+
+## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Ran (rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-25.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-25.md`.
+- Verified (from this host):
+  - All five URLs: HTTP `200`, sitemap listed, robots not blocked.
+  - Rendered H1 count: `1` on all five URLs.
+- Persistent mismatch (P0):
+  - `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is `0` again (expected `1` for the sprint AEO layer).
+- Known issues (unchanged):
+  - Raw placeholder strings remain on camp/gallery pages.
+  - Missing raw image `alt` remains across all five pages.
+- Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
