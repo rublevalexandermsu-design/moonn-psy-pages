@@ -62,7 +62,10 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 
 ## 2026-05-26 — Supervisor Run
 
-1. `OK` Five-page rendered audit succeeded from this host: all 5 URLs returned HTTP `200`, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-26.json`.
+1. `OK` Five-page rendered audit succeeded from this host: all 5 URLs returned HTTP `200`, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-26.json` and `docs/moonn-five-page-seo-sprint-audit-2026-05-26-rendered.json`.
 2. `P0` AEO gap persists on camp page: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is still `0` (expected `1` for the sprint layer). Confirm via authenticated Chrome DOM/HEAD inspection for this page only (no other URLs).
 3. `P0` Source cleanup unchanged: raw placeholder strings remain on 2 pages (camp/gallery), and missing raw image `alt` remains across all 5 pages; requires explicit approval for Tilda source edits.
 4. `P1` Raw H1 remains non-canonical on 3 pages (camp/consultations/reviews) even though rendered H1 is `1`. Track as technical debt until source-level H1 is fixed.
+5. `P0` Analytics evidence still blocked in practice: attempted GUI access hit re-auth/identity prompts for Google Search Console and Yandex services; no new aggregates for `2026-04-29..2026-05-26` were captured in this run.
+6. `P0` Next bounded step: in Rublev Chrome profile, complete re-auth if prompted and capture only aggregate numbers (Metrika + GSC + Webmaster) without changing settings; store results as a dated `docs/moonn-seo-growth-check-YYYY-MM-DD.md` entry.
+7. `P2` Tooling hardening: keep `scripts/moonn_five_page_seo_sprint_audit.py --rendered` bounded by timeouts so the supervisor cannot hang indefinitely.

@@ -4,6 +4,7 @@ import argparse
 import html
 import json
 import re
+import time
 import urllib.parse
 import urllib.request
 import urllib.error
@@ -175,7 +176,7 @@ def raw_audit_page(page: dict, sitemap: set[str] | None, disallows: list[str] | 
     return item
 
 
-def rendered_audit(pages: list[dict]) -> list[dict]:
+def rendered_audit(pages: list[dict], *, launch_timeout_ms: int = 60000, page_timeout_ms: int = 45000) -> list[dict]:
     try:
         from playwright.sync_api import sync_playwright
     except Exception as exc:  # noqa: BLE001
@@ -184,16 +185,19 @@ def rendered_audit(pages: list[dict]) -> list[dict]:
     rows: list[dict] = []
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
+            start = time.monotonic()
+            browser = p.chromium.launch(headless=True, timeout=launch_timeout_ms)
             context = browser.new_context(viewport={"width": 1366, "height": 900})
+            context.set_default_timeout(page_timeout_ms)
+            context.set_default_navigation_timeout(page_timeout_ms)
             for page in pages:
                 audit = {"url": page["url"], "renderedStatus": "ok"}
                 try:
                     browser_page = context.new_page()
                     try:
-                        browser_page.goto(page["url"], wait_until="networkidle", timeout=45000)
+                        browser_page.goto(page["url"], wait_until="networkidle", timeout=page_timeout_ms)
                     except Exception:
-                        browser_page.goto(page["url"], wait_until="domcontentloaded", timeout=45000)
+                        browser_page.goto(page["url"], wait_until="domcontentloaded", timeout=page_timeout_ms)
                         browser_page.wait_for_timeout(5000)
                     h1_values = [text.strip() for text in browser_page.locator("h1").all_inner_texts() if text.strip()]
                     schema_count = browser_page.locator('script[type="application/ld+json"]').count()
@@ -214,6 +218,9 @@ def rendered_audit(pages: list[dict]) -> list[dict]:
                 except Exception as exc:  # noqa: BLE001
                     audit.update({"renderedStatus": "error", "error": str(exc)})
                 rows.append(audit)
+                if time.monotonic() - start > max(30.0, (launch_timeout_ms / 1000) + (page_timeout_ms / 1000) * len(pages) + 30.0):
+                    rows.append({"url": "", "renderedStatus": "aborted", "reason": "rendered_audit_watchdog_timeout"})
+                    break
             context.close()
             browser.close()
     except Exception as exc:  # noqa: BLE001

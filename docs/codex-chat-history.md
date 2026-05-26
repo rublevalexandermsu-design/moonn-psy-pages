@@ -1590,6 +1590,25 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-05-26 09:00 MSK — Supervisor Run: SEO/AEO Daily Audit + Analytics Attempt
+
+- Workstream: Moonn SEO-growth + privacy supervisor (audit-only, no live edits).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Verified (low-risk):
+  - Priority URLs HTTP `200`: `https://moonn.ru/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`.
+  - `https://moonn.ru/sitemap.xml` and `https://moonn.ru/robots.txt` HTTP `200`.
+  - Rendered five-page audit recorded:
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-26.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-26.md`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-26-rendered.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-26-rendered.md`
+- Analytics (bounded GUI attempt):
+  - Google Search Console and Yandex services prompted re-auth/identity confirmation in the opened sessions; no `2026-04-29..2026-05-26` aggregates were captured in this run.
+- Persistent mismatch:
+  - `https://moonn.ru/podrostkovyy-lager-psihologiya`: rendered answer block count remains `0` (expected `1` for the five-page sprint layer).
+- Changed files:
+  - `scripts/moonn_five_page_seo_sprint_audit.py` (timeouts so `--rendered` cannot hang indefinitely).
+
 ## 2026-05-25 12:00 MSK — Supervisor Run: SEO/AEO + Weekly Privacy Audit (Audit-Only)
 
 - Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).
