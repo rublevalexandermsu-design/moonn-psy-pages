@@ -41,6 +41,7 @@ Added tabs:
 - `16 Дневные форматы` - concrete daytime/morning/weekend product hypotheses and operational needs.
 - `17 Загрузка` - visual weekly room-load grid from morning to evening and weekends.
 - `18 Цены окупаемость` - pricing, occupancy, rent and profitability model with chart.
+- `19 Реестр направлений` - canonical registry of the 12 product directions and their page status.
 
 Updated existing tabs:
 
@@ -50,15 +51,20 @@ Updated existing tabs:
 
 ## Verified Sheet Values
 
-Readback from `18 Цены окупаемость!P4:Q10`:
+Correction pass on 2026-05-26:
 
-- Rent/month: `130 000 ₽`.
-- Opt revenue/month: `533 600 ₽`.
-- Opt facilitator fees/month: `46 000 ₽`.
-- Opt margin before rent: `487 600 ₽`.
-- Opt result after rent: `357 600 ₽`.
-- Rent coverage: `4.1x`.
-- Model conclusion: `аренда закрывается моделью`.
+- `02 Воронка!H4:H11` now uses row-aligned formulas, for example `H5 = IF(D5=0,"",F5/D5)`. The previous formula shift made `H5` divide header text.
+- `18 Цены окупаемость!Q5` now sums only the new product layer: `SUM(K4:K10) = 227 600 ₽`.
+- `18 Цены окупаемость!Q7` now sums only the new product-layer margin: `SUM(M4:M10) = 181 600 ₽`.
+- `18 Цены окупаемость!Q11:Q13` keep the full model separately: full opt revenue `533 600 ₽`, full margin before rent `487 600 ₽`, full result after rent `357 600 ₽`.
+- `00 Dashboard!E21:H24` now exposes the product registry counters: `12` canonical directions, `6` live direction pages, `6` pages still to create.
+
+Readback from `19 Реестр направлений!A3:L15`:
+
+- 12 canonical product directions are present.
+- The original 6 directions have live pages.
+- The 6 new directions still need pages: `Утренний круг восстановления`, `Мама рядом`, `Нейроигры перед школой`, `Беременность и первый год`, `Папа и сын`, `Открытые лекции`.
+- `Беременность и первый год` is one canonical direction in the registry, while the payback model keeps two financial subformats: `Беременность без тревоги` and `Мама и малыш: первый год`.
 
 ## Operational Decision
 

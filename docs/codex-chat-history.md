@@ -1765,3 +1765,33 @@ Append-only project history for `moon-psy-site`.
 - Decision:
   - Strong first pilots: `Утренний круг восстановления`, `Мама рядом: дети дружат, родители знакомятся`, `Нейроигры перед школой`.
   - Do not launch every new direction at once; use 2-3 pilots and measure leads, attendance, repeat purchase and referrals.
+
+## 2026-05-26 — Centia Dashboard Formula Audit And Product Registry
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user reported Gemini warnings about formula errors in `02 Воронка!H5`, incorrect payback totals in `18 Цены окупаемость!Q5/Q7`, dashboard mismatches, and asked to verify whether all 12 product directions were represented in the sheet and page/SEO layer.
+- Google Sheet:
+  - Title: `Центия — операционный дашборд студии Марьина Роща`.
+  - URL: `https://docs.google.com/spreadsheets/d/1HFoSMv6un1NpoQJGm6_fDgDA-kIBFithpti5tXM6_ms/edit`.
+- Findings:
+  - Gemini warning was valid: the funnel conversion formulas were shifted against the real data rows; `H5` referenced `D3/F3` before the fix.
+  - `18 Цены окупаемость!Q5/Q7` previously mixed the full scenario with the new product layer. The user's expected values, `227 600 ₽` and `181 600 ₽`, are correct for rows `4:10`.
+  - The table had product directions split across `03 Программы` and `16 Дневные форматы`, while `18 Цены окупаемость` is a financial scenario table, not a canonical product registry.
+- Actions:
+  - Corrected `02 Воронка!H4:H11` to row-aligned formulas.
+  - Corrected `18 Цены окупаемость!P5:Q13` to separate the new layer from the full model.
+  - Updated `00 Dashboard!E14:H19` so dashboard numbers reference the corrected financial model.
+  - Added `19 Реестр направлений` as the canonical 12-direction registry.
+  - Added dashboard counters in `00 Dashboard!E21:H24`: canonical directions, live direction pages, and pages still to create.
+- Verified:
+  - `02 Воронка!A3:I11` formulas now align with their own rows.
+  - `18 Цены окупаемость!Q5 = 227 600 ₽`, `Q7 = 181 600 ₽`, `Q11 = 533 600 ₽`, `Q12 = 487 600 ₽`, `Q13 = 357 600 ₽`.
+  - `00 Dashboard!E21:H24` shows `12` canonical directions, `6` live direction pages and `6` pages still to create.
+  - `19 Реестр направлений!A3:L15` readback confirms all 12 canonical product directions.
+- Incident:
+  - Symptom: dashboard and payback cells looked inconsistent because the same summary block was used for both the new layer and the full model.
+  - Root cause: the spreadsheet had no single product registry and formula scopes were not explicitly separated by product layer.
+  - Fix: split new-layer metrics from full-model metrics and add `19 Реестр направлений` as the canonical count source.
+  - Follow-up rule: before changing site pages or SEO rows, check `19 Реестр направлений` first; if a product direction has no live page, add the page to both the site manifest and `07 Контент SEO`.
