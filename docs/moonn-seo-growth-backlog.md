@@ -59,3 +59,10 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 5. `P1` Image hygiene debt persists: missing `alt` is still non-trivial across the five pages (e.g., `/psiholog-konsultacii-moskva`, `/otzivi`). Prepare a source-level alt remediation packet (per-page list of image URLs -> target alt) before any live edits.
 6. `P0` Analytics evidence still blocked: no new API/export artifacts for Yandex.Metrika `96397286`, Yandex Webmaster, or GSC were produced in this run. Next action: bounded GUI-only collection via Rublev Chrome profile for `2026-04-29..today` (aggregate metrics + top landings/queries), without changing settings.
 7. `P1` MIIIIPS PR #11 remains untraceable from repo context: store the canonical repo+PR URL in a registry/doc to prevent repeated “unknown PR” blockers.
+
+## 2026-05-26 — Supervisor Run
+
+1. `OK` Five-page rendered audit succeeded from this host: all 5 URLs returned HTTP `200`, are in sitemap, and are not blocked by robots. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-05-26.json`.
+2. `P0` AEO gap persists on camp page: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count is still `0` (expected `1` for the sprint layer). Confirm via authenticated Chrome DOM/HEAD inspection for this page only (no other URLs).
+3. `P0` Source cleanup unchanged: raw placeholder strings remain on 2 pages (camp/gallery), and missing raw image `alt` remains across all 5 pages; requires explicit approval for Tilda source edits.
+4. `P1` Raw H1 remains non-canonical on 3 pages (camp/consultations/reviews) even though rendered H1 is `1`. Track as technical debt until source-level H1 is fixed.

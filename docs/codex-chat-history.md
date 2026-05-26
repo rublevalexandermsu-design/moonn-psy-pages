@@ -78,6 +78,19 @@ Append-only project history for `moon-psy-site`.
   - Do not expose raw YouTube links on the public sales page.
   - Do not create or change live T-Bank/Tinkoff payment settings until seller/payment details are visually verified.
   - Use manifest-first rollout so product SKUs, Members groups, videos and QR links stay synchronized.
+
+## 2026-05-26 — Moonn Five-Page SEO/AEO Supervisor Run
+
+- Project: Moonn / Tilda site.
+- Workstream: five-page SEO/AEO sprint daily audit, branch `codex/moonn-seo-audit`.
+- Verified facts:
+  - `scripts/moonn_five_page_seo_sprint_audit.py --rendered` reports HTTP `200` for all 5 live URLs, `sitemap=true`, `robots blocked=false`, rendered H1 count = `1` on all five.
+  - Known regression persists: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count = `0` (expected `1` for sprint layer).
+- Changed files:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-26.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-26.md`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
 - Created or changed files:
   - `scripts/tilda_paid_lecture_audit.py`
   - `scripts/build_events_tp_paid_manifest.py`
