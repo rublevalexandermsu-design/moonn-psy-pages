@@ -1728,3 +1728,40 @@ Append-only project history for `moon-psy-site`.
   - `00 Dashboard!A1:C9` readback showed: live pages `12`, occupancy `70%`, planned monthly revenue `444,000 ₽`, blockers `0`.
 - Follow-up rule:
   - The spreadsheet is the operational dashboard; canonical publication facts still live in repo manifests/reports first and should be refreshed into the Sheet after changes.
+
+## 2026-05-26 — Centia Dashboard Expansion: Daytime Products, Targeting And Payback
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user added new product hypotheses from a voice/dialogue: parents with preschool children, children 5-6, pregnant women, mothers with babies, fathers with sons, morning recovery practice, lectures, weekend intensives, daytime room-load strategy and rent/payback model.
+- Routing:
+  - Continued existing Google Sheet `Центия — операционный дашборд студии Марьина Роща`.
+  - Did not delete or overwrite user-created tabs `13Т` and `14 новое`.
+- Market checks:
+  - Ormas Moscow pricing showed individual neuropsychology around `4 500 ₽ / 55 min` and subscription `17 000 ₽ / 4 sessions`.
+  - Dobroe Slovo showed group neuropsychology around `1 000 ₽ / 45 min`.
+  - Moscow School of Psychology showed a one-day training example around `11 700-13 700 ₽`.
+- Google Sheet updates:
+  - Added `15 Аудитории`.
+  - Added `16 Дневные форматы`.
+  - Added `17 Загрузка`.
+  - Added `18 Цены окупаемость`.
+  - Updated `00 Dashboard` with the new product/economic layer.
+  - Appended tasks to `06 Задачи запуска`.
+  - Appended provenance rows to `12 Источники`.
+- Verified:
+  - Google Sheets metadata confirmed the new tabs and the new chart `Окупаемость направлений: выручка opt`.
+  - Readback from `18 Цены окупаемость!P4:Q10`:
+    - rent/month `130 000 ₽`;
+    - opt revenue/month `533 600 ₽`;
+    - opt facilitator fees/month `46 000 ₽`;
+    - opt margin before rent `487 600 ₽`;
+    - opt result after rent `357 600 ₽`;
+    - rent coverage `4.1x`;
+    - conclusion `аренда закрывается моделью`.
+- Report:
+  - `docs/centia-dashboard-expansion-2026-05-26.md`.
+- Decision:
+  - Strong first pilots: `Утренний круг восстановления`, `Мама рядом: дети дружат, родители знакомятся`, `Нейроигры перед школой`.
+  - Do not launch every new direction at once; use 2-3 pilots and measure leads, attendance, repeat purchase and referrals.
