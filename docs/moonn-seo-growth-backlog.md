@@ -69,3 +69,15 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 5. `P0` Analytics evidence still blocked in practice: attempted GUI access hit re-auth/identity prompts for Google Search Console and Yandex services; no new aggregates for `2026-04-29..2026-05-26` were captured in this run.
 6. `P0` Next bounded step: in Rublev Chrome profile, complete re-auth if prompted and capture only aggregate numbers (Metrika + GSC + Webmaster) without changing settings; store results as a dated `docs/moonn-seo-growth-check-YYYY-MM-DD.md` entry.
 7. `P2` Tooling hardening: keep `scripts/moonn_five_page_seo_sprint_audit.py --rendered` bounded by timeouts so the supervisor cannot hang indefinitely.
+
+## 2026-05-27 — Supervisor Run
+
+1. `OK` Priority URLs HTTP `200`: `https://moonn.ru/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, plus `sitemap.xml` and `robots.txt`.
+2. `OK` Daily five-page audit artifacts created (includes rendered checks in-report):
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-27.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-27.md`
+3. `P0` Persistent AEO gap (camp page): `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block remains `0` (expected `1` for the sprint layer), while the sprint layer tag is present in raw HTML. Next action is still a single-page DOM/HEAD+console inspection in authenticated Chrome (Rublev profile) to locate the break (selector drift vs JS error vs loading order).
+4. `P0` Source cleanup remains (approval-required for Tilda edits): placeholder text still present on camp + gallery pages; missing image `alt` remains across all five pages (notably high on consultations + reviews).
+5. `P1` Raw H1 anomalies persist (SEO hygiene): raw H1 count != 1 on consultations + reviews, and is `0` on camp (rendered H1 stays `1`). Track as source/template cleanup after the AEO gap is resolved.
+6. `P0` Analytics evidence still missing: no API exports and no GUI-verified aggregates collected for `2026-04-29..today` (Yandex.Metrika `96397286`, Yandex Webmaster, Google Search Console). Needs a bounded Rublev-profile GUI collection run without changing settings.
+7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still not present in this repo; record it in a doc/registry once the correct link is available.

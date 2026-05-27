@@ -1590,6 +1590,20 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-05-27 09:05 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Ran (rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-27.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-27.md`.
+- Verified (from this host):
+  - All five URLs: HTTP `200`, sitemap listed, robots not blocked.
+  - Rendered H1 count: `1` on all five URLs.
+- Findings / blockers:
+  - `P0` Persistent mismatch: `https://moonn.ru/podrostkovyy-lager-psihologiya` rendered answer block count remains `0` (expected `1` for the sprint layer).
+  - `P0` Source cleanup remains (approval-required for Tilda edits): raw placeholder text still present on camp + gallery pages; missing image `alt` persists across all five pages.
+  - `P1` Raw H1 anomalies persist (camp=0; consultations/reviews=2) even though rendered H1 is `1`.
+- Next action (unchanged): bounded, single-page investigation in authenticated Chrome (Rublev profile) for the camp URL (DOM + HEAD + console), then scoped reindex ONLY for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap); do not submit all 83 URLs.
 ## 2026-05-26 09:00 MSK — Supervisor Run: SEO/AEO Daily Audit + Analytics Attempt
 
 - Workstream: Moonn SEO-growth + privacy supervisor (audit-only, no live edits).
