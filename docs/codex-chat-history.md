@@ -1590,6 +1590,23 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-05-27 09:05 MSK — Supervisor Run: SEO/AEO Daily Audit (Low-Risk)
+
+- Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).
+- Branch: `codex/moonn-seo-supervisor-20260527` (base: `origin/codex/moonn-seo-audit`).
+- Verified (low-risk, from this host):
+  - Priority URLs return HTTP `200`: `https://moonn.ru/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, plus `sitemap.xml` and `robots.txt`.
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-27`
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-27-rendered`
+- Evidence:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-27.{json,md}`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-05-27-rendered.{json,md}`
+- Persistent mismatches (unchanged):
+  - `https://moonn.ru/podrostkovyy-lager-psihologiya`: rendered answer block count remains `0` (expected `1` for the sprint AEO layer).
+- Blockers (unchanged):
+  - No GUI-verified analytics aggregates collected yet for `2026-04-29..today` (Yandex.Metrika `96397286`, Yandex Webmaster, GSC).
+
 ## 2026-05-26 09:00 MSK — Supervisor Run: SEO/AEO Daily Audit + Analytics Attempt
 
 - Workstream: Moonn SEO-growth + privacy supervisor (audit-only, no live edits).
