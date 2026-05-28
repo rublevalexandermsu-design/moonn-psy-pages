@@ -4,6 +4,7 @@ import argparse
 import html
 import json
 import re
+import socket
 import time
 import urllib.parse
 import urllib.request
@@ -42,7 +43,18 @@ def fetch(url: str, timeout: int = 30) -> tuple[int | None, str, str | None]:
             body = ""
         return int(exc.code), body, f"HTTPError: {exc}"
     except Exception as exc:  # noqa: BLE001
-        return None, "", str(exc)
+        message = str(exc)
+        if getattr(exc, "errno", None) in {11001, -2} or "getaddrinfo failed" in message.lower():
+            return None, "", f"dns_error: {message}"
+        return None, "", message
+
+
+def dns_probe(hostname: str) -> dict:
+    try:
+        socket.getaddrinfo(hostname, 443)
+        return {"hostname": hostname, "ok": True, "error": None}
+    except Exception as exc:  # noqa: BLE001
+        return {"hostname": hostname, "ok": False, "error": str(exc)}
 
 
 def visible_text(value: str) -> str:
@@ -235,9 +247,26 @@ def write_markdown(path: Path, payload: dict) -> None:
         f"- Packet: `{payload['packet']}`",
         f"- Pages: `{len(payload['pages'])}`",
         "",
-        "## Results",
-        "",
     ]
+
+    dns = payload.get("environment", {}).get("dns")
+    if dns:
+        lines.extend(
+            [
+                "## Environment",
+                "",
+                f"- DNS resolve `{dns.get('hostname','')}`: `{dns.get('ok')}`",
+                *( [f"- DNS error: `{(dns.get('error') or '')[:160]}`"] if not dns.get("ok") and dns.get("error") else [] ),
+                "",
+            ]
+        )
+
+    lines.extend(
+        [
+            "## Results",
+            "",
+        ]
+    )
     for page in payload["pages"]:
         issues = ", ".join(f"`{issue}`" for issue in page.get("issues", [])) or "`ok`"
         fetch_error = (page.get("fetchError") or "").strip()
@@ -286,6 +315,7 @@ def main() -> int:
 
     packet_path = resolve_packet_path(args.packet)
     packet = json.loads(packet_path.read_text(encoding="utf-8"))
+    env_dns = dns_probe("moonn.ru")
     sitemap, sitemap_error = sitemap_urls()
     disallows, robots_error = robots_disallows()
     pages = [raw_audit_page(page, sitemap, disallows) for page in packet["pages"]]
@@ -299,6 +329,7 @@ def main() -> int:
         "runDate": TODAY,
         "createdAt": datetime.now(timezone.utc).isoformat(),
         "packet": str(packet_path.relative_to(ROOT)),
+        "environment": {"dns": env_dns},
         "inputs": {
             "sitemapUrl": SITEMAP_URL,
             "robotsUrl": ROBOTS_URL,

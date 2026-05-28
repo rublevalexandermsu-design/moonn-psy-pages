@@ -1604,6 +1604,18 @@ Append-only project history for `moon-psy-site`.
   - `P0` Source cleanup remains (approval-required for Tilda edits): raw placeholder text still present on camp + gallery pages; missing image `alt` persists across all five pages.
   - `P1` Raw H1 anomalies persist (camp=0; consultations/reviews=2) even though rendered H1 is `1`.
 - Next action (unchanged): bounded, single-page investigation in authenticated Chrome (Rublev profile) for the camp URL (DOM + HEAD + console), then scoped reindex ONLY for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap); do not submit all 83 URLs.
+
+## 2026-05-28 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit, DNS Blocked)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Ran (rendered): `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`.
+  - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-28.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-28.md`.
+- Infra blocker (this host):
+  - DNS resolution failed for `moonn.ru` (`Errno 11001 getaddrinfo failed`), so live HTTP/robots/sitemap/rendered checks are not comparable to previous days in this run.
+- Local-only verification:
+  - `assets/moonn-five-page-seo-sprint-layer.js` exists in repo; commit `49a093e` exists in git object database.
+- Next action: re-run the audit when DNS/network is restored, then proceed with the bounded authenticated-Chrome investigation for the camp AEO gap and scoped reindex for only the five URLs.
 ## 2026-05-26 09:00 MSK — Supervisor Run: SEO/AEO Daily Audit + Analytics Attempt
 
 - Workstream: Moonn SEO-growth + privacy supervisor (audit-only, no live edits).

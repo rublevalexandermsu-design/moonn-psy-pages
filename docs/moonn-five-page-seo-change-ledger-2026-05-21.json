@@ -52,7 +52,8 @@
         "Metrika page-level report was previously collapsed to homepage and needs separate verification.",
         "2026-05-22: Supervisor sandbox cannot fetch live HTML (all five URLs: http_ERROR). Windows MCP lightweight fetch returned HTTP 403 for 4/5 URLs (non-browser access blocked). Verify via authenticated Chrome GUI (Rublev profile) or allowlisted fetcher.",
         "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well.",
-        "2026-05-24 / 2026-05-25 / 2026-05-26 / 2026-05-27: AEO regression/scope mismatch on camp page: rendered answer block is 0 (expected 1 for the five-page sprint layer). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-24.json, docs/moonn-five-page-seo-sprint-audit-2026-05-25.json, docs/moonn-five-page-seo-sprint-audit-2026-05-26.json, docs/moonn-five-page-seo-sprint-audit-2026-05-27.json. Investigate in live HTML/rendered DOM and Tilda HEAD injection for this page only."
+        "2026-05-24 / 2026-05-25 / 2026-05-26 / 2026-05-27: AEO regression/scope mismatch on camp page: rendered answer block is 0 (expected 1 for the five-page sprint layer). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-24.json, docs/moonn-five-page-seo-sprint-audit-2026-05-25.json, docs/moonn-five-page-seo-sprint-audit-2026-05-26.json, docs/moonn-five-page-seo-sprint-audit-2026-05-27.json. Investigate in live HTML/rendered DOM and Tilda HEAD injection for this page only.",
+        "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -103,7 +104,8 @@
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification.",
         "2026-05-22: Supervisor sandbox cannot fetch live HTML (all five URLs: http_ERROR). Windows MCP lightweight fetch returned HTTP 403 for 4/5 URLs (non-browser access blocked). Verify via authenticated Chrome GUI (Rublev profile) or allowlisted fetcher.",
-        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well."
+        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well.",
+        "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -154,7 +156,8 @@
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification.",
         "2026-05-22: Supervisor sandbox cannot fetch live HTML (all five URLs: http_ERROR). Windows MCP lightweight fetch returned HTTP 403 for 4/5 URLs (non-browser access blocked). Verify via authenticated Chrome GUI (Rublev profile) or allowlisted fetcher.",
-        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well."
+        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well.",
+        "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -206,7 +209,8 @@
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification.",
         "2026-05-22: Supervisor sandbox cannot fetch live HTML (all five URLs: http_ERROR). Windows MCP lightweight fetch returned HTTP 403 for 4/5 URLs (non-browser access blocked). Verify via authenticated Chrome GUI (Rublev profile) or allowlisted fetcher.",
-        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well."
+        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well.",
+        "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -257,10 +261,11 @@
         "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
         "Metrika page-level report was previously collapsed to homepage and needs separate verification.",
         "2026-05-22: Supervisor sandbox cannot fetch live HTML (all five URLs: http_ERROR). Windows MCP lightweight fetch returned HTTP 403 for 4/5 URLs (non-browser access blocked). Verify via authenticated Chrome GUI (Rublev profile) or allowlisted fetcher.",
-        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well."
+        "2026-05-23: Supervisor audit from this host succeeded (HTTP 200 for all five URLs; in sitemap; robots not blocked; rendered H1=1; answer block=1). Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-23.json. Treat 2026-05-22 as intermittent until confirmed via authenticated Chrome as well.",
+        "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json."
       ],
       "publicationDate": "2026-05-21"
     }
   ],
-  "lastUpdatedAt": "2026-05-27T06:05:13.0000000+00:00"
+  "lastUpdatedAt": "2026-05-28T10:15:10.0000000+00:00"
 }

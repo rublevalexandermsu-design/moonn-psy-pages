@@ -81,3 +81,12 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 5. `P1` Raw H1 anomalies persist (SEO hygiene): raw H1 count != 1 on consultations + reviews, and is `0` on camp (rendered H1 stays `1`). Track as source/template cleanup after the AEO gap is resolved.
 6. `P0` Analytics evidence still missing: no API exports and no GUI-verified aggregates collected for `2026-04-29..today` (Yandex.Metrika `96397286`, Yandex Webmaster, Google Search Console). Needs a bounded Rublev-profile GUI collection run without changing settings.
 7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still not present in this repo; record it in a doc/registry once the correct link is available.
+
+## 2026-05-28 — Supervisor Run
+
+1. `P0` Infra blocker (DNS): this host could not resolve `moonn.ru` (`Errno 11001 getaddrinfo failed`), so all live HTTP/robots/sitemap checks are invalid in this run.
+2. `OK` Daily five-page audit artifacts created, but all pages are `http_ERROR` due to DNS (do not treat as regression evidence):
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-28.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-28.md`
+3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists in git object database.
+4. Next action: re-run the same `--rendered` audit once DNS/network is restored, then proceed with the bounded Chrome GUI investigation for the camp AEO gap and the scoped reindex for only the 5 URLs (no 83-URL batch).
