@@ -3,12 +3,17 @@
 - Packet: `docs\moonn-five-page-seo-packets-2026-05-21.json`
 - Pages: `5`
 
+## Environment
+
+- DNS resolve `moonn.ru`: `False`
+- DNS error: `[Errno 11001] getaddrinfo failed`
+
 ## Results
 
 ### https://moonn.ru/podrostkovyy-lager-psihologiya
 
 - HTTP: `None`
-- Fetch error: `<urlopen error [Errno 11001] getaddrinfo failed>`
+- Fetch error: `dns_error: <urlopen error [Errno 11001] getaddrinfo failed>`
 - Sitemap: `None`
 - Robots blocked: `None`
 - Raw H1 count: `None`
@@ -22,7 +27,7 @@
 ### https://moonn.ru/kartiny-tatiany-munn
 
 - HTTP: `None`
-- Fetch error: `<urlopen error [Errno 11001] getaddrinfo failed>`
+- Fetch error: `dns_error: <urlopen error [Errno 11001] getaddrinfo failed>`
 - Sitemap: `None`
 - Robots blocked: `None`
 - Raw H1 count: `None`
@@ -36,7 +41,7 @@
 ### https://moonn.ru/psypodgotovka1
 
 - HTTP: `None`
-- Fetch error: `<urlopen error [Errno 11001] getaddrinfo failed>`
+- Fetch error: `dns_error: <urlopen error [Errno 11001] getaddrinfo failed>`
 - Sitemap: `None`
 - Robots blocked: `None`
 - Raw H1 count: `None`
@@ -50,7 +55,7 @@
 ### https://moonn.ru/psiholog-konsultacii-moskva
 
 - HTTP: `None`
-- Fetch error: `<urlopen error [Errno 11001] getaddrinfo failed>`
+- Fetch error: `dns_error: <urlopen error [Errno 11001] getaddrinfo failed>`
 - Sitemap: `None`
 - Robots blocked: `None`
 - Raw H1 count: `None`
@@ -64,7 +69,7 @@
 ### https://moonn.ru/otzivi
 
 - HTTP: `None`
-- Fetch error: `<urlopen error [Errno 11001] getaddrinfo failed>`
+- Fetch error: `dns_error: <urlopen error [Errno 11001] getaddrinfo failed>`
 - Sitemap: `None`
 - Robots blocked: `None`
 - Raw H1 count: `None`

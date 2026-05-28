@@ -1590,6 +1590,21 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-05-28 09:00 MSK — Supervisor Run: SEO/AEO + Analytics (DNS + GUI Tooling Blocked)
+
+- Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --rendered`
+    - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-28.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-28.md`.
+- Verified:
+  - Infra blocker: this host cannot resolve `moonn.ru` (`Errno 11001 getaddrinfo failed`), so live HTTP/robots/sitemap checks are invalid in this run (audit outputs are `http_ERROR` across all five URLs).
+  - GUI tooling blocker: `windows-mcp` failed (`Snapshot` timeout; `Screenshot` transport closed), so bounded Rublev-profile analytics verification could not be performed.
+- Outputs:
+  - Daily supervisor note: `docs/moonn-seo-growth-check-2026-05-28.md`.
+- Notes:
+  - Weekly privacy layer was intentionally skipped because today is Thursday (next scheduled weekly privacy run: Monday, 2026-06-01), unless explicitly requested earlier.
+
 ## 2026-05-27 09:05 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

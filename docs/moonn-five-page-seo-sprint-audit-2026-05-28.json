@@ -1,13 +1,20 @@
 {
   "version": 1,
   "runDate": "2026-05-28",
-  "createdAt": "2026-05-28T10:11:54.204011+00:00",
+  "createdAt": "2026-05-28T10:23:53.820961+00:00",
   "packet": "docs\\moonn-five-page-seo-packets-2026-05-21.json",
+  "environment": {
+    "dns": {
+      "hostname": "moonn.ru",
+      "ok": false,
+      "error": "[Errno 11001] getaddrinfo failed"
+    }
+  },
   "inputs": {
     "sitemapUrl": "https://moonn.ru/sitemap.xml",
     "robotsUrl": "https://moonn.ru/robots.txt",
-    "sitemapFetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
-    "robotsFetchError": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    "sitemapFetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "robotsFetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>"
   },
   "pages": [
     {
@@ -19,7 +26,7 @@
       "expectedTitle": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
       "expectedDescription": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
       "expectedH1": "Подростковый психологический лагерь в Москве",
-      "fetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "fetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "issues": [
         "http_ERROR"
       ],
@@ -38,7 +45,7 @@
       "expectedTitle": "Картины Татьяны Мунн | галерея, арт и персональный код",
       "expectedDescription": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
       "expectedH1": "Галерея картин Татьяны Мунн",
-      "fetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "fetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "issues": [
         "http_ERROR"
       ],
@@ -57,7 +64,7 @@
       "expectedTitle": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
       "expectedDescription": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
       "expectedH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
-      "fetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "fetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "issues": [
         "http_ERROR"
       ],
@@ -76,7 +83,7 @@
       "expectedTitle": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
       "expectedDescription": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
       "expectedH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
-      "fetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "fetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "issues": [
         "http_ERROR"
       ],
@@ -95,7 +102,7 @@
       "expectedTitle": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
       "expectedDescription": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
       "expectedH1": "Отзывы о психологе Татьяне Мунн",
-      "fetchError": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "fetchError": "dns_error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "issues": [
         "http_ERROR"
       ],

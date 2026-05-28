@@ -88,5 +88,6 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 2. `OK` Daily five-page audit artifacts created, but all pages are `http_ERROR` due to DNS (do not treat as regression evidence):
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-28.json`
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-28.md`
-3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists in git object database.
-4. Next action: re-run the same `--rendered` audit once DNS/network is restored, then proceed with the bounded Chrome GUI investigation for the camp AEO gap and the scoped reindex for only the 5 URLs (no 83-URL batch).
+3. `P0` GUI fallback blocker: `windows-mcp` failed (`Snapshot` timeout; `Screenshot` transport closed), so bounded Rublev-profile Chrome checks could not be performed in this run.
+4. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists in git object database.
+5. Next action: re-run the same `--rendered` audit once DNS/network is restored, then proceed with the bounded Chrome GUI investigation for the camp AEO gap and the scoped reindex for only the 5 URLs (no 83-URL batch).
