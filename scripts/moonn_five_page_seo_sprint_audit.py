@@ -316,13 +316,36 @@ def main() -> int:
     packet_path = resolve_packet_path(args.packet)
     packet = json.loads(packet_path.read_text(encoding="utf-8"))
     env_dns = dns_probe("moonn.ru")
-    sitemap, sitemap_error = sitemap_urls()
-    disallows, robots_error = robots_disallows()
-    pages = [raw_audit_page(page, sitemap, disallows) for page in packet["pages"]]
-    rendered_rows = rendered_audit(packet["pages"]) if args.rendered else []
-    rendered_by_url = {row["url"]: row for row in rendered_rows}
-    for page in pages:
-        page["rendered"] = rendered_by_url.get(page["url"], {"renderedStatus": "not_requested"})
+    if not env_dns.get("ok"):
+        sitemap = None
+        disallows = None
+        sitemap_error = "dns_blocked"
+        robots_error = "dns_blocked"
+        pages: list[dict] = []
+        for page in packet["pages"]:
+            pages.append(
+                {
+                    "url": page["url"],
+                    "pageId": page.get("sourcePageId", ""),
+                    "status": None,
+                    "inSitemap": None,
+                    "robotsTxtBlocked": None,
+                    "expectedTitle": page["seo"]["title"],
+                    "expectedDescription": page["seo"]["description"],
+                    "expectedH1": page["seo"]["h1"]["targetH1"],
+                    "fetchError": env_dns.get("error") or "dns_blocked",
+                    "issues": ["dns_blocked"],
+                    "rendered": {"renderedStatus": "skipped", "reason": "dns_blocked"},
+                }
+            )
+    else:
+        sitemap, sitemap_error = sitemap_urls()
+        disallows, robots_error = robots_disallows()
+        pages = [raw_audit_page(page, sitemap, disallows) for page in packet["pages"]]
+        rendered_rows = rendered_audit(packet["pages"]) if args.rendered else []
+        rendered_by_url = {row["url"]: row for row in rendered_rows}
+        for page in pages:
+            page["rendered"] = rendered_by_url.get(page["url"], {"renderedStatus": "not_requested"})
 
     payload = {
         "version": 1,

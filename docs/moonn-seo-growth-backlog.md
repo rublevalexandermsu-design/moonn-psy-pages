@@ -91,3 +91,11 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `P0` GUI fallback blocker: `windows-mcp` failed (`Snapshot` timeout; `Screenshot` transport closed), so bounded Rublev-profile Chrome checks could not be performed in this run.
 4. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists in git object database.
 5. Next action: re-run the same `--rendered` audit once DNS/network is restored, then proceed with the bounded Chrome GUI investigation for the camp AEO gap and the scoped reindex for only the 5 URLs (no 83-URL batch).
+
+## 2026-05-29 — Supervisor Run
+
+1. `P0` Infra blocker persists: DNS for `moonn.ru` is still broken on this host (`Errno 11001 getaddrinfo failed`).
+2. `OK` Daily five-page audit now fast-fails on DNS and writes explicit evidence instead of hanging:
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-29.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-29.md`
+3. `P0` Analytics evidence still missing for `2026-04-29..today`: no API exports committed, and no GUI-verified aggregates collected (needs Rublev Chrome profile on a host with working DNS).
