@@ -1795,3 +1795,31 @@ Append-only project history for `moon-psy-site`.
   - Root cause: the spreadsheet had no single product registry and formula scopes were not explicitly separated by product layer.
   - Fix: split new-layer metrics from full-model metrics and add `19 Реестр направлений` as the canonical count source.
   - Follow-up rule: before changing site pages or SEO rows, check `19 Реестр направлений` first; if a product direction has no live page, add the page to both the site manifest and `07 Контент SEO`.
+
+## 2026-05-29 — Centia amoCRM Contact Import And Custdev Pipeline
+
+- Project: Centia studio under the Moonn ecosystem.
+- Repository: `rublevalexandermsu-design/moonn-psy-pages`.
+- Branch: `codex/studia`.
+- Trigger: user asked to import warm contacts from a Google Sheet into amoCRM, configure the sales/custdev pipeline and add a free-video gift stage for people who completed custdev.
+- Source sheet:
+  - URL: `https://docs.google.com/spreadsheets/d/1g1uPRnO0fn90uHHcq8M9Rs9GCsjxEag-5Pm7Yya2Yy4/edit`.
+  - Title: `2605_Лагерь_ЛИДЫ`.
+  - Sheet: `Теплые контакты`.
+  - Verified structure: 29 contact rows across hot camp leads, parents with teenagers from consultations and previous camp contacts.
+- amoCRM:
+  - Account: `rublevalexandermsu.amocrm.ru`.
+  - Browser rule: always use Google Chrome profile Alexander / Rublev for amoCRM work.
+  - Live path found: `amoМаркет` -> top-right menu near `WEB HOOKS` -> `Создать интеграцию`.
+  - External integration form was opened and filled with non-secret metadata.
+  - OAuth secrets were not copied into chat or repository.
+- CRM architecture:
+  - Proposed pipeline: `Касдев лагерь / Центия`.
+  - Key stages: `Новый тёплый контакт`, `Первичное касание`, `Ответил / есть контакт`, `Zoom назначен`, `Zoom проведён`, `Подарок видео отправлен`, `Обсуждаем участие`, `Бронь / предоплата`, plus system win/loss reasons.
+- Report:
+  - `docs/centia-amo-crm-import-plan-2026-05-29.md`.
+- Incident:
+  - Symptom: amoCRM integration GUI save did not complete during this pass.
+  - Root cause: the external integration form still had validation friction in the live UI; the likely issue is a required integration asset and/or form validation.
+  - Fix so far: identified the canonical API path, corrected redirect URL away from localhost and documented a safe import gate.
+  - Follow-up rule: do not mass-import contacts until OAuth/private integration is actually created, credentials are stored outside Git, and a small test batch is verified in amoCRM UI.
