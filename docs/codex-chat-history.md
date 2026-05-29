@@ -1811,7 +1811,8 @@ Append-only project history for `moon-psy-site`.
   - Account: `rublevalexandermsu.amocrm.ru`.
   - Browser rule: always use Google Chrome profile Alexander / Rublev for amoCRM work.
   - Live path found: `amoМаркет` -> top-right menu near `WEB HOOKS` -> `Создать интеграцию`.
-  - External integration form was opened and filled with non-secret metadata.
+  - External integration form was opened and filled with non-secret metadata, then abandoned as the weaker route for a one-account internal import.
+  - Private integration route was verified next; amoCRM opened a legal statement form with passport/INN/address fields before integration creation.
   - OAuth secrets were not copied into chat or repository.
 - CRM architecture:
   - Proposed pipeline: `Касдев лагерь / Центия`.
@@ -1819,7 +1820,7 @@ Append-only project history for `moon-psy-site`.
 - Report:
   - `docs/centia-amo-crm-import-plan-2026-05-29.md`.
 - Incident:
-  - Symptom: amoCRM integration GUI save did not complete during this pass.
-  - Root cause: the external integration form still had validation friction in the live UI; the likely issue is a required integration asset and/or form validation.
-  - Fix so far: identified the canonical API path, corrected redirect URL away from localhost and documented a safe import gate.
-  - Follow-up rule: do not mass-import contacts until OAuth/private integration is actually created, credentials are stored outside Git, and a small test batch is verified in amoCRM UI.
+  - Symptom: amoCRM integration GUI did not reach key generation.
+  - Root cause: private integration creation requires an amoCRM legal statement with personal/legal data; external integration would require a reachable OAuth webhook/callback route.
+  - Fix so far: identified the canonical API path, selected private integration as the simplest one-account route, and documented the safe import gate.
+  - Follow-up rule: do not enter passport/INN/address data in chat or Git. The account owner must fill the statement manually in the protected amoCRM UI, or the project must create a secure external OAuth receiver before continuing.

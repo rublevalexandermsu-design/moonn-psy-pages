@@ -27,7 +27,7 @@ No raw contact names, phones, child details or notes are stored in this reposito
 - Integration path found in the live account: `amoМаркет` -> top-right menu near `WEB HOOKS` -> `Создать интеграцию`.
 - External integration form was opened and filled with non-secret metadata.
 - OAuth secrets were not copied into chat or repository.
-- Current blocker: GUI save did not complete during this pass; likely validation remains in the integration form. Continue from the open amoCRM tab before attempting import.
+- Current blocker: private integration creation opens an amoCRM legal statement form with passport/INN/address fields. These fields must be completed by the account owner inside amoCRM, not in chat or Git.
 
 ## Recommended Pipeline
 
@@ -74,13 +74,20 @@ Statuses:
 
 Before creating or updating contacts in amoCRM:
 
-1. Complete OAuth/private integration setup and store secrets only in a secure local credential store.
-2. Export a local ignored dry-run file, not committed to Git.
-3. Validate phone normalization, duplicate phones, missing names and sensitive notes.
-4. Confirm whether raw sensitive comments about minors may be imported as internal amoCRM notes.
-5. Create or verify the pipeline and custom fields.
-6. Import a small test batch first.
-7. Verify in amoCRM UI that contacts, deals, tasks and gift-video stage are correct.
+1. Complete the amoCRM legal statement in the protected UI or choose an external OAuth callback route.
+2. Complete OAuth/private integration setup and store secrets only in a secure local credential store.
+3. Export a local ignored dry-run file, not committed to Git.
+4. Validate phone normalization, duplicate phones, missing names and sensitive notes.
+5. Confirm whether raw sensitive comments about minors may be imported as internal amoCRM notes.
+6. Create or verify the pipeline and custom fields.
+7. Import a small test batch first.
+8. Verify in amoCRM UI that contacts, deals, tasks and gift-video stage are correct.
+
+## Integration Route Decision
+
+- Private integration is the right low-complexity route for a single amoCRM account, but amoCRM requires a legal statement before continuing.
+- External integration is possible, but requires a reachable webhook endpoint for `client_id/client_secret` and a reachable Redirect URI for the authorization code. Use this route only if we intentionally build a small secure OAuth receiver first.
+- Do not use legacy API keys: amoCRM no longer exposes API keys in modern accounts; OAuth is required.
 
 ## Data Protection Rule
 
