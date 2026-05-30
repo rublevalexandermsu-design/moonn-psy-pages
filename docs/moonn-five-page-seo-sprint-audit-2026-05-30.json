@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "runDate": "2026-05-30",
+  "createdAt": "2026-05-30T06:03:11.913837+00:00",
+  "packet": "docs\\moonn-five-page-seo-packets-2026-05-21.json",
+  "environment": {
+    "dns": {
+      "hostname": "moonn.ru",
+      "ok": false,
+      "error": "[Errno 11001] getaddrinfo failed"
+    }
+  },
+  "inputs": {
+    "sitemapUrl": "https://moonn.ru/sitemap.xml",
+    "robotsUrl": "https://moonn.ru/robots.txt",
+    "sitemapFetchError": "dns_blocked",
+    "robotsFetchError": "dns_blocked"
+  },
+  "pages": [
+    {
+      "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+      "pageId": "140348786",
+      "status": null,
+      "inSitemap": null,
+      "robotsTxtBlocked": null,
+      "expectedTitle": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+      "expectedDescription": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+      "expectedH1": "Подростковый психологический лагерь в Москве",
+      "fetchError": "[Errno 11001] getaddrinfo failed",
+      "issues": [
+        "dns_blocked"
+      ],
+      "rendered": {
+        "renderedStatus": "skipped",
+        "reason": "dns_blocked"
+      }
+    },
+    {
+      "url": "https://moonn.ru/kartiny-tatiany-munn",
+      "pageId": "140864526",
+      "status": null,
+      "inSitemap": null,
+      "robotsTxtBlocked": null,
+      "expectedTitle": "Картины Татьяны Мунн | галерея, арт и персональный код",
+      "expectedDescription": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+      "expectedH1": "Галерея картин Татьяны Мунн",
+      "fetchError": "[Errno 11001] getaddrinfo failed",
+      "issues": [
+        "dns_blocked"
+      ],
+      "rendered": {
+        "renderedStatus": "skipped",
+        "reason": "dns_blocked"
+      }
+    },
+    {
+      "url": "https://moonn.ru/psypodgotovka1",
+      "pageId": "62652841",
+      "status": null,
+      "inSitemap": null,
+      "robotsTxtBlocked": null,
+      "expectedTitle": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "expectedDescription": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+      "expectedH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "fetchError": "[Errno 11001] getaddrinfo failed",
+      "issues": [
+        "dns_blocked"
+      ],
+      "rendered": {
+        "renderedStatus": "skipped",
+        "reason": "dns_blocked"
+      }
+    },
+    {
+      "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+      "pageId": "135430346",
+      "status": null,
+      "inSitemap": null,
+      "robotsTxtBlocked": null,
+      "expectedTitle": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+      "expectedDescription": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+      "expectedH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+      "fetchError": "[Errno 11001] getaddrinfo failed",
+      "issues": [
+        "dns_blocked"
+      ],
+      "rendered": {
+        "renderedStatus": "skipped",
+        "reason": "dns_blocked"
+      }
+    },
+    {
+      "url": "https://moonn.ru/otzivi",
+      "pageId": "81167556",
+      "status": null,
+      "inSitemap": null,
+      "robotsTxtBlocked": null,
+      "expectedTitle": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+      "expectedDescription": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+      "expectedH1": "Отзывы о психологе Татьяне Мунн",
+      "fetchError": "[Errno 11001] getaddrinfo failed",
+      "issues": [
+        "dns_blocked"
+      ],
+      "rendered": {
+        "renderedStatus": "skipped",
+        "reason": "dns_blocked"
+      }
+    }
+  ]
+}

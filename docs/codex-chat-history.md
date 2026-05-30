@@ -1632,6 +1632,19 @@ Append-only project history for `moon-psy-site`.
   - `assets/moonn-five-page-seo-sprint-layer.js` exists in repo; commit `49a093e` exists in git object database.
 - Next action: re-run the audit when DNS/network is restored, then proceed with the bounded authenticated-Chrome investigation for the camp AEO gap and scoped reindex for only the five URLs.
 
+## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Infra blocker (this host):
+  - DNS resolution for `moonn.ru` is still broken (`[Errno 11001] getaddrinfo failed`), so live HTTP/robots/sitemap/rendered checks are not comparable today.
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`
+    - Output: `docs/moonn-five-page-seo-sprint-audit-2026-05-30.json`, `docs/moonn-five-page-seo-sprint-audit-2026-05-30.md`.
+- Analytics/GSC/Yandex-Webmaster:
+  - No API exports and no GUI-verified aggregates were collected in this run (requires Rublev Chrome profile on a host with working DNS).
+- Next action: restore DNS/network, then re-run the five-page audit and proceed with scoped reindex (5 URLs only) + bounded Chrome investigation for the camp page AEO gap.
+
 ## 2026-05-29 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).

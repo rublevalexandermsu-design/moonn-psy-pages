@@ -99,3 +99,11 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-29.json`
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-29.md`
 3. `P0` Analytics evidence still missing for `2026-04-29..today`: no API exports committed, and no GUI-verified aggregates collected (needs Rublev Chrome profile on a host with working DNS).
+
+## 2026-05-30 — Supervisor Run
+
+1. `P0` Infra blocker persists: DNS for `moonn.ru` is still broken on this host (`Errno 11001 getaddrinfo failed`).
+2. `OK` Daily five-page audit recorded (DNS-blocked, fast-fail):
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-30.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-30.md`
+3. Next action (unchanged): restore DNS / run bounded Rublev-profile GUI checks / submit scoped reindex ONLY for the 5 URLs (no 83-URL batch).
