@@ -1,7 +1,7 @@
 (function(){
   var id='moonn-teen-camp-home-banner';
   var targetUrl='/podrostkovyy-lager-psihologiya';
-  var imageUrl='https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@b28b5f48939f8f640a218be50ac278ca24969ace/assets/teen-psychology-camp-2026/tatiana-moonn-teen-psychology-camp-hero-2026.jpg';
+  var imageUrl='https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@978847c0d1283d5347ce0e1c2c38d7ee219b7f8c/assets/teen-psychology-camp-2026/tatiana-moonn-teen-psychology-camp-hero-2026.jpg';
   function addStyle(){
     if(document.getElementById(id+'-style')) return;
     var style=document.createElement('style');
@@ -25,3 +25,4 @@
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
+
