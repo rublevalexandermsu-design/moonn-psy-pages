@@ -272,3 +272,24 @@ Verification:
 Publication note:
 
 - User approved publication with `10:00-18:00`; legal/compliance risk remains recorded because naming alone may not determine classification.
+
+## Final publication: teen intensive 10:00-18:00 reframe
+
+- Tilda page-specific HEAD for project `8326812`, page `140348786` was saved through authenticated Chrome; Tilda returned `The code has been saved successfully`.
+- Tilda page was published; Tilda returned the public URL `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Live raw HTML check:
+  - HTTP `200`;
+  - contains `20260531-teen-intensive-1018`;
+  - contains `68327c9`;
+  - does not contain `20260531-camp-clickable-downloads`;
+  - does not contain `15ffd51`;
+  - contains `10:00-18:00`;
+  - does not contain `10:00-14:00`.
+- Live mobile screenshot saved: `docs/teen-psychology-camp-2026/teen-intensive-live-mobile-check.png`.
+- Visual check from the screenshot confirms the first viewport uses the reframe `Психология без скуки (подростковый интенсив)` and shows `6 - 10 июля | 10:00 - 18:00`.
+
+Residual risks / next gates:
+
+- This is a public wording/content mitigation, not a legal conclusion that the format is outside the registry requirements.
+- Existing URL slug still contains `lager`; keep for SEO until an alias/redirect migration is explicitly approved.
+- Tilda cart product naming may still need a separate payment/product gate before renaming; payment settings were not changed in this step.

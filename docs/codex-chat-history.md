@@ -37,6 +37,20 @@ Append-only project history for `moon-psy-site`.
 - New local mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-1018-mobile-check.png`.
 - Legal/compliance risk remains recorded because naming alone may not determine classification.
 
+### Published 10:00-18:00 intensive reframe
+
+- Tilda page-specific HEAD for project `8326812`, page `140348786` was saved through the authenticated Rublev/Alexander Chrome session.
+- Tilda returned `The code has been saved successfully`, then the page was published.
+- Live URL: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Live raw HTML verification:
+  - HTTP `200`;
+  - contains `20260531-teen-intensive-1018` and commit `68327c9`;
+  - does not contain old marker `20260531-camp-clickable-downloads` or old commit `15ffd51`;
+  - contains `10:00-18:00`;
+  - does not contain `10:00-14:00`.
+- Live mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-live-mobile-check.png`.
+- Remaining gates: URL slug migration from `lager` to `intensiv` and cart product rename require separate explicit approval because they affect SEO/payment product layers.
+
 ## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
 
 - Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.

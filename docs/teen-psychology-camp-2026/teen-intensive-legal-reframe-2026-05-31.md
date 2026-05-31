@@ -51,13 +51,27 @@ Draft public format:
 - Local Chrome mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-1018-mobile-check.png`.
 - DOCX visual render gate was not run because `soffice` is not available on this host.
 
-## Publication Gate
+## Publication Result
 
 Operator approved publication after returning the factual format to `10:00-18:00`. Legal/compliance risk remains recorded because naming alone may not determine classification.
 
-Before publishing:
+Published through authenticated Tilda/Chrome on 2026-05-31:
 
-1. Confirm final public name.
-2. Confirm whether the old URL slug containing `lager` should be kept temporarily for SEO or migrated to a new alias such as `/podrostkovyy-intensiv-psihologiya` with redirect.
-3. Confirm payment product text in Tilda cart should be renamed from `подростковый лагерь` to `подростковый интенсив`.
-4. Run Tilda publish via authenticated Chrome and verify live HTML/rendered page/cart/downloads.
+1. Tilda HEAD for page `140348786` was saved; Tilda returned `The code has been saved successfully`.
+2. Page was published in Tilda; Tilda returned the live URL `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+3. Live raw HTML verification:
+   - HTTP `200`;
+   - contains loader marker `20260531-teen-intensive-1018`;
+   - contains page commit `68327c9`;
+   - does not contain old marker `20260531-camp-clickable-downloads`;
+   - does not contain old commit `15ffd51`;
+   - contains `10:00-18:00`;
+   - does not contain `10:00-14:00`.
+4. Live mobile screenshot:
+   - `docs/teen-psychology-camp-2026/teen-intensive-live-mobile-check.png`;
+   - first viewport shows `Психология без скуки (подростковый интенсив)` and `10:00-18:00`.
+
+Remaining gates:
+
+1. Decide whether the old URL slug containing `lager` should be kept temporarily for SEO or migrated to a new alias such as `/podrostkovyy-intensiv-psihologiya` with redirect.
+2. Rename the Tilda cart product from `подростковый лагерь` to `подростковый интенсив` only after explicit payment/product approval, then verify live cart without submitting payment.
