@@ -65,6 +65,28 @@ Append-only project history for `moon-psy-site`.
 - Contract wording was normalized from `досугово-развивающая` and `смена/смены` to `тренингово-развивающая`, `поток`, and `периоды проведения`.
 - Text QA over the current DOCX/PDF packet found no `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`.
 
+### PDF link incident fixed
+
+- User found that the bottom PDF buttons `Оплатить участие` and `Страница интенсива` opened `ERR_FILE_NOT_FOUND`, and that the poster still contained the old phrase `лагерь уверенности, общения и ИИ`.
+- Root cause: the PDFs used raw Cyrillic-domain annotations for `мунн.рф`, and the previous QA checked button presence without validating the actual URI targets and visible poster layer.
+- Fixed `scripts/build_teen_camp_downloads.py` to generate PDF annotations with punycode URLs:
+  - `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`;
+  - `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya?pay=teen-camp-2026`.
+- Rebuilt and copied to `C:\Users\yanta\Downloads`:
+  - `Программа подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Постер подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`.
+- Published fixed site assets:
+  - fixed PDF/JPG assets commit `64cf311`;
+  - page HTML commit `0a25061`;
+  - Tilda HEAD loader marker `20260531-teen-intensive-pdf-link-fix`.
+- Verification:
+  - program PDF: 6 link annotations, poster PDF: 6 link annotations;
+  - no raw `мунн.рф` annotation targets remain in PDFs;
+  - visual PDF render artifacts saved in `docs/teen-psychology-camp-2026/pdf-qa/`;
+  - live `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200`, contains the new marker and commits, and does not contain old marker `20260531-camp-clickable-downloads`, old asset commit `ad26ae1`, or old phrase `лагерь уверенности`.
+- Rule added: future public PDF/Word materials must pass clickable-link QA, not only text/visual QA.
+
 ## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
 
 - Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.

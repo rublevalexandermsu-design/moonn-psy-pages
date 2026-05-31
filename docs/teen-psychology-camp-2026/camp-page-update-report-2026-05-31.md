@@ -323,3 +323,36 @@ Verification:
 - DOCX/PDF text extraction over the nine current `Downloads` files found no `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`.
 - Word COM export produced the three contract PDFs from the updated DOCX files.
 - Full DOCX visual render through the Documents skill renderer was not available because `soffice` is not installed on this host; Word PDF export and text extraction were used as the fallback QA gate.
+
+## PDF link incident and fixed publication
+
+Trigger: the user opened the updated PDF files from `C:\Users\yanta\Downloads` and found that the bottom buttons `Оплатить участие` and `Страница интенсива` opened a local browser error `ERR_FILE_NOT_FOUND` instead of the intensive page/payment route. The poster also still contained the old visible phrase `лагерь уверенности, общения и ИИ`.
+
+Root cause:
+
+- the PDF annotations used the Cyrillic domain `https://мунн.рф/...`; in the local PDF/browser viewer this broke into an invalid local file route;
+- the previous QA checked that annotations existed, but did not inspect/click the actual URI targets in the viewer;
+- the poster PDF still reused an old image layer, so the visible headline was not fully revalidated after the legal reframe.
+
+Fix:
+
+- rebuilt the program and poster PDFs with ASCII/punycode URLs: `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`;
+- added the payment route `?pay=teen-camp-2026` to the `Оплатить участие` PDF buttons;
+- rebuilt the poster as a native PDF layout, not an old poster image, and removed visible `лагерь` wording;
+- added real visible PDF buttons for `Оплатить участие`, `Страница интенсива`, `Telegram`, and `WhatsApp`;
+- copied the fixed files back to `C:\Users\yanta\Downloads`;
+- updated site assets to commit `64cf311`, page HTML to `0a25061`, and Tilda HEAD loader to the `20260531-teen-intensive-pdf-link-fix` marker.
+
+Verification after fix:
+
+- program PDF: 1 page, 6 link annotations; all page/payment links use `xn--l1acaw.xn--p1ai`, not `мунн.рф`;
+- poster PDF: 1 page, 6 link annotations; all page/payment links use `xn--l1acaw.xn--p1ai`, not `мунн.рф`;
+- both PDFs contain `10:00-18:00`, contain `интенсив`, and do not contain `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`;
+- PDF visual QA images saved in `docs/teen-psychology-camp-2026/pdf-qa/`;
+- CDN checks returned `200` for the fixed program PDF, poster PDF, and poster JPG at commit `64cf311`;
+- Tilda page-specific HEAD for project `8326812`, page `140348786` was saved in the authorized Rublev Chrome session and the page was published;
+- live raw HTML for `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200`, contains `20260531-teen-intensive-pdf-link-fix`, `0a25061`, and `64cf311`, and does not contain old marker `20260531-camp-clickable-downloads`, old asset commit `ad26ae1`, or old phrase `лагерь уверенности`.
+
+New QA rule:
+
+- for public PDF/Word materials, existence of buttons is not enough; every generated file must pass link-target QA: extract annotations, verify ASCII/punycode URLs, verify expected payment/page/Telegram/WhatsApp targets, render visually, and scan for obsolete legal/public wording before reporting completion.

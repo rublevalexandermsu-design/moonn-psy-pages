@@ -86,3 +86,21 @@ The offline/download packet in `C:\Users\yanta\Downloads` was also normalized af
 - contracts DOCX/PDF for `30 000`, `40 000`, and `50 000` rubles under the `подростковый интенсив` name.
 
 Text QA over DOCX/PDF files found no visible `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`. Contract PDFs were exported from the updated DOCX files through Word COM.
+
+## Follow-up: PDF Link And Poster QA Incident
+
+After user review, the two downloadable public materials required a second correction:
+
+- PDF buttons that pointed to the Cyrillic domain `мунн.рф` opened `ERR_FILE_NOT_FOUND` in the local viewer;
+- the poster still had the old visible phrase `лагерь уверенности, общения и ИИ`;
+- the first pass confirmed that buttons existed, but did not fully validate their click targets and visible text after the reframe.
+
+Corrected state:
+
+- program PDF and poster PDF now use punycode URL targets: `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`;
+- payment buttons use `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya?pay=teen-camp-2026`;
+- poster wording is `подростковый интенсив уверенности, общения и ИИ`;
+- poster and program both include real PDF link annotations for page/payment/contact actions;
+- live Tilda loader was republished with marker `20260531-teen-intensive-pdf-link-fix`.
+
+Compliance/QA rule added: public materials for this workstream must be checked both as text and as clickable artifacts. PDF annotations must not use raw Cyrillic domains; use ASCII/punycode targets to avoid broken local viewer behavior.
