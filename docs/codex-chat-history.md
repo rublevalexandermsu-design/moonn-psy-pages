@@ -51,6 +51,20 @@ Append-only project history for `moon-psy-site`.
 - Live mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-live-mobile-check.png`.
 - Remaining gates: URL slug migration from `lager` to `intensiv` and cart product rename require separate explicit approval because they affect SEO/payment product layers.
 
+### Downstream documents corrected
+
+- User noted that the public page was updated, but the offline/download materials and contracts still needed to be completed.
+- Updated local package in `C:\Users\yanta\Downloads`:
+  - `Программа подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Постер подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`;
+  - `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 30000 рублей.docx/.pdf`;
+  - `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 40000 рублей.docx/.pdf`;
+  - `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 50000 рублей.docx/.pdf`.
+- Removed old `Downloads` contract copies whose file names contained `подростковый лагерь`.
+- Contract wording was normalized from `досугово-развивающая` and `смена/смены` to `тренингово-развивающая`, `поток`, and `периоды проведения`.
+- Text QA over the current DOCX/PDF packet found no `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`.
+
 ## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
 
 - Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.

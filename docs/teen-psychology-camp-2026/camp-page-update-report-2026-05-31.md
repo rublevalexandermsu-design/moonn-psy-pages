@@ -293,3 +293,33 @@ Residual risks / next gates:
 - This is a public wording/content mitigation, not a legal conclusion that the format is outside the registry requirements.
 - Existing URL slug still contains `lager`; keep for SEO until an alias/redirect migration is explicitly approved.
 - Tilda cart product naming may still need a separate payment/product gate before renaming; payment settings were not changed in this step.
+
+## Download/offline materials reframe
+
+After the user noted that the downstream document packet was not fully closed, the local `Downloads` package was rebuilt/normalized.
+
+Current user-facing files in `C:\Users\yanta\Downloads`:
+
+- `Программа подросткового интенсива Татьяны Мунн 2026.pdf`
+- `Постер подросткового интенсива Татьяны Мунн 2026.pdf`
+- `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 30000 рублей.docx`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 30000 рублей.pdf`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 40000 рублей.docx`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 40000 рублей.pdf`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 50000 рублей.docx`
+- `Договор оказания услуг подростковый интенсив Татьяны Мунн 2026 - 50000 рублей.pdf`
+
+Contract changes:
+
+- visible file names changed from `подростковый лагерь` to `подростковый интенсив`;
+- contract subtitle changed to `подростковый психологический интенсив`;
+- service wording changed from `досугово-развивающая` to `тренингово-развивающая`;
+- `смена/смены` changed to `поток/периоды проведения`;
+- 2026 periods aligned to the current page calendar: `6-10 июля`, `24-28 августа`, `19-20 и 26-27 сентября`, `26-30 октября`, `2-6 ноября`.
+
+Verification:
+
+- DOCX/PDF text extraction over the nine current `Downloads` files found no `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`.
+- Word COM export produced the three contract PDFs from the updated DOCX files.
+- Full DOCX visual render through the Documents skill renderer was not available because `soffice` is not installed on this host; Word PDF export and text extraction were used as the fallback QA gate.

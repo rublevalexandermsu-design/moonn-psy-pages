@@ -75,3 +75,14 @@ Remaining gates:
 
 1. Decide whether the old URL slug containing `lager` should be kept temporarily for SEO or migrated to a new alias such as `/podrostkovyy-intensiv-psihologiya` with redirect.
 2. Rename the Tilda cart product from `подростковый лагерь` to `подростковый интенсив` only after explicit payment/product approval, then verify live cart without submitting payment.
+
+## Downstream Document Packet
+
+The offline/download packet in `C:\Users\yanta\Downloads` was also normalized after publication:
+
+- program PDF: `Программа подросткового интенсива Татьяны Мунн 2026.pdf`;
+- poster PDF: `Постер подросткового интенсива Татьяны Мунн 2026.pdf`;
+- call brief DOCX: `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`;
+- contracts DOCX/PDF for `30 000`, `40 000`, and `50 000` rubles under the `подростковый интенсив` name.
+
+Text QA over DOCX/PDF files found no visible `лагер`, `смен`, `досугов`, `отдых`, `оздоров`, or `10:00-14:00`. Contract PDFs were exported from the updated DOCX files through Word COM.
