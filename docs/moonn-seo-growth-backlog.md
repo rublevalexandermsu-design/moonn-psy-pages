@@ -107,3 +107,12 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-30.json`
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-30.md`
 3. Next action (unchanged): restore DNS / run bounded Rublev-profile GUI checks / submit scoped reindex ONLY for the 5 URLs (no 83-URL batch).
+
+## 2026-05-31 — Supervisor Run
+
+1. `P0` Infra blocker persists: DNS for `moonn.ru` is broken on this host (`DNS-имя не существует` / `Errno 11001 getaddrinfo failed`).
+2. `OK` Daily five-page audit recorded (DNS-blocked, fast-fail):
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-31.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-05-31.md`
+3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists.
+4. Next action (unchanged): restore DNS / run bounded Rublev-profile GUI checks / submit scoped reindex ONLY for the 5 URLs (no 83-URL batch).

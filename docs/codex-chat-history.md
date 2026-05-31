@@ -1645,6 +1645,23 @@ Append-only project history for `moon-psy-site`.
   - No API exports and no GUI-verified aggregates were collected in this run (requires Rublev Chrome profile on a host with working DNS).
 - Next action: restore DNS/network, then re-run the five-page audit and proceed with scoped reindex (5 URLs only) + bounded Chrome investigation for the camp page AEO gap.
 
+## 2026-05-31 09:05 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch: `codex/moonn-seo-supervisor-20260531` (base: `origin/codex/moonn-seo-audit`).
+- Infra blocker (this host):
+  - DNS resolution for `moonn.ru` is broken (`DNS-имя не существует` / `[Errno 11001] getaddrinfo failed`), so live HTTP/robots/sitemap/rendered checks are not comparable today.
+- Ran (raw + rendered):
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-31`
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --packet docs\\moonn-five-page-seo-packets-2026-05-21.json --rendered --out-prefix docs/moonn-five-page-seo-sprint-audit-2026-05-31-rendered`
+  - Outputs:
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-31.{json,md}`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-05-31-rendered.{json,md}`
+- Report note: `docs/moonn-seo-growth-check-2026-05-31.md`.
+- Local-only verification:
+  - `assets/moonn-five-page-seo-sprint-layer.js` exists in repo; commit `49a093e` exists in git object database.
+- Next action: restore DNS/network, then re-run the audit and proceed with scoped reindex (5 URLs only) + bounded Chrome investigation for the camp page AEO gap.
+
 ## 2026-05-29 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).
