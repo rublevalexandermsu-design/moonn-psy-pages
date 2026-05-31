@@ -70,3 +70,43 @@ Follow-up rule: do not report domain migration complete from registrar UI alone.
 ## Next check
 
 Recheck DNS in 30-60 minutes. If DNS still points to `95.163.244.138`, reopen REG.RU DNS zone and look for a separate publish/save action or contact REG.RU support with the exact mismatch.
+
+## Follow-up check: 2026-05-31 10:45 MSK
+
+Result changed from complete blocker to partial operational success.
+
+DNS is still not aligned with the Tilda cabinet target:
+
+```text
+ns1.reg.ru root      -> 95.163.244.138
+ns1.reg.ru www       -> 95.163.244.138
+ns2.reg.ru root      -> 95.163.244.138
+ns2.reg.ru www       -> 95.163.244.138
+Google DNS root/www  -> 95.163.244.138
+Cloudflare root/www  -> 95.163.244.138
+```
+
+But live HTTP/HTTPS now opens the Tilda site:
+
+```text
+http://xn--l1acaw.xn--p1ai/        -> 301 to https://xn--l1acaw.xn--p1ai/
+https://xn--l1acaw.xn--p1ai/       -> 200 OK, Tilda headers
+http://www.xn--l1acaw.xn--p1ai/    -> 301 to https://xn--l1acaw.xn--p1ai/
+https://www.xn--l1acaw.xn--p1ai/   -> 301 to root, final 200 OK
+```
+
+Content proof:
+
+- HTML title/content contains `Татьяна Мунн — психолог МГУ и эксперт по эмоциональному интеллекту`.
+- Tilda project marker `project8326812` is present.
+
+Residual risk:
+
+- The page still contains canonical/OG/entity references to `https://moonn.ru/`. This is acceptable for emergency visibility, but it is not a clean SEO migration to `мунн.рф`.
+- DNS still shows `95.163.244.138`, not Tilda's requested `176.57.67.109`; however, that IP currently serves the Tilda site through ddos-guard/openresty. Treat this as operationally visible but technically inconsistent.
+
+Decision:
+
+- Emergency visibility goal is met: `мунн.рф` opens Moonn site.
+- Do not keep the short heartbeat running indefinitely.
+- Next non-heartbeat task should be a scoped SEO/domain migration review: canonical URL, `og:url`, schema `@id`/`url`, Yandex.Metrika host attribution, Tilda primary-domain behavior, and whether `moonn.ru` should remain canonical while legal recovery is in progress.

@@ -1615,6 +1615,26 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - Recheck DNS/Tilda in 30-60 minutes; if still stale, find the missing REG.RU publish/save action or prepare support escalation with evidence.
 
+## 2026-05-31 10:45 MSK — Domain Continuity Follow-up: `мунн.рф` live-visible
+
+- Workstream: `Moonn domain continuity / мунн.рф temporary domain`.
+- Branch: `codex/moonn-rf-domain-continuity`.
+- Follow-up automation: `moonn-dns-follow-up`.
+- Verification:
+  - DNS still returns `95.163.244.138` for root and `www` from `ns1.reg.ru`, `ns2.reg.ru`, Google DNS, and Cloudflare DNS.
+  - Live site is now operational:
+    - `http://xn--l1acaw.xn--p1ai/` -> `301` to HTTPS root.
+    - `https://xn--l1acaw.xn--p1ai/` -> `200 OK` with Tilda headers.
+    - `http://www.xn--l1acaw.xn--p1ai/` -> `301` to HTTPS root.
+    - `https://www.xn--l1acaw.xn--p1ai/` -> final `200 OK` on root.
+  - Content proof: page contains `Татьяна Мунн — психолог МГУ и эксперт по эмоциональному интеллекту` and Tilda project marker `project8326812`.
+- Residual issue:
+  - HTML canonical/OG/schema references still point to `https://moonn.ru/`, so this is emergency visibility, not a clean SEO migration.
+  - DNS remains technically inconsistent with Tilda's displayed target `176.57.67.109`, though the current resolved IP now serves the Tilda site.
+- Decision:
+  - Stop the short heartbeat because the domain now factually opens the Moonn site.
+  - Next scoped task should review canonical/domain SEO settings and analytics attribution for `мунн.рф` while `moonn.ru` legal recovery remains unresolved.
+
 ## 2026-05-28 09:00 MSK — Supervisor Run: SEO/AEO + Analytics (DNS + GUI Tooling Blocked)
 
 - Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).
