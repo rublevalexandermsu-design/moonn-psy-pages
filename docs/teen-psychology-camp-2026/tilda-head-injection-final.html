@@ -7,7 +7,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script>
 (function() {
-  var pageUrl = 'https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@1aab5c887ee048e03c37fc6103dd6b3ed080fc7c/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260531-camp-update';
+  var pageUrl = 'https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@650df456da4a02b69a53d05ff14dc9fbdb761db4/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260531-camp-followup';
   function copyAttrs(from, to) {
     Array.prototype.slice.call(from.attributes || []).forEach(function(attr) {
       if (attr.name !== 'id') to.setAttribute(attr.name, attr.value);
@@ -31,7 +31,7 @@
   function mount(html) {
     if (!document.body) return;
     document.body.dataset.teenCampMounted = '1';
-    document.body.dataset.teenCampMountedVersion = '20260531-camp-update';
+    document.body.dataset.teenCampMountedVersion = '20260531-camp-followup';
     var parsed = new DOMParser().parseFromString(html, 'text/html');
     var style = parsed.querySelector('style');
     if (style) {
@@ -78,6 +78,7 @@
   setTimeout(loadAndMount, 3500);
 })();
 </script>
+
 
 
 
