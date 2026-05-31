@@ -157,3 +157,67 @@ Files copied to `C:\Users\yanta\Downloads` for Telegram/operator use:
 - `moonn-teen-camp-call-brief-2026.docx`
 
 DOCX note: the Word brief was structurally checked with `python-docx` for title, deadline, price, schedule, calendar and contacts. `render_docx.py` could not complete because LibreOffice/soffice was not found on this host (`WinError 2`), so no LibreOffice PNG visual render gate was completed for the DOCX.
+
+## Clickable downloads and payment deep-link — 2026-05-31
+
+User requested that downloaded materials should not be passive files: program PDF, poster and Word brief must contain clickable actions for payment, page opening and questions.
+
+Changes applied and published:
+
+- Program PDF rebuilt with clickable CTA buttons near the top and in the footer:
+  - `Оплатить участие` -> `https://мунн.рф/podrostkovyy-lager-psihologiya?pay=teen-camp-2026`;
+  - `Страница лагеря` -> `https://мунн.рф/podrostkovyy-lager-psihologiya`;
+  - `Вопрос в Telegram` -> `https://t.me/moonn_official`.
+- Poster converted from passive JPG download to clickable PDF with the same three CTA links.
+- Word call brief rebuilt with clickable payment/page/Telegram/material links.
+- Public page materials block now downloads the pinned updated program PDF and poster PDF.
+- Added a bounded payment deep-link handler: opening `?pay=teen-camp-2026` opens the existing Tilda cart for SKU `teen-camp-2026`, price `40000`. No payment settings, bank settings, legal text or personal data were changed.
+- Files in `C:\Users\yanta\Downloads` were replaced with Russian operator-facing filenames:
+  - `Программа подросткового лагеря Татьяны Мунн 2026.pdf`;
+  - `Постер подросткового лагеря Татьяны Мунн 2026.pdf`;
+  - `Памятка для созвона по подростковому лагерю Татьяны Мунн 2026.docx`.
+
+Published pointers:
+
+- Updated materials commit: `3e0cb73`.
+- Updated page artifact commit: `15ffd51`.
+- Published Tilda loader commit: `c135e00`.
+- Live loader marker: `20260531-camp-clickable-downloads`.
+
+Verification:
+
+- GitHub/jsDelivr returned `200` for:
+  - program PDF, `application/pdf`, size `92544`;
+  - poster PDF, `application/pdf`, size `602828`;
+  - page HTML at commit `15ffd51`;
+  - Tilda loader at commit `c135e00`.
+- PDF structural check with `pypdf`:
+  - program PDF: `1` page, `6` link annotations, expected payment/page/Telegram URLs present;
+  - poster PDF: `1` page, `3` link annotations, expected payment/page/Telegram URLs present.
+- DOCX structural check:
+  - payment/page/Telegram relationships present in `word/_rels/document.xml.rels`;
+  - text contains `Оплатить участие`, `40 000`, `Материалы`, clickable material labels.
+- Tilda HEAD persistence check after reopen:
+  - `20260531-camp-clickable-downloads` present;
+  - old `20260531-camp-mobile-labels` absent;
+  - page commit `15ffd51` present.
+- Tilda publication completed through Rublev/Alexander Chrome and showed the published URL `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Live raw HTML returned `200`, contains loader marker and page commit.
+- Live rendered Playwright check:
+  - mounted version `20260531-camp-clickable-downloads`;
+  - `#materials` exists;
+  - links render as `Скачать программу PDF` and `Скачать постер PDF`;
+  - both links point to commit `3e0cb73`;
+  - old `30 000` absent and no horizontal overflow.
+- Live payment deep-link check:
+  - `https://мунн.рф/podrostkovyy-lager-psihologiya?pay=teen-camp-2026` opens visible Tilda cart;
+  - product `Психология без скуки — подростковый лагерь` present;
+  - price `40000` present;
+  - old `30000` absent.
+
+Incident/rule:
+
+- Symptom: setting the visible Tilda HEAD field through UIA or pasting into the editor did not persist after reopen.
+- Root cause: the visible Ace/UIA value can diverge from Ace editor state and Tilda server submission.
+- Resolution: executed the save script from the real Chrome DevTools console, then reopened the Tilda HEAD editor and verified persisted server value before publishing.
+- Follow-up rule: for Tilda HEAD publication, server persistence must be checked after reopen; UI field value alone is not evidence.

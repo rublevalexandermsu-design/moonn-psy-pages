@@ -54,6 +54,18 @@ Tilda page id: `140348786`.
   - mobile price badge moved below the hero image (`priceBelowHeroImage=true`) so it does not cover Tatiana's face;
   - rendered program includes hourly blocks `10:00-11:30` through `16:15-18:00`;
   - updated PDF returns `200`, `application/pdf`, `%PDF-`, size `303277`;
+
+## Clickable downloads follow-up — 2026-05-31
+
+- [x] Rebuild program PDF with clickable payment/page/Telegram CTA links.
+- [x] Convert poster download to clickable PDF, not passive JPG.
+- [x] Rebuild Word call brief with clickable payment/page/material links.
+- [x] Replace old English-named files in `C:\Users\yanta\Downloads` with Russian operator-facing filenames.
+- [x] Update public page materials links to the new pinned program/poster PDFs.
+- [x] Add bounded `?pay=teen-camp-2026` deep-link that opens the existing Tilda cart without touching payment settings.
+- [x] Publish Tilda HEAD through Rublev/Alexander Chrome.
+- [x] Verify Tilda HEAD persisted after reopen before publication.
+- [x] Verify live rendered materials links and live payment deep-link.
   - cart still opens with SKU `teen-camp-2026`, price `40000`, and no `30000`.
 
 ## Risk notes

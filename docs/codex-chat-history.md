@@ -1791,6 +1791,53 @@ Append-only project history for `moon-psy-site`.
   - Structurally checked with `python-docx`: title, deadline, price, schedule, calendar and contacts present.
   - `render_docx.py` failed because LibreOffice/soffice was not found on this host (`WinError 2`), so no LibreOffice PNG render gate was completed.
 
+## 2026-05-31 13:55 MSK — Moonn Teen Camp Downloads: Clickable Payment Materials
+
+- Project: Moonn / Tilda camp page.
+- Workstream: `Moonn teen camp publication/downloads`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request:
+  - make the downloaded program and poster actionable with payment CTAs;
+  - add payment/page/material links to the Word call brief;
+  - replace old files in `Downloads` with Russian operator-facing filenames;
+  - update the public camp page so it downloads the corrected files.
+- Decisions:
+  - use a single payment deep-link `https://мунн.рф/podrostkovyy-lager-psihologiya?pay=teen-camp-2026`;
+  - keep repo filenames Latin, but Downloads filenames Russian;
+  - convert poster download to PDF because JPG cannot carry reliable clickable buttons.
+- Changed artifacts:
+  - `scripts/build_teen_camp_downloads.py`;
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf`;
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf`;
+  - `docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx`;
+  - `docs/teen-psychology-camp-2026/asset-manifest.json`;
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-page-template-with-placeholders.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`;
+  - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`;
+  - `docs/teen-psychology-camp-2026/camp-page-update-checklist-2026-05-31.md`.
+- Downloads replaced:
+  - `C:\Users\yanta\Downloads\Программа подросткового лагеря Татьяны Мунн 2026.pdf`;
+  - `C:\Users\yanta\Downloads\Постер подросткового лагеря Татьяны Мунн 2026.pdf`;
+  - `C:\Users\yanta\Downloads\Памятка для созвона по подростковому лагерю Татьяны Мунн 2026.docx`.
+- Commits:
+  - `3e0cb73` — clickable downloadable materials;
+  - `15ffd51` — page links and `?pay=teen-camp-2026` handler;
+  - `c135e00` — pinned Tilda loader.
+- Verification:
+  - jsDelivr returned `200` for program PDF, poster PDF, page HTML and loader;
+  - `pypdf` found expected link annotations in both PDFs;
+  - DOCX relationships include payment/page/Telegram links;
+  - Tilda HEAD reopened with marker `20260531-camp-clickable-downloads`, old marker absent, page commit `15ffd51` present;
+  - Tilda page published through Rublev/Alexander Chrome;
+  - live rendered page shows updated materials links and no old `30 000`;
+  - live `?pay=teen-camp-2026` opens visible Tilda cart with SKU/product and `40000`.
+- Incident/rule:
+  - visible UIA/Ace field edits did not persist until executed through Chrome DevTools console;
+  - future Tilda HEAD edits must verify persisted server value after reopening before publishing.
+
 ## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
