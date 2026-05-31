@@ -249,3 +249,26 @@ Publication gate:
 - Do not publish this draft until the operator confirms the real business format accepts `10:00-14:00`.
 - Decide whether to keep the existing SEO URL temporarily or migrate to `/podrostkovyy-intensiv-psihologiya` with redirect.
 - Rename the Tilda cart product from `подростковый лагерь` to `подростковый интенсив` only after approval, then verify live cart without submitting payment.
+
+## Operator correction: keep 10:00-18:00
+
+The user explicitly rejected the `10:00-14:00` change and confirmed the factual format should remain `10:00-18:00`. The draft was updated accordingly while keeping the public reframe as `подростковый интенсив`.
+
+Updated draft:
+
+- public naming remains `Психология без скуки: подростковый интенсив уверенности, общения и ИИ`;
+- age remains `14-17`;
+- day rhythm restored to `10:00-18:00`;
+- visible `лагерь`/`смена` wording was not restored;
+- food wording now says there is an obedenniy break and details are clarified at registration, without the old `один приём пищи` claim.
+
+Verification:
+
+- program PDF: 1 page, 6 clickable annotations, includes `10:00-18:00`, no `лагер`, no `10:00-14:00`, no old one-meal claim;
+- poster PDF: 1 page, 3 clickable annotations, no `лагер`, no old one-meal claim;
+- DOCX: payment link present, includes `10:00-18:00`, no `лагер`, no `10:00-14:00`, no old one-meal claim;
+- local mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-1018-mobile-check.png`.
+
+Publication note:
+
+- User approved publication with `10:00-18:00`; legal/compliance risk remains recorded because naming alone may not determine classification.

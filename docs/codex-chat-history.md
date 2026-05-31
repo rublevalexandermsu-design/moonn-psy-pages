@@ -30,6 +30,13 @@ Append-only project history for `moon-psy-site`.
   - Decide URL alias/redirect because current slug still contains `podrostkovyy-lager-psihologiya`.
   - Rename Tilda cart product only after approval and verify live cart.
 
+### Operator correction
+
+- User explicitly rejected the `10:00-14:00` change and confirmed the program should remain `10:00-18:00`.
+- Draft page/materials were updated to `10:00-18:00` while keeping `подростковый интенсив` wording and avoiding visible `лагерь`/`смена`.
+- New local mobile screenshot: `docs/teen-psychology-camp-2026/teen-intensive-1018-mobile-check.png`.
+- Legal/compliance risk remains recorded because naming alone may not determine classification.
+
 ## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
 
 - Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.
