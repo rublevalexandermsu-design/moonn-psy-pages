@@ -33,13 +33,17 @@ ASSET_DIR = ROOT / "assets" / "teen-psychology-camp-2026"
 DOC_DIR = ROOT / "docs" / "teen-psychology-camp-2026"
 DOWNLOADS = Path.home() / "Downloads"
 
-PUBLIC_PAGE_URL = "https://мунн.рф/podrostkovyy-lager-psihologiya"
+# PDF viewers handle non-ASCII domains inconsistently. Keep visible text in Russian,
+# but store link annotations as ASCII/punycode URLs so Edge/Chrome open the site.
+PUBLIC_PAGE_URL = "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya"
 PAYMENT_URL = f"{PUBLIC_PAGE_URL}?pay=teen-camp-2026"
 TELEGRAM_URL = "https://t.me/moonn_official"
+WHATSAPP_URL = "https://wa.me/79777770303"
 
 PROGRAM_PDF = ASSET_DIR / "teen-psychology-camp-tatyana-moonn-program-2026.pdf"
 POSTER_PDF = ASSET_DIR / "teen-psychology-camp-tatyana-moonn-poster-2026.pdf"
 POSTER_JPG = ASSET_DIR / "teen-psychology-camp-tatyana-moonn-poster-2026.jpg"
+HERO_JPG = ASSET_DIR / "tatiana-moonn-teen-psychology-camp-hero-2026.jpg"
 CALL_BRIEF = DOC_DIR / "teen-psychology-camp-call-brief-2026.docx"
 
 FONT_REGULAR = "TeenCampArial"
@@ -61,6 +65,18 @@ def button(canvas: Canvas, x: float, y: float, w: float, h: float, label: str, u
     canvas.roundRect(x, y, w, h, 8, stroke=0, fill=1)
     canvas.setFillColor(colors.white)
     canvas.setFont(FONT_BOLD, 13)
+    canvas.drawCentredString(x + w / 2, y + h / 2 - 4, label)
+    canvas.linkURL(url, (x, y, x + w, y + h), relative=0)
+    canvas.restoreState()
+
+
+def outline_button(canvas: Canvas, x: float, y: float, w: float, h: float, label: str, url: str) -> None:
+    canvas.saveState()
+    canvas.setStrokeColor(colors.HexColor("#ffffff"))
+    canvas.setLineWidth(1.2)
+    canvas.roundRect(x, y, w, h, 8, stroke=1, fill=0)
+    canvas.setFillColor(colors.white)
+    canvas.setFont(FONT_BOLD, 12)
     canvas.drawCentredString(x + w / 2, y + h / 2 - 4, label)
     canvas.linkURL(url, (x, y, x + w, y + h), relative=0)
     canvas.restoreState()
@@ -214,26 +230,80 @@ def build_program_pdf() -> None:
 
 
 def build_poster_pdf() -> None:
-    img = Image.open(POSTER_JPG)
     page_w, page_h = A4
     canvas = Canvas(str(POSTER_PDF), pagesize=A4)
-    margin = 10 * mm
-    target_w = page_w - 2 * margin
-    target_h = page_h - 47 * mm
+    canvas.setFillColor(colors.HexColor("#f5f1ff"))
+    canvas.rect(0, 0, page_w, page_h, stroke=0, fill=1)
+
+    canvas.setFillColor(colors.HexColor("#343497"))
+    canvas.roundRect(14 * mm, page_h - 80 * mm, page_w - 28 * mm, 58 * mm, 10, stroke=0, fill=1)
+    canvas.setFillColor(colors.white)
+    canvas.setFont(FONT_BOLD, 26)
+    canvas.drawString(26 * mm, page_h - 42 * mm, "Психология без скуки")
+    canvas.setFont(FONT_BOLD, 14)
+    canvas.drawString(26 * mm, page_h - 54 * mm, "подростковый интенсив уверенности, общения и ИИ")
+
+    canvas.setFillColor(colors.white)
+    canvas.roundRect(26 * mm, page_h - 74 * mm, 108 * mm, 12 * mm, 6, stroke=0, fill=1)
+    canvas.setFillColor(colors.HexColor("#343497"))
+    canvas.setFont(FONT_BOLD, 10)
+    canvas.drawString(32 * mm, page_h - 70 * mm, "6-10 июля 2026 · Москва · 10:00-18:00")
+
+    hero_path = HERO_JPG if HERO_JPG.exists() else POSTER_JPG
+    img = Image.open(hero_path)
+    target_w = page_w - 44 * mm
+    target_h = 108 * mm
     ratio = min(target_w / img.width, target_h / img.height)
     draw_w = img.width * ratio
     draw_h = img.height * ratio
     x = (page_w - draw_w) / 2
-    y = 37 * mm
-    canvas.drawImage(str(POSTER_JPG), x, y, draw_w, draw_h, preserveAspectRatio=True, mask="auto")
-    canvas.setFillColor(colors.HexColor("#f4efff"))
-    canvas.roundRect(10 * mm, 9 * mm, page_w - 20 * mm, 23 * mm, 9, stroke=0, fill=1)
-    canvas.setFont(FONT_BOLD, 12)
+    y = page_h - 195 * mm
+    canvas.drawImage(str(hero_path), x, y, draw_w, draw_h, preserveAspectRatio=True, mask="auto")
+
+    canvas.setFillColor(colors.white)
+    canvas.roundRect(page_w - 82 * mm, y + 6 * mm, 58 * mm, 25 * mm, 8, stroke=0, fill=1)
+    canvas.setFillColor(colors.HexColor("#343497"))
+    canvas.setFont(FONT_BOLD, 20)
+    canvas.drawString(page_w - 75 * mm, y + 19 * mm, "40 000 ₽")
+    canvas.setFont(FONT_REGULAR, 9)
+    canvas.drawString(page_w - 75 * mm, y + 12 * mm, "до 15 июня")
+    canvas.setStrokeColor(colors.HexColor("#777aa5"))
+    canvas.setLineWidth(1)
+    canvas.line(page_w - 40 * mm, y + 20 * mm, page_w - 18 * mm, y + 20 * mm)
+    canvas.setFillColor(colors.HexColor("#777aa5"))
+    canvas.setFont(FONT_BOLD, 10)
+    canvas.drawString(page_w - 39 * mm, y + 17 * mm, "50 000 ₽")
+
     canvas.setFillColor(colors.HexColor("#16215c"))
-    canvas.drawString(16 * mm, 25 * mm, "Ранняя оплата до 15 июня: 40 000 ₽ вместо 50 000 ₽")
-    button(canvas, 16 * mm, 12 * mm, 53 * mm, 10 * mm, "Оплатить участие", PAYMENT_URL, colors.HexColor("#3149c9"))
-    button(canvas, 73 * mm, 12 * mm, 53 * mm, 10 * mm, "Страница интенсива", PUBLIC_PAGE_URL, colors.HexColor("#7b4be0"))
-    button(canvas, 130 * mm, 12 * mm, 53 * mm, 10 * mm, "Вопрос в Telegram", TELEGRAM_URL, colors.HexColor("#12a896"))
+    canvas.setFont(FONT_BOLD, 16)
+    canvas.drawString(18 * mm, 80 * mm, "Что внутри")
+    canvas.setFont(FONT_REGULAR, 11)
+    canvas.setFillColor(colors.HexColor("#32384d"))
+    bullets = [
+        "общение, уверенность, эмоции и личные границы;",
+        "практика ИИ для идей, презентаций и мини-проектов;",
+        "первые шаги в профессии психолога;",
+        "группа 10-12 подростков и личное ведение Татьяны Мунн.",
+    ]
+    yy = 70 * mm
+    for item in bullets:
+        canvas.drawString(22 * mm, yy, "• " + item)
+        yy -= 8 * mm
+
+    button(canvas, 18 * mm, 28 * mm, 54 * mm, 12 * mm, "Оплатить участие", PAYMENT_URL, colors.HexColor("#3149c9"))
+    button(canvas, 78 * mm, 28 * mm, 50 * mm, 12 * mm, "Telegram", TELEGRAM_URL, colors.HexColor("#12a896"))
+    button(canvas, 134 * mm, 28 * mm, 50 * mm, 12 * mm, "WhatsApp", WHATSAPP_URL, colors.HexColor("#1fbf75"))
+
+    canvas.setFillColor(colors.HexColor("#343497"))
+    canvas.roundRect(18 * mm, 10 * mm, page_w - 36 * mm, 13 * mm, 7, stroke=0, fill=1)
+    canvas.setFont(FONT_BOLD, 11)
+    canvas.setFillColor(colors.white)
+    canvas.drawString(24 * mm, 15 * mm, "Страница интенсива")
+    canvas.drawString(82 * mm, 15 * mm, "t.me/moonn_official")
+    canvas.drawString(138 * mm, 15 * mm, "WhatsApp +7 977 777-03-03")
+    canvas.linkURL(PUBLIC_PAGE_URL, (20 * mm, 10 * mm, 74 * mm, 23 * mm), relative=0)
+    canvas.linkURL(TELEGRAM_URL, (78 * mm, 10 * mm, 132 * mm, 23 * mm), relative=0)
+    canvas.linkURL(WHATSAPP_URL, (134 * mm, 10 * mm, page_w - 18 * mm, 23 * mm), relative=0)
     canvas.save()
 
 
