@@ -411,7 +411,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="materials">
       <div class="wrap">
         <div class="cards-4">
           <div class="card reveal">
@@ -763,7 +763,7 @@
           <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или написать организатору, чтобы уточнить возраст, питание, перерывы, смену и состав группы.</p>
           <div class="btns">
             <a class="btn ghost" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать программу PDF</a>
-            <a class="btn secondary" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" download="poster.jpg">Скачать постер</a>
+            <a class="btn secondary" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.pdf" download>Скачать постер PDF</a>
           </div>
           <div style="margin-top:20px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);">
             <img src="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" alt="Постер подросткового лагеря" style="display:block;width:100%;height:auto;" />
@@ -965,6 +965,17 @@
           openTeenCampPayment();
         }
       }, true);
+      function maybeOpenPaymentFromUrl() {
+        var params = new URLSearchParams(window.location.search || '');
+        if (params.get('pay') !== 'teen-camp-2026') return;
+        clearTildaCartState();
+        var attempts = 0;
+        var timer = setInterval(function() {
+          attempts += 1;
+          if (openTeenCampPayment() || attempts >= 8) clearInterval(timer);
+        }, 650);
+      }
+      setTimeout(maybeOpenPaymentFromUrl, 900);
     })();
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Психология без скуки — подростковый лагерь Татьяны Мунн","description":"Психология без скуки: подростковый городской лагерь, 6–10 июля, Цветной бульвар, уверенность, общение, эмоции, ИИ, первые шаги психолога и питание.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"40000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-06-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
