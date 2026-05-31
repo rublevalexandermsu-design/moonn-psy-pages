@@ -97,6 +97,7 @@
     .logo { width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg, #8a43c4, #2f4acc);display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px;box-shadow:0 12px 24px rgba(78,66,172,.26); }
     .brand-text strong { display:block;font-size:16px;color:#6c76a2; }
     .brand-text span { display:block;font-size:32px;font-weight:900;letter-spacing:-.03em;line-height:1; }
+    .brand-text em { font-style:normal;font-size:.62em;font-weight:800;color:#5d6a96;white-space:nowrap; }
     .nav { display:flex;align-items:center;gap:12px;flex-wrap:wrap; }
     .nav a { text-decoration:none;color:var(--text);font-weight:800;padding:14px 20px;border-radius:18px;background:rgba(255,255,255,.78);border:1px solid var(--line); }
     .nav a.cta { background:linear-gradient(135deg, var(--blue), var(--blue2)); color:#fff; border-color:transparent; }
@@ -315,7 +316,9 @@
       .gallery-grid { grid-template-columns:1fr; }
       .span-7,.span-5,.span-4,.span-8 { grid-column:span 1; }
       .speaker-card { position:static; margin:14px; max-width:none; }
-      .floating-price { left:14px; right:14px; bottom:auto; top:14px; max-width:max-content; }
+      .floating-price { left:14px; right:14px; top:auto; bottom:14px; max-width:238px; padding:14px 16px; }
+      .floating-price b { font-size:25px; }
+      .floating-price small { font-size:13px; }
       .hero h1 { max-width:12ch; }
       .brand-text span { font-size:26px; }
     }
@@ -334,7 +337,7 @@
         <div class="logo">TM</div>
         <div class="brand-text">
           <strong>Татьяна Мунн</strong>
-          <span>Психология без скуки</span>
+          <span>Психология без скуки <em>(подростковый лагерь)</em></span>
         </div>
       </a>
       <nav class="nav">
@@ -355,20 +358,20 @@
       <div class="wrap hero-grid">
         <div class="reveal visible">
           <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | понедельник - пятница | 10:00 - 18:00</div>
-          <h1>Психология без скуки: уверенность, общение и ИИ</h1>
+          <h1>Психология без скуки: Подростковый лагерь уверенности, общения и ИИ</h1>
           <p class="lead">Городской лагерь по психологии в центре Москвы, на Цветном бульваре. Подростки разбираются в себе, тренируют общение, уверенность и границы, пробуют ИИ для идей и проектов и узнают, как выглядят первые шаги в профессии психолога.</p>
           <div class="hero-alert"><strong>Внутри есть ИИ-практика и мини-трек “хочу стать психологом”</strong><span>Подростки не только обсуждают эмоции и общение, но и учатся использовать нейросети для идей, презентаций и проектов безопасно.</span></div>
           <div class="btns">
             <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать место</a>
             <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Уточнить смену и оплату</a>
-            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@978847c0d1283d5347ce0e1c2c38d7ee219b7f8c/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить раннюю стоимость</a>
+            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@978847c0d1283d5347ce0e1c2c38d7ee219b7f8c/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить раннюю стоимость до 15 июня</a>
           </div>
           <ul class="hero-points">
             <li><span class="check">✓</span>Группа 10-12 подростков</li>
             <li><span class="check">✓</span>Центр Москвы, Цветной бульвар</li>
             <li><span class="check">✓</span>Общение, уверенность, проекты и основы работы с нейросетями</li>
             <li><span class="check">✓</span>В расписании есть перерывы и обеденное время</li>
-            <li><span class="check">✓</span>Ранняя оплата - 40 000 ₽ вместо 50 000 ₽</li>
+            <li><span class="check">✓</span>Ранняя оплата до 15 июня - 40 000 ₽ вместо 50 000 ₽</li>
             <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
           </ul>
         </div>
@@ -383,7 +386,7 @@
             </div>
             <div class="floating-price">
               <b>40 000 ₽</b>
-              <small>ранняя оплата<br><s>50 000 ₽</s> стандартная</small>
+              <small>ранняя оплата до 15 июня<br><s>50 000 ₽</s> стандартная</small>
             </div>
             <div class="speaker-card">
               <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@978847c0d1283d5347ce0e1c2c38d7ee219b7f8c/assets/teen-psychology-camp-2026/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый лагерь в цветной городской атмосфере" />
@@ -413,7 +416,7 @@
           <div class="card reveal">
             <div class="metric">40k</div>
             <h3>Ранняя оплата</h3>
-            <p>40 000 ₽ при ранней оплате вместо стандартных 50 000 ₽. Возможна рассрочка по согласованию.</p>
+            <p>40 000 ₽ при оплате до 15 июня вместо стандартных 50 000 ₽. Возможна рассрочка по согласованию.</p>
           </div>
           <div class="card reveal">
             <div class="metric">1</div>
@@ -615,27 +618,27 @@
           <div class="day-card reveal">
             <div class="day-tag">День 1</div>
             <h4>Знакомство и доверие</h4>
-            <p>Мягкий вход в группу, правила общения, первые упражнения на контакт, ощущение безопасности и интереса к процессу.</p>
+            <p><b>10:00-11:30</b> знакомство и правила группы; <b>11:45-13:00</b> упражнения на контакт; <b>14:00-16:00</b> командная практика; <b>16:15-18:00</b> личные выводы и мягкое включение.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 2</div>
             <h4>Эмоции и состояние</h4>
-            <p>Как замечать свои переживания, лучше понимать реакцию на стресс, напряжение, обиду, тревогу и неловкость.</p>
+            <p><b>10:00-11:30</b> карта эмоций; <b>11:45-13:00</b> стресс и тревога; <b>14:00-16:00</b> упражнения на состояние; <b>16:15-18:00</b> дневник самонаблюдения.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 3</div>
             <h4>Общение и границы</h4>
-            <p>Умение говорить о себе, договариваться, слышать других и не терять себя в контакте со сверстниками.</p>
+            <p><b>10:00-11:30</b> как говорить о себе; <b>11:45-13:00</b> границы; <b>14:00-16:00</b> диалоги и мини-сцены; <b>16:15-18:00</b> обратная связь.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 4</div>
             <h4>Уверенность и самооценка</h4>
-            <p>Работа с внутренней уверенностью, образ себя, спокойствие в компании и снижение страха оценки.</p>
+            <p><b>10:00-11:30</b> самооценка; <b>11:45-13:00</b> страх оценки; <b>14:00-16:00</b> ИИ для идей и проекта; <b>16:15-18:00</b> презентация без давления.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 5</div>
             <h4>Итоги и первые шаги психолога</h4>
-            <p>Личные выводы, фиксация навыков и отдельный разговор о том, как начать путь в психологии: интерес к людям, наблюдение, этика и первые учебные шаги.</p>
+            <p><b>10:00-11:30</b> личные опоры; <b>11:45-13:00</b> первые шаги психолога; <b>14:00-16:00</b> финальный мини-проект; <b>16:15-18:00</b> итоги и рекомендации.</p>
           </div>
         </div>
       </div>
@@ -730,7 +733,7 @@
             <div class="price-big">40 000 ₽</div>
             <div class="old-price">50 000 ₽</div>
           </div>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Ранняя стоимость участия - 40 000 ₽ вместо стандартных 50 000 ₽. Для следующих потоков дата ранней оплаты указывается в календаре смен. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Ранняя стоимость участия - 40 000 ₽ при оплате до 15 июня вместо стандартных 50 000 ₽. Для следующих потоков дата ранней оплаты указывается в календаре смен. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
           <div class="btns" style="margin-bottom:18px;">
             <a class="btn primary" href="#order:Психология без скуки — подростковый лагерь =40000:::image=https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@978847c0d1283d5347ce0e1c2c38d7ee219b7f8c/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить участие</a>
             <a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Обсудить рассрочку</a>
@@ -954,4 +957,6 @@
     })();
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Психология без скуки — подростковый лагерь Татьяны Мунн","description":"Психология без скуки: подростковый городской лагерь, 6–10 июля, Цветной бульвар, уверенность, общение, эмоции, ИИ, первые шаги психолога и питание.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"40000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-06-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
+
+
 
