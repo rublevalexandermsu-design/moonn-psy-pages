@@ -1765,6 +1765,32 @@ Append-only project history for `moon-psy-site`.
   - PDF returns `200`, `application/pdf`, `%PDF-`, size `303277`.
   - Cart opens with SKU `teen-camp-2026`, price/total `40000`, no real payment submitted.
 
+## 2026-05-31 13:35 MSK — Teen Camp Mobile Hero Labels And Downloads
+
+- Project: Moonn / Tilda site.
+- Workstream: Moonn Tilda camp page content/pricing update.
+- Branch: `codex/moonn-camp-page-update`.
+- Trigger: user reviewed the mobile page and asked to move the three white hero chips to the bottom of the first image, then put the PDF program, poster and a Word call brief into Downloads.
+- Changed:
+  - Mobile-only `.hero-label` moved into the lower area of the hero image.
+  - Mobile `.floating-price` changed to a normal visible block between the image and Tatiana card so it does not overlap the face or hide under the speaker card.
+- Publication:
+  - Page artifact commit: `4260da7`.
+  - Loader commit: `5abe9f1`.
+  - Tilda HEAD was updated through authenticated Rublev Chrome using the verified Ace-editor path.
+  - Reopened Tilda `editheadcode`: `20260531-camp-mobile-labels` present, old `20260531-camp-followup` absent, page commit `4260da7` present.
+  - Published page `140348786`.
+- Live verification:
+  - Raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200`, contains `20260531-camp-mobile-labels`, old marker absent, old `30000` absent.
+  - Mobile rendered check: chips are inside the image, above the price block; price block is visible between image and speaker card; no horizontal overflow.
+- Downloads prepared:
+  - `C:\Users\yanta\Downloads\moonn-teen-camp-program-2026.pdf`
+  - `C:\Users\yanta\Downloads\moonn-teen-camp-poster-2026.jpg`
+  - `C:\Users\yanta\Downloads\moonn-teen-camp-call-brief-2026.docx`
+- DOCX verification:
+  - Structurally checked with `python-docx`: title, deadline, price, schedule, calendar and contacts present.
+  - `render_docx.py` failed because LibreOffice/soffice was not found on this host (`WinError 2`), so no LibreOffice PNG render gate was completed.
+
 ## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

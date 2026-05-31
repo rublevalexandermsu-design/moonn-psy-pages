@@ -127,3 +127,33 @@ Follow-up verification:
 - Live desktop render: same content checks passed; no horizontal overflow.
 - Updated PDF URL returned `200`, `application/pdf`, first bytes `%PDF-`, size `303277`.
 - Cart still opens from `Оплатить раннюю стоимость до 15 июня` with SKU `teen-camp-2026`, price/total `40000`, and no `30000`.
+
+## Mobile label correction and downloads — 2026-05-31
+
+User review found that the three white hero chips on mobile should sit in the lower part of the image, not at the top.
+
+Changes applied and published:
+
+- Mobile-only `.hero-label` moved to the bottom area of the hero image.
+- Mobile `.floating-price` is now a normal visible block between the image and Tatiana card, so it does not hide behind the speaker card or cover the face.
+- Tilda loader marker: `20260531-camp-mobile-labels`.
+- Page artifact commit: `4260da7`.
+- Tilda loader commit: `5abe9f1`.
+
+Verification:
+
+- Tilda HEAD editor reopened after save: `20260531-camp-mobile-labels` present, old `20260531-camp-followup` absent, page commit `4260da7` present.
+- Live raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returned `200`, contains `20260531-camp-mobile-labels`, old marker absent, old `30000` absent.
+- Live mobile rendered check:
+  - labels are inside the image;
+  - labels are above the price block;
+  - price block is visible between image and speaker card;
+  - no horizontal overflow.
+
+Files copied to `C:\Users\yanta\Downloads` for Telegram/operator use:
+
+- `moonn-teen-camp-program-2026.pdf`
+- `moonn-teen-camp-poster-2026.jpg`
+- `moonn-teen-camp-call-brief-2026.docx`
+
+DOCX note: the Word brief was structurally checked with `python-docx` for title, deadline, price, schedule, calendar and contacts. `render_docx.py` could not complete because LibreOffice/soffice was not found on this host (`WinError 2`), so no LibreOffice PNG visual render gate was completed for the DOCX.
