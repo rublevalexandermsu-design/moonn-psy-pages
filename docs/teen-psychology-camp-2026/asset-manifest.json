@@ -53,25 +53,33 @@
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf",
-      "bytes": 92544,
-      "sha256": "72646f2b64ac9758"
+      "bytes": 93105,
+      "sha256": "9719a04d521aa6c3"
     },
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf",
-      "bytes": 602828,
-      "sha256": "a3b47d576b8886e8"
+      "bytes": 602756,
+      "sha256": "6908e9369947304a"
     },
     {
       "type": "docx",
       "file": "docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx",
-      "bytes": 38799,
-      "sha256": "21e65b2fb1e418f4"
+      "bytes": 38972,
+      "sha256": "539cfe7d2b5ecb00"
     }
   ],
   "downloadDeepLinks": {
     "paymentUrl": "https://мунн.рф/podrostkovyy-lager-psihologiya?pay=teen-camp-2026",
     "pageUrl": "https://мунн.рф/podrostkovyy-lager-psihologiya",
     "telegramUrl": "https://t.me/moonn_official"
+  },
+  "legalSafeDraft": {
+    "date": "2026-05-31",
+    "publicName": "Психология без скуки: подростковый интенсив уверенности, общения и ИИ",
+    "format": "психологические и развивающие занятия для подростков 14-17 лет",
+    "dailyTime": "10:00-14:00",
+    "centralizedFoodClaim": false,
+    "publicationGate": "draft only; Tilda publish requires explicit legal/content approval"
   }
 }

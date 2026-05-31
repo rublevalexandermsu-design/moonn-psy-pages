@@ -2,6 +2,34 @@
 
 Append-only project history for `moon-psy-site`.
 
+## 2026-05-31 — Teen Program Legal-Safe Reframe Draft
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: youth program public page and downloadable materials, branch `codex/moonn-camp-page-update`.
+- Trigger: user provided legal-risk note that minors 14-17 plus `лагерь`, `10:00-18:00`, organized food and day-presence framing may be treated as a children's day camp/recreation format.
+- Decision:
+  - Prepare a draft reframe, not a live Tilda publication, because this is a legal/public-offer gate.
+  - Working public name: `Психология без скуки: подростковый интенсив уверенности, общения и ИИ`.
+  - Draft format: psychological/developmental classes for teenagers 14-17, `10:00-14:00`, no centralized food claim, neutral parent/legal representative wording.
+- Changed draft artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-template-with-placeholders.html`
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`
+  - `scripts/build_teen_camp_downloads.py`
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf`
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf`
+  - `docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx`
+  - `docs/teen-psychology-camp-2026/teen-intensive-legal-reframe-2026-05-31.md`
+- Verification:
+  - Draft scan found no visible `лагерь`, `смена`, `10:00-18:00`, `один приём пищи`, `родители не присутствуют`, `12-19`, `оздоров`.
+  - PDF/DOCX structural checks passed; DOCX visual render skipped because `soffice` is unavailable.
+- Open gates:
+  - Confirm real format change to `10:00-14:00`.
+  - Decide URL alias/redirect because current slug still contains `podrostkovyy-lager-psihologiya`.
+  - Rename Tilda cart product only after approval and verify live cart.
+
 ## 2026-05-23 — Teen Camp FAQ, Day Plan And Tilda Loader Repair
 
 - Trigger: a Timepad registrant asked whether the teen summer program is really for ages 12-19, whether the long day has lunch/breaks, whether parents must attend, and where the concrete plan is shown.

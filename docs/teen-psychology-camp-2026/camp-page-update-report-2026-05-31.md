@@ -221,3 +221,31 @@ Incident/rule:
 - Root cause: the visible Ace/UIA value can diverge from Ace editor state and Tilda server submission.
 - Resolution: executed the save script from the real Chrome DevTools console, then reopened the Tilda HEAD editor and verified persisted server value before publishing.
 - Follow-up rule: for Tilda HEAD publication, server persistence must be checked after reopen; UI field value alone is not evidence.
+
+## Legal-safe reframe draft
+
+After the user provided the legal-risk note for minors and day-camp style framing, a draft legal-safe reframe was prepared but not published.
+
+Draft public name: `Психология без скуки: подростковый интенсив уверенности, общения и ИИ`.
+
+Draft changes:
+
+- visible page and downloadable materials reframe `лагерь`/`смена` into `интенсив`/`поток`;
+- age changed to `14-17`;
+- day rhythm changed from `10:00-18:00` to `10:00-14:00`;
+- centralized food claim removed;
+- parent/legal representative participation wording made neutral;
+- PDFs and DOCX rebuilt with clickable payment/page/Telegram links preserved.
+
+Verification:
+
+- page draft scan found no visible `лагерь`, `смена`, `10:00-18:00`, `один приём пищи`, `родители не присутствуют`, `12-19`, `оздоров`;
+- local Chrome mobile screenshot generated at `docs/teen-psychology-camp-2026/teen-intensive-legal-draft-mobile-check.png`; first viewport fits after shortening the top pill and AI card title;
+- PDF/DOCX structural checks passed for old camp wording and old time/food claims;
+- DOCX visual render was not run because `soffice` is not installed on this host.
+
+Publication gate:
+
+- Do not publish this draft until the operator confirms the real business format accepts `10:00-14:00`.
+- Decide whether to keep the existing SEO URL temporarily or migrate to `/podrostkovyy-intensiv-psihologiya` with redirect.
+- Rename the Tilda cart product from `подростковый лагерь` to `подростковый интенсив` only after approval, then verify live cart without submitting payment.

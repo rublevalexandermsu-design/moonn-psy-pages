@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Психология без скуки: Подростковый лагерь уверенности, общения и ИИ - Татьяна Мунн</title>
-  <meta name="description" content="Психология без скуки: городской лагерь для подростков 12-19 лет. Общение, уверенность, эмоции, ИИ, первые шаги психолога, питание и камерная группа 10-12 участников." />
+  <title>Психология без скуки: подростковый интенсив уверенности, общения и ИИ - Татьяна Мунн</title>
+  <meta name="description" content="Психология без скуки: психологический интенсив для подростков 14-17 лет. Общение, уверенность, эмоции, ИИ, первые шаги психолога и камерная группа 10-12 участников." />
   <style>
     :root {
       --bg:#f7f2fb;
@@ -73,7 +73,7 @@
     .teen-camp-page::before { width:420px;height:420px;left:-150px;top:150px;background:#dc7fe6; }
     .teen-camp-page::after { width:460px;height:460px;right:-150px;top:300px;background:#aebfff; }
 
-    .wrap { width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
+    .wrap { width:calc(100% - 32px); max-width:var(--max); margin:0 auto; }
     .section { padding:38px 0; }
     .pill {
       display:inline-flex;align-items:center;gap:10px;
@@ -110,7 +110,8 @@
     .nav a.cta { background:linear-gradient(135deg, var(--blue), var(--blue2)); color:#fff; border-color:transparent; }
 
     .hero { padding:34px 0 24px; }
-    .hero-grid { display:grid;grid-template-columns:1.02fr .98fr;gap:34px;align-items:center; }
+    .hero-grid { display:grid;grid-template-columns:1.02fr .98fr;gap:34px;align-items:center;min-width:0; }
+    .hero-grid > * { min-width:0; }
     .hero h1 { font-size:clamp(44px, 7vw, 88px); line-height:.98; letter-spacing:-.05em; margin:20px 0 18px; }
     .hero p.lead { font-size:clamp(20px, 2.2vw, 25px); line-height:1.52; color:#606b98; margin:0 0 28px; max-width:720px; }
     .hero-points { display:flex;flex-wrap:wrap;gap:12px 18px;margin:22px 0 28px;padding:0;list-style:none; }
@@ -329,13 +330,18 @@
       .floating-price b { font-size:25px; }
       .floating-price small { font-size:13px; }
       .hero h1 { max-width:12ch; }
+      .hero p.lead { font-size:18px; line-height:1.5; max-width:31ch; overflow-wrap:normal; }
+      .section-text, .hero-alert span { max-width:100%; overflow-wrap:anywhere; }
+      .hero-alert strong { font-size:20px; overflow-wrap:anywhere; }
+      .pill { display:block; max-width:100%; border-radius:24px; font-size:14px; line-height:1.35; white-space:normal; }
+      .pill-dot { display:inline-block; vertical-align:middle; margin-right:8px; }
       .brand-text span { font-size:26px; }
     }
   </style>
 
   <link rel="canonical" href="https://moonn.ru/podrostkovyy-lager-psihologiya" />
-  <meta property="og:title" content="Психология без скуки — подростковый лагерь Татьяны Мунн" />
-  <meta property="og:description" content="Лагерь по психологии для подростков: уверенность, общение, эмоции, ИИ, первые шаги психолога, питание и группа 10-12 участников." />
+  <meta property="og:title" content="Психология без скуки — подростковый интенсив Татьяны Мунн" />
+  <meta property="og:description" content="Психологический интенсив для подростков: уверенность, общение, эмоции, ИИ, первые шаги психолога и группа 10-12 участников." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moonn.ru/podrostkovyy-lager-psihologiya" />
   <meta property="og:image" content="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" />
@@ -348,7 +354,7 @@
         <div class="logo">TM</div>
         <div class="brand-text">
           <strong>Татьяна Мунн</strong>
-          <span>Психология без скуки <em>(подростковый лагерь)</em></span>
+          <span>Психология без скуки <em>(подростковый интенсив)</em></span>
         </div>
       </a>
       <nav class="nav">
@@ -356,7 +362,7 @@
         <a href="#day">День</a>
         <a href="#ai">Нейросети</a>
         <a href="#profession">Профессия</a>
-        <a href="#calendar">Смены</a>
+        <a href="#calendar">Потоки</a>
         <a href="#parents">Родителям</a>
         <a href="#gallery">Фото</a>
         <a href="#signup" class="cta">Записаться</a>
@@ -368,27 +374,27 @@
     <section class="hero section">
       <div class="wrap hero-grid">
         <div class="reveal visible">
-          <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | понедельник - пятница | 10:00 - 18:00</div>
-          <h1>Психология без скуки: Подростковый лагерь уверенности, общения и ИИ</h1>
-          <p class="lead">Городской лагерь по психологии в центре Москвы, на Цветном бульваре. Подростки разбираются в себе, тренируют общение, уверенность и границы, пробуют ИИ для идей и проектов и узнают, как выглядят первые шаги в профессии психолога.</p>
-          <div class="hero-alert"><strong>Внутри есть ИИ-практика и мини-трек “хочу стать психологом”</strong><span>Подростки не только обсуждают эмоции и общение, но и учатся использовать нейросети для идей, презентаций и проектов безопасно.</span></div>
+          <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | 10:00 - 14:00</div>
+          <h1>Психология без скуки: подростковый интенсив уверенности, общения и ИИ</h1>
+          <p class="lead">Психологический интенсив в центре Москвы, на Цветном бульваре. Подростки разбираются в себе, тренируют общение, уверенность и границы, пробуют ИИ для идей и проектов и узнают, как выглядят первые шаги в профессии психолога.</p>
+          <div class="hero-alert"><strong>ИИ-практика и психология</strong><span>Подростки не только обсуждают эмоции и общение, но и учатся использовать нейросети для идей, презентаций и проектов безопасно.</span></div>
           <div class="btns">
             <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать место</a>
-            <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Уточнить смену и оплату</a>
-            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить раннюю стоимость до 15 июня</a>
+            <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Уточнить поток и оплату</a>
+            <a class="btn ghost" href="#order:Психология без скуки — подростковый интенсив =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить раннюю стоимость до 15 июня</a>
           </div>
           <ul class="hero-points">
             <li><span class="check">✓</span>Группа 10-12 подростков</li>
             <li><span class="check">✓</span>Центр Москвы, Цветной бульвар</li>
             <li><span class="check">✓</span>Общение, уверенность, проекты и основы работы с нейросетями</li>
-            <li><span class="check">✓</span>В расписании есть перерывы и обеденное время</li>
+            <li><span class="check">✓</span>В расписании есть короткие паузы и восстановление внимания</li>
             <li><span class="check">✓</span>Ранняя оплата до 15 июня - 40 000 ₽ вместо 50 000 ₽</li>
             <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
           </ul>
         </div>
         <div class="hero-visual reveal visible">
           <div class="hero-card">
-            <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн и подростки в городском лагере по психологии" />
+            <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн и подростки на психологическом интенсиве" />
             <div class="overlay-top"></div>
             <div class="hero-label">
               <span>Цветной бульвар</span>
@@ -400,7 +406,7 @@
               <small>ранняя оплата до 15 июня<br><s>50 000 ₽</s> стандартная</small>
             </div>
             <div class="speaker-card">
-              <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый лагерь в цветной городской атмосфере" />
+              <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый психологический интенсив" />
               <div>
                 <strong>Татьяна Мунн</strong>
                 <span>Психолог МГУ, автор метода «Быстрая психология». Опыт проведения подростковых программ, лекций и психологических форматов.</span>
@@ -440,9 +446,9 @@
 
     <section class="section">
       <div class="wrap">
-        <p class="eyebrow">Для чего этот лагерь</p>
+        <p class="eyebrow">Для чего этот интенсив</p>
         <h2 class="section-title">Что подросток получит за эти 5 дней</h2>
-        <p class="section-text">Лагерь помогает подросткам лучше понимать себя, легче общаться, увереннее чувствовать себя среди сверстников, замечать свои эмоции и разбираться в том, как строить контакт без лишнего напряжения и внутренней скованности.</p>
+        <p class="section-text">Интенсив помогает подросткам лучше понимать себя, легче общаться, увереннее чувствовать себя среди сверстников, замечать свои эмоции и разбираться в том, как строить контакт без лишнего напряжения и внутренней скованности.</p>
         <div class="cards-5">
           <div class="card reveal"><h3>Понимание себя</h3><p>Разбор эмоций, внутренних реакций, переживаний и того, что на самом деле происходит внутри.</p></div>
           <div class="card reveal"><h3>Уверенность</h3><p>Поддержка самооценки, работа с тревогой, неловкостью, стеснением и внутренним напряжением.</p></div>
@@ -477,14 +483,14 @@
     <section class="section" id="gallery">
       <div class="wrap">
         <p class="eyebrow">Визуально о формате</p>
-        <h2 class="section-title">Как выглядит этот лагерь</h2>
+        <h2 class="section-title">Как выглядит интенсив</h2>
         <p class="section-text">Формат сочетает кабинетную работу, упражнения в малой группе, городские задания, спокойные обсуждения и обратную связь.</p>
         <div class="gallery-grid">
           <article class="gallery-card span-7 reveal">
             <img src="__ASSET_BASE__/tatiana-moonn-teen-camp-city-communication.jpg" alt="Татьяна Мунн и подростки общаются в городской атмосфере" />
             <div class="caption">
               <strong>Знакомство и живое общение в городской атмосфере</strong>
-              <span>Первый контакт, безопасная атмосфера, включение в группу и доверительный старт лагеря.</span>
+              <span>Первый контакт, безопасная атмосфера, включение в группу и доверительный старт программы.</span>
             </div>
           </article>
           <article class="gallery-card span-5 reveal">
@@ -548,19 +554,14 @@
     <section class="section" id="day">
       <div class="wrap">
         <p class="eyebrow">Как устроен день</p>
-        <h2 class="section-title">Ритм дня: занятия, отдых и обед</h2>
-        <p class="section-text">С 10:00 до 18:00 подростки не сидят весь день на лекции: темы сменяются упражнениями, обсуждениями, заданиями на общение, обедом и короткими паузами. Родители на занятиях не присутствуют; подросток участвует самостоятельно, а организационные вопросы можно уточнить до старта.</p>
+        <h2 class="section-title">Ритм занятия: практика и короткие паузы</h2>
+        <p class="section-text">С 10:00 до 14:00 подростки проходят практический блок без длинных лекций: темы сменяются упражнениями, обсуждениями, заданиями на общение и короткими паузами. Организационные условия участия подтверждаются при записи родителем или законным представителем.</p>
         <div class="day-rhythm">
           <div class="rhythm-item"><div class="rhythm-time">10:00-10:20</div><p>Сбор, мягкое включение, настрой на день и правила безопасного общения.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">10:20-11:30</div><p>Тема дня: эмоции, уверенность, контакт, границы или самооценка.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">11:30-11:45</div><p>Короткий перерыв, вода и отдых от интенсивного общения.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">11:45-13:00</div><p>Практические упражнения, карточки, мини-разборы и работа в малой группе.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">13:00-14:00</div><p>Обеденное время и спокойная пауза без учебной нагрузки.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">14:00-15:15</div><p>Городская или кабинетная практика: задания на общение и наблюдение за реакциями.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">15:15-15:30</div><p>Перерыв и переключение перед второй частью дня.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">15:30-16:45</div><p>Обсуждение опыта, ответы на вопросы и индивидуальные выводы участников.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">16:45-17:40</div><p>Итоговое упражнение дня и закрепление навыка.</p></div>
-          <div class="rhythm-item"><div class="rhythm-time">17:40-18:00</div><p>Завершение, короткая обратная связь и спокойный выход из программы.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">10:20-11:20</div><p>Тема дня: эмоции, уверенность, контакт, границы или самооценка.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:20-11:35</div><p>Короткий перерыв, вода и отдых от интенсивного общения.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:35-12:45</div><p>Практические упражнения, карточки, мини-разборы и работа в малой группе.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">12:45-14:00</div><p>Закрепление, обратная связь и личный план на день.</p></div>
         </div>
       </div>
     </section>
@@ -575,8 +576,8 @@
         <div class="feature-copy reveal">
           <p class="eyebrow">Питание и паузы</p>
           <h2 class="section-title">Один приём пищи в день программы включён</h2>
-          <p class="section-text">В расписании есть обеденное окно 13:00-14:00, короткие перерывы и спокойные паузы. Один приём пищи входит в организационный формат лагеря; если у подростка есть ограничения по питанию, лучше написать об этом до старта.</p>
-          <div class="btns"><a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Уточнить питание</a><a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить место</a></div>
+          <p class="section-text">Формат описывается как психологические и развивающие занятия. Централизованное питание не заявляется; в расписании есть короткая пауза, а индивидуальные организационные вопросы можно уточнить до старта.</p>
+          <div class="btns"><a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Уточнить формат</a><a class="btn ghost" href="#order:Психология без скуки — подростковый интенсив =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить место</a></div>
         </div>
       </div>
     </section>
@@ -593,9 +594,9 @@
           <h2 class="section-title">Без ощущения, что ребёнка оставляют на 8 часов одного</h2>
           <p class="section-text">Программа камерная и сопровождаемая. До старта можно написать возраст подростка и особенности, которые важно учитывать, чтобы понять, подходит ли группа.</p>
           <div class="parent-facts">
-            <div class="fact-tile"><b>12-19</b><span>Возраст участников. При пограничном возрасте лучше заранее обсудить состав группы.</span></div>
+            <div class="fact-tile"><b>14-17</b><span>Возраст участников. При пограничном возрасте лучше заранее обсудить состав группы.</span></div>
             <div class="fact-tile"><b>10-12</b><span>Камерная группа, где ведущая видит каждого подростка.</span></div>
-            <div class="fact-tile"><b>10-18</b><span>День включает практику, паузы, прогулочные задания и обеденное время.</span></div>
+            <div class="fact-tile"><b>10-14</b><span>Занятие включает практику, паузы и личные выводы.</span></div>
             <div class="fact-tile"><b>0</b><span>Родителям не нужно присутствовать на занятиях: подросток участвует самостоятельно.</span></div>
           </div>
         </div>
@@ -622,34 +623,34 @@
 
     <section class="section" id="program">
       <div class="wrap">
-        <p class="eyebrow">Программа лагеря</p>
+        <p class="eyebrow">Программа интенсива</p>
         <h2 class="section-title">Программа на 5 дней</h2>
         <p class="section-text">Пять дней идут последовательно: знакомство и доверие, эмоции, общение и границы, уверенность, итоги и личные опоры.</p>
         <div class="program">
           <div class="day-card reveal">
             <div class="day-tag">День 1</div>
             <h4>Знакомство и доверие</h4>
-            <p><b>10:00-11:30</b> знакомство и правила группы; <b>11:45-13:00</b> упражнения на контакт; <b>14:00-16:00</b> командная практика; <b>16:15-18:00</b> личные выводы и мягкое включение.</p>
+            <p><b>10:00-10:20</b> знакомство и правила группы; <b>10:20-11:20</b> упражнения на контакт; <b>11:35-12:45</b> практика общения; <b>12:45-14:00</b> личные выводы.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 2</div>
             <h4>Эмоции и состояние</h4>
-            <p><b>10:00-11:30</b> карта эмоций; <b>11:45-13:00</b> стресс и тревога; <b>14:00-16:00</b> упражнения на состояние; <b>16:15-18:00</b> дневник самонаблюдения.</p>
+            <p><b>10:00-10:20</b> настрой; <b>10:20-11:20</b> карта эмоций; <b>11:35-12:45</b> стресс и тревога; <b>12:45-14:00</b> дневник самонаблюдения.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 3</div>
             <h4>Общение и границы</h4>
-            <p><b>10:00-11:30</b> как говорить о себе; <b>11:45-13:00</b> границы; <b>14:00-16:00</b> диалоги и мини-сцены; <b>16:15-18:00</b> обратная связь.</p>
+            <p><b>10:00-10:20</b> настрой; <b>10:20-11:20</b> как говорить о себе; <b>11:35-12:45</b> границы и диалоги; <b>12:45-14:00</b> обратная связь.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 4</div>
             <h4>Уверенность и самооценка</h4>
-            <p><b>10:00-11:30</b> самооценка; <b>11:45-13:00</b> страх оценки; <b>14:00-16:00</b> ИИ для идей и проекта; <b>16:15-18:00</b> презентация без давления.</p>
+            <p><b>10:00-10:20</b> настрой; <b>10:20-11:20</b> самооценка и страх оценки; <b>11:35-12:45</b> ИИ для идей; <b>12:45-14:00</b> презентация без давления.</p>
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 5</div>
             <h4>Итоги и первые шаги психолога</h4>
-            <p><b>10:00-11:30</b> личные опоры; <b>11:45-13:00</b> первые шаги психолога; <b>14:00-16:00</b> финальный мини-проект; <b>16:15-18:00</b> итоги и рекомендации.</p>
+            <p><b>10:00-10:20</b> настрой; <b>10:20-11:20</b> личные опоры; <b>11:35-12:45</b> первые шаги психолога; <b>12:45-14:00</b> итоги и рекомендации.</p>
           </div>
         </div>
       </div>
@@ -660,11 +661,11 @@
         <div class="feature-copy reveal">
           <p class="eyebrow">С чем подросток уходит</p>
           <h2 class="section-title">Личные выводы, уверенность и опыт проявляться</h2>
-          <p class="section-text">Цель лагеря - не выдать подростку набор красивых фраз, а дать опыт: как говорить, как понимать своё состояние, как включаться в группу и как пользоваться новыми инструментами без тревоги.</p>
+          <p class="section-text">Цель интенсива - не выдать подростку набор красивых фраз, а дать опыт: как говорить, как понимать своё состояние, как включаться в группу и как пользоваться новыми инструментами без тревоги.</p>
           <div class="skill-flow">
             <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Понимание своих эмоций</strong><span>Подросток лучше замечает, что с ним происходит, и может говорить об этом спокойнее.</span></div></div>
             <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Навык общения</strong><span>Больше практики диалога, границ, договорённостей и выступления в малой группе.</span></div></div>
-            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Опора на себя</strong><span>Участник фиксирует личные выводы и упражнения, к которым можно возвращаться после лагеря.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Опора на себя</strong><span>Участник фиксирует личные выводы и упражнения, к которым можно возвращаться после интенсива.</span></div></div>
           </div>
         </div>
         <div class="feature-visual reveal">
@@ -678,10 +679,10 @@
     <section class="section" id="trust">
       <div class="wrap trust-band">
         <div class="trust-photo reveal">
-          <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый лагерь по психологии в цветной городской атмосфере" />
+          <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый психологический интенсив в цветной городской атмосфере" />
         </div>
         <div class="trust-list reveal">
-          <p class="eyebrow">Кто ведёт лагерь</p>
+          <p class="eyebrow">Кто ведёт интенсив</p>
           <h2 class="section-title">Татьяна Мунн ведёт программу лично</h2>
           <div class="trust-item"><strong>Психолог МГУ</strong><span>Профессиональная психологическая база и опыт работы с темами эмоций, общения, самооценки и уверенности.</span></div>
           <div class="trust-item"><strong>Автор метода «Быстрая психология»</strong><span>Формат строится вокруг понятной практики, коротких разборов и действий, которые подростку легче применить в жизни.</span></div>
@@ -695,9 +696,9 @@
         <p class="eyebrow">Ответы на частые вопросы</p>
         <h2 class="section-title">Перед записью</h2>
         <div class="faq-grid">
-          <div class="faq-item"><strong>7 часов - это не слишком много?</strong><p>День не состоит из длинных лекций. Форматы сменяются: обсуждение, практика, паузы, обеденное время, прогулочные задания и обратная связь.</p></div>
-          <div class="faq-item"><strong>Будет ли обед?</strong><p>В расписании заложено обеденное время с 13:00 до 14:00. Один приём пищи в день программы включён. Особенности питания и ограничения лучше сообщить до старта.</p></div>
-          <div class="faq-item"><strong>Нужно ли родителям быть рядом?</strong><p>Нет. Родители помогают с записью и организационными вопросами, а подросток участвует в программе самостоятельно.</p></div>
+          <div class="faq-item"><strong>4 часа - это не слишком много?</strong><p>Это не длинная лекция: внутри есть обсуждение, практика, короткая пауза и обратная связь.</p></div>
+          <div class="faq-item"><strong>Будет ли питание?</strong><p>Централизованное питание не заявляется. Формат рассчитан на занятия 10:00-14:00; индивидуальные организационные вопросы лучше уточнить до старта.</p></div>
+          <div class="faq-item"><strong>Как оформляется участие подростка?</strong><p>Участие оформляет родитель или законный представитель. Организационные условия подтверждаются при записи.</p></div>
           <div class="faq-item"><strong>Что если подросток стесняется?</strong><p>Камерная группа и мягкий вход помогают включаться постепенно. Никого не заставляют выступать резко или через давление.</p></div>
           <div class="faq-item"><strong>Нужен ли ноутбук для нейросетей?</strong><p>Если есть возможность, подросток может принести свой ноутбук для практического блока. Если такой возможности нет, напишите заранее - подскажем, как лучше организовать участие.</p></div>
           <div class="faq-item"><strong>Как понять, подходит ли группа?</strong><p>Напишите возраст подростка, что сейчас важно развить и какие есть особенности. Мы сверим ожидания с форматом программы.</p></div>
@@ -710,15 +711,15 @@
     <section class="section" id="calendar">
       <div class="wrap calendar-panel reveal">
         <div>
-          <p class="eyebrow">Календарь смен</p>
+          <p class="eyebrow">Календарь потоков</p>
           <h2 class="section-title">Можно выбрать ближайший поток или оставить заявку на следующий</h2>
-          <p class="section-text">Даты будущих потоков предварительные: школы могут утверждать собственные каникулы. Мы держим окна под летние каникулы, сентябрьские выходные и осенние каникулы, чтобы семья могла заранее выбрать удобную тему.</p>
+          <p class="section-text">Даты будущих потоков предварительные. Мы держим окна под лето, сентябрьские выходные и осенний период, чтобы семья могла заранее выбрать удобную тему.</p>
         </div>
         <div class="calendar-grid">
-          <div class="shift-card"><b>6-10 июля</b><strong>Психология без скуки</strong><span>Базовая смена: эмоции, общение, уверенность, ИИ и первые шаги психолога.</span><a class="btn primary" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить</a></div>
-          <div class="shift-card"><b>24-28 августа</b><strong>Разобраться в себе</strong><span>Смена перед учебным годом: спокойный старт, самооценка, тревога и личные опоры.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать</a></div>
-          <div class="shift-card"><b>19-20 и 26-27 сентября</b><strong>Уверенность в себе</strong><span>Weekend-формат для тех, кто не попадает на буднюю смену.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
-          <div class="shift-card"><b>26-30 октября</b><strong>Личная эффективность</strong><span>Окно под осенние каникулы: фокус, энергия, общение, учебные цели.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
+          <div class="shift-card"><b>6-10 июля</b><strong>Психология без скуки</strong><span>Базовый поток: эмоции, общение, уверенность, ИИ и первые шаги психолога.</span><a class="btn primary" href="#order:Психология без скуки — подростковый интенсив =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить</a></div>
+          <div class="shift-card"><b>24-28 августа</b><strong>Разобраться в себе</strong><span>Поток перед учебным годом: спокойный старт, самооценка, тревога и личные опоры.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать</a></div>
+          <div class="shift-card"><b>19-20 и 26-27 сентября</b><strong>Уверенность в себе</strong><span>Weekend-формат для тех, кому удобнее короткий поток выходного дня.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
+          <div class="shift-card"><b>26-30 октября</b><strong>Личная эффективность</strong><span>Осенний поток: фокус, энергия, общение, учебные цели.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
           <div class="shift-card"><b>2-6 ноября</b><strong>Выбор профессии</strong><span>Профориентационный поток: интересы, сильные стороны, первые шаги к будущей сфере.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
         </div>
       </div>
@@ -729,7 +730,7 @@
         <div>
           <p class="eyebrow">Программа лояльности</p>
           <h2 class="section-title">Можно помочь знакомым и получить бонус</h2>
-          <p class="section-text">Если вы знаете подростка, которому может подойти лагерь, отправьте ссылку на эту страницу. После фактической оплаты и старта участника можно получить бонус за рекомендацию.</p>
+          <p class="section-text">Если вы знаете подростка, которому может подойти интенсив, отправьте ссылку на эту страницу. После фактической оплаты и старта участника можно получить бонус за рекомендацию.</p>
           <div class="btns"><a class="btn primary" href="https://t.me/share/url?url=https%3A%2F%2F%D0%BC%D1%83%D0%BD%D0%BD.%D1%80%D1%84%2Fpodrostkovyy-lager-psihologiya&text=%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BB%D0%B0%D0%B3%D0%B5%D1%80%D1%8C%20%D0%BF%D0%BE%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8" target="_blank" rel="noopener">Отправить ссылку</a><a class="btn ghost" href="https://t.me/moonn_official" target="_blank" rel="noopener">Уточнить условия</a></div>
         </div>
         <div class="pricing-card"><div class="loyalty-bonus">5 000 ₽</div><p class="section-text" style="margin-top:10px;max-width:none;">Бонус за приведённого участника после оплаты и старта. Формат бонуса и подтверждение рекомендации согласуются с организатором заранее.</p></div>
@@ -744,13 +745,13 @@
             <div class="price-big">40 000 ₽</div>
             <div class="old-price">50 000 ₽</div>
           </div>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Ранняя стоимость участия - 40 000 ₽ при оплате до 15 июня вместо стандартных 50 000 ₽. Для следующих потоков дата ранней оплаты указывается в календаре смен. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Ранняя стоимость участия - 40 000 ₽ при оплате до 15 июня вместо стандартных 50 000 ₽. Для следующих потоков дата ранней оплаты указывается в календаре потоков. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
           <div class="btns" style="margin-bottom:18px;">
-            <a class="btn primary" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить участие</a>
+            <a class="btn primary" href="#order:Психология без скуки — подростковый интенсив =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить участие</a>
             <a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Обсудить рассрочку</a>
           </div>
           <ul class="list">
-            <li><span class="check">✓</span><span>Формат: городской лагерь с 6 по 10 июля, ежедневно с 10:00 до 18:00.</span></li>
+            <li><span class="check">✓</span><span>Формат: психологический интенсив с 6 по 10 июля, ежедневно с 10:00 до 14:00.</span></li>
             <li><span class="check">✓</span><span>Локация: центр Москвы, Цветной бульвар.</span></li>
             <li><span class="check">✓</span><span>Группа: 10-12 подростков в камерной атмосфере.</span></li>
             <li><span class="check">✓</span><span>После оплаты напишите в Telegram возраст подростка и ваши ожидания - мы сверим заявку и подтвердим участие.</span></li>
@@ -759,14 +760,14 @@
         </div>
         <div class="pricing-card reveal">
           <p class="eyebrow">Материалы</p>
-          <h3 style="margin:0 0 12px;font-size:34px;line-height:1.08;letter-spacing:-.03em;">Программа и постер лагеря</h3>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или написать организатору, чтобы уточнить возраст, питание, перерывы, смену и состав группы.</p>
+          <h3 style="margin:0 0 12px;font-size:34px;line-height:1.08;letter-spacing:-.03em;">Программа и постер интенсива</h3>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или написать организатору, чтобы уточнить возраст, формат, паузы, поток и состав группы.</p>
           <div class="btns">
             <a class="btn ghost" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать программу PDF</a>
             <a class="btn secondary" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.pdf" download>Скачать постер PDF</a>
           </div>
           <div style="margin-top:20px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);">
-            <img src="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" alt="Постер подросткового лагеря" style="display:block;width:100%;height:auto;" />
+            <img src="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" alt="Постер подросткового интенсива" style="display:block;width:100%;height:auto;" />
           </div>
         </div>
       </div>
@@ -776,10 +777,10 @@
       <div class="wrap">
         <div class="cta-box reveal">
           <h3>Если хотите обсудить участие - напишите возраст подростка и ваши ожидания</h3>
-          <p>Это поможет быстрее понять, подходит ли программа именно вам. Если вы примете решение участвовать, можно оплатить место на сайте, забронировать следующую смену или обсудить рассрочку. Количество мест ограничено.</p>
+          <p>Это поможет быстрее понять, подходит ли программа именно вам. Если вы примете решение участвовать, можно оплатить место на сайте, забронировать следующий поток или обсудить рассрочку. Количество мест ограничено.</p>
           <div class="btns">
             <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Написать в Telegram</a>
-            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить сейчас</a>
+            <a class="btn ghost" href="#order:Психология без скуки — подростковый интенсив =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить сейчас</a>
             <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Написать в WhatsApp</a>
           </div>
         </div>
@@ -799,7 +800,7 @@
 
   <footer>
     <div class="wrap">
-      Татьяна Мунн - психолог МГУ, автор метода «Быстрая психология». Подростковый городской лагерь по психологии, Москва, Цветной бульвар.
+      Татьяна Мунн - психолог МГУ, автор метода «Быстрая психология». Подростковый психологический интенсив, Москва, Цветной бульвар.
     </div>
   </footer>
   </div>
@@ -930,7 +931,7 @@
         initTildaCart();
         if (typeof tcart__addProduct !== 'function' || typeof tcart__openCart !== 'function') return false;
         var product = {
-          name: 'Психология без скуки — подростковый лагерь',
+          name: 'Психология без скуки — подростковый интенсив',
           price: 40000,
           amount: 40000,
           quantity: 1,
@@ -978,9 +979,10 @@
       setTimeout(maybeOpenPaymentFromUrl, 900);
     })();
   </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Психология без скуки — подростковый лагерь Татьяны Мунн","description":"Психология без скуки: подростковый городской лагерь, 6–10 июля, Цветной бульвар, уверенность, общение, эмоции, ИИ, первые шаги психолога и питание.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"40000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-06-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Психология без скуки — подростковый интенсив Татьяны Мунн","description":"Психология без скуки: подростковый психологический интенсив, 6–10 июля, Цветной бульвар, уверенность, общение, эмоции, ИИ и первые шаги психолога.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"40000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-06-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый психологический интенсив","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
 </body>
 </html>
+
 
 
 
