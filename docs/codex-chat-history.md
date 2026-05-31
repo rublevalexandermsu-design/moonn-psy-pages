@@ -1590,6 +1590,31 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-05-31 09:10 MSK — Domain Continuity: temporary `мунн.рф` routing
+
+- Project: Moonn / Tilda site continuity.
+- Workstream: `Moonn domain continuity / мунн.рф temporary domain`.
+- Branch: `codex/moonn-rf-domain-continuity`.
+- User request:
+  - Temporarily move/connect the Tilda site from disputed `moonn.ru` to the newly purchased `мунн.рф`, using Rublev Chrome with REG.RU and Tilda sessions.
+- Decisions:
+  - Keep this separate from SEO branch work and legal domain-transfer drafting.
+  - Treat registrar/Tilda changes as publication-facing; verify by DNS and live browser/curl, not by cabinet UI alone.
+- Actions performed:
+  - Tilda project `8326812` accepted `мунн.рф` as custom domain.
+  - REG.RU cabinet for `мунн.рф` shows after reload:
+    - `A @ -> 176.57.67.109`;
+    - `A www -> 176.57.67.109`.
+- Verification:
+  - `ns1.reg.ru` / `ns2.reg.ru` still resolve `xn--l1acaw.xn--p1ai` and `www.xn--l1acaw.xn--p1ai` to `95.163.244.138`.
+  - `curl -I` for root domain and forced Tilda IP still returns `HTTP 400`, so live site is not yet confirmed on `мунн.рф`.
+- Artifact:
+  - `docs/moonn-rf-domain-continuity-2026-05-31.md`.
+- Incident/risk:
+  - REG.RU UI and DNS answers are temporarily inconsistent; do not report migration complete until DNS and live checks pass.
+- Next action:
+  - Recheck DNS/Tilda in 30-60 minutes; if still stale, find the missing REG.RU publish/save action or prepare support escalation with evidence.
+
 ## 2026-05-28 09:00 MSK — Supervisor Run: SEO/AEO + Analytics (DNS + GUI Tooling Blocked)
 
 - Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).
