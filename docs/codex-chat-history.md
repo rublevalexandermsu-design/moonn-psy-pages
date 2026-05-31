@@ -1736,6 +1736,35 @@ Append-only project history for `moon-psy-site`.
   - `docs/teen-psychology-camp-2026/camp-page-update-checklist-2026-05-31.md`
   - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`
 
+## 2026-05-31 13:05 MSK — Teen Camp Follow-Up Correction Published
+
+- Project: Moonn / Tilda site.
+- Workstream: Moonn Tilda camp page content/pricing update.
+- Branch: `codex/moonn-camp-page-update`.
+- Trigger: user reviewed the live page and asked for four corrections: add camp category in header, add `Подростковый лагерь` after the H1 colon, move the mobile price badge away from Tatiana's face, restore a visible early-payment deadline, and add hourly detail to the downloadable program.
+- Assumption used:
+  - Current early-payment deadline for the July 6-10 shift is `15 июня`; old `15 мая` was not restored because it is already expired.
+- Changed:
+  - Header brand: `Психология без скуки (подростковый лагерь)`.
+  - H1: `Психология без скуки: Подростковый лагерь уверенности, общения и ИИ`.
+  - Visible early-payment copy: `до 15 июня`.
+  - Mobile `.floating-price` moved below the hero image and reduced so it no longer covers Tatiana's face.
+  - Program cards and PDF now include hourly blocks from `10:00-11:30` to `16:15-18:00`.
+- Git/CDN:
+  - `dab544dc761a653902e8ac793379e5a7ef5d8b8b` — content/PDF update.
+  - `650df456da4a02b69a53d05ff14dc9fbdb761db4` — pinned updated PDF in the page artifact.
+  - `a63b13d` — pinned follow-up Tilda loader and pushed.
+- Publication:
+  - Tilda HEAD was updated through authenticated Rublev Chrome using the verified Ace-editor method.
+  - Reopened Tilda `editheadcode`: `20260531-camp-followup` present, old `20260531-camp-update` absent, page commit `650df456da4a02b69a53d05ff14dc9fbdb761db4` present.
+  - Published page `140348786`.
+- Live verification:
+  - `https://мунн.рф/podrostkovyy-lager-psihologiya` raw HTML returns `200`, contains `20260531-camp-followup`, old marker absent, old `30000` absent.
+  - Mobile and desktop rendered checks passed: updated header/H1, `до 15 июня`, hourly program blocks, no old `15 мая`, no old `30 000`, no horizontal overflow.
+  - Mobile check: `priceBelowHeroImage=true`.
+  - PDF returns `200`, `application/pdf`, `%PDF-`, size `303277`.
+  - Cart opens with SKU `teen-camp-2026`, price/total `40000`, no real payment submitted.
+
 ## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

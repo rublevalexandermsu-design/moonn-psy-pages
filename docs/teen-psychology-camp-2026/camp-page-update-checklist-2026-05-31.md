@@ -47,6 +47,14 @@ Tilda page id: `140348786`.
 - `2026-05-31`: live raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returned `200`, contained `20260531-camp-update`, `40000`, commit `1aab5c887ee`, and did not contain old `30000`.
 - `2026-05-31`: live rendered check passed: H1 `Психология без скуки: уверенность, общение и ИИ`, no old `30 000`, `40 000` and `50 000` present, group `10-12`, food, calendar, loyalty and AI blocks present, no horizontal overflow.
 - `2026-05-31`: live cart check passed without payment submission: Tilda cart opens with product `Психология без скуки — подростковый лагерь`, SKU `teen-camp-2026`, price `40000`, total `40000`; `30000` absent.
+- `2026-05-31`: follow-up correction published:
+  - header brand: `Психология без скуки (подростковый лагерь)`;
+  - H1: `Психология без скуки: Подростковый лагерь уверенности, общения и ИИ`;
+  - visible early-payment deadline: `до 15 июня`;
+  - mobile price badge moved below the hero image (`priceBelowHeroImage=true`) so it does not cover Tatiana's face;
+  - rendered program includes hourly blocks `10:00-11:30` through `16:15-18:00`;
+  - updated PDF returns `200`, `application/pdf`, `%PDF-`, size `303277`;
+  - cart still opens with SKU `teen-camp-2026`, price `40000`, and no `30000`.
 
 ## Risk notes
 
@@ -55,3 +63,4 @@ Tilda page id: `140348786`.
 - Бонус `5 000 ₽` может иметь налоговые/договорные нюансы; формулировать как программу лояльности по согласованию с организатором.
 - `moonn.ru` с этой машины по-прежнему не резолвится; аварийный live-домен `мунн.рф` работает и проверен.
 - Обычная UI-вставка в Tilda Ace editor может не сохраняться на сервере. Готовность для HEAD-правок считать только после повторного открытия редактора, проверки серверного значения и live HTML/rendered проверки.
+- Для новых сроков ранней оплаты не возвращать устаревшее `15 мая`; текущая опубликованная дата ранней оплаты для июльской смены: `15 июня`.

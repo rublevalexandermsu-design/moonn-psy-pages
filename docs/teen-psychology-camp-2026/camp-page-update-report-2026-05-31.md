@@ -96,3 +96,34 @@ Updated the teen camp landing page package, poster, PDF and homepage banner copy
 
 - `moonn.ru` is still not resolvable from this host; `мунн.рф` is the verified continuity domain for this publication.
 - The live cart still displays native Tilda default labels `Your Name`, `Your Email`, `Your Phone`. This is not part of the requested price/content update; it should be handled as a separate form/localization task if needed.
+
+## Follow-up correction — 2026-05-31
+
+User review found four concrete issues after publication: the header needed the camp category, the first H1 needed `Подростковый лагерь` after the colon, the mobile price badge covered Tatiana's face, and the PDF program needed hourly detail.
+
+Changes applied and published:
+
+- Header brand changed to `Психология без скуки (подростковый лагерь)`.
+- H1 changed to `Психология без скуки: Подростковый лагерь уверенности, общения и ИИ`.
+- Early payment deadline made visible as `до 15 июня` in the hero button, hero bullets, floating price badge, price card and PDF.
+- Mobile CSS changed so `.floating-price` moves below the hero image instead of sitting on the face area.
+- Program cards and PDF now include hourly blocks for each day: morning topic, pre-lunch practice, lunch `13:00-14:00`, afternoon practice and final reflection.
+- Updated PDF pinned at commit `dab544dc761a653902e8ac793379e5a7ef5d8b8b`.
+- Page artifact pinned at commit `650df456da4a02b69a53d05ff14dc9fbdb761db4`.
+- Tilda loader pinned and published from commit `a63b13d`.
+
+Follow-up verification:
+
+- Tilda HEAD editor reopened after save: `20260531-camp-followup` present, old `20260531-camp-update` absent, page commit `650df456da4a02b69a53d05ff14dc9fbdb761db4` present.
+- Live raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returned `200`, contains `20260531-camp-followup`, old marker absent, page commit present, old `30000` absent.
+- Live mobile render:
+  - brand `Психология без скуки (подростковый лагерь)`;
+  - H1 `Психология без скуки: Подростковый лагерь уверенности, общения и ИИ`;
+  - `до 15 июня` visible;
+  - old `15 мая` and `30 000` absent;
+  - program times visible;
+  - no horizontal overflow;
+  - `priceBelowHeroImage=true`.
+- Live desktop render: same content checks passed; no horizontal overflow.
+- Updated PDF URL returned `200`, `application/pdf`, first bytes `%PDF-`, size `303277`.
+- Cart still opens from `Оплатить раннюю стоимость до 15 июня` with SKU `teen-camp-2026`, price/total `40000`, and no `30000`.
