@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Подростковый лагерь по психологии - Татьяна Мунн</title>
-  <meta name="description" content="Подростковый городской лагерь по психологии Татьяны Мунн: 6-10 июля, Цветной бульвар, 3-5 подростков, камерная группа, психология, общение, эмоции, уверенность, рассрочка." />
+  <title>Психология без скуки: подростковый лагерь уверенности, общения и ИИ - Татьяна Мунн</title>
+  <meta name="description" content="Психология без скуки: городской лагерь для подростков 12-19 лет. Общение, уверенность, эмоции, ИИ, первые шаги психолога, питание и камерная группа 10-12 участников." />
   <style>
     :root {
       --bg:#f7f2fb;
@@ -46,6 +46,32 @@
     }
     body::before { width:280px;height:280px;left:-80px;top:120px;background:#c591ef; }
     body::after { width:340px;height:340px;right:-80px;top:420px;background:#afc0ff; }
+
+    .teen-camp-page {
+      min-height:100vh;
+      position:relative;
+      overflow:hidden;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 4% 18%, rgba(220, 136, 233, .30), transparent 24%),
+        radial-gradient(circle at 96% 15%, rgba(165, 184, 255, .25), transparent 25%),
+        radial-gradient(circle at 88% 78%, rgba(233, 146, 210, .20), transparent 22%),
+        linear-gradient(180deg, #fcf7ff 0%, #f7effd 42%, #fff9fd 100%);
+      isolation:isolate;
+    }
+    .teen-camp-page::before,
+    .teen-camp-page::after {
+      content:"";
+      position:fixed;
+      border-radius:50%;
+      filter:blur(88px);
+      opacity:.42;
+      z-index:-1;
+      pointer-events:none;
+      transform:translateZ(0);
+    }
+    .teen-camp-page::before { width:420px;height:420px;left:-150px;top:150px;background:#dc7fe6; }
+    .teen-camp-page::after { width:460px;height:460px;right:-150px;top:300px;background:#aebfff; }
 
     .wrap { width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
     .section { padding:38px 0; }
@@ -118,6 +144,60 @@
 
     .section-title { margin:0 0 10px;font-size:clamp(34px,4vw,58px);line-height:1.02;letter-spacing:-.04em; }
     .section-text { margin:0 0 24px;color:#65709a;font-size:20px;line-height:1.65;max-width:840px; }
+    .feature-split { display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch; }
+    .feature-copy { display:flex;flex-direction:column;justify-content:center;min-height:460px; }
+    .feature-visual { position:relative;min-height:460px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow-hover);border:1px solid rgba(255,255,255,.72);background:#fff; }
+    .feature-visual img { width:100%;height:100%;object-fit:cover;display:block; }
+    .visual-shade { position:absolute;inset:0;background:linear-gradient(180deg, rgba(25,28,72,.04) 10%, rgba(25,28,72,.56) 100%); }
+    .visual-note { position:absolute;left:22px;right:22px;bottom:22px;padding:18px;border-radius:24px;background:rgba(255,255,255,.92);box-shadow:0 18px 42px rgba(30,33,80,.16); }
+    .visual-note strong { display:block;font-size:23px;line-height:1.1;margin-bottom:8px; }
+    .visual-note span { display:block;color:#65709a;font-size:16px;line-height:1.45; }
+    .skill-flow { display:grid;gap:12px;margin-top:20px; }
+    .skill-row { display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;padding:15px 16px;border-radius:20px;background:rgba(255,255,255,.84);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .skill-icon { width:42px;height:42px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:#ebe6ff;color:#6e46c7;font-weight:900;font-size:20px; }
+    .skill-row strong { display:block;font-size:18px;line-height:1.2;margin-bottom:4px; }
+    .skill-row span { display:block;color:#65709a;font-size:15px;line-height:1.45; }
+    .parent-panel { display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch; }
+    .parent-facts { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .fact-tile { padding:18px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .fact-tile b { display:block;color:#1b2a73;font-size:25px;line-height:1;margin-bottom:8px; }
+    .fact-tile span { display:block;color:#65709a;font-size:15px;line-height:1.45; }
+    .ai-lab { display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:28px;border-radius:34px;background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(233,244,255,.94));border:1px solid rgba(95,127,220,.16);box-shadow:var(--shadow-hover); }
+    .ai-screen { position:relative;min-height:420px;border-radius:28px;overflow:hidden;background:#111a3a;box-shadow:0 24px 58px rgba(33,45,105,.24); }
+    .ai-screen img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.56; }
+    .laptop-ui { position:absolute;left:8%;right:8%;bottom:10%;padding:18px;border-radius:22px;background:rgba(12,18,42,.88);border:1px solid rgba(255,255,255,.18);box-shadow:0 20px 50px rgba(0,0,0,.26);color:#fff; }
+    .ui-bar { display:flex;gap:7px;margin-bottom:14px; }
+    .ui-bar span { width:10px;height:10px;border-radius:50%;background:#ff6f91; }
+    .ui-bar span:nth-child(2){background:#ffd166;} .ui-bar span:nth-child(3){background:#55d6be;}
+    .prompt-line { padding:10px 12px;margin:8px 0;border-radius:12px;background:rgba(255,255,255,.09);font-size:14px;line-height:1.45; }
+    .prompt-line.accent { background:linear-gradient(135deg, rgba(95,206,255,.24), rgba(181,117,255,.22)); }
+
+    .hero-alert { margin:18px 0 22px; padding:18px 20px; border-radius:24px; background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(238,245,255,.94)); border:1px solid rgba(95,127,220,.18); box-shadow:var(--shadow); }
+    .hero-alert strong { display:block; font-size:22px; line-height:1.15; margin-bottom:6px; color:#2037a4; }
+    .hero-alert span { display:block; color:#65709a; font-size:17px; line-height:1.45; }
+    .food-panel, .calendar-panel, .loyalty-panel, .psychology-track { display:grid; grid-template-columns:.92fr 1.08fr; gap:24px; align-items:stretch; padding:28px; border-radius:34px; background:rgba(255,255,255,.88); border:1px solid var(--line); box-shadow:var(--shadow-hover); }
+    .food-visual { min-height:380px; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); }
+    .food-visual img { width:100%; height:100%; object-fit:cover; display:block; }
+    .calendar-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:18px; }
+    .shift-card { padding:18px; border-radius:22px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); }
+    .shift-card b { display:block; font-size:18px; color:#2037a4; margin-bottom:6px; }
+    .shift-card strong { display:block; font-size:22px; line-height:1.12; margin-bottom:8px; }
+    .shift-card span { display:block; color:#65709a; font-size:15px; line-height:1.45; }
+    .shift-card .btn { width:100%; margin-top:14px; min-height:46px; font-size:15px; border-radius:14px; padding:10px 12px; }
+    .loyalty-bonus { font-size:56px; font-weight:900; color:#2339a8; letter-spacing:-.05em; line-height:1; }
+    .profession-badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .profession-badges span { padding:10px 14px; border-radius:999px; background:#ebe6ff; color:#6e46c7; font-weight:800; }
+    .trust-band { display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:stretch; }
+    .trust-photo { position:relative;border-radius:34px;overflow:hidden;min-height:430px;box-shadow:var(--shadow-hover); }
+    .trust-photo img { width:100%;height:100%;object-fit:cover;display:block; }
+    .trust-list { display:grid;gap:14px;align-content:center; }
+    .trust-item { padding:18px 20px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .trust-item strong { display:block;font-size:21px;line-height:1.15;margin-bottom:6px; }
+    .trust-item span { display:block;color:#65709a;font-size:16px;line-height:1.5; }
+    .faq-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .faq-item { padding:20px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .faq-item strong { display:block;font-size:20px;line-height:1.2;margin-bottom:8px; }
+    .faq-item p { margin:0;color:#65709a;font-size:16px;line-height:1.55; }
 
     .gallery-grid { display:grid;grid-template-columns:repeat(12,1fr);gap:18px; }
     .gallery-card { position:relative;overflow:hidden;border-radius:28px;min-height:290px;background:#fff;box-shadow:var(--shadow-hover);border:1px solid rgba(255,255,255,.6); }
@@ -144,6 +224,10 @@
     .old-price { font-size:26px;color:#6a75a1;text-decoration:line-through;opacity:.9; }
     .list { margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px; }
     .list li { display:flex;gap:10px;align-items:flex-start;color:#64709a;font-size:18px;line-height:1.5; }
+    .day-rhythm { display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+    .rhythm-item { display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start;padding:18px 20px;border-radius:20px;background:rgba(255,255,255,.86);border:1px solid var(--line);box-shadow:var(--shadow); }
+    .rhythm-time { color:#1f42b8;font-size:15px;font-weight:900;line-height:1.35;white-space:nowrap; }
+    .rhythm-item p { margin:0;color:#65709a;font-size:16px;line-height:1.5; }
 
     .cta-box { position:relative;overflow:hidden;padding:34px;border-radius:34px;background:linear-gradient(135deg, rgba(48,73,201,.96), rgba(123,86,226,.95));color:#fff;box-shadow:0 22px 55px rgba(57,79,196,.22); }
     .cta-box::before { content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-60px;top:-60px;background:rgba(255,255,255,.11);filter:blur(8px); }
@@ -151,13 +235,77 @@
     .cta-box p { margin:0 0 22px;font-size:20px;line-height:1.6;opacity:.96;max-width:720px;position:relative;z-index:1; }
     .cta-box .btn.primary { background:#fff;color:#2339a8; }
     .cta-box .btn.secondary { background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#fff; }
+    .t706__cartwin .t-submit,
+    .t706__cartwin .t-btnflex.t-btnflex_type_submit {
+      width:100% !important;
+      min-height:62px !important;
+      display:inline-flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      margin-top:18px !important;
+      border:0 !important;
+      border-radius:18px !important;
+      background:linear-gradient(135deg, var(--blue), var(--blue2)) !important;
+      color:#fff !important;
+      font-size:18px !important;
+      font-weight:900 !important;
+      line-height:1.2 !important;
+      text-align:center !important;
+      box-shadow:0 16px 36px rgba(49,73,201,.30) !important;
+      cursor:pointer !important;
+      opacity:1 !important;
+    }
+    .t706__cartwin .t-submit *,
+    .t706__cartwin .t-btnflex.t-btnflex_type_submit * {
+      color:#fff !important;
+      font-size:18px !important;
+      font-weight:900 !important;
+    }
+    .t706__cartwin .t-form__inputsbox {
+      display:block !important;
+      visibility:visible !important;
+      height:auto !important;
+      opacity:1 !important;
+    }
+    .t706__cartwin .t-input-group,
+    .t706__cartwin .t-input-block {
+      display:block !important;
+      visibility:visible !important;
+      height:auto !important;
+      min-height:1px !important;
+      opacity:1 !important;
+    }
+    .t706__cartwin .t-form__inputsbox_inrow .t-input-group {
+      width:100% !important;
+      margin-bottom:14px !important;
+    }
+    .t706__cartwin .t-input-title {
+      display:block !important;
+      margin:16px 0 8px !important;
+    }
+    .t706__cartwin .t-input {
+      display:block !important;
+      width:100% !important;
+      min-height:54px !important;
+      box-sizing:border-box !important;
+    }
+    .teen-camp-payment-note {
+      margin:12px 0 4px;
+      padding:12px 14px;
+      border-radius:14px;
+      background:#f4edff;
+      color:#5d5487;
+      font-size:13px;
+      line-height:1.45;
+    }
     footer { padding:22px 0 40px;color:#7b81a4;font-size:15px; }
 
-    .reveal { opacity:0; transform:translateY(22px); transition:opacity .55s ease, transform .55s ease; }
+    .reveal { opacity:1; transform:none; transition:opacity .55s ease, transform .55s ease; }
     .reveal.visible { opacity:1; transform:none; }
 
     @media (max-width: 1100px) {
       .hero-grid, .pricing-wrap { grid-template-columns:1fr; }
+      .feature-split, .ai-lab, .parent-panel, .trust-band, .food-panel, .calendar-panel, .loyalty-panel, .psychology-track { grid-template-columns:1fr; }
       .cards-4 { grid-template-columns:repeat(2,1fr); }
       .cards-5 { grid-template-columns:repeat(2,1fr); }
       .program { grid-template-columns:repeat(2,1fr); }
@@ -168,6 +316,9 @@
       .site-header .inner { padding:12px 0; align-items:flex-start; }
       .nav { display:none; }
       .cards-4, .cards-5, .program { grid-template-columns:1fr; }
+      .parent-facts, .faq-grid, .calendar-grid { grid-template-columns:1fr; }
+      .day-rhythm { grid-template-columns:1fr; }
+      .rhythm-item { grid-template-columns:82px 1fr; }
       .gallery-grid { grid-template-columns:1fr; }
       .span-7,.span-5,.span-4,.span-8 { grid-column:span 1; }
       .speaker-card { position:static; margin:14px; max-width:none; }
@@ -178,26 +329,31 @@
   </style>
 
   <link rel="canonical" href="https://moonn.ru/podrostkovyy-lager-psihologiya" />
-  <meta property="og:title" content="Подростковый лагерь по психологии — Татьяна Мунн" />
-  <meta property="og:description" content="Городской психологический лагерь для подростков 6–10 июля: эмоции, общение, уверенность, безопасная камерная группа и практика с психологом Татьяной Мунн." />
+  <meta property="og:title" content="Психология без скуки — подростковый лагерь Татьяны Мунн" />
+  <meta property="og:description" content="Лагерь по психологии для подростков: уверенность, общение, эмоции, ИИ, первые шаги психолога, питание и группа 10-12 участников." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moonn.ru/podrostkovyy-lager-psihologiya" />
   <meta property="og:image" content="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" />
 </head>
 <body>
+  <div class="teen-camp-page">
   <header class="site-header">
     <div class="wrap inner">
       <a class="brand" href="#top">
         <div class="logo">TM</div>
         <div class="brand-text">
           <strong>Татьяна Мунн</strong>
-          <span>Подростковый лагерь по психологии</span>
+          <span>Психология без скуки</span>
         </div>
       </a>
       <nav class="nav">
         <a href="#program">Программа</a>
+        <a href="#day">День</a>
+        <a href="#ai">Нейросети</a>
+        <a href="#profession">Профессия</a>
+        <a href="#calendar">Смены</a>
+        <a href="#parents">Родителям</a>
         <a href="#gallery">Фото</a>
-        <a href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать PDF</a>
         <a href="#signup" class="cta">Записаться</a>
       </nav>
     </div>
@@ -208,17 +364,21 @@
       <div class="wrap hero-grid">
         <div class="reveal visible">
           <div class="pill"><span class="pill-dot"></span> 6 - 10 июля | понедельник - пятница | 10:00 - 18:00</div>
-          <h1>Лето, которое помогает подростку понять себя и стать увереннее</h1>
-          <p class="lead">Городской лагерь по психологии в центре Москвы, на Цветном бульваре. Небольшая камерная группа 3 - 5 человек, живая практика, общение, эмоции, уверенность в себе, навыки взаимодействия и безопасная поддерживающая атмосфера.</p>
+          <h1>Психология без скуки: уверенность, общение и ИИ</h1>
+          <p class="lead">Городской лагерь по психологии в центре Москвы, на Цветном бульваре. Подростки разбираются в себе, тренируют общение, уверенность и границы, пробуют ИИ для идей и проектов и узнают, как выглядят первые шаги в профессии психолога.</p>
+          <div class="hero-alert"><strong>Внутри есть ИИ-практика и мини-трек “хочу стать психологом”</strong><span>Подростки не только обсуждают эмоции и общение, но и учатся использовать нейросети для идей, презентаций и проектов безопасно.</span></div>
           <div class="btns">
-            <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Записаться в Telegram</a>
-            <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Узнать про стоимость и рассрочку</a>
+            <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать место</a>
+            <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Уточнить смену и оплату</a>
+            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить раннюю стоимость</a>
           </div>
           <ul class="hero-points">
-            <li><span class="check">✓</span>Камерная группа 3 - 5 подростков</li>
+            <li><span class="check">✓</span>Группа 10-12 подростков</li>
             <li><span class="check">✓</span>Центр Москвы, Цветной бульвар</li>
-            <li><span class="check">✓</span>Предзапись до 15 мая - 30 000 ₽</li>
-            <li><span class="check">✓</span>Есть рассрочка</li>
+            <li><span class="check">✓</span>Общение, уверенность, проекты и основы работы с нейросетями</li>
+            <li><span class="check">✓</span>В расписании есть перерывы и обеденное время</li>
+            <li><span class="check">✓</span>Ранняя оплата - 40 000 ₽ вместо 50 000 ₽</li>
+            <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
           </ul>
         </div>
         <div class="hero-visual reveal visible">
@@ -227,15 +387,15 @@
             <div class="overlay-top"></div>
             <div class="hero-label">
               <span>Цветной бульвар</span>
-              <span>3 - 5 подростков</span>
+              <span>10-12 подростков</span>
               <span>Практика и общение</span>
             </div>
             <div class="floating-price">
-              <b>30 000 ₽</b>
-              <small>при оплате до 15 мая<br>после - 40 000 ₽</small>
+              <b>40 000 ₽</b>
+              <small>ранняя оплата<br><s>50 000 ₽</s> стандартная</small>
             </div>
             <div class="speaker-card">
-              <img src="__ASSET_BASE__/tatiana-moonn-psychologist-msu-teen-camp-author.jpg" alt="Татьяна Мунн" />
+              <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый лагерь в цветной городской атмосфере" />
               <div>
                 <strong>Татьяна Мунн</strong>
                 <span>Психолог МГУ, автор метода «Быстрая психология». Опыт проведения подростковых программ, лекций и психологических форматов.</span>
@@ -255,14 +415,14 @@
             <p>Пять насыщенных дней, в которых подросток не просто слушает, а пробует, обсуждает, задаёт вопросы и получает опыт общения.</p>
           </div>
           <div class="card reveal">
-            <div class="metric">3 - 5</div>
+            <div class="metric">10-12</div>
             <h3>Небольшая группа</h3>
             <p>Камерный формат, где каждому подростку хватает внимания, контакта, поддержки и пространства раскрыться.</p>
           </div>
           <div class="card reveal">
-            <div class="metric">2</div>
-            <h3>Цены участия</h3>
-            <p>30 000 ₽ до 15 мая и 40 000 ₽ после. Возможна рассрочка по согласованию.</p>
+            <div class="metric">40k</div>
+            <h3>Ранняя оплата</h3>
+            <p>40 000 ₽ при ранней оплате вместо стандартных 50 000 ₽. Возможна рассрочка по согласованию.</p>
           </div>
           <div class="card reveal">
             <div class="metric">1</div>
@@ -288,11 +448,32 @@
       </div>
     </section>
 
+    <section class="section" id="activities">
+      <div class="wrap feature-split">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Что подросток делает</p>
+          <h2 class="section-title">Не просто слушает, а пробует вживую</h2>
+          <p class="section-text">Каждый день построен вокруг практики: подростки общаются, обсуждают ситуации, делают упражнения, пробуют мини-проекты и тренируют навык проявляться без давления.</p>
+          <div class="skill-flow">
+            <div class="skill-row"><div class="skill-icon">1</div><div><strong>Командное общение</strong><span>Учимся договариваться, слышать другого и говорить о себе спокойнее.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">2</div><div><strong>Мини-проекты и идеи</strong><span>Подросток пробует оформить мысль, предложить решение и представить его группе.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">3</div><div><strong>Городские задания</strong><span>Практика выходит за пределы кабинета: наблюдение, контакт, уверенность в реальной среде.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">4</div><div><strong>Обратная связь</strong><span>Участник получает бережные выводы о своих сильных сторонах и точках роста.</span></div></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <img src="__ASSET_BASE__/teen-camp-social-skills-city-practice.jpg" alt="Подростки выполняют городское задание и тренируют общение" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Soft skills в реальной жизни</strong><span>Общение, уверенность, умение договориться, выступить и не бояться проявляться.</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="gallery">
       <div class="wrap">
         <p class="eyebrow">Визуально о формате</p>
         <h2 class="section-title">Как выглядит этот лагерь</h2>
-        <p class="section-text">Мы обновили блок с фотографиями так, чтобы он логично показывал разные моменты программы - знакомство, общение, задания, обсуждения, уличные практики и спокойную работу в малой группе.</p>
+        <p class="section-text">Формат сочетает кабинетную работу, упражнения в малой группе, городские задания, спокойные обсуждения и обратную связь.</p>
         <div class="gallery-grid">
           <article class="gallery-card span-7 reveal">
             <img src="__ASSET_BASE__/tatiana-moonn-teen-camp-city-communication.jpg" alt="Татьяна Мунн и подростки общаются в городской атмосфере" />
@@ -333,11 +514,112 @@
       </div>
     </section>
 
+    <section class="section" id="ai">
+      <div class="wrap">
+        <div class="ai-lab reveal">
+          <div>
+            <p class="eyebrow">Нейросети и цифровая грамотность</p>
+            <h2 class="section-title">ИИ без паники: идеи, проекты и проверка ответов</h2>
+            <p class="section-text">В программу добавлен практический блок по нейросетям: подростки учатся формулировать запрос, проверять ответ, улучшать идею, делать мини-проект и использовать ИИ как помощника, а не как замену собственному мышлению.</p>
+            <ul class="list">
+              <li><span class="check">✓</span><span>Работа проходит на личном ноутбуке участника, если есть возможность принести его на занятие.</span></li>
+              <li><span class="check">✓</span><span>Разбираем запросы для учебных идей, презентаций, мини-проектов и творческих задач.</span></li>
+              <li><span class="check">✓</span><span>Отдельно обсуждаем цифровую безопасность: что нельзя отправлять в нейросети и как проверять результат.</span></li>
+            </ul>
+          </div>
+          <div class="ai-screen" aria-label="Подросток работает с нейросетями на ноутбуке">
+            <img src="__ASSET_BASE__/teen-camp-psychology-workshop-cabinet.jpg" alt="Подростки за рабочим столом на практическом занятии" />
+            <div class="laptop-ui">
+              <div class="ui-bar"><span></span><span></span><span></span></div>
+              <div class="prompt-line">Задача: придумать идею мини-проекта для подростковой команды</div>
+              <div class="prompt-line accent">ИИ помогает собрать варианты, а решение принимает участник</div>
+              <div class="prompt-line">Проверка: что полезно, что спорно, что нужно уточнить</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="day">
+      <div class="wrap">
+        <p class="eyebrow">Как устроен день</p>
+        <h2 class="section-title">Ритм дня: занятия, отдых и обед</h2>
+        <p class="section-text">С 10:00 до 18:00 подростки не сидят весь день на лекции: темы сменяются упражнениями, обсуждениями, заданиями на общение, обедом и короткими паузами. Родители на занятиях не присутствуют; подросток участвует самостоятельно, а организационные вопросы можно уточнить до старта.</p>
+        <div class="day-rhythm">
+          <div class="rhythm-item"><div class="rhythm-time">10:00-10:20</div><p>Сбор, мягкое включение, настрой на день и правила безопасного общения.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">10:20-11:30</div><p>Тема дня: эмоции, уверенность, контакт, границы или самооценка.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:30-11:45</div><p>Короткий перерыв, вода и отдых от интенсивного общения.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">11:45-13:00</div><p>Практические упражнения, карточки, мини-разборы и работа в малой группе.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">13:00-14:00</div><p>Обеденное время и спокойная пауза без учебной нагрузки.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">14:00-15:15</div><p>Городская или кабинетная практика: задания на общение и наблюдение за реакциями.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">15:15-15:30</div><p>Перерыв и переключение перед второй частью дня.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">15:30-16:45</div><p>Обсуждение опыта, ответы на вопросы и индивидуальные выводы участников.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">16:45-17:40</div><p>Итоговое упражнение дня и закрепление навыка.</p></div>
+          <div class="rhythm-item"><div class="rhythm-time">17:40-18:00</div><p>Завершение, короткая обратная связь и спокойный выход из программы.</p></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section" id="food">
+      <div class="wrap food-panel">
+        <div class="food-visual reveal">
+          <img src="__ASSET_BASE__/tatiana-moonn-teen-camp-cafe-reflection.jpg" alt="Подростки и Татьяна Мунн во время спокойной паузы с напитками и едой" />
+        </div>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Питание и паузы</p>
+          <h2 class="section-title">Один приём пищи в день программы включён</h2>
+          <p class="section-text">В расписании есть обеденное окно 13:00-14:00, короткие перерывы и спокойные паузы. Один приём пищи входит в организационный формат лагеря; если у подростка есть ограничения по питанию, лучше написать об этом до старта.</p>
+          <div class="btns"><a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Уточнить питание</a><a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить место</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parents">
+      <div class="wrap parent-panel">
+        <div class="feature-visual reveal">
+          <img src="__ASSET_BASE__/tatiana-moonn-teen-camp-cafe-reflection.jpg" alt="Спокойное обсуждение и обратная связь в подростковой группе" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Родитель понимает формат заранее</strong><span>Возраст, ритм дня, самостоятельное участие, паузы и обратная связь не спрятаны в переписке.</span></div>
+        </div>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Что важно родителям</p>
+          <h2 class="section-title">Без ощущения, что ребёнка оставляют на 8 часов одного</h2>
+          <p class="section-text">Программа камерная и сопровождаемая. До старта можно написать возраст подростка и особенности, которые важно учитывать, чтобы понять, подходит ли группа.</p>
+          <div class="parent-facts">
+            <div class="fact-tile"><b>12-19</b><span>Возраст участников. При пограничном возрасте лучше заранее обсудить состав группы.</span></div>
+            <div class="fact-tile"><b>10-12</b><span>Камерная группа, где ведущая видит каждого подростка.</span></div>
+            <div class="fact-tile"><b>10-18</b><span>День включает практику, паузы, прогулочные задания и обеденное время.</span></div>
+            <div class="fact-tile"><b>0</b><span>Родителям не нужно присутствовать на занятиях: подросток участвует самостоятельно.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section" id="profession">
+      <div class="wrap psychology-track reveal">
+        <div>
+          <p class="eyebrow">Для тех, кому интересна профессия</p>
+          <h2 class="section-title">Первые шаги молодого психолога</h2>
+          <p class="section-text">Отдельный смысловой трек для подростков, которые думают о психологии как о будущей профессии: как психолог учится наблюдать, задавать вопросы, держать границы, не “лечить друзей”, а бережно понимать человека.</p>
+          <div class="profession-badges"><span>этика</span><span>наблюдение</span><span>первые учебные шаги</span><span>работа с людьми</span></div>
+        </div>
+        <div class="skill-flow">
+          <div class="skill-row"><div class="skill-icon">1</div><div><strong>Как Татьяна пришла в психологию</strong><span>Короткий личный рассказ без пафоса: что важно развивать, если интересна профессия психолога.</span></div></div>
+          <div class="skill-row"><div class="skill-icon">2</div><div><strong>Что может подросток уже сейчас</strong><span>Читать, наблюдать, вести дневник состояний, развивать эмпатию и не брать на себя роль взрослого специалиста.</span></div></div>
+          <div class="skill-row"><div class="skill-icon">3</div><div><strong>Мини-практика</strong><span>Участники пробуют задавать точные вопросы, слышать ответ и делать выводы без давления.</span></div></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="program">
       <div class="wrap">
         <p class="eyebrow">Программа лагеря</p>
-        <h2 class="section-title">Примерная логика 5 дней</h2>
-        <p class="section-text">Эта структура помогает родителю понять, что лагерь продуман не как набор случайных активностей, а как последовательный маршрут - от знакомства и включения до уверенности и навыков взаимодействия.</p>
+        <h2 class="section-title">Программа на 5 дней</h2>
+        <p class="section-text">Пять дней идут последовательно: знакомство и доверие, эмоции, общение и границы, уверенность, итоги и личные опоры.</p>
         <div class="program">
           <div class="day-card reveal">
             <div class="day-tag">День 1</div>
@@ -361,10 +643,91 @@
           </div>
           <div class="day-card reveal">
             <div class="day-tag">День 5</div>
-            <h4>Итоги и опора на будущее</h4>
-            <p>Подведение итогов, личные выводы подростка, фиксация полезных навыков и того, что можно унести с собой дальше.</p>
+            <h4>Итоги и первые шаги психолога</h4>
+            <p>Личные выводы, фиксация навыков и отдельный разговор о том, как начать путь в психологии: интерес к людям, наблюдение, этика и первые учебные шаги.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="outcome">
+      <div class="wrap feature-split">
+        <div class="feature-copy reveal">
+          <p class="eyebrow">С чем подросток уходит</p>
+          <h2 class="section-title">Личные выводы, уверенность и опыт проявляться</h2>
+          <p class="section-text">Цель лагеря - не выдать подростку набор красивых фраз, а дать опыт: как говорить, как понимать своё состояние, как включаться в группу и как пользоваться новыми инструментами без тревоги.</p>
+          <div class="skill-flow">
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Понимание своих эмоций</strong><span>Подросток лучше замечает, что с ним происходит, и может говорить об этом спокойнее.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Навык общения</strong><span>Больше практики диалога, границ, договорённостей и выступления в малой группе.</span></div></div>
+            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Опора на себя</strong><span>Участник фиксирует личные выводы и упражнения, к которым можно возвращаться после лагеря.</span></div></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal">
+          <img src="__ASSET_BASE__/teen-camp-group-activities-soft-skills.jpg" alt="Подростки обсуждают итоги и навыки после практики" />
+          <div class="visual-shade"></div>
+          <div class="visual-note"><strong>Финальный день закрепляет результат</strong><span>Итоги, личные выводы, обратная связь и план, что взять с собой дальше.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="wrap trust-band">
+        <div class="trust-photo reveal">
+          <img src="__ASSET_BASE__/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый лагерь по психологии в цветной городской атмосфере" />
+        </div>
+        <div class="trust-list reveal">
+          <p class="eyebrow">Кто ведёт лагерь</p>
+          <h2 class="section-title">Татьяна Мунн ведёт программу лично</h2>
+          <div class="trust-item"><strong>Психолог МГУ</strong><span>Профессиональная психологическая база и опыт работы с темами эмоций, общения, самооценки и уверенности.</span></div>
+          <div class="trust-item"><strong>Автор метода «Быстрая психология»</strong><span>Формат строится вокруг понятной практики, коротких разборов и действий, которые подростку легче применить в жизни.</span></div>
+          <div class="trust-item"><strong>Камерная группа вместо потока</strong><span>Небольшое количество участников позволяет держать контакт, темп и безопасную атмосферу.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <p class="eyebrow">Ответы на частые вопросы</p>
+        <h2 class="section-title">Перед записью</h2>
+        <div class="faq-grid">
+          <div class="faq-item"><strong>7 часов - это не слишком много?</strong><p>День не состоит из длинных лекций. Форматы сменяются: обсуждение, практика, паузы, обеденное время, прогулочные задания и обратная связь.</p></div>
+          <div class="faq-item"><strong>Будет ли обед?</strong><p>В расписании заложено обеденное время с 13:00 до 14:00. Один приём пищи в день программы включён. Особенности питания и ограничения лучше сообщить до старта.</p></div>
+          <div class="faq-item"><strong>Нужно ли родителям быть рядом?</strong><p>Нет. Родители помогают с записью и организационными вопросами, а подросток участвует в программе самостоятельно.</p></div>
+          <div class="faq-item"><strong>Что если подросток стесняется?</strong><p>Камерная группа и мягкий вход помогают включаться постепенно. Никого не заставляют выступать резко или через давление.</p></div>
+          <div class="faq-item"><strong>Нужен ли ноутбук для нейросетей?</strong><p>Если есть возможность, подросток может принести свой ноутбук для практического блока. Если такой возможности нет, напишите заранее - подскажем, как лучше организовать участие.</p></div>
+          <div class="faq-item"><strong>Как понять, подходит ли группа?</strong><p>Напишите возраст подростка, что сейчас важно развить и какие есть особенности. Мы сверим ожидания с форматом программы.</p></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section" id="calendar">
+      <div class="wrap calendar-panel reveal">
+        <div>
+          <p class="eyebrow">Календарь смен</p>
+          <h2 class="section-title">Можно выбрать ближайший поток или оставить заявку на следующий</h2>
+          <p class="section-text">Даты будущих потоков предварительные: школы могут утверждать собственные каникулы. Мы держим окна под летние каникулы, сентябрьские выходные и осенние каникулы, чтобы семья могла заранее выбрать удобную тему.</p>
+        </div>
+        <div class="calendar-grid">
+          <div class="shift-card"><b>6-10 июля</b><strong>Психология без скуки</strong><span>Базовая смена: эмоции, общение, уверенность, ИИ и первые шаги психолога.</span><a class="btn primary" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить</a></div>
+          <div class="shift-card"><b>24-28 августа</b><strong>Разобраться в себе</strong><span>Смена перед учебным годом: спокойный старт, самооценка, тревога и личные опоры.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Забронировать</a></div>
+          <div class="shift-card"><b>19-20 и 26-27 сентября</b><strong>Уверенность в себе</strong><span>Weekend-формат для тех, кто не попадает на буднюю смену.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
+          <div class="shift-card"><b>26-30 октября</b><strong>Личная эффективность</strong><span>Окно под осенние каникулы: фокус, энергия, общение, учебные цели.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
+          <div class="shift-card"><b>2-6 ноября</b><strong>Выбор профессии</strong><span>Профориентационный поток: интересы, сильные стороны, первые шаги к будущей сфере.</span><a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Предзапись</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="loyalty">
+      <div class="wrap loyalty-panel reveal">
+        <div>
+          <p class="eyebrow">Программа лояльности</p>
+          <h2 class="section-title">Можно помочь знакомым и получить бонус</h2>
+          <p class="section-text">Если вы знаете подростка, которому может подойти лагерь, отправьте ссылку на эту страницу. После фактической оплаты и старта участника можно получить бонус за рекомендацию.</p>
+          <div class="btns"><a class="btn primary" href="https://t.me/share/url?url=https%3A%2F%2F%D0%BC%D1%83%D0%BD%D0%BD.%D1%80%D1%84%2Fpodrostkovyy-lager-psihologiya&text=%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BB%D0%B0%D0%B3%D0%B5%D1%80%D1%8C%20%D0%BF%D0%BE%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8" target="_blank" rel="noopener">Отправить ссылку</a><a class="btn ghost" href="https://t.me/moonn_official" target="_blank" rel="noopener">Уточнить условия</a></div>
+        </div>
+        <div class="pricing-card"><div class="loyalty-bonus">5 000 ₽</div><p class="section-text" style="margin-top:10px;max-width:none;">Бонус за приведённого участника после оплаты и старта. Формат бонуса и подтверждение рекомендации согласуются с организатором заранее.</p></div>
       </div>
     </section>
 
@@ -373,26 +736,26 @@
         <div class="pricing-card reveal">
           <p class="eyebrow">Стоимость участия</p>
           <div style="display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin:10px 0 6px;">
-            <div class="price-big">30 000 ₽</div>
-            <div class="old-price">40 000 ₽</div>
+            <div class="price-big">40 000 ₽</div>
+            <div class="old-price">50 000 ₽</div>
           </div>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Специальная стоимость действует при оплате до 15 мая. После этой даты участие стоит 40 000 ₽. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Ранняя стоимость участия - 40 000 ₽ вместо стандартных 50 000 ₽. Для следующих потоков дата ранней оплаты указывается в календаре смен. Оплатить участие можно сразу на сайте через защищённую форму Tilda/T-Банк.</p>
           <div class="btns" style="margin-bottom:18px;">
-            <a class="btn primary" href="#order:Подростковый лагерь по психологии =30000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить участие</a>
+            <a class="btn primary" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить участие</a>
             <a class="btn secondary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Обсудить рассрочку</a>
           </div>
           <ul class="list">
             <li><span class="check">✓</span><span>Формат: городской лагерь с 6 по 10 июля, ежедневно с 10:00 до 18:00.</span></li>
             <li><span class="check">✓</span><span>Локация: центр Москвы, Цветной бульвар.</span></li>
-            <li><span class="check">✓</span><span>Группа: 3 - 5 подростков в камерной атмосфере.</span></li>
+            <li><span class="check">✓</span><span>Группа: 10-12 подростков в камерной атмосфере.</span></li>
             <li><span class="check">✓</span><span>После оплаты напишите в Telegram возраст подростка и ваши ожидания - мы сверим заявку и подтвердим участие.</span></li>
             <li><span class="check">✓</span><span>Перед оплатой можно уточнить детали участия и рассрочки. Обработка данных выполняется по <a href="/politic">политике сайта</a>.</span></li>
           </ul>
         </div>
         <div class="pricing-card reveal">
           <p class="eyebrow">Материалы</p>
-          <h3 style="margin:0 0 12px;font-size:34px;line-height:1.08;letter-spacing:-.03em;">Готовые файлы для страницы</h3>
-          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">В страницу уже встроены фотографии, поэтому она должна открываться корректно без пустых блоков. Ниже оставили быстрые ссылки на материалы мероприятия.</p>
+          <h3 style="margin:0 0 12px;font-size:34px;line-height:1.08;letter-spacing:-.03em;">Программа и постер лагеря</h3>
+          <p class="section-text" style="margin-bottom:18px;font-size:18px;max-width:none;">Можно открыть краткую программу в PDF, сохранить постер или написать организатору, чтобы уточнить возраст, питание, перерывы, смену и состав группы.</p>
           <div class="btns">
             <a class="btn ghost" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-program-2026.pdf" download>Скачать программу PDF</a>
             <a class="btn secondary" href="__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg" download="poster.jpg">Скачать постер</a>
@@ -408,9 +771,10 @@
       <div class="wrap">
         <div class="cta-box reveal">
           <h3>Если хотите обсудить участие - напишите возраст подростка и ваши ожидания</h3>
-          <p>Это поможет быстрее понять, подходит ли программа именно вам. Если вы примете решение участвовать, можно оплатить место на сайте или обсудить рассрочку. Количество мест небольшое.</p>
+          <p>Это поможет быстрее понять, подходит ли программа именно вам. Если вы примете решение участвовать, можно оплатить место на сайте, забронировать следующую смену или обсудить рассрочку. Количество мест ограничено.</p>
           <div class="btns">
             <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a class="btn ghost" href="#order:Психология без скуки — подростковый лагерь =40000:::image=__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">Оплатить сейчас</a>
             <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Написать в WhatsApp</a>
           </div>
         </div>
@@ -433,6 +797,7 @@
       Татьяна Мунн - психолог МГУ, автор метода «Быстрая психология». Подростковый городской лагерь по психологии, Москва, Цветной бульвар.
     </div>
   </footer>
+  </div>
 
   <script>
     const observer = new IntersectionObserver((entries) => {
@@ -442,6 +807,162 @@
     }, {threshold: 0.14});
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Подростковый лагерь по психологии — Татьяна Мунн","description":"Городской подростковый лагерь по психологии: 6–10 июля, Цветной бульвар, камерная группа, практика общения, эмоций и уверенности.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"30000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-05-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
+  <script>
+    (function() {
+      function repairTildaCart() {
+        var cartRoot = document.querySelector('.t706');
+        if (!cartRoot) return null;
+        ['.t706__carticon', '.t706__carticon-wrapper', '.t706__cartwin'].forEach(function(selector) {
+          Array.prototype.slice.call(document.querySelectorAll(selector)).forEach(function(node) {
+            if (node && !cartRoot.contains(node)) cartRoot.appendChild(node);
+          });
+        });
+        return cartRoot;
+      }
+
+      function initTildaCart() {
+        var cartRoot = repairTildaCart();
+        var cartRecord = document.querySelector('[data-record-type="706"][id]');
+        if (!cartRoot || !cartRecord || typeof t_onFuncLoad !== 'function') return;
+        t_onFuncLoad('tcart__init', function() {
+          try {
+            tcart__init(cartRecord.id.replace(/^rec/, ''), { cssClassName: '' });
+          } catch (error) {
+            console.warn('Teen camp cart repair skipped', error);
+          }
+        });
+      }
+
+      function repairTildaOrderFormHandlers() {
+        var cartRecord = document.querySelector('[data-record-type="706"][id]');
+        var form = document.querySelector('.t706__cartwin form.js-form-proccess');
+        if (!cartRecord || !form) return;
+        try {
+          if (window.initForms && cartRecord.id) delete window.initForms[cartRecord.id];
+          if (typeof t_forms__initFormFields === 'function') t_forms__initFormFields(cartRecord);
+          if (typeof t_forms__addInputItsGood === 'function') t_forms__addInputItsGood(cartRecord);
+          if (typeof t_forms__addAttrAction === 'function') t_forms__addAttrAction(cartRecord);
+          if (typeof t_forms__onSubmit === 'function') t_forms__onSubmit(cartRecord);
+          if (typeof t_forms__onClick === 'function') t_forms__onClick(cartRecord);
+          if (typeof t_forms__onRender === 'function') t_forms__onRender(cartRecord);
+          if (typeof t_forms__addFocusOnTab === 'function') t_forms__addFocusOnTab(cartRecord);
+        } catch (error) {
+          console.warn('Teen camp order form handler repair skipped', error);
+        }
+      }
+
+      function enhanceTildaPaymentUi() {
+        var cart = document.querySelector('.t706__cartwin, .t706');
+        if (!cart) return;
+        repairTildaOrderFormHandlers();
+        Array.prototype.slice.call(cart.querySelectorAll('.t-submit, button[type="submit"], .t-btnflex_type_submit')).forEach(function(submit) {
+          var submitText = submit.querySelector('.t-btnflex__text, span') || submit;
+          if ((submitText.textContent || '').trim() !== 'Перейти к оплате') submitText.textContent = 'Перейти к оплате';
+          submit.setAttribute('aria-label', 'Перейти к оплате через T-Bank');
+          submit.style.setProperty('background', 'linear-gradient(135deg, #3149c9, #2037a4)', 'important');
+          submit.style.setProperty('color', '#ffffff', 'important');
+          submit.style.setProperty('border-radius', '18px', 'important');
+          submit.style.setProperty('box-shadow', '0 16px 36px rgba(49,73,201,.30)', 'important');
+        });
+        Array.prototype.slice.call(cart.querySelectorAll('label, .t-radio__control')).forEach(function(label) {
+          var text = (label.textContent || '').trim();
+          if (text === 'Visa, МИР, Mastercard через T-Bank') {
+            label.childNodes.forEach(function(node) {
+              if (node.nodeType === 3 && node.textContent.indexOf('Visa') !== -1) {
+                node.textContent = ' Банковская карта через T-Bank (МИР, Visa, Mastercard)';
+              }
+            });
+          }
+          if (text === 'Рассрочка Т-Банк') {
+            label.childNodes.forEach(function(node) {
+              if (node.nodeType === 3 && node.textContent.indexOf('Рассрочка') !== -1) {
+                node.textContent = ' Рассрочка через T-Bank';
+              }
+            });
+          }
+        });
+        var paymentBlock = Array.prototype.slice.call(cart.querySelectorAll('*')).find(function(node) {
+          return (node.textContent || '').trim() === 'Способ оплаты';
+        });
+        if (paymentBlock && !cart.querySelector('.teen-camp-payment-note')) {
+          var note = document.createElement('div');
+          note.className = 'teen-camp-payment-note';
+          note.textContent = 'После нажатия кнопки откроется защищённая страница T-Bank. Там выбирается конкретная карта и вводятся платёжные данные.';
+          var container = paymentBlock.parentElement || paymentBlock;
+          container.appendChild(note);
+        }
+      }
+
+      function clearTildaCartState() {
+        try {
+          if (window.tcart) {
+            window.tcart.products = [];
+            window.tcart.amount = 0;
+            window.tcart.total = 0;
+          }
+          if (typeof tcart__reDrawCartIcon === 'function') tcart__reDrawCartIcon();
+        } catch (error) {
+          console.warn('Teen camp cart state cleanup skipped', error);
+        }
+        try {
+          [window.localStorage, window.sessionStorage].forEach(function(storage) {
+            if (!storage) return;
+            for (var index = storage.length - 1; index >= 0; index -= 1) {
+              var key = storage.key(index) || '';
+              var value = storage.getItem(key) || '';
+              var joined = (key + ' ' + value).toLowerCase();
+              if (joined.indexOf('teen-camp-2026') !== -1 || joined.indexOf('t706') !== -1 || key.toLowerCase().indexOf('tcart') !== -1) {
+                storage.removeItem(key);
+              }
+            }
+          });
+        } catch (error) {
+          console.warn('Teen camp cart storage cleanup skipped', error);
+        }
+      }
+
+      function openTeenCampPayment() {
+        initTildaCart();
+        if (typeof tcart__addProduct !== 'function' || typeof tcart__openCart !== 'function') return false;
+        var product = {
+          name: 'Психология без скуки — подростковый лагерь',
+          price: 40000,
+          amount: 40000,
+          quantity: 1,
+          img: '__ASSET_BASE__/teen-psychology-camp-tatyana-moonn-poster-2026.jpg',
+          sku: 'teen-camp-2026'
+        };
+        try {
+          if (window.tcart && Array.isArray(window.tcart.products)) window.tcart.products = [];
+          tcart__addProduct(product);
+          if (typeof tcart__reDrawCartIcon === 'function') tcart__reDrawCartIcon();
+          tcart__openCart();
+          setTimeout(enhanceTildaPaymentUi, 200);
+          setTimeout(enhanceTildaPaymentUi, 900);
+          return true;
+        } catch (error) {
+          console.warn('Teen camp payment open skipped', error);
+          return false;
+        }
+      }
+
+      initTildaCart();
+      setTimeout(initTildaCart, 300);
+      setTimeout(initTildaCart, 1200);
+      setTimeout(repairTildaOrderFormHandlers, 1500);
+      setInterval(enhanceTildaPaymentUi, 1500);
+      document.addEventListener('click', function(event) {
+        var orderLink = event.target && event.target.closest && event.target.closest('a[href^="#order:"]');
+        if (orderLink) {
+          event.preventDefault();
+          event.stopPropagation();
+          clearTildaCartState();
+          openTeenCampPayment();
+        }
+      }, true);
+    })();
+  </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://moonn.ru/#tatiana-munn","name":"Татьяна Мунн","alternateName":["Кумскова Татьяна Михайловна","Татьяна Мунн (Кумскова)"],"jobTitle":"Психолог, эксперт по эмоциональному интеллекту","url":"https://moonn.ru/"},{"@type":["WebPage","Event"],"@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#webpage","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","name":"Психология без скуки — подростковый лагерь Татьяны Мунн","description":"Психология без скуки: подростковый городской лагерь, 6–10 июля, Цветной бульвар, уверенность, общение, эмоции, ИИ, первые шаги психолога и питание.","inLanguage":"ru-RU","organizer":{"@id":"https://moonn.ru/#tatiana-munn"},"performer":{"@id":"https://moonn.ru/#tatiana-munn"},"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","startDate":"2026-07-06","endDate":"2026-07-10","location":{"@type":"Place","name":"Москва, Цветной бульвар","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"}},"offers":{"@type":"Offer","url":"https://moonn.ru/podrostkovyy-lager-psihologiya","price":"40000","priceCurrency":"RUB","availability":"https://schema.org/InStock","validFrom":"2026-05-08","validThrough":"2026-06-15"}},{"@type":"BreadcrumbList","@id":"https://moonn.ru/podrostkovyy-lager-psihologiya#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://moonn.ru/"},{"@type":"ListItem","position":2,"name":"Подростковый лагерь по психологии","item":"https://moonn.ru/podrostkovyy-lager-psihologiya"}]}]}</script>
 </body>
 </html>
+

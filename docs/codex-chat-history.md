@@ -1677,6 +1677,36 @@ Append-only project history for `moon-psy-site`.
   - `assets/moonn-five-page-seo-sprint-layer.js` exists in repo; commit `49a093e` exists in git object database.
 - Next action: re-run the audit when DNS/network is restored, then proceed with the bounded authenticated-Chrome investigation for the camp AEO gap and scoped reindex for only the five URLs.
 
+## 2026-05-31 12:00 MSK — Teen Camp Page Content/Pricing Update
+
+- Workstream: Moonn Tilda camp page content/pricing update.
+- Branch: `codex/moonn-camp-page-update`.
+- User request:
+  - update the teen camp page after publication: color author image, new pricing `40 000 ₽` early / `50 000 ₽` standard, remove old `30 000`, update poster/PDF, add AI teaser, profession/young psychologist track, calendar shifts, loyalty/referral block, food note, clearer schedule and more payment CTAs.
+- Decisions:
+  - Do not keep `15 мая` as an active current deadline because the work date is `2026-05-31`; public copy uses early payment / pre-entry wording.
+  - Do not change bank/T-Bank cabinet settings; only page/cart content markers are updated.
+  - Keep historical `payment-rollout-report-2026-05-09.md` unchanged as provenance, but update current publication/template artifacts.
+- Changed artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-page-template-with-placeholders.html`
+  - `docs/teen-psychology-camp-2026/homepage-teen-camp-head-snippet.html`
+  - `docs/teen-psychology-camp-2026/homepage-head-combined-final.html`
+  - `assets/teen-psychology-camp-2026/moonn-home-teen-camp-banner.js`
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg`
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf`
+  - `docs/teen-psychology-camp-2026/camp-page-update-checklist-2026-05-31.md`
+  - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`
+- Local verification:
+  - Rendered desktop and mobile checks passed: no old price/group/deadline, no runtime refs to the black-and-white author image, no mobile horizontal overflow, `6` order links, cart marker `40000`.
+- Open gates:
+  - Push/pin CDN commit hashes.
+  - Publish via Tilda/Rublev Chrome.
+  - Verify live page and cart after publication.
+
 ## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
