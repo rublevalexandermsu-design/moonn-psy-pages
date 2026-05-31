@@ -1707,6 +1707,35 @@ Append-only project history for `moon-psy-site`.
   - Publish via Tilda/Rublev Chrome.
   - Verify live page and cart after publication.
 
+## 2026-05-31 12:25 MSK — Teen Camp Offer Update Published On `мунн.рф`
+
+- Project: Moonn / Tilda site.
+- Workstream: Moonn Tilda camp page content/pricing update.
+- Branch: `codex/moonn-camp-page-update`.
+- Trigger: user asked to update the teen camp page offer, pricing, group size, AI/profession blocks, food, shift calendar, referral loyalty and payment CTAs, then publish through Rublev Chrome/Tilda.
+- Changed:
+  - Updated the page package, HTML block, HEAD loader, poster, PDF, homepage banner snippets and report/checklist for `docs/teen-psychology-camp-2026/`.
+  - New public positioning: `Психология без скуки: уверенность, общение и ИИ`.
+  - Replaced old active `30 000` offer with `40 000 ₽` early payment and crossed `50 000 ₽` standard price.
+  - Changed group size to `10-12`, added color author image, AI teaser, young psychologist track, one-meal food block, shift calendar, loyalty block and additional payment/reservation CTAs.
+- Publication:
+  - GitHub branch `codex/moonn-camp-page-update` pushed.
+  - Tilda page-specific HEAD for page `140348786` was saved through authenticated Rublev Chrome and the page was published.
+  - Verified by reopening Tilda `editheadcode`: server value contains `20260531-camp-update`, `40000`, commit `1aab5c887ee`; old `20260523-offer-visual-ai` and `30000` absent.
+- Live verification:
+  - `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200`.
+  - Live raw HTML contains `20260531-camp-update`, `40000`, commit `1aab5c887ee`; old `30000` absent.
+  - Live rendered page shows H1 `Психология без скуки: уверенность, общение и ИИ`, no old `30 000`, group `10-12`, food, calendar, loyalty and AI blocks present, no horizontal overflow.
+  - Live Tilda cart opens from `Оплатить раннюю стоимость` with product `Психология без скуки — подростковый лагерь`, SKU `teen-camp-2026`, price/total `40000`; no real payment submitted.
+- Incident:
+  - First visual paste into Tilda HEAD did not persist; reopening the editor showed the old loader. Root cause: Tilda Ace editor UI/accessibility value can differ from the internal Ace model submitted to the server.
+  - Follow-up rule: Tilda HEAD edits require persisted editor-value verification after reopening, then scoped publish, live raw HTML check, rendered browser check and cart check when payment CTAs are touched.
+- Blocker unchanged:
+  - `moonn.ru` is still not resolvable from this host, so current live verification is anchored on `мунн.рф`.
+- Changed docs:
+  - `docs/teen-psychology-camp-2026/camp-page-update-checklist-2026-05-31.md`
+  - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`
+
 ## 2026-05-30 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
