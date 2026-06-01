@@ -1712,6 +1712,17 @@ Append-only project history for `moon-psy-site`.
 - Notes:
   - No analytics exports/API evidence was collected in this run (Yandex.Metrika/Yandex Webmaster/GSC remain access-blocked here).
 
+## 2026-06-01 12:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS-Blocked Evidence)
+
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Verified (this host):
+  - DNS resolution for `moonn.ru` is still broken (`[Errno 11001] getaddrinfo failed`), so live HTTP/robots/sitemap/rendered checks are not comparable today.
+  - Five-page audit recorded (DNS-blocked, fast-fail):
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-01.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-01.md`
+  - Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
