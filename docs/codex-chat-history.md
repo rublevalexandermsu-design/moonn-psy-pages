@@ -1954,6 +1954,9 @@ Append-only project history for `moon-psy-site`.
   - Live render shows `интенсив речи`, `Речь`, post-exam wording and expert block.
   - Payment route `?pay=teen-camp-2026` opens Tilda cart for `Психология без скуки — подростковый интенсив`, amount `40 000 ₽`, with T-Bank methods visible.
   - PDF/DOCX QA confirms speech/exams/experts wording and no stale `лагер`, `смен`, `досугов`, `оздоров`, or `10:00-14:00`.
+- Handoff:
+  - Completion email sent to `rublevalexandermsu@gmail.com` with ZIP attachment of the three updated files.
+  - Gmail message id: `19e855570a578e4b`.
 - Incident / rule:
   - First Tilda HEAD paste looked correct in the editor, but live HTML still served the old loader. The raw marker check caught this before handoff.
   - Future Tilda HEAD changes require editor-save confirmation plus raw live marker/content/commit verification before reporting completion.

@@ -416,3 +416,4 @@ Residual notes:
 
 - `moonn.ru` DNS remains a separate domain-recovery issue; this publication was verified on the active fallback domain `мунн.рф` / `xn--l1acaw.xn--p1ai`.
 - Payment was verified only up to cart/form opening; actual payment submission remains a money gate and was not executed.
+- Completion email was sent to `rublevalexandermsu@gmail.com` with a ZIP of the three updated files; Gmail message id: `19e855570a578e4b`.
