@@ -356,3 +356,63 @@ Verification after fix:
 New QA rule:
 
 - for public PDF/Word materials, existence of buttons is not enough; every generated file must pass link-target QA: extract annotations, verify ASCII/punycode URLs, verify expected payment/page/Telegram/WhatsApp targets, render visually, and scan for obsolete legal/public wording before reporting completion.
+
+## 2026-06-02 01:25 MSK — Custdev Speech/Exam Offer Published and Verified
+
+Scope: public teen intensive page and downloadable materials after custdev feedback.
+
+User request:
+
+- Add early-page emphasis on public speaking / confident speech, easier communication, relaxation after exams, and expert blocks.
+- Keep existing useful content; integrate new meanings visually and without deleting the current offer.
+- Update the downloadable poster, program PDF, and call brief DOCX.
+- Verify that file buttons work and that payment opens correctly.
+- Publish through the authorized Rublev/Alexander Chrome Tilda session.
+
+Implemented content changes:
+
+- Hero and first blocks now position the offer as `Психология без скуки: подростковый интенсив речи, уверенности, общения и ИИ`.
+- Added a first-screen card: `Ораторское мастерство без сцены через силу`.
+- Added a dedicated block: `Ораторское мастерство, лёгкость в общении и разгрузка после экзаменов`.
+- Added concrete custdev-driven benefits: easier first contact, expressing thoughts, speaking in a small group, relaxation after ЕГЭ/ОГЭ, and expert blocks.
+- Price rationale now explains the 50 000 ₽ standard cost through expanded format, personal guidance, materials, small group and possible invited experts.
+- Program wording updated: speech/self-presentation is part of the communication day; materials mention exams and expert blocks.
+
+Published Tilda state:
+
+- Tilda page-specific HEAD for project `8326812`, page `140348786` was updated in the Rublev/Alexander Chrome profile and the page was published.
+- Live URL checked: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Raw live HTML check returned HTTP `200` and contains:
+  - `20260601-teen-intensive-custdev-speech`;
+  - page commit `9159906`;
+  - asset commit `52d2a5e`;
+  - speech/oratory wording;
+  - post-exam wording.
+- Raw live HTML no longer contains the old marker `20260531-teen-intensive-pdf-link-fix`, old asset commit `64cf311`, visible phrase `лагерь уверенности`, or `10:00-14:00`.
+- Browser render check confirmed the live page shows the updated hero, `Речь` navigation item, `Ораторское мастерство без сцены через силу`, the post-exam bullets, and the expert-block card.
+- Safe checkout check: opening `?pay=teen-camp-2026` opens the Tilda cart with item `Психология без скуки — подростковый интенсив`, amount `40 000 ₽`, and T-Bank payment methods. No customer data was entered and no payment submit was clicked.
+
+Download files rebuilt and placed in `C:\Users\yanta\Downloads`:
+
+- `Программа подросткового интенсива Татьяны Мунн 2026.pdf`
+- `Постер подросткового интенсива Татьяны Мунн 2026.pdf`
+- `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`
+
+Download/file verification:
+
+- Program PDF: 9 link annotations; contains speech/exams/experts; no stale `лагер`, `смен`, `досугов`, `оздоров`, or `10:00-14:00`.
+- Poster PDF: 6 link annotations; contains speech/exams/experts; no stale `лагер`, `смен`, `досугов`, `оздоров`, or `10:00-14:00`.
+- DOCX call brief: contains speech/exams/experts and active links to the page, payment route, Telegram, and materials anchor.
+- PDF page/payment URLs use ASCII punycode `https://xn--l1acaw.xn--p1ai/...`, not Cyrillic-domain annotations, to avoid the earlier local `ERR_FILE_NOT_FOUND` failure.
+
+Incident / QA rule:
+
+- First Tilda HEAD edit appeared visually pasted and the page was published, but raw live HTML still served the old loader. The live marker check caught this before final handoff.
+- Root cause: relying on the visible Tilda editor state is insufficient; the server-side HEAD value may not persist from a normal paste until the editor emits the right input/change state and save completes.
+- Fix used in this run: programmatic bookmarklet setter updated textarea/Ace state, then Tilda save and page publish were repeated.
+- New gate: for future Tilda HEAD changes, completion requires all three checks: reopened/saved editor state or no unsaved warning, Tilda publish confirmation, and raw live HTML marker check with the expected content/asset commits.
+
+Residual notes:
+
+- `moonn.ru` DNS remains a separate domain-recovery issue; this publication was verified on the active fallback domain `мунн.рф` / `xn--l1acaw.xn--p1ai`.
+- Payment was verified only up to cart/form opening; actual payment submission remains a money gate and was not executed.

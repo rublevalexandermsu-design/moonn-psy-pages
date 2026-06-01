@@ -1936,6 +1936,28 @@ Append-only project history for `moon-psy-site`.
   - No API exports and no GUI-verified aggregates were collected in this run (requires Rublev Chrome profile on a host with working DNS).
 - Next action: restore DNS/network, then re-run the five-page audit and proceed with scoped reindex (5 URLs only) + bounded Chrome investigation for the camp page AEO gap.
 
+## 2026-06-02 01:25 MSK — Teen Intensive Custdev Offer Published
+
+- Project: Moonn / Tatiana Moon Studio teen intensive.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: after custdev feedback, add public-speaking / confident speech, post-exam decompression, expert-block rationale, and updated downloadable materials without deleting existing offer logic.
+- Decisions:
+  - Keep the live fallback domain `мунн.рф` while `moonn.ru` remains a separate DNS/domain-recovery lane.
+  - Keep the legal reframe as `подростковый интенсив`, not `лагерь`.
+  - Keep payment verification bounded to cart opening only; no customer data entry or payment submission.
+- Changed / published:
+  - Page content and Tilda loader published for page `140348786`, project `8326812`.
+  - Download files refreshed in `C:\Users\yanta\Downloads`: program PDF, poster PDF, call-brief DOCX.
+  - Full report updated: `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`.
+- Verification:
+  - Live raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200` and contains marker `20260601-teen-intensive-custdev-speech`, page commit `9159906`, and asset commit `52d2a5e`.
+  - Live render shows `интенсив речи`, `Речь`, post-exam wording and expert block.
+  - Payment route `?pay=teen-camp-2026` opens Tilda cart for `Психология без скуки — подростковый интенсив`, amount `40 000 ₽`, with T-Bank methods visible.
+  - PDF/DOCX QA confirms speech/exams/experts wording and no stale `лагер`, `смен`, `досугов`, `оздоров`, or `10:00-14:00`.
+- Incident / rule:
+  - First Tilda HEAD paste looked correct in the editor, but live HTML still served the old loader. The raw marker check caught this before handoff.
+  - Future Tilda HEAD changes require editor-save confirmation plus raw live marker/content/commit verification before reporting completion.
+
 ## 2026-05-29 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).
