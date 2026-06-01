@@ -47,26 +47,26 @@
     {
       "index": 7,
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg",
-      "bytes": 451771,
-      "sha256": "303c180d202e0e03"
+      "bytes": 279657,
+      "sha256": "a849ef83f4e079ae"
     },
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf",
-      "bytes": 93057,
-      "sha256": "cd1e105c2c371190"
+      "bytes": 94553,
+      "sha256": "a75d2d3689177249"
     },
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf",
-      "bytes": 602756,
-      "sha256": "4c8fd7f781535112"
+      "bytes": 380024,
+      "sha256": "484de19c46ab134d"
     },
     {
       "type": "docx",
       "file": "docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx",
-      "bytes": 38920,
-      "sha256": "9fdf2583df0f2554"
+      "bytes": 39191,
+      "sha256": "6e21327e9b47a0f8"
     }
   ],
   "downloadDeepLinks": {
@@ -76,7 +76,7 @@
   },
   "legalSafeDraft": {
     "date": "2026-05-31",
-    "publicName": "Психология без скуки: подростковый интенсив уверенности, общения и ИИ",
+    "publicName": "Психология без скуки: подростковый интенсив речи, уверенности, общения и ИИ",
     "format": "психологические и развивающие занятия для подростков 14-17 лет",
     "dailyTime": "10:00-18:00",
     "foodClaim": "обеденный перерыв; детали питания уточняются при записи",
