@@ -1590,6 +1590,26 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-06-01 — Supervisor Run: SEO/Growth + Weekly Privacy (DNS-Blocked Evidence)
+
+- Workstream: `moonn-seo-privacy-supervisor` (SEO/AEO + analytics/growth + weekly privacy/RKN).
+- Branch: `codex/moonn-seo-supervisor-20260601` (from `origin/codex/moonn-seo-audit`).
+- Verified (this host):
+  - DNS resolution for `moonn.ru` is still broken:
+    - PowerShell live checks: `Этот хост неизвестен. (moonn.ru:443)` for `/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, `sitemap.xml`, `robots.txt`.
+    - Python preflight (privacy audit): `ERROR:[Errno 11001] getaddrinfo failed`.
+  - Weekly privacy technical audit produced dated artifacts (fast-fail DNS mode):
+    - `docs/moonn-privacy-compliance-audit-2026-06-01.json`
+    - `docs/moonn-privacy-compliance-audit-2026-06-01.md`
+- Changes (durability):
+  - Updated `scripts/moonn_privacy_compliance_audit.py` to preflight `https://moonn.ru/robots.txt` and fast-fail DNS-like outages instead of hanging on 83 URL fetches.
+- Reports:
+  - Added `docs/moonn-seo-growth-check-2026-06-01.md` (explicitly separates verified facts vs blockers; no analytics claims).
+- Not done:
+  - No live Tilda edits; no analytics cabinet setting changes; no screenshots captured/committed.
+- Blockers / next action:
+  - Restore DNS/egress for `moonn.ru` on this host (or run supervisor from a network where it resolves), then rerun live checks and perform bounded Rublev-profile GUI evidence collection for `2026-04-29..today` (Metrika/GSC/Webmaster).
+
 ## 2026-05-28 09:00 MSK — Supervisor Run: SEO/AEO + Analytics (DNS + GUI Tooling Blocked)
 
 - Workstream: Moonn SEO-growth + privacy/RKN supervisor (audit-only, no live edits).

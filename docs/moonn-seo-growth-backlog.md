@@ -122,6 +122,16 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 
 ## 2026-06-01 — Supervisor Run
 
+1. `P0` Infra blocker persists: this host still cannot resolve `moonn.ru` (PowerShell: `Этот хост неизвестен (moonn.ru:443)`; Python: `ERROR:[Errno 11001] getaddrinfo failed`).
+2. `OK` Weekly privacy audit executed in fast-fail mode (DNS-blocked) and wrote dated artifacts:
+   - `docs/moonn-privacy-compliance-audit-2026-06-01.json`
+   - `docs/moonn-privacy-compliance-audit-2026-06-01.md`
+3. `P0` Supervisor durability fix: `scripts/moonn_privacy_compliance_audit.py` now preflights `https://moonn.ru/robots.txt` and fast-fails DNS outages instead of hanging on 83 URL fetches.
+4. `P0` Analytics evidence still missing for `2026-04-29..today`: no exports committed; GUI run (Rublev Chrome profile) not performed in this run; do not claim SEO success from traffic.
+5. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL still missing; record it once available.
+
+## 2026-06-01 — Supervisor Run
+
 1. `P0` Infra blocker persists: DNS for `moonn.ru` is broken on this host (`Errno 11001 getaddrinfo failed`).
 2. `OK` Daily five-page audit recorded (DNS-blocked, fast-fail):
    - `docs/moonn-five-page-seo-sprint-audit-2026-06-01.json`

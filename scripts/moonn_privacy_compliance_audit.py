@@ -6,6 +6,7 @@ from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+import argparse
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
@@ -40,7 +41,7 @@ class PageResult:
     riskFlags: list[str]
 
 
-def fetch(url: str, timeout: int = 25) -> tuple[int | str, str]:
+def fetch(url: str, timeout: int) -> tuple[int | str, str]:
     req = Request(url, headers={"User-Agent": "MoonnComplianceAudit/1.0"})
     try:
         with urlopen(req, timeout=timeout) as response:
@@ -55,8 +56,8 @@ def count(pattern: str, html: str) -> int:
     return len(re.findall(pattern, html, flags=re.IGNORECASE | re.DOTALL))
 
 
-def analyze_page(url: str) -> PageResult:
-    status, html = fetch(url)
+def analyze_page(url: str, timeout: int) -> PageResult:
+    status, html = fetch(url, timeout=timeout)
     form_signals = count(r"t-form|js-form-proccess|data-tilda-formskey|formaction|<form\b", html)
     consent_signals = count(r"персональн|согласи|конфиденц|privacy|personal-data|consent", html)
     checkbox_signals = count(r'type=["\']checkbox["\']|t-checkbox|checkbox', html)
@@ -154,15 +155,66 @@ def write_report(payload: dict[str, Any]) -> None:
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def is_dns_like_failure(status: int | str) -> bool:
+    if isinstance(status, int):
+        return False
+    if not status.startswith("ERROR:"):
+        return False
+    msg = status.lower()
+    return any(
+        needle in msg
+        for needle in (
+            "getaddrinfo failed",
+            "name or service not known",
+            "nodename nor servname provided",
+            "temporary failure in name resolution",
+            "dns",
+            "11001",
+            "11002",
+            "11004",
+        )
+    )
+
+
+def build_arg_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(add_help=True)
+    parser.add_argument("--timeout", type=int, default=25, help="HTTP timeout seconds per URL.")
+    parser.add_argument(
+        "--preflight-timeout",
+        type=int,
+        default=8,
+        help="HTTP timeout seconds for preflight fetch used to fast-fail DNS outages.",
+    )
+    return parser
+
+
 def main() -> None:
+    args = build_arg_parser().parse_args()
     urls = load_scope_urls()
-    policy_results = [asdict(analyze_page(url)) for url in POLICY_URLS]
-    page_results = [asdict(analyze_page(url)) for url in urls]
+
+    preflight_status, _ = fetch("https://moonn.ru/robots.txt", timeout=args.preflight_timeout)
+    dns_blocked = is_dns_like_failure(preflight_status)
+    if dns_blocked:
+        policy_results = [asdict(PageResult(url=url, status=preflight_status, formSignals=0, consentSignals=0, checkboxSignals=0, yandexMetrikaSignals=0, webvisorSignals=0, googleAnalyticsSignals=0, hasPolicyLink=False, hasConsentLink=False, hasCookieText=False, riskFlags=["infra_dns_blocked"])) for url in POLICY_URLS]
+        page_results = [asdict(PageResult(url=url, status=preflight_status, formSignals=0, consentSignals=0, checkboxSignals=0, yandexMetrikaSignals=0, webvisorSignals=0, googleAnalyticsSignals=0, hasPolicyLink=False, hasConsentLink=False, hasCookieText=False, riskFlags=["infra_dns_blocked"])) for url in urls]
+    else:
+        policy_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in POLICY_URLS]
+        page_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in urls]
+
     payload = {
         "version": 1,
         "createdAt": datetime.now(timezone.utc).isoformat(),
         "scope": "Moonn 83 production URLs privacy/form/cookie compliance read-only audit",
         "sourcePacket": str(PACKET.relative_to(ROOT)),
+        "infra": {
+            "preflight": {
+                "url": "https://moonn.ru/robots.txt",
+                "status": preflight_status,
+                "timeoutSeconds": args.preflight_timeout,
+            },
+            "dnsLikeFailure": dns_blocked,
+            "perUrlTimeoutSeconds": args.timeout,
+        },
         "policyEndpoints": policy_results,
         "pages": page_results,
         "notes": [
