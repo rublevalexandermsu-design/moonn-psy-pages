@@ -1675,6 +1675,43 @@ Append-only project history for `moon-psy-site`.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
 
+## 2026-06-02 - Teen Intensive Hero Desktop Layout Hotfix
+
+Project: Tatiana Moon / Moonn teen intensive.
+
+Codex actions:
+
+- Fixed the user-reported issue where the right-side hero photo moved down on
+  desktop after the CRO edits.
+- Kept the hero grid two-column until the mobile breakpoint and aligned the
+  desktop hero media to the top of the grid.
+- Reduced oversized desktop/tablet hero text spacing enough to keep the media
+  visible on the first screen.
+- Added eager/high-priority loading attributes to the main hero image.
+- Updated the Tilda page-specific HEAD loader through the Rublev/Alexander
+  Chrome profile and republished page `140348786`.
+
+Verification:
+
+- Live URL: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Raw live HTML returns `200`, contains marker
+  `20260602-teen-intensive-hero-layout-fix` and page commit `ab3daff`.
+- Raw live HTML no longer contains the previous soft-lead marker or old page
+  commit `46c9521`.
+- Rendered checks:
+  - `1555x913`: hero photo is right of H1 and in the first screen.
+  - `1100x800`: hero photo is right of H1 and in the first screen.
+  - `861x800`: hero photo is still right of H1 and in the first screen.
+  - `390x844`: page remains one-column mobile layout by design.
+- Hero image attributes in rendered DOM: `loading=eager`,
+  `fetchpriority=high`, `decoding=async`, `naturalWidth=1400`.
+
+Incident rule:
+
+- For Tilda HEAD-loader landing pages, CTA/link QA is not enough after hero/CRO
+  edits. Add a first-screen geometry check across desktop, breakpoint and
+  mobile widths before reporting the public page as ready.
+
 ## 2026-05-31 09:10 MSK — Domain Continuity: temporary `мунн.рф` routing
 
 - Project: Moonn / Tilda site continuity.

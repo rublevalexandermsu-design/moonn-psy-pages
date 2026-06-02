@@ -499,3 +499,45 @@ Operational finding:
 Recommended next bounded step:
 
 - Add a dedicated non-payment Tilda form or click-goals for `free_call_telegram`, `free_call_whatsapp`, `payment_cart_open`, and `pdf_download`, then verify that the заявки reach Telegram/Tilda CRM. This should be a separate gated change because it affects forms, personal data and analytics routing.
+
+## 2026-06-02 21:35 MSK - Hero Desktop Layout Hotfix
+
+Scope: public teen intensive first screen after the CRO update.
+
+User-reported symptom:
+
+- On desktop, the right-side hero photo moved down/out of the first screen, leaving the right side visually empty.
+
+Root cause:
+
+- The previous responsive rule switched `.hero-grid` to one column at `max-width: 1100px`, so tablet/desktop widths close to that breakpoint pushed the photo below the left text.
+- After adding several CRO hero alerts, the left column became taller. The base grid still used `align-items:center`, which vertically centered the right hero card against the tall left column and could start the photo too low on wide screens.
+- The prior QA checked flicker and CTA behavior but did not include a desktop hero geometry gate after the new CRO blocks.
+
+Fix:
+
+- Kept `.hero-grid` two-column until the mobile breakpoint `860px`.
+- Changed base hero grid alignment to `align-items:start`.
+- Reduced desktop/tablet H1, lead and hero-alert spacing enough to keep the first screen balanced.
+- Added `loading="eager"`, `fetchpriority="high"` and `decoding="async"` to the main hero image.
+
+Published state:
+
+- Layout content commit: `46c9521`.
+- Eager hero image content commit: `ab3daff`.
+- Loader commit: `7814fd5`.
+- Live loader marker: `20260602-teen-intensive-hero-layout-fix`.
+
+Verification:
+
+- Raw live HTML returns HTTP `200`.
+- Raw live HTML contains `20260602-teen-intensive-hero-layout-fix` and page commit `ab3daff`.
+- Raw live HTML does not contain old marker `20260602-teen-intensive-soft-lead-fomo` or old commit `46c9521`.
+- Rendered desktop `1555x913`: hero photo is right of H1, in the first screen, loaded with `naturalWidth=1400`, `loading=eager`, `fetchpriority=high`.
+- Rendered desktop/tablet `1100x800`: hero photo is right of H1, in the first screen, loaded.
+- Rendered boundary `861x800`: hero photo is still right of H1 and in the first screen.
+- Mobile `390x844` remains one-column by design; hero photo appears below the hero text.
+
+New QA rule:
+
+- For public Tilda HEAD-loader pages, after any hero/CRO change, run a desktop/tablet/mobile geometry check: hero media must be in the intended column, visible in the expected viewport, loaded, and not only present in raw HTML.
