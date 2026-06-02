@@ -1772,6 +1772,53 @@ Append-only project history for `moon-psy-site`.
   - no 83-URL batch submission.
 - Next action: restore DNS/network or run on a host where `moonn.ru` resolves, then perform the bounded live audit and submit reindex only for the 5 approved URLs plus sitemap if GSC/Yandex access is available.
 
+## 2026-06-02 09:10 MSK — Supervisor Run: Growth/Privacy Evidence (GUI + DNS Blocked Host)
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-seo-privacy-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for SEO/AEO, analytics/growth and Monday privacy/RKN layer.
+- Route:
+  - current user-facing branch was unrelated (`codex/moonn-camp-page-update`);
+  - supervisor work continued in the canonical SEO/RKN branch `codex/moonn-seo-audit`.
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`
+  - `python scripts\\moonn_privacy_compliance_audit.py`
+- Verified technical facts:
+  - DNS for `moonn.ru` is still blocked on this host (`[Errno 11001] getaddrinfo failed`), so the five-page audit and the privacy audit both fast-failed into dated evidence instead of live HTML checks.
+  - New dated artifacts:
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.md`
+    - `docs/moonn-privacy-compliance-audit-2026-06-02.json`
+    - `docs/moonn-privacy-compliance-audit-2026-06-02.md`
+- Verified GUI evidence through the Alexander/Rublev Chrome profile:
+  - Google Search Console property `https://moonn.ru/` is accessible.
+  - GSC visible metrics:
+    - overview: `240 total web search clicks`;
+    - performance: `240` clicks, `14.5K` impressions, CTR `1.7%`, average position `7.3`;
+    - data freshness: `Last update: 4 hours ago`;
+    - overview indexing widget: `40 indexed pages`, `135 not indexed pages`.
+  - Yandex.Metrika counter `96397286` is accessible.
+  - Visible Metrika weekly dashboard metrics for `27 May - 2 Jun`:
+    - `85` pageviews;
+    - `53` visits;
+    - `46` visitors;
+    - `1 м 36 c` time on site;
+    - depth `1.60`;
+    - bounce rate `47.17%`.
+- Blockers:
+  - the requested full analytics period `2026-04-29..today` was not fully extracted yet;
+  - Yandex.Webmaster direct Moonn dashboard attempt landed on a Yandex `404` page, so the canonical dashboard URL still needs to be recorded;
+  - canonical MIIIIPS PR #11 repo+PR URL is still missing, so deploy/merge verification remains blocked.
+- Explicitly not done:
+  - no Tilda/live site edits;
+  - no cabinet setting changes;
+  - no screenshots saved or committed;
+  - no 83-URL Google URL Inspection actions.
+- New report/doc updates:
+  - `docs/moonn-seo-growth-check-2026-06-02.md`
+  - `docs/moonn-seo-growth-backlog.md`
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

@@ -146,5 +146,10 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
    - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.json`
    - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.md`
 3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` resolves in git object database.
-4. `P0` Reindex/analytics remain unverified in this run: no GSC/Yandex Webmaster submission and no GSC/Yandex.Metrika evidence were captured; do not treat this run as SEO progress.
-5. Next action (unchanged): restore DNS / run bounded Rublev-profile GUI checks / submit scoped reindex ONLY for the 5 URLs plus sitemap (no 83-URL batch).
+4. `OK` Bounded GUI evidence was captured this time:
+   - GSC property `https://moonn.ru/` is accessible in Rublev/Alexander Chrome; visible metrics: `240` clicks, `14.5K` impressions, CTR `1.7%`, average position `7.3`, last update `4 hours ago`, overview indexing `40 indexed / 135 not indexed`.
+   - Yandex.Metrika counter `96397286` is accessible in Rublev/Alexander Chrome, but only the default weekly slice was captured (`27 May - 2 Jun`: `53` visits, `46` visitors, `85` pageviews).
+5. `P0` Analytics contract is still incomplete for the required period `2026-04-29..today`: top landing pages, search phrases, goals and full-period cuts were not yet collected.
+6. `P0` Yandex.Webmaster remains blocked in practice: direct Moonn dashboard attempt landed on Yandex `404`; canonical host dashboard URL must be recorded before the next run.
+7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still missing in this repo context.
+8. Next bounded action: restore DNS / finish full-period GUI collection / submit scoped reindex ONLY for the 5 URLs plus sitemap when access is confirmed (no 83-URL batch and no settings changes).
