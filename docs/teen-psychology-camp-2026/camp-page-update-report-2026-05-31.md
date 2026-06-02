@@ -457,3 +457,45 @@ Verification after hotfix:
 New QA rule:
 
 - For Tilda pages driven by a HEAD loader, raw marker checks are necessary but not sufficient. Completion also requires a timed render stability check across the first 5-6 seconds to catch delayed remount/flicker caused by loader retries.
+
+## 2026-06-02 20:52 MSK — CTA and Form Audit
+
+Scope: public teen intensive page after the flicker hotfix.
+
+Checked live page:
+
+- URL: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Mounted version: `20260602-teen-intensive-soft-lead-fomo`.
+- Visible anchors/buttons discovered: navigation anchors, Telegram CTAs, WhatsApp CTAs, Telegram share, five payment CTAs, PDF downloads, privacy links.
+
+External/link checks:
+
+- `https://t.me/moonn_official` returned HTTP `200`.
+- `https://t.me/share/url?...` returned HTTP `200`.
+- `https://wa.me/79777770303` returned HTTP `200`.
+- Program PDF returned HTTP `200`, `application/pdf`.
+- Poster PDF returned HTTP `200`, `application/pdf`.
+- `/politic` returned HTTP `200`.
+
+Payment CTA checks:
+
+- `Оплатить раннюю стоимость до 15 июня`: opens Tilda cart, shows `40 000`, order text and visible `Перейти к оплате`.
+- `Оплатить место`: opens Tilda cart, shows `40 000`, order text and visible `Перейти к оплате`.
+- `Оплатить`: opens Tilda cart, shows `40 000`, order text and visible `Перейти к оплате`.
+- `Оплатить участие`: opens Tilda cart, shows `40 000`, order text and visible `Перейти к оплате`.
+- `Оплатить сейчас`: opens Tilda cart, shows `40 000`, order text and visible `Перейти к оплате`.
+
+Form check:
+
+- The only real form detected on the page is Tilda `Cart`.
+- Visible fields inside the opened cart: `Name`, `Email`, phone, payment method radios, personal-data consent checkbox.
+- Test fill check passed with explicit test data: name/email/phone fields fill correctly, consent checkbox checks, submit button remains visible.
+- No form was submitted: `Перейти к оплате` is a money/payment flow, so sending it is a payment gate.
+
+Operational finding:
+
+- The public copy now says `Записаться на бесплатный созвон`, but technically that CTA goes to Telegram/WhatsApp, not to a separate Tilda CRM lead form. This is acceptable for messaging, but weak for analytics because Tilda cannot count a clean `free_call_request` goal unless a separate form or click-goal is configured.
+
+Recommended next bounded step:
+
+- Add a dedicated non-payment Tilda form or click-goals for `free_call_telegram`, `free_call_whatsapp`, `payment_cart_open`, and `pdf_download`, then verify that the заявки reach Telegram/Tilda CRM. This should be a separate gated change because it affects forms, personal data and analytics routing.

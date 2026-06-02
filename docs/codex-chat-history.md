@@ -1988,6 +1988,27 @@ Append-only project history for `moon-psy-site`.
 - Incident / rule:
   - Raw marker check alone missed delayed visual flicker. Future HEAD-loader pages need a timed render stability check before handoff.
 
+## 2026-06-02 20:52 MSK — Teen Intensive CTA/Button Audit
+
+- Workstream: Moonn / Tatiana Moon teen intensive page.
+- User request:
+  - Manually check all buttons/blocks for call, message, application and payment actions.
+  - Submit test заявки only if appropriate.
+- Verified:
+  - Live page version: `20260602-teen-intensive-soft-lead-fomo`.
+  - Telegram main link returned `200`.
+  - Telegram share link returned `200`.
+  - WhatsApp link returned `200`.
+  - Program PDF returned `200`, `application/pdf`.
+  - Poster PDF returned `200`, `application/pdf`.
+  - `/politic` returned `200`.
+  - Five payment CTAs all opened Tilda cart with `40 000` and visible `Перейти к оплате`.
+  - Cart fields `Name`, `Email`, phone and personal-data consent can be filled with test data.
+- Not submitted:
+  - No test payment/cart form was submitted because the only form is Tilda `Cart` and submit leads into the payment flow.
+- Finding:
+  - There is no separate non-payment Tilda lead form for the free 15-minute call. The free-call CTA currently routes to Telegram/WhatsApp. For measurable lead analytics, create a separate Tilda form or configure click goals.
+
 ## 2026-05-29 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).
