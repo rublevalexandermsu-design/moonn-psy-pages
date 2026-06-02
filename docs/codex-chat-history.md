@@ -1743,6 +1743,35 @@ Append-only project history for `moon-psy-site`.
     - `docs/moonn-five-page-seo-sprint-audit-2026-06-01.md`
   - Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` exists.
 
+## 2026-06-02 09:04 MSK — Supervisor Run: Five-Page SEO/AEO (DNS-Blocked Evidence)
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
+- Branch (canonical): `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the five live URLs with bounded reindex scope.
+- Ran:
+  - `python scripts\\moonn_five_page_seo_sprint_audit.py --rendered`
+    - Output: `docs/moonn-five-page-seo-sprint-audit-2026-06-02.json`, `docs/moonn-five-page-seo-sprint-audit-2026-06-02.md`.
+  - Local canon checks:
+    - `git rev-parse 49a093e`
+    - verified `assets/moonn-five-page-seo-sprint-layer.js` exists
+    - verified reindex scope file `docs/moonn-five-page-reindex-urls-2026-05-21.txt`
+- Verified (this host):
+  - DNS resolution for `moonn.ru` is still broken (`[Errno 11001] getaddrinfo failed`), so live HTTP/robots/sitemap/raw HTML/rendered checks are not comparable today.
+  - Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` resolves in git.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-02.md`
+  - `docs/moonn-seo-growth-check-2026-06-02.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no GSC/Yandex Webmaster reindex submission;
+  - no analytics claims from GSC/Yandex.Metrika;
+  - no 83-URL batch submission.
+- Next action: restore DNS/network or run on a host where `moonn.ru` resolves, then perform the bounded live audit and submit reindex only for the 5 approved URLs plus sitemap if GSC/Yandex access is available.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

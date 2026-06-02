@@ -2,7 +2,7 @@
   "version": 1,
   "createdAt": "2026-05-21T05:48:29.734739+00:00",
   "status": "live_seo_metadata_and_aeo_layer_published",
-  "sourceReport": "docs/moonn-seo-growth-check-2026-05-31.md",
+  "sourceReport": "docs/moonn-seo-growth-check-2026-06-02.md",
   "pages": [
     {
       "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
@@ -56,7 +56,9 @@
         "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json.",
         "2026-05-29: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-29.json.",
         "2026-05-30: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-30.json.",
-        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json."
+        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
+        "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
+        "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -111,7 +113,9 @@
         "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json.",
         "2026-05-29: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-29.json.",
         "2026-05-30: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-30.json.",
-        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json."
+        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
+        "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
+        "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -166,7 +170,9 @@
         "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json.",
         "2026-05-29: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-29.json.",
         "2026-05-30: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-30.json.",
-        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json."
+        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
+        "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
+        "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -222,7 +228,9 @@
         "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json.",
         "2026-05-29: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-29.json.",
         "2026-05-30: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-30.json.",
-        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json."
+        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
+        "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
+        "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -277,10 +285,12 @@
         "2026-05-28: Infra/DNS blocker on supervisor host: `moonn.ru` could not be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-28.json.",
         "2026-05-29: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-29.json.",
         "2026-05-30: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-30.json.",
-        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json."
+        "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
+        "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
+        "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json."
       ],
       "publicationDate": "2026-05-21"
     }
   ],
-  "lastUpdatedAt": "2026-05-31T09:04:32.4610654+03:00"
+  "lastUpdatedAt": "2026-06-02T09:04:07.2781564+03:00"
 }
