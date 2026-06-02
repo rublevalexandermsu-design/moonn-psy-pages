@@ -417,3 +417,43 @@ Residual notes:
 - `moonn.ru` DNS remains a separate domain-recovery issue; this publication was verified on the active fallback domain `мунн.рф` / `xn--l1acaw.xn--p1ai`.
 - Payment was verified only up to cart/form opening; actual payment submission remains a money gate and was not executed.
 - Completion email was sent to `rublevalexandermsu@gmail.com` with a ZIP of the three updated files; Gmail message id: `19e855570a578e4b`.
+
+## 2026-06-02 20:36 MSK — Soft-Lead CRO Layer and Flicker Hotfix
+
+Scope: public teen intensive page, page-specific Tilda HEAD loader.
+
+Implemented CRO changes:
+
+- Added first-screen soft CTA: `Бесплатный 15-минутный созвон до оплаты`.
+- Added FOMO marker: `Осталось 4 места из 12`.
+- Replaced the primary hero and final CTA from immediate purchase language to `Записаться на бесплатный созвон`; payment remains available as a secondary action.
+- Added parent-risk FAQ items for phones/gadgets and safety/atmosphere.
+- Added expert-positioning support: `Юнгианский подход и практическая подача`.
+- Clarified price rationale: 50 000 ₽ standard cost is explained by personal guidance, small group, materials, speech practice, AI block and possible invited experts.
+
+Published state:
+
+- Page content commit: `78c2c6a`.
+- Initial loader commit: `86eac43`.
+- Flicker hotfix loader commit: `64b013b`.
+- Tilda project/page: `8326812` / `140348786`.
+- Live URL: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+
+Incident:
+
+- Symptom reported by user: first screen was blinking; a form/layer looked like it was flashing underneath the hero.
+- Root cause: the Tilda HEAD loader mounted the injected page multiple times: initial load, delayed load at `1200ms`, and delayed load at `3500ms`. This was originally a defensive retry, but after the new CRO blocks it caused visible remount/flicker and possible overlap with the underlying Tilda form/cart layer.
+- Fix: added `teen-camp-loader-guard`, `didMount`, `mountedVersion`, and removed the `3500ms` remount. The remaining `1200ms` retry exits if the first mount already succeeded.
+
+Verification after hotfix:
+
+- Raw live HTML returns HTTP `200`.
+- Raw live HTML contains marker `20260602-teen-intensive-soft-lead-fomo`.
+- Raw live HTML contains `teen-camp-loader-guard` and `didMount`.
+- Raw live HTML contains exactly one `setTimeout(loadAndMount...)` occurrence.
+- Raw live HTML does not contain old commit `@9159906/` or old retry `setTimeout(loadAndMount, 3500)`.
+- Browser smoke-test sampled the page at `0.8s`, `1.5s`, `2.5s`, `4.2s`, and `6.2s`; all samples showed the same mounted version, opacity `1`, the correct H1, soft CTA and `4 места из 12`.
+
+New QA rule:
+
+- For Tilda pages driven by a HEAD loader, raw marker checks are necessary but not sufficient. Completion also requires a timed render stability check across the first 5-6 seconds to catch delayed remount/flicker caused by loader retries.

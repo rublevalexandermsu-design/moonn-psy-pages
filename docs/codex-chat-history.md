@@ -1961,6 +1961,33 @@ Append-only project history for `moon-psy-site`.
   - First Tilda HEAD paste looked correct in the editor, but live HTML still served the old loader. The raw marker check caught this before handoff.
   - Future Tilda HEAD changes require editor-save confirmation plus raw live marker/content/commit verification before reporting completion.
 
+## 2026-06-02 20:36 MSK — Teen Intensive Soft-Lead CRO + Flicker Hotfix
+
+- Workstream: Moonn / Tatiana Moon teen intensive page.
+- Branch: `codex/moonn-camp-page-update`.
+- User request:
+  - Add the agreed CRO layer to the event page: free 15-minute call as the soft lead, `4 места из 12`, stronger price rationale, parent FAQ, final CTA.
+  - Use the Rublev/Alexander Chrome Tilda session.
+  - After publication, user reported first-screen flicker/overlap from a form/layer under the hero.
+- Implemented:
+  - Added first-screen `Бесплатный 15-минутный созвон до оплаты`.
+  - Added `Осталось 4 места из 12`.
+  - Added parent FAQ for gadgets and safety.
+  - Added expert framing and price-rationale copy.
+  - Published Tilda HEAD loader for page `140348786`, project `8326812`.
+  - Hotfixed loader remount flicker by adding `teen-camp-loader-guard`, `didMount`, `mountedVersion`, and removing the `3500ms` remount.
+- Commits:
+  - `78c2c6a` — page CRO content.
+  - `86eac43` — initial loader update.
+  - `64b013b` — flicker/remount hotfix.
+- Verified:
+  - Live raw HTML on `https://мунн.рф/podrostkovyy-lager-psihologiya` returns `200`.
+  - Live raw HTML contains `20260602-teen-intensive-soft-lead-fomo`, `teen-camp-loader-guard`, `didMount`.
+  - Live raw HTML no longer contains `@9159906/` or `setTimeout(loadAndMount, 3500)`.
+  - Timed render smoke-test at `0.8s`, `1.5s`, `2.5s`, `4.2s`, `6.2s` stayed on the same mounted version and retained the soft CTA/FOMO.
+- Incident / rule:
+  - Raw marker check alone missed delayed visual flicker. Future HEAD-loader pages need a timed render stability check before handoff.
+
 ## 2026-05-29 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (DNS Blocked, Fast-Fail Audit)
 
 - Workstream: Moonn SEO-growth supervisor (audit-only, no live edits).
