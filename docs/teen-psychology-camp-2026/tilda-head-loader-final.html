@@ -5,9 +5,16 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@52d2a5e/assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.jpg">
 <meta property="og:url" content="https://moonn.ru/podrostkovyy-lager-psihologiya">
 <meta name="twitter:card" content="summary_large_image">
+<style id="teen-camp-loader-guard">
+  body:not([data-teen-camp-mounted="1"]) #allrecords {
+    opacity: 0;
+  }
+</style>
 <script>
 (function() {
   var pageUrl = 'https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@78c2c6a/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260602-teen-intensive-soft-lead-fomo';
+  var mountedVersion = '20260602-teen-intensive-soft-lead-fomo';
+  var didMount = false;
   function copyAttrs(from, to) {
     Array.prototype.slice.call(from.attributes || []).forEach(function(attr) {
       if (attr.name !== 'id') to.setAttribute(attr.name, attr.value);
@@ -30,8 +37,10 @@
   }
   function mount(html) {
     if (!document.body) return;
+    if (didMount && document.body.dataset.teenCampMountedVersion === mountedVersion) return;
+    didMount = true;
     document.body.dataset.teenCampMounted = '1';
-    document.body.dataset.teenCampMountedVersion = '20260602-teen-intensive-soft-lead-fomo';
+    document.body.dataset.teenCampMountedVersion = mountedVersion;
     var parsed = new DOMParser().parseFromString(html, 'text/html');
     var style = parsed.querySelector('style');
     if (style) {
@@ -67,6 +76,7 @@
     bootCart();
   }
   function loadAndMount() {
+    if (didMount) return;
     fetch(pageUrl).then(function(r) { return r.text(); }).then(mount);
   }
   if (document.readyState === 'loading') {
@@ -75,7 +85,6 @@
     loadAndMount();
   }
   setTimeout(loadAndMount, 1200);
-  setTimeout(loadAndMount, 3500);
 })();
 </script>
 
