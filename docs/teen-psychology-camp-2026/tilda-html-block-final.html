@@ -184,6 +184,13 @@
     .map-pin { min-height:120px; border-radius:22px; margin:14px 0; display:grid; place-items:center; text-align:center; color:#24369c; font-weight:900; background:linear-gradient(135deg, rgba(43,194,177,.16), rgba(67,91,223,.12)); border:1px dashed rgba(36,54,156,.25); }
     .map-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
     .map-actions a { display:inline-flex; min-height:44px; align-items:center; justify-content:center; padding:10px 14px; border-radius:14px; background:#fff; color:#24369c; border:1px solid rgba(36,54,156,.14); font-weight:900; text-decoration:none; }
+    .lead-magnet { display:grid; grid-template-columns:1fr .85fr; gap:24px; align-items:center; padding:30px; border-radius:34px; background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(239,252,249,.92)); border:1px solid rgba(36,54,156,.12); box-shadow:var(--shadow-hover); }
+    .lead-list { display:grid; gap:12px; margin:18px 0 0; padding:0; list-style:none; }
+    .lead-list li { display:flex; gap:10px; align-items:flex-start; color:#58638e; font-size:17px; line-height:1.45; }
+    .lead-list li:before { content:""; width:9px; height:9px; margin-top:9px; border-radius:999px; background:linear-gradient(135deg, var(--violet), var(--mint)); flex:0 0 auto; }
+    .lead-card { padding:24px; border-radius:28px; background:#fff; border:1px solid rgba(36,54,156,.12); box-shadow:var(--shadow); }
+    .lead-card strong { display:block; font-size:30px; line-height:1.05; color:#1b215e; letter-spacing:-.03em; margin-bottom:12px; }
+    .lead-card span { display:block; color:#65709a; font-size:17px; line-height:1.48; margin-bottom:18px; }
     .food-panel, .calendar-panel, .loyalty-panel, .psychology-track { display:grid; grid-template-columns:.92fr 1.08fr; gap:24px; align-items:stretch; padding:28px; border-radius:34px; background:rgba(255,255,255,.88); border:1px solid var(--line); box-shadow:var(--shadow-hover); }
     .food-visual { min-height:380px; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); }
     .food-visual img { width:100%; height:100%; object-fit:cover; display:block; }
@@ -325,7 +332,7 @@
     @media (max-width: 1100px) {
       .pricing-wrap { grid-template-columns:1fr; }
       .proof-grid { grid-template-columns:1fr; }
-      .feature-split, .ai-lab, .parent-panel, .trust-band, .food-panel, .calendar-panel, .loyalty-panel, .psychology-track { grid-template-columns:1fr; }
+      .feature-split, .ai-lab, .parent-panel, .trust-band, .lead-magnet, .food-panel, .calendar-panel, .loyalty-panel, .psychology-track { grid-template-columns:1fr; }
       .cards-4 { grid-template-columns:repeat(2,1fr); }
       .cards-5 { grid-template-columns:repeat(2,1fr); }
       .program { grid-template-columns:repeat(2,1fr); }
@@ -465,6 +472,30 @@
           <h3>Не “занять день”, а дать опыт</h3>
           <p>Главная ценность - безопасная среда, где подросток пробует общаться, говорить о себе, выдерживать внимание группы, пользоваться ИИ для проектов и мягко выходить из экзаменационного напряжения.</p>
           <p>Это не массовый поток: малое количество участников нужно, чтобы держать контакт, темп и обратную связь.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parent-checklist">
+      <div class="wrap lead-magnet">
+        <div>
+          <p class="eyebrow">Мягкий первый шаг</p>
+          <h2 class="section-title">Чек-лист для родителя: подойдёт ли подростку такой формат</h2>
+          <p class="section-text">Если пока рано платить сразу, можно начать с короткой проверки. Чек-лист помогает понять, есть ли у подростка запрос на общение, речь, уверенность, отдых после экзаменов и практику в небольшой группе.</p>
+          <ul class="lead-list">
+            <li>что спросить у подростка перед записью;</li>
+            <li>какие признаки говорят, что формат может зайти;</li>
+            <li>как понять, нужен ли сначала короткий разговор с организатором;</li>
+            <li>что уточнить по расписанию, месту, питанию и оплате.</li>
+          </ul>
+        </div>
+        <div class="lead-card">
+          <strong>Получить чек-лист и задать вопрос</strong>
+          <span>Напишите в Telegram или WhatsApp: пришлём чек-лист и поможем понять, подходит ли интенсив именно вашему подростку.</span>
+          <div class="btns">
+            <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Получить чек-лист</a>
+            <a class="btn secondary" href="https://wa.me/79777770303" target="_blank" rel="noopener">Задать вопрос</a>
+          </div>
         </div>
       </div>
     </section>
