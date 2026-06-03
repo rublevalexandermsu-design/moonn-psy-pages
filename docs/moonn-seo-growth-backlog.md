@@ -153,3 +153,13 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 6. `P0` Yandex.Webmaster remains blocked in practice: direct Moonn dashboard attempt landed on Yandex `404`; canonical host dashboard URL must be recorded before the next run.
 7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still missing in this repo context.
 8. Next bounded action: restore DNS / finish full-period GUI collection / submit scoped reindex ONLY for the 5 URLs plus sitemap when access is confirmed (no 83-URL batch and no settings changes).
+
+## 2026-06-03 — Supervisor Run
+
+1. `P0` Infra blocker persists: DNS for `moonn.ru` is still broken on this host (`Errno 11001 getaddrinfo failed`), so live HTTP/sitemap/robots/rendered checks remain invalid in this run.
+2. `OK` Daily five-page audit recorded (DNS-blocked, fast-fail):
+   - `docs/moonn-five-page-seo-sprint-audit-2026-06-03.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-06-03.md`
+3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` resolves in git object database.
+4. `P0` No new analytics or reindex evidence was collected today; latest bounded GUI metrics remain the `2026-06-02` growth check, so do not treat today as a T+14/T+28 measurement step.
+5. `P0` Next bounded action remains unchanged: restore DNS or move the run to a host with working resolution, then submit scoped reindex ONLY for the 5 approved URLs plus sitemap if GSC/Yandex access is available (no 83-URL batch).

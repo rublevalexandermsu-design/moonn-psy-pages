@@ -1819,6 +1819,38 @@ Append-only project history for `moon-psy-site`.
   - `docs/moonn-seo-growth-check-2026-06-02.md`
   - `docs/moonn-seo-growth-backlog.md`
 
+## 2026-06-03 09:06 MSK — Supervisor Run: Five-Page SEO/AEO DNS-Blocked Audit
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning five-page SEO/AEO supervisor run.
+- Route:
+  - current user-facing branch was unrelated (`codex/moonn-camp-page-update`);
+  - supervisor work was redirected back to the canonical branch `codex/moonn-seo-audit` before any changes.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs/moonn-five-page-seo-packets-2026-05-21.json --rendered`
+- Verified:
+  - this host still cannot resolve `moonn.ru` (`[Errno 11001] getaddrinfo failed`);
+  - the dated audit wrote `docs/moonn-five-page-seo-sprint-audit-2026-06-03.{json,md}` and marked all 5 scoped URLs as `dns_blocked`;
+  - `assets/moonn-five-page-seo-sprint-layer.js` still exists locally;
+  - git object `49a093e` still resolves;
+  - approved reindex scope file `docs/moonn-five-page-reindex-urls-2026-05-21.txt` remains unchanged.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-03.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-03.md`
+  - `docs/moonn-seo-growth-check-2026-06-03.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal edits;
+  - no GSC/Yandex Webmaster reindex submission;
+  - no 83-URL batch submission;
+  - no new GUI analytics collection beyond the already recorded `2026-06-02` evidence.
+- Next action:
+  - re-run the bounded live audit on a host where `moonn.ru` resolves, then submit reindex only for the approved five URLs plus sitemap if GSC/Yandex access is available.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
