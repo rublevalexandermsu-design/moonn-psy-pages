@@ -2111,3 +2111,40 @@ Incident rule:
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+## 2026-06-03 08:41 MSK - Moonn Teen Intensive Sales Sprint After Audio
+
+- Project: `moon-psy-site`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: after audio analysis, do not rely on the site alone; add concrete sales/lead-generation steps, checklist, outreach materials, and verify live implementation.
+- Decisions:
+  - Chosen route: soft lead generation before hard payment.
+  - Added parent checklist block to the public page.
+  - Created sales sprint, outreach scripts, and parent checklist as reusable project artifacts.
+  - Did not send mass mailing automatically; this remains a gated external communication step.
+- Changed artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-page-template-with-placeholders.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-audio-marketing-analysis-2026-06-02.md`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-sales-sprint-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-outreach-scripts-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-parent-checklist-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`.
+- Download copies:
+  - `C:\Users\yanta\Downloads\План продаж подросткового интенсива Татьяны Мунн 2026.docx`;
+  - `C:\Users\yanta\Downloads\Сценарии рассылок и лекций подросткового интенсива Татьяны Мунн 2026.docx`;
+  - `C:\Users\yanta\Downloads\Чек-лист для родителей подросткового интенсива Татьяны Мунн 2026.docx`.
+- Commits:
+  - `6b6f700` audio marketing page improvements;
+  - `e690ae0` loader to audio marketing update;
+  - `a29ca96` sales sprint materials and checklist lead block;
+  - `ea2c4b6` loader to sales sprint update.
+- Live verification:
+  - Tilda head-code saved and page published through Chrome profile `Alexander`.
+  - Live marker: `20260603-teen-intensive-sales-sprint`.
+  - Desktop/mobile render confirmed price block, map links, continuation block, checklist block, 5 payment CTAs, 2 map links, no horizontal overflow, and visible `лагерь` word count `0`.
+- Open follow-up:
+  - Confirm recipient list/channel before sending cold-base mailing.
+  - Add analytics goals for checklist, consultation clicks, map clicks, PDF downloads and cart opens.

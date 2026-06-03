@@ -541,3 +541,94 @@ Verification:
 New QA rule:
 
 - For public Tilda HEAD-loader pages, after any hero/CRO change, run a desktop/tablet/mobile geometry check: hero media must be in the intended column, visible in the expected viewport, loaded, and not only present in raw HTML.
+
+## 2026-06-03 08:41 MSK - Audio Marketing and Sales Sprint Update
+
+Scope: public teen intensive page, audio-derived marketing improvements, and first sales sprint materials.
+
+Input:
+
+- User audio file: `C:\Users\yanta\Downloads\Как_продать_родителям_психологический_лагерь.m4a`.
+- Local transcript artifacts: `C:\Users\yanta\Downloads\teen_intensive_gemini_audio_analysis\transcript.txt`, `transcript.json`.
+- Transcript stats: 594 segments, about 23 minutes.
+
+Implemented on the page:
+
+- Added early price/location/value block:
+  - `Стоимость без сюрпризов`;
+  - 40 000 ₽ early payment / 50 000 ₽ standard;
+  - Yandex Maps and Google Maps links for `Москва, Цветной бульвар`;
+  - short value explanation for what the parent pays for.
+- Added post-intensive continuation block:
+  - feedback after the flow;
+  - next thematic flow;
+  - weekend groups;
+  - family questions.
+- Added early lead-magnet block:
+  - `Чек-лист для родителя: подойдёт ли подростку такой формат`;
+  - CTA to Telegram and WhatsApp.
+
+Sales sprint artifacts created:
+
+- `docs/teen-psychology-camp-2026/teen-intensive-audio-marketing-analysis-2026-06-02.md`;
+- `docs/teen-psychology-camp-2026/teen-intensive-sales-sprint-2026-06-03.md`;
+- `docs/teen-psychology-camp-2026/teen-intensive-outreach-scripts-2026-06-03.md`;
+- `docs/teen-psychology-camp-2026/teen-intensive-parent-checklist-2026-06-03.md`.
+
+Download copies created:
+
+- `C:\Users\yanta\Downloads\План продаж подросткового интенсива Татьяны Мунн 2026.docx`;
+- `C:\Users\yanta\Downloads\Сценарии рассылок и лекций подросткового интенсива Татьяны Мунн 2026.docx`;
+- `C:\Users\yanta\Downloads\Чек-лист для родителей подросткового интенсива Татьяны Мунн 2026.docx`.
+
+Commits:
+
+- `6b6f700` - audio marketing page improvements.
+- `e690ae0` - loader to audio marketing update.
+- `a29ca96` - sales sprint materials and checklist lead block.
+- `ea2c4b6` - loader to sales sprint update.
+
+Published state:
+
+- Tilda head-code saved and page published through Chrome profile `Alexander`.
+- Live loader marker: `20260603-teen-intensive-sales-sprint`.
+- Live page URL: `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+
+Verification:
+
+- CDN page HTML for `a29ca96` returns HTTP `200` and contains the new price/maps/continuation/checklist content.
+- Live raw HTML returns HTTP `200` and contains loader marker `20260603-teen-intensive-sales-sprint`.
+- Rendered desktop `1555x900`:
+  - mounted version `20260603-teen-intensive-sales-sprint`;
+  - price block present;
+  - Yandex/Google map links present;
+  - continuation block present;
+  - checklist block present;
+  - payment CTA count: 5;
+  - map link count: 2;
+  - visible `лагерь` word count: 0;
+  - horizontal overflow: none.
+- Rendered mobile `390x844`:
+  - mounted version `20260603-teen-intensive-sales-sprint`;
+  - price block present;
+  - Yandex/Google map links present;
+  - continuation block present;
+  - checklist block present;
+  - payment CTA count: 5;
+  - map link count: 2;
+  - visible `лагерь` word count: 0;
+  - horizontal overflow: none.
+- Screenshots:
+  - `C:\Users\yanta\Downloads\moonn-live-sales-sprint-desktop.png`;
+  - `C:\Users\yanta\Downloads\moonn-live-sales-sprint-mobile.png`.
+
+Not implemented intentionally:
+
+- No mass mailing was sent automatically because this is a mass external communication gate.
+- No new paid tariff was added because this changes pricing/payment logic.
+- No exact address or guest expert names were invented.
+
+Next bounded step:
+
+- Use the 29 warm contacts first with the personal-message script, then send the cold-base sequence only after the recipient list/channel is confirmed.
+- Add analytics goals for checklist CTA, Telegram/WhatsApp consultation clicks, map clicks, PDF downloads and cart opens.
