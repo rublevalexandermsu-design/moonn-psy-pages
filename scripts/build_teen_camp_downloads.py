@@ -39,6 +39,7 @@ PUBLIC_PAGE_URL = "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya"
 PAYMENT_URL = f"{PUBLIC_PAGE_URL}?pay=teen-camp-2026"
 TELEGRAM_URL = "https://t.me/moonn_official"
 WHATSAPP_URL = "https://wa.me/79777770303"
+EVENT_ADDRESS = "Москва, Сущёвский Вал, 56"
 
 PROGRAM_PDF = ASSET_DIR / "teen-psychology-camp-tatyana-moonn-program-2026.pdf"
 POSTER_PDF = ASSET_DIR / "teen-psychology-camp-tatyana-moonn-poster-2026.pdf"
@@ -140,7 +141,7 @@ def build_program_pdf() -> None:
     )
     story = [
         Paragraph("Психология без скуки: подростковый интенсив речи и уверенности", title),
-        Paragraph("6-10 июля 2026 · Москва, Цветной бульвар · 10:00-18:00 · группа 10-12 подростков", body),
+        Paragraph(f"6-10 июля 2026 · {EVENT_ADDRESS} · 10:00-18:00 · группа 10-12 подростков", body),
         Paragraph("Ранняя оплата до 15 июня: <b>40 000 ₽</b> вместо <strike>50 000 ₽</strike>. Формат: психологические и развивающие занятия с речевой практикой, паузами и обеденным перерывом.", body),
     ]
 
@@ -248,7 +249,7 @@ def build_poster_pdf() -> None:
     canvas.roundRect(26 * mm, page_h - 74 * mm, 108 * mm, 12 * mm, 6, stroke=0, fill=1)
     canvas.setFillColor(colors.HexColor("#343497"))
     canvas.setFont(FONT_BOLD, 10)
-    canvas.drawString(32 * mm, page_h - 70 * mm, "6-10 июля 2026 · Москва · 10:00-18:00")
+    canvas.drawString(32 * mm, page_h - 70 * mm, f"6-10 июля 2026 · {EVENT_ADDRESS} · 10:00-18:00")
 
     hero_path = HERO_JPG if HERO_JPG.exists() else POSTER_JPG
     img = Image.open(hero_path)
@@ -361,7 +362,7 @@ def build_call_brief_docx() -> None:
 
     lead = doc.add_paragraph()
     lead.add_run("Коротко: ").bold = True
-    lead.add_run("психологический интенсив Татьяны Мунн для подростков: уверенность, общение, ораторская практика, эмоции, ИИ для идей, разгрузка после экзаменов и первые шаги молодого психолога. 6-10 июля, Цветной бульвар, 10:00-18:00, группа 10-12 человек. Формат подается как психологические и развивающие занятия с паузами и обеденным перерывом.")
+    lead.add_run(f"психологический интенсив Татьяны Мунн для подростков: уверенность, общение, ораторская практика, эмоции, ИИ для идей, разгрузка после экзаменов и первые шаги молодого психолога. 6-10 июля, {EVENT_ADDRESS}, 10:00-18:00, группа 10-12 человек. Формат подается как психологические и развивающие занятия с паузами и обеденным перерывом.")
 
     p = doc.add_paragraph()
     p.add_run("Главная страница интенсива: ").bold = True

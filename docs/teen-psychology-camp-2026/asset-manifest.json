@@ -53,20 +53,20 @@
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf",
-      "bytes": 94553,
-      "sha256": "a75d2d3689177249"
+      "bytes": 94717,
+      "sha256": "80a10046bd90f490"
     },
     {
       "type": "pdf",
       "file": "assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf",
-      "bytes": 380024,
-      "sha256": "484de19c46ab134d"
+      "bytes": 380365,
+      "sha256": "170a167c2a0a141d"
     },
     {
       "type": "docx",
       "file": "docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx",
-      "bytes": 39191,
-      "sha256": "6e21327e9b47a0f8"
+      "bytes": 39199,
+      "sha256": "a14af64ec04629d8"
     }
   ],
   "downloadDeepLinks": {
