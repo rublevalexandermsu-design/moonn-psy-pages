@@ -154,6 +154,16 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still missing in this repo context.
 8. Next bounded action: restore DNS / finish full-period GUI collection / submit scoped reindex ONLY for the 5 URLs plus sitemap when access is confirmed (no 83-URL batch and no settings changes).
 
+## 2026-06-03 — SEO/Growth GUI Supervisor Run
+
+1. `P0` Infra blocker persists: this host still cannot resolve `moonn.ru` (`Errno 11001 getaddrinfo failed` / `Этот хост неизвестен`), so live HTTP, sitemap, robots and rendered DOM checks remain invalid locally.
+2. `OK` GSC GUI fallback improved: property `https://moonn.ru/` is accessible in the real `Alexander` Chrome profile; current visible metrics are `245` clicks, `14.6K` impressions, CTR `1.7%`, average position `7.4`, last update `3.5 hours ago`, indexing `40 indexed / 135 not indexed`.
+3. `OK` Yandex.Webmaster route is now canonicalized: use `https://webmaster.yandex.ru/site/https:moonn.ru:443/indexing/reindex/` (not the broken `/sites/` guess). Priority URLs `/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva` all show `Заявка обработана` from `08.05.2026 9:20`.
+4. `P0` GSC analytics contract is still incomplete: today's GUI capture is from the default `3 months` view and does not yet include the exact requested custom period `2026-04-29..2026-06-03`, top pages export, or 4 priority URL Inspection statuses.
+5. `P0` Metrika analytics contract is still incomplete: today's GUI capture stayed on the weekly slice `28 May - 3 Jun` (`105` pageviews, `78` visits, `69` visitors) and did not yet capture the requested full period, search phrases or click goals.
+6. `P1` Measurement-quality incident: visible Metrika top-page tables are now polluted by supervisor/test querystrings (`?payment-click-audit=20260602`, `?hero-live-check=20260602-2`, `?verify=20260603-*`, `?cartqa*`). Future growth reads should normalize or exclude QA URLs so measurement is not biased by automation traffic.
+7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still missing in this repo context.
+
 ## 2026-06-03 — Supervisor Run
 
 1. `P0` Infra blocker persists: DNS for `moonn.ru` is still broken on this host (`Errno 11001 getaddrinfo failed`), so live HTTP/sitemap/robots/rendered checks remain invalid in this run.

@@ -1851,6 +1851,48 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - re-run the bounded live audit on a host where `moonn.ru` resolves, then submit reindex only for the approved five URLs plus sitemap if GSC/Yandex access is available.
 
+## 2026-06-03 09:28 MSK — Supervisor Run: SEO/Growth GUI Fallback + Webmaster Route Recovery
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-seo-privacy-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run needed more than the DNS-blocked five-page audit; analytics and reindex follow-up were retried through the real Chrome profile.
+- Route:
+  - stayed on canonical branch `codex/moonn-seo-audit`;
+  - used capability-router + GUI fallback because API/export evidence was still missing and DNS prevented normal live fetch checks.
+- Verified technical facts:
+  - local DNS for `moonn.ru` is still broken (`[Errno 11001] getaddrinfo failed` / `Этот хост неизвестен. (moonn.ru:443)`), so live HTTP/sitemap/robots/rendered checks remain infra-blocked on this host;
+  - temporary Chrome-profile clone did not preserve live cabinet auth, so the real visible Chrome window had to be used for GUI evidence.
+- Verified via real `Alexander` Chrome window:
+  - Google Search Console property `https://moonn.ru/` is accessible;
+  - GSC Performance currently shows `245` clicks, `14.6K` impressions, CTR `1.7%`, average position `7.4`, last update `3.5 hours ago`;
+  - visible top queries include `татьяна мунн`, `дневник эмоций как вести`, `дневник эмоций`, `как вести дневник эмоций`;
+  - GSC Overview currently shows `40 indexed pages`, `135 not indexed pages`, `22` HTTPS pages, `25` valid Breadcrumb enhancements.
+- Verified via real `Alexander` Chrome window in Yandex.Metrika:
+  - counter `96397286` is accessible;
+  - visible weekly slice `28 мая - 3 июн` shows `105` pageviews, `78` visits, `69` visitors, `1 м 4 c` time on site, depth `1,35`, bounce `58,97%`;
+  - visible sources: direct `66`, search `10`, referral `1`, messengers `1`;
+  - visible top-page tables now include supervisor/test querystrings such as `?payment-click-audit=20260602`, `?hero-live-check=20260602-2`, `?verify=20260603-*`, which should be treated as a measurement-quality incident.
+- Verified via real `Alexander` Chrome window in Yandex.Webmaster:
+  - canonical Moonn reindex route is `https://webmaster.yandex.ru/site/https:moonn.ru:443/indexing/reindex/`;
+  - the old guessed `/sites/...` route was wrong;
+  - visible priority URL statuses on the reindex page:
+    - `https://moonn.ru/` — `Заявка обработана`, `08.05.2026 9:20`, `Уже отслеживается`;
+    - `https://moonn.ru/events_tp` — `Заявка обработана`, `08.05.2026 9:20`;
+    - `https://moonn.ru/lectures1` — `Заявка обработана`, `08.05.2026 9:20`;
+    - `https://moonn.ru/psiholog-konsultacii-moskva` — `Заявка обработана`, `08.05.2026 9:20`.
+- Updated artifacts:
+  - `docs/moonn-seo-growth-check-2026-06-03.md`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal publication;
+  - no cabinet settings changes;
+  - no screenshots saved or committed;
+  - no 83-URL Google URL Inspection actions.
+- Next action:
+  - capture the exact custom period `2026-04-29..2026-06-03` in GSC and Metrika, collect 4 priority URL Inspection statuses in GSC, and decide how to exclude QA querystring traffic from Metrika growth reads.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
