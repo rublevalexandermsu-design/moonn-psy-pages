@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-03T06:46:33.709272+00:00",
+  "scope": "Moonn 83 production URLs privacy/form/cookie compliance read-only audit",
+  "sourcePacket": "docs\\moonn-gsc-yandex-reindex-packet-2026-05-08.json",
+  "infra": {
+    "baseUrl": "https://мунн.рф",
+    "preflight": {
+      "url": "https://мунн.рф/robots.txt",
+      "status": 200,
+      "timeoutSeconds": 8
+    },
+    "dnsLikeFailure": false,
+    "perUrlTimeoutSeconds": 8,
+    "maxUrls": 8
+  },
+  "policyEndpoints": [
+    {
+      "url": "https://мунн.рф/privacy",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/personal-data-consent",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/cookies",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/data-subject-request",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://мунн.рф/",
+      "status": 200,
+      "formSignals": 67,
+      "consentSignals": 10,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/abuse_gaslight",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 7,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/aromatherapy",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/article_diary_of_emotions",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/article_femininity",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/article_gadget_addiction",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/article_toxic_job",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://мунн.рф/articles/eq-dlya-rukovoditeley",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 7,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 6,
+      "webvisorSignals": 2,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    }
+  ],
+  "notes": [
+    "This is a technical audit, not legal advice.",
+    "Final public legal text requires confirmed operator details and legal approval.",
+    "Google Analytics signals are flagged separately because cross-border/legal handling depends on actual configuration."
+  ]
+}

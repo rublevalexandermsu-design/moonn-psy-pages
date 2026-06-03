@@ -18,8 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 TODAY = datetime.now(timezone.utc).date().isoformat()
 DEFAULT_PACKET = DOCS / f"moonn-five-page-seo-packets-{TODAY}.json"
-SITEMAP_URL = "https://moonn.ru/sitemap.xml"
-ROBOTS_URL = "https://moonn.ru/robots.txt"
+DEFAULT_BASE_URL = "https://moonn.ru"
+SITEMAP_URL = f"{DEFAULT_BASE_URL}/sitemap.xml"
+ROBOTS_URL = f"{DEFAULT_BASE_URL}/robots.txt"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; MoonnFivePageSEOAudit/1.0; +https://moonn.ru/)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -28,7 +29,7 @@ PLACEHOLDERS = ["Book design", "Your Name", "Your Email", "Html code will be her
 
 
 def fetch(url: str, timeout: int = 30) -> tuple[int | None, str, str | None]:
-    request = urllib.request.Request(url, headers=HEADERS)
+    request = urllib.request.Request(idna_url(url), headers=HEADERS)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
             raw = response.read()
@@ -50,11 +51,18 @@ def fetch(url: str, timeout: int = 30) -> tuple[int | None, str, str | None]:
 
 
 def dns_probe(hostname: str) -> dict:
+    lookup_hostname = hostname.encode("idna").decode("ascii")
     try:
-        socket.getaddrinfo(hostname, 443)
-        return {"hostname": hostname, "ok": True, "error": None}
+        socket.getaddrinfo(lookup_hostname, 443)
+        return {"hostname": hostname, "lookupHostname": lookup_hostname, "ok": True, "error": None}
     except Exception as exc:  # noqa: BLE001
-        return {"hostname": hostname, "ok": False, "error": str(exc)}
+        return {"hostname": hostname, "lookupHostname": lookup_hostname, "ok": False, "error": str(exc)}
+
+
+def idna_url(url: str) -> str:
+    parsed = urllib.parse.urlparse(url)
+    netloc = parsed.netloc.encode("idna").decode("ascii")
+    return urllib.parse.urlunparse((parsed.scheme, netloc, parsed.path, parsed.params, parsed.query, parsed.fragment))
 
 
 def visible_text(value: str) -> str:
@@ -113,6 +121,24 @@ def robots_blocked(url: str, disallows: list[str] | None) -> bool | None:
         if prefix and path.startswith(prefix):
             return True
     return False
+
+
+def normalize_base_url(value: str) -> str:
+    return value.rstrip("/")
+
+
+def rewrite_url_host(url: str, base_url: str) -> str:
+    parsed = urllib.parse.urlparse(url)
+    base = urllib.parse.urlparse(base_url)
+    return urllib.parse.urlunparse((base.scheme, base.netloc, parsed.path, parsed.params, parsed.query, parsed.fragment))
+
+
+def rewrite_packet_urls(packet: dict, base_url: str) -> dict:
+    rewritten = json.loads(json.dumps(packet, ensure_ascii=False))
+    for page in rewritten.get("pages", []):
+        if "url" in page:
+            page["url"] = rewrite_url_host(page["url"], base_url)
+    return rewritten
 
 
 def raw_audit_page(page: dict, sitemap: set[str] | None, disallows: list[str] | None) -> dict:
@@ -311,11 +337,26 @@ def main() -> int:
     parser.add_argument("--packet", default=str(DEFAULT_PACKET.relative_to(ROOT)))
     parser.add_argument("--rendered", action="store_true")
     parser.add_argument("--out-prefix", default=f"moonn-five-page-seo-sprint-audit-{TODAY}")
+    parser.add_argument(
+        "--base-url",
+        default=DEFAULT_BASE_URL,
+        help="Live base URL to audit. Example: https://мунн.рф or https://xn--l1acaw.xn--p1ai.",
+    )
     args = parser.parse_args()
 
     packet_path = resolve_packet_path(args.packet)
-    packet = json.loads(packet_path.read_text(encoding="utf-8"))
-    env_dns = dns_probe("moonn.ru")
+    base_url = normalize_base_url(args.base_url)
+    parsed_base = urllib.parse.urlparse(base_url)
+    if not parsed_base.scheme or not parsed_base.netloc:
+        raise ValueError(f"Invalid --base-url: {args.base_url}")
+    sitemap_url = f"{base_url}/sitemap.xml"
+    robots_url = f"{base_url}/robots.txt"
+    global SITEMAP_URL, ROBOTS_URL
+    SITEMAP_URL = sitemap_url
+    ROBOTS_URL = robots_url
+
+    packet = rewrite_packet_urls(json.loads(packet_path.read_text(encoding="utf-8")), base_url)
+    env_dns = dns_probe(parsed_base.hostname or parsed_base.netloc)
     if not env_dns.get("ok"):
         sitemap = None
         disallows = None
@@ -354,6 +395,7 @@ def main() -> int:
         "packet": str(packet_path.relative_to(ROOT)),
         "environment": {"dns": env_dns},
         "inputs": {
+            "baseUrl": base_url,
             "sitemapUrl": SITEMAP_URL,
             "robotsUrl": ROBOTS_URL,
             "sitemapFetchError": sitemap_error,

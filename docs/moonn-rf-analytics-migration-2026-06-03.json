@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-03T00:00:00+03:00",
+  "workstream": "Moonn SEO / analytics-domain-migration",
+  "branch": "codex/moonn-seo-audit",
+  "currentLiveDomain": {
+    "unicode": "мунн.рф",
+    "url": "https://мунн.рф/",
+    "punycode": "xn--l1acaw.xn--p1ai",
+    "punycodeUrl": "https://xn--l1acaw.xn--p1ai/"
+  },
+  "legacyDomain": {
+    "unicode": "moonn.ru",
+    "url": "https://moonn.ru/",
+    "analyticsRule": "Treat as legacy/historical unless new-domain property/counter evidence is verified."
+  },
+  "forbiddenDomainConfusion": {
+    "domain": "moon.ru",
+    "rule": "Not a Moonn project domain; never use it for SEO, analytics, or availability conclusions."
+  },
+  "scopedReindexFile": "docs/moonn-rf-five-page-reindex-urls-2026-06-03.txt",
+  "channels": {
+    "googleSearchConsole": {
+      "targetProperty": "https://мунн.рф/",
+      "legacyProperty": "https://moonn.ru/",
+      "requiredAction": "Add/verify property, submit sitemap, inspect/request only scoped URLs.",
+      "status": "needs_authenticated_gui_confirmation"
+    },
+    "yandexWebmaster": {
+      "targetHost": "https://мунн.рф/",
+      "legacyHost": "https://moonn.ru",
+      "requiredAction": "Add/verify host and submit scoped URLs.",
+      "status": "needs_authenticated_gui_confirmation"
+    },
+    "yandexMetrika": {
+      "knownCounter": "96397286",
+      "requiredAction": "Verify or update host attribution to мунн.рф; keep legacy moonn.ru metrics separate.",
+      "status": "needs_authenticated_gui_confirmation"
+    },
+    "googleAnalytics": {
+      "requiredAction": "Verify or create/update web data stream for мунн.рф.",
+      "status": "needs_authenticated_gui_confirmation"
+    }
+  },
+  "localImplementation": {
+    "auditBaseUrlArgument": true,
+    "privacyAuditBaseUrlArgument": true,
+    "siteJsonBrandDomainUpdated": true,
+    "automationsUpdatedOutsideGit": true
+  },
+  "localVerification20260603": {
+    "fivePageAudit": {
+      "artifactJson": "docs/moonn-rf-five-page-seo-sprint-audit-2026-06-03.json",
+      "artifactMarkdown": "docs/moonn-rf-five-page-seo-sprint-audit-2026-06-03.md",
+      "dnsResolved": true,
+      "http200ScopedPages": 5,
+      "sitemapDetectedScopedPages": 0,
+      "canonicalMismatchScopedPages": 5,
+      "robotsBlockedScopedPages": 0
+    },
+    "privacySmokeAudit": {
+      "artifactJson": "docs/moonn-privacy-compliance-audit-2026-06-03.json",
+      "artifactMarkdown": "docs/moonn-privacy-compliance-audit-2026-06-03.md",
+      "maxUrls": 8,
+      "policyEndpointStatus": {
+        "/privacy": 404,
+        "/personal-data-consent": 404,
+        "/cookies": 404,
+        "/data-subject-request": 404
+      },
+      "risk": "forms_without_detected_checkbox on first 8 checked URLs"
+    }
+  },
+  "readyGate": [
+    "five-page audit passes with --base-url https://мунн.рф",
+    "GSC property for мунн.рф verified",
+    "Yandex.Webmaster host for мунн.рф verified",
+    "Metrika/GA evidence explicitly attributes traffic to мунн.рф",
+    "legacy moonn.ru analytics remain labelled legacy"
+  ]
+}

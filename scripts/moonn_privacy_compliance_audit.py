@@ -9,6 +9,7 @@ from typing import Any
 import argparse
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlparse, urlunparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,13 +17,9 @@ PACKET = ROOT / "docs" / "moonn-gsc-yandex-reindex-packet-2026-05-08.json"
 RUN_DATE = datetime.now(timezone.utc).date().isoformat()
 OUT_JSON = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.json"
 OUT_MD = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.md"
+DEFAULT_BASE_URL = "https://moonn.ru"
 
-POLICY_URLS = [
-    "https://moonn.ru/privacy",
-    "https://moonn.ru/personal-data-consent",
-    "https://moonn.ru/cookies",
-    "https://moonn.ru/data-subject-request",
-]
+POLICY_PATHS = ["/privacy", "/personal-data-consent", "/cookies", "/data-subject-request"]
 
 
 @dataclass
@@ -42,7 +39,7 @@ class PageResult:
 
 
 def fetch(url: str, timeout: int) -> tuple[int | str, str]:
-    req = Request(url, headers={"User-Agent": "MoonnComplianceAudit/1.0"})
+    req = Request(idna_url(url), headers={"User-Agent": "MoonnComplianceAudit/1.0"})
     try:
         with urlopen(req, timeout=timeout) as response:
             return response.getcode(), response.read().decode("utf-8", errors="replace")
@@ -54,6 +51,12 @@ def fetch(url: str, timeout: int) -> tuple[int | str, str]:
 
 def count(pattern: str, html: str) -> int:
     return len(re.findall(pattern, html, flags=re.IGNORECASE | re.DOTALL))
+
+
+def idna_url(url: str) -> str:
+    parsed = urlparse(url)
+    netloc = parsed.netloc.encode("idna").decode("ascii")
+    return urlunparse((parsed.scheme, netloc, parsed.path, parsed.params, parsed.query, parsed.fragment))
 
 
 def analyze_page(url: str, timeout: int) -> PageResult:
@@ -100,6 +103,16 @@ def load_scope_urls() -> list[str]:
     data = json.loads(PACKET.read_text(encoding="utf-8"))
     urls = [row["url"] for row in data["urls"]]
     return list(dict.fromkeys(urls))
+
+
+def normalize_base_url(value: str) -> str:
+    return value.rstrip("/")
+
+
+def rewrite_url_host(url: str, base_url: str) -> str:
+    parsed = urlparse(url)
+    base = urlparse(base_url)
+    return urlunparse((base.scheme, base.netloc, parsed.path, parsed.params, parsed.query, parsed.fragment))
 
 
 def write_report(payload: dict[str, Any]) -> None:
@@ -185,20 +198,36 @@ def build_arg_parser() -> argparse.ArgumentParser:
         default=8,
         help="HTTP timeout seconds for preflight fetch used to fast-fail DNS outages.",
     )
+    parser.add_argument(
+        "--base-url",
+        default=DEFAULT_BASE_URL,
+        help="Live base URL to audit. Example: https://мунн.рф or https://xn--l1acaw.xn--p1ai.",
+    )
+    parser.add_argument(
+        "--max-urls",
+        type=int,
+        default=0,
+        help="Optional cap for scoped smoke checks. 0 means all URLs.",
+    )
     return parser
 
 
 def main() -> None:
     args = build_arg_parser().parse_args()
-    urls = load_scope_urls()
+    base_url = normalize_base_url(args.base_url)
+    urls = [rewrite_url_host(url, base_url) for url in load_scope_urls()]
+    if args.max_urls and args.max_urls > 0:
+        urls = urls[: args.max_urls]
+    policy_urls = [f"{base_url}{path}" for path in POLICY_PATHS]
 
-    preflight_status, _ = fetch("https://moonn.ru/robots.txt", timeout=args.preflight_timeout)
+    preflight_url = f"{base_url}/robots.txt"
+    preflight_status, _ = fetch(preflight_url, timeout=args.preflight_timeout)
     dns_blocked = is_dns_like_failure(preflight_status)
     if dns_blocked:
-        policy_results = [asdict(PageResult(url=url, status=preflight_status, formSignals=0, consentSignals=0, checkboxSignals=0, yandexMetrikaSignals=0, webvisorSignals=0, googleAnalyticsSignals=0, hasPolicyLink=False, hasConsentLink=False, hasCookieText=False, riskFlags=["infra_dns_blocked"])) for url in POLICY_URLS]
+        policy_results = [asdict(PageResult(url=url, status=preflight_status, formSignals=0, consentSignals=0, checkboxSignals=0, yandexMetrikaSignals=0, webvisorSignals=0, googleAnalyticsSignals=0, hasPolicyLink=False, hasConsentLink=False, hasCookieText=False, riskFlags=["infra_dns_blocked"])) for url in policy_urls]
         page_results = [asdict(PageResult(url=url, status=preflight_status, formSignals=0, consentSignals=0, checkboxSignals=0, yandexMetrikaSignals=0, webvisorSignals=0, googleAnalyticsSignals=0, hasPolicyLink=False, hasConsentLink=False, hasCookieText=False, riskFlags=["infra_dns_blocked"])) for url in urls]
     else:
-        policy_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in POLICY_URLS]
+        policy_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in policy_urls]
         page_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in urls]
 
     payload = {
@@ -207,13 +236,15 @@ def main() -> None:
         "scope": "Moonn 83 production URLs privacy/form/cookie compliance read-only audit",
         "sourcePacket": str(PACKET.relative_to(ROOT)),
         "infra": {
+            "baseUrl": base_url,
             "preflight": {
-                "url": "https://moonn.ru/robots.txt",
+                "url": preflight_url,
                 "status": preflight_status,
                 "timeoutSeconds": args.preflight_timeout,
             },
             "dnsLikeFailure": dns_blocked,
             "perUrlTimeoutSeconds": args.timeout,
+            "maxUrls": args.max_urls,
         },
         "policyEndpoints": policy_results,
         "pages": page_results,

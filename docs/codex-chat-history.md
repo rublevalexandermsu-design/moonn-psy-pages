@@ -1893,6 +1893,38 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - capture the exact custom period `2026-04-29..2026-06-03` in GSC and Metrika, collect 4 priority URL Inspection statuses in GSC, and decide how to exclude QA querystring traffic from Metrika growth reads.
 
+## 2026-06-03 MSK — `мунн.рф` Analytics Migration Routing
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: Moonn SEO / analytics-domain-migration.
+- Branch: `codex/moonn-seo-audit`.
+- User correction:
+  - Do not create a new unrelated branch for this task.
+  - Continue in the branch where the supervisor automations and their evidence are already recorded.
+- Routing result:
+  - `codex/moonn-seo-audit` is the canonical branch for the SEO supervisor and automation evidence.
+  - `codex/moonn-rf-domain-continuity` contains prior domain-continuity facts for `мунн.рф`, but the active analytics/supervisor continuation belongs in `codex/moonn-seo-audit`.
+- Decisions:
+  - Treat `https://мунн.рф/` as the current live domain.
+  - Treat `https://moonn.ru/` as legacy/historical analytics unless new-domain property evidence is verified.
+  - Treat `moon.ru` as a wrong unrelated domain.
+- Changed artifacts:
+  - `scripts/moonn_five_page_seo_sprint_audit.py` — added `--base-url`.
+  - `scripts/moonn_privacy_compliance_audit.py` — added `--base-url`.
+  - `data/site.json` — current brand domain changed to `мунн.рф`.
+  - `docs/moonn-rf-analytics-migration-2026-06-03.md`
+  - `docs/moonn-rf-analytics-migration-2026-06-03.json`
+  - `docs/moonn-rf-five-page-reindex-urls-2026-06-03.txt`
+  - `docs/moonn-seo-growth-backlog.md`
+- Verification:
+  - `python -m py_compile scripts\moonn_five_page_seo_sprint_audit.py scripts\moonn_privacy_compliance_audit.py` passed.
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://мунн.рф --out-prefix moonn-rf-five-page-seo-sprint-audit-2026-06-03` passed and wrote the dated new-domain audit.
+  - Five scoped URLs on `мунн.рф` return HTTP `200`, DNS resolves, and robots do not block them.
+  - New blockers found: scoped URLs are not detected in `https://мунн.рф/sitemap.xml`; all five show `canonical_mismatch`.
+  - Privacy smoke check for `мунн.рф` passed technically with `--max-urls 8`, but policy endpoints return `404` and first 8 checked URLs still show `forms_without_detected_checkbox`.
+- Open blocker:
+  - External Google Search Console, Yandex.Webmaster, Yandex.Metrika and Google Analytics settings require authenticated cabinet confirmation before reporting them as created or changed.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

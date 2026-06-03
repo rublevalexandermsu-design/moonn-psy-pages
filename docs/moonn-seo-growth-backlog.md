@@ -173,3 +173,23 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `OK` Repo canon still present (local-only): `assets/moonn-five-page-seo-sprint-layer.js` exists; commit `49a093e` resolves in git object database.
 4. `P0` No new analytics or reindex evidence was collected today; latest bounded GUI metrics remain the `2026-06-02` growth check, so do not treat today as a T+14/T+28 measurement step.
 5. `P0` Next bounded action remains unchanged: restore DNS or move the run to a host with working resolution, then submit scoped reindex ONLY for the 5 approved URLs plus sitemap if GSC/Yandex access is available (no 83-URL batch).
+
+## 2026-06-03 — `мунн.рф` Analytics Migration
+
+1. `DONE` Codex automations were updated outside Git so the current live domain is `https://мунн.рф/` and `https://moonn.ru/` is treated as legacy analytics unless new evidence proves otherwise.
+2. `DONE` Added migration contract:
+   - `docs/moonn-rf-analytics-migration-2026-06-03.md`
+   - `docs/moonn-rf-analytics-migration-2026-06-03.json`
+3. `DONE` Added scoped new-domain reindex file: `docs/moonn-rf-five-page-reindex-urls-2026-06-03.txt`.
+4. `DONE` Hardened local audits with `--base-url` so future supervisor runs can check `https://мунн.рф/` without rewriting historical packets:
+   - `scripts/moonn_five_page_seo_sprint_audit.py`
+   - `scripts/moonn_privacy_compliance_audit.py`
+5. `DONE` Updated `data/site.json` current brand domain from `moonn.ru` to `мунн.рф`.
+6. `P0` External cabinet action still needs authenticated GUI confirmation:
+   - Google Search Console property for `https://мунн.рф/`;
+   - Yandex.Webmaster host for `https://мунн.рф/`;
+   - Yandex.Metrika counter `96397286` host attribution for `мунн.рф`;
+   - Google Analytics / Google tag web stream for `мунн.рф`.
+7. `P0` Do not claim traffic growth on `мунн.рф` from legacy `moonn.ru` GSC/Metrika data. Reports must separate `legacy-domain analytics` and `new-domain live checks`.
+8. `P0` New-domain local audit found SEO blockers: five scoped pages return HTTP `200`, but are not detected in `https://мунн.рф/sitemap.xml` and still show `canonical_mismatch`. Fix Tilda/domain canonical and sitemap behavior before calling SEO migration complete.
+9. `P0` New-domain privacy smoke check found `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` as `404` and forms without detected checkbox signals on the first 8 URLs. This remains a legal/publication gate, not a silent SEO task.
