@@ -25,7 +25,7 @@
 ## Implemented safely
 
 - Added early "Стоимость без сюрпризов" card with 40 000 ₽ / 50 000 ₽ and early payment deadline.
-- Added early location card with `Москва, Цветной бульвар` and buttons for Yandex Maps and Google Maps.
+- Added early location card with `Москва, Сущёвский Вал, 56` and buttons for Yandex Maps and Google Maps.
 - Added early value card explaining that the parent pays for a safe practical experience, not just daily occupancy.
 - Added post-intensive continuation block: feedback, next thematic flow, weekend groups, family questions.
 - Added differentiated visual styles for the new proof cards to reduce "Word-like" monotony.
@@ -33,7 +33,7 @@
 ## Not implemented intentionally
 
 - No new premium tariff was added because this changes pricing and payment logic.
-- No exact address was invented; the page uses `Москва, Цветной бульвар` and says that exact address/cabinet are confirmed at registration.
+- No exact address was invented; the page uses `Москва, Сущёвский Вал, 56` and says that exact address/cabinet are confirmed at registration.
 - No embedded third-party map iframe was added to avoid extra privacy/performance load and because outbound map buttons are lower-risk.
 - No visible "лагерь" wording was introduced in the new public text; the page keeps the safer "подростковый интенсив" framing.
 

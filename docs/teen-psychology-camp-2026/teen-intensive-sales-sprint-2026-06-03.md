@@ -1,93 +1,93 @@
-# Sales sprint for teen intensive, 2026-06-03
+# План продаж подросткового интенсива, 2026-06-03
 
-## Goal
+## Цель
 
-Sell first paid seats for the 6-10 July teen intensive without relying on the site alone.
+Получить первые оплаченные места на интенсив 6-10 июля и не рассчитывать только на то, что сайт сам приведёт продажи.
 
-Target for the next 7 days:
+Цель на ближайшие 7 дней:
 
-- 29 warm contacts: personal follow-up, not mass mailing.
-- Cold subscriber base: soft educational sequence with checklist, not immediate hard sell.
-- Park lectures: every lecture must collect at least one trackable action.
-- Page: keep payment available, but lead with checklist and consultation.
+- 29 тёплых контактов: персональное касание, не массовая рассылка.
+- Холодная подписная база: мягкая образовательная цепочка с чек-листом, без жёсткого “купите сейчас”.
+- Лекции Татьяны в парке: каждое выступление должно собирать хотя бы одно отслеживаемое действие.
+- Страница: оплата остаётся доступной, но первый мягкий шаг - чек-лист и бесплатная консультация.
 
-## Current risk
+## Текущий риск
 
-The page is necessary, but not enough. The offer is expensive and partly invisible: parents buy trust, clarity, safety, and confidence that the format suits their child. If Tatiana and the caller cannot explain the format in 30-60 seconds, traffic will not convert.
+Страница нужна, но её недостаточно. Формат стоит дорого и частично “невидим” для родителя: покупают не только расписание, а доверие, ясность, безопасность и уверенность, что интенсив подходит конкретному подростку. Если Татьяна и звонящий не могут объяснить формат за 30-60 секунд, трафик не конвертируется.
 
-## Sales hypothesis
+## Гипотеза продаж
 
-The best entry point is not "buy now". It is:
+Лучший вход - не “оплатите сейчас”, а последовательность:
 
-1. parent recognizes a familiar situation;
-2. parent takes a checklist;
-3. caller or Tatiana clarifies whether the format fits;
-4. payment is offered only after fit is clear.
+1. родитель узнаёт знакомую ситуацию;
+2. родитель берёт чек-лист;
+3. звонящий или Татьяна уточняет, подходит ли формат;
+4. оплата предлагается только после понятного совпадения запроса и программы.
 
-## 7-day action plan
+## План на 7 дней
 
-### Day 1
+### День 1
 
-- Publish page update with checklist block, price/map/value block, and post-intensive path.
-- Send 29 warm contacts a personal message with the checklist and invitation to a 15-minute consultation.
-- Give Tatiana a 60-second script for park lectures.
+- Опубликовать страницу с блоком чек-листа, блоком стоимости/адреса/ценности и блоком “что после пяти дней”.
+- Отправить 29 тёплым контактам персональное сообщение с чек-листом и предложением 15-минутной консультации.
+- Дать Татьяне короткий текст на 60 секунд для выступлений в парке.
 
-### Day 2
+### День 2
 
-- Call or message every warm contact who opened/responded.
-- Ask 3 custdev questions:
-  - What is most relevant now: exams, communication, confidence, speech, rest, or profession?
-  - What would make the 40 000 ₽ price feel justified?
-  - What would stop you from booking this week?
+- Позвонить или написать каждому тёплому контакту, кто открыл сообщение или ответил.
+- Задать 3 вопроса кастдева:
+  - Что сейчас важнее: экзамены, общение, уверенность, речь, отдых или профессия?
+  - Что должно быть в программе, чтобы цена 40 000 ₽ выглядела обоснованной?
+  - Что мешает забронировать место на этой неделе?
 
-### Day 3
+### День 3
 
-- Send cold base email #1: useful checklist, no pressure.
-- Publish Telegram/VK post based on the checklist.
-- Record all replies in one sheet/registry.
+- Отправить холодной базе письмо N1: полезный чек-лист без давления.
+- Опубликовать пост в Telegram/VK на основе чек-листа.
+- Все ответы фиксировать в одном реестре или таблице.
 
-### Day 4
+### День 4
 
-- Send warm follow-up with value explanation: speech practice, communication, AI block, small group, support.
-- Tatiana uses the park-lecture script and collects Telegram contacts or QR scans.
+- Отправить тёплым контактам повторное сообщение с объяснением ценности: речевая практика, общение, ИИ-блок, малая группа, поддержка.
+- Татьяна использует текст для лекций и собирает Telegram-контакты или переходы по QR.
 
-### Day 5
+### День 5
 
-- Send cold base email #2: "after exams, before the school year".
-- Offer consultation slots.
-- Update objections list from calls.
+- Отправить холодной базе письмо N2: “после экзаменов и до учебного года”.
+- Предложить слоты для бесплатной консультации.
+- Обновить список возражений по итогам звонков.
 
-### Day 6
+### День 6
 
-- Send proof-oriented message: what the child does day by day, how safety and breaks work, why group size is limited.
-- Check payment CTA and Telegram/WhatsApp response time.
+- Отправить сообщение с доказательствами: что подросток делает по дням, как устроены безопасность, паузы, обеденный перерыв и малая группа.
+- Проверить скорость ответа в Telegram/WhatsApp и работу платежных CTA.
 
-### Day 7
+### День 7
 
-- Send deadline message for early payment until 15 June.
-- Decide whether to add a confirmed guest expert block. Do not publish names or pricing until confirmed.
+- Отправить напоминание о ранней стоимости до 15 июня.
+- Отдельно решить, добавлять ли подтверждённый блок приглашённых экспертов. Не публиковать имена, тарифы или обещания без подтверждения.
 
-## Metrics
+## Метрики
 
-- Warm contacts contacted: target 29/29.
-- Replies from warm contacts: target 8+.
-- Consultations booked: target 4+.
-- Paid seats: target 1-3 in first week.
-- Park lecture leads: target 5+ per lecture.
-- Cold base CTR or reply rate: target is a signal, not immediate sale.
+- Тёплые контакты обработаны: цель 29/29.
+- Ответы от тёплых контактов: цель 8+.
+- Назначенные консультации: цель 4+.
+- Оплаченные места: цель 1-3 за первую неделю.
+- Лиды после парковой лекции: цель 5+ на выступление.
+- Холодная база: CTR/ответы считаются сигналом интереса, а не немедленной продажей.
 
-## What not to do yet
+## Что пока не делать
 
-- Do not mass-send a hard "buy now" message to cold base.
-- Do not add a fake premium tariff.
-- Do not invent exact address, guest speakers, certifications, guarantees, or medical/therapeutic outcomes.
-- Do not describe the format publicly as a children's camp.
+- Не отправлять холодной базе жёсткое письмо “купите сейчас”.
+- Не добавлять фиктивный премиальный тариф.
+- Не придумывать точный адрес, приглашённых экспертов, сертификаты, гарантии или медицинские/терапевтические обещания.
+- Не описывать формат публично как детский лагерь.
 
-## Immediate implementation checklist
+## Быстрый чек-лист внедрения
 
-- Page block: checklist lead magnet.
-- Material: parent checklist.
-- Material: 3-message warm sequence for 29 contacts.
-- Material: 3-email cold sequence.
-- Material: Tatiana 60-second park pitch.
-- Verification: live page, CTA links, no visible stale legal-risk wording.
+- Блок на странице: чек-лист как лид-магнит.
+- Материал: чек-лист для родителя.
+- Материал: 3 сообщения для 29 тёплых контактов.
+- Материал: 3 письма для холодной базы.
+- Материал: 60-секундный текст Татьяны для лекций.
+- Проверка: live-страница, CTA-ссылки, отсутствие устаревших рискованных формулировок.

@@ -557,7 +557,7 @@ Implemented on the page:
 - Added early price/location/value block:
   - `Стоимость без сюрпризов`;
   - 40 000 ₽ early payment / 50 000 ₽ standard;
-  - Yandex Maps and Google Maps links for `Москва, Цветной бульвар`;
+  - Yandex Maps and Google Maps links for `Москва, Сущёвский Вал, 56`;
   - short value explanation for what the parent pays for.
 - Added post-intensive continuation block:
   - feedback after the flow;
