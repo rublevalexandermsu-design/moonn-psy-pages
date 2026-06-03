@@ -2148,3 +2148,9 @@ Incident rule:
 - Open follow-up:
   - Confirm recipient list/channel before sending cold-base mailing.
   - Add analytics goals for checklist, consultation clicks, map clicks, PDF downloads and cart opens.
+- Notification:
+  - Sent completion email to `rublevalexandermsu@gmail.com`.
+  - Gmail message id: `19e8c055d3fa4b3b`.
+  - Attachment: `C:\Users\yanta\Downloads\Продажный пакет подросткового интенсива Татьяны Мунн 2026.zip`.
+- Incident:
+  - Gmail connector required `attachment_files` as an array despite schema wording. Resolution: send one zip attachment as an array path.

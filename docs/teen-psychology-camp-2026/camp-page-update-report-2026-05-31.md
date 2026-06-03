@@ -632,3 +632,16 @@ Next bounded step:
 
 - Use the 29 warm contacts first with the personal-message script, then send the cold-base sequence only after the recipient list/channel is confirmed.
 - Add analytics goals for checklist CTA, Telegram/WhatsApp consultation clicks, map clicks, PDF downloads and cart opens.
+
+Notification:
+
+- Sent completion email to `rublevalexandermsu@gmail.com`.
+- Gmail message id: `19e8c055d3fa4b3b`.
+- Attachment: `C:\Users\yanta\Downloads\Продажный пакет подросткового интенсива Татьяны Мунн 2026.zip`.
+
+Connector incident:
+
+- Symptom: Gmail connector rejected multiple attachment paths passed as one comma-separated string, then reported that `attachment_files` must be an array in this workspace.
+- Root cause: tool schema wording and runtime validation differ for `attachment_files`.
+- Resolution: compressed all sales files into one zip and sent it as an array with one path.
+- Follow-up rule: for Gmail attachments in this workspace, pass `attachment_files` as an array and prefer one zip when sending multiple local documents.
