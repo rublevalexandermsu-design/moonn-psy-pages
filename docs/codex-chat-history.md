@@ -2188,3 +2188,29 @@ Incident rule:
   - Tilda head-code saved visually in Chrome profile `Alexander`.
   - Live marker: `20260603-teen-intensive-address-russian-materials`.
   - Desktop/mobile render confirmed new address, old address absent, hero price badge not intersecting Tatiana card, 5 payment CTAs, 2 map links, no horizontal overflow, visible `лагерь` word count `0`.
+## 2026-06-03 17:42 MSK - Teen Intensive PDF Program/Poster Replacement Check
+
+- Trigger: user asked whether the two downloadable files in the live `Программа и постер интенсива` block had been replaced and emailed.
+- Verified issue: local/CDN QA showed the previous program PDF still contained `Цветной`; live page HTML still pointed to old marker `20260603-teen-intensive-address-russian-materials` and asset commit `52d2a5e`.
+- Fixed generator: `scripts/build_teen_camp_downloads.py` now uses `Москва, Сущёвский Вал, 56` as canonical event address.
+- Regenerated and verified:
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf`;
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf`;
+  - `docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx`;
+  - `docs/teen-psychology-camp-2026/asset-manifest.json`.
+- PDF QA: both PDFs contain `Сущёвский Вал`, do not contain `Цветной`, do not contain visible lowercase `лагерь`, and have working URI annotations for page/payment/Telegram; poster also has WhatsApp.
+- CDN QA:
+  - page HTML `@e2a422c`: HTTP `200`;
+  - program PDF `@c0f3a6c`: HTTP `200`, `application/pdf`, size `94717`;
+  - poster PDF `@c0f3a6c`: HTTP `200`, `application/pdf`, size `380365`.
+- Downloads updated:
+  - `C:\Users\yanta\Downloads\Программа подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `C:\Users\yanta\Downloads\Постер подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `C:\Users\yanta\Downloads\Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`;
+  - `C:\Users\yanta\Downloads\PDF программа и постер подросткового интенсива Татьяны Мунн 2026 обновлено.zip`.
+- Email sent to `rublevalexandermsu@gmail.com`; Gmail message id `19e8def58e99e0ae`.
+- Git commits pushed on `codex/moonn-camp-page-update`:
+  - `c0f3a6c` - `Fix teen intensive PDF address`;
+  - `e2a422c` - `Point teen intensive page to updated PDFs`;
+  - `7e2ba45` - `Update teen intensive loader for PDF fix`.
+- Open blocker: live Tilda page-specific HEAD was not republished in this session because desktop-control/windows-mcp was unavailable and Rublev Chrome was not launched with CDP. Live HTML still has old marker and asset commit. Next action: publish page HEAD for Tilda page `140348786`, project `8326812`, through Rublev/Alexander Chrome GUI, then verify live marker `20260603-teen-intensive-pdf-address-fix`.

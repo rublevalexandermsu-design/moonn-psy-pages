@@ -705,3 +705,61 @@ Incident:
 - The first attempt to overwrite existing Word files in Downloads failed because one of the files was open/locked by another process.
 - Resolution: created updated copies with `обновлено` in the filename and a new updated zip.
 - Follow-up rule: if a user-facing document in Downloads is locked, do not force-close or delete it; create a clearly marked updated copy and report which file is current.
+
+## 2026-06-03 17:42 MSK - PDF Program/Poster Address Fix And Email
+
+Trigger: user asked whether the two downloadable files in the live block `Программа и постер интенсива` were replaced and emailed.
+
+Issue found:
+
+- PDF text QA showed the program PDF still contained old address wording `Цветной`.
+- Live page HTML still pointed to old loader marker `20260603-teen-intensive-address-russian-materials` and old asset commit `52d2a5e`; therefore the live buttons were not yet confirmed to serve the corrected PDF set.
+
+Changes made:
+
+- Updated `scripts/build_teen_camp_downloads.py` to use `Москва, Сущёвский Вал, 56` as the canonical event address.
+- Regenerated:
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-program-2026.pdf`;
+  - `assets/teen-psychology-camp-2026/teen-psychology-camp-tatyana-moonn-poster-2026.pdf`;
+  - `docs/teen-psychology-camp-2026/teen-psychology-camp-call-brief-2026.docx`.
+- Updated `docs/teen-psychology-camp-2026/asset-manifest.json`.
+- Updated canonical Tilda HTML/HEAD files to use asset commit `c0f3a6c` and page commit `e2a422c`.
+
+Verification:
+
+- `pypdf` local PDF QA:
+  - both PDFs contain `Сущёвский Вал`;
+  - both PDFs do not contain `Цветной`;
+  - both PDFs do not contain visible lowercase `лагерь`;
+  - program PDF has `9` URI annotations;
+  - poster PDF has `6` URI annotations;
+  - required links present: public page, payment URL, Telegram; poster also includes WhatsApp.
+- jsDelivr HEAD checks:
+  - page HTML `@e2a422c`: HTTP `200`;
+  - program PDF `@c0f3a6c`: HTTP `200`, `application/pdf`, size `94717`;
+  - poster PDF `@c0f3a6c`: HTTP `200`, `application/pdf`, size `380365`.
+- Downloaded CDN PDFs and re-ran `pypdf`: same text/link checks passed.
+- Fresh files copied to `C:\Users\yanta\Downloads`:
+  - `Программа подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Постер подросткового интенсива Татьяны Мунн 2026.pdf`;
+  - `Памятка для созвона по подростковому интенсиву Татьяны Мунн 2026.docx`;
+  - `PDF программа и постер подросткового интенсива Татьяны Мунн 2026 обновлено.zip`.
+
+Email:
+
+- Sent to `rublevalexandermsu@gmail.com`.
+- Gmail message id: `19e8def58e99e0ae`.
+- Attachment: `PDF программа и постер подросткового интенсива Татьяны Мунн 2026 обновлено.zip`.
+
+Git:
+
+- `c0f3a6c` - `Fix teen intensive PDF address`.
+- `e2a422c` - `Point teen intensive page to updated PDFs`.
+- `7e2ba45` - `Update teen intensive loader for PDF fix`.
+- Branch pushed: `codex/moonn-camp-page-update`.
+
+Open blocker:
+
+- Live Tilda page was not confirmed updated after the new loader because this Codex session did not expose desktop-control/windows-mcp and the open Rublev Chrome profile was not launched with a DevTools port.
+- Live HTML check still found old marker `20260603-teen-intensive-address-russian-materials`, old asset commit `52d2a5e`, and did not find new marker `20260603-teen-intensive-pdf-address-fix`.
+- Next bounded action: publish page-specific HEAD for Tilda page `140348786` in project `8326812` through the Rublev/Alexander Chrome GUI, then verify live HTML contains `20260603-teen-intensive-pdf-address-fix`, `@e2a422c`, and `@c0f3a6c`.
