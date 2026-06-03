@@ -2154,3 +2154,37 @@ Incident rule:
   - Attachment: `C:\Users\yanta\Downloads\Продажный пакет подросткового интенсива Татьяны Мунн 2026.zip`.
 - Incident:
   - Gmail connector required `attachment_files` as an array despite schema wording. Resolution: send one zip attachment as an array path.
+
+## 2026-06-03 09:15 MSK - Moonn Teen Intensive Address and Materials Fix
+
+- Project: `moon-psy-site`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: correct wrong public address, fix hero price badge overlap, and regenerate sales materials fully in Russian.
+- Decisions:
+  - Address accepted from user: `Москва, Сущёвский Вал, 56`.
+  - Old chat history entries for unrelated Цветной бульвар events were restored and not rewritten.
+  - Existing locked Downloads files were not force-deleted; updated files were created with `обновлено` suffix.
+- Changed artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-page-template-with-placeholders.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`;
+  - `docs/teen-psychology-camp-2026/homepage-head-combined-final.html`;
+  - `docs/teen-psychology-camp-2026/homepage-teen-camp-head-snippet.html`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-sales-sprint-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-outreach-scripts-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/teen-intensive-parent-checklist-2026-06-03.md`;
+  - `docs/teen-psychology-camp-2026/camp-page-update-report-2026-05-31.md`.
+- Download copies:
+  - `C:\Users\yanta\Downloads\План продаж подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Сценарии рассылок и лекций подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Чек-лист для родителей подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Продажный пакет подросткового интенсива Татьяны Мунн 2026 обновлено.zip`.
+- Commits:
+  - `124c977` address, hero price and Russian materials fix.
+  - `6fe3322` loader points to address fix.
+- Live verification:
+  - Tilda head-code saved visually in Chrome profile `Alexander`.
+  - Live marker: `20260603-teen-intensive-address-russian-materials`.
+  - Desktop/mobile render confirmed new address, old address absent, hero price badge not intersecting Tatiana card, 5 payment CTAs, 2 map links, no horizontal overflow, visible `лагерь` word count `0`.

@@ -645,3 +645,63 @@ Connector incident:
 - Root cause: tool schema wording and runtime validation differ for `attachment_files`.
 - Resolution: compressed all sales files into one zip and sent it as an array with one path.
 - Follow-up rule: for Gmail attachments in this workspace, pass `attachment_files` as an array and prefer one zip when sending multiple local documents.
+
+## 2026-06-03 09:15 MSK - Address and Russian Materials Fix
+
+User-reported issues:
+
+- Public page still used the wrong address: `Цветной бульвар`.
+- Hero price badge visually conflicted with the Tatiana card on desktop.
+- Sales sprint Word materials had English headings.
+
+Fix:
+
+- Replaced the intensive address with `Москва, Сущёвский Вал, 56` in page copy, map links, footer, JSON-LD and downloadable-material sources.
+- Updated Yandex Maps and Google Maps links to the new address.
+- Moved the hero price badge up and constrained its width; split `ранняя оплата до 15 июня` into separate lines.
+- Rewrote sales sprint headings/content into Russian.
+- Rebuilt updated Word files in Downloads:
+  - `C:\Users\yanta\Downloads\План продаж подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Сценарии рассылок и лекций подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Чек-лист для родителей подросткового интенсива Татьяны Мунн 2026 обновлено.docx`;
+  - `C:\Users\yanta\Downloads\Продажный пакет подросткового интенсива Татьяны Мунн 2026 обновлено.zip`.
+
+Commits:
+
+- `124c977` - address, hero price and Russian material fixes.
+- `6fe3322` - loader points to the address fix.
+
+Published state:
+
+- Tilda head-code updated visually through Chrome profile `Alexander`.
+- Live marker: `20260603-teen-intensive-address-russian-materials`.
+
+Verification:
+
+- Rendered desktop `1555x900`:
+  - mounted version `20260603-teen-intensive-address-russian-materials`;
+  - address `Сущёвский Вал, 56` present;
+  - old address `Цветной бульвар` absent;
+  - hero price badge does not intersect the Tatiana card;
+  - map link count: 2;
+  - payment CTA count: 5;
+  - visible `лагерь` word count: 0;
+  - horizontal overflow: none.
+- Rendered mobile `390x844`:
+  - mounted version `20260603-teen-intensive-address-russian-materials`;
+  - address `Сущёвский Вал, 56` present;
+  - old address `Цветной бульвар` absent;
+  - hero price badge does not intersect the Tatiana card;
+  - map link count: 2;
+  - payment CTA count: 5;
+  - visible `лагерь` word count: 0;
+  - horizontal overflow: none.
+- Screenshots:
+  - `C:\Users\yanta\Downloads\moonn-live-address-fix-desktop.png`;
+  - `C:\Users\yanta\Downloads\moonn-live-address-fix-mobile.png`.
+
+Incident:
+
+- The first attempt to overwrite existing Word files in Downloads failed because one of the files was open/locked by another process.
+- Resolution: created updated copies with `обновлено` in the filename and a new updated zip.
+- Follow-up rule: if a user-facing document in Downloads is locked, do not force-close or delete it; create a clearly marked updated copy and report which file is current.
