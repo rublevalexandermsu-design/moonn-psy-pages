@@ -987,10 +987,43 @@
         }
       }
 
+      function localizeTildaCheckoutFields() {
+        var cart = document.querySelector('.t706__cartwin, .t706');
+        if (!cart) return;
+        [
+          ['Name', 'Имя родителя'],
+          ['Email', 'Email для подтверждения'],
+          ['Phone', 'Телефон для связи']
+        ].forEach(function(pair) {
+          var fieldName = pair[0];
+          var labelText = pair[1];
+          Array.prototype.slice.call(cart.querySelectorAll('[data-field-name="' + fieldName + '"]')).forEach(function(group) {
+            var label = group.querySelector('.t-input-title, label');
+            var input = group.querySelector('input');
+            if (label) label.textContent = labelText;
+            if (input) {
+              input.setAttribute('aria-label', labelText);
+              if (fieldName === 'Phone') {
+                input.setAttribute('placeholder', '+7 (___) ___-__-__');
+              }
+            }
+          });
+        });
+        Array.prototype.slice.call(cart.querySelectorAll('.t-input-title, label, .t-btnflex__text, .t-submit')).forEach(function(node) {
+          var text = (node.textContent || '').trim();
+          if (text === 'Your Name') node.textContent = 'Имя родителя';
+          if (text === 'Your Email') node.textContent = 'Email для подтверждения';
+          if (text === 'Your Phone') node.textContent = 'Телефон для связи';
+          if (text === 'Payment method') node.textContent = 'Способ оплаты';
+          if (text === 'Checkout') node.textContent = 'Перейти к оплате';
+        });
+      }
+
       function enhanceTildaPaymentUi() {
         var cart = document.querySelector('.t706__cartwin, .t706');
         if (!cart) return;
         repairTildaOrderFormHandlers();
+        localizeTildaCheckoutFields();
         Array.prototype.slice.call(cart.querySelectorAll('.t-submit, button[type="submit"], .t-btnflex_type_submit')).forEach(function(submit) {
           var submitText = submit.querySelector('.t-btnflex__text, span') || submit;
           if ((submitText.textContent || '').trim() !== 'Перейти к оплате') submitText.textContent = 'Перейти к оплате';
@@ -1086,6 +1119,7 @@
       setTimeout(initTildaCart, 300);
       setTimeout(initTildaCart, 1200);
       setTimeout(repairTildaOrderFormHandlers, 1500);
+      setTimeout(localizeTildaCheckoutFields, 1600);
       setInterval(enhanceTildaPaymentUi, 1500);
       document.addEventListener('click', function(event) {
         var orderLink = event.target && event.target.closest && event.target.closest('a[href^="#order:"]');
