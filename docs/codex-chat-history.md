@@ -2275,3 +2275,29 @@ Incident rule:
   - Search confirmed no remaining references to `OffthreadVideo`, `teen-camp-source`, `source-video`, or `User video`.
 - Notes:
   - Original user file in `C:\Users\yanta\Downloads\doc_2026-06-04_17-38-39.mp4` was not touched.
+## 2026-06-04 — Teen intensive Direct landing preflight
+
+- Project: Moonn / teen psychology intensive Tilda page.
+- Workstream: Direct landing preflight for page `140348786`, project `8326812`.
+- Request: apply only page-related fixes from the GPT/Yandex Direct preflight, not campaign launch or ad account actions.
+- Decisions:
+  - Keep campaign/ad-table work out of scope.
+  - Remove unverifiable live scarcity text `4 места из 12` and use stable group-size copy.
+  - Use public live domain `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya` in canonical, OG and schema for this page.
+- Changed files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`
+  - `docs/teen-psychology-camp-2026/direct-landing-preflight-2026-06-04.md`
+- Commits:
+  - `7c3e190` — Complete teen camp Direct landing preflight
+  - `356431d` — Point teen camp loader to Direct preflight version
+- Verification:
+  - CDN `@7c3e190` returned the new page with date 2026, public canonical domain, phone mask, no `Book design`, no `4 места`, and Metrika goal strings.
+  - Tilda page-specific HEAD field was replaced in the authenticated Chrome session and UIA readback showed `@7c3e190` / `direct-preflight`, with `@44ebc4f` absent.
+- Blocker:
+  - Final Tilda publish was not confirmed because Windows repeatedly entered lock-screen/no-active-window state.
+  - Live HTML still returned old loader `@44ebc4f` and marker `20260604-teen-intensive-direct-cta`.
+- Next action:
+  - After desktop unlock, click `Опубликовать` on Tilda page `140348786`, then verify live marker `20260604-teen-intensive-direct-preflight` and rendered page/checkout/mobile checks.
