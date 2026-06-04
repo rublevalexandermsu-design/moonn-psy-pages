@@ -808,3 +808,20 @@ Follow-up:
   - found `Email для подтверждения`;
   - found `Телефон для связи`;
   - found Russian checkout/submit text.
+
+## 2026-06-04 22:00 MSK - Direct Preflight First-Screen CTA
+
+Trigger: Yandex Direct preflight noted that the first-screen CTA should be clearer than only `Бесплатная консультация`.
+
+Changes made:
+
+- Replaced the header CTA with `Оставить заявку`.
+- Replaced the hero primary button with `Оставить заявку`.
+- Replaced the hero secondary WhatsApp button with `Посмотреть программу`.
+- Kept payment CTA on the first screen and kept WhatsApp/TG contact routes elsewhere on the page.
+- Updated canonical Tilda HEAD files to load page HTML commit `44ebc4f` with marker `20260604-teen-intensive-direct-cta`.
+
+Verification target:
+
+- Live HTML should contain `20260604-teen-intensive-direct-cta` and `@44ebc4f`.
+- Rendered first screen should contain `Оставить заявку` and `Посмотреть программу`.
