@@ -2253,3 +2253,25 @@ Incident rule:
   - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/package-lock.json`.
 - Notes:
   - Studio was left running for user preview.
+
+## 2026-06-04 18:08 MSK - Remotion Promo Without User Video
+
+- Project: `moon-psy-site`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: make the 10-second Remotion promo without using the user's source MP4.
+- Changed:
+  - Rebuilt `src/TeenCampPromo.tsx` as an autonomous Remotion animation using generated graphic bands, text scenes, info cards, CTA, and the existing poster asset.
+  - Removed dependency on `OffthreadVideo` and the package-local user MP4 copy.
+  - Updated README source notes.
+  - Re-rendered `renders/teen-camp-promo-10s.mp4`.
+- Removed package-local copy:
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/public/media/teen-camp-source-video-2026-06-04.mp4`.
+- Verification:
+  - `npm run render -- --log=error` completed.
+  - Windows file properties show duration `00:00:10` and size about `5.02 MB`.
+  - Preview frames checked:
+    - `renders/preview-frame-120-no-source.png`;
+    - `renders/preview-frame-270-no-source.png`.
+  - Search confirmed no remaining references to `OffthreadVideo`, `teen-camp-source`, `source-video`, or `User video`.
+- Notes:
+  - Original user file in `C:\Users\yanta\Downloads\doc_2026-06-04_17-38-39.mp4` was not touched.

@@ -4,8 +4,9 @@
 
 ## Source
 
-- User video: `public/media/teen-camp-source-video-2026-06-04.mp4`
+- Autonomous Remotion graphics: `src/TeenCampPromo.tsx`
 - Poster asset: `public/media/teen-psychology-camp-tatyana-moonn-poster-2026.jpg`
+- No user MP4 is required for the current version.
 
 ## Render
 
@@ -24,4 +25,6 @@ Verified on 2026-06-04:
 
 - Duration: `00:00:10`
 - Format: vertical `1080x1920`
-- Preview frame: `renders/preview-frame-120.png`
+- Preview frames:
+  - `renders/preview-frame-120-no-source.png`
+  - `renders/preview-frame-270-no-source.png`
