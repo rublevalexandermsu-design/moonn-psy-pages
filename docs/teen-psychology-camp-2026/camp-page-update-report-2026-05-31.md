@@ -792,4 +792,19 @@ Verification:
 
 Follow-up:
 
-- Publish the updated HEAD loader that points to `1e9be6b`, then verify live HTML contains `20260604-teen-intensive-checkout-ru` and visual checkout labels render in Russian.
+- Completed via the Tilda Ace editor path rather than the accessibility field:
+  - `window.ace.edit("aceeditor_head")` read-back contained `20260604-teen-intensive-checkout-ru` and `@1e9be6b`;
+  - Tilda save title marker: `HEAD_UI_SAVED_140348786`;
+  - Tilda publish completed through page `140348786`.
+- Final live HTML check:
+  - `Book design`: absent;
+  - `20260604-teen-intensive-checkout-ru`: present;
+  - `@1e9be6b`: present;
+  - `@c0f3a6c`: present;
+  - old loader `@124c977`: absent.
+- Runtime checkout DOM check:
+  - status marker: `CARTCHECK_1111`;
+  - found `Имя родителя`;
+  - found `Email для подтверждения`;
+  - found `Телефон для связи`;
+  - found Russian checkout/submit text.
