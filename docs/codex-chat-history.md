@@ -2236,3 +2236,20 @@ Incident rule:
 - Notes:
   - `node_modules/` is ignored by package-local `.gitignore`.
   - This was a media asset build only; no Tilda publication was performed.
+
+## 2026-06-04 18:00 MSK - Remotion CLI and Studio Startup
+
+- Project: `moon-psy-site`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: install/enable Remotion CLI and standard Studio startup command before continuing video work.
+- Verified:
+  - `npm i @remotion/cli` completed successfully with `0` vulnerabilities.
+  - Local `@remotion/cli` dependency is now `^4.0.472`.
+  - Added standard `npm start` script: `remotion studio src/index.ts`.
+  - Remotion Studio started on `http://localhost:3000`.
+  - HTTP check for `http://localhost:3000` returned `200`.
+- Changed artifacts:
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/package.json`;
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/package-lock.json`.
+- Notes:
+  - Studio was left running for user preview.

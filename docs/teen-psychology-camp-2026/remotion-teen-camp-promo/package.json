@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts TeenCampPromo renders/teen-camp-promo-10s.mp4",
     "preview": "remotion studio src/index.ts"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.355",
+    "@remotion/cli": "^4.0.472",
     "@remotion/media-utils": "^4.0.355",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
