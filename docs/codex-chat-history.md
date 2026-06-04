@@ -2214,3 +2214,25 @@ Incident rule:
   - `e2a422c` - `Point teen intensive page to updated PDFs`;
   - `7e2ba45` - `Update teen intensive loader for PDF fix`.
 - Open blocker: live Tilda page-specific HEAD was not republished in this session because desktop-control/windows-mcp was unavailable and Rublev Chrome was not launched with CDP. Live HTML still has old marker and asset commit. Next action: publish page HEAD for Tilda page `140348786`, project `8326812`, through Rublev/Alexander Chrome GUI, then verify live marker `20260603-teen-intensive-pdf-address-fix`.
+
+## 2026-06-04 17:52 MSK - Teen Intensive Remotion Promo Video
+
+- Project: `moon-psy-site`.
+- Branch: `codex/moonn-camp-page-update`.
+- Request: create a short 10-second Remotion video for the teen intensive using user's MP4.
+- Source video:
+  - `C:\Users\yanta\Downloads\doc_2026-06-04_17-38-39.mp4`.
+- Created Remotion package:
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/`.
+- Output:
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/renders/teen-camp-promo-10s.mp4`.
+- Preview:
+  - `docs/teen-psychology-camp-2026/remotion-teen-camp-promo/renders/preview-frame-120.png`.
+- Verification:
+  - `npm install` completed with `0` vulnerabilities.
+  - `npm run render -- --log=error` completed.
+  - Windows file properties show duration `00:00:10`.
+  - Preview frame visually checked; text is readable and not cut off.
+- Notes:
+  - `node_modules/` is ignored by package-local `.gitignore`.
+  - This was a media asset build only; no Tilda publication was performed.
