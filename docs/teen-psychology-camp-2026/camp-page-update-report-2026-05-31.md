@@ -763,3 +763,33 @@ Open blocker:
 - Live Tilda page was not confirmed updated after the new loader because this Codex session did not expose desktop-control/windows-mcp and the open Rublev Chrome profile was not launched with a DevTools port.
 - Live HTML check still found old marker `20260603-teen-intensive-address-russian-materials`, old asset commit `52d2a5e`, and did not find new marker `20260603-teen-intensive-pdf-address-fix`.
 - Next bounded action: publish page-specific HEAD for Tilda page `140348786` in project `8326812` through the Rublev/Alexander Chrome GUI, then verify live HTML contains `20260603-teen-intensive-pdf-address-fix`, `@e2a422c`, and `@c0f3a6c`.
+
+## 2026-06-04 21:40 MSK - Tilda Live Placeholder And Checkout Labels
+
+Trigger: before Yandex Direct launch prep, the live Tilda editor showed an English placeholder text block and native English checkout labels.
+
+Changes made:
+
+- Enabled the Windows desktop-control path for the session and used the Rublev/Alexander Chrome GUI.
+- Removed the stray Tilda `TX01` English placeholder block from page `140348786`.
+- Published the Tilda page through the editor.
+- Added checkout label localization to the canonical teen intensive page HTML:
+  - `Your Name` / `Name` -> `Имя родителя`;
+  - `Your Email` / `Email` -> `Email для подтверждения`;
+  - `Your Phone` / `Phone` -> `Телефон для связи`;
+  - `Payment method` -> `Способ оплаты`;
+  - `Checkout` -> `Перейти к оплате`.
+- Updated canonical Tilda HEAD files to load page HTML commit `1e9be6b` with marker `20260604-teen-intensive-checkout-ru`.
+
+Verification:
+
+- Tilda GUI snapshot after delete showed block `TX01` absent and next block `ST100` visible.
+- Tilda publish popup showed live URL `https://мунн.рф/podrostkovyy-lager-psihologiya`.
+- Live HTML check with cache-busting query:
+  - `Book design`: absent;
+  - active loader commit `@124c977`: present before the Git loader update step;
+  - direct HEAD text insertion did not appear in live HTML, so the durable path was changed to a committed page HTML update and loader pointer update.
+
+Follow-up:
+
+- Publish the updated HEAD loader that points to `1e9be6b`, then verify live HTML contains `20260604-teen-intensive-checkout-ru` and visual checkout labels render in Russian.
