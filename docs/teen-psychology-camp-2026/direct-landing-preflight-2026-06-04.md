@@ -176,4 +176,4 @@ Screenshot artifacts:
 
 Remaining gated item:
 
-- Full raw-source removal of the single native `Payment method` string requires changing the payment-method setup. Tilda documentation says when two or more payment systems are connected, buyers can choose a payment method in the shopping cart; this site currently has T-Bank card payment and T-Bank installment enabled. Disabling one method or replacing native ST100 is a payment-path change and requires a separate money gate.
+- Full raw-source removal of the single native `Payment method` string requires changing the payment-method setup. Tilda documentation says when two or more payment systems are connected, buyers can choose a payment method in the shopping cart; this site currently has T-Bank card payment and T-Bank installment enabled. Source: `https://help.tilda.cc/online-store/payment-systems`. Disabling one method or replacing native ST100 is a payment-path change and requires a separate money gate.
