@@ -2410,3 +2410,28 @@ Incident rule:
   - This is a site-wide Tilda cleanup issue, not evidence that `Book design` or full English checkout fields remain on the intensive page.
 - Artifact:
   - `output/moonn-sitemap-technical-leftovers-2026-06-05.json`.
+
+## 2026-06-05 — Moonn schema domain migration for `мунн.рф`
+
+- Project: Moonn / teen psychology intensive and global schema layer.
+- Workstream: Direct landing preflight and domain continuity.
+- Request: change what was recommended after finding that GPT/bots still see problematic machine-layer remnants.
+- Verified facts:
+  - `https://xn--l1acaw.xn--p1ai/` and `https://мунн.рф/` return `200`.
+  - `https://moonn.ru/` does not resolve from this host.
+  - The intensive page's canonical and OG URL already point to `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`.
+  - Live HTML still had old `moonn.ru` references inside the duplicated `moonn-global-entity-schema` JSON-LD.
+- Action:
+  - Updated `scripts/build_moonn_schema_layer.py` to generate public schema URLs on `https://xn--l1acaw.xn--p1ai`.
+  - Regenerated `assets/moonn-schema-layer.js`.
+  - Regenerated `docs/moonn-schema-layer-packet-2026-05-08.json`.
+  - Preserved the real external Timepad profile URL `https://moonn.timepad.ru/events/`.
+- Local verification:
+  - `python -m py_compile scripts\build_moonn_schema_layer.py` passed.
+  - `python scripts\build_moonn_schema_layer.py` regenerated `83` page schemas.
+  - `node --check assets\moonn-schema-layer.js` passed.
+  - The generated JS/packet no longer contain direct `https://moonn.ru` schema URLs.
+- Publication gate:
+  - The live Tilda page currently pins the schema layer to an old jsDelivr commit. Git changes alone are not live until the Tilda HEAD reference is updated and the page is republished.
+- Incident rule:
+  - For domain migrations, verify canonical/OG and JSON-LD separately. A page can have correct canonical tags while still exposing stale organization/person schema from a global HEAD asset.

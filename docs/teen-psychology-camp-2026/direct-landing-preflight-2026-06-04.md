@@ -209,3 +209,26 @@ Conclusion:
 - The intensive page is not currently the source of `Book design`, `Your Name`, `Your Email`, `Your Phone`, `Checkout`, or `Made on Tilda`.
 - GPT's report is likely mixing current intensive-page raw HTML, generic Tilda library strings, and other indexed site pages.
 - For Yandex Direct to this intensive page, the remaining page-level issue is the single native ST100 `Payment method` raw string; full site-wide cleanup is a separate workstream.
+
+## 2026-06-05 domain/schema cleanup
+
+After the page-level placeholder check, the live intensive HTML still exposed old `moonn.ru` references through the duplicated global JSON-LD schema layer, even though the current public domain is `мунн.рф` / `xn--l1acaw.xn--p1ai`.
+
+Local fix:
+
+- updated `scripts/build_moonn_schema_layer.py` so the generated public schema base is `https://xn--l1acaw.xn--p1ai`;
+- regenerated `assets/moonn-schema-layer.js`;
+- regenerated `docs/moonn-schema-layer-packet-2026-05-08.json`;
+- kept the real Timepad account URL `https://moonn.timepad.ru/events/`.
+
+Local verification:
+
+- `python -m py_compile scripts\build_moonn_schema_layer.py`: passed;
+- `python scripts\build_moonn_schema_layer.py`: regenerated `83` page schemas;
+- `node --check assets\moonn-schema-layer.js`: passed;
+- direct `https://moonn.ru` references are absent from the generated JS/packet.
+
+Publication gate:
+
+- Tilda live HTML still depends on the jsDelivr commit pinned in page/global HEAD.
+- The new schema layer must be committed, pushed, then the Tilda HEAD reference must be updated to the new commit and the page republished before live verification can pass.

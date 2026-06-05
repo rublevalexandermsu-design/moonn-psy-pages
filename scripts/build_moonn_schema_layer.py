@@ -16,8 +16,11 @@ OUT_MD = DOCS / "moonn-schema-layer-packet-2026-05-08.md"
 OUT_JS = ASSETS / "moonn-schema-layer.js"
 
 
-PERSON_ID = "https://moonn.ru/#tatiana-munn"
-WEBSITE_ID = "https://moonn.ru/#website"
+OLD_SITE_BASE = "https://moonn.ru"
+PUBLIC_SITE_BASE = "https://xn--l1acaw.xn--p1ai"
+PUBLIC_SITE_ROOT = f"{PUBLIC_SITE_BASE}/"
+PERSON_ID = f"{PUBLIC_SITE_BASE}/#tatiana-munn"
+WEBSITE_ID = f"{PUBLIC_SITE_BASE}/#website"
 YANDEX_SERVICES_PROFILE_URL = "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629"
 YANDEX_SERVICES_REVIEW_URL = YANDEX_SERVICES_PROFILE_URL + "?action=addReview"
 
@@ -32,9 +35,9 @@ PERSON = {
         "Tatiana Kumskova",
     ],
     "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
-    "url": "https://moonn.ru/",
+    "url": PUBLIC_SITE_ROOT,
     "sameAs": [
-        "https://moonn.ru/",
+        PUBLIC_SITE_ROOT,
         "https://moonn.timepad.ru/events/",
         "https://miiiips.ru/author-tatyana-munn-kumskova.html",
         YANDEX_SERVICES_PROFILE_URL,
@@ -83,9 +86,9 @@ YANDEX_REVIEW_SUMMARIES = [
 WEBSITE = {
     "@type": "WebSite",
     "@id": WEBSITE_ID,
-    "url": "https://moonn.ru/",
+    "url": PUBLIC_SITE_ROOT,
     "name": "Татьяна Мунн",
-    "alternateName": "Moonn.ru",
+    "alternateName": "мунн.рф",
     "publisher": {"@id": PERSON_ID},
     "inLanguage": "ru-RU",
 }
@@ -166,6 +169,16 @@ def normalized_path(url: str) -> str:
     return path
 
 
+def public_site_url(url: str) -> str:
+    if url == f"{OLD_SITE_BASE}/":
+        return PUBLIC_SITE_ROOT
+    if url == OLD_SITE_BASE:
+        return PUBLIC_SITE_BASE
+    if url.startswith(f"{OLD_SITE_BASE}/"):
+        return f"{PUBLIC_SITE_BASE}/{url[len(OLD_SITE_BASE) + 1:]}"
+    return url
+
+
 def compact(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
@@ -220,14 +233,16 @@ def description(page: dict, subject: str) -> str:
 
 
 def breadcrumbs(url: str, subject: str) -> dict:
-    items = [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://moonn.ru/"}]
-    if url.rstrip("/") != "https://moonn.ru":
-        items.append({"@type": "ListItem", "position": 2, "name": subject, "item": url})
-    return {"@type": "BreadcrumbList", "@id": f"{url.rstrip('/')}#breadcrumbs", "itemListElement": items}
+    public_url = public_site_url(url)
+    items = [{"@type": "ListItem", "position": 1, "name": "Главная", "item": PUBLIC_SITE_ROOT}]
+    if public_url.rstrip("/") != PUBLIC_SITE_BASE:
+        items.append({"@type": "ListItem", "position": 2, "name": subject, "item": public_url})
+    return {"@type": "BreadcrumbList", "@id": f"{public_url.rstrip('/')}#breadcrumbs", "itemListElement": items}
 
 
 def page_graph(page: dict) -> dict:
-    url = page["url"].rstrip("/") if page["url"] != "https://moonn.ru/" else page["url"]
+    page_url = public_site_url(page["url"])
+    url = page_url.rstrip("/") if page_url != PUBLIC_SITE_ROOT else page_url
     subject = cleanup_subject(page)
     title = compact(page.get("title") or subject)
     desc = description(page, subject)
@@ -236,7 +251,7 @@ def page_graph(page: dict) -> dict:
     web_page = {
         "@type": "WebPage",
         "@id": f"{url.rstrip('/')}#webpage",
-        "url": page["url"],
+        "url": page_url,
         "name": title,
         "description": desc,
         "isPartOf": {"@id": WEBSITE_ID},
@@ -251,7 +266,7 @@ def page_graph(page: dict) -> dict:
                 "@type": "ProfessionalService",
                 "@id": f"{url.rstrip('/')}#service",
                 "name": subject,
-                "url": page["url"],
+                "url": page_url,
                 "provider": {"@id": PERSON_ID},
                 "areaServed": ["Москва", "Онлайн"],
                 "description": desc,
@@ -263,7 +278,7 @@ def page_graph(page: dict) -> dict:
                 "@type": "Article",
                 "@id": f"{url.rstrip('/')}#article",
                 "headline": title,
-                "url": page["url"],
+                "url": page_url,
                 "description": desc,
                 "author": {"@id": PERSON_ID},
                 "publisher": {"@id": PERSON_ID},
@@ -277,7 +292,7 @@ def page_graph(page: dict) -> dict:
                 "@type": "ItemList",
                 "@id": f"{url.rstrip('/')}#lecture-list",
                 "name": subject,
-                "url": page["url"],
+                "url": page_url,
                 "description": desc,
                 "itemListElement": [],
             }
@@ -287,7 +302,7 @@ def page_graph(page: dict) -> dict:
         graph.append(
             {
                 "@type": "ProfilePage",
-                "@id": "https://moonn.ru/otzivi#yandex-services-profile",
+                "@id": f"{PUBLIC_SITE_BASE}/otzivi#yandex-services-profile",
                 "url": YANDEX_SERVICES_PROFILE_URL,
                 "name": "Профиль Татьяны Кумсковой (Мунн) на Яндекс Услугах",
                 "about": {"@id": PERSON_ID},
@@ -302,9 +317,9 @@ def page_graph(page: dict) -> dict:
         graph.append(
             {
                 "@type": "ItemList",
-                "@id": "https://moonn.ru/otzivi#verified-yandex-review-summaries",
+                "@id": f"{PUBLIC_SITE_BASE}/otzivi#verified-yandex-review-summaries",
                 "name": "Проверяемые отзывы о Татьяне Мунн с источником на Яндекс Услугах",
-                "url": page["url"],
+                "url": page_url,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
@@ -324,7 +339,7 @@ def page_graph(page: dict) -> dict:
                 ],
             }
         )
-    graph.append(breadcrumbs(page["url"], subject))
+    graph.append(breadcrumbs(page_url, subject))
     return {"@context": "https://schema.org", "@graph": graph}
 
 
