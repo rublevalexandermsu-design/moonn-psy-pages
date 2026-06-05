@@ -2469,3 +2469,26 @@ Incident rule:
   - The successful path was: set `aceeditor`/real `textarea[name="headcode"]`, then call Tilda's native `td__projectheadcode__saveCode()`, then reopen the editor and verify the server value.
 - Residual:
   - Published HTML still repeats the current-domain global/schema markers because Tilda injects global HEAD copies, but old `moonn.ru` schema URLs are gone from the checked live page.
+
+## 2026-06-05 — Teen intensive Direct preflight recheck after GPT leftover report
+
+- Project: Moonn / teen psychology intensive Tilda page.
+- Workstream: Direct landing preflight for page `140348786`, project `8326812`.
+- Request: continue checking GPT's report that the live page still has `Book design`, English form labels, `Payment method`, `Checkout`, and `Made on Tilda`.
+- Live raw HTML verification on `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`:
+  - `Book design is the art`: `0`;
+  - `Your Name`: `0`;
+  - `Your Email`: `0`;
+  - `Your Phone`: `0`;
+  - `Checkout`: `0`;
+  - `Payment method`: `1`;
+  - `Made on Tilda`: phrase split across Tilda label markup as `Made on ` + Tilda image + `Tilda`.
+- Current real residuals:
+  - Native Tilda ST100 payment-system title still exposes one raw `Payment method` in HTML near `Visa, МИР, Mastercard через T-Bank` and `Рассрочка Т-Банк`.
+  - Native Tilda footer label is present as `t-tildalabel` / `tildacopy`.
+- Boundary / decision:
+  - Do not remove a payment method or replace the native Tilda payment flow without explicit money-path approval.
+  - Do not hide `Made on Tilda` with CSS. Official Tilda help says the supported path is `Настройки сайта -> Еще -> Platform Label -> Не выводить`, available with annual subscription, then save and republish pages.
+- Next action:
+  - If the Tilda account has the annual subscription option, disable `Platform Label` in site settings and republish.
+  - Treat the raw `Payment method` as a native Tilda ST100 residual unless the payment path is deliberately redesigned or only one payment method is left enabled.
