@@ -36,3 +36,28 @@ Next action:
 1. Regenerate the exposed OAuth client secret in Yandex ID after this access path is stable.
 2. Run read-only Direct account discovery: campaigns, ad groups, ads, keywords, funds/status.
 3. Do not create or modify campaigns until the landing/payment/Metрика launch gate is closed.
+
+## 2026-06-05 read-only discovery and draft package
+
+- Read-only Direct discovery was run through API for login `yantaria`.
+- Current Direct account state:
+  - campaigns: `0`;
+  - ad groups: `0`;
+  - ads: `0`;
+  - keywords: `0`;
+  - API errors: none.
+- Discovery artifact: `output/yandex-direct-readonly-discovery-2026-06-05.json`.
+- GPT export used for context: `C:\Users\yanta\Downloads\chat_export_yandex_direct.json`.
+- API-ready draft package generated:
+  - JSON: `docs/yandex-direct-teen-intensive-package-2026-06-05.json`;
+  - Markdown: `docs/yandex-direct-teen-intensive-package-2026-06-05.md`;
+  - campaigns: `5`;
+  - search groups: `10`;
+  - network groups: `4`;
+  - search text ads: `32`.
+- Validation:
+  - basic text limits passed for search ads: title <= 56, title2 <= 30, text <= 81.
+- Launch boundary:
+  - Do not create/start campaigns, send ads to moderation, enable retargeting, or change money-path settings without explicit owner confirmation.
+  - Retargeting remains blocked until Metrika goals and consent checks are complete.
+  - RSYA upload remains blocked until final image assets are selected/generated and approved.
