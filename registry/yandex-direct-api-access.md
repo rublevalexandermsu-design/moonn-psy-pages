@@ -242,3 +242,45 @@ Next action:
   - use overlay text, but do not let it dominate the creative.
 - Launch boundary remains:
   - no ad groups, ads, keywords, retargeting, budget changes, payment changes, moderation launch, or campaign start were performed.
+
+## 2026-06-06 Tilda publication of Metrika-instrumented landing build
+
+- Git commits:
+  - `179d540` - canonical Tilda page files include `lead_submit`, `payment_submit`, and `payment_success`;
+  - `15913c5` - canonical Tilda HEAD loader files point to the `179d540` page build.
+- Tilda GUI action:
+  - Opened `https://tilda.ru/projects/editheadcode/?projectid=8326812&pageid=140348786`;
+  - wrote the full `docs/teen-psychology-camp-2026/tilda-head-loader-final.html` value into `aceeditor_head`;
+  - saved through the Tilda page HEAD editor;
+  - reopened the editor and verified persisted server value contains:
+    - `20260605-teen-intensive-metrika-goals`;
+    - `@179d540`;
+    - no `20260604-teen-intensive-direct-preflight`;
+  - opened page editor `https://tilda.ru/page/?pageid=140348786&projectid=8326812` and clicked `Опубликовать`.
+- Live raw HTML check after publish:
+  - URL: `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya?utm_source=yandex&utm_medium=cpc&utm_campaign=codex_live_check&utm_content=landing_check&utm_term=test`;
+  - `20260605-teen-intensive-metrika-goals`: present;
+  - `@179d540`: present;
+  - old marker `20260604-teen-intensive-direct-preflight`: absent;
+  - `Book design`: absent;
+  - `Your Name`: absent;
+  - exact raw `Checkout`: absent;
+  - `Made on Tilda` / `tildacopy` / `t-tildalabel`: absent.
+- Live raw residual:
+  - one native Tilda checkout string `Payment method` remains in raw ST100 checkout HTML;
+  - the loaded page runtime localizes this label to `Способ оплаты` in the visible cart UI.
+- CDN page build check:
+  - URL: `https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@179d540/docs/teen-psychology-camp-2026/tilda-page-final.html?v=20260605-teen-intensive-metrika-goals`;
+  - `lead_submit`: present;
+  - `payment_submit`: present;
+  - `payment_success`: present;
+  - raw `Payment method`: absent;
+  - `Способ оплаты`: present.
+- Rendered headless check:
+  - attempted with bundled Node/Playwright;
+  - blocked because this runtime's `playwright` package could not resolve `playwright-core`;
+  - do not count that as passed visual/rendered verification.
+- Current launch gate:
+  - page is materially improved and published;
+  - Metrika explicit goals still need to be created/tested before conversion-optimized Direct launch;
+  - campaign structures remain draft/off.

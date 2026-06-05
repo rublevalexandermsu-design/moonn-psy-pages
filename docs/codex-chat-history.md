@@ -2492,3 +2492,40 @@ Incident rule:
 - Next action:
   - If the Tilda account has the annual subscription option, disable `Platform Label` in site settings and republish.
   - Treat the raw `Payment method` as a native Tilda ST100 residual unless the payment path is deliberately redesigned or only one payment method is left enabled.
+
+## 2026-06-06 — Teen intensive Direct landing events and Tilda republish
+
+- Project: Moonn / teen psychology intensive Tilda page.
+- Workstream: Yandex Direct landing and conversion tracking preflight.
+- Request: continue using browser/desktop tools, set an overnight continuation, and finish Tilda/Direct preparation without launching ads.
+- Decisions:
+  - Do not launch campaigns, set budgets, upload ads, send moderation, enable retargeting or change payment systems without a separate owner launch approval.
+  - Add low-risk JavaScript events to the landing page and publish them through the existing Tilda HEAD loader.
+  - Treat Metrika API goal creation as blocked until OAuth has Metrika management rights; current Direct OAuth token returns `403` for Metrika endpoints.
+  - Use video and text-overlay creatives for RSYA tests, but keep overlay text compact and non-medical.
+- Changed artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`
+  - `docs/yandex-metrika-teen-intensive-goals-2026-06-05.md`
+  - `docs/yandex-direct-rsya-video-and-overlay-standard-2026-06-05.md`
+  - `registry/yandex-direct-api-access.md`
+- Tilda publication:
+  - Commit `179d540` contains the updated page build with `lead_submit`, `payment_submit` and `payment_success`.
+  - Commit `15913c5` updates local Tilda HEAD loader files to point to `@179d540`.
+  - Page HEAD editor `editheadcode/?projectid=8326812&pageid=140348786` was updated through `aceeditor_head`, saved, reopened and read back.
+  - Page `140348786` was opened and `Опубликовать` clicked.
+- Verification:
+  - Live raw HTML contains `20260605-teen-intensive-metrika-goals` and `@179d540`.
+  - Live raw HTML no longer contains old marker `20260604-teen-intensive-direct-preflight`.
+  - Live raw HTML check: `Book design`, `Your Name`, exact `Checkout`, `Made on Tilda`, `tildacopy`, `t-tildalabel` absent.
+  - CDN page build `@179d540` contains `lead_submit`, `payment_submit`, `payment_success`, and `Способ оплаты`.
+  - Native raw Tilda checkout still contains one `Payment method` string in ST100; runtime localizes visible checkout UI.
+  - Headless Playwright rendered check was attempted but not counted because bundled Node package `playwright` could not resolve `playwright-core`.
+- Automation:
+  - Overnight continuation automation was created for 2026-06-06 00:30 with safe boundaries: continue checking Tilda/Metrika/Direct, but do not launch ads or change budgets/payments without fresh confirmation.
+- Open blockers:
+  - Create explicit Metrika goals after Metrika OAuth scope/API rights are available or via stable GUI flow.
+  - Manually test at least click goals and payment-start before any conversion-optimized Direct launch.
+  - Rendered checkout/mobile verification should still be repeated with a working browser automation path or manual GUI path.
