@@ -1072,6 +1072,35 @@
         }
       }
 
+      function bindTeenCampFormSuccessGoals() {
+        if (document.body.dataset.teenCampFormGoalsBound === '1') return;
+        document.body.dataset.teenCampFormGoalsBound = '1';
+        var sent = {};
+        function sendOnce(goalName, params) {
+          if (sent[goalName]) return;
+          sent[goalName] = true;
+          reachTeenCampGoal(goalName, params || {});
+        }
+        document.addEventListener('tildaform:aftersuccess', function(event) {
+          sendOnce('lead_submit', { source: 'tildaform_aftersuccess' });
+          var form = event && event.target && event.target.closest && event.target.closest('form');
+          if (form && form.closest('.t706__cartwin, .t706')) sendOnce('payment_success', { source: 'tilda_checkout_success' });
+        }, true);
+        document.addEventListener('submit', function(event) {
+          var form = event.target;
+          if (form && form.closest && form.closest('.t706__cartwin, .t706')) {
+            reachTeenCampGoal('payment_submit', { source: 'tilda_checkout_submit' });
+          }
+        }, true);
+        var observer = new MutationObserver(function() {
+          var successBox = document.querySelector('.t-form__successbox:not([style*="display: none"]), .js-successbox:not([style*="display: none"])');
+          if (!successBox) return;
+          var inCart = successBox.closest && successBox.closest('.t706__cartwin, .t706');
+          sendOnce(inCart ? 'payment_success' : 'lead_submit', { source: inCart ? 'successbox_cart' : 'successbox_form' });
+        });
+        observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+      }
+
       function bindTeenCampMetrikaGoals() {
         if (document.body.dataset.teenCampMetrikaGoalsBound === '1') return;
         document.body.dataset.teenCampMetrikaGoalsBound = '1';
@@ -1148,6 +1177,7 @@
       setTimeout(repairTildaOrderFormHandlers, 1500);
       setTimeout(localizeTildaPaymentFields, 1600);
       bindTeenCampMetrikaGoals();
+      bindTeenCampFormSuccessGoals();
       setInterval(enhanceTildaPaymentUi, 1500);
       document.addEventListener('click', function(event) {
         var orderLink = event.target && event.target.closest && event.target.closest('a[href^="#order:"]');

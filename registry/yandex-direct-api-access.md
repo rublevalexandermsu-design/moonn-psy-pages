@@ -199,3 +199,46 @@ Next action:
   - residual raw Tilda checkout string: one `Payment method`.
 - Launch boundary remains:
   - do not upload creatives, create ad groups/ads/keywords, set budgets, send to moderation, or start campaigns until explicit owner approval.
+
+## 2026-06-05 landing events, Metrika API blocker, and video creative standard
+
+- Canonical landing instrumentation updated:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`.
+- Added explicit event handling for:
+  - `lead_submit`;
+  - `payment_submit`;
+  - `payment_success`.
+- Existing event handling remains:
+  - `lead_click`;
+  - `click_telegram`;
+  - `click_whatsapp`;
+  - `click_phone`;
+  - `program_view`;
+  - `pdf_download`;
+  - `payment_start`.
+- Local JS extraction check passed for both canonical Tilda HTML files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`: `2` scripts parsed successfully;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`: `2` scripts parsed successfully.
+- Metrika API recheck with the current local OAuth token:
+  - `https://api-metrika.yandex.net/management/v1/counters`: `403`;
+  - `https://api-metrika.yandex.net/management/v1/counter/96397286/goals`: `403`.
+- Current conclusion:
+  - Direct API access is approved;
+  - the current OAuth token still lacks Metrika management rights;
+  - explicit Metrika goals are specified but not created through API in this pass.
+- Goal specification:
+  - `docs/yandex-metrika-teen-intensive-goals-2026-06-05.md`.
+- RSYA/video standard:
+  - `docs/yandex-direct-rsya-video-and-overlay-standard-2026-06-05.md`.
+- Official Yandex documentation URLs checked as reachable on 2026-06-05:
+  - `https://yandex.com/support/direct/ru/efficiency/video`: `200`;
+  - `https://yandex.ru/support/direct/ru/moderation/ad-rules`: `200`;
+  - `https://yandex.com/support/direct/ru/moderation/adv-rules`: `200`.
+- Video recommendation:
+  - test short `10-15 sec` videos in `16:9`, `1:1`, and `9:16`;
+  - make the offer readable in the first `6-10 sec`;
+  - keep the video understandable without sound;
+  - use overlay text, but do not let it dominate the creative.
+- Launch boundary remains:
+  - no ad groups, ads, keywords, retargeting, budget changes, payment changes, moderation launch, or campaign start were performed.
