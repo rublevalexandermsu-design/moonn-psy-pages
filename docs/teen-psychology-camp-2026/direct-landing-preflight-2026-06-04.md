@@ -177,3 +177,35 @@ Screenshot artifacts:
 Remaining gated item:
 
 - Full raw-source removal of the single native `Payment method` string requires changing the payment-method setup. Tilda documentation says when two or more payment systems are connected, buyers can choose a payment method in the shopping cart; this site currently has T-Bank card payment and T-Bank installment enabled. Source: `https://help.tilda.cc/online-store/payment-systems`. Disabling one method or replacing native ST100 is a payment-path change and requires a separate money gate.
+
+## 2026-06-05 GPT bot discrepancy recheck
+
+After GPT reported `Book design`, `Your Name`, `Your Email`, `Your Phone`, `Payment method`, `Checkout`, `Made on Tilda`, the intensive page was rechecked with `GPTBot/1.2` across punycode, Cyrillic, trailing-slash and `www` URL variants.
+
+Result for the intensive page:
+
+- HTTP status: `200`;
+- same HTML length across tested agents/domains;
+- `Book design is the art`: `0`;
+- `Book design`: `0`;
+- `Your Name`: `0`;
+- `Your Email`: `0`;
+- `Your Phone`: `0`;
+- `Checkout`: `0`;
+- `Made on Tilda`: `0`;
+- `Payment method`: `1`.
+
+Additional finding:
+
+- `Payment method` and `Checkout` exist in standard Tilda JS libraries, especially `https://static.tildacdn.com/js/tilda-cart-1.1.min.js`, not only in page content.
+- A sitemap-wide scan found legacy Tilda defaults on other indexed site pages:
+  - `/events_tp`: `Your Name`, `Your Email`, `Your Phone`, `Payment method`, `Checkout`;
+  - `/kartiny-tatiany-munn`: `Your Name`, `Your Email`, `Your Phone`, `Payment method`, `Checkout`;
+  - several article pages contain `Your Email`;
+  - homepage, `/psiholog-tatiana-moonn`, `/seminar555` contain `Payment method`.
+
+Conclusion:
+
+- The intensive page is not currently the source of `Book design`, `Your Name`, `Your Email`, `Your Phone`, `Checkout`, or `Made on Tilda`.
+- GPT's report is likely mixing current intensive-page raw HTML, generic Tilda library strings, and other indexed site pages.
+- For Yandex Direct to this intensive page, the remaining page-level issue is the single native ST100 `Payment method` raw string; full site-wide cleanup is a separate workstream.
