@@ -193,3 +193,11 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 7. `P0` Do not claim traffic growth on `мунн.рф` from legacy `moonn.ru` GSC/Metrika data. Reports must separate `legacy-domain analytics` and `new-domain live checks`.
 8. `P0` New-domain local audit found SEO blockers: five scoped pages return HTTP `200`, but are not detected in `https://мунн.рф/sitemap.xml` and still show `canonical_mismatch`. Fix Tilda/domain canonical and sitemap behavior before calling SEO migration complete.
 9. `P0` New-domain privacy smoke check found `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` as `404` and forms without detected checkbox signals on the first 8 URLs. This remains a legal/publication gate, not a silent SEO task.
+
+## 2026-06-05 — `мунн.рф` Daily Supervisor
+
+1. `P0` Canonical migration is still incomplete on all 5 live pages: current live `мунн.рф` responses keep canonical tags on legacy `https://moonn.ru/...`. Fix in Tilda Page settings SEO before any reindex claim.
+2. `P0` GSC property for `мунн.рф` is still not verified for the current operator: GUI opened `Oops, you don't have access to this property` for `sc-domain:xn--l1acaw.xn--p1ai`.
+3. `P0` Camp page AEO regression persists on the live domain: rendered answer block is `0` on `/podrostkovyy-lager-psihologiya`, while the other 4 pages remain `1`.
+4. `P1` New-domain visibility technically improved: the five scoped URLs are now visible in `https://мунн.рф/sitemap.xml` and are not blocked by `robots.txt`, so the remaining migration blockers are canonical/property/access rather than raw reachability.
+5. `P1` Source cleanup debt remains unchanged: raw placeholders on camp/gallery, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.

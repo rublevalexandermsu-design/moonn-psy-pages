@@ -59,7 +59,8 @@
         "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
         "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
         "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json.",
-        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json."
+        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json.",
+        "2026-06-05: Live `мунн.рф` recheck from this host is technically reachable again (HTTP 200, sitemap true, robots false), but all five pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`; camp page rendered answer block is `0`; GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-05.json and docs/moonn-seo-growth-check-2026-06-05.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -117,7 +118,8 @@
         "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
         "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
         "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json.",
-        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json."
+        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json.",
+        "2026-06-05: Live `мунн.рф` recheck from this host is technically reachable again (HTTP 200, sitemap true, robots false), but all five pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`; GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-05.json and docs/moonn-seo-growth-check-2026-06-05.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -175,7 +177,8 @@
         "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
         "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
         "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json.",
-        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json."
+        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json.",
+        "2026-06-05: Live `мунн.рф` recheck from this host is technically reachable again (HTTP 200, sitemap true, robots false), but all five pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`; GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-05.json and docs/moonn-seo-growth-check-2026-06-05.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -234,7 +237,8 @@
         "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
         "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
         "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json.",
-        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json."
+        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json.",
+        "2026-06-05: Live `мунн.рф` recheck from this host is technically reachable again (HTTP 200, sitemap true, robots false), but all five pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`; GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-05.json and docs/moonn-seo-growth-check-2026-06-05.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -292,10 +296,11 @@
         "2026-05-31: Infra/DNS blocker persists on supervisor host: `moonn.ru` cannot be resolved (NXDOMAIN / `DNS-имя не существует` / `Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-05-31.json.",
         "2026-06-01: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-01.json.",
         "2026-06-02: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-02.json.",
-        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json."
+        "2026-06-03: Infra/DNS blocker persists on supervisor host: `moonn.ru` still cannot be resolved (`Errno 11001 getaddrinfo failed`), so live checks for the five pages are invalid in this run. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-03.json.",
+        "2026-06-05: Live `мунн.рф` recheck from this host is technically reachable again (HTTP 200, sitemap true, robots false), but all five pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`; GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-05.json and docs/moonn-seo-growth-check-2026-06-05.md."
       ],
       "publicationDate": "2026-05-21"
     }
   ],
-  "lastUpdatedAt": "2026-06-03T09:06:00+03:00"
+  "lastUpdatedAt": "2026-06-05T10:58:00+03:00"
 }

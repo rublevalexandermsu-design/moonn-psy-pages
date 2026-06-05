@@ -1925,6 +1925,45 @@ Append-only project history for `moon-psy-site`.
 - Open blocker:
   - External Google Search Console, Yandex.Webmaster, Yandex.Metrika and Google Analytics settings require authenticated cabinet confirmation before reporting them as created or changed.
 
+## 2026-06-05 10:58 MSK — Supervisor Run: `мунн.рф` live audit + GSC property blocker
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run with the current live-domain contract for `мунн.рф`.
+- Route:
+  - the open repo copy stayed on an unrelated branch/worktree, so supervisor work continued in the canonical worktree for `codex/moonn-seo-audit`;
+  - live checks used `https://xn--l1acaw.xn--p1ai/` technically and reported results as `мунн.рф`.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-05`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves on this host;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`;
+  - `https://xn--l1acaw.xn--p1ai/sitemap.xml` contains all 5 scoped URLs in this run;
+  - `robots.txt` does not block the 5 scoped URLs;
+  - all 5 pages still expose `canonical_mismatch` to legacy `https://moonn.ru/...`;
+  - camp page rendered answer block is still `0`, while the other 4 pages render `1`;
+  - raw placeholders remain on camp and gallery pages; missing raw image `alt` remains across all 5 pages;
+  - local canon is still intact: `assets/moonn-five-page-seo-sprint-layer.js` exists and git object `49a093e` resolves.
+- GUI-only verification:
+  - in the real `Alexander` Chrome profile, opening the GSC route for `sc-domain:xn--l1acaw.xn--p1ai` showed `Oops, you don't have access to this property`;
+  - therefore new-domain GSC property access is blocked in this run and traffic migration is not proven.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.md`
+  - `docs/moonn-seo-growth-check-2026-06-05.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no canonical rewrites;
+  - no privacy/legal edits;
+  - no GSC/Yandex reindex submission;
+  - no 83-URL batch actions;
+  - no cabinet settings changes.
+- Next action:
+  - fix native Tilda canonical on the five scoped pages, inspect the camp AEO block on `мунн.рф`, and only then request scoped reindex after `мунн.рф` property access is confirmed in GSC/Yandex.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
