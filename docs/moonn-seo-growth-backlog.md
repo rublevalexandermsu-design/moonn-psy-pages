@@ -193,3 +193,16 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 7. `P0` Do not claim traffic growth on `мунн.рф` from legacy `moonn.ru` GSC/Metrika data. Reports must separate `legacy-domain analytics` and `new-domain live checks`.
 8. `P0` New-domain local audit found SEO blockers: five scoped pages return HTTP `200`, but are not detected in `https://мунн.рф/sitemap.xml` and still show `canonical_mismatch`. Fix Tilda/domain canonical and sitemap behavior before calling SEO migration complete.
 9. `P0` New-domain privacy smoke check found `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` as `404` and forms without detected checkbox signals on the first 8 URLs. This remains a legal/publication gate, not a silent SEO task.
+
+## 2026-06-05 — Live `мунн.рф` Supervisor Run
+
+1. `OK` New-domain live lane is now reachable from this host: `https://xn--l1acaw.xn--p1ai/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, `sitemap.xml`, and `robots.txt` all returned HTTP `200`.
+2. `OK` Daily five-page rendered audit for the live domain succeeded and wrote:
+   - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.json`
+   - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.md`
+3. `P0` Canonical drift persists on all five approved `мунн.рф` pages: each still points canonical to legacy `https://moonn.ru/...`. Do not call domain migration complete until canonicals are moved to `мунн.рф`.
+4. `P0` Camp-page live drift persists on `мунн.рф`: rendered answer block is `0`, and the rendered H1 now differs from the SEO sprint target. This needs a single-page Tilda/source investigation before any wider SEO interpretation.
+5. `P0` New-domain property blocker remains: no verified GSC or Yandex.Webmaster property for `https://мунн.рф/` was confirmed in this run, so `новая property не подтверждена, traffic migration не доказан`.
+6. `P0` Privacy publication gap remains on the live domain: `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` all still return `404`; full privacy script should rerun on Monday or after approved publication work.
+7. `P1` Source hygiene debt remains across the five-page scope: raw H1 anomalies, placeholder remnants on camp/gallery, and missing image `alt` on all five pages.
+8. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked: canonical repo+PR URL is still missing in this repo context.

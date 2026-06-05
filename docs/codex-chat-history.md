@@ -1925,6 +1925,46 @@ Append-only project history for `moon-psy-site`.
 - Open blocker:
   - External Google Search Console, Yandex.Webmaster, Yandex.Metrika and Google Analytics settings require authenticated cabinet confirmation before reporting them as created or changed.
 
+## 2026-06-05 10:45 MSK — Supervisor Run: live `мунн.рф` lane recovered, canonical/privacy drift exposed
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-seo-privacy-supervisor`.
+- Route:
+  - current checkout was unrelated (`codex/moonn-camp-page-update`);
+  - canonical branch `codex/moonn-seo-audit` was occupied by another local worktree;
+  - run was isolated to `codex/moonn-seo-supervisor-20260605` from `origin/codex/moonn-seo-audit` to avoid mixing camp and supervisor workstreams.
+- Read first:
+  - `docs/codex-chat-history.md`
+  - `docs/moonn-seo-growth-check-2026-05-20.md`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/moonn-gsc-yandex-reindex-report-2026-05-08.json`
+  - `docs/moonn-rkn-compliance-rollout-plan-2026-05-08.md`
+  - `docs/moonn-privacy-publication-packet-2026-05-08.md`
+  - automation memory and the 2026-06-04 supervisor contract summary
+- Verified:
+  - live `https://xn--l1acaw.xn--p1ai/` now resolves and returns HTTP `200` for `/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, `sitemap.xml`, `robots.txt`;
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai` wrote `docs/moonn-five-page-seo-sprint-audit-2026-06-05.{json,md}`;
+  - all five approved `мунн.рф` pages return `200`, are in sitemap, are not blocked by robots, and render one H1;
+  - all five approved `мунн.рф` pages still canonicalize to legacy `https://moonn.ru/...`;
+  - camp page still has rendered answer block `0`, and its rendered H1 drifted to the new intensive wording;
+  - live privacy endpoints `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` still return `404`.
+- Analytics / cabinets:
+  - no new committed exports for GSC / Yandex.Webmaster / Yandex.Metrika were found for the requested custom period;
+  - bounded `windows-mcp` GUI fallback was attempted, but no fresh cabinet aggregates were collected in this run;
+  - legacy `moonn.ru` cabinet evidence therefore remains the latest committed `2026-06-03` data and must stay labeled legacy.
+- Changed artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-05.md`
+  - `docs/moonn-seo-growth-check-2026-06-05.md`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no legal/privacy publication;
+  - no GSC/Yandex reindex submission;
+  - no screenshots saved or committed.
+- Next action:
+  - verify `мунн.рф` GSC/Yandex properties, then fix canonical drift and rerun the bounded five-page audit before any new-domain traffic conclusions.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
