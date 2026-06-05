@@ -100,3 +100,102 @@ Next action:
   - Budgets must be set/confirmed at final launch stage; shell creation used strategy-level limits only because API rejected `DailyBudget` with the chosen non-manual strategy.
 - Creative prompt artifact:
   - `docs/yandex-direct-rsya-photo-prompts-2026-06-05.md`.
+
+## 2026-06-05 landing label, Metrika goals, and RSYA creative preflight
+
+- Tilda platform label:
+  - Project settings `Platform label` changed from `Черный` to `Не выводить`.
+  - Page `140348786` was republished.
+  - Live HTML verification after publish:
+    - `tildacopy`: `0`;
+    - `t-tildalabel`: `0`;
+    - `Made on Tilda`: `0`;
+    - `Made on`: `0`;
+    - `Book design`, `Your Name`, `Your Email`, `Your Phone`, `Checkout`: `0`.
+- Tilda checkout residual:
+  - One raw `Payment method` string remains inside the native Tilda payment-method group.
+  - Site language is already `Русский`.
+  - The residual appears only in generated checkout markup when multiple payment systems are enabled.
+  - Payment-system changes were not made because disabling/changing payment options is a money-path action.
+- Metrika:
+  - Live page counter detected: `96397286`.
+  - Counter was found in Yandex Metrika account as `Счетчик 1`, site `www.moonn.ru`, id `96397286`.
+  - Goals page was opened manually.
+  - Existing goals are mostly auto-goals:
+    - `Автоцель: отправка формы`;
+    - `Автоцель: переход в мессенджер`;
+    - `Автоцель: переход в соц.сеть`;
+    - `Автоцель: клик по номеру телефона`;
+    - several `Яндекс Бизнес Автоцель` button-click goals.
+  - Missing for clean launch:
+    - explicit teen-intensive lead goal;
+    - explicit Telegram click goal;
+    - explicit WhatsApp click goal;
+    - explicit phone click goal;
+    - explicit payment-start goal;
+    - explicit payment-success goal.
+- Venue context:
+  - Open-source check found `Новая Лига` / fitness club context at `Сущёвский Вал, 56, парк "Фестивальный"`.
+  - Recommendation: use the venue as address/context, not as the main brand signal, unless photo/logo permission is confirmed.
+- RSYA creative assets:
+  - Owner-provided GPT image copied and cropped into ad-safe variants.
+  - Codex-generated image set copied into the project.
+  - Creative inventory: `docs/yandex-direct-creatives-2026-06-05/creative-inventory.md`.
+  - Asset directory: `docs/yandex-direct-creatives-2026-06-05/`.
+- Additional owner-provided New League / Tatiana Munn image set was reviewed and normalized:
+  - contact sheet: `docs/yandex-direct-creatives-2026-06-05/source-contact-sheet.png`;
+  - selected originals: `docs/yandex-direct-creatives-2026-06-05/selected-source/`;
+  - Direct-ready upload folder: `docs/yandex-direct-creatives-2026-06-05/yandex-direct-upload/`;
+  - upload contact sheet: `docs/yandex-direct-creatives-2026-06-05/yandex-direct-upload-contact-sheet.png`;
+  - final formats: `1200x1200` and `1200x675`, JPEG, Latin SEO filenames.
+  - first-line upload set:
+    - `moonn-teen-intensive-new-league-dialogue-circle-1200x1200.jpg`;
+    - `moonn-teen-intensive-new-league-dialogue-circle-1200x675.jpg`;
+    - `moonn-teen-intensive-new-league-flipchart-practice-1200x1200.jpg`;
+    - `moonn-teen-intensive-new-league-flipchart-practice-1200x675.jpg`;
+    - `moonn-teen-intensive-bright-group-circle-1200x1200.jpg`;
+    - `moonn-teen-intensive-bright-group-circle-1200x675.jpg`;
+    - `moonn-teen-intensive-ai-practice-cards-laptop-1200x1200.jpg`.
+  - rejected/reserve logic: selfie-style venue images, visible name tags, dominant sensitive emotion labels, and venue-logo-dominant frames are not first-line Direct creatives.
+  - Launch boundary:
+    - Images are prepared for review, not uploaded to Direct.
+    - No ad groups, ads, keywords, retargeting, budget changes, payment changes, moderation launch, or campaign start were performed.
+
+## 2026-06-05 creative upload set and landing recheck
+
+- Owner-provided New League / Tatiana Munn image pack was reviewed for Direct usage.
+- Direct upload folder prepared:
+  - `docs/yandex-direct-creatives-2026-06-05/yandex-direct-upload/`;
+  - format: JPEG;
+  - sizes: `1200x1200` square and `1200x675` 16:9;
+  - each file is under `250 KB`;
+  - filenames are Latin-only and include machine-readable marketing tokens.
+- First upload set:
+  - `moonn-teen-intensive-new-league-dialogue-circle-1200x1200.jpg`;
+  - `moonn-teen-intensive-new-league-dialogue-circle-1200x675.jpg`;
+  - `moonn-teen-intensive-new-league-flipchart-practice-1200x1200.jpg`;
+  - `moonn-teen-intensive-new-league-flipchart-practice-1200x675.jpg`;
+  - `moonn-teen-intensive-bright-group-circle-1200x1200.jpg`;
+  - `moonn-teen-intensive-bright-group-circle-1200x675.jpg`;
+  - `moonn-teen-intensive-ai-practice-cards-laptop-1200x1200.jpg`.
+- Reserve files:
+  - `moonn-teen-intensive-softskills-small-group-1200x1200.jpg`;
+  - `moonn-teen-intensive-softskills-small-group-1200x675.jpg`;
+  - `moonn-teen-intensive-tatiana-munn-workshop-welcome-1200x1200.jpg`;
+  - `moonn-teen-intensive-tatiana-munn-workshop-welcome-1200x675.jpg`.
+- Do-not-upload without extra review:
+  - selfie-style venue photo with recognizable minors;
+  - frames with visible name tags;
+  - frames where sensitive emotion labels dominate;
+  - frames where venue branding is stronger than the teenage intensive.
+- Landing recheck with UTM test URL returned HTTP `200`:
+  - price `40 000`: present;
+  - dates `6-10 июля` and year `2026`: present;
+  - address `Сущёвский Вал, 56`: present;
+  - age `14-17`: present;
+  - `Имя родителя`, `Email`, `Телефон`, `+7 (999) 999-99-99`, `Оплатить участие`: present;
+  - Metrika counter `96397286`: present;
+  - `Book design`, exact `Your Name`, exact `Your Email`, exact `Your Phone`, exact `Checkout`, `Made on Tilda`, `tildacopy`, `t-tildalabel`: absent;
+  - residual raw Tilda checkout string: one `Payment method`.
+- Launch boundary remains:
+  - do not upload creatives, create ad groups/ads/keywords, set budgets, send to moderation, or start campaigns until explicit owner approval.
