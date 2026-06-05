@@ -19,3 +19,20 @@ Next check:
 2. Repeat a safe `clients.get` smoke test without printing tokens.
 3. If approved, proceed to read-only campaign/account discovery before creating or changing campaigns.
 4. Regenerate the exposed OAuth client secret after the working access path is confirmed.
+
+## 2026-06-05 approval check
+
+- User reported that the request status changed to `одобрена`.
+- Safe API smoke test result:
+  - endpoint: `https://api.direct.yandex.com/json/v5/clients`;
+  - method: `clients.get`;
+  - HTTP status: `200`;
+  - API result: OK;
+  - visible client login: `yantaria`.
+- Note: the first post-approval smoke test failed with API error `8000` because `SelectionCriteria` is not a valid parameter for `clients.get`; the corrected request with only `FieldNames: ["Login"]` succeeded.
+
+Next action:
+
+1. Regenerate the exposed OAuth client secret in Yandex ID after this access path is stable.
+2. Run read-only Direct account discovery: campaigns, ad groups, ads, keywords, funds/status.
+3. Do not create or modify campaigns until the landing/payment/Metрика launch gate is closed.
