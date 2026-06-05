@@ -2301,3 +2301,33 @@ Incident rule:
   - Live HTML still returned old loader `@44ebc4f` and marker `20260604-teen-intensive-direct-cta`.
 - Next action:
   - After desktop unlock, click `Опубликовать` on Tilda page `140348786`, then verify live marker `20260604-teen-intensive-direct-preflight` and rendered page/checkout/mobile checks.
+
+## 2026-06-05 — Teen intensive Tilda live publication completed
+
+- Project: Moonn / teen psychology intensive Tilda page.
+- Workstream: Direct landing preflight for page `140348786`, project `8326812`.
+- Request: put the already prepared Direct preflight fixes into Tilda and publish the page, not just keep Git/CDN artifacts.
+- Action:
+  - Reopened Tilda page-specific HEAD editor in the authenticated Rublev/Alexander Chrome session.
+  - First attempted GUI/UIA replacement; live check showed it did not persist because Tilda's JS editor state stayed old.
+  - Re-applied the loader through Tilda's internal `aceeditor_head` editor and dispatched editor/textarea events.
+  - Tilda save marker confirmed: `HEAD_UI_SAVED_140348786_14280`.
+  - Published the page from `https://tilda.ru/page/?pageid=140348786&projectid=8326812`.
+- Live verification:
+  - HTTP `200` on `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`.
+  - New loader `@7c3e190` present.
+  - New marker `20260604-teen-intensive-direct-preflight` present.
+  - Old loader `@44ebc4f` absent.
+  - Old marker `20260604-teen-intensive-direct-cta` absent.
+  - `Book design` absent.
+  - `4 места` absent.
+  - Public canonical `xn--l1acaw.xn--p1ai` present.
+- Rendered browser check:
+  - Public page opened in Chrome.
+  - Mounted content shows `10-12`, `Сущёвский Вал, 56`, and `6 по 10 июля 2026`.
+- Remaining checks before Yandex Direct spend:
+  - Russian checkout path and phone mask in live cart/payment modal.
+  - Telegram, WhatsApp and phone click goals in Metrika.
+  - Mobile widths `360`, `390`, `414` px.
+- Incident rule:
+  - Do not treat UIA text-field readback as proof of Tilda HEAD persistence. For Tilda HEAD code, update `aceeditor_head` directly, dispatch events, save, reload/read back or verify live HTML after publish.

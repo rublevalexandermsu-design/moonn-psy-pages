@@ -69,3 +69,38 @@ After the Windows desktop is unlocked and stable:
    - mobile widths 360 / 390 / 414 px;
    - absence of `Book design`, English checkout labels, and `4 места`.
 
+## 2026-06-05 live publication completed
+
+Tilda page-specific HEAD for page `140348786` was saved through the authenticated Rublev/Alexander Chrome session using the page's internal `aceeditor_head` editor. Tilda save marker:
+
+- `HEAD_UI_SAVED_140348786_14280`.
+
+The page was then published from `https://tilda.ru/page/?pageid=140348786&projectid=8326812`.
+
+Live raw HTML verification on `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya` returned:
+
+- HTTP status: `200`;
+- `@7c3e190`: present;
+- `20260604-teen-intensive-direct-preflight`: present;
+- old `@44ebc4f`: absent;
+- old `20260604-teen-intensive-direct-cta`: absent;
+- `Book design`: absent;
+- `4 места`: absent;
+- public canonical URL for `xn--l1acaw.xn--p1ai`: present.
+
+Rendered browser check opened the public page in Chrome and confirmed the new mounted content is visible, including:
+
+- group-size copy `10-12`;
+- address `Сущёвский Вал, 56`;
+- date range `6 по 10 июля 2026`;
+- no visible first-screen `4 места` scarcity claim.
+
+Remaining checks before ad spend:
+
+- Russian checkout path and phone mask in the live cart/payment modal;
+- Telegram, WhatsApp and phone click events in Metrika;
+- mobile widths `360`, `390`, `414` px.
+
+## Incident note
+
+The first 2026-06-05 GUI attempt used accessibility/UIA field replacement. The field visually showed the new loader, but Tilda did not persist it after Save because the site's JavaScript editor state was not updated. The working rule is to update `aceeditor_head` directly and dispatch editor/textarea events before clicking Save; do not treat UIA readback alone as proof of Tilda persistence.
