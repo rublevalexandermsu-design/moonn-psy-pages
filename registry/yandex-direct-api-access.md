@@ -61,3 +61,42 @@ Next action:
   - Do not create/start campaigns, send ads to moderation, enable retargeting, or change money-path settings without explicit owner confirmation.
   - Retargeting remains blocked until Metrika goals and consent checks are complete.
   - RSYA upload remains blocked until final image assets are selected/generated and approved.
+
+## 2026-06-05 safe campaign shells created
+
+- User requested campaign creation and landing-page readiness recheck before Yandex Direct launch.
+- Landing raw HTML preflight with UTM test URL:
+  - HTTP status: `200`;
+  - `40000`: present;
+  - `6-10 июля` / `6–10 июля`: present;
+  - `2026`: present;
+  - `10:00-18:00`: present;
+  - `Сущёвский Вал, 56`: present;
+  - `14-17`: present;
+  - `Имя родителя`, `Email`, `Телефон`, `+7 (999) 999-99-99`, `Оплатить участие`: present;
+  - `Book design`, `Your Name`, `Your Email`, `Your Phone`, `Checkout`: absent;
+  - Metrika counter detected: `96397286`;
+  - residuals: one native Tilda `Payment method`, Tilda platform label markup.
+- Campaign creation script:
+  - `scripts/yandex_direct_create_safe_campaign_shells.py`.
+- First attempted create requests were rejected by API and created no objects:
+  - enum typo `ADD_METRIKA_TAG` corrected to `ADD_METRICA_TAG`;
+  - incompatible all-`SERVING_OFF` strategy corrected;
+  - `DailyBudget` removed from shell creation because API only allows it with manual strategies.
+- Created campaign shells:
+  - `Search_Hot_Teen_Intensive`: `710503508`;
+  - `Search_Parents_Teens`: `710503509`;
+  - `Search_EI_Communication_Stress`: `710503510`;
+  - `RSYA_Parents_Teens`: `710503511`;
+  - `RSYA_Soft_Education`: `710503512`.
+- Post-create Direct discovery:
+  - campaigns: `5`;
+  - ad groups: `0`;
+  - ads: `0`;
+  - keywords: `0`;
+  - each created campaign status from post-state: `DRAFT`, `State: OFF`.
+- Safety boundary:
+  - No ad groups, ads, keywords, creatives, retargeting segments, campaign start, payment changes, or moderation launch were created.
+  - Budgets must be set/confirmed at final launch stage; shell creation used strategy-level limits only because API rejected `DailyBudget` with the chosen non-manual strategy.
+- Creative prompt artifact:
+  - `docs/yandex-direct-rsya-photo-prompts-2026-06-05.md`.
