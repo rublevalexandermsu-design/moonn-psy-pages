@@ -232,3 +232,33 @@ Publication gate:
 
 - Tilda live HTML still depends on the jsDelivr commit pinned in page/global HEAD.
 - The new schema layer must be committed, pushed, then the Tilda HEAD reference must be updated to the new commit and the page republished before live verification can pass.
+
+Publication result:
+
+- Saved the Tilda project global HEAD through the native `td__projectheadcode__saveCode()` path after updating the real `textarea[name="headcode"]`.
+- Reopened `https://tilda.ru/projects/editheadcode/?projectid=8326812` and verified the persisted server value:
+  - new schema hash `324d46adbb31d44a3a6d1ab8e9c9df4f6a777afb`: present;
+  - old schema hash `0e5967eaa5d2fcca54900772ff632f91f090f073`: absent for `moonn-schema-layer.js`;
+  - `https://xn--l1acaw.xn--p1ai/#tatiana-munn`: present;
+  - `https://moonn.ru/#tatiana-munn`: absent;
+  - `moonn-global-entity-schema:start`: `1`;
+  - `moonn-schema-layer:start`: `1`.
+- Published Tilda page `140348786`.
+
+Live verification after publish:
+
+- URL: `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya?verify=324d46a-*`;
+- HTTP status: `200`;
+- new schema hash: present;
+- old schema hash: absent;
+- `https://xn--l1acaw.xn--p1ai/#tatiana-munn`: present;
+- `https://moonn.ru/#tatiana-munn`: absent;
+- direct `https://moonn.ru` occurrences: `0`;
+- `https://moonn.timepad.ru/events/`: preserved;
+- canonical and OG URL remain `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`;
+- `Book design`, `Your Name`, `Checkout`: `0`;
+- raw native `Payment method`: `1`.
+
+Residual note:
+
+- Published HTML still contains repeated current-domain global/schema markers because of Tilda/global HEAD duplication behavior, but all checked copies now use the current punycode domain and the new `moonn-schema-layer.js` hash.

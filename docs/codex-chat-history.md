@@ -2435,3 +2435,37 @@ Incident rule:
   - The live Tilda page currently pins the schema layer to an old jsDelivr commit. Git changes alone are not live until the Tilda HEAD reference is updated and the page is republished.
 - Incident rule:
   - For domain migrations, verify canonical/OG and JSON-LD separately. A page can have correct canonical tags while still exposing stale organization/person schema from a global HEAD asset.
+
+## 2026-06-05 — Moonn global HEAD domain fix published
+
+- Project: Moonn / Tilda global HEAD.
+- Workstream: Direct landing preflight and `мунн.рф` domain continuity.
+- Request: actually change the recommended Tilda/domain cleanup, not only prepare local artifacts.
+- Action:
+  - Updated the canonical global HEAD file `docs/moonn-global-head-code-with-schema-2026-05-08.html`:
+    - inline `moonn-global-entity-schema` now uses `https://xn--l1acaw.xn--p1ai`;
+    - `moonn-schema-layer.js` is pinned to commit `324d46adbb31d44a3a6d1ab8e9c9df4f6a777afb`;
+    - Timepad link `https://moonn.timepad.ru/events/` is preserved.
+  - Saved Tilda project global HEAD for project `8326812`.
+  - Published Tilda page `140348786`.
+- Verification:
+  - Tilda global HEAD read-back after save:
+    - new schema hash present;
+    - old `moonn-schema-layer.js` hash absent;
+    - `https://xn--l1acaw.xn--p1ai/#tatiana-munn` present;
+    - `https://moonn.ru/#tatiana-munn` absent;
+    - one `moonn-global-entity-schema` block and one `moonn-schema-layer` block in the saved editor value.
+  - Live GPTBot/raw HTML check on the intensive page:
+    - status `200`;
+    - new schema hash present;
+    - old schema hash absent;
+    - direct `https://moonn.ru` occurrences: `0`;
+    - `https://moonn.timepad.ru/events/` preserved;
+    - canonical and OG URL remain on `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`.
+  - Legacy placeholder check remains clean for the intensive page: `Book design`, `Your Name`, `Checkout` are `0`; native `Payment method` remains `1`.
+- Root cause / incident:
+  - The first GUI/JS save attempts failed because the page has two textareas: a hidden Ace input and the real `textarea[name="headcode"]`.
+  - Tilda did not persist changes written to the wrong textarea or through UIA-only field replacement.
+  - The successful path was: set `aceeditor`/real `textarea[name="headcode"]`, then call Tilda's native `td__projectheadcode__saveCode()`, then reopen the editor and verify the server value.
+- Residual:
+  - Published HTML still repeats the current-domain global/schema markers because Tilda injects global HEAD copies, but old `moonn.ru` schema URLs are gone from the checked live page.
