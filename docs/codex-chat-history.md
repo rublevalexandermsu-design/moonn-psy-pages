@@ -2637,3 +2637,43 @@ Incident rule:
   - Screenshot artifacts saved locally under ignored `output/`, including `live-checklist-video-1365-2026-06-06.png` and `live-checklist-video-390-2026-06-06.png`.
 - Residual note:
   - The cookie notice can visually cover the bottom of the CTA panel in screenshots until the visitor accepts it; the DOM layout itself places the panel under the video and keeps the buttons available.
+
+## 2026-06-06 — Outcome block replaced with full video
+
+- Project: Moonn / Tatiana Moon teen intensive.
+- Workstream: live Tilda intensive page visual update.
+- Request:
+  - Find the intensive page block with the text `Личные выводы, уверенность и опыт проявляться`.
+  - Replace that whole text/image block with the provided video `C:\Users\yanta\Downloads\блок 5..mp4`, because the video already contains the text and right-side visual.
+  - Keep the video independent from the local computer after publication.
+- Routing:
+  - Repo/worktree: `moon-psy-site`.
+  - Branch: `codex/moonn-camp-page-update`.
+  - Tilda project: `8326812`.
+  - Teen intensive page: `140348786`.
+- Asset handling:
+  - Copied the local MP4 to `assets/teen-psychology-camp-2026/teen-intensive-block-5-final-reflection-2026-06-06.mp4`.
+  - Committed and pushed it before referencing it from the page.
+  - CDN URL uses commit `4330411817e159d863d5dc171253a0701dfec416`, so deleting the local Downloads file will not remove the live video.
+- Changed source files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`.
+- Commits:
+  - `4330411817e159d863d5dc171253a0701dfec416` - added outcome block video asset.
+  - `5f098e283155e5f409459f79490bdce5601764f7` - replaced the old `#outcome` text/image section with a full video block.
+  - `9fcd90dfeb43992fad4bb76796e5d33fdfb0a90e` - loader points to `20260606-teen-intensive-outcome-video`.
+- Tilda publication:
+  - Page-specific HEAD for page `140348786` was replaced through authenticated Chrome / Tilda `aceeditor_head`.
+  - The saved HEAD was verified by reopening the Tilda editor and checking marker `20260606-teen-intensive-outcome-video`.
+  - Page `140348786` was published.
+- Verification:
+  - CDN page package `@5f098e283155e5f409459f79490bdce5601764f7` contains `outcome-video-frame`, the video asset commit, and no old `Понимание своих эмоций` text in the replaced block.
+  - Live raw HTML contains marker `20260606-teen-intensive-outcome-video`, contains package commit `5f098e283155e5f409459f79490bdce5601764f7`, and no old `20260606-teen-intensive-checklist-video` marker.
+  - Live rendered desktop `1365x900`: `#outcome video` present, muted, `playbackRate=0.8`, `readyState=4`, video source uses asset commit `4330411817e159d863d5dc171253a0701dfec416`, old visible outcome text absent, horizontal overflow false.
+  - Live rendered mobile `390x844`: `#outcome video` present, muted, `playbackRate=0.8`, `readyState=4`, video source uses asset commit `4330411817e159d863d5dc171253a0701dfec416`, old visible outcome text absent, horizontal overflow false.
+  - Screenshot artifacts saved locally under ignored `output/`, including `live-outcome-video-debug-1365-2026-06-06.png` and `live-outcome-video-debug-390-2026-06-06.png`.
+- Residual note:
+  - The video itself still contains the visible wording `проявляться`; this matches the user's instruction to keep the created video as the replacement block.
+  - The cookie notice can cover the bottom of the viewport in screenshots until accepted; it does not change the `#outcome` block layout.
