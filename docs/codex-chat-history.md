@@ -2552,3 +2552,48 @@ Incident rule:
   - Dry run against the current Direct OAuth token confirmed `403 access_denied` for Metrika.
 - Open blocker:
   - Need a Metrika-scoped OAuth token in `registry/local-secrets/yandex-metrika-oauth.local.json` or `YANDEX_METRIKA_TOKEN` before the explicit goals can be created through API.
+
+## 2026-06-06 — Homepage and teen intensive video hero update
+
+- Project: Moonn / Tatiana Moon teen intensive.
+- Workstream: live Tilda homepage and intensive page visual update.
+- Request:
+  - On the homepage teen block, replace "лагерь" wording with "подростковый интенсив по психологии", change group size from `3-5` to `8-12`, add confidence, communication, AI in learning and oratory topics, and replace the old right image with `превью 2.в зале.интенсив..mp4`.
+  - On the intensive page first screen, replace the colorful/static hero background with `Video Project.mp4`, muted autoplay loop at `0.6` playback speed, remove the old right hero photo, and keep the `40 000 ₽` early-payment card in the lower-right hero area.
+- Routing:
+  - Repo/worktree: `moon-psy-site`.
+  - Branch: `codex/moonn-camp-page-update`.
+  - Tilda project: `8326812`.
+  - Homepage page: `42678538`.
+  - Teen intensive page: `140348786`.
+- Changed assets:
+  - `assets/teen-psychology-camp-2026/teen-intensive-hall-preview-2026-06-06.mp4` from local `C:\Users\yanta\Downloads\превью 2.в зале.интенсив..mp4`.
+  - `assets/teen-psychology-camp-2026/teen-intensive-hero-background-2026-06-06.mp4` from local `C:\Users\yanta\Downloads\Video Project.mp4`.
+- Changed source files:
+  - `assets/teen-psychology-camp-2026/moonn-home-teen-camp-banner.js`;
+  - `docs/teen-psychology-camp-2026/homepage-head-combined-final.html`;
+  - `docs/teen-psychology-camp-2026/homepage-teen-camp-head-snippet.html`;
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`.
+- Commits:
+  - `312fd045c882d59ebc32474320f4e3c784d49ad7` - video assets committed and pushed.
+  - `e8c1fb00e62dc18d6d2daa18b25c64b4e4bad43e` - updated canonical Tilda page/homepage package.
+  - `ddc6ce3895a0ff45efb67406c91789172228d956` - loader points to the video hero package.
+  - `b31eb78d36ede231179002b802d4bf2555ba4ebb` - homepage banner now replaces stale prior mounts with the same DOM id.
+- Tilda publication:
+  - Page-specific HEAD for page `140348786` was replaced through authenticated Chrome / Tilda `aceeditor_head`, then page `140348786` was published.
+  - Global HEAD and page-specific HEAD for homepage page `42678538` were patched with the updated homepage banner snippet, then page `42678538` was published.
+- Verification:
+  - CDN video URLs return `200 video/mp4`.
+  - CDN page build `@e8c1fb00e62dc18d6d2daa18b25c64b4e4bad43e` contains `teen-intensive-hero-background-2026-06-06.mp4`, has no `3-5`, and no old hero visual block.
+  - Live intensive page raw HTML contains marker `20260606-teen-intensive-video-hero` and no old `20260605-teen-intensive-metrika-goals`.
+  - Live rendered intensive desktop: `.hero-bg-video` present, muted, `playbackRate=0.6`; old right hero image absent; `40 000 ₽` card visible in the lower-right hero area; no visible `3-5` or `Подростковый лагерь по психологии`; horizontal overflow false.
+  - Live rendered intensive mobile `390x844`: hero video present, muted, `playbackRate=0.6`, `readyState=4`; no visible old wording; horizontal overflow false.
+  - Live rendered homepage banner: exactly one `#moonn-teen-camp-home-banner`, video present, muted, `playbackRate=0.6`, `readyState=4`; visible text contains `Подростковый интенсив по психологии` and `8-12 подростков`; visible old `3-5` / `лагерь` absent.
+  - Screenshot artifacts saved locally under ignored `output/`, including `live-final-home-banner-1365-2026-06-06.png` and `live-final-teen-intensive-1365-wait15-2026-06-06.png`.
+- Incident / rule:
+  - The first homepage live render still showed the old banner because an earlier script had already mounted an element with the same `id`, and the new script returned early. Fix: homepage banner snippets must use replace-mode for `#moonn-teen-camp-home-banner` when old page/global HEAD layers may coexist.
+- Residual note:
+  - Homepage still reports page-level horizontal overflow from the pre-existing Tilda layout, not from the new banner; the new banner itself fits inside the `1365px` viewport.
