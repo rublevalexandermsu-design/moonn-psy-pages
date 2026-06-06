@@ -10,7 +10,8 @@
     document.head.appendChild(style);
   }
   function mount(){
-    if(document.getElementById(id)) return;
+    var existing=document.getElementById(id);
+    if(existing && existing.parentNode) existing.parentNode.removeChild(existing);
     var root=document.querySelector('#allrecords')||document.body;
     if(!root) return;
     addStyle();

@@ -19,7 +19,8 @@ document.documentElement.classList.add('moonn-radiant-sanctuary');
   var targetUrl='/podrostkovyy-lager-psihologiya';
   var videoUrl='https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@312fd045c882d59ebc32474320f4e3c784d49ad7/assets/teen-psychology-camp-2026/teen-intensive-hall-preview-2026-06-06.mp4';
   function mountTeenCampBanner(){
-    if(document.getElementById('moonn-teen-camp-home-banner')) return;
+    var existing=document.getElementById('moonn-teen-camp-home-banner');
+    if(existing && existing.parentNode) existing.parentNode.removeChild(existing);
     var root=document.querySelector('#allrecords')||document.body;
     if(!root) return;
     var records=Array.prototype.slice.call(root.querySelectorAll('.r'));
