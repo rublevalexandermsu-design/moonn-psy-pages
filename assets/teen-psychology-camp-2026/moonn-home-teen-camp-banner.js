@@ -1,7 +1,7 @@
 (function(){
   var id='moonn-teen-camp-home-banner';
   var targetUrl='/podrostkovyy-lager-psihologiya';
-  var videoUrl='https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@312fd045c882d59ebc32474320f4e3c784d49ad7/assets/teen-psychology-camp-2026/teen-intensive-hall-preview-2026-06-06.mp4';
+  var videoUrl='https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@6c12084fcb5fe1662ca50411deec6b137acc0384/assets/teen-psychology-camp-2026/tatiana-munn-podrostkovyy-intensiv-psihologiya-v-zale-video-2026.mp4';
   function addStyle(){
     if(document.getElementById(id+'-style')) return;
     var style=document.createElement('style');
@@ -21,7 +21,7 @@
     banner.id=id;
     banner.className='moonn-teen-camp-home-banner';
     banner.setAttribute('aria-label','Подростковый интенсив по психологии');
-    banner.innerHTML='<div><div class="moonn-teen-camp-home-kicker">6-10 июля · Москва · 8-12 подростков</div><h2 class="moonn-teen-camp-home-title">Подростковый интенсив по психологии</h2><p class="moonn-teen-camp-home-text">Пять дней практики с Татьяной Мунн: уверенность в себе, общение, ораторство, эмоции и искусственный интеллект в обучении — без школьной скуки и давления.</p><div class="moonn-teen-camp-home-actions"><a class="moonn-teen-camp-home-button" href="'+targetUrl+'">Узнать программу</a><span class="moonn-teen-camp-home-note">40 000 ₽ ранняя оплата · Сущёвский Вал, 56 · 10:00-18:00</span></div></div><a class="moonn-teen-camp-home-media" href="'+targetUrl+'" aria-label="Открыть страницу подросткового интенсива"><video autoplay muted loop playsinline preload="metadata" aria-label="Подростковый интенсив по психологии в зале"><source src="'+videoUrl+'" type="video/mp4"></video><span class="moonn-teen-camp-home-badge">Интенсив по психологии 2026</span></a>';
+    banner.innerHTML='<div><div class="moonn-teen-camp-home-kicker">6-10 июля · Москва · 8-12 подростков</div><h2 class="moonn-teen-camp-home-title">Подростковый интенсив по психологии</h2><p class="moonn-teen-camp-home-text">Пять дней практики с Татьяной Мунн: уверенность в себе, общение, ораторство, эмоции и искусственный интеллект в обучении — без школьной скуки и давления.</p><div class="moonn-teen-camp-home-actions"><a class="moonn-teen-camp-home-button" href="'+targetUrl+'">Узнать программу</a><span class="moonn-teen-camp-home-note">40 000 ₽ ранняя оплата · Сущёвский Вал, 56 · 10:00-18:00</span></div></div><a class="moonn-teen-camp-home-media" href="'+targetUrl+'" aria-label="Открыть страницу подросткового интенсива"><video autoplay muted loop playsinline preload="metadata" aria-label="Видео: подростковый интенсив Татьяны Мунн по психологии в зале" title="Подростковый интенсив Татьяны Мунн в зале" data-seo-status="seo-optimized" data-seo-title="Подростковый интенсив Татьяны Мунн в зале"><source src="'+videoUrl+'" type="video/mp4"></video><span class="moonn-teen-camp-home-badge">Интенсив по психологии 2026</span></a>';
     if(anchor && anchor.parentNode){anchor.parentNode.insertBefore(banner, anchor.nextSibling);} else {root.insertBefore(banner, root.firstChild);}
     var video=banner.querySelector('video');
     if(video){
@@ -34,3 +34,4 @@
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
+
