@@ -201,3 +201,15 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `P0` Camp page AEO regression persists on the live domain: rendered answer block is `0` on `/podrostkovyy-lager-psihologiya`, while the other 4 pages remain `1`.
 4. `P1` New-domain visibility technically improved: the five scoped URLs are now visible in `https://мунн.рф/sitemap.xml` and are not blocked by `robots.txt`, so the remaining migration blockers are canonical/property/access rather than raw reachability.
 5. `P1` Source cleanup debt remains unchanged: raw placeholders on camp/gallery, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
+
+## 2026-06-06 — `мунн.рф` Daily Supervisor
+
+1. `P0` Required blocker unchanged: `новая property не подтверждена, traffic migration не доказан`.
+2. `P0` New-domain Yandex.Webmaster host is also unverified for the current operator: GUI says `Сайт https://xn--l1acaw.xn--p1ai вам не принадлежит...`.
+3. `P0` Camp page still has a real live AEO issue: rendered answer block is `0`.
+4. `P0` Supervisor contract drift must be fixed: the 2026-05-21 packet still expects old camp `лагерь` title/description, while the approved live page is now an `интенсив`; split or refresh the packet before interpreting further drift as a pure regression.
+5. `P1` Canonical migration is now mixed, not uniform:
+   - camp page canonical already points to `https://xn--l1acaw.xn--p1ai/...`;
+   - gallery, `psypodgotovka1`, consultations and reviews still canonicalize to `https://moonn.ru/...`.
+6. `P1` Read-only analytics route is still weak: the active Metrika session opened on `goals?...goal_create=new`, so no safe new metrics were collected today. Create a read-only supervisor entrypoint for counter `96397286`.
+7. `P1` MIIIIPS PR #11 deploy/merge verification remains blocked until the canonical repo + PR URL is recorded in a stable doc/registry.

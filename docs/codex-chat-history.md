@@ -1979,3 +1979,43 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-06-06 12:10 MSK — Supervisor Run: `мунн.рф` live audit, packet drift, new-domain cabinet blockers
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: Moonn SEO/privacy supervisor.
+- Routing:
+  - current checkout in this chat was `codex/moonn-camp-page-update`, so it was treated as unrelated;
+  - canonical `codex/moonn-seo-audit` was occupied by another worktree;
+  - this run continued in isolated branch `codex/moonn-seo-supervisor-20260606` from `origin/codex/moonn-seo-audit`.
+- Trigger: daily morning supervisor run with live domain canon `https://мунн.рф/`.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-06`
+  - browser-like HEAD checks for `/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, `sitemap.xml`, `robots.txt`
+- Verified:
+  - all listed live `мунн.рф` URLs above returned HTTP `200`;
+  - `ddos-guard` is now in front of the site, so naive headless requests can produce false `403` noise while browser-like requests still return `200`;
+  - five packetized pages returned `200`, are in sitemap, and are not robots-blocked;
+  - rendered H1 count is `1` on all five packetized pages;
+  - camp page rendered answer block is still `0`;
+  - camp page canonical now self-points to `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`;
+  - but the same camp page now mismatches the old packet title/description, because the live page was reworked from `лагерь` into `интенсив`;
+  - the other four packet pages still canonicalize to `https://moonn.ru/...`.
+- GUI-only cabinet checks in the real `Alexander` Chrome profile:
+  - GSC for `sc-domain:xn--l1acaw.xn--p1ai` still shows `Oops, you don't have access to this property`;
+  - Yandex.Webmaster for `https://xn--l1acaw.xn--p1ai` shows `Сайт ... вам не принадлежит. Добавьте его в список ваших сайтов и подтвердите права...`;
+  - active Metrika session was already sitting inside an unsaved goal-creation modal, so no metric-navigation clicks were performed and no new aggregates were collected.
+- New insight:
+  - the camp lane is now a mixed state: real AEO blocker (`answer block = 0`) plus stale supervisor contract (`packet still expects old лагерь metadata`);
+  - future runs should not report this as one undifferentiated regression.
+- Changed artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-06.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-06.md`
+  - `docs/moonn-seo-growth-check-2026-06-06.md`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no GSC/Yandex verification clicks;
+  - no Metrika settings interactions;
+  - no privacy publication work;
+  - no 83-URL actions.
