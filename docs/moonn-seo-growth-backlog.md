@@ -201,3 +201,11 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `P0` Camp page AEO regression persists on the live domain: rendered answer block is `0` on `/podrostkovyy-lager-psihologiya`, while the other 4 pages remain `1`.
 4. `P1` New-domain visibility technically improved: the five scoped URLs are now visible in `https://мунн.рф/sitemap.xml` and are not blocked by `robots.txt`, so the remaining migration blockers are canonical/property/access rather than raw reachability.
 5. `P1` Source cleanup debt remains unchanged: raw placeholders on camp/gallery, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
+
+## 2026-06-06 — `мунн.рф` Daily Supervisor
+
+1. `P0` New-domain access blocker is now confirmed in both search cabinets: GSC still shows `Oops, you don't have access to this property` for `sc-domain:xn--l1acaw.xn--p1ai`, and Yandex.Webmaster shows `Сайт https://xn--l1acaw.xn--p1ai вам не принадлежит`. Canonical blocker text for this lane: `новая property не подтверждена, traffic migration не доказан`.
+2. `P0` Canonical migration improved only partially: camp `/podrostkovyy-lager-psihologiya` now returns new-domain canonical, but the other 4 scoped URLs still expose `canonical_mismatch` to legacy `https://moonn.ru/...`.
+3. `P0` Camp page remains the main quality blocker on the live domain: rendered answer block is still `0`, and raw title/description still do not match the 2026-05-21 sprint packet.
+4. `OK` Technical live reachability remains good on `мунн.рф`: all 5 scoped URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-06.json`.
+5. `P1` Source cleanup debt remains: gallery raw placeholders, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.

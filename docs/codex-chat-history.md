@@ -1964,6 +1964,45 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - fix native Tilda canonical on the five scoped pages, inspect the camp AEO block on `мунн.рф`, and only then request scoped reindex after `мунн.рф` property access is confirmed in GSC/Yandex.
 
+## 2026-06-06 12:08 MSK — Supervisor Run: `мунн.рф` live audit + dual property blocker
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - the open repo copy stayed on an unrelated branch/worktree, so supervisor work continued in the canonical worktree for `codex/moonn-seo-audit`;
+  - capability routing selected local script audit plus Windows GUI verification because new-domain cabinet state is not available via repo artifacts.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-06`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves on this host;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`;
+  - camp `/podrostkovyy-lager-psihologiya` now returns new-domain canonical `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`, but the other 4 scoped URLs still expose `canonical_mismatch` to legacy `https://moonn.ru/...`;
+  - camp page rendered answer block remains `0`, while the other 4 pages render `1`;
+  - camp raw title/description still do not match the 2026-05-21 packet;
+  - gallery raw HTML still shows placeholder debt (`Your Name`, `Your Email`);
+  - missing raw image `alt` remains across all 5 pages;
+  - GSC for `sc-domain:xn--l1acaw.xn--p1ai` still shows `Oops, you don't have access to this property`;
+  - Yandex.Webmaster for `https://xn--l1acaw.xn--p1ai:443` shows `Сайт https://xn--l1acaw.xn--p1ai вам не принадлежит`.
+- Decision / blocker:
+  - `новая property не подтверждена, traffic migration не доказан`.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-06.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-06.md`
+  - `docs/moonn-seo-growth-check-2026-06-06.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no canonical rewrites;
+  - no GSC/Yandex reindex submission;
+  - no Yandex.Metrika edits;
+  - no privacy/legal changes;
+  - no cabinet settings changes.
+- Next action:
+  - fix canonical on the remaining 4 scoped pages at Tilda source, inspect the camp AEO/meta drift on `мунн.рф`, then confirm `мунн.рф` property ownership in both GSC and Yandex.Webmaster before any bounded reindex request.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
