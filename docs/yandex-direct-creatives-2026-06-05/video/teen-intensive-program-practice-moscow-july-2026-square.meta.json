@@ -1,0 +1,34 @@
+{
+  "file": "teen-intensive-program-practice-moscow-july-2026-square.mp4",
+  "sourceFile": "C:\\Users\\yanta\\Downloads\\видео реклама 2..mp4",
+  "status": "approved_for_initial_yandex_direct_test",
+  "creativeRole": "program_offer_square_video",
+  "format": {
+    "aspectRatio": "1:1",
+    "width": 560,
+    "height": 560,
+    "durationSeconds": 6.041667,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "frameRate": 24
+  },
+  "visibleMessages": [
+    "Интенсив для подростков",
+    "5 дней практики",
+    "Речь, общение, эмоции, ИИ",
+    "Москва, 6-10 июля",
+    "Посмотреть программу"
+  ],
+  "seoMetadata": {
+    "title": "Teen intensive 14-17 program practice Moscow July 2026",
+    "artist": "Moonn / Tatiana Munn",
+    "description": "Yandex Direct square video creative for teen intensive: speech, communication, emotions and AI practice, Moscow, 6-10 July 2026.",
+    "comment": "SEO: teen intensive Moscow, подростковый интенсив, речь общение эмоции ИИ, 14-17 лет, 6-10 июля 2026"
+  },
+  "qaNotes": [
+    "Technically suitable for an initial square Yandex Direct video test: MP4, H.264, 560x560, 6 seconds.",
+    "Creative communicates program and CTA clearly.",
+    "Weakness: this is not a location-recognition creative; it does not visibly mention New League or Maryina Roshcha."
+  ],
+  "nextCreativePrompt": "Generate a separate 9:16 location-recognition video with visible Новая Лига, Марьина Роща, Сущёвский Вал, 56 and the same teen intensive CTA."
+}
