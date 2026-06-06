@@ -2677,3 +2677,45 @@ Incident rule:
 - Residual note:
   - The video itself still contains the visible wording `проявляться`; this matches the user's instruction to keep the created video as the replacement block.
   - The cookie notice can cover the bottom of the viewport in screenshots until accepted; it does not change the `#outcome` block layout.
+
+## 2026-06-06 — Teen intensive desktop scale tuning
+
+- Project: Moonn / Tatiana Moon teen intensive.
+- Workstream: live Tilda intensive page visual update.
+- Request:
+  - The user reported that at browser scale `100%` the first screen looked too large: hero text/video were oversized, button controls were large, and blocks felt like they did not fit without viewing at `50%`.
+  - Adjust the page so normal desktop/laptop visitors can read it at `100%` without horizontal overflow or oversized first-screen controls.
+- Routing:
+  - Repo/worktree: `moon-psy-site`.
+  - Branch: `codex/moonn-camp-page-update`.
+  - Tilda project: `8326812`.
+  - Teen intensive page: `140348786`.
+- Changes:
+  - Made the desktop header use a wider page-specific wrapper and one-line nav instead of wrapping into two rows.
+  - Reduced hero H1, lead and button scale.
+  - Converted the four hero notes into a compact `hero-alert-grid`.
+  - Hid the duplicate long `hero-points` list from the hero because those facts are already covered by the following content blocks.
+  - Repositioned the `40 000 ₽` floating price card inside the hero container so it does not drift into the content.
+  - Kept existing video assets and the full outcome video block intact.
+- Changed source files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`.
+- Commits:
+  - `560518a98698cf6019cc07cb8a4b98b52d9daf6a` - tuned desktop/laptop scale in the canonical Tilda page package.
+  - `1a2e91a77692dd801bddc310aa1ad5c7cc5bcf64` - loader points to `20260606-teen-intensive-scale-tune`.
+- Tilda publication:
+  - Page-specific HEAD for page `140348786` was replaced through authenticated Chrome / Tilda `aceeditor_head`.
+  - The saved HEAD was verified by reopening the Tilda editor and checking marker `20260606-teen-intensive-scale-tune`.
+  - Page `140348786` was published.
+- Verification:
+  - Live raw HTML contains marker `20260606-teen-intensive-scale-tune`, contains package commit `560518a98698cf6019cc07cb8a4b98b52d9daf6a`, and no old `20260606-teen-intensive-outcome-video` marker.
+  - Live rendered `1920x930`: header height `76px`, nav rows `1`, hero height `919px`, H1 `54px`, horizontal overflow false.
+  - Live rendered `1365x900`: header height `76px`, nav rows `1`, hero height `826px`, H1 `44px`, horizontal overflow false.
+  - Live rendered `390x844`: horizontal overflow false; mobile hero remains long because the public text is still substantial, but it no longer creates side overflow.
+  - Existing `#outcome video` remains present and sized correctly after the scale package.
+  - Screenshot artifacts saved locally under ignored `output/`, including `live-scale-after-1920-2026-06-06.png` and `live-scale-after-1365-2026-06-06.png`.
+- Residual note:
+  - The cookie notice can cover the bottom of the first viewport until accepted; it is not part of the hero layout.
+  - If the next user-provided videos replace more text-heavy blocks, the same scale gate should be rerun at `1365x900`, `1920x930`, and mobile.
