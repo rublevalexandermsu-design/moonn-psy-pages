@@ -2719,3 +2719,50 @@ Incident rule:
 - Residual note:
   - The cookie notice can cover the bottom of the first viewport until accepted; it is not part of the hero layout.
   - If the next user-provided videos replace more text-heavy blocks, the same scale gate should be rerun at `1365x900`, `1920x930`, and mobile.
+
+## 2026-06-06 — Teen intensive SEO video names and MGU host block video
+
+- Project: Moonn / Tatiana Moon teen intensive.
+- Workstream: live Tilda intensive page visual update.
+- Request:
+  - Replace the left photo in the block `Татьяна Мунн ведёт программу лично` / `Кто ведёт интенсив` with the provided video `C:\Users\yanta\Downloads\Татьяна Мунн. блок про мгу.mp4`.
+  - Keep the text of that block unchanged.
+  - Rename all videos sent on 2026-06-06 with Latin SEO-oriented filenames and mark the video layer as SEO-optimized.
+- Routing:
+  - Repo/worktree: `moon-psy-site`.
+  - Branch: `codex/moonn-camp-page-update`.
+  - Tilda project: `8326812`.
+  - Teen intensive page: `140348786`.
+- Asset handling:
+  - Existing Russian/noncanonical video filenames were replaced with Latin SEO filenames under `assets/teen-psychology-camp-2026/`.
+  - Added `assets/teen-psychology-camp-2026/video-seo-metadata-2026-06-06.json` with `seoStatus: SEO-optimization completed` and Russian status `SEO-оптимизация сделана`.
+  - New and renamed videos were committed first, then referenced through pinned jsDelivr commit URLs so the page does not depend on local `Downloads` files.
+- Changed source files:
+  - `assets/teen-psychology-camp-2026/video-seo-metadata-2026-06-06.json`;
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`;
+  - `assets/teen-psychology-camp-2026/moonn-home-teen-camp-banner.js`;
+  - `docs/teen-psychology-camp-2026/homepage-head-combined-final.html`;
+  - `docs/teen-psychology-camp-2026/homepage-teen-camp-head-snippet.html`.
+- Commits:
+  - `6c12084fcb5fe1662ca50411deec6b137acc0384` - added SEO-named teen intensive video assets and video SEO metadata.
+  - `6f233764d44119c1f6ec3d74ff183cbc6a08798a` - updated the page/homepage package to use SEO video names and replaced the MGU host-block photo with video.
+  - `7cfeccb653387221ff19d230dce141b037c4847a` - loader points to `20260606-teen-intensive-seo-video-names-mgu`.
+- Verification before Tilda publication:
+  - CDN package `@6f233764d44119c1f6ec3d74ff183cbc6a08798a` contains the MGU video, `data-seo-status="seo-optimized"`, no old user-provided video filenames, and no old image inside `.trust-photo`.
+  - Local rendered check found `4` videos on the intensive page package, `4` SEO-marked videos, `.trust-photo video` present, `.trust-photo img` absent, all videos loaded to `readyState=4`, muted playback, and no horizontal overflow.
+  - Local screenshot artifact: `output/local-mgu-video-block-1365-2026-06-06.png`.
+- Live publication blocker:
+  - Attempted Tilda UI rollout through Chrome failed because the available Chrome session is at `tilda.ru/login/`.
+  - Live raw page `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya` does not contain marker `20260606-teen-intensive-seo-video-names-mgu`, does not contain the MGU video filename, and does not contain `data-seo-status="seo-optimized"`.
+  - Therefore the Git/CDN package is ready and verified locally, but the live Tilda page is not updated yet.
+- Incident / follow-up rule:
+  - Symptom: a broad diagnostic search over Tilda configuration matched local `.env` lines.
+  - Root cause: the search glob included env files while looking for Tilda API capabilities.
+  - Resolution: do not print or copy secrets; future Tilda capability searches must exclude `.env` or use a masking script that only reports key presence.
+  - Follow-up rule: for Tilda/API diagnostics, prefer `rg --glob '!*.env' --glob '!.env*'` or a safe parser that emits booleans, never raw credential values.
+- Open action:
+  - Log into Tilda in the correct Chrome profile, then rerun the page-specific HEAD save and publish flow for page `140348786`.
+  - After publication, verify live raw marker, rendered desktop/mobile video presence, no old filenames, and no horizontal overflow.
