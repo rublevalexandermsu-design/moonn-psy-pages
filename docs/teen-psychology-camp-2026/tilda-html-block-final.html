@@ -157,6 +157,9 @@
     .visual-note { position:absolute;left:22px;right:22px;bottom:22px;padding:18px;border-radius:24px;background:rgba(255,255,255,.92);box-shadow:0 18px 42px rgba(30,33,80,.16); }
     .visual-note strong { display:block;font-size:23px;line-height:1.1;margin-bottom:8px; }
     .visual-note span { display:block;color:#65709a;font-size:16px;line-height:1.45; }
+    .outcome-video-block { padding:22px;border-radius:34px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:var(--shadow-hover); }
+    .outcome-video-frame { position:relative;aspect-ratio:16/9;border-radius:30px;overflow:hidden;background:#101744;box-shadow:0 24px 60px rgba(33,45,105,.18); }
+    .outcome-video-frame video { width:100%;height:100%;display:block;object-fit:cover; }
     .skill-flow { display:grid;gap:12px;margin-top:20px; }
     .skill-row { display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;padding:15px 16px;border-radius:20px;background:rgba(255,255,255,.84);border:1px solid var(--line);box-shadow:var(--shadow); }
     .skill-icon { width:42px;height:42px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:#ebe6ff;color:#6e46c7;font-weight:900;font-size:20px; }
@@ -382,6 +385,8 @@
       .pill { display:block; max-width:100%; border-radius:24px; font-size:14px; line-height:1.35; white-space:normal; }
       .pill-dot { display:inline-block; vertical-align:middle; margin-right:8px; }
       .brand-text span { font-size:26px; }
+      .outcome-video-block { padding:12px;border-radius:24px; }
+      .outcome-video-frame { border-radius:20px; }
     }
   </style>
 
@@ -772,21 +777,11 @@
     </section>
 
     <section class="section" id="outcome">
-      <div class="wrap feature-split">
-        <div class="feature-copy reveal">
-          <p class="eyebrow">С чем подросток уходит</p>
-          <h2 class="section-title">Личные выводы, уверенность и опыт проявляться</h2>
-          <p class="section-text">Цель интенсива - не выдать подростку набор красивых фраз, а дать опыт: как говорить, как понимать своё состояние, как включаться в группу и как пользоваться новыми инструментами без тревоги.</p>
-          <div class="skill-flow">
-            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Понимание своих эмоций</strong><span>Подросток лучше замечает, что с ним происходит, и может говорить об этом спокойнее.</span></div></div>
-            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Навык общения</strong><span>Больше практики диалога, границ, договорённостей и выступления в малой группе.</span></div></div>
-            <div class="skill-row"><div class="skill-icon">✓</div><div><strong>Опора на себя</strong><span>Участник фиксирует личные выводы и упражнения, к которым можно возвращаться после интенсива.</span></div></div>
-          </div>
-        </div>
-        <div class="feature-visual reveal">
-          <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@c0f3a6c/assets/teen-psychology-camp-2026/teen-camp-group-activities-soft-skills.jpg" alt="Подростки обсуждают итоги и навыки после практики" />
-          <div class="visual-shade"></div>
-          <div class="visual-note"><strong>Финальный день закрепляет результат</strong><span>Итоги, личные выводы, обратная связь и план, что взять с собой дальше.</span></div>
+      <div class="wrap outcome-video-block reveal">
+        <div class="outcome-video-frame" aria-label="Видео: личные выводы, уверенность и опыт проявляться">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@4330411817e159d863d5dc171253a0701dfec416/assets/teen-psychology-camp-2026/teen-intensive-block-5-final-reflection-2026-06-06.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
@@ -967,6 +962,15 @@
 
       function tuneChecklistVideo() {
         var video = document.querySelector('.lead-video-frame video');
+        if (!video) return;
+        video.muted = true;
+        video.playbackRate = 0.8;
+        var play = video.play();
+        if (play && typeof play.catch === 'function') play.catch(function() {});
+      }
+
+      function tuneOutcomeVideo() {
+        var video = document.querySelector('.outcome-video-frame video');
         if (!video) return;
         video.muted = true;
         video.playbackRate = 0.8;
@@ -1204,10 +1208,13 @@
       setTimeout(localizeTildaPaymentFields, 1600);
       tuneHeroVideo();
       tuneChecklistVideo();
+      tuneOutcomeVideo();
       setTimeout(tuneHeroVideo, 900);
       setTimeout(tuneChecklistVideo, 900);
+      setTimeout(tuneOutcomeVideo, 900);
       setTimeout(tuneHeroVideo, 2200);
       setTimeout(tuneChecklistVideo, 2200);
+      setTimeout(tuneOutcomeVideo, 2200);
       bindTeenCampMetrikaGoals();
       bindTeenCampFormSuccessGoals();
       setInterval(enhanceTildaPaymentUi, 1500);
