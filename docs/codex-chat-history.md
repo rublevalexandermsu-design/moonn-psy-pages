@@ -2529,3 +2529,26 @@ Incident rule:
   - Create explicit Metrika goals after Metrika OAuth scope/API rights are available or via stable GUI flow.
   - Manually test at least click goals and payment-start before any conversion-optimized Direct launch.
   - Rendered checkout/mobile verification should still be repeated with a working browser automation path or manual GUI path.
+
+## 2026-06-06 — Teen intensive overnight heartbeat recheck
+
+- Project: Moonn / teen psychology intensive.
+- Workstream: Yandex Direct safe prelaunch.
+- Trigger: `automation-3` heartbeat continuation at 00:30 Moscow time.
+- Verified:
+  - branch `codex/moonn-camp-page-update`;
+  - live landing raw HTML still contains `20260605-teen-intensive-metrika-goals` and `@179d540`;
+  - old marker `20260604-teen-intensive-direct-preflight` is absent;
+  - `Book design`, `Your Name`, exact `Checkout`, `Made on Tilda`, `tildacopy`, `t-tildalabel` are absent in raw check;
+  - native raw Tilda checkout still has one `Payment method` string;
+  - CDN build `@179d540` contains all intended Metrika event ids and `Способ оплаты`;
+  - Direct read-only discovery: 5 campaigns, 0 ad groups, 0 ads, 0 keywords.
+- Action:
+  - Added `scripts/yandex_metrika_create_teen_goals.py`, a reusable dry-run-first creator for explicit Metrika JavaScript action goals.
+  - Updated `docs/yandex-metrika-teen-intensive-goals-2026-06-05.md` with the scripted path.
+  - Updated `registry/yandex-direct-api-access.md` with heartbeat evidence and the Metrika API blocker.
+- Verification:
+  - `python -m py_compile scripts/yandex_metrika_create_teen_goals.py` passed.
+  - Dry run against the current Direct OAuth token confirmed `403 access_denied` for Metrika.
+- Open blocker:
+  - Need a Metrika-scoped OAuth token in `registry/local-secrets/yandex-metrika-oauth.local.json` or `YANDEX_METRIKA_TOKEN` before the explicit goals can be created through API.

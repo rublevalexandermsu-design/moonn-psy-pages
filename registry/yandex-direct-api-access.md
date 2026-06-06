@@ -284,3 +284,57 @@ Next action:
   - page is materially improved and published;
   - Metrika explicit goals still need to be created/tested before conversion-optimized Direct launch;
   - campaign structures remain draft/off.
+
+## 2026-06-06 heartbeat recheck and reusable Metrika goal creator
+
+- Heartbeat automation `automation-3` rechecked the safe launch state at 00:30 Moscow time.
+- Git branch:
+  - `codex/moonn-camp-page-update`;
+  - latest pushed commit before this heartbeat: `635d106`.
+- Live landing raw check:
+  - URL: `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya?utm_source=yandex&utm_medium=cpc&utm_campaign=heartbeat_check&utm_content=landing_check&utm_term=test`;
+  - `20260605-teen-intensive-metrika-goals`: present;
+  - `@179d540`: present;
+  - old marker `20260604-teen-intensive-direct-preflight`: absent;
+  - `Book design`: absent;
+  - `Your Name`: absent;
+  - exact `Checkout`: absent;
+  - `Made on Tilda` / `tildacopy` / `t-tildalabel`: absent;
+  - raw native Tilda `Payment method`: `1`;
+  - dates `6-10 июля`, address `Сущёвский Вал, 56`, age `14-17`: present.
+- CDN page build `@179d540` check:
+  - all intended event IDs are present:
+    - `lead_click`;
+    - `lead_submit`;
+    - `click_telegram`;
+    - `click_whatsapp`;
+    - `click_phone`;
+    - `payment_start`;
+    - `payment_submit`;
+    - `payment_success`;
+    - `program_view`;
+    - `pdf_download`;
+  - raw `Payment method`: absent;
+  - `Способ оплаты`: present;
+  - price strings `40 000` and `40000`: present in the CDN build.
+- Direct read-only check:
+  - client login: `yantaria`;
+  - campaigns: `5`;
+  - ad groups: `0`;
+  - ads: `0`;
+  - keywords: `0`;
+  - campaign structures remain draft/off; no launch action performed.
+- Metrika API:
+  - current local Direct OAuth token still returns `403 access_denied` for Metrika goals.
+- Added reusable script:
+  - `scripts/yandex_metrika_create_teen_goals.py`;
+  - default counter: `96397286`;
+  - default local token file: `registry/local-secrets/yandex-metrika-oauth.local.json`;
+  - dry run by default;
+  - `--apply` creates only missing JavaScript action goals and skips existing ones.
+- Script verification:
+  - `python -m py_compile scripts/yandex_metrika_create_teen_goals.py`: passed;
+  - dry run with the current Direct OAuth token wrote `output/yandex-metrika-teen-goals-create-report-2026-06-06.json` and confirmed `403 access_denied`.
+- Current blocker:
+  - obtain or store a Metrika-scoped OAuth token, then run the script first without `--apply`, then with `--apply`;
+  - after creation, test events on the live page before any conversion-optimized Direct launch.

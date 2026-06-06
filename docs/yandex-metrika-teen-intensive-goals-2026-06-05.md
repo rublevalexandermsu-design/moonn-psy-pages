@@ -68,6 +68,15 @@ Implementation files:
 
 Preferred path: create the above goals through Metrika API after OAuth receives Metrika management rights.
 
+Scripted path:
+
+```powershell
+python scripts\yandex_metrika_create_teen_goals.py --secret registry\local-secrets\yandex-metrika-oauth.local.json
+python scripts\yandex_metrika_create_teen_goals.py --secret registry\local-secrets\yandex-metrika-oauth.local.json --apply
+```
+
+The first command is a dry run. The second command creates only missing goals and skips existing ones.
+
 Fallback path: create manually in the GUI:
 
 1. Open `https://metrika.yandex.ru/goals?id=96397286`.
