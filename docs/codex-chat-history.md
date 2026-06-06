@@ -2597,3 +2597,43 @@ Incident rule:
   - The first homepage live render still showed the old banner because an earlier script had already mounted an element with the same `id`, and the new script returned early. Fix: homepage banner snippets must use replace-mode for `#moonn-teen-camp-home-banner` when old page/global HEAD layers may coexist.
 - Residual note:
   - Homepage still reports page-level horizontal overflow from the pre-existing Tilda layout, not from the new banner; the new banner itself fits inside the `1365px` viewport.
+
+## 2026-06-06 — Checklist block vertical video update
+
+- Project: Moonn / Tatiana Moon teen intensive.
+- Workstream: live Tilda intensive page visual update.
+- Request:
+  - Continue editing the intensive page checklist block.
+  - Add the vertical video `C:\Users\yanta\Downloads\Видео.интенсива сверху сентея.mp4` on the right side of the checklist block.
+  - Keep the checklist text and keep the `Получить чек-лист и задать вопрос` CTA panel, but place the panel under the video.
+  - Ensure the video does not depend on the local computer file after publication.
+- Routing:
+  - Repo/worktree: `moon-psy-site`.
+  - Branch: `codex/moonn-camp-page-update`.
+  - Tilda project: `8326812`.
+  - Teen intensive page: `140348786`.
+- Asset handling:
+  - Copied the local MP4 to `assets/teen-psychology-camp-2026/teen-intensive-overhead-senteya-checklist-2026-06-06.mp4`.
+  - Committed and pushed it to GitHub before referencing it from the page.
+  - CDN URL uses commit `6c656eb6a2d5d8dd3c080ccaf9b0e4ce89cfda39`, so deleting the local Downloads file will not remove the live video.
+- Changed source files:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-html-block-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`;
+  - `docs/teen-psychology-camp-2026/tilda-head-injection-final.html`.
+- Commits:
+  - `6c656eb6a2d5d8dd3c080ccaf9b0e4ce89cfda39` - added checklist block video asset.
+  - `931af361f2d4e2e79522db906fda249d0ec840d2` - updated checklist block layout in the canonical Tilda page package.
+  - `c419eda0a0903230b8f74d1fc8d945e82dbd38ab` - loader points to `20260606-teen-intensive-checklist-video`.
+- Tilda publication:
+  - Page-specific HEAD for page `140348786` was replaced through authenticated Chrome / Tilda `aceeditor_head`.
+  - Page `140348786` was published.
+- Verification:
+  - CDN video asset returned `200 video/mp4` with length `5003989`.
+  - CDN page package `@931af361f2d4e2e79522db906fda249d0ec840d2` contains `teen-intensive-overhead-senteya-checklist-2026-06-06.mp4`, `tuneChecklistVideo`, and `Получить чек-лист и задать вопрос`.
+  - Live raw HTML contains marker `20260606-teen-intensive-checklist-video` and package commit `931af361f2d4e2e79522db906fda249d0ec840d2`.
+  - Live rendered desktop `1365x900`: checklist video present, muted, `playbackRate=0.8`, `readyState=4`, CTA panel is below the video, checklist text is preserved, horizontal overflow false.
+  - Live rendered mobile `390x844`: checklist video present, muted, `playbackRate=0.8`, `readyState=4`, CTA panel is below the video, checklist text is preserved, horizontal overflow false.
+  - Screenshot artifacts saved locally under ignored `output/`, including `live-checklist-video-1365-2026-06-06.png` and `live-checklist-video-390-2026-06-06.png`.
+- Residual note:
+  - The cookie notice can visually cover the bottom of the CTA panel in screenshots until the visitor accepts it; the DOM layout itself places the panel under the video and keeps the buttons available.
