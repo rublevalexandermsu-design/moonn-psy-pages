@@ -75,11 +75,11 @@
       font-size:16px;font-weight:700;box-shadow:0 6px 18px rgba(155,89,208,.08);
     }
     .pill-dot { width:10px;height:10px;border-radius:50%;background:#a74cda;box-shadow:0 0 0 8px rgba(167,76,218,.12); }
-    .btns { display:flex;flex-wrap:wrap;gap:14px; }
+    .btns { display:flex;flex-wrap:wrap;gap:12px; }
     .btn {
       display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      min-height:58px;padding:14px 24px;border-radius:18px;border:1px solid transparent;
-      font-size:19px;font-weight:800;letter-spacing:-.01em;text-decoration:none;
+      min-height:50px;padding:12px 18px;border-radius:16px;border:1px solid transparent;
+      font-size:17px;font-weight:800;letter-spacing:0;text-decoration:none;
       transition:.25s ease;cursor:pointer;
     }
     .btn.primary { background:linear-gradient(135deg, var(--blue), var(--blue2)); color:#fff; box-shadow:0 14px 32px rgba(49,73,201,.25); }
@@ -92,27 +92,30 @@
     .eyebrow { font-size:17px;font-weight:800;color:#6772a0; }
 
     .site-header { position:sticky;top:0;z-index:20;backdrop-filter:blur(18px);background:rgba(252,249,255,.72);border-bottom:1px solid rgba(115,98,154,.08); }
-    .site-header .inner { min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:20px; }
-    .brand { display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit; }
-    .logo { width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg, #8a43c4, #2f4acc);display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px;box-shadow:0 12px 24px rgba(78,66,172,.26); }
-    .brand-text strong { display:block;font-size:16px;color:#6c76a2; }
-    .brand-text span { display:block;font-size:32px;font-weight:900;letter-spacing:-.03em;line-height:1; }
+    .site-header .wrap { width:calc(100% - 48px);max-width:none; }
+    .site-header .inner { min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px; }
+    .brand { display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;min-width:0;flex:0 1 460px; }
+    .logo { width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg, #8a43c4, #2f4acc);display:grid;place-items:center;color:#fff;font-weight:900;font-size:20px;box-shadow:0 12px 24px rgba(78,66,172,.26);flex:0 0 auto; }
+    .brand-text { min-width:0; }
+    .brand-text strong { display:block;font-size:14px;color:#6c76a2; }
+    .brand-text span { display:block;font-size:clamp(22px,1.75vw,28px);font-weight:900;letter-spacing:0;line-height:1.05; }
     .brand-text em { font-style:normal;font-size:.62em;font-weight:800;color:#5d6a96;white-space:nowrap; }
-    .nav { display:flex;align-items:center;gap:12px;flex-wrap:wrap; }
-    .nav a { text-decoration:none;color:var(--text);font-weight:800;padding:14px 20px;border-radius:18px;background:rgba(255,255,255,.78);border:1px solid var(--line); }
+    .nav { display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:nowrap;min-width:0;flex:1 1 auto; }
+    .nav a { text-decoration:none;color:var(--text);font-weight:800;padding:10px 13px;border-radius:14px;background:rgba(255,255,255,.78);border:1px solid var(--line);font-size:15px;line-height:1.1;white-space:nowrap; }
     .nav a.cta { background:linear-gradient(135deg, var(--blue), var(--blue2)); color:#fff; border-color:transparent; }
 
-    .hero { position:relative;min-height:calc(100vh - 86px);padding:72px 0 108px;display:flex;align-items:center;overflow:hidden;color:#fff;background:#11163d; }
+    .hero { position:relative;min-height:min(760px, calc(100vh - 76px));padding:48px 0 76px;display:flex;align-items:center;overflow:hidden;color:#fff;background:#11163d; }
     .hero::before { content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg, rgba(9,13,37,.82) 0%, rgba(15,18,54,.66) 42%, rgba(15,18,54,.24) 72%, rgba(15,18,54,.58) 100%);pointer-events:none; }
     .hero-bg-video { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.92) contrast(.96); }
     .hero-grid { position:relative;z-index:2;display:block;min-width:0; }
     .hero-grid > * { min-width:0; }
-    .hero-copy { max-width:760px;text-shadow:0 2px 18px rgba(0,0,0,.42); }
+    .hero-copy { max-width:900px;text-shadow:0 2px 18px rgba(0,0,0,.42); }
     .hero .pill { background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.24);color:#fff;box-shadow:none;backdrop-filter:blur(12px); }
-    .hero h1 { font-size:clamp(42px, 5.4vw, 74px); line-height:1; letter-spacing:0; margin:18px 0 18px; color:#fff; }
-    .hero p.lead { font-size:clamp(19px, 1.8vw, 23px); line-height:1.45; color:rgba(255,255,255,.90); margin:0 0 22px; max-width:720px; }
-    .hero-points { display:flex;flex-wrap:wrap;gap:12px 18px;margin:22px 0 28px;padding:0;list-style:none; }
-    .hero-points li { display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:rgba(255,255,255,.86); }
+    .hero h1 { font-size:clamp(38px, 3.35vw, 54px); line-height:1.04; letter-spacing:0; margin:16px 0 16px; color:#fff; max-width:900px; }
+    .hero p.lead { font-size:clamp(17px, 1.25vw, 19px); line-height:1.4; color:rgba(255,255,255,.90); margin:0 0 18px; max-width:820px; }
+    .hero-alert-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 20px;max-width:820px; }
+    .hero-points { display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 12px;margin:14px 0 0;padding:0;list-style:none;max-width:820px; }
+    .hero-points li { display:flex;align-items:flex-start;gap:8px;font-size:14px;font-weight:700;line-height:1.32;color:rgba(255,255,255,.86); }
     .check { width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e9d8fb;color:#8a43c4;font-size:14px;font-weight:900; }
 
     .hero-visual { position:relative;min-height:540px; }
@@ -133,11 +136,11 @@
     .hero-alert strong { color:#fff;letter-spacing:0; }
     .hero-alert span { color:rgba(255,255,255,.84); }
     .hero .section-text, .hero .section-text a { color:rgba(255,255,255,.82); }
-    .hero-price-corner { position:absolute;right:max(24px, calc((100vw - var(--max)) / 2));top:clamp(300px, calc(100vh - 360px), 620px);z-index:3; }
+    .hero-price-corner { position:absolute;right:0;bottom:44px;z-index:3; }
     .floating-price { position:absolute;left:22px;bottom:190px;width:232px;box-sizing:border-box;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg, rgba(48,73,201,.96), rgba(123,86,226,.96));color:#fff;box-shadow:0 18px 38px rgba(55,74,185,.22); }
-    .hero-price-corner .floating-price { position:static;left:auto;bottom:auto;width:260px;border:1px solid rgba(255,255,255,.28);box-shadow:0 22px 52px rgba(4,9,30,.36);backdrop-filter:blur(14px); }
-    .floating-price b { display:block;font-size:30px;line-height:1; }
-    .floating-price small { display:block;font-size:14px;opacity:.88;margin-top:6px;line-height:1.35; }
+    .hero-price-corner .floating-price { position:static;left:auto;bottom:auto;width:230px;border:1px solid rgba(255,255,255,.28);box-shadow:0 22px 52px rgba(4,9,30,.36);backdrop-filter:blur(14px); }
+    .floating-price b { display:block;font-size:28px;line-height:1; }
+    .floating-price small { display:block;font-size:13px;opacity:.88;margin-top:6px;line-height:1.32; }
 
     .cards-4 { display:grid;grid-template-columns:repeat(4,1fr);gap:18px; }
     .cards-5 { display:grid;grid-template-columns:repeat(5,1fr);gap:16px; }
@@ -180,19 +183,19 @@
     .prompt-line { padding:10px 12px;margin:8px 0;border-radius:12px;background:rgba(255,255,255,.09);font-size:14px;line-height:1.45; }
     .prompt-line.accent { background:linear-gradient(135deg, rgba(95,206,255,.24), rgba(181,117,255,.22)); }
 
-    .hero-alert { margin:14px 0 16px; padding:15px 18px; border-radius:20px; background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(238,245,255,.94)); border:1px solid rgba(95,127,220,.18); box-shadow:var(--shadow); }
-    .hero-alert strong { display:block; font-size:20px; line-height:1.15; margin-bottom:6px; color:#2037a4; }
-    .hero-alert span { display:block; color:#65709a; font-size:16px; line-height:1.38; }
+    .hero-alert { margin:0; padding:13px 15px; border-radius:18px; background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(238,245,255,.94)); border:1px solid rgba(95,127,220,.18); box-shadow:var(--shadow); }
+    .hero-alert strong { display:block; font-size:17px; line-height:1.14; margin-bottom:5px; color:#2037a4; }
+    .hero-alert span { display:block; color:#65709a; font-size:14px; line-height:1.32; }
     .proof-grid { display:grid; grid-template-columns:1.05fr .95fr 1fr; gap:18px; align-items:stretch; }
-    .proof-card { padding:24px; border-radius:28px; border:1px solid rgba(36,54,156,.12); box-shadow:var(--shadow); background:rgba(255,255,255,.9); }
+    .proof-card { padding:22px; border-radius:24px; border:1px solid rgba(36,54,156,.12); box-shadow:var(--shadow); background:rgba(255,255,255,.9); }
     .proof-card.price { background:linear-gradient(135deg, rgba(255,255,255,.96), rgba(255,242,226,.92)); }
     .proof-card.location { background:linear-gradient(135deg, rgba(242,255,251,.96), rgba(232,246,255,.92)); }
     .proof-card.value { background:linear-gradient(135deg, rgba(246,242,255,.96), rgba(255,244,250,.92)); }
-    .proof-card h3 { margin:0 0 10px; font-size:28px; line-height:1.08; letter-spacing:-.03em; }
-    .proof-card p { margin:0 0 14px; color:#65709a; font-size:17px; line-height:1.5; }
+    .proof-card h3 { margin:0 0 10px; font-size:24px; line-height:1.1; letter-spacing:0; }
+    .proof-card p { margin:0 0 14px; color:#65709a; font-size:16px; line-height:1.45; }
     .price-row { display:flex; align-items:flex-end; gap:12px; flex-wrap:wrap; margin:12px 0; }
-    .price-row strong { font-size:44px; line-height:1; color:#2339a8; letter-spacing:-.04em; }
-    .price-row span { font-size:22px; color:#7380aa; text-decoration:line-through; font-weight:800; }
+    .price-row strong { font-size:38px; line-height:1; color:#2339a8; letter-spacing:0; }
+    .price-row span { font-size:20px; color:#7380aa; text-decoration:line-through; font-weight:800; }
     .proof-note { display:inline-flex; align-items:center; gap:8px; padding:9px 12px; border-radius:999px; background:rgba(255,255,255,.72); color:#2b3b94; font-size:14px; font-weight:900; }
     .map-pin { min-height:120px; border-radius:22px; margin:14px 0; display:grid; place-items:center; text-align:center; color:#24369c; font-weight:900; background:linear-gradient(135deg, rgba(43,194,177,.16), rgba(67,91,223,.12)); border:1px dashed rgba(36,54,156,.25); }
     .map-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
@@ -337,15 +340,51 @@
     .reveal { opacity:1; transform:none; transition:opacity .55s ease, transform .55s ease; }
     .reveal.visible { opacity:1; transform:none; }
 
+    @media (max-width: 1500px) and (min-width: 1101px) {
+      .site-header .wrap { width:calc(100% - 32px); }
+      .brand { flex-basis:390px; }
+      .brand-text span { font-size:23px; }
+      .nav { gap:7px; }
+      .nav a { padding:9px 10px;font-size:14px;border-radius:13px; }
+      .nav a.cta { padding-left:14px;padding-right:14px; }
+      .hero { min-height:min(700px, calc(100vh - 72px));padding:42px 0 68px; }
+      .hero-copy { max-width:840px; }
+      .hero h1 { font-size:clamp(36px, 3.25vw, 44px);max-width:840px; }
+      .hero p.lead { font-size:17px;max-width:800px; }
+      .hero .btn { min-height:48px;padding:11px 16px;font-size:16px; }
+      .hero-alert-grid { max-width:840px; }
+      .hero-alert strong { font-size:16px; }
+      .hero-alert span { font-size:13px; }
+      .hero-points { max-width:840px; }
+      .hero-price-corner .floating-price { width:218px;padding:16px 18px; }
+      .hero-price-corner { bottom:34px; }
+    }
+
     @media (max-width: 1220px) and (min-width: 861px) {
+      .site-header .wrap { width:calc(100% - 28px); }
+      .site-header .inner { min-height:70px;gap:14px; }
+      .brand { flex-basis:330px; }
+      .brand-text span { font-size:20px; }
+      .brand-text em { white-space:normal; }
+      .nav { gap:6px; }
+      .nav a { padding:8px 9px;font-size:13px;border-radius:12px; }
       .hero-grid { grid-template-columns:minmax(0,.9fr) minmax(340px,.72fr);gap:24px;align-items:start; }
-      .hero h1 { font-size:clamp(46px,5.4vw,70px);line-height:1;letter-spacing:-.04em; }
-      .hero p.lead { font-size:20px;line-height:1.42;margin-bottom:18px; }
-      .hero-alert { margin:12px 0 14px;padding:14px 16px;border-radius:20px; }
-      .hero-alert strong { font-size:19px; }
-      .hero-alert span { font-size:15px;line-height:1.35; }
+      .hero h1 { font-size:clamp(34px,3.35vw,42px);line-height:1.04;letter-spacing:0;max-width:820px; }
+      .hero p.lead { font-size:17px;line-height:1.42;margin-bottom:16px; }
+      .hero-alert-grid { grid-template-columns:1fr 1fr;gap:10px;max-width:720px;margin:16px 0 18px; }
+      .hero-alert { padding:12px 13px;border-radius:16px; }
+      .hero-alert strong { font-size:15px; }
+      .hero-alert span { font-size:13px;line-height:1.3; }
+      .hero-points { grid-template-columns:1fr 1fr;gap:8px 10px; }
+      .hero-points li { font-size:13px; }
       .hero-visual { min-height:520px; }
       .hero-card { min-height:520px; }
+      .hero { min-height:auto;padding:38px 0 60px; }
+      .hero .btn { min-height:46px;padding:10px 14px;font-size:15px;border-radius:14px; }
+      .hero-price-corner { bottom:24px; }
+      .hero-price-corner .floating-price { width:202px;padding:14px 16px; }
+      .floating-price b { font-size:25px; }
+      .floating-price small { font-size:12px; }
     }
     @media (max-width: 1100px) {
       .pricing-wrap { grid-template-columns:1fr; }
@@ -378,8 +417,10 @@
       .hero-price-corner .floating-price { width:100%;margin:0; }
       .floating-price b { font-size:25px; }
       .floating-price small { font-size:13px; }
-      .hero h1 { max-width:12ch; }
-      .hero p.lead { font-size:18px; line-height:1.5; max-width:31ch; overflow-wrap:normal; }
+      .hero h1 { max-width:12ch;font-size:clamp(32px,9vw,38px); }
+      .hero p.lead { font-size:16px; line-height:1.45; max-width:31ch; overflow-wrap:normal; }
+      .hero-alert-grid { grid-template-columns:1fr;gap:10px;margin:16px 0; }
+      .hero-points { grid-template-columns:1fr;gap:8px; }
       .section-text, .hero-alert span { max-width:100%; overflow-wrap:anywhere; }
       .hero-alert strong { font-size:20px; overflow-wrap:anywhere; }
       .pill { display:block; max-width:100%; border-radius:24px; font-size:14px; line-height:1.35; white-space:normal; }
@@ -432,10 +473,12 @@
           <div class="pill"><span class="pill-dot"></span> 6-10 июля 2026 | 10:00 - 18:00</div>
           <h1>Психология без скуки: подростковый интенсив речи, уверенности, общения и ИИ</h1>
           <p class="lead">Психологический интенсив в центре Москвы по адресу: Москва, Сущёвский Вал, 56. Подростки разбираются в себе, тренируют общение, уверенность, границы и ораторскую подачу, пробуют ИИ для идей и проектов и мягко переключаются после учебного напряжения.</p>
-          <div class="hero-alert"><strong>Бесплатная 15-минутная консультация до оплаты</strong><span>Сначала можно коротко обсудить возраст подростка, ожидания и понять, подходит ли формат. Это мягкий вход без давления на немедленную покупку.</span></div>
-          <div class="hero-alert"><strong>ИИ-практика и психология</strong><span>Подростки не только обсуждают эмоции и общение, но и учатся использовать нейросети для идей, презентаций и проектов безопасно.</span></div>
-          <div class="hero-alert"><strong>Ораторское мастерство без сцены через силу</strong><span>Внутри есть короткие речевые практики: как познакомиться, выразить мысль, задать вопрос, выступить в малой группе и не зажаться.</span></div>
-          <div class="hero-alert"><strong>Камерная группа до 12 подростков</strong><span>Места подтверждаются после короткой встречи-знакомства с родителем или законным представителем.</span></div>
+          <div class="hero-alert-grid">
+            <div class="hero-alert"><strong>Бесплатная 15-минутная консультация до оплаты</strong><span>Сначала можно коротко обсудить возраст, ожидания и понять, подходит ли формат.</span></div>
+            <div class="hero-alert"><strong>ИИ-практика и психология</strong><span>Нейросети для идей, презентаций и проектов без тревоги и лишней сложности.</span></div>
+            <div class="hero-alert"><strong>Ораторское мастерство без давления</strong><span>Как познакомиться, выразить мысль, задать вопрос и выступить в малой группе.</span></div>
+            <div class="hero-alert"><strong>Камерная группа до 12 подростков</strong><span>Места подтверждаются после короткой встречи с родителем или законным представителем.</span></div>
+          </div>
           <div class="btns">
             <a class="btn primary" href="https://t.me/moonn_official" target="_blank" rel="noopener">Оставить заявку</a>
             <a class="btn secondary" href="#program">Посмотреть программу</a>
