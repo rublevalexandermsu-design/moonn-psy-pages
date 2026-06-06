@@ -109,13 +109,17 @@
     .nav a { text-decoration:none;color:var(--text);font-weight:800;padding:14px 20px;border-radius:18px;background:rgba(255,255,255,.78);border:1px solid var(--line); }
     .nav a.cta { background:linear-gradient(135deg, var(--blue), var(--blue2)); color:#fff; border-color:transparent; }
 
-    .hero { padding:34px 0 24px; }
-    .hero-grid { display:grid;grid-template-columns:minmax(0,.92fr) minmax(360px,.78fr);gap:28px;align-items:start;min-width:0; }
+    .hero { position:relative;min-height:calc(100vh - 86px);padding:72px 0 108px;display:flex;align-items:center;overflow:hidden;color:#fff;background:#11163d; }
+    .hero::before { content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg, rgba(9,13,37,.82) 0%, rgba(15,18,54,.66) 42%, rgba(15,18,54,.24) 72%, rgba(15,18,54,.58) 100%);pointer-events:none; }
+    .hero-bg-video { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.92) contrast(.96); }
+    .hero-grid { position:relative;z-index:2;display:block;min-width:0; }
     .hero-grid > * { min-width:0; }
-    .hero h1 { font-size:clamp(44px, 5.7vw, 76px); line-height:1; letter-spacing:-.04em; margin:18px 0 16px; }
-    .hero p.lead { font-size:clamp(19px, 1.8vw, 23px); line-height:1.45; color:#606b98; margin:0 0 22px; max-width:680px; }
+    .hero-copy { max-width:760px;text-shadow:0 2px 18px rgba(0,0,0,.42); }
+    .hero .pill { background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.24);color:#fff;box-shadow:none;backdrop-filter:blur(12px); }
+    .hero h1 { font-size:clamp(42px, 5.4vw, 74px); line-height:1; letter-spacing:0; margin:18px 0 18px; color:#fff; }
+    .hero p.lead { font-size:clamp(19px, 1.8vw, 23px); line-height:1.45; color:rgba(255,255,255,.90); margin:0 0 22px; max-width:720px; }
     .hero-points { display:flex;flex-wrap:wrap;gap:12px 18px;margin:22px 0 28px;padding:0;list-style:none; }
-    .hero-points li { display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:#69749c; }
+    .hero-points li { display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:rgba(255,255,255,.86); }
     .check { width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e9d8fb;color:#8a43c4;font-size:14px;font-weight:900; }
 
     .hero-visual { position:relative;min-height:540px; }
@@ -132,7 +136,13 @@
     .speaker-card img { width:84px;height:84px;border-radius:18px;object-fit:cover;flex:0 0 84px; }
     .speaker-card strong { display:block;font-size:20px;line-height:1.1;margin-bottom:6px; }
     .speaker-card span { display:block;font-size:14px;color:#5f6b98;line-height:1.45; }
+    .hero-alert { background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.20);backdrop-filter:blur(16px); }
+    .hero-alert strong { color:#fff;letter-spacing:0; }
+    .hero-alert span { color:rgba(255,255,255,.84); }
+    .hero .section-text, .hero .section-text a { color:rgba(255,255,255,.82); }
+    .hero-price-corner { position:absolute;right:max(24px, calc((100vw - var(--max)) / 2));top:clamp(300px, calc(100vh - 360px), 620px);z-index:3; }
     .floating-price { position:absolute;left:22px;bottom:190px;width:232px;box-sizing:border-box;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg, rgba(48,73,201,.96), rgba(123,86,226,.96));color:#fff;box-shadow:0 18px 38px rgba(55,74,185,.22); }
+    .hero-price-corner .floating-price { position:static;left:auto;bottom:auto;width:260px;border:1px solid rgba(255,255,255,.28);box-shadow:0 22px 52px rgba(4,9,30,.36);backdrop-filter:blur(14px); }
     .floating-price b { display:block;font-size:30px;line-height:1; }
     .floating-price small { display:block;font-size:14px;opacity:.88;margin-top:6px;line-height:1.35; }
 
@@ -347,7 +357,10 @@
     @media (max-width: 860px) {
       .site-header .inner { padding:12px 0; align-items:flex-start; }
       .nav { display:none; }
+      .hero { min-height:auto;padding:44px 0 36px;align-items:flex-start; }
+      .hero::before { background:linear-gradient(180deg, rgba(9,13,37,.82) 0%, rgba(15,18,54,.70) 64%, rgba(15,18,54,.84) 100%); }
       .hero-grid { grid-template-columns:1fr; }
+      .hero-copy { max-width:100%; }
       .hero-visual { min-height:470px; }
       .hero-card { min-height:470px; }
       .cards-4, .cards-5, .program { grid-template-columns:1fr; }
@@ -359,7 +372,9 @@
       .speaker-card { position:static; margin:14px; max-width:none; }
       .hero-label { left:28px; right:28px; top:auto; bottom:310px; justify-content:flex-start; }
       .hero-label span { font-size:14px; padding:9px 13px; }
+      .hero-price-corner { position:relative;right:auto;bottom:auto;margin:18px 16px 0;z-index:2; }
       .floating-price { position:static; margin:14px; max-width:none; padding:14px 16px; }
+      .hero-price-corner .floating-price { width:100%;margin:0; }
       .floating-price b { font-size:25px; }
       .floating-price small { font-size:13px; }
       .hero h1 { max-width:12ch; }
@@ -406,8 +421,11 @@
 
   <main id="top">
     <section class="hero section">
+      <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" onloadedmetadata="this.playbackRate=0.6">
+        <source src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@312fd045c882d59ebc32474320f4e3c784d49ad7/assets/teen-psychology-camp-2026/teen-intensive-hero-background-2026-06-06.mp4" type="video/mp4" />
+      </video>
       <div class="wrap hero-grid">
-        <div class="reveal visible">
+        <div class="hero-copy reveal visible">
           <div class="pill"><span class="pill-dot"></span> 6-10 июля 2026 | 10:00 - 18:00</div>
           <h1>Психология без скуки: подростковый интенсив речи, уверенности, общения и ИИ</h1>
           <p class="lead">Психологический интенсив в центре Москвы по адресу: Москва, Сущёвский Вал, 56. Подростки разбираются в себе, тренируют общение, уверенность, границы и ораторскую подачу, пробуют ИИ для идей и проектов и мягко переключаются после учебного напряжения.</p>
@@ -431,26 +449,10 @@
             <li><span class="check">✓</span>Родителям не нужно присутствовать на занятиях</li>
           </ul>
         </div>
-        <div class="hero-visual reveal visible">
-          <div class="hero-card">
-            <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@c0f3a6c/assets/teen-psychology-camp-2026/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн и подростки на психологическом интенсиве" loading="eager" fetchpriority="high" decoding="async" />
-            <div class="overlay-top"></div>
-            <div class="hero-label">
-              <span>Сущёвский Вал</span>
-              <span>Группа до 12</span>
-              <span>Практика и общение</span>
-            </div>
-            <div class="floating-price">
-              <b>40 000 ₽</b>
-              <small>ранняя оплата<br>до 15 июня<br><s>50 000 ₽</s> стандартная</small>
-            </div>
-            <div class="speaker-card">
-              <img src="https://cdn.jsdelivr.net/gh/rublevalexandermsu-design/moonn-psy-pages@c0f3a6c/assets/teen-psychology-camp-2026/tatiana-moonn-teen-psychology-camp-hero-2026.jpg" alt="Татьяна Мунн ведёт подростковый психологический интенсив" />
-              <div>
-                <strong>Татьяна Мунн</strong>
-                <span>Психолог МГУ, автор метода «Быстрая психология». Опыт проведения подростковых программ, лекций и психологических форматов.</span>
-              </div>
-            </div>
+        <div class="hero-price-corner reveal visible" aria-label="Стоимость ранней оплаты">
+          <div class="floating-price">
+            <b>40 000 ₽</b>
+            <small>ранняя оплата<br>до 15 июня<br><s>50 000 ₽</s> стандартная</small>
           </div>
         </div>
       </div>
@@ -948,6 +950,15 @@
   </script>
   <script>
     (function() {
+      function tuneHeroVideo() {
+        var video = document.querySelector('.hero-bg-video');
+        if (!video) return;
+        video.muted = true;
+        video.playbackRate = 0.6;
+        var play = video.play();
+        if (play && typeof play.catch === 'function') play.catch(function() {});
+      }
+
       function repairTildaCart() {
         var cartRoot = document.querySelector('.t706');
         if (!cartRoot) return null;
@@ -1176,6 +1187,9 @@
       setTimeout(initTildaCart, 1200);
       setTimeout(repairTildaOrderFormHandlers, 1500);
       setTimeout(localizeTildaPaymentFields, 1600);
+      tuneHeroVideo();
+      setTimeout(tuneHeroVideo, 900);
+      setTimeout(tuneHeroVideo, 2200);
       bindTeenCampMetrikaGoals();
       bindTeenCampFormSuccessGoals();
       setInterval(enhanceTildaPaymentUi, 1500);
