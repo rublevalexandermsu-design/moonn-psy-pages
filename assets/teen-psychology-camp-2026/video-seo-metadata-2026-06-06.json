@@ -1,0 +1,45 @@
+{
+  "schema": "moonn-video-seo-metadata.v1",
+  "project": "Moonn / Tatiana Moon teen psychology intensive",
+  "pageUrl": "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya",
+  "seoStatus": "SEO-optimization completed",
+  "seoStatusRu": "SEO-оптимизация сделана",
+  "updatedAt": "2026-06-06",
+  "videos": [
+    {
+      "file": "tatiana-munn-podrostkovyy-intensiv-psihologiya-hero-video-2026.mp4",
+      "sourceRole": "hero background video",
+      "seoTitle": "Татьяна Мунн - подростковый интенсив по психологии",
+      "seoDescription": "Фоновое видео первого экрана страницы подросткового психологического интенсива Татьяны Мунн в Москве.",
+      "keywords": ["Татьяна Мунн", "подростковый интенсив", "психология подростков", "Москва", "уверенность", "общение"]
+    },
+    {
+      "file": "tatiana-munn-podrostkovyy-intensiv-psihologiya-v-zale-video-2026.mp4",
+      "sourceRole": "homepage and hall preview video",
+      "seoTitle": "Подростковый интенсив Татьяны Мунн в зале",
+      "seoDescription": "Видео для блока о подростковом интенсиве по психологии, практике общения, уверенности и речи.",
+      "keywords": ["Татьяна Мунн", "интенсив в зале", "подростки", "психология", "ораторство"]
+    },
+    {
+      "file": "tatiana-munn-podrostkovyy-intensiv-cheklist-roditelyam-senteya-video-2026.mp4",
+      "sourceRole": "parent checklist block video",
+      "seoTitle": "Чек-лист для родителей подросткового интенсива Татьяны Мунн",
+      "seoDescription": "Видео в блоке чек-листа для родителей о формате подросткового психологического интенсива.",
+      "keywords": ["чек-лист для родителей", "подростковый интенсив", "Татьяна Мунн", "Сентея", "психология"]
+    },
+    {
+      "file": "tatiana-munn-podrostkovyy-intensiv-lichnye-vyvody-uverennost-video-2026.mp4",
+      "sourceRole": "outcome block video",
+      "seoTitle": "Личные выводы, уверенность и опыт на подростковом интенсиве",
+      "seoDescription": "Видео-блок о результатах подросткового интенсива: личные выводы, уверенность, общение и опыт.",
+      "keywords": ["личные выводы", "уверенность подростка", "психология подростков", "Татьяна Мунн"]
+    },
+    {
+      "file": "tatiana-munn-psiholog-mgu-vedet-podrostkovyy-intensiv-video-2026.mp4",
+      "sourceRole": "Tatiana Munn MSU psychologist block video",
+      "seoTitle": "Татьяна Мунн психолог МГУ ведёт подростковый интенсив",
+      "seoDescription": "Видео в блоке о Татьяне Мунн, психологе МГУ, которая лично ведёт подростковый интенсив по психологии.",
+      "keywords": ["Татьяна Мунн", "психолог МГУ", "подростковый интенсив", "психология без скуки", "Москва"]
+    }
+  ]
+}
