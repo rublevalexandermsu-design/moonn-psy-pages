@@ -2176,6 +2176,40 @@ Append-only project history for `moon-psy-site`.
 - Follow-up rule:
   - For Tilda privacy/form compliance, raw HTML form signals are a scout, not the gate. The gate is rendered browser verification plus live policy endpoint status.
 
+## 2026-06-14 19:15 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Recheck SEO automations and ensure tomorrow's run uses the current domain.
+- Route:
+  - Контур: `Moonn SEO/AEO supervisor automations`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: request concerns SEO supervisor cron jobs and the current live domain migration, not the teen-camp content branch.
+- Findings:
+  - Two relevant Codex automations exist and are `ACTIVE`:
+    - `moonn-five-page-seo-aeo-supervisor` / `Moonn five-page SEO/AEO supervisor`.
+    - `moonn-seo-privacy-supervisor` / `Moonn SEO и privacy supervisor`.
+  - Both automations are scheduled for 09:00 Moscow time daily.
+  - Their prompts correctly describe the current live domain as `https://мунн.рф/` / `https://xn--l1acaw.xn--p1ai/` and explicitly forbid treating `moon.ru` or legacy `moonn.ru` as the working property.
+  - The actual automation cwd still pointed to the main `moon-psy-site` checkout, which is currently on `codex/moonn-camp-page-update` and still has older scripts with hardcoded `moonn.ru`.
+  - That mismatch explains the 2026-06-14 DNS-blocked reports against `https://moonn.ru/...`.
+- Actions:
+  - Updated both automation TOML files so `cwds` now points to `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site-supervisor-20260614`.
+  - Verified that the supervisor worktree scripts default to `https://xn--l1acaw.xn--p1ai` and support `--base-url`.
+  - Ran a non-rendered five-page SEO autocheck against `https://xn--l1acaw.xn--p1ai`.
+- Verification:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-autocheck.md` shows DNS resolve `True`.
+  - All 5 priority URLs returned HTTP `200`.
+  - All 5 priority URLs are in sitemap.
+  - All 5 priority URLs are not blocked by robots.
+  - Rendered/browser audit timed out and must not be treated as verified.
+- Remaining issues:
+  - Raw H1 count is not one on camp, consultation, and reviews pages.
+  - Missing image `alt` remains on all five checked pages.
+  - Gallery page still has placeholder text.
+  - Privacy standard aliases `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` still require legal/publication gate before live source changes.
+- Follow-up rule:
+  - For scheduled Codex automations, verify both prompt domain and execution cwd/branch. A correct prompt is not enough if the cwd points to a checkout with older scripts.
+
 ## 2026-06-14 14:20 +03:00
 
 - Project: Moonn / Tatiana Moon Studio.

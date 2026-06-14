@@ -2,6 +2,14 @@
 
 Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privacy/RKN follow-up.
 
+## 2026-06-14 — Automation domain/cwd correction
+
+1. `DONE 2026-06-14` Corrected Codex SEO automation execution cwd: both `moonn-five-page-seo-aeo-supervisor` and `moonn-seo-privacy-supervisor` now run from `moon-psy-site-supervisor-20260614`, not the stale `moon-psy-site` checkout.
+2. `OK` Non-rendered five-page autocheck against `https://xn--l1acaw.xn--p1ai` returned HTTP `200`, sitemap `True`, robots blocked `False` for all 5 priority URLs. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-14-autocheck.md`.
+3. `P0` Rendered/browser audit timed out during manual verification. Do not treat rendered AEO placement as newly verified from this run; use bounded Chrome GUI/Playwright run with stricter per-page timeout.
+4. `P1` Remaining raw SEO cleanup: H1 count is not one on camp/consultation/reviews, missing image alt remains on all five priority pages, and gallery still has placeholder text.
+5. `P1` Rule: automation results are valid only when prompt domain, cwd branch, and script domain defaults all point to the current `мунн.рф` / `xn--l1acaw.xn--p1ai` contour.
+
 ## 2026-05-20
 
 1. `P0` Analytics access: obtain Yandex.Metrika export or OAuth/API access for counter `96397286`.

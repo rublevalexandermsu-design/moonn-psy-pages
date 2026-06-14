@@ -94,6 +94,42 @@
 
 - Privacy/form compliance must separate raw-source findings from rendered-browser gate results. Do not report generated Tilda form infrastructure as live missing-consent failure unless a rendered form page lacks a checkbox.
 
+## 2026-06-14 19:15 +03:00 — SEO automations ran from stale checkout and audited legacy `moonn.ru`
+
+### Symptom
+
+- The 2026-06-14 SEO and privacy automation reports showed DNS failures for `https://moonn.ru/...`.
+- This looked like the site/search contour was broken, even though the current live domain is `https://мунн.рф/` (`https://xn--l1acaw.xn--p1ai/`).
+
+### Root Cause
+
+- The automation prompts had already been updated to use `мунн.рф` and to forbid `moon.ru` / legacy `moonn.ru`.
+- The actual automation `cwds` still pointed to `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site`.
+- That checkout was on `codex/moonn-camp-page-update` and still had older audit scripts with hardcoded `moonn.ru`.
+- Codex previously treated the prompt as sufficient and did not verify execution cwd/branch/script version before relying on the scheduled reports.
+
+### Fix Implemented
+
+- Updated both Codex automation TOML files:
+  - `moonn-five-page-seo-aeo-supervisor`
+  - `moonn-seo-privacy-supervisor`
+- Both now run from `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site-supervisor-20260614`, where the scripts default to `https://xn--l1acaw.xn--p1ai` and support explicit `--base-url`.
+
+### Verification
+
+- Both automations remain `ACTIVE`.
+- Both automations remain scheduled for 09:00 Moscow time daily.
+- Non-rendered five-page autocheck against `https://xn--l1acaw.xn--p1ai` returned:
+  - DNS resolve: `True`.
+  - 5/5 priority URLs HTTP `200`.
+  - 5/5 priority URLs in sitemap.
+  - 5/5 priority URLs not blocked by robots.
+- Browser rendered audit timed out and is not counted as verified.
+
+### Follow-up Rule
+
+- For scheduled Codex automations, always verify three layers before trusting the result: prompt domain, execution cwd/branch, and script/config domain defaults. A correct prompt does not protect against a stale checkout.
+
 ## 2026-06-14 14:20 +03:00 — AEO answer block appeared above the teen camp hero
 
 ### Symptom
