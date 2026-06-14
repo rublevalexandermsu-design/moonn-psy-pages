@@ -17,7 +17,7 @@ PACKET = ROOT / "docs" / "moonn-gsc-yandex-reindex-packet-2026-05-08.json"
 RUN_DATE = datetime.now(timezone.utc).date().isoformat()
 OUT_JSON = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.json"
 OUT_MD = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.md"
-DEFAULT_BASE_URL = "https://moonn.ru"
+DEFAULT_BASE_URL = "https://xn--l1acaw.xn--p1ai"
 
 POLICY_PATHS = ["/privacy", "/personal-data-consent", "/cookies", "/data-subject-request"]
 

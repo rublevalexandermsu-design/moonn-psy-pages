@@ -18,11 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 TODAY = datetime.now(timezone.utc).date().isoformat()
 DEFAULT_PACKET = DOCS / f"moonn-five-page-seo-packets-{TODAY}.json"
-DEFAULT_BASE_URL = "https://moonn.ru"
+DEFAULT_BASE_URL = "https://xn--l1acaw.xn--p1ai"
 SITEMAP_URL = f"{DEFAULT_BASE_URL}/sitemap.xml"
 ROBOTS_URL = f"{DEFAULT_BASE_URL}/robots.txt"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; MoonnFivePageSEOAudit/1.0; +https://moonn.ru/)",
+    "User-Agent": "Mozilla/5.0 (compatible; MoonnFivePageSEOAudit/1.0; +https://xn--l1acaw.xn--p1ai/)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 PLACEHOLDERS = ["Book design", "Your Name", "Your Email", "Html code will be here"]

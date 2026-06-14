@@ -22,8 +22,8 @@ HEAD_SNIPPET = DOCS / f"moonn-five-page-seo-sprint-head-snippet-{RUN_DATE}.html"
 ASSET_JS = ASSETS / "moonn-five-page-seo-sprint-layer.js"
 
 
-PERSON_ID = "https://moonn.ru/#tatiana-munn"
-WEBSITE_ID = "https://moonn.ru/#website"
+PERSON_ID = "https://xn--l1acaw.xn--p1ai/#tatiana-munn"
+WEBSITE_ID = "https://xn--l1acaw.xn--p1ai/#website"
 YANDEX_SERVICES_PROFILE = "https://uslugi.yandex.ru/profile/TatyanaKumskovamunn-948629"
 YCLIENTS_URL = "https://n461584.yclients.com/"
 
@@ -31,7 +31,7 @@ YCLIENTS_URL = "https://n461584.yclients.com/"
 PAGES = [
     {
         "key": "teen_camp",
-        "url": "https://moonn.ru/podrostkovyy-lager-psihologiya",
+        "url": "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya",
         "alias": "podrostkovyy-lager-psihologiya",
         "sourcePageId": "140348786",
         "role": "commercial_event",
@@ -79,7 +79,7 @@ PAGES = [
     },
     {
         "key": "art_gallery",
-        "url": "https://moonn.ru/kartiny-tatiany-munn",
+        "url": "https://xn--l1acaw.xn--p1ai/kartiny-tatiany-munn",
         "alias": "kartiny-tatiany-munn",
         "sourcePageId": "140864526",
         "role": "trust_and_product",
@@ -123,7 +123,7 @@ PAGES = [
     },
     {
         "key": "exam_support",
-        "url": "https://moonn.ru/psypodgotovka1",
+        "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
         "alias": "psypodgotovka1",
         "sourcePageId": "62652841",
         "role": "commercial_service",
@@ -167,7 +167,7 @@ PAGES = [
     },
     {
         "key": "consultations",
-        "url": "https://moonn.ru/psiholog-konsultacii-moskva",
+        "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
         "alias": "psiholog-konsultacii-moskva",
         "sourcePageId": "135430346",
         "role": "main_commercial_service",
@@ -212,7 +212,7 @@ PAGES = [
     },
     {
         "key": "reviews",
-        "url": "https://moonn.ru/otzivi",
+        "url": "https://xn--l1acaw.xn--p1ai/otzivi",
         "alias": "otzivi",
         "sourcePageId": "81167556",
         "role": "trust",
@@ -266,9 +266,9 @@ def graph_for(page: dict) -> dict:
             "name": "Татьяна Мунн",
             "alternateName": ["Кумскова Татьяна Михайловна", "Татьяна Мунн (Кумскова)", "Tatiana Moonn"],
             "jobTitle": "Психолог МГУ, эксперт по эмоциональному интеллекту",
-            "url": "https://moonn.ru/",
+            "url": "https://xn--l1acaw.xn--p1ai/",
             "sameAs": [
-                "https://moonn.ru/",
+                "https://xn--l1acaw.xn--p1ai/",
                 "https://moonn.timepad.ru/events/",
                 "https://miiiips.ru/author-tatyana-munn-kumskova.html",
                 YANDEX_SERVICES_PROFILE,
@@ -287,7 +287,7 @@ def graph_for(page: dict) -> dict:
         {
             "@type": "WebSite",
             "@id": WEBSITE_ID,
-            "url": "https://moonn.ru/",
+            "url": "https://xn--l1acaw.xn--p1ai/",
             "name": "Татьяна Мунн",
             "publisher": {"@id": PERSON_ID},
             "inLanguage": "ru-RU",
@@ -308,7 +308,7 @@ def graph_for(page: dict) -> dict:
             "@type": "BreadcrumbList",
             "@id": f"{url}#breadcrumbs",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://moonn.ru/"},
+                {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://xn--l1acaw.xn--p1ai/"},
                 {"@type": "ListItem", "position": 2, "name": page["targetH1"], "item": url},
             ],
         },
@@ -825,3 +825,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-14T09:43:42.680451+00:00",
+  "status": "baseline_and_change_contract_created",
+  "sourceReport": "docs/moonn-seo-growth-check-2026-05-20.md",
+  "pages": [
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya",
+      "pageId": "140348786",
+      "baselineDate": "2026-06-14",
+      "hypothesis": "Сужение страницы под родителя подростка и запросы про психологический лагерь даст больше релевантных показов и кликов, чем общий блок с программой.",
+      "targetQueries": [
+        "подростковый психологический лагерь Москва",
+        "лагерь для подростков психология",
+        "тревожность и общение подростков",
+        "психологический лагерь для подростков"
+      ],
+      "changesPlanned": [
+        "seo_title_description_canonical",
+        "single_h1",
+        "faq_aeo_block",
+        "page_specific_schema",
+        "metrika_click_goals"
+      ],
+      "changesApplied": [],
+      "reindexDate": null,
+      "tPlus3": null,
+      "tPlus14": null,
+      "tPlus28": null,
+      "tPlus56": null,
+      "blockers": [
+        "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
+        "Metrika page-level report was previously collapsed to homepage and needs separate verification."
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/kartiny-tatiany-munn",
+      "pageId": "140864526",
+      "baselineDate": "2026-06-14",
+      "hypothesis": "Галерея лучше работает как доверительный и продуктовый слой, если отделить арт-интент от общей психологии и добавить понятный CTA.",
+      "targetQueries": [
+        "картины Татьяны Мунн",
+        "галерея Татьяны Мунн",
+        "авторские картины психолога",
+        "энергетические картины Татьяна Мунн"
+      ],
+      "changesPlanned": [
+        "seo_title_description_canonical",
+        "single_h1",
+        "faq_aeo_block",
+        "page_specific_schema",
+        "metrika_click_goals"
+      ],
+      "changesApplied": [],
+      "reindexDate": null,
+      "tPlus3": null,
+      "tPlus14": null,
+      "tPlus28": null,
+      "tPlus56": null,
+      "blockers": [
+        "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
+        "Metrika page-level report was previously collapsed to homepage and needs separate verification."
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
+      "pageId": "62652841",
+      "baselineDate": "2026-06-14",
+      "hypothesis": "Уточнение под ОГЭ/ЕГЭ и тревогу перед экзаменами увеличит CTR по низко- и среднечастотным запросам.",
+      "targetQueries": [
+        "подготовка к ЕГЭ без паники",
+        "стресс перед экзаменом",
+        "психологическая подготовка к ОГЭ",
+        "как справиться с тревогой перед экзаменом"
+      ],
+      "changesPlanned": [
+        "seo_title_description_canonical",
+        "single_h1",
+        "faq_aeo_block",
+        "page_specific_schema",
+        "metrika_click_goals"
+      ],
+      "changesApplied": [],
+      "reindexDate": null,
+      "tPlus3": null,
+      "tPlus14": null,
+      "tPlus28": null,
+      "tPlus56": null,
+      "blockers": [
+        "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
+        "Metrika page-level report was previously collapsed to homepage and needs separate verification."
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
+      "pageId": "135430346",
+      "baselineDate": "2026-06-14",
+      "hypothesis": "Разделение интентов взрослые/подростки/онлайн/Москва и один H1 должны улучшить релевантность коммерческих запросов.",
+      "targetQueries": [
+        "психолог подростку",
+        "психолог онлайн",
+        "психолог в Москве",
+        "психолог МГУ",
+        "консультация психолога Татьяна Мунн"
+      ],
+      "changesPlanned": [
+        "seo_title_description_canonical",
+        "single_h1",
+        "faq_aeo_block",
+        "page_specific_schema",
+        "metrika_click_goals"
+      ],
+      "changesApplied": [],
+      "reindexDate": null,
+      "tPlus3": null,
+      "tPlus14": null,
+      "tPlus28": null,
+      "tPlus56": null,
+      "blockers": [
+        "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
+        "Metrika page-level report was previously collapsed to homepage and needs separate verification."
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/otzivi",
+      "pageId": "81167556",
+      "baselineDate": "2026-06-14",
+      "hypothesis": "Страница отзывов должна поднимать доверие и переходы к записи, а не пытаться конкурировать как общая SEO-статья.",
+      "targetQueries": [
+        "Татьяна Мунн отзывы",
+        "психолог Татьяна Мунн отзывы",
+        "Татьяна Мунн Яндекс Услуги",
+        "отзывы о психологе Татьяне Мунн"
+      ],
+      "changesPlanned": [
+        "seo_title_description_canonical",
+        "single_h1",
+        "faq_aeo_block",
+        "page_specific_schema",
+        "metrika_click_goals"
+      ],
+      "changesApplied": [],
+      "reindexDate": null,
+      "tPlus3": null,
+      "tPlus14": null,
+      "tPlus28": null,
+      "tPlus56": null,
+      "blockers": [
+        "Official API exports were blocked earlier; use Chrome Rublev GUI if API access is still unavailable.",
+        "Metrika page-level report was previously collapsed to homepage and needs separate verification."
+      ]
+    }
+  ]
+}

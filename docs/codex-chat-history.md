@@ -2060,3 +2060,43 @@ Append-only project history for `moon-psy-site`.
   - no 83-URL batch actions.
 - Next action:
   - recover stable GSC/Yandex.Webmaster access paths, then fix the remaining 4 canonicals and the camp AEO/meta drift before any reindex or migration claim.
+
+## 2026-06-14 12:50 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Rerun SEO and privacy supervisor tasks on the live `мунн.рф` domain.
+- Route:
+  - Контур: `Moonn SEO automation / domain migration`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: scheduled SEO/privacy checks were still drifting to legacy `moonn.ru`; this is automation/supervisor work, not the camp-page branch.
+- Verified facts:
+  - Correct live domain: `https://мунн.рф/` / `https://xn--l1acaw.xn--p1ai/`.
+  - `мунн.рф` resolves to `xn--l1acaw.xn--p1ai`; typo domain `моонн.рф` is not the live target.
+  - Isolated temp rerun and supervisor rerun both reached the new domain.
+- Root cause:
+  - Automation prompts had been corrected, but working source files still used `moonn.ru` defaults in the SEO/privacy audit flow and the five-page packet generator.
+- Actions:
+  - Set default base URL in `scripts/moonn_five_page_seo_sprint_audit.py` to `https://xn--l1acaw.xn--p1ai`.
+  - Set default base URL in `scripts/moonn_privacy_compliance_audit.py` to `https://xn--l1acaw.xn--p1ai`.
+  - Updated `scripts/build_moonn_five_page_seo_sprint.py` so newly generated five-page SEO packets use the live punycode domain.
+  - Regenerated five-page SEO package and reran SEO audit with rendered checks.
+  - Reran privacy/form/cookie audit on 83 URLs.
+- Created artifacts:
+  - `docs/moonn-five-page-seo-packets-2026-06-14.json`
+  - `docs/moonn-five-page-seo-packets-2026-06-14.md`
+  - `docs/moonn-five-page-seo-packets-2026-06-14.csv`
+  - `docs/moonn-five-page-seo-change-ledger-2026-06-14.json`
+  - `docs/moonn-five-page-seo-change-ledger-2026-06-14.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-06-14.csv`
+  - `docs/moonn-five-page-reindex-urls-2026-06-14.txt`
+  - `docs/moonn-five-page-seo-sprint-head-snippet-2026-06-14.html`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-supervisor-rerun.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-supervisor-rerun.md`
+  - `docs/moonn-privacy-compliance-audit-2026-06-14.json`
+  - `docs/moonn-privacy-compliance-audit-2026-06-14.md`
+- Findings:
+  - SEO: 5/5 checked pages return HTTP 200, are in sitemap, and are not blocked by robots.
+  - SEO remaining issues: canonical mismatch on 4 pages, missing alt text on all 5 pages, raw H1 drift on 3 pages, placeholder text on art gallery, and camp page title/description drift.
+  - Privacy: 83/83 scoped URLs return HTTP 200; 4 required policy endpoints return 404; 78 pages show form signals without detected checkbox.
+- Follow-up rule:
+  - For Moonn SEO automation, update and verify the executable source path, not only the prompt text. A rerun is valid only when report `inputs.baseUrl` is `https://xn--l1acaw.xn--p1ai` and DNS is true.
