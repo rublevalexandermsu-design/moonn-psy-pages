@@ -477,6 +477,15 @@ def build_asset_js() -> str:
       }}
     }});
   }}
+  function ensureImageAlts(config) {{
+    var fallback = config.targetH1 + " - Татьяна Мунн";
+    Array.prototype.slice.call(document.querySelectorAll("img")).forEach(function(img, index) {{
+      var current = (img.getAttribute("alt") || "").trim();
+      if (current) return;
+      img.setAttribute("alt", fallback + (index ? " " + (index + 1) : ""));
+      img.setAttribute("data-moonn-seo-alt", "auto");
+    }});
+  }}
   function ensureAnswerBlock(config) {{
     if (document.getElementById("moonn-five-page-answer-block")) return;
     var root = document.createElement("section");
@@ -528,6 +537,7 @@ def build_asset_js() -> str:
     setSchema(config);
     ensureSingleH1(config);
     hidePlaceholders();
+    ensureImageAlts(config);
     ensureAnswerBlock(config);
     bindGoals();
   }}
