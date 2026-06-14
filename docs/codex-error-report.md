@@ -93,3 +93,34 @@
 ### Follow-up Rule
 
 - Privacy/form compliance must separate raw-source findings from rendered-browser gate results. Do not report generated Tilda form infrastructure as live missing-consent failure unless a rendered form page lacks a checkbox.
+
+## 2026-06-14 14:20 +03:00 — AEO answer block appeared above the teen camp hero
+
+### Symptom
+
+- The user saw a new visible block titled `Коротко по запросу` above the main teen camp hero.
+- The block was useful for SEO/AEO, but visually damaged the landing page first screen.
+
+### Root Cause
+
+- The shared five-page SEO layer inserted `#moonn-five-page-answer-block` near the top of `main`.
+- The teen camp page is a custom external-HTML Tilda page, and live head code contained multiple old loader URLs. Updating only one occurrence could leave old loaders able to remount stale content.
+
+### Fix Implemented
+
+- Moved the answer block into the native teen camp HTML body after the hero and upper facts section.
+- Added a native-placement guard so the SEO layer does not move this block back up.
+- Replaced all live teen camp loader URLs in Tilda head code with commit `b373c90`.
+- Removed the separate problematic five-page SEO include from the teen camp page head.
+
+### Verification
+
+- Raw live HTML has `8` references to the current teen camp external HTML commit `b373c90`.
+- Raw live HTML has `0` references to old teen camp commit `560518a98698cf6019cc07cb8a4b98b52d9daf6a`.
+- Rendered mounted version is `20260614-answer-block-middle`.
+- Rendered `#moonn-five-page-answer-block` exists at child index `2` inside `main`.
+- The first visible text slice no longer contains `Коротко по запросу`.
+
+### Follow-up Rule
+
+- Before declaring Tilda runtime placement fixed, verify rendered DOM position and scan raw HTML for duplicate old loader URLs. A single updated loader is not enough when repeated snippets exist.

@@ -2175,3 +2175,38 @@ Append-only project history for `moon-psy-site`.
   - `docs/moonn-privacy-compliance-audit-2026-06-14.md`
 - Follow-up rule:
   - For Tilda privacy/form compliance, raw HTML form signals are a scout, not the gate. The gate is rendered browser verification plus live policy endpoint status.
+
+## 2026-06-14 14:20 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Move the visible `Коротко по запросу` block down on the teen camp landing page.
+- Route:
+  - Контур: `Moonn teen camp landing / AEO block placement`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: user reported that the AEO answer block appeared above the main hero and damaged the first-screen UX.
+- Root cause:
+  - The five-page SEO layer inserted `#moonn-five-page-answer-block` near the top of `main`.
+  - The teen camp page also had multiple old external HTML loaders pointing to commit `560518a98698cf6019cc07cb8a4b98b52d9daf6a`, so replacing only one loader was not enough.
+- Actions:
+  - Changed the generated SEO layer so native middle-placement blocks are not moved by JS.
+  - Embedded a native `#moonn-five-page-answer-block` section into `docs/teen-psychology-camp-2026/tilda-page-final.html` after the hero and upper facts section.
+  - Updated the Tilda teen camp loader to external HTML commit `b373c90`.
+  - Replaced all `8` old teen camp loader URLs in Tilda head code and removed the extra five-page SEO include.
+  - Published page `140348786`.
+- Verification:
+  - Live raw HTML has `8` loader URLs pointing to `@b373c90`.
+  - Live raw HTML has `0` loader URLs pointing to old `@560518a98698cf6019cc07cb8a4b98b52d9daf6a`.
+  - Live raw HTML has `0` `moonn-five-page-seo-sprint-layer.js` includes.
+  - Rendered `document.body.dataset.teenCampMountedVersion` is `20260614-answer-block-middle`.
+  - Rendered page contains `#moonn-five-page-answer-block`.
+  - The answer block is child index `2` inside `main`: after hero and upper facts, before the next explanatory sections.
+  - The first visible text slice no longer contains `Коротко по запросу`.
+- Created/updated artifacts:
+  - `docs/teen-psychology-camp-2026/tilda-page-final.html`
+  - `docs/teen-psychology-camp-2026/tilda-head-loader-final.html`
+  - `assets/moonn-five-page-seo-sprint-layer.js`
+  - `scripts/build_moonn_five_page_seo_sprint.py`
+  - `scripts/tilda_five_page_head_layer_ui_rollout.py`
+  - `docs/moonn-answer-block-moved-check-2026-06-14.png`
+- Follow-up rule:
+  - For Tilda pages with repeated loader snippets, verify and replace all live loader occurrences, not only the first match in the head editor.
