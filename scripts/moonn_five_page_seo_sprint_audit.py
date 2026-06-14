@@ -240,6 +240,8 @@ def rendered_audit(pages: list[dict], *, launch_timeout_ms: int = 60000, page_ti
                     h1_values = [text.strip() for text in browser_page.locator("h1").all_inner_texts() if text.strip()]
                     schema_count = browser_page.locator('script[type="application/ld+json"]').count()
                     answer_block_count = browser_page.locator("#moonn-five-page-answer-block").count()
+                    image_count = browser_page.locator("img").count()
+                    images_missing_alt = browser_page.locator('img:not([alt]), img[alt=""]').count()
                     body_text = browser_page.locator("body").inner_text(timeout=10000)
                     rendered_placeholders = [text for text in PLACEHOLDERS if text in body_text]
                     audit.update(
@@ -249,6 +251,8 @@ def rendered_audit(pages: list[dict], *, launch_timeout_ms: int = 60000, page_ti
                             "h1Rendered": h1_values,
                             "jsonLdCountRendered": schema_count,
                             "answerBlockCountRendered": answer_block_count,
+                            "imageCountRendered": image_count,
+                            "imagesMissingAltRendered": images_missing_alt,
                             "placeholderHitsRendered": rendered_placeholders,
                         }
                     )
@@ -313,6 +317,7 @@ def write_markdown(path: Path, payload: dict) -> None:
                 f"- Rendered status: `{page.get('rendered', {}).get('renderedStatus')}`",
                 f"- Rendered H1 count: `{page.get('rendered', {}).get('h1CountRendered', '')}`",
                 f"- Rendered answer block: `{page.get('rendered', {}).get('answerBlockCountRendered', '')}`",
+                f"- Rendered missing alt: `{page.get('rendered', {}).get('imagesMissingAltRendered', '')}`",
                 f"- Issues: {issues}",
                 "",
             ]

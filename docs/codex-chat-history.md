@@ -2100,3 +2100,40 @@ Append-only project history for `moon-psy-site`.
   - Privacy: 83/83 scoped URLs return HTTP 200; 4 required policy endpoints return 404; 78 pages show form signals without detected checkbox.
 - Follow-up rule:
   - For Moonn SEO automation, update and verify the executable source path, not only the prompt text. A rerun is valid only when report `inputs.baseUrl` is `https://xn--l1acaw.xn--p1ai` and DNS is true.
+
+## 2026-06-14 13:10 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Fix live five-page SEO sprint issues on `мунн.рф`.
+- Route:
+  - Контур: `Moonn SEO automation / live SEO fixes`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: continuation of the new-domain SEO supervisor work; unrelated to the open camp-page branch.
+- Actions:
+  - Applied Tilda page SEO settings for all five scoped pages from `docs/moonn-five-page-seo-packets-2026-06-14.json`.
+  - Retried the first two pages after UI save confirmation failed on the first pass; second pass saved/published both.
+  - Added `ensureImageAlts()` to the shared five-page head layer so rendered pages receive fallback `alt` values when Tilda source images lack them.
+  - Published the shared head snippet to all five pages.
+  - Extended the SEO audit to measure rendered image count and rendered missing-alt count, not only raw Tilda HTML.
+- Verification:
+  - 5/5 pages return HTTP `200`, are in sitemap, and are not blocked by robots.
+  - 5/5 pages now have expected title, description and canonical on the live domain.
+  - 5/5 rendered pages have exactly one H1.
+  - 5/5 rendered pages have one answer block.
+  - 5/5 rendered pages have `0` rendered images missing `alt`.
+  - Rendered placeholder hits are empty on all five pages.
+- Created/updated artifacts:
+  - `assets/moonn-five-page-seo-sprint-layer.js`
+  - `docs/moonn-five-page-seo-sprint-head-snippet-2026-06-14.html`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-seo-settings.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-seo-settings.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-head-layer.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-head-layer.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-rendered-alt-metric.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14-after-rendered-alt-metric.md`
+  - `scripts/moonn_five_page_seo_sprint_audit.py`
+- Remaining debt:
+  - Raw Tilda HTML still contains pre-JS H1/alt/placeholder issues on some pages. The live rendered page is fixed, but a strict raw-source audit will keep reporting debt until individual Tilda blocks are edited directly.
+  - Privacy/legal 404 endpoints and form checkbox issues remain a separate legal/publication workstream.
+- Follow-up rule:
+  - Future SEO reports must separate `raw HTML debt` from `rendered browser result`; do not report rendered pages as broken when the browser-level check is clean.
