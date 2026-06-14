@@ -84,6 +84,7 @@
   }
   function ensureAnswerBlock(config) {
     var root = document.getElementById("moonn-five-page-answer-block");
+    if (root && root.getAttribute("data-moonn-native-placement") === "middle") return;
     if (!root) {
       root = document.createElement("section");
       root.id = "moonn-five-page-answer-block";

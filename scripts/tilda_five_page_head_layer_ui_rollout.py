@@ -90,9 +90,11 @@ def apply_head_layer(window, project_id: str, page: dict, snippet: str) -> dict:
   var current = editor ? editor.getValue() : (textarea ? textarea.value : "");
   if (typeof current !== "string") current = "";
   var start = current.indexOf(payload.start);
-  var end = current.indexOf(payload.end);
-  if (start !== -1 && end !== -1 && end > start) {
+  while (start !== -1) {
+    var end = current.indexOf(payload.end, start + payload.start.length);
+    if (end === -1 || end < start) break;
     current = current.slice(0, start).trimEnd() + "\\n" + current.slice(end + payload.end.length).trimStart();
+    start = current.indexOf(payload.start);
   }
   var next = (current.trimEnd() + "\\n\\n" + payload.snippet + "\\n").trimStart();
   if (editor) {
