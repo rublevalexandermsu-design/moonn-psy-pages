@@ -83,25 +83,36 @@
     });
   }
   function ensureAnswerBlock(config) {
-    if (document.getElementById("moonn-five-page-answer-block")) return;
-    var root = document.createElement("section");
-    root.id = "moonn-five-page-answer-block";
-    root.className = "moonn-five-page-answer-block";
-    root.setAttribute("data-moonn-seo-sprint", config.key);
-    var items = config.answerBlock.items.map(function(item) { return "<li>" + item + "</li>"; }).join("");
-    var faq = config.faq.map(function(item) {
-      return "<details><summary>" + item.question + "</summary><p>" + item.answer + "</p></details>";
-    }).join("");
-    root.innerHTML =
-      '<div class="moonn-five-page-answer-inner">' +
-      '<p class="moonn-five-page-kicker">Коротко по запросу</p>' +
-      '<h2>' + config.answerBlock.heading + '</h2>' +
-      '<ul>' + items + '</ul>' +
-      '<a class="moonn-five-page-cta" href="#moonn-contact" data-moonn-goal="' + config.answerBlock.ctaGoal + '">' + config.answerBlock.cta + '</a>' +
-      '<div class="moonn-five-page-faq">' + faq + '</div>' +
-      '</div>';
+    var root = document.getElementById("moonn-five-page-answer-block");
+    if (!root) {
+      root = document.createElement("section");
+      root.id = "moonn-five-page-answer-block";
+      root.className = "moonn-five-page-answer-block";
+      root.setAttribute("data-moonn-seo-sprint", config.key);
+      var items = config.answerBlock.items.map(function(item) { return "<li>" + item + "</li>"; }).join("");
+      var faq = config.faq.map(function(item) {
+        return "<details><summary>" + item.question + "</summary><p>" + item.answer + "</p></details>";
+      }).join("");
+      root.innerHTML =
+        '<div class="moonn-five-page-answer-inner">' +
+        '<p class="moonn-five-page-kicker">Коротко по запросу</p>' +
+        '<h2>' + config.answerBlock.heading + '</h2>' +
+        '<ul>' + items + '</ul>' +
+        '<a class="moonn-five-page-cta" href="#moonn-contact" data-moonn-goal="' + config.answerBlock.ctaGoal + '">' + config.answerBlock.cta + '</a>' +
+        '<div class="moonn-five-page-faq">' + faq + '</div>' +
+        '</div>';
+    }
     var target = document.querySelector("main") || document.querySelector("#allrecords") || document.body;
-    if (target.firstChild) target.insertBefore(root, target.firstChild.nextSibling); else target.appendChild(root);
+    var sections = Array.prototype.slice.call(target.querySelectorAll(":scope > section")).filter(function(section) {
+      return section !== root;
+    });
+    if (sections.length >= 3) {
+      target.insertBefore(root, sections[2]);
+    } else if (sections.length >= 1) {
+      sections[sections.length - 1].insertAdjacentElement("afterend", root);
+    } else {
+      target.appendChild(root);
+    }
   }
   function bindGoals() {
     if (document.documentElement.dataset.moonnFivePageGoals === "1") return;
