@@ -89,3 +89,20 @@ Append-only ledger for measuring SEO/AEO changes against GSC, Yandex.Metrika and
 - Reindex date: pending
 - T+3: early live check passed, source-level cleanup remains
 - T+14/T+28/T+56: pending
+
+## 2026-06-14 Live Recheck
+
+- Current source report: `docs/moonn-seo-growth-check-2026-06-14.md`
+- Live `мунн.рф` state is still technically healthy:
+  - all 5 scoped URLs return `200`;
+  - all 5 are present in sitemap;
+  - none are blocked by `robots.txt`;
+  - rendered H1 count is still `1` on all 5 URLs.
+- Main blockers did not clear:
+  - camp page `/podrostkovyy-lager-psihologiya` still renders answer block `0`;
+  - gallery, exam prep, consultations and reviews still expose `canonical_mismatch` to legacy `https://moonn.ru/...`;
+  - source cleanup debt remains: gallery placeholders, missing image `alt`, and raw H1 anomalies.
+- Cabinet lane regressed:
+  - GSC direct open now fails for both `sc-domain:xn--l1acaw.xn--p1ai` and legacy `https://moonn.ru/`;
+  - Yandex.Webmaster direct route for `https://xn--l1acaw.xn--p1ai:443` opened `404`;
+  - blocker wording stays canonical: `новая property не подтверждена, traffic migration не доказан`.

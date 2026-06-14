@@ -2018,3 +2018,45 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-06-14 12:35 MSK — Supervisor Run: `мунн.рф` live recheck + search-console access regression
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-supervisor-20260614` from `origin/codex/moonn-seo-audit`.
+- Trigger: scheduled morning Moonn SEO/privacy supervisor run with the current live-domain contract for `мунн.рф`.
+- Route:
+  - current open repo copy was on unrelated branch `codex/moonn-camp-page-update` with a foreign deletion in worktree;
+  - created isolated worktree `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site-supervisor-20260614` from `origin/codex/moonn-seo-audit` to avoid mixing workstreams.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-14`
+- Verified:
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`;
+  - camp page still renders answer block `0`;
+  - gallery, exam prep, consultations and reviews still expose `canonical_mismatch` to legacy `https://moonn.ru/...`;
+  - camp raw title/description still drift from the 2026-05-21 packet;
+  - gallery raw HTML still contains `Your Name` / `Your Email`;
+  - missing raw image `alt` remains across all 5 pages;
+  - in the real Alexander Chrome profile, direct GSC open for both `sc-domain:xn--l1acaw.xn--p1ai` and legacy `https://moonn.ru/` now lands on `Oops, you don't have access to this property`;
+  - direct Yandex.Webmaster open for `https://xn--l1acaw.xn--p1ai:443` opened `404`;
+  - legacy Yandex.Metrika counter `96397286` is still accessible and shows weekly slice `8-14 Jun`: `32` pageviews, `21` visits, `20` visitors, `44 c`, depth `1,52`, bounce `28,57%`;
+  - `https://school.miiiips.ru/`, `robots.txt`, `sitemap.xml` all return HTTP `200`, but PR `#11` merge provenance is still missing in repo context.
+- Decision / blocker:
+  - keep exact blocker wording `новая property не подтверждена, traffic migration не доказан`;
+  - additionally treat GSC as a current access regression, not as confirmed traffic evidence for either domain.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-14.md`
+  - `docs/moonn-seo-growth-check-2026-06-14.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal publication;
+  - no cabinet settings changes;
+  - no screenshots saved or committed;
+  - no GSC/Yandex reindex submission;
+  - no 83-URL batch actions.
+- Next action:
+  - recover stable GSC/Yandex.Webmaster access paths, then fix the remaining 4 canonicals and the camp AEO/meta drift before any reindex or migration claim.

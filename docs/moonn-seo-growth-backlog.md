@@ -209,3 +209,13 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `P0` Camp page remains the main quality blocker on the live domain: rendered answer block is still `0`, and raw title/description still do not match the 2026-05-21 sprint packet.
 4. `OK` Technical live reachability remains good on `мунн.рф`: all 5 scoped URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-06.json`.
 5. `P1` Source cleanup debt remains: gallery raw placeholders, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
+
+## 2026-06-14 — `мунн.рф` Daily Supervisor
+
+1. `P0` Search-console access regressed further in the Alexander profile: direct opens for both `sc-domain:xn--l1acaw.xn--p1ai` and legacy `https://moonn.ru/` now land on `Oops, you don't have access to this property`. Before interpreting traffic, restore the canonical access path or prove the permissions loss.
+2. `P0` New-domain blocker wording is unchanged: `новая property не подтверждена, traffic migration не доказан`.
+3. `P0` Canonical migration remains incomplete on 4 scoped live pages: gallery, exam prep, consultations and reviews still expose `canonical_mismatch` to legacy `https://moonn.ru/...`.
+4. `P0` Camp page remains the main live quality blocker: rendered answer block is still `0`, and raw title/description still do not match the sprint packet.
+5. `P0` Yandex.Webmaster host verification is still unproven in the current run: the direct `https://xn--l1acaw.xn--p1ai:443` route opened `404`, so a stable verified-host route still needs to be recovered.
+6. `P1` Legacy analytics evidence is available only as a default weekly Metrika slice for `moonn.ru` (`8-14 Jun`: `32` pageviews, `21` visits, `20` visitors); the required custom period `2026-04-29..2026-06-14` and any host split for `мунн.рф` are still missing.
+7. `P1` MIIIIPS PR `#11` deploy/merge verification remains blocked: `school.miiiips.ru` root/robots/sitemap are live `200`, but the canonical repo+PR URL is still not recorded in this repo context.
