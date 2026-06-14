@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-14T10:15:00+00:00",
+  "project": "Moonn / Tatyana Munn site",
+  "workstream": "Moonn privacy/legal SEO metadata repair",
+  "branch": "codex/moonn-seo-supervisor-20260614",
+  "pages": [
+    {
+      "key": "privacy_policy_existing_politic",
+      "url": "https://xn--l1acaw.xn--p1ai/politic",
+      "alias": "politic",
+      "sourcePageId": "58199199",
+      "role": "legal_policy",
+      "priority": "P0",
+      "title": "Политика обработки персональных данных | Татьяна Мунн",
+      "description": "Политика обработки персональных данных сайта Татьяны Мунн: оператор, формы заявок, cookies, Яндекс.Метрика, Webvisor и порядок обращений.",
+      "seo": {
+        "title": "Политика обработки персональных данных | Татьяна Мунн",
+        "description": "Политика обработки персональных данных сайта Татьяны Мунн: оператор, формы заявок, cookies, Яндекс.Метрика, Webvisor и порядок обращений.",
+        "canonical": "https://xn--l1acaw.xn--p1ai/politic"
+      },
+      "allowedLiveChanges": [
+        "seo_metadata",
+        "canonical"
+      ],
+      "blockedLiveChanges": [
+        "legal_text_rewrite",
+        "operator_details_change",
+        "payment_settings",
+        "form_structure"
+      ]
+    }
+  ]
+}
