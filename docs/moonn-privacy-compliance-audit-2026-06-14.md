@@ -3,16 +3,20 @@
 ## Summary
 
 - Scope URLs checked: `83`.
-- Policy endpoints checked: `4`.
+- Policy endpoints checked: `5`.
 - Pages with form signals: `83`.
 - Pages with risk flags: `78`.
+- Rendered pages checked: `83`.
+- Rendered pages with forms: `15`.
+- Rendered form pages without checkbox: `0`.
 
 ## Policy Endpoints
 
-- `https://xn--l1acaw.xn--p1ai/privacy` — `404`
-- `https://xn--l1acaw.xn--p1ai/personal-data-consent` — `404`
-- `https://xn--l1acaw.xn--p1ai/cookies` — `404`
-- `https://xn--l1acaw.xn--p1ai/data-subject-request` — `404`
+- `https://xn--l1acaw.xn--p1ai/politic` — `200`; rendered `ok`; patch `2026-06-14`
+- `https://xn--l1acaw.xn--p1ai/privacy` — `404`; rendered `ok`
+- `https://xn--l1acaw.xn--p1ai/personal-data-consent` — `404`; rendered `ok`
+- `https://xn--l1acaw.xn--p1ai/cookies` — `404`; rendered `ok`
+- `https://xn--l1acaw.xn--p1ai/data-subject-request` — `404`; rendered `ok`
 
 ## Required Publication Pages
 
@@ -20,8 +24,11 @@
 - `/personal-data-consent` — consent text linked from every form checkbox.
 - `/cookies` — cookies and Yandex Metrika/Webvisor notice.
 - `/data-subject-request` — request/withdrawal/update/deletion procedure, or equivalent section inside `/privacy`.
+- `/politic` — current live canonical policy page until standard aliases are created or redirected.
 
-## High-Risk Pages
+## Raw-Source Findings
+
+These rows come from raw Tilda HTML and can overcount inactive/generated form markup. Use the rendered form check below as the browser-level gate.
 
 - `https://xn--l1acaw.xn--p1ai/` — `forms_without_detected_checkbox`
 - `https://xn--l1acaw.xn--p1ai/abuse_gaslight` — `forms_without_detected_checkbox`
@@ -101,6 +108,10 @@
 - `https://xn--l1acaw.xn--p1ai/vospitanie_article` — `forms_without_detected_checkbox`
 - `https://xn--l1acaw.xn--p1ai/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn` — `forms_without_detected_checkbox`
 - `https://xn--l1acaw.xn--p1ai/water` — `forms_without_detected_checkbox`
+
+## Rendered Form Check
+
+- Browser-level check found no rendered form page without a checkbox.
 
 ## Gate
 

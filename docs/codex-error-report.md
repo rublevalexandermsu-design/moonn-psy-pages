@@ -59,3 +59,37 @@
 ### Follow-up Rule
 
 - SEO reports must label raw-source debt separately from rendered browser defects. Raw Tilda debt is still worth cleaning, but it must not be reported as a live rendered-page failure after browser verification passes.
+
+## 2026-06-14 13:35 +03:00 — Privacy audit overcounted raw Tilda form signals
+
+### Symptom
+
+- The privacy audit reported form signals on all `83` scoped URLs and `forms_without_detected_checkbox` on `78` pages.
+- This made the site look like almost every page had a live form without a consent checkbox.
+
+### Root Cause
+
+- The audit counted raw Tilda HTML/script markers such as generated form infrastructure.
+- It did not distinguish inactive/generated markup from actual rendered browser forms.
+- The existing canonical policy page `/politic` was also not included in the policy endpoint list, while future aliases were checked and returned `404`.
+
+### Fix Implemented
+
+- Added rendered Playwright checks to `scripts/moonn_privacy_compliance_audit.py`.
+- Added `/politic` as the current canonical live policy endpoint.
+- Fixed `/politic` title, description and canonical through Tilda UI.
+- Published a narrow `/politic` runtime patch that removes legacy `https://moonn.ru/politic` from rendered policy text without changing operator/legal terms.
+
+### Verification
+
+- `/politic` returns HTTP `200`.
+- Rendered `/politic` has title `Политика обработки персональных данных | Татьяна Мунн`.
+- Rendered `/politic` canonical is `https://xn--l1acaw.xn--p1ai/politic`.
+- Rendered `/politic` has patch marker `2026-06-14`.
+- Full rendered audit checked `83` scoped URLs.
+- Rendered pages with forms: `15`.
+- Rendered form pages without checkbox: `0`.
+
+### Follow-up Rule
+
+- Privacy/form compliance must separate raw-source findings from rendered-browser gate results. Do not report generated Tilda form infrastructure as live missing-consent failure unless a rendered form page lacks a checkbox.

@@ -19,7 +19,7 @@ OUT_JSON = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.json"
 OUT_MD = ROOT / "docs" / f"moonn-privacy-compliance-audit-{RUN_DATE}.md"
 DEFAULT_BASE_URL = "https://xn--l1acaw.xn--p1ai"
 
-POLICY_PATHS = ["/privacy", "/personal-data-consent", "/cookies", "/data-subject-request"]
+POLICY_PATHS = ["/politic", "/privacy", "/personal-data-consent", "/cookies", "/data-subject-request"]
 
 
 @dataclass
@@ -99,6 +99,54 @@ def analyze_page(url: str, timeout: int) -> PageResult:
     )
 
 
+def analyze_rendered_urls(urls: list[str], timeout_ms: int = 45000) -> list[dict[str, Any]]:
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as exc:  # noqa: BLE001
+        return [{"url": url, "renderedStatus": "skipped", "reason": f"playwright_unavailable: {exc}"} for url in urls]
+
+    rows: list[dict[str, Any]] = []
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(viewport={"width": 1366, "height": 900})
+            context.set_default_timeout(timeout_ms)
+            context.set_default_navigation_timeout(timeout_ms)
+            for url in urls:
+                row: dict[str, Any] = {"url": url, "renderedStatus": "ok"}
+                page = context.new_page()
+                try:
+                    try:
+                        page.goto(url, wait_until="networkidle", timeout=timeout_ms)
+                    except Exception:
+                        page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+                        page.wait_for_timeout(4000)
+                    html = page.locator("body").inner_html(timeout=10000)
+                    text = page.locator("body").inner_text(timeout=10000)
+                    row.update(
+                        {
+                            "titleRendered": page.title(),
+                            "formSignalsRendered": page.locator("form").count(),
+                            "checkboxSignalsRendered": page.locator('input[type="checkbox"]').count(),
+                            "consentSignalsRendered": count(r"персональн|согласи|конфиденц|privacy|personal-data|consent", html + "\n" + text),
+                            "hasCookieTextRendered": bool(re.search(r"cookie|cookies|куки|метрик", html + "\n" + text, re.I)),
+                            "politicPatchMarker": page.locator("html").get_attribute("data-moonn-politic-runtime-patch"),
+                            "oldMoonnPoliticUrlInRenderedText": "https://moonn.ru/politic" in text,
+                            "newMoonnPoliticUrlInRenderedText": "https://xn--l1acaw.xn--p1ai/politic" in text,
+                        }
+                    )
+                except Exception as exc:  # noqa: BLE001
+                    row.update({"renderedStatus": "error", "error": str(exc)})
+                finally:
+                    page.close()
+                rows.append(row)
+            context.close()
+            browser.close()
+    except Exception as exc:  # noqa: BLE001
+        return [{"url": url, "renderedStatus": "skipped", "reason": f"playwright_failed: {exc}"} for url in urls]
+    return rows
+
+
 def load_scope_urls() -> list[str]:
     data = json.loads(PACKET.read_text(encoding="utf-8"))
     urls = [row["url"] for row in data["urls"]]
@@ -121,6 +169,13 @@ def write_report(payload: dict[str, Any]) -> None:
     policy = payload["policyEndpoints"]
     high_risk = [p for p in pages if p["riskFlags"]]
     form_pages = [p for p in pages if p["formSignals"]]
+    rendered_pages = [p for p in pages if p.get("rendered", {}).get("renderedStatus") == "ok"]
+    rendered_form_pages = [p for p in rendered_pages if p.get("rendered", {}).get("formSignalsRendered")]
+    rendered_forms_without_checkbox = [
+        p
+        for p in rendered_form_pages
+        if not p.get("rendered", {}).get("checkboxSignalsRendered")
+    ]
 
     lines = [
         f"# Moonn Privacy Compliance Audit — {RUN_DATE}",
@@ -131,12 +186,22 @@ def write_report(payload: dict[str, Any]) -> None:
         f"- Policy endpoints checked: `{len(policy)}`.",
         f"- Pages with form signals: `{len(form_pages)}`.",
         f"- Pages with risk flags: `{len(high_risk)}`.",
+        f"- Rendered pages checked: `{len(rendered_pages)}`.",
+        f"- Rendered pages with forms: `{len(rendered_form_pages)}`.",
+        f"- Rendered form pages without checkbox: `{len(rendered_forms_without_checkbox)}`.",
         "",
         "## Policy Endpoints",
         "",
     ]
     for row in policy:
-        lines.append(f"- `{row['url']}` — `{row['status']}`")
+        rendered = row.get("rendered", {})
+        extra = ""
+        if rendered:
+            marker = rendered.get("politicPatchMarker")
+            extra = f"; rendered `{rendered.get('renderedStatus')}`"
+            if marker:
+                extra += f"; patch `{marker}`"
+        lines.append(f"- `{row['url']}` — `{row['status']}`{extra}")
 
     lines.extend([
         "",
@@ -146,8 +211,11 @@ def write_report(payload: dict[str, Any]) -> None:
         "- `/personal-data-consent` — consent text linked from every form checkbox.",
         "- `/cookies` — cookies and Yandex Metrika/Webvisor notice.",
         "- `/data-subject-request` — request/withdrawal/update/deletion procedure, or equivalent section inside `/privacy`.",
+        "- `/politic` — current live canonical policy page until standard aliases are created or redirected.",
         "",
-        "## High-Risk Pages",
+        "## Raw-Source Findings",
+        "",
+        "These rows come from raw Tilda HTML and can overcount inactive/generated form markup. Use the rendered form check below as the browser-level gate.",
         "",
     ])
     for row in high_risk[:80]:
@@ -156,6 +224,23 @@ def write_report(payload: dict[str, Any]) -> None:
 
     if len(high_risk) > 80:
         lines.append(f"- ...and `{len(high_risk) - 80}` more. See JSON.")
+
+    lines.extend([
+        "",
+        "## Rendered Form Check",
+        "",
+    ])
+    if not rendered_pages:
+        lines.append("- Rendered check was not run.")
+    elif not rendered_forms_without_checkbox:
+        lines.append("- Browser-level check found no rendered form page without a checkbox.")
+    else:
+        for row in rendered_forms_without_checkbox[:40]:
+            rendered = row.get("rendered", {})
+            lines.append(
+                f"- `{row['url']}` — rendered forms `{rendered.get('formSignalsRendered')}`, "
+                f"checkboxes `{rendered.get('checkboxSignalsRendered')}`"
+            )
 
     lines.extend([
         "",
@@ -209,6 +294,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
         default=0,
         help="Optional cap for scoped smoke checks. 0 means all URLs.",
     )
+    parser.add_argument(
+        "--rendered",
+        action="store_true",
+        help="Also run a Playwright browser-level audit and attach rendered form/consent signals.",
+    )
     return parser
 
 
@@ -229,6 +319,15 @@ def main() -> None:
     else:
         policy_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in policy_urls]
         page_results = [asdict(analyze_page(url, timeout=args.timeout)) for url in urls]
+        if args.rendered:
+            rendered_by_url = {
+                row["url"]: row
+                for row in analyze_rendered_urls(policy_urls + urls, timeout_ms=max(args.timeout * 1000, 30000))
+            }
+            for row in policy_results:
+                row["rendered"] = rendered_by_url.get(row["url"], {"renderedStatus": "missing"})
+            for row in page_results:
+                row["rendered"] = rendered_by_url.get(row["url"], {"renderedStatus": "missing"})
 
     payload = {
         "version": 1,

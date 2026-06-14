@@ -2137,3 +2137,41 @@ Append-only project history for `moon-psy-site`.
   - Privacy/legal 404 endpoints and form checkbox issues remain a separate legal/publication workstream.
 - Follow-up rule:
   - Future SEO reports must separate `raw HTML debt` from `rendered browser result`; do not report rendered pages as broken when the browser-level check is clean.
+
+## 2026-06-14 13:35 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Continue privacy/legal compliance cleanup after SEO fixes.
+- Route:
+  - Контур: `Moonn privacy/legal and rendered-form verification`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: continuation of the same new-domain supervisor branch, but separated from SEO metadata in the report.
+- Actions:
+  - Verified the existing policy page `/politic` returns HTTP `200` on `https://xn--l1acaw.xn--p1ai`.
+  - Fixed `/politic` SEO metadata through Tilda UI: title, description and canonical now point to the live domain.
+  - Added `assets/moonn-politic-runtime-patch.js` and published it to `/politic` through page head code.
+  - The patch only replaces legacy `https://moonn.ru/politic` references in rendered `/politic`; it does not rewrite operator data or legal terms.
+  - Extended `scripts/moonn_privacy_compliance_audit.py` with rendered Playwright checks for form, checkbox, consent and cookie signals.
+  - Added `/politic` to policy endpoint checks as the current live canonical policy page.
+- Verification:
+  - `/politic` rendered title: `Политика обработки персональных данных | Татьяна Мунн`.
+  - `/politic` rendered canonical: `https://xn--l1acaw.xn--p1ai/politic`.
+  - `/politic` rendered patch marker: `2026-06-14`.
+  - Old `https://moonn.ru/politic` is absent from rendered `/politic` body text.
+  - Operator INN and Yandex.Metrika text remain visible.
+  - Full rendered privacy audit checked `83` scope URLs.
+  - Rendered pages with forms: `15`.
+  - Rendered form pages without checkbox: `0`.
+- Remaining blockers:
+  - Standard aliases `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` still return `404`.
+  - Raw Tilda HTML still overcounts generated/inactive form markup on `83` pages; final form gate must use rendered check.
+  - Legal text is not a substitute for lawyer/operator approval, especially before creating new public legal aliases.
+- Created/updated artifacts:
+  - `docs/moonn-politic-seo-packet-2026-06-14.json`
+  - `docs/moonn-politic-runtime-patch-head-snippet-2026-06-14.html`
+  - `assets/moonn-politic-runtime-patch.js`
+  - `scripts/moonn_privacy_compliance_audit.py`
+  - `docs/moonn-privacy-compliance-audit-2026-06-14.json`
+  - `docs/moonn-privacy-compliance-audit-2026-06-14.md`
+- Follow-up rule:
+  - For Tilda privacy/form compliance, raw HTML form signals are a scout, not the gate. The gate is rendered browser verification plus live policy endpoint status.

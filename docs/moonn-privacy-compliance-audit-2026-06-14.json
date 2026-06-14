@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "createdAt": "2026-06-14T09:47:39.010700+00:00",
+  "createdAt": "2026-06-14T10:37:40.621370+00:00",
   "scope": "Moonn 83 production URLs privacy/form/cookie compliance read-only audit",
   "sourcePacket": "docs\\moonn-gsc-yandex-reindex-packet-2026-05-08.json",
   "infra": {
@@ -16,6 +16,34 @@
   },
   "policyEndpoints": [
     {
+      "url": "https://xn--l1acaw.xn--p1ai/politic",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 30,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/politic",
+        "renderedStatus": "ok",
+        "titleRendered": "Политика обработки персональных данных | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 34,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": "2026-06-14",
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
+    },
+    {
       "url": "https://xn--l1acaw.xn--p1ai/privacy",
       "status": 404,
       "formSignals": 0,
@@ -29,7 +57,19 @@
       "hasCookieText": false,
       "riskFlags": [
         "http_error"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/privacy",
+        "renderedStatus": "ok",
+        "titleRendered": "404 Page Not Found.",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 0,
+        "hasCookieTextRendered": false,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/personal-data-consent",
@@ -45,7 +85,19 @@
       "hasCookieText": false,
       "riskFlags": [
         "http_error"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/personal-data-consent",
+        "renderedStatus": "ok",
+        "titleRendered": "404 Page Not Found.",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 0,
+        "hasCookieTextRendered": false,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/cookies",
@@ -61,7 +113,19 @@
       "hasCookieText": false,
       "riskFlags": [
         "http_error"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/cookies",
+        "renderedStatus": "ok",
+        "titleRendered": "404 Page Not Found.",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 0,
+        "hasCookieTextRendered": false,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/data-subject-request",
@@ -77,7 +141,19 @@
       "hasCookieText": false,
       "riskFlags": [
         "http_error"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/data-subject-request",
+        "renderedStatus": "ok",
+        "titleRendered": "404 Page Not Found.",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 0,
+        "hasCookieTextRendered": false,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     }
   ],
   "pages": [
@@ -95,7 +171,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/",
+        "renderedStatus": "ok",
+        "titleRendered": "Татьяна Мунн — психолог МГУ и эксперт по эмоциональному интеллекту",
+        "formSignalsRendered": 2,
+        "checkboxSignalsRendered": 2,
+        "consentSignalsRendered": 30,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/abuse_gaslight",
@@ -111,7 +199,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/abuse_gaslight",
+        "renderedStatus": "ok",
+        "titleRendered": "Абьюз и газлайтинг | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/aromatherapy",
@@ -127,7 +227,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/aromatherapy",
+        "renderedStatus": "ok",
+        "titleRendered": "Ароматерапия и Эфирные масла. Быстрая Психология: Использование ароматов в обретении внутренней гармонии и благополучия",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/article_diary_of_emotions",
@@ -143,7 +255,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/article_diary_of_emotions",
+        "renderedStatus": "ok",
+        "titleRendered": "Дневник эмоций | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/article_femininity",
@@ -159,7 +283,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/article_femininity",
+        "renderedStatus": "ok",
+        "titleRendered": "Женственность в отношениях | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/article_gadget_addiction",
@@ -175,7 +311,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/article_gadget_addiction",
+        "renderedStatus": "ok",
+        "titleRendered": "Зависимость подростков от гаджетов | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/article_toxic_job",
@@ -191,7 +339,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/article_toxic_job",
+        "renderedStatus": "ok",
+        "titleRendered": "Негативные эмоции на работе | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/articles/eq-dlya-rukovoditeley",
@@ -207,7 +367,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/articles/eq-dlya-rukovoditeley",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональный интеллект руководителя | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 3,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/baza-znaniy-emocionalnyy-intellekt-psihologiya",
@@ -223,7 +395,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+        "renderedStatus": "ok",
+        "titleRendered": "База знаний по психологии и эмоциональному интеллекту | психолог",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/eintellect",
@@ -239,7 +423,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/eintellect",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональный интеллект | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/",
@@ -255,7 +451,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональный интеллект — Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles",
@@ -271,7 +479,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles",
+        "renderedStatus": "ok",
+        "titleRendered": "Статьи по эмоциональному интеллекту | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/benefits-of-ei",
@@ -287,7 +507,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/benefits-of-ei",
+        "renderedStatus": "ok",
+        "titleRendered": "Преимущества эмоционального интеллекта: что даёт развитый EQ в",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/emotional-intelligence-skills",
@@ -303,7 +535,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/emotional-intelligence-skills",
+        "renderedStatus": "ok",
+        "titleRendered": "5 ключевых навыков эмоционального интеллекта: от осознанности до",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/what-is-emotional-intelligence",
@@ -319,7 +563,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/what-is-emotional-intelligence",
+        "renderedStatus": "ok",
+        "titleRendered": "Что такое эмоциональный интеллект? | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/why-ei-matters",
@@ -335,7 +591,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/why-ei-matters",
+        "renderedStatus": "ok",
+        "titleRendered": "Почему эмоциональный интеллект важнее IQ в карьере и жизни |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/diagnostoka-ei",
@@ -351,7 +619,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/diagnostoka-ei",
+        "renderedStatus": "ok",
+        "titleRendered": "Диагностика эмоционального интеллекта: как измерить свой EQ | Тесты",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/ei-leader-12",
@@ -367,7 +647,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/ei-leader-12",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональный интеллект лидера | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base",
@@ -383,7 +675,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base",
+        "renderedStatus": "ok",
+        "titleRendered": "База знаний по эмоциональному интеллекту | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/active-listening",
@@ -399,7 +703,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/active-listening",
+        "renderedStatus": "ok",
+        "titleRendered": "Активное слушание: как научиться слышать и понимать людей | Татьяна",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/burnout",
@@ -415,7 +731,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/burnout",
+        "renderedStatus": "ok",
+        "titleRendered": "Выгорание: признаки, причины и восстановление | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-contagion",
@@ -431,7 +759,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-contagion",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональное заражение: как эмоции передаются людям и командам |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-intelligence",
@@ -447,7 +787,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-intelligence",
+        "renderedStatus": "ok",
+        "titleRendered": "Что такое эмоциональный интеллект и как он работает | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-literacy",
@@ -463,7 +815,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-literacy",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональная грамотность — навык точного выражения чувств |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-maturity",
@@ -479,7 +843,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-maturity",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмоциональная зрелость: как отличить и развивать | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/empathy",
@@ -495,7 +871,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/empathy",
+        "renderedStatus": "ok",
+        "titleRendered": "Эмпатия — ключевой навык эмоционального интеллекта | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/intrinsic-motivation",
@@ -511,7 +899,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/intrinsic-motivation",
+        "renderedStatus": "ok",
+        "titleRendered": "Внутренняя мотивация: как её развивать и не потерять | психолог и",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/male-loneliness-russia",
@@ -527,7 +927,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/male-loneliness-russia",
+        "renderedStatus": "ok",
+        "titleRendered": "Мужское одиночество в России: скрытый кризис, о котором не принято",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/nonviolent-communication",
@@ -543,7 +955,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/nonviolent-communication",
+        "renderedStatus": "ok",
+        "titleRendered": "Ненасильственное общение (ННО/NVC): как говорить без конфликта |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/personal-boundaries",
@@ -559,7 +983,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/personal-boundaries",
+        "renderedStatus": "ok",
+        "titleRendered": "Личные границы: как их выстраивать и защищать | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/psychological-safety",
@@ -575,7 +1011,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/psychological-safety",
+        "renderedStatus": "ok",
+        "titleRendered": "Психологическая безопасность команды: что это и как её создать |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-awareness",
@@ -591,7 +1039,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-awareness",
+        "renderedStatus": "ok",
+        "titleRendered": "Самоосознанность: ключевой навык эмоционального интеллекта |",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-regulation",
@@ -607,7 +1067,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-regulation",
+        "renderedStatus": "ok",
+        "titleRendered": "Саморегуляция — ключевой навык эмоционального интеллекта | Татьяна",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/social-intelligence",
@@ -623,7 +1095,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/social-intelligence",
+        "renderedStatus": "ok",
+        "titleRendered": "Социальные навыки и социальный интеллект: как развивать | Татьяна",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/events",
@@ -639,7 +1123,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/events",
+        "renderedStatus": "ok",
+        "titleRendered": "Мероприятия Татьяны Мунн — психология и эмоциональный интеллект",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/events_tp",
@@ -655,7 +1151,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/events_tp",
+        "renderedStatus": "ok",
+        "titleRendered": "Лекции Татьяны Мунн по психологии — психология и эмоциональный",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 11,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/geshtalt",
@@ -671,7 +1179,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/geshtalt",
+        "renderedStatus": "ok",
+        "titleRendered": "Гештальт-терапия: путь к гармонии через осознанность и принятие. Психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/kpt",
@@ -687,7 +1207,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/kpt",
+        "renderedStatus": "ok",
+        "titleRendered": "Когнитивно-поведенческая терапия: что это такое и как это работает. Психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/kurs-ei",
@@ -701,7 +1233,19 @@
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
-      "riskFlags": []
+      "riskFlags": [],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/kurs-ei",
+        "renderedStatus": "ok",
+        "titleRendered": "Курс по эмоциональному интеллекту | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/lectures1",
@@ -717,7 +1261,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/lectures1",
+        "renderedStatus": "ok",
+        "titleRendered": "Архив лекций Татьяны Мунн — психология и эмоциональный интеллект",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/microbiom",
@@ -733,7 +1289,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/microbiom",
+        "renderedStatus": "ok",
+        "titleRendered": "Микробиом и Психологическое состояние - как связаны. Лактобактерия L.Reuteri",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/novosti",
@@ -749,21 +1317,45 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/novosti",
+        "renderedStatus": "ok",
+        "titleRendered": "Командировка преподавателя МГУ Татьяны Мунн в филиал МГУ в г",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/otzivi",
       "status": 200,
       "formSignals": 2,
-      "consentSignals": 23,
+      "consentSignals": 20,
       "checkboxSignals": 4,
-      "yandexMetrikaSignals": 6,
-      "webvisorSignals": 2,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
       "googleAnalyticsSignals": 0,
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
-      "riskFlags": []
+      "riskFlags": [],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/otzivi",
+        "renderedStatus": "ok",
+        "titleRendered": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/panicheskie_ataki",
@@ -779,7 +1371,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/panicheskie_ataki",
+        "renderedStatus": "ok",
+        "titleRendered": "Панические атаки | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 16,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/phytotherapy",
@@ -795,7 +1399,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/phytotherapy",
+        "renderedStatus": "ok",
+        "titleRendered": "Фитотерапия и Психология: забота о теле и душе",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/platnye-treningi-seminary-programmy-tatiana-moonn",
@@ -811,7 +1427,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/platnye-treningi-seminary-programmy-tatiana-moonn",
+        "renderedStatus": "ok",
+        "titleRendered": "Платные тренинги и лекции Татьяны Мунн | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/programmakursa",
@@ -825,7 +1453,19 @@
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
-      "riskFlags": []
+      "riskFlags": [],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/programmakursa",
+        "renderedStatus": "ok",
+        "titleRendered": "Программа курса по эмоциональному интеллекту | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psiholog",
@@ -839,23 +1479,47 @@
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
-      "riskFlags": []
+      "riskFlags": [],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psiholog",
+        "renderedStatus": "ok",
+        "titleRendered": "Психолог в Москве и онлайн — Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 2,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
       "status": 200,
       "formSignals": 1,
-      "consentSignals": 6,
+      "consentSignals": 3,
       "checkboxSignals": 0,
-      "yandexMetrikaSignals": 6,
-      "webvisorSignals": 2,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
       "googleAnalyticsSignals": 0,
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
+        "renderedStatus": "ok",
+        "titleRendered": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psiholog_moskva",
@@ -871,7 +1535,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psiholog_moskva",
+        "renderedStatus": "ok",
+        "titleRendered": "Психолог в Москве: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psihology",
@@ -887,7 +1563,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psihology",
+        "renderedStatus": "ok",
+        "titleRendered": "Психологическая помощь в Москве и онлайн | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 11,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psy4psy",
@@ -903,7 +1591,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psy4psy",
+        "renderedStatus": "ok",
+        "titleRendered": "Психолог для психолога | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psychoanalys",
@@ -919,23 +1619,47 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psychoanalys",
+        "renderedStatus": "ok",
+        "titleRendered": "Психоанализ как метод психотерапии. Психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
       "status": 200,
       "formSignals": 1,
-      "consentSignals": 6,
+      "consentSignals": 3,
       "checkboxSignals": 0,
-      "yandexMetrikaSignals": 6,
-      "webvisorSignals": 2,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
       "googleAnalyticsSignals": 0,
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
+        "renderedStatus": "ok",
+        "titleRendered": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 6,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/recomend",
@@ -951,7 +1675,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/recomend",
+        "renderedStatus": "ok",
+        "titleRendered": "Рекомендации и материалы Татьяны Мунн | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 13,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/salt",
@@ -967,7 +1703,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/salt",
+        "renderedStatus": "ok",
+        "titleRendered": "Соль для здоровья - способы применения. Психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/schematherapy",
@@ -983,7 +1731,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/schematherapy",
+        "renderedStatus": "ok",
+        "titleRendered": "Схематерапия | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/selfharm",
@@ -999,7 +1759,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/selfharm",
+        "renderedStatus": "ok",
+        "titleRendered": "Самоповреждение у подростков | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 19,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/semeynie_konflikti_article",
@@ -1015,7 +1787,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/semeynie_konflikti_article",
+        "renderedStatus": "ok",
+        "titleRendered": "Семейные конфликты | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/semeyniy_psiholog",
@@ -1031,7 +1815,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/semeyniy_psiholog",
+        "renderedStatus": "ok",
+        "titleRendered": "Семейный психолог: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 21,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/seminar555",
@@ -1047,7 +1843,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/seminar555",
+        "renderedStatus": "ok",
+        "titleRendered": "Семинар по методу Быстрая психология | психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 1,
+        "consentSignalsRendered": 17,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/shppp333",
@@ -1063,7 +1871,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/shppp333",
+        "renderedStatus": "ok",
+        "titleRendered": "Школа практической психологии для подростков | психолог Татьяна Мунн",
+        "formSignalsRendered": 2,
+        "checkboxSignalsRendered": 2,
+        "consentSignalsRendered": 30,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/speaker",
@@ -1079,7 +1899,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/speaker",
+        "renderedStatus": "ok",
+        "titleRendered": "Спикер по эмоциональному интеллекту — Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/st1",
@@ -1093,7 +1925,19 @@
       "hasPolicyLink": false,
       "hasConsentLink": false,
       "hasCookieText": true,
-      "riskFlags": []
+      "riskFlags": [],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/st1",
+        "renderedStatus": "ok",
+        "titleRendered": "онлайн-тренинг \"Среда Трансформации\". психолог Татьяна Мунн",
+        "formSignalsRendered": 1,
+        "checkboxSignalsRendered": 2,
+        "consentSignalsRendered": 17,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/st2",
@@ -1109,7 +1953,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/st2",
+        "renderedStatus": "ok",
+        "titleRendered": "онлайн-тренинг \"Среда Трансформации\" стартует 31 декабря 2025 года. Автор и ведущий психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/trauma",
@@ -1125,7 +1981,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/trauma",
+        "renderedStatus": "ok",
+        "titleRendered": "Психологическая травма | психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_aerofobia",
@@ -1141,7 +2009,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_aerofobia",
+        "renderedStatus": "ok",
+        "titleRendered": "Аэрофобия Консультации по страху полётов (аэрофобия): психолог МГУ",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 4,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_depression",
@@ -1157,7 +2037,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_depression",
+        "renderedStatus": "ok",
+        "titleRendered": "Депрессивное состояние: понимание и преодоление: психолог МГУ",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_fin_blocks",
@@ -1173,7 +2065,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_fin_blocks",
+        "renderedStatus": "ok",
+        "titleRendered": "Проработка финансовых блоков: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_gtr",
@@ -1189,7 +2093,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_gtr",
+        "renderedStatus": "ok",
+        "titleRendered": "Тревожные расстройства: когда тревога становится болезнью: психолог",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_konflikti_na_rabote",
@@ -1205,7 +2121,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_konflikti_na_rabote",
+        "renderedStatus": "ok",
+        "titleRendered": "Проработка внутренних конфликтов, связанных с работой: психолог МГУ",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_lubovnaya_zavisimost",
@@ -1221,7 +2149,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_lubovnaya_zavisimost",
+        "renderedStatus": "ok",
+        "titleRendered": "Любовные зависимости и привязанности: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_obida_na_roditelei",
@@ -1237,7 +2177,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_obida_na_roditelei",
+        "renderedStatus": "ok",
+        "titleRendered": "Обида на родителей - негативные чувства, связанные с детством",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_otnosheniya_v_kollektive",
@@ -1253,7 +2205,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_otnosheniya_v_kollektive",
+        "renderedStatus": "ok",
+        "titleRendered": "Налаживание отношений в коллективе: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_podrostki",
@@ -1269,7 +2233,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_podrostki",
+        "renderedStatus": "ok",
+        "titleRendered": "Психологическая консультация для подростков от 12 лет: психолог МГУ",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 6,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_procrastination",
@@ -1285,7 +2261,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_procrastination",
+        "renderedStatus": "ok",
+        "titleRendered": "Прокрастинация: Почему мы откладываем дела на потом и как перестать",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_razvod",
@@ -1301,7 +2289,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_razvod",
+        "renderedStatus": "ok",
+        "titleRendered": "Помощь при расставании, измене, разводе: психолог МГУ Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/uslugi_sohranit_brak",
@@ -1317,7 +2317,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/uslugi_sohranit_brak",
+        "renderedStatus": "ok",
+        "titleRendered": "Как сохранить брак: преодоление кризисов, восстановление доверия и",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/vacuum_cups",
@@ -1333,7 +2345,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/vacuum_cups",
+        "renderedStatus": "ok",
+        "titleRendered": "Вакуумные банки для психологического здоровья. Психолог Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/vigoranie_article",
@@ -1349,7 +2373,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/vigoranie_article",
+        "renderedStatus": "ok",
+        "titleRendered": "Выгорание на работе | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/vospitanie_article",
@@ -1365,7 +2401,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/vospitanie_article",
+        "renderedStatus": "ok",
+        "titleRendered": "Воспитание ребенка | Татьяна Мунн",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
@@ -1381,7 +2429,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+        "renderedStatus": "ok",
+        "titleRendered": "Выступления, лекции и тренинги Татьяны Мунн — психология и",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     },
     {
       "url": "https://xn--l1acaw.xn--p1ai/water",
@@ -1397,7 +2457,19 @@
       "hasCookieText": true,
       "riskFlags": [
         "forms_without_detected_checkbox"
-      ]
+      ],
+      "rendered": {
+        "url": "https://xn--l1acaw.xn--p1ai/water",
+        "renderedStatus": "ok",
+        "titleRendered": "вода и здоровье - влияние воды на психоэмоциональное состояние. Психолог Татьяна Мунн (МГУ)",
+        "formSignalsRendered": 0,
+        "checkboxSignalsRendered": 0,
+        "consentSignalsRendered": 2,
+        "hasCookieTextRendered": true,
+        "politicPatchMarker": null,
+        "oldMoonnPoliticUrlInRenderedText": false,
+        "newMoonnPoliticUrlInRenderedText": false
+      }
     }
   ],
   "notes": [
