@@ -209,3 +209,12 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 3. `P0` Camp page remains the main quality blocker on the live domain: rendered answer block is still `0`, and raw title/description still do not match the 2026-05-21 sprint packet.
 4. `OK` Technical live reachability remains good on `мунн.рф`: all 5 scoped URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-06.json`.
 5. `P1` Source cleanup debt remains: gallery raw placeholders, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
+
+## 2026-06-16 — `мунн.рф` Daily Supervisor
+
+1. `OK` Raw live domain alignment improved materially: all 5 scoped `мунн.рф` URLs now return HTTP `200`, stay in sitemap, are not blocked by `robots.txt`, and raw canonical matches the new domain on all 5 pages. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-16.json`.
+2. `P0` New-domain access blocker still stands and was re-confirmed today in both search cabinets: GSC still shows `Oops, you don't have access to this property`, and Yandex.Webmaster still says the site does not belong to the current operator. Canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`.
+3. `P0` The main operational blocker has shifted from raw canonical drift to rendered audit durability: `scripts/moonn_five_page_seo_sprint_audit.py --rendered` timed out twice today, so the rendered quality gate is not currently reliable enough for unattended proof.
+4. `P1` Latest rendered evidence is mixed rather than clearly red: the pre-existing local `2026-06-15` rendered artifact shows camp answer block `1`, but gallery and exam-prep pages timed out, so do not treat camp AEO as a proven fresh blocker or proven fix until a full bounded rendered run completes.
+5. `P1` Source cleanup debt remains: gallery raw placeholders, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
+6. Next bounded action: stabilize the rendered audit path, re-run a full rendered `мунн.рф` pass, then submit scoped reindex only for the 5 URLs plus sitemap after `мунн.рф` property access is confirmed.

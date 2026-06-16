@@ -2003,6 +2003,51 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - fix canonical on the remaining 4 scoped pages at Tilda source, inspect the camp AEO/meta drift on `мунн.рф`, then confirm `мунн.рф` property ownership in both GSC and Yandex.Webmaster before any bounded reindex request.
 
+## 2026-06-16 09:20 MSK — Supervisor Run: `мунн.рф` raw canonical green, rendered lane degraded
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - the default repo checkout was still on an unrelated branch with unrelated local changes, so work continued in the canonical worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - capability routing selected local raw audit plus Windows GUI verification because new-domain cabinet state cannot be proven from repo files alone.
+- Pre-existing workspace context:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-15.{json,md}` were already present as untracked local artifacts; they were preserved unchanged and treated as append-only local evidence.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-16`
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-16`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves on this host;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`;
+  - raw canonical now matches the new domain on all 5 scoped URLs; the 4-page raw canonical mismatch seen on `2026-06-06` is no longer present;
+  - source debt remains: gallery raw placeholders (`Your Name`, `Your Email`), missing raw image `alt` on all 5 pages, raw H1 anomalies on camp/consultations/reviews;
+  - GSC for `sc-domain:xn--l1acaw.xn--p1ai` still shows `Oops, you don't have access to this property`;
+  - Yandex.Webmaster for `https://xn--l1acaw.xn--p1ai:443` still shows that the site does not belong to the current operator.
+- Rendered-lane incident:
+  - the first `--rendered` attempt timed out after about `124s`;
+  - the second `--rendered` attempt timed out after about `364s`;
+  - to preserve a clean dated artifact, the final `2026-06-16` audit files were regenerated as non-rendered only;
+  - the pre-existing local `2026-06-15` rendered artifact shows mixed evidence: camp answer block `1`, but gallery and exam-prep timed out, while consultations/reviews remained `not_requested`.
+- Decision / blocker:
+  - `новая property не подтверждена, traffic migration не доказан`;
+  - rendered automation lane is currently degraded and cannot be treated as a green quality gate.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.md`
+  - `docs/moonn-seo-growth-check-2026-06-16.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no live canonical rewrites;
+  - no GSC/Yandex reindex submission;
+  - no Yandex.Metrika edits;
+  - no privacy/legal changes;
+  - no cabinet settings changes.
+- Next action:
+  - stabilize the rendered audit path, then re-run a full rendered `мунн.рф` pass and only after that use confirmed `мунн.рф` cabinet access for scoped reindex of the 5 approved URLs plus sitemap.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).
