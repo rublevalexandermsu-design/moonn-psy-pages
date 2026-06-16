@@ -160,3 +160,35 @@
 ### Follow-up Rule
 
 - Before declaring Tilda runtime placement fixed, verify rendered DOM position and scan raw HTML for duplicate old loader URLs. A single updated loader is not enough when repeated snippets exist.
+
+## 2026-06-16 14:05 +03:00 — Old camp-page AEO failure disappeared, but 4 rendered checks timed out
+
+### Symptom
+
+- The historical camp-page rendered failure `answer block = 0` was no longer reproduced on `https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya`.
+- At the same time, 4 other scoped pages failed the rendered audit with `Page.goto timeout 45000ms exceeded`.
+- A superficial comparison with the 2026-06-14 run could falsely suggest that the whole rendered lane improved or fully passed.
+
+### Root Cause
+
+- The supervisor had been tracking one stable symptom and risked overfitting to it.
+- Today's rendered lane changed failure mode: one page recovered, but the rest no longer completed within the Playwright timeout budget.
+- Without explicit incident logging, the automation could collapse these different outcomes into a misleading “camp fixed, rendered okay” summary.
+
+### Fix Implemented
+
+- Recorded a new dated rendered audit for 2026-06-16 instead of overwriting older evidence.
+- Updated the daily growth report and backlog to separate:
+  - resolved old camp-page symptom;
+  - new four-page rendered timeout incident;
+  - still-open new-domain property blocker.
+
+### Verification
+
+- Camp page rendered result is `ok` with `answerBlockCountRendered = 1`.
+- Gallery, exam prep, consultations and reviews each return rendered status `error` with `Page.goto timeout 45000ms exceeded`.
+- Raw HTTP/sitemap/robots/title/description/canonical checks still pass on all 5 scoped URLs.
+
+### Follow-up Rule
+
+- When a recurring SEO/AEO defect disappears, do not upgrade the whole rendered lane automatically. Compare page-by-page rendered statuses and record any change in failure class as a new incident.

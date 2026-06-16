@@ -2244,3 +2244,45 @@ Append-only project history for `moon-psy-site`.
   - `docs/moonn-answer-block-moved-check-2026-06-14.png`
 - Follow-up rule:
   - For Tilda pages with repeated loader snippets, verify and replace all live loader occurrences, not only the first match in the head editor.
+
+## 2026-06-16 14:05 +03:00
+
+- Project: Moonn / Tatiana Moon Studio.
+- Topic: Daily SEO/privacy supervisor rerun on `мунн.рф`.
+- Route:
+  - Контур: `Moonn SEO/AEO daily supervisor`.
+  - Ветка: `codex/moonn-seo-supervisor-20260614`.
+  - Причина: same automation workstream; current worktree is already the isolated supervisor branch and should continue this chat context.
+- Actions:
+  - Re-read the canonical supervisor docs and backlog before action.
+  - Verified live HTTP `200` for `https://xn--l1acaw.xn--p1ai/`, `/events_tp`, `/lectures1`, `/psiholog-konsultacii-moskva`, `robots.txt`, and `sitemap.xml`.
+  - Ran the dated raw and rendered five-page audits against `https://xn--l1acaw.xn--p1ai`:
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.md`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-16-rendered.json`
+    - `docs/moonn-five-page-seo-sprint-audit-2026-06-16-rendered.md`
+  - Used the real `Alexander` Chrome profile for bounded cabinet checks without changing settings.
+  - Rechecked `https://school.miiiips.ru/`, `robots.txt`, and `sitemap.xml`.
+- Verification:
+  - All 5 scoped `мунн.рф` URLs returned HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`.
+  - Raw title, description and canonical now match the scoped packet on all 5 URLs; the earlier 4-page canonical drift to `moonn.ru` was not reproduced in this run.
+  - Camp page rendered audit now succeeds with one rendered H1 and one rendered answer block.
+  - The other 4 scoped pages fail rendered audit by `Page.goto timeout 45000ms exceeded`.
+  - Google Search Console for `sc-domain:xn--l1acaw.xn--p1ai` shows `Oops, you don't have access to this property` for `rublevalexandermsu@gmail.com`.
+  - Yandex.Webmaster opens `Подтверждение прав на https://мунн.рф`, which is evidence of an unconfirmed new-domain host rather than a working verified property.
+  - `school.miiiips.ru`, `robots.txt`, and `sitemap.xml` all return `200`.
+- Blockers:
+  - `новая property не подтверждена, traffic migration не доказан`.
+  - Rendered verification is partial because 4 scoped URLs now time out in Playwright.
+  - Raw source debt remains on gallery placeholders, missing image `alt`, and raw H1 anomalies.
+  - MIIIIPS PR `#11` merge/deploy provenance is still blocked by missing canonical repo+PR URL.
+- Created/updated artifacts:
+  - `docs/moonn-seo-growth-check-2026-06-16.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16-rendered.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-16-rendered.md`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/codex-error-report.md`
+- Follow-up rule:
+  - If a stable SEO/AEO bug disappears but other pages start timing out in rendered verification, log it as a failure-class change instead of treating the whole rendered lane as green.

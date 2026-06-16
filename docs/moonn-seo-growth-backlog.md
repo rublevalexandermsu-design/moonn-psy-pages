@@ -227,3 +227,13 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 5. `P0` Yandex.Webmaster host verification is still unproven in the current run: the direct `https://xn--l1acaw.xn--p1ai:443` route opened `404`, so a stable verified-host route still needs to be recovered.
 6. `P1` Legacy analytics evidence is available only as a default weekly Metrika slice for `moonn.ru` (`8-14 Jun`: `32` pageviews, `21` visits, `20` visitors); the required custom period `2026-04-29..2026-06-14` and any host split for `мунн.рф` are still missing.
 7. `P1` MIIIIPS PR `#11` deploy/merge verification remains blocked: `school.miiiips.ru` root/robots/sitemap are live `200`, but the canonical repo+PR URL is still not recorded in this repo context.
+
+## 2026-06-16 — `мунн.рф` Daily Supervisor
+
+1. `P0` Search property blocker remains direct and current: GSC for `sc-domain:xn--l1acaw.xn--p1ai` shows `Oops, you don't have access to this property`, and Yandex.Webmaster for `https://мунн.рф` opens `Подтверждение прав на https://мунн.рф`; canonical wording stays `новая property не подтверждена, traffic migration не доказан`.
+2. `OK` Raw SEO migration improved materially: all 5 scoped `мунн.рф` URLs now return expected title, description and new-domain canonical in the 2026-06-16 raw audit. The previous 4-page canonical drift to `moonn.ru` is not reproduced today.
+3. `P0` Rendered lane changed class of failure: the camp page now renders successfully with answer block `1`, but the other 4 scoped URLs time out in Playwright (`Page.goto timeout 45000ms exceeded`). Treat this as a new rendering/performance incident, not as “all rendered checks passed”.
+4. `P1` Raw source debt remains: gallery still exposes placeholder text `Your Name` / `Your Email`; missing raw image `alt` persists across all 5 pages; raw H1 anomalies remain on camp, consultations and reviews.
+5. `P1` Analytics contract for `2026-04-29..today` is still blocked on the new domain. Do not use the visible legacy Yandex.Metrika `moonn.ru` tab as substitute evidence for `мунн.рф`.
+6. `P1` MIIIIPS PR `#11` deploy/merge verification remains blocked: `school.miiiips.ru` root/robots/sitemap are live `200`, but the canonical repo+PR URL is still missing.
+7. `P1` Next Monday privacy lane should rerun `scripts\moonn_privacy_compliance_audit.py` on `мунн.рф` and recheck `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request`, rendered consent text, and `gtag` drift.
