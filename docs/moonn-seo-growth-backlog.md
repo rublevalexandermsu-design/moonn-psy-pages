@@ -108,6 +108,16 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
    - `docs/moonn-five-page-seo-sprint-audit-2026-05-30.md`
 3. Next action (unchanged): restore DNS / run bounded Rublev-profile GUI checks / submit scoped reindex ONLY for the 5 URLs (no 83-URL batch).
 
+## 2026-06-17 — Supervisor Run
+
+1. `DONE 2026-06-17` New-domain raw audit stays green for the scoped five-page lane on `https://xn--l1acaw.xn--p1ai`: all 5 URLs return HTTP `200`, are present in sitemap, are not blocked by `robots.txt`, and raw canonical matches the new domain. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-17.json`.
+2. `DONE 2026-06-17` Yandex.Webmaster new-domain property is confirmed as existing and readable for `https://мунн.рф`; summary page opens and shows `Ошибок нет` plus `3 рекомендации`. Remove the old assumption that Webmaster ownership is entirely missing.
+3. `P0` Google Search Console remains blocked for `sc-domain:xn--l1acaw.xn--p1ai`: the current Chrome profile still shows `Oops, you don't have access to this property`. Do not substitute `moonn.ru` as the working property.
+4. `P0` Yandex.Metrika counter `96397286` remains legacy-only: cabinet label is still `Счетчик 1 Сайт moonn.ru` / `www.moonn.ru`, so traffic migration to `мунн.рф` is still not proven. Stop the analytics step at this blocker.
+5. `P0` Privacy/RKN publication gap persists on the live domain: `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` all return `404`, and `78/83` scoped URLs still show `forms_without_detected_checkbox`. Evidence: `docs/moonn-privacy-compliance-audit-2026-06-17.json`.
+6. `P1` Five-page rendered gate remains operationally degraded from `2026-06-16`; do not claim full AEO/UX green status until the bounded `--rendered` audit finishes reliably again.
+7. `P1` Source-level cleanup remains queued: gallery placeholders, missing raw image `alt`, raw H1 anomalies on camp/consultations/reviews.
+
 ## 2026-05-31 — Supervisor Run
 
 1. `P0` Infra blocker persists: DNS for `moonn.ru` is broken on this host (`DNS-имя не существует` / `Errno 11001 getaddrinfo failed`).

@@ -2063,3 +2063,49 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-06-17 16:55 MSK — Supervisor Run: `мунн.рф` Webmaster confirmed, GSC blocked, Metrika legacy-only
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-supervisor-20260617-clean`.
+- Trigger: scheduled supervisor run for the current live-domain contract on `https://мунн.рф/`.
+- Route:
+  - the default repo checkout was still contaminated by an unrelated camp workstream, so a clean worktree was created at `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-supervisor-20260617-clean`;
+  - capability routing selected local raw audits plus bounded Windows GUI verification for authenticated cabinets.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-17`
+  - `python scripts\moonn_privacy_compliance_audit.py --base-url https://xn--l1acaw.xn--p1ai`
+- Verified:
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, are present in sitemap and are not blocked by `robots.txt`;
+  - raw canonical remains aligned with `мунн.рф` on all 5 scoped URLs;
+  - source SEO debt is unchanged: gallery placeholders, missing raw image `alt`, raw H1 anomalies on camp/consultations/reviews;
+  - GSC for `sc-domain:xn--l1acaw.xn--p1ai` still shows `Oops, you don't have access to this property`;
+  - Yandex.Webmaster now clearly contains `https://мунн.рф` in the site list and opens its summary page;
+  - visible Yandex.Webmaster summary signals for `https://мунн.рф`: `Ошибок нет`, `3 рекомендации`, no large duplicate title/description cluster detected;
+  - Yandex.Metrika counter `96397286` is still labeled `Счетчик 1 Сайт moonn.ru` / `www.moonn.ru`, so it remains legacy-only for analytics proof;
+  - live privacy endpoints `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` still return `404`;
+  - privacy audit flags `78/83` URLs with `forms_without_detected_checkbox`.
+- Decision / blockers:
+  - replace the old combined blocker with a split state:
+    - `Yandex.Webmaster confirmed for https://мунн.рф`;
+    - `GSC blocked for sc-domain:xn--l1acaw.xn--p1ai`;
+    - `Metrika counter 96397286 still legacy-only`;
+  - overall migration proof is still blocked because GSC + Metrika are not green on the new domain.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-17.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-17.md`
+  - `docs/moonn-privacy-compliance-audit-2026-06-17.json`
+  - `docs/moonn-privacy-compliance-audit-2026-06-17.md`
+  - `docs/moonn-seo-growth-check-2026-06-17.md`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no legal/publication edits;
+  - no GSC/Yandex reindex submissions;
+  - no Metrika changes;
+  - no screenshots committed or published.
+- Next action:
+  - keep daily raw SEO checks on `мунн.рф`;
+  - on the next bounded cabinet pass, look only for a real GSC property and a real `мунн.рф` Metrika counter/export;
+  - do not use `moonn.ru` properties as working replacements.
