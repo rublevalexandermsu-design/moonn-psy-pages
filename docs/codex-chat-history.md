@@ -2048,6 +2048,47 @@ Append-only project history for `moon-psy-site`.
 - Next action:
   - stabilize the rendered audit path, then re-run a full rendered `мунн.рф` pass and only after that use confirmed `мунн.рф` cabinet access for scoped reindex of the 5 approved URLs plus sitemap.
 
+## 2026-06-18 09:05 MSK — Supervisor Run: raw lane stable, rendered lane still blocked
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - the open repo checkout was still on a different supervisor branch with unrelated local changes, so work continued in the canonical worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - capability routing selected local raw/rendered audit first, then bounded Windows GUI fallback only for the new-domain property blocker.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-18`
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-18-rendered`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves on this host;
+  - all 5 scoped `мунн.рф` URLs still return HTTP `200`, are present in sitemap, and are not blocked by `robots.txt`;
+  - raw canonical still matches the new domain on all 5 scoped URLs;
+  - source debt remains unchanged in raw HTML: camp raw H1 count `0`, consultations/reviews raw H1 count `2`, gallery placeholders `Your Name` / `Your Email`, and missing raw image `alt` across all 5 pages;
+  - local canon anchors still hold: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` resolves.
+- Rendered-lane incident:
+  - the extended `--rendered` attempt timed out after about `904s`;
+  - no dated `2026-06-18-rendered` artifact was produced;
+  - this run therefore preserves only raw dated artifacts and keeps the rendered lane classified as blocked.
+- GUI-only limitation:
+  - a bounded GUI attempt was made, but the active desktop state did not yield a reliable fresh property proof in this run;
+  - the blocker text therefore remains carried forward from the last confirmed `2026-06-16` GUI evidence: `новая property не подтверждена, traffic migration не доказан`.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-18.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-18.md`
+  - `docs/moonn-seo-growth-check-2026-06-18.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no GSC/Yandex reindex submission;
+  - no privacy/legal changes;
+  - no Yandex.Metrika edits;
+  - no cabinet settings changes;
+  - no 83-URL batch actions.
+- Next action:
+  - harden or split the rendered audit path until it produces a dated artifact again, then re-check `мунн.рф` property access in bounded Chrome GUI and only after that submit scoped reindex for the 5 approved URLs plus sitemap.
+
 ## 2026-05-25 09:00 MSK — Supervisor Run: Five-Page SEO/AEO (Rendered Audit + Persistent AEO Gap)
 
 - Workstream: Moonn five-page SEO/AEO sprint supervisor (audit-only).

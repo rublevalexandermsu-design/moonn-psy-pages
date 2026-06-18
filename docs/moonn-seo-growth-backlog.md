@@ -218,3 +218,12 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 4. `P1` Latest rendered evidence is mixed rather than clearly red: the pre-existing local `2026-06-15` rendered artifact shows camp answer block `1`, but gallery and exam-prep pages timed out, so do not treat camp AEO as a proven fresh blocker or proven fix until a full bounded rendered run completes.
 5. `P1` Source cleanup debt remains: gallery raw placeholders, missing image `alt` on all 5 pages, and raw H1 anomalies on camp/consultations/reviews.
 6. Next bounded action: stabilize the rendered audit path, re-run a full rendered `мунн.рф` pass, then submit scoped reindex only for the 5 URLs plus sitemap after `мунн.рф` property access is confirmed.
+
+## 2026-06-18 — `мунн.рф` Daily Supervisor
+
+1. `OK` Raw live-domain state stayed stable today: all 5 scoped `мунн.рф` URLs still return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep the new-domain canonical on all 5 pages. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-18.json`.
+2. `P1` Source-level SEO debt remains unchanged in raw HTML: camp raw H1 count is `0`, consultations/reviews raw H1 count is `2`, gallery still contains `Your Name` / `Your Email`, and missing image `alt` persists across all 5 scoped pages.
+3. `P0` The rendered lane is still the main operational blocker: `scripts/moonn_five_page_seo_sprint_audit.py --rendered --base-url https://xn--l1acaw.xn--p1ai` timed out again after about `904s`, and no dated rendered artifact was produced.
+4. `P0` Fresh cabinet proof for `мунн.рф` was not completed in this run, so the blocker text remains carried forward from the last confirmed GUI evidence on `2026-06-16`: `новая property не подтверждена, traffic migration не доказан`.
+5. `OK` Repo canon is still intact locally: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` still resolves.
+6. Next bounded action: harden or split the rendered lane so it produces a dated artifact again, then re-check `мунн.рф` property access in bounded Chrome GUI and only after that submit scoped reindex for the 5 URLs plus sitemap.
