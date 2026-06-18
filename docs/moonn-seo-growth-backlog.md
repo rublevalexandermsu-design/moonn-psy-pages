@@ -227,3 +227,13 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 4. `P0` Fresh cabinet proof for `мунн.рф` was not completed in this run, so the blocker text remains carried forward from the last confirmed GUI evidence on `2026-06-16`: `новая property не подтверждена, traffic migration не доказан`.
 5. `OK` Repo canon is still intact locally: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` still resolves.
 6. Next bounded action: harden or split the rendered lane so it produces a dated artifact again, then re-check `мунн.рф` property access in bounded Chrome GUI and only after that submit scoped reindex for the 5 URLs plus sitemap.
+
+## 2026-06-18 — `мунн.рф` Daily Supervisor (fresh rerun)
+
+1. `OK` Fresh rerun in `codex/moonn-seo-supervisor-20260618` reconfirmed the raw five-page lane on `https://xn--l1acaw.xn--p1ai`: all 5 scoped URLs still return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep new-domain canonical. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-18.json`.
+2. `OK` Fresh bounded GUI proof now exists for GSC on the new domain: `sc-domain:xn--l1acaw.xn--p1ai` still opens `Oops, you don't have access to this property` in the Alexander Chrome profile. Keep blocker text: `новая property не подтверждена, traffic migration не доказан`.
+3. `P0` Yandex.Webmaster/Metrika lane is still incomplete for the new domain. A clean proof was not captured today because the Chrome route drifted into unrelated saved tabs before a bounded `мунн.рф` cabinet state was reached. Do not substitute `moonn.ru`.
+4. `OK` Fresh transport checks also show `https://school.miiiips.ru/`, `/robots.txt`, and `/sitemap.xml` return HTTP `200`.
+5. `P1` Source-level debt remains unchanged on the 5 scoped pages: camp raw H1 `0`, consultations/reviews raw H1 `2`, gallery placeholders `Your Name` / `Your Email`, and missing raw image `alt`.
+6. `P1` Weekly privacy layer was intentionally skipped today because 2026-06-18 is Thursday; next scheduled legal/privacy check is Monday unless requested earlier.
+7. Next bounded action: capture a clean Yandex.Webmaster/possibly-new-Metrika proof for `мунн.рф`, then keep reindex frozen to the approved 5 URLs plus sitemap until new-domain property access is confirmed.

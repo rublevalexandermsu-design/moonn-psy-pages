@@ -2104,3 +2104,32 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-06-18 12:10 MSK — Supervisor Rerun: fresh GSC blocker proof on `мунн.рф`
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-supervisor-20260618` from `origin/codex/moonn-seo-audit`.
+- Trigger: daily bounded rerun for the `moonn-seo-privacy-supervisor` automation with live domain fixed to `https://мунн.рф/`.
+- Verified:
+  - re-ran `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-18`;
+  - all 5 scoped `мунн.рф` URLs still return HTTP `200`, are in `sitemap.xml`, are not blocked by `robots.txt`, and keep new-domain canonical;
+  - fresh direct fetches also returned HTTP `200` for `https://school.miiiips.ru/`, `/robots.txt`, and `/sitemap.xml`;
+  - fresh bounded GUI proof in the real `Alexander` Chrome profile showed GSC property `sc-domain:xn--l1acaw.xn--p1ai` still opens `Oops, you don't have access to this property`.
+- Decision / blocker:
+  - canonical blocker remains freshly confirmed: `новая property не подтверждена, traffic migration не доказан`.
+- Limitations:
+  - Yandex.Webmaster / Metrika new-domain proof was attempted but not cleanly captured, because the existing Chrome session drifted into unrelated saved tabs before a bounded `мунн.рф` cabinet state was reached;
+  - by contract, `moonn.ru` was not used as a fallback property;
+  - weekly privacy script was not run because 2026-06-18 is Thursday, not Monday.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-18.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-18.md`
+  - `docs/moonn-seo-growth-check-2026-06-18.md`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal publication;
+  - no GSC/Yandex submissions;
+  - no payment/video changes;
+  - no use of `moon.ru`.
