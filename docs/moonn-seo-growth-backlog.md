@@ -227,3 +227,14 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 4. `P0` Fresh cabinet proof for `мунн.рф` was not completed in this run, so the blocker text remains carried forward from the last confirmed GUI evidence on `2026-06-16`: `новая property не подтверждена, traffic migration не доказан`.
 5. `OK` Repo canon is still intact locally: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` still resolves.
 6. Next bounded action: harden or split the rendered lane so it produces a dated artifact again, then re-check `мунн.рф` property access in bounded Chrome GUI and only after that submit scoped reindex for the 5 URLs plus sitemap.
+
+## 2026-06-19 — `мунн.рф` Daily Supervisor
+
+1. `OK` Raw live-domain state remained green again: all 5 scoped `мунн.рф` URLs still return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep the new-domain canonical on all 5 pages. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-19.json`.
+2. `OK` The rendered lane recovered at the run level: `scripts/moonn_five_page_seo_sprint_audit.py --rendered --base-url https://xn--l1acaw.xn--p1ai` completed in about `386s` and produced dated artifacts `docs/moonn-five-page-seo-sprint-audit-2026-06-19-rendered.{json,md}`.
+3. `P1` The rendered page-level gate is still mixed, not green: camp page completed with `answerBlockCountRendered=1`, but gallery, exam prep, consultations and reviews each hit `Page.goto` `45000ms`.
+4. `P0` GSC blocker was freshly re-proven in Alexander Chrome: `sc-domain:xn--l1acaw.xn--p1ai` still opens `Oops, you don't have access to this property`, so the canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`.
+5. `OK` Yandex.Webmaster status improved materially: the live host `https://мунн.рф` is now accessible in the authenticated cabinet, and a bounded reindex batch for the 5 approved URLs plus `sitemap.xml` was submitted on `2026-06-19 09:11 MSK`. The UI now shows `Отправленные страницы`, first status `В очереди`, and `Сегодня можно отправить ещё 144 адреса`.
+6. `P1` Source-level debt remains unchanged in raw HTML: camp raw H1 count `0`, consultations/reviews raw H1 count `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` across all 5 pages.
+7. `P0` T+28 retirement decision is still premature: the live Google property blocker is open and the rendered page-level gate is not green across all 5 URLs.
+8. Next bounded action: keep the Google blocker open, verify Yandex queued status on the remaining submitted URLs in the next run, and harden page-level rendered navigation for the 4 timeout pages.

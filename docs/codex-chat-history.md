@@ -2104,3 +2104,53 @@ Append-only project history for `moon-psy-site`.
   - Raw placeholder strings remain on camp/gallery pages.
   - Missing raw image `alt` remains across all five pages.
 - Next action (unchanged): scoped reindex submission only for `docs/moonn-five-page-reindex-urls-2026-05-21.txt` (+ sitemap) via GSC/Yandex Webmaster API or authenticated Chrome GUI; do not submit all 83 URLs.
+
+## 2026-06-19 09:11 MSK — Supervisor Run: rendered artifact restored, GSC still blocked, Yandex live reindex submitted
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - the unrelated open checkout was ignored again; work stayed in the canonical worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - capability routing used local raw/rendered audit first, then bounded Windows GUI fallback in the authenticated Alexander/Rublev Chrome window for live-cabinet proof only.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-19`
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --rendered --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-19-rendered`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves on this host;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, are in sitemap, are not blocked by `robots.txt`, and keep the new-domain canonical;
+  - raw debt remains unchanged: camp raw H1 `0`, consultations/reviews raw H1 `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` on all 5 pages;
+  - local canon anchors still hold: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` resolves.
+- Rendered-lane result:
+  - the whole rendered run completed in about `386s` and wrote dated artifacts `docs/moonn-five-page-seo-sprint-audit-2026-06-19-rendered.{json,md}`;
+  - camp `/podrostkovyy-lager-psihologiya` completed with `renderedStatus=ok`, `h1CountRendered=1`, `answerBlockCountRendered=1`;
+  - gallery, exam-prep, consultations and reviews each failed at `Page.goto` `45000ms`, so the page-level rendered gate is still mixed rather than green.
+- Fresh GUI-only evidence:
+  - Google Search Console still blocks the live property: the `sc-domain:xn--l1acaw.xn--p1ai` tab opens `Oops, you don't have access to this property`;
+  - Yandex.Webmaster for the live host is now accessible in the same authenticated Chrome profile at `webmaster.yandex.ru/site/https:xn--l1acaw.xn--p1ai:443/indexing/reindex/`;
+  - the visible host selector shows `https://мунн.рф`;
+  - a bounded reindex batch for the 5 approved URLs plus `https://xn--l1acaw.xn--p1ai/sitemap.xml` was submitted there;
+  - post-submit UI shows `Отправленные страницы`, first visible status `В очереди`, and `Сегодня можно отправить ещё 144 адреса`.
+- Decision / blocker:
+  - keep the canonical blocker text because Google-side ownership is still unconfirmed: `новая property не подтверждена, traffic migration не доказан`;
+  - do not mark the five-page lane fully green because only 1 of 5 pages passed the rendered page-level gate.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-19.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-19.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-19-rendered.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-19-rendered.md`
+  - `docs/moonn-seo-growth-check-2026-06-19.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+- Explicitly done:
+  - submitted only the approved five live URLs plus sitemap in Yandex.Webmaster;
+  - no `83`-URL batch actions.
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal changes;
+  - no GSC submission because the live property is still blocked there;
+  - no Yandex.Metrika edits;
+  - no cabinet settings changes.
+- Next action:
+  - verify the queued Yandex reindex entries in the next run, keep the GSC blocker open until live-property access changes, and harden rendered navigation for the 4 timeout pages.
