@@ -238,3 +238,14 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 6. `P1` Source-level debt remains unchanged in raw HTML: camp raw H1 count `0`, consultations/reviews raw H1 count `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` across all 5 pages.
 7. `P0` T+28 retirement decision is still premature: the live Google property blocker is open and the rendered page-level gate is not green across all 5 URLs.
 8. Next bounded action: keep the Google blocker open, verify Yandex queued status on the remaining submitted URLs in the next run, and harden page-level rendered navigation for the 4 timeout pages.
+
+## 2026-06-20 — `мунн.рф` Daily Supervisor
+
+1. `OK` Raw live-domain state stayed green: all 5 scoped `мунн.рф` URLs return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep the new-domain canonical. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-20.json`.
+2. `OK` Rendered audit durability was improved: `scripts/moonn_five_page_seo_sprint_audit.py` now closes Playwright pages in `finally` and closes context/browser best-effort, so a retry produced dated artifacts after the first rendered attempt timed out. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.{json,md}`.
+3. `P1` Rendered page-level gate is still mixed, not green: camp completed with `answerBlockCountRendered=1`, while gallery, exam prep, consultations and reviews still hit `Page.goto` `45000ms`.
+4. `P0` GSC blocker was freshly re-proven in Chrome for the live resource `мунн.рф`: `У вас нет доступа к этому ресурсу`, so the canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`.
+5. `OK/P1` Yandex.Webmaster processed the five page URLs submitted on `2026-06-19 09:11 MSK`; `sitemap.xml` is still `В очереди`.
+6. `P1` Source-level debt remains unchanged in raw HTML: camp raw H1 count `0`, consultations/reviews raw H1 count `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` across all 5 pages.
+7. `P0` T+28/T+30 retirement decision remains premature: live Google property blocker is open, rendered page-level gate is not green, and Yandex sitemap processing is still pending.
+8. Next bounded action: re-check Yandex sitemap queued status, keep GSC blocker open, and split/harden rendered navigation for the 4 timeout pages without resubmitting processed URLs.

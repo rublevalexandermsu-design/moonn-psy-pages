@@ -230,6 +230,7 @@ def rendered_audit(pages: list[dict], *, launch_timeout_ms: int = 60000, page_ti
             context.set_default_navigation_timeout(page_timeout_ms)
             for page in pages:
                 audit = {"url": page["url"], "renderedStatus": "ok"}
+                browser_page = None
                 try:
                     browser_page = context.new_page()
                     try:
@@ -252,15 +253,26 @@ def rendered_audit(pages: list[dict], *, launch_timeout_ms: int = 60000, page_ti
                             "placeholderHitsRendered": rendered_placeholders,
                         }
                     )
-                    browser_page.close()
                 except Exception as exc:  # noqa: BLE001
                     audit.update({"renderedStatus": "error", "error": str(exc)})
+                finally:
+                    if browser_page is not None:
+                        try:
+                            browser_page.close()
+                        except Exception:
+                            pass
                 rows.append(audit)
                 if time.monotonic() - start > max(30.0, (launch_timeout_ms / 1000) + (page_timeout_ms / 1000) * len(pages) + 30.0):
                     rows.append({"url": "", "renderedStatus": "aborted", "reason": "rendered_audit_watchdog_timeout"})
                     break
-            context.close()
-            browser.close()
+            try:
+                context.close()
+            except Exception:
+                pass
+            try:
+                browser.close()
+            except Exception:
+                pass
     except Exception as exc:  # noqa: BLE001
         return [{"url": page["url"], "renderedStatus": "skipped", "reason": f"playwright_failed: {exc}"} for page in pages]
     return rows

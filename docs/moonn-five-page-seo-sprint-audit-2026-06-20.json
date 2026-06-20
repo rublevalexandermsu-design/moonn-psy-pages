@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "runDate": "2026-06-20",
+  "createdAt": "2026-06-20T06:02:14.718369+00:00",
+  "packet": "docs\\moonn-five-page-seo-packets-2026-05-21.json",
+  "environment": {
+    "dns": {
+      "hostname": "xn--l1acaw.xn--p1ai",
+      "lookupHostname": "xn--l1acaw.xn--p1ai",
+      "ok": true,
+      "error": null
+    }
+  },
+  "inputs": {
+    "baseUrl": "https://xn--l1acaw.xn--p1ai",
+    "sitemapUrl": "https://xn--l1acaw.xn--p1ai/sitemap.xml",
+    "robotsUrl": "https://xn--l1acaw.xn--p1ai/robots.txt",
+    "sitemapFetchError": null,
+    "robotsFetchError": null
+  },
+  "pages": [
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya",
+      "pageId": "140348786",
+      "status": 200,
+      "inSitemap": true,
+      "robotsTxtBlocked": false,
+      "expectedTitle": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+      "expectedDescription": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+      "expectedH1": "Подростковый психологический лагерь в Москве",
+      "title": "Подростковый психологический лагерь в Москве | Татьяна Мунн",
+      "description": "Подростковый психологический лагерь в Москве: эмоции, уверенность, общение, тревожность и камерная группа с психологом МГУ Татьяной Мунн.",
+      "canonical": "https://xn--l1acaw.xn--p1ai/podrostkovyy-lager-psihologiya",
+      "robots": "",
+      "h1CountRaw": 0,
+      "h1Raw": [],
+      "jsonLdCountRaw": 20,
+      "imageCountRaw": 1,
+      "imagesMissingAltRaw": 1,
+      "placeholderHitsRaw": [],
+      "issues": [
+        "raw_h1_count_not_one",
+        "images_missing_alt"
+      ],
+      "readyForReindexAfterPublication": true,
+      "rendered": {
+        "renderedStatus": "not_requested"
+      }
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/kartiny-tatiany-munn",
+      "pageId": "140864526",
+      "status": 200,
+      "inSitemap": true,
+      "robotsTxtBlocked": false,
+      "expectedTitle": "Картины Татьяны Мунн | галерея, арт и персональный код",
+      "expectedDescription": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+      "expectedH1": "Галерея картин Татьяны Мунн",
+      "title": "Картины Татьяны Мунн | галерея, арт и персональный код",
+      "description": "Галерея картин Татьяны Мунн: авторские работы, визуальный код, интерьерный арт и контакт для выбора картины или обсуждения заказа.",
+      "canonical": "https://xn--l1acaw.xn--p1ai/kartiny-tatiany-munn",
+      "robots": "",
+      "h1CountRaw": 1,
+      "h1Raw": [
+        "Галерея энергетических картин Татьяна Мунн"
+      ],
+      "jsonLdCountRaw": 2,
+      "imageCountRaw": 12,
+      "imagesMissingAltRaw": 2,
+      "placeholderHitsRaw": [
+        "Your Name",
+        "Your Email"
+      ],
+      "issues": [
+        "placeholder_text",
+        "images_missing_alt"
+      ],
+      "readyForReindexAfterPublication": true,
+      "rendered": {
+        "renderedStatus": "not_requested"
+      }
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
+      "pageId": "62652841",
+      "status": 200,
+      "inSitemap": true,
+      "robotsTxtBlocked": false,
+      "expectedTitle": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "expectedDescription": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+      "expectedH1": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "title": "Экзамены без паники: психологическая подготовка к ОГЭ и ЕГЭ",
+      "description": "Экзамены без паники: психологическая подготовка подростков к ОГЭ, ЕГЭ и сессии, работа со стрессом, тревогой и уверенностью.",
+      "canonical": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
+      "robots": "",
+      "h1CountRaw": 1,
+      "h1Raw": [
+        "Психологическая подготовка к экзаменам без паники"
+      ],
+      "jsonLdCountRaw": 1,
+      "imageCountRaw": 1,
+      "imagesMissingAltRaw": 1,
+      "placeholderHitsRaw": [],
+      "issues": [
+        "images_missing_alt"
+      ],
+      "readyForReindexAfterPublication": true,
+      "rendered": {
+        "renderedStatus": "not_requested"
+      }
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
+      "pageId": "135430346",
+      "status": 200,
+      "inSitemap": true,
+      "robotsTxtBlocked": false,
+      "expectedTitle": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+      "expectedDescription": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+      "expectedH1": "Психолог в Москве и онлайн: консультации Татьяны Мунн",
+      "title": "Психолог в Москве и онлайн | консультации Татьяны Мунн",
+      "description": "Психолог в Москве и онлайн: консультации Татьяны Мунн, психолога МГУ, для взрослых, подростков и родителей при тревоге, стрессе и отношениях.",
+      "canonical": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
+      "robots": "",
+      "h1CountRaw": 2,
+      "h1Raw": [
+        "Психологические Консультации в Москве Психолог МГУ - Татьяна Мунн",
+        "ОБРАЗОВАНИЕ - МГУ"
+      ],
+      "jsonLdCountRaw": 1,
+      "imageCountRaw": 12,
+      "imagesMissingAltRaw": 11,
+      "placeholderHitsRaw": [],
+      "issues": [
+        "raw_h1_count_not_one",
+        "images_missing_alt"
+      ],
+      "readyForReindexAfterPublication": true,
+      "rendered": {
+        "renderedStatus": "not_requested"
+      }
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/otzivi",
+      "pageId": "81167556",
+      "status": 200,
+      "inSitemap": true,
+      "robotsTxtBlocked": false,
+      "expectedTitle": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+      "expectedDescription": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+      "expectedH1": "Отзывы о психологе Татьяне Мунн",
+      "title": "Отзывы о психологе Татьяне Мунн | проверяемые источники",
+      "description": "Отзывы о психологе Татьяне Мунн: проверяемые источники, Яндекс Услуги, лекции, консультации и подтверждения опыта без искусственных рейтингов.",
+      "canonical": "https://xn--l1acaw.xn--p1ai/otzivi",
+      "robots": "",
+      "h1CountRaw": 2,
+      "h1Raw": [
+        "ОТЗЫВЫ КЛИЕНТОВ Психолог Татьяна Мунн",
+        "Психолог Татьяна Мунн КОНТАКТЫ"
+      ],
+      "jsonLdCountRaw": 1,
+      "imageCountRaw": 11,
+      "imagesMissingAltRaw": 10,
+      "placeholderHitsRaw": [],
+      "issues": [
+        "raw_h1_count_not_one",
+        "images_missing_alt"
+      ],
+      "readyForReindexAfterPublication": true,
+      "rendered": {
+        "renderedStatus": "not_requested"
+      }
+    }
+  ]
+}
