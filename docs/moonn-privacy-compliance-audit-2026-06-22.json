@@ -1,0 +1,1408 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-22T09:03:38.025569+00:00",
+  "scope": "Moonn 83 production URLs privacy/form/cookie compliance read-only audit",
+  "sourcePacket": "docs\\moonn-gsc-yandex-reindex-packet-2026-05-08.json",
+  "infra": {
+    "baseUrl": "https://xn--l1acaw.xn--p1ai",
+    "preflight": {
+      "url": "https://xn--l1acaw.xn--p1ai/robots.txt",
+      "status": 200,
+      "timeoutSeconds": 8
+    },
+    "dnsLikeFailure": false,
+    "perUrlTimeoutSeconds": 15,
+    "maxUrls": 0
+  },
+  "policyEndpoints": [
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/privacy",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/personal-data-consent",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/cookies",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/data-subject-request",
+      "status": 404,
+      "formSignals": 0,
+      "consentSignals": 0,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 0,
+      "webvisorSignals": 0,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": false,
+      "riskFlags": [
+        "http_error"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/",
+      "status": 200,
+      "formSignals": 67,
+      "consentSignals": 7,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/abuse_gaslight",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/aromatherapy",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/article_diary_of_emotions",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/article_femininity",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/article_gadget_addiction",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/article_toxic_job",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/articles/eq-dlya-rukovoditeley",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/baza-znaniy-emocionalnyy-intellekt-psihologiya",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/eintellect",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/benefits-of-ei",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/emotional-intelligence-skills",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/what-is-emotional-intelligence",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/articles/why-ei-matters",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/diagnostoka-ei",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/ei-leader-12",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/active-listening",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/burnout",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-contagion",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-intelligence",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-literacy",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/emotional-maturity",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/empathy",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/intrinsic-motivation",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/male-loneliness-russia",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/nonviolent-communication",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/personal-boundaries",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/psychological-safety",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-awareness",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/self-regulation",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/emotional-intelligence/knowledge-base/social-intelligence",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/events",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/events_tp",
+      "status": 200,
+      "formSignals": 33,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/geshtalt",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/kpt",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/kurs-ei",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 1,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": []
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/lectures1",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/microbiom",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/novosti",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/otzivi",
+      "status": 200,
+      "formSignals": 2,
+      "consentSignals": 20,
+      "checkboxSignals": 4,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": []
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/panicheskie_ataki",
+      "status": 200,
+      "formSignals": 34,
+      "consentSignals": 5,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/phytotherapy",
+      "status": 200,
+      "formSignals": 31,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/platnye-treningi-seminary-programmy-tatiana-moonn",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/programmakursa",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 1,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": []
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psiholog",
+      "status": 200,
+      "formSignals": 31,
+      "consentSignals": 3,
+      "checkboxSignals": 1,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": []
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psiholog-konsultacii-moskva",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psiholog_moskva",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 5,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psihology",
+      "status": 200,
+      "formSignals": 2,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psy4psy",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psychoanalys",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/psypodgotovka1",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/recomend",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/salt",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/schematherapy",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/selfharm",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 8,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/semeynie_konflikti_article",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/semeyniy_psiholog",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 11,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/seminar555",
+      "status": 200,
+      "formSignals": 38,
+      "consentSignals": 7,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/shppp333",
+      "status": 200,
+      "formSignals": 69,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/speaker",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/st1",
+      "status": 200,
+      "formSignals": 32,
+      "consentSignals": 6,
+      "checkboxSignals": 5,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": []
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/st2",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/trauma",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_aerofobia",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 5,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_depression",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_fin_blocks",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_gtr",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_konflikti_na_rabote",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_lubovnaya_zavisimost",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_obida_na_roditelei",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_otnosheniya_v_kollektive",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_podrostki",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 6,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_procrastination",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_razvod",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/uslugi_sohranit_brak",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 4,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/vacuum_cups",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/vigoranie_article",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/vospitanie_article",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/vystupleniya-lekcii-treningi-psiholog-tatiana-moonn",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    },
+    {
+      "url": "https://xn--l1acaw.xn--p1ai/water",
+      "status": 200,
+      "formSignals": 1,
+      "consentSignals": 3,
+      "checkboxSignals": 0,
+      "yandexMetrikaSignals": 3,
+      "webvisorSignals": 1,
+      "googleAnalyticsSignals": 0,
+      "hasPolicyLink": false,
+      "hasConsentLink": false,
+      "hasCookieText": true,
+      "riskFlags": [
+        "forms_without_detected_checkbox"
+      ]
+    }
+  ],
+  "notes": [
+    "This is a technical audit, not legal advice.",
+    "Final public legal text requires confirmed operator details and legal approval.",
+    "Google Analytics signals are flagged separately because cross-border/legal handling depends on actual configuration."
+  ]
+}

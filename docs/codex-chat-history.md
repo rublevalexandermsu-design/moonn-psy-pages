@@ -2304,3 +2304,32 @@ Append-only project history for `moon-psy-site`.
   - no cabinet settings changes.
 - Next action:
   - use a safer GSC live-property check route, re-check Yandex sitemap queued status, and split/harden rendered navigation for the 4 timeout pages.
+
+## 2026-06-22 12:08 MSK — Weekly Privacy/RKN supervisor addendum
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: Monday weekly privacy/RKN layer after the daily SEO run.
+- Route:
+  - used the canonical clean worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - did not use legacy `moonn.ru` as working property;
+  - did not publish or edit legal text.
+- Ran:
+  - `python scripts\moonn_privacy_compliance_audit.py --base-url https://xn--l1acaw.xn--p1ai --timeout 15 --preflight-timeout 8`
+- Verified:
+  - `https://xn--l1acaw.xn--p1ai/robots.txt` returned `200`; no DNS-like failure;
+  - `83` production URLs were checked on live `мунн.рф`;
+  - `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` returned `404`;
+  - `83/83` URLs have form signals;
+  - `78/83` URLs have `forms_without_detected_checkbox`;
+  - Yandex Metrika signals were found on `83/83` URLs and Google Analytics signals on `0/83`.
+- Updated artifacts:
+  - `docs/moonn-privacy-compliance-audit-2026-06-22.json`
+  - `docs/moonn-privacy-compliance-audit-2026-06-22.md`
+  - `docs/moonn-seo-growth-check-2026-06-22.md`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/codex-chat-history.md`
+- Decision / blocker:
+  - privacy/RKN gate is not green;
+  - legal text publication and Tilda checkbox rollout remain approval-gated because the packet needs live-domain wording review and operator address confirmation.

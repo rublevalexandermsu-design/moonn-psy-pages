@@ -271,3 +271,13 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 6. `P2` New process rule: if cabinet verification is skipped to protect authenticated browser state, the run may record raw/rendered evidence but must not update cabinet statuses as fresh proof.
 7. `P0` T+32 retirement decision remains premature: live Google property blocker is open/unconfirmed, rendered page-level gate is not green, and Yandex sitemap processing still needs a bounded re-check.
 8. Next bounded action: safer GSC live-property check, Yandex sitemap status re-check, and split/harden rendered navigation for the 4 timeout pages without resubmitting processed URLs.
+
+## 2026-06-22 — Weekly Privacy/RKN Supervisor
+
+1. `P0` Live-domain privacy endpoints remain unpublished: `/privacy`, `/personal-data-consent`, `/cookies`, `/data-subject-request` return `404` on `https://мунн.рф/`.
+2. `P0` Form compliance remains incomplete: `83/83` checked production URLs have form signals, and `78/83` expose `forms_without_detected_checkbox`.
+3. `P0` Yandex Metrika disclosure remains required on live pages: the audit detected Yandex Metrika signals on `83/83` checked URLs; Google Analytics signals were `0/83`.
+4. `P1` Do not publish the existing privacy packet as-is: it still contains legacy `moonn.ru` references and `OPERATOR_ADDRESS` is unresolved as `АДРЕС_ДЛЯ_КОРРЕСПОНДЕНЦИИ_ТРЕБУЕТ_ПОДТВЕРЖДЕНИЯ`.
+5. `P1` Required next low-risk preparation: update the draft packet internally to the live-domain wording `мунн.рф`, keep old `moonn.ru` only as historical context, and preserve legal approval gate.
+6. `P1` Required live rollout after approval: publish/alias the four privacy endpoints or an approved equivalent, then add required unchecked Tilda checkboxes under public forms.
+7. `P2` Verification rule: after legal/Tilda approval, rerun `python scripts\moonn_privacy_compliance_audit.py --base-url https://xn--l1acaw.xn--p1ai` and browser-check one representative form submission blocked without consent.

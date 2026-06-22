@@ -68,6 +68,7 @@
 - `P1` Rendered page-level blocker persists on 4 of 5 pages: gallery, exam prep, consultations and reviews still hit `Page.goto` `45000ms`.
 - `P1` Yandex sitemap status is stale from 2026-06-21 and still needs a bounded re-check; do not resubmit processed page URLs.
 - `P1` Source cleanup debt remains: raw H1 anomalies, gallery placeholders and missing image `alt`.
+- `P0` Weekly privacy/RKN audit found live-domain compliance blockers: four standard privacy endpoints return `404`, `78/83` production URLs have form signals without detected checkbox, and Yandex Metrika is present on `83/83` checked pages.
 
 ## Не делалось
 
@@ -86,7 +87,8 @@
 2. Re-check Yandex sitemap queued status through a safer bounded cabinet/API route; do not resubmit the already processed page URLs.
 3. Split or harden rendered navigation further so the 4 timeout pages produce DOM evidence without requiring a whole-run retry.
 4. Keep source cleanup as approval-required Tilda work: raw H1 normalization, gallery placeholders and missing image `alt`.
-5. Do not propose automation retirement yet, because the live Google property blocker is still open and the rendered page-level gate is not green across all 5 URLs.
+5. Keep privacy rollout approval-gated: confirm operator address/legal text, publish approved endpoints/check boxes, then rerun the live-domain privacy audit.
+6. Do not propose automation retirement yet, because the live Google property blocker is still open, the rendered page-level gate is not green across all 5 URLs, and privacy/RKN blockers remain open.
 
 ## Self-review
 
