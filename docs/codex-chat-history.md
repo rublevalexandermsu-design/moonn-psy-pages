@@ -2256,3 +2256,51 @@ Append-only project history for `moon-psy-site`.
   - no cabinet settings changes.
 - Next action:
   - use a safer GSC live-property check route, re-check Yandex sitemap queued status, and split/harden rendered navigation for the 4 timeout pages.
+
+## 2026-06-22 09:20 MSK — Supervisor Run: T+32 still blocked, raw green / rendered mixed
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - ignored the dirty unrelated checkout at `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site`;
+  - used the canonical clean worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - capability routing used local raw/rendered audit first; cabinet GUI checks were not forced because latest Chrome route was known to be brittle.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-22`
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --rendered --out-prefix moonn-five-page-seo-sprint-audit-2026-06-22-rendered`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep the new-domain canonical;
+  - source debt remains: camp raw H1 `0`, consultations/reviews raw H1 `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` on all 5 pages;
+  - local canon anchors still hold: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` resolves.
+- Rendered-lane result:
+  - the run completed and wrote dated artifacts `docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.{json,md}`;
+  - camp completed with `renderedStatus=ok`, `h1CountRendered=1`, `answerBlockCountRendered=1`;
+  - gallery, exam-prep, consultations and reviews each failed at `Page.goto` `45000ms`.
+- Cabinet evidence:
+  - fresh GSC proof was not obtained today; latest confirmed GSC proof remains 2026-06-20;
+  - fresh Yandex.Webmaster proof was not obtained today; latest confirmed Yandex proof remains 2026-06-21, where the five page URLs were processed and `sitemap.xml` was queued.
+- Decision / blocker:
+  - keep canonical blocker text from latest confirmed GSC proof: `новая property не подтверждена, traffic migration не доказан`;
+  - do not retire or narrow the automation at T+32 because GSC live-property access is still blocked/unconfirmed and 4 of 5 pages fail the rendered page-level gate.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-22.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-22.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.md`
+  - `docs/moonn-seo-growth-check-2026-06-22.md`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/codex-chat-history.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal changes;
+  - no GSC submission;
+  - no Yandex.Metrika edits;
+  - no new Yandex.Webmaster submissions;
+  - no `83`-URL batch actions;
+  - no cabinet settings changes.
+- Next action:
+  - use a safer GSC live-property check route, re-check Yandex sitemap queued status, and split/harden rendered navigation for the 4 timeout pages.
