@@ -46,16 +46,16 @@
       },
       "tPlus14": null,
       "tPlus28": {
-        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_and_rendered_page_gate",
-        "checkedAt": "2026-06-23T09:14:00+03:00",
+        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_rendered_page_gate_source_cleanup_and_privacy_gate",
+        "checkedAt": "2026-06-26T09:25:00+03:00",
         "liveHttp200": true,
         "inSitemap": true,
         "robotsBlocked": false,
         "canonicalAlignedToLiveDomain": true,
         "gscLivePropertyAccessible": false,
         "yandexReindexStatus": "latest_confirmed_page_request_processed_sitemap_queued_not_freshly_rechecked",
-        "evidence": "docs/moonn-seo-growth-check-2026-06-23.md",
-        "note": "Raw live state remains green on мунн.рф. Fresh GSC/Yandex cabinet proof was not obtained today; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, and image-alt debt remain."
+        "evidence": "docs/moonn-seo-growth-check-2026-06-26.md",
+        "note": "Raw live state remains green after IDN audit normalization: all five scoped URLs are HTTP 200, in sitemap, not robots-blocked, and canonical aligns to the live domain when Unicode and punycode host forms are compared as one domain. Fresh GSC/Yandex cabinet proof was not obtained; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, image-alt debt, and privacy/RKN blockers remain."
       },
       "tPlus56": null,
       "blockers": [
@@ -78,7 +78,8 @@
         "2026-06-20: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. GSC live property still says no access for resource `мунн.рф`, so `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster processed the five submitted page URLs from 2026-06-19, but `sitemap.xml` remains queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-20.json, docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.json, docs/moonn-seo-growth-check-2026-06-20.md.",
         "2026-06-21: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Latest confirmed GSC live-property blocker remains active because fresh GSC proof was not obtained today; canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster still shows the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-21.json, docs/moonn-five-page-seo-sprint-audit-2026-06-21-rendered.json, docs/moonn-seo-growth-check-2026-06-21.md.",
         "2026-06-22: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-22.json, docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json, docs/moonn-seo-growth-check-2026-06-22.md.",
-        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md."
+        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md.",
+        "2026-06-26: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned after IDN audit normalization. The audit gate was fixed to compare Unicode `мунн.рф` and punycode `xn--l1acaw.xn--p1ai` as the same live domain. Fresh GSC proof was not obtained today, so `новая property не подтверждена, traffic migration не доказан` remains active. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-26.json, docs/moonn-seo-growth-check-2026-06-26.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -124,16 +125,16 @@
       },
       "tPlus14": null,
       "tPlus28": {
-        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_and_rendered_page_gate",
-        "checkedAt": "2026-06-23T09:14:00+03:00",
+        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_rendered_page_gate_source_cleanup_and_privacy_gate",
+        "checkedAt": "2026-06-26T09:25:00+03:00",
         "liveHttp200": true,
         "inSitemap": true,
         "robotsBlocked": false,
         "canonicalAlignedToLiveDomain": true,
         "gscLivePropertyAccessible": false,
         "yandexReindexStatus": "latest_confirmed_page_request_processed_sitemap_queued_not_freshly_rechecked",
-        "evidence": "docs/moonn-seo-growth-check-2026-06-23.md",
-        "note": "Raw live state remains green on мунн.рф. Fresh GSC/Yandex cabinet proof was not obtained today; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, and image-alt debt remain."
+        "evidence": "docs/moonn-seo-growth-check-2026-06-26.md",
+        "note": "Raw live state remains green after IDN audit normalization: all five scoped URLs are HTTP 200, in sitemap, not robots-blocked, and canonical aligns to the live domain when Unicode and punycode host forms are compared as one domain. Fresh GSC/Yandex cabinet proof was not obtained; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, image-alt debt, and privacy/RKN blockers remain."
       },
       "tPlus56": null,
       "blockers": [
@@ -155,7 +156,8 @@
         "2026-06-20: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. GSC live property still says no access for resource `мунн.рф`, so `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster processed the five submitted page URLs from 2026-06-19, but `sitemap.xml` remains queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-20.json, docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.json, docs/moonn-seo-growth-check-2026-06-20.md.",
         "2026-06-21: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Latest confirmed GSC live-property blocker remains active because fresh GSC proof was not obtained today; canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster still shows the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-21.json, docs/moonn-five-page-seo-sprint-audit-2026-06-21-rendered.json, docs/moonn-seo-growth-check-2026-06-21.md.",
         "2026-06-22: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-22.json, docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json, docs/moonn-seo-growth-check-2026-06-22.md.",
-        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md."
+        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md.",
+        "2026-06-26: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned after IDN audit normalization. The audit gate was fixed to compare Unicode `мунн.рф` and punycode `xn--l1acaw.xn--p1ai` as the same live domain. Fresh GSC proof was not obtained today, so `новая property не подтверждена, traffic migration не доказан` remains active. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-26.json, docs/moonn-seo-growth-check-2026-06-26.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -201,16 +203,16 @@
       },
       "tPlus14": null,
       "tPlus28": {
-        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_and_rendered_page_gate",
-        "checkedAt": "2026-06-23T09:14:00+03:00",
+        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_rendered_page_gate_source_cleanup_and_privacy_gate",
+        "checkedAt": "2026-06-26T09:25:00+03:00",
         "liveHttp200": true,
         "inSitemap": true,
         "robotsBlocked": false,
         "canonicalAlignedToLiveDomain": true,
         "gscLivePropertyAccessible": false,
         "yandexReindexStatus": "latest_confirmed_page_request_processed_sitemap_queued_not_freshly_rechecked",
-        "evidence": "docs/moonn-seo-growth-check-2026-06-23.md",
-        "note": "Raw live state remains green on мунн.рф. Fresh GSC/Yandex cabinet proof was not obtained today; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, and image-alt debt remain."
+        "evidence": "docs/moonn-seo-growth-check-2026-06-26.md",
+        "note": "Raw live state remains green after IDN audit normalization: all five scoped URLs are HTTP 200, in sitemap, not robots-blocked, and canonical aligns to the live domain when Unicode and punycode host forms are compared as one domain. Fresh GSC/Yandex cabinet proof was not obtained; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, image-alt debt, and privacy/RKN blockers remain."
       },
       "tPlus56": null,
       "blockers": [
@@ -232,7 +234,8 @@
         "2026-06-20: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. GSC live property still says no access for resource `мунн.рф`, so `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster processed the five submitted page URLs from 2026-06-19, but `sitemap.xml` remains queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-20.json, docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.json, docs/moonn-seo-growth-check-2026-06-20.md.",
         "2026-06-21: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Latest confirmed GSC live-property blocker remains active because fresh GSC proof was not obtained today; canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster still shows the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-21.json, docs/moonn-five-page-seo-sprint-audit-2026-06-21-rendered.json, docs/moonn-seo-growth-check-2026-06-21.md.",
         "2026-06-22: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-22.json, docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json, docs/moonn-seo-growth-check-2026-06-22.md.",
-        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md."
+        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md.",
+        "2026-06-26: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned after IDN audit normalization. The audit gate was fixed to compare Unicode `мунн.рф` and punycode `xn--l1acaw.xn--p1ai` as the same live domain. Fresh GSC proof was not obtained today, so `новая property не подтверждена, traffic migration не доказан` remains active. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-26.json, docs/moonn-seo-growth-check-2026-06-26.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -279,16 +282,16 @@
       },
       "tPlus14": null,
       "tPlus28": {
-        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_and_rendered_page_gate",
-        "checkedAt": "2026-06-23T09:14:00+03:00",
+        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_rendered_page_gate_source_cleanup_and_privacy_gate",
+        "checkedAt": "2026-06-26T09:25:00+03:00",
         "liveHttp200": true,
         "inSitemap": true,
         "robotsBlocked": false,
         "canonicalAlignedToLiveDomain": true,
         "gscLivePropertyAccessible": false,
         "yandexReindexStatus": "latest_confirmed_page_request_processed_sitemap_queued_not_freshly_rechecked",
-        "evidence": "docs/moonn-seo-growth-check-2026-06-23.md",
-        "note": "Raw live state remains green on мунн.рф. Fresh GSC/Yandex cabinet proof was not obtained today; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, and image-alt debt remain."
+        "evidence": "docs/moonn-seo-growth-check-2026-06-26.md",
+        "note": "Raw live state remains green after IDN audit normalization: all five scoped URLs are HTTP 200, in sitemap, not robots-blocked, and canonical aligns to the live domain when Unicode and punycode host forms are compared as one domain. Fresh GSC/Yandex cabinet proof was not obtained; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, image-alt debt, and privacy/RKN blockers remain."
       },
       "tPlus56": null,
       "blockers": [
@@ -310,7 +313,8 @@
         "2026-06-20: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. GSC live property still says no access for resource `мунн.рф`, so `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster processed the five submitted page URLs from 2026-06-19, but `sitemap.xml` remains queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-20.json, docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.json, docs/moonn-seo-growth-check-2026-06-20.md.",
         "2026-06-21: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Latest confirmed GSC live-property blocker remains active because fresh GSC proof was not obtained today; canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster still shows the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-21.json, docs/moonn-five-page-seo-sprint-audit-2026-06-21-rendered.json, docs/moonn-seo-growth-check-2026-06-21.md.",
         "2026-06-22: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-22.json, docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json, docs/moonn-seo-growth-check-2026-06-22.md.",
-        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md."
+        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md.",
+        "2026-06-26: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned after IDN audit normalization. The audit gate was fixed to compare Unicode `мунн.рф` and punycode `xn--l1acaw.xn--p1ai` as the same live domain. Fresh GSC proof was not obtained today, so `новая property не подтверждена, traffic migration не доказан` remains active. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-26.json, docs/moonn-seo-growth-check-2026-06-26.md."
       ],
       "publicationDate": "2026-05-21"
     },
@@ -356,16 +360,16 @@
       },
       "tPlus14": null,
       "tPlus28": {
-        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_and_rendered_page_gate",
-        "checkedAt": "2026-06-23T09:14:00+03:00",
+        "status": "blocked_pending_live_gsc_access_yandex_sitemap_recheck_rendered_page_gate_source_cleanup_and_privacy_gate",
+        "checkedAt": "2026-06-26T09:25:00+03:00",
         "liveHttp200": true,
         "inSitemap": true,
         "robotsBlocked": false,
         "canonicalAlignedToLiveDomain": true,
         "gscLivePropertyAccessible": false,
         "yandexReindexStatus": "latest_confirmed_page_request_processed_sitemap_queued_not_freshly_rechecked",
-        "evidence": "docs/moonn-seo-growth-check-2026-06-23.md",
-        "note": "Raw live state remains green on мунн.рф. Fresh GSC/Yandex cabinet proof was not obtained today; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, and image-alt debt remain."
+        "evidence": "docs/moonn-seo-growth-check-2026-06-26.md",
+        "note": "Raw live state remains green after IDN audit normalization: all five scoped URLs are HTTP 200, in sitemap, not robots-blocked, and canonical aligns to the live domain when Unicode and punycode host forms are compared as one domain. Fresh GSC/Yandex cabinet proof was not obtained; latest confirmed GSC blocker remains active and latest confirmed Yandex proof still has sitemap.xml queued. Rendered audit still times out at Page.goto 45000ms on four pages; raw H1, gallery placeholder, image-alt debt, and privacy/RKN blockers remain."
       },
       "tPlus56": null,
       "blockers": [
@@ -387,10 +391,11 @@
         "2026-06-20: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. GSC live property still says no access for resource `мунн.рф`, so `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster processed the five submitted page URLs from 2026-06-19, but `sitemap.xml` remains queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-20.json, docs/moonn-five-page-seo-sprint-audit-2026-06-20-rendered.json, docs/moonn-seo-growth-check-2026-06-20.md.",
         "2026-06-21: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Latest confirmed GSC live-property blocker remains active because fresh GSC proof was not obtained today; canonical blocker text remains `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster still shows the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-21.json, docs/moonn-five-page-seo-sprint-audit-2026-06-21-rendered.json, docs/moonn-seo-growth-check-2026-06-21.md.",
         "2026-06-22: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-22.json, docs/moonn-five-page-seo-sprint-audit-2026-06-22-rendered.json, docs/moonn-seo-growth-check-2026-06-22.md.",
-        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md."
+        "2026-06-23: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned. Fresh GSC proof was not obtained today, so the latest confirmed GSC blocker remains active: `новая property не подтверждена, traffic migration не доказан`. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-23.json, docs/moonn-five-page-seo-sprint-audit-2026-06-23-rendered.json, docs/moonn-seo-growth-check-2026-06-23.md.",
+        "2026-06-26: Raw `мунн.рф` state remains HTTP 200 / sitemap true / robots false / canonical aligned after IDN audit normalization. The audit gate was fixed to compare Unicode `мунн.рф` and punycode `xn--l1acaw.xn--p1ai` as the same live domain. Fresh GSC proof was not obtained today, so `новая property не подтверждена, traffic migration не доказан` remains active. Yandex.Webmaster status was not freshly rechecked; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued. Rendered gate is still mixed: camp passes, while gallery/exam-prep/consultations/reviews hit `Page.goto` 45000ms. Evidence: docs/moonn-five-page-seo-sprint-audit-2026-06-26.json, docs/moonn-seo-growth-check-2026-06-26.md."
       ],
       "publicationDate": "2026-05-21"
     }
   ],
-  "lastUpdatedAt": "2026-06-23T09:14:00+03:00"
+  "lastUpdatedAt": "2026-06-26T09:25:00+03:00"
 }

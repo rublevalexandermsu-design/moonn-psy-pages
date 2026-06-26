@@ -2381,3 +2381,56 @@ Append-only project history for `moon-psy-site`.
   - no cabinet settings changes.
 - Next action:
   - use a safer GSC live-property check route, re-check Yandex sitemap queued status, and split/harden rendered navigation for the 4 timeout pages.
+
+## 2026-06-26 09:25 MSK — Supervisor Run: T+37 raw green after IDN audit fix / rendered mixed
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the current live-domain contract on `мунн.рф`.
+- Route:
+  - ignored the dirty unrelated checkout at `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site`;
+  - used the canonical clean worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - capability routing used local raw/rendered audit first; cabinet GUI checks were not upgraded because no fresh live-property proof was collected.
+- Ran:
+  - first attempted `python scripts\moonn_five_page_seo_sprint_audit.py --rendered --base-url https://мунн.рф --out-prefix moonn-five-page-seo-sprint-audit-2026-06-26`, but the command-level timeout was too short and produced no artifact;
+  - reran the same command with a longer outer timeout and produced dated artifacts;
+  - fixed `scripts/moonn_five_page_seo_sprint_audit.py` to normalize IDN URL forms before sitemap/canonical comparison, then reran the dated audit again.
+- Verified:
+  - DNS for `мунн.рф` resolves through punycode `xn--l1acaw.xn--p1ai`;
+  - all 5 scoped `мунн.рф` URLs return HTTP `200`;
+  - `robots.txt` was fetched and none of the five scoped URLs is blocked;
+  - all 5 scoped URLs remain in `sitemap.xml` after IDN normalization;
+  - raw canonical remains aligned to the live domain after IDN normalization: the site emits punycode `https://xn--l1acaw.xn--p1ai/...`, equivalent to Unicode `https://мунн.рф/...`;
+  - raw titles and descriptions still match the 2026-05-21 packet;
+  - source debt remains: camp raw H1 `0`, consultations/reviews raw H1 `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` on all 5 pages;
+  - local canon anchors still hold: `assets/moonn-five-page-seo-sprint-layer.js` exists and commit `49a093e` resolves.
+- Rendered-lane result:
+  - the run completed and wrote dated artifacts `docs/moonn-five-page-seo-sprint-audit-2026-06-26.{json,md}`;
+  - camp completed with `renderedStatus=ok`, `h1CountRendered=1`, `answerBlockCountRendered=1`;
+  - gallery, exam-prep, consultations and reviews each failed at `Page.goto` `45000ms`.
+- Cabinet evidence:
+  - fresh GSC proof was not obtained today; latest confirmed GSC proof remains 2026-06-20;
+  - fresh Yandex.Webmaster proof was not obtained today; latest confirmed Yandex proof remains 2026-06-21, where the five page URLs were processed and `sitemap.xml` was queued.
+- Decision / blocker:
+  - keep canonical blocker text from latest confirmed GSC proof: `новая property не подтверждена, traffic migration не доказан`;
+  - do not retire or narrow the automation at T+37 because GSC live-property access is still blocked/unconfirmed, 4 of 5 pages fail the rendered page-level gate, source cleanup debt remains, and Yandex sitemap status still needs a bounded re-check;
+  - process rule added: IDN URL forms must be normalized before sitemap/canonical comparison so Unicode/punycode differences do not create false P0 regressions.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-26.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-26.md`
+  - `docs/moonn-seo-growth-check-2026-06-26.md`
+  - `scripts/moonn_five_page_seo_sprint_audit.py`
+  - `docs/moonn-five-page-seo-change-ledger-2026-05-21.json`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/codex-chat-history.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal changes;
+  - no GSC submission;
+  - no Yandex.Metrika edits;
+  - no new Yandex.Webmaster submissions;
+  - no `83`-URL batch actions;
+  - no cabinet settings changes.
+- Next action:
+  - re-check Yandex sitemap queued status, keep GSC blocker open, and split/harden rendered navigation for the 4 timeout pages.

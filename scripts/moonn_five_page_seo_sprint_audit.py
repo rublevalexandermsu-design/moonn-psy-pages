@@ -65,6 +65,13 @@ def idna_url(url: str) -> str:
     return urllib.parse.urlunparse((parsed.scheme, netloc, parsed.path, parsed.params, parsed.query, parsed.fragment))
 
 
+def comparable_url(url: str) -> str:
+    parsed = urllib.parse.urlparse(url)
+    netloc = parsed.netloc.encode("idna").decode("ascii").lower()
+    normalized = urllib.parse.urlunparse((parsed.scheme.lower(), netloc, parsed.path, "", parsed.query, ""))
+    return normalized.rstrip("/")
+
+
 def visible_text(value: str) -> str:
     value = re.sub(r"<[^>]+>", " ", value)
     value = html.unescape(value)
@@ -96,7 +103,11 @@ def sitemap_urls() -> tuple[set[str] | None, str | None]:
         return None, error or f"status_{status}"
     root = ET.fromstring(body)
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    return ({item.findtext("sm:loc", default="", namespaces=ns).strip() for item in root.findall("sm:url", ns)}, None)
+    urls = {
+        comparable_url(item.findtext("sm:loc", default="", namespaces=ns).strip())
+        for item in root.findall("sm:url", ns)
+    }
+    return (urls, None)
 
 
 def robots_disallows() -> tuple[list[str] | None, str | None]:
@@ -143,12 +154,13 @@ def rewrite_packet_urls(packet: dict, base_url: str) -> dict:
 
 def raw_audit_page(page: dict, sitemap: set[str] | None, disallows: list[str] | None) -> dict:
     url = page["url"]
+    comparable_page_url = comparable_url(url)
     status, body, error = fetch(url)
     item: dict = {
         "url": url,
         "pageId": page.get("sourcePageId", ""),
         "status": status,
-        "inSitemap": (url in sitemap) if sitemap is not None else None,
+        "inSitemap": (comparable_page_url in sitemap) if sitemap is not None else None,
         "robotsTxtBlocked": robots_blocked(url, disallows),
         "expectedTitle": page["seo"]["title"],
         "expectedDescription": page["seo"]["description"],
@@ -173,7 +185,7 @@ def raw_audit_page(page: dict, sitemap: set[str] | None, disallows: list[str] | 
         issues.append("title_not_yet_updated")
     if description != page["seo"]["description"]:
         issues.append("description_not_yet_updated")
-    if canonical.rstrip("/") != url.rstrip("/"):
+    if comparable_url(canonical) != comparable_page_url:
         issues.append("canonical_mismatch")
     if "noindex" in robots.lower():
         issues.append("meta_noindex")
