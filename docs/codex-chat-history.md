@@ -2434,3 +2434,47 @@ Append-only project history for `moon-psy-site`.
   - no cabinet settings changes.
 - Next action:
   - re-check Yandex sitemap queued status, keep GSC blocker open, and split/harden rendered navigation for the 4 timeout pages.
+
+## 2026-06-28 13:01 MSK — Supervisor Run: T+39 raw green / rendered mixed / analytics blocked
+
+- Project: Moonn / Tatyana Munn site.
+- Workstream: `moonn-five-page-seo-aeo-supervisor`.
+- Branch: `codex/moonn-seo-audit`.
+- Trigger: scheduled morning supervisor run for the live-domain contract on `мунн.рф`.
+- Route:
+  - read automation memory and capability-router instructions;
+  - ignored the dirty unrelated starter checkout at `C:\пайто н тесты\Ано_институт_глаболизация\moon-psy-site`;
+  - used canonical worktree `C:\Users\yanta\Documents\Codex\worktrees\moon-psy-site-seo-audit`;
+  - restored accidentally modified historical 2026-06-26 audit files before writing today's report.
+- Ran:
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --out-prefix moonn-five-page-seo-sprint-audit-2026-06-28-raw`
+  - `python scripts\moonn_five_page_seo_sprint_audit.py --packet docs\moonn-five-page-seo-packets-2026-05-21.json --base-url https://xn--l1acaw.xn--p1ai --rendered --out-prefix moonn-five-page-seo-sprint-audit-2026-06-28-rendered`
+- Verified:
+  - DNS for `xn--l1acaw.xn--p1ai` resolves;
+  - all 5 scoped URLs return HTTP `200`;
+  - all 5 scoped URLs are in sitemap and not blocked by `robots.txt`;
+  - camp rendered gate passes with H1 `1` and answer block `1`;
+  - gallery, exam-prep, consultations and reviews still timeout at `Page.goto 45000ms`;
+  - API/export variables for Yandex/GSC were absent;
+  - Windows desktop snapshot had no already-open Chrome/cabinet route, so no GUI cabinet actions were taken.
+- Decision / blocker:
+  - keep `новая property не подтверждена, traffic migration не доказан`;
+  - do not retire or narrow the automation at T+39 because analytics/property proof is blocked, rendered gate is not green, source cleanup remains open, and Yandex sitemap status still needs fresh bounded proof.
+- Updated artifacts:
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-28-raw.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-28-raw.md`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-28-rendered.json`
+  - `docs/moonn-five-page-seo-sprint-audit-2026-06-28-rendered.md`
+  - `docs/moonn-seo-growth-check-2026-06-28.md`
+  - `docs/moonn-seo-growth-backlog.md`
+  - `docs/codex-chat-history.md`
+- Explicitly not done:
+  - no Tilda edits;
+  - no privacy/legal publication;
+  - no GSC/Yandex submissions;
+  - no analytics settings changes;
+  - no screenshots committed;
+  - no `83`-URL batch actions;
+  - no `moonn.ru` property fallback.
+- Next action:
+  - re-check Yandex sitemap queued status, keep GSC blocker open, and split rendered checks for the 4 timeout pages.

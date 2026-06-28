@@ -303,3 +303,24 @@ Canonical backlog for Moonn SEO/AEO growth checks, analytics evidence and privac
 6. `P2` Process correction: the first rendered command used an outer timeout that was too short for the script's worst-case Playwright budget; command-level timeout must exceed launch timeout plus per-page timeout plus watchdog buffer.
 7. `P0` T+37 retirement decision remains premature: live Google property blocker is open/unconfirmed, rendered page-level gate is not green, source cleanup remains open, and Yandex sitemap processing still needs a bounded re-check.
 8. Next bounded action: re-check Yandex sitemap status, keep GSC blocker open, and split/harden rendered navigation for the 4 timeout pages without resubmitting processed URLs.
+
+## 2026-06-28 — `мунн.рф` Daily Supervisor
+
+1. `OK` Raw live-domain state stayed green: all 5 scoped URLs return HTTP `200`, remain in `sitemap.xml`, are not blocked by `robots.txt`, and keep live-domain canonical after IDN normalization. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-28-raw.json`.
+2. `P1` Rendered lane completed but remains mixed: camp passes with rendered H1 `1` and answer block `1`; gallery, exam-prep, consultations and reviews still hit `Page.goto 45000ms`. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-28-rendered.json`.
+3. `P0` Analytics/API remains blocked: no Yandex.Metrika, Yandex.Webmaster or GSC API/export credentials were available in the shell, and no safe already-open Chrome cabinet route was visible.
+4. `P0` Keep canonical blocker: `новая property не подтверждена, traffic migration не доказан`. Do not use `moonn.ru` as a fallback property.
+5. `P1` Source cleanup debt remains: camp raw H1 `0`, consultations/reviews raw H1 `2`, gallery placeholders `Your Name` / `Your Email`, and missing image `alt` across all 5 scoped pages.
+6. `P2` Incident rule: a prior uncommitted run modified historical 2026-06-26 audit files; restore/flag historical overwrites before readiness reporting, and always use date-specific out-prefixes.
+7. `P1` Next bounded action: re-check Yandex sitemap queued status, keep GSC blocker open, and split the rendered audit so the four timeout pages produce page-level evidence without resubmitting URLs.
+
+## 2026-06-28 — `мунн.рф` Daily Supervisor
+
+1. `OK` Live-domain transport remains green: all 5 scoped `мунн.рф` URLs return HTTP `200`, remain in `sitemap.xml`, and are not blocked by `robots.txt`. Evidence: `docs/moonn-five-page-seo-sprint-audit-2026-06-28.json`.
+2. `OK/P1` Rendered audit completed and produced dated artifacts, but the page-level gate is still mixed: camp passes with rendered H1 `1` and answer block `1`; gallery, exam prep, consultations and reviews still hit `Page.goto` `45000ms`.
+3. `P0` Fresh GSC proof was not obtained today, so the latest confirmed blocker remains active: `новая property не подтверждена, traffic migration не доказан`.
+4. `P1` Yandex.Webmaster status was not freshly rechecked today; latest confirmed proof still has the five submitted page URLs processed and `sitemap.xml` queued.
+5. `P1` Source-level debt remains in raw HTML: camp raw H1 count `0`, consultations/reviews raw H1 count `2`, gallery placeholders, and missing image `alt` across all 5 pages.
+6. `P2` Process rule reinforced: an overloaded Chrome tab set is not cabinet evidence; use a safer bounded tab/control route before updating GSC/Yandex statuses.
+7. `P0` T+39 retirement decision remains premature: live Google property blocker is open/unconfirmed, rendered page-level gate is not green, Yandex sitemap status needs a bounded recheck, and source cleanup remains open.
+8. Next bounded action: re-check Yandex sitemap status, keep GSC blocker open, and split/harden rendered navigation for the 4 timeout pages without resubmitting processed URLs.
